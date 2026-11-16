@@ -21,7 +21,7 @@ python preflight.py
 python worker.py
 ```
 
-发布前18项CPU测试通过；这不是GPU运行结果。`manifest.json`记录实际发布输入的SHA256。
+发布前25项CPU测试通过，包含纯CPU伪子进程的正常退出及关闭超时回传测试；这不是GPU运行结果。`manifest.json`记录实际发布输入的SHA256。
 
 ## 有界GPU探针
 
@@ -39,14 +39,16 @@ python worker.py --execute-probe --isaac-launcher /isaac-sim/python.sh
 
 启动器路径是候选，不保证所有镜像相同。无启动器即失败，不在线安装或升级Torch。
 最多120个0.005秒物理步；初始化300秒、子进程540秒超时停止，不自动重试。
+仿真器关闭阶段另设30秒上限，不延长540秒总上限。本RayCaster探针没有Replicator写出作业，关闭使用`app.close(wait_for_replicator=False)`，不跳过正常清理。该参数已对照IsaacSim v5.1.0官方源码（commit `47d886f2858d1ceed556b21c88927aa67bc81c12`，`source/extensions/isaacsim.simulation_app/isaacsim/simulation_app/simulation_app.py`）；这不代表关闭卡住的根因已确定或修复已通过GPU实测。
 worker看门狗不是平台费用或clone/启动/释放时长的硬上限。
 本仓库的Flux入口为`gm-run ins1116/flux/hud04_asset_camera_probe/worker.py --execute-probe`。完整平台日志已确认克隆目录名为`ins1116`，不能添加GitHub所有者目录。
 
 ## 结果
 
 成功后保存`output/report.json`、`output/depth_samples.npz`及`worker_result.json`；原始子进程日志保留在worker本地。worker每30秒输出一次进度，失败时将脱敏后的最多8192字符子进程日志尾部输出到平台日志。
-只有正常退出且验收通过才报告`probe_passed=true`；`training_ready`始终为false。
+只有正常退出且验收通过才报告worker的`probe_passed=true`及`probe_lifecycle_passed=true`；`training_ready`始终为false。`simulation_checks_passed`单独记录物理/相机检查结果，不等于整个任务成功。
 三个结果文件还会作为带整体与逐文件SHA256的JSON分块输出到应用日志；原始文件总量上限128KiB，不导出其他文件。
+只要仿真检查已完成，即使后续关闭超时，也回传这三个文件，其中`worker_result.json`明确保留失败状态；不会因为存在仿真报告就把关闭超时改判成功。
 
 获取完整平台日志后，可离线恢复：
 
@@ -54,7 +56,7 @@ worker看门狗不是平台费用或clone/启动/释放时长的硬上限。
 python evidence_transport.py application.log --output recovered_probe
 ```
 
-缺块、重复、大小或校验不符将拒收；CPU已验证传输逻辑，实际平台完整日志传输仍须验证。
+缺块、重复、大小或校验不符将拒收；支持SDK前缀与拼接JSON，解析日志上限10MiB。CPU已验证传输逻辑，实际平台完整日志传输仍须验证。
 
 ## 来源、许可与修改说明
 

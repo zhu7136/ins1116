@@ -1,8 +1,16 @@
 """Bounded, checksummed output evidence over application logs; no upload key."""
-import base64,hashlib,io,json,zipfile
+import base64,hashlib,io,json,re,zipfile
 
 NAMES={'report.json','depth_samples.npz','worker_result.json'}
 MAX_BYTES=131072
+
+def parse_evidence_log(text):
+    if len(text.encode('utf-8'))>10*1024*1024:raise ValueError('Log exceeds bounded parse size')
+    decoder=json.JSONDecoder();events=[]
+    for match in re.finditer(r'\{"stage"\s*:\s*"hud04_evidence_(?:manifest|chunk)"',text):
+        event,_=decoder.raw_decode(text[match.start():]);events.append(event)
+        if len(events)>65:raise ValueError('Too many evidence events')
+    return events
 
 def encode_evidence(files):
     if set(files)!=NAMES:raise ValueError('Only allowlisted probe outputs may leave worker')
@@ -45,14 +53,9 @@ if __name__=='__main__':
     from pathlib import Path
     parser=argparse.ArgumentParser(description='Decode exported Flux application log evidence; refuses overwrite')
     parser.add_argument('log',type=Path);parser.add_argument('--output',required=True,type=Path)
-    args=parser.parse_args();events=[]
-    with args.log.open() as stream:
-        for line in stream:
-            start=line.find('{')
-            if start<0 or len(line)>16384:continue
-            try:event=json.loads(line[start:])
-            except ValueError:continue
-            if isinstance(event,dict) and str(event.get('stage','')).startswith('hud04_evidence_'):events.append(event)
+    args=parser.parse_args()
+    if args.log.stat().st_size>10*1024*1024:raise ValueError('Log exceeds bounded parse size')
+    events=parse_evidence_log(args.log.read_text())
     files=decode_evidence(events);args.output.mkdir(exist_ok=False,parents=True)
     for name,value in files.items():(args.output/name).write_bytes(value)
     print(json.dumps(dict(verified_files=len(files),training_ready=False)))

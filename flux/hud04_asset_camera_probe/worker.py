@@ -16,8 +16,9 @@ def diagnostic_tail(text):
     text=re.sub(r'\b(?:gh[pousr]_[A-Za-z0-9]+|github_pat_[A-Za-z0-9_]+|gm_sk_[A-Za-z0-9]+)\b','[REDACTED]',text)
     return text[-8192:]
 
-def deadline_reason(age,initialized):
+def deadline_reason(age,initialized,shutdown_age=None):
     if age>=540:return 'worker_child_wall_limit'
+    if shutdown_age is not None and shutdown_age>=30:return 'simulator_shutdown_deadline'
     if age>=300 and not initialized:return 'asset_initialization_deadline'
     return None
 
@@ -52,7 +53,7 @@ def main(args):
     if output.exists():raise FileExistsError('Output already exists: refuse retry/overwrite')
     logpath=ROOT/'isaac_probe.log'
     command=[str(launcher),str(ROOT/'probe.py'),'--execute-probe','--output',str(output),'--steps','120']
-    reason=None;initialized=False;proc=None;last_heartbeat=-30
+    reason=None;initialized=False;proc=None;last_heartbeat=-30;shutdown_started=None
     print(json.dumps(dict(stage='probe_child_starting',launcher=str(launcher))),flush=True)
     try:
         with logpath.open('x') as logfile:
@@ -62,18 +63,23 @@ def main(args):
                 with logpath.open('rb') as reader:
                     reader.seek(max(0,logpath.stat().st_size-32768));tail=reader.read(32768)
                 if b'"stage": "asset_initialized"' in tail:initialized=True
+                if shutdown_started is None and b'"stage": "simulator_shutdown_started"' in tail:
+                    shutdown_started=age
+                    print(json.dumps(dict(stage='probe_shutdown_observed',age_s=round(age,1),shutdown_cap_s=30)),flush=True)
                 if age-last_heartbeat>=30:
                     print(json.dumps(dict(stage='probe_heartbeat',age_s=round(age,1),asset_initialized=initialized)),flush=True)
                     last_heartbeat=age
-                reason=deadline_reason(age,initialized)
+                reason=deadline_reason(age,initialized,None if shutdown_started is None else age-shutdown_started)
                 if reason:break
                 time.sleep(.2)
             if reason:stop_child(proc)
             code=proc.wait()
         report_path=output/'report.json'
         result=json.loads(report_path.read_text()) if report_path.is_file() else None
-        passed=(reason is None and code==0 and result is not None and result.get('probe_passed') is True)
+        simulation_passed=result is not None and result.get('probe_passed') is True
+        passed=(reason is None and code==0 and simulation_passed)
         final=dict(stage='worker_finished',probe_passed=passed,return_code=code,stop_reason=reason,
+            simulation_checks_passed=simulation_passed,probe_lifecycle_passed=passed,
             worker_wall_s=time.monotonic()-started,training_updates=0,training_ready=False,
             actual_output_upload_verified=False,output_transport='checksummed_allowlisted_log_chunks',
             flux_log_transport_end_to_end_verified=False)
@@ -83,7 +89,9 @@ def main(args):
             with logpath.open('rb') as reader:
                 reader.seek(max(0,logpath.stat().st_size-32768))
                 print(json.dumps(dict(stage='probe_child_log_tail',text=diagnostic_tail(reader.read(32768).decode('utf-8',errors='replace')))),flush=True)
-        if passed:
+        # Preserve completed simulation evidence even if normal shutdown failed.
+        # The exported worker_result still explicitly marks lifecycle failure.
+        if simulation_passed:
             from evidence_transport import NAMES,encode_evidence
             files={name:(ROOT/'worker_result.json' if name=='worker_result.json' else output/name).read_bytes() for name in NAMES}
             for item in encode_evidence(files):print(json.dumps(item),flush=True)

@@ -8,11 +8,11 @@
   "verification": "CPU tests only; no Isaac/GPU proof",
   "files": {
     "API_COMPATIBILITY_REVIEW.md": "4889bdc4a272858b6bab201670fc453a39522769d042d6095729f41bc3177076",
-    "README_zh.md": "5f992d946ab7a6cee6744068c4b5e75edeb2ae7e77cc82266ecd523b6831ef93",
+    "README_zh.md": "8a4695add27e1c35fed70a45d5060205ee47d0a6201ba3b1cca35b77d07f3315",
     "SOURCE_MANIFEST.json": "5ba4798ee4b5e588c8a00390824878f12c9425809790a0785b59f4d13d7b1963",
     "asset_config.py": "4fdb08b4aa352893a6feef5afb6deb8ec273e1fbdcfc2d67ac0e691729321021",
     "camera_mount.py": "02695e048a19f4d62d9c2798c9810b48570f482357893f79e0bfb27474bc8e2f",
-    "evidence_transport.py": "735f0360d33590ac1673e909367f2f95ef1ff9674071c157b193fe661319de04",
+    "evidence_transport.py": "2f21da67114a12d768fded490df30d29689186274163bfcb8569eb79bb3f28b0",
     "humanoid-description/HU_D04_description/meshes/HU_D04_01/base_link.STL": "3523159f55ef13b00b2a0457f98a94e7cc80664cbd541cdbad822d27287fbeb8",
     "humanoid-description/HU_D04_description/meshes/HU_D04_01/left_ankle_pitch_link.STL": "56330a050041b7c7c1c12a34dce06e93be4c684f68c85668413ce65ff4b24f51",
     "humanoid-description/HU_D04_description/meshes/HU_D04_01/left_ankle_roll_link.STL": "d1c9a577c09018a8ba5bf06ae1af58f6692cb0a022c2b847348de4e7a0e1441c",
@@ -49,9 +49,9 @@
     "licenses/InstinctLab-LICENSE": "0afbf192c4dfb4f8ffd7783eb61a8829d1ebee17d3f2b1dc1b0bdb62838f2a93",
     "licenses/humanoid-description-LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
     "preflight.py": "ffa6a0d060fba3f75ab8b455138109f70c39c968075d428680165fdee8243085",
-    "probe.py": "c4452f5675450c9e274e0df3c3d97158e9a39ef8310907db5d0fd900209289ac",
+    "probe.py": "98b9224c3864840dab6cd390e2a7c64c3691b94eacec536d60308bc0f093cd52",
     "probe_checks.py": "1df08ffd55c5153f4481df10a2be0876b55816ebfad151a627d019438b53109d",
-    "test_cpu.py": "4029427fb13df2ce39937f671a651ed656aac407a8cb68b7a1c77bdd527b04f0",
-    "worker.py": "c153e5fb46dadbc1de689543a8de067deb5ea7339a81da9dde074309238e085a"
+    "test_cpu.py": "c5a0235e3b9219903f35d74867cc500b64cbf99736d40f2f624ecb3b831fa74a",
+    "worker.py": "b7b24ba4cb907f8e936e38caee227f9151184820858b244c9ad80de751285b2a"
   }
 }

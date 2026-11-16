@@ -131,7 +131,11 @@ def main(args):
               'Real camera calibration and depth metric accuracy not established'])
         (args.output/'report.json').write_text(json.dumps(report,indent=2));event(**report)
     finally:
-        app.close()
+        # This ray-casting probe has no Replicator writer jobs to drain.
+        # IsaacSim v5.1.0 SimulationApp.close supports this documented option.
+        event('simulator_shutdown_started',wait_for_replicator=False)
+        app.close(wait_for_replicator=False)
+        event('simulator_shutdown_completed')
 
 if __name__=='__main__':
     try:main(config_parser().parse_args())

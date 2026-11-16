@@ -1,11 +1,13 @@
 """Offline package tests. These are NOT Isaac simulation tests."""
-import contextlib,io,json,subprocess,sys,unittest
+import contextlib,io,json,subprocess,sys,tempfile,unittest
+from types import SimpleNamespace
+import worker
 from pathlib import Path
 from unittest.mock import patch
 import preflight
 from worker import deadline_reason,diagnostic_tail
 from probe_checks import HEAD_ZERO_TRANSLATIONS,check_head_zero,require_finite_values
-from evidence_transport import encode_evidence,decode_evidence
+from evidence_transport import encode_evidence,decode_evidence,parse_evidence_log
 
 ROOT=Path(__file__).resolve().parent
 
@@ -45,6 +47,70 @@ class PackageTests(unittest.TestCase):
         self.assertIsNone(deadline_reason(539,True))
         self.assertEqual(deadline_reason(540,True),'worker_child_wall_limit')
         self.assertEqual(deadline_reason(540,False),'worker_child_wall_limit')
+
+    def test_shutdown_deadline(self):
+        self.assertIsNone(deadline_reason(60,True,29.9))
+        self.assertEqual(deadline_reason(60,True,30),'simulator_shutdown_deadline')
+        self.assertEqual(deadline_reason(540,True,30),'worker_child_wall_limit')
+
+    def test_documented_shutdown_option(self):
+        text=(ROOT/'probe.py').read_text()
+        self.assertIn('app.close(wait_for_replicator=False)',text)
+        self.assertIn("event('simulator_shutdown_started'",text)
+        self.assertIn("event('simulator_shutdown_completed'",text)
+
+    def test_evidence_preserved_on_lifecycle_failure(self):
+        text=(ROOT/'worker.py').read_text()
+        self.assertIn('if simulation_passed:',text)
+        self.assertIn('probe_lifecycle_passed=passed',text)
+
+    def test_sdk_concatenated_log_roundtrip(self):
+        files=self.sample_evidence()
+        text='[SDK] '+'x'*40000+''.join(json.dumps(e) for e in encode_evidence(files))
+        self.assertEqual(decode_evidence(parse_evidence_log(text)),files)
+
+    def test_log_parse_budget(self):
+        with self.assertRaisesRegex(ValueError,'bounded'):
+            parse_evidence_log('x'*(10*1024*1024+1))
+
+    def synthetic_worker(self,hang):
+        # CPU-only stub. Deliberately not Isaac data, and never a W&B experiment.
+        root=Path(tempfile.mkdtemp(prefix='hud04-synthetic-wrapper-',dir='/workspace'))
+        script="""import json,pathlib,sys,time
+out=pathlib.Path(sys.argv[sys.argv.index('--output')+1]);out.mkdir()
+(out/'report.json').write_text(json.dumps(dict(probe_passed=True,synthetic_cpu_test=True)))
+(out/'depth_samples.npz').write_bytes(b'synthetic-not-physics')
+print(json.dumps(dict(stage='asset_initialized')),flush=True)
+print(json.dumps(dict(stage='simulator_shutdown_started')),flush=True)
+"""
+        if hang:script+='time.sleep(5)\n'
+        (root/'probe.py').write_text(script)
+        buffer=io.StringIO()
+        def deadline(age,initialized,shutdown_age=None):
+            return 'simulator_shutdown_deadline' if shutdown_age is not None and shutdown_age>=.2 else None
+        with patch.object(worker,'ROOT',root),patch.object(worker,'audit'),patch.object(worker,'deadline_reason',side_effect=deadline),contextlib.redirect_stdout(buffer):
+            if hang:
+                with self.assertRaises(SystemExit) as error:
+                    worker.main(SimpleNamespace(execute_probe=True,isaac_launcher=sys.executable))
+                self.assertEqual(error.exception.code,1)
+            else:worker.main(SimpleNamespace(execute_probe=True,isaac_launcher=sys.executable))
+        files=decode_evidence(parse_evidence_log(buffer.getvalue()))
+        self.assertTrue(json.loads(files['report.json'])['synthetic_cpu_test'])
+        return json.loads(files['worker_result.json'])
+
+    def test_failed_shutdown_exports_checksums_but_still_fails(self):
+        result=self.synthetic_worker(True)
+        self.assertTrue(result['simulation_checks_passed'])
+        self.assertFalse(result['probe_lifecycle_passed'])
+        self.assertFalse(result['probe_passed'])
+        self.assertEqual(result['stop_reason'],'simulator_shutdown_deadline')
+
+    def test_clean_shutdown_exports_success(self):
+        result=self.synthetic_worker(False)
+        self.assertTrue(result['simulation_checks_passed'])
+        self.assertTrue(result['probe_lifecycle_passed'])
+        self.assertTrue(result['probe_passed'])
+        self.assertIsNone(result['stop_reason'])
 
     def test_no_full_training_import(self):
         text=(ROOT/'probe.py').read_text()
