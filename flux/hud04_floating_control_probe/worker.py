@@ -36,6 +36,10 @@ def main(args):
             optimizer_setup_calls=0, platform_billing_cap_verified=False)), flush=True)
         return
     sys.path.insert(0, str(ASSET))
+    source_commit = subprocess.check_output(['git', '-C', str(ROOT), 'rev-parse', 'HEAD'], text=True).strip()
+    if not args.expected_commit or source_commit != args.expected_commit:
+        raise RuntimeError('Explicit expected commit required and must match checkout before GPU initialization')
+    print(json.dumps(dict(stage='floating_source_verified', source_commit=source_commit)), flush=True)
     old = runpy.run_path(str(ASSET / 'worker.py'))
     old['audit'](ASSET)
     manifest = json.loads((ROOT / 'manifest.json').read_text())
@@ -92,6 +96,7 @@ def main(args):
         normal_exit = reason is None and code == 0 and cleanup_complete
         passed = normal_exit and report is not None and report.get('probe_passed') is True
         result = dict(stage='floating_worker_finished', probe_passed=passed, return_code=code,
+            source_commit=source_commit,
             stop_reason=reason, worker_wall_s=time.monotonic()-started, training_ready=False,
             training_updates=0, report_present=report is not None, normal_exit_verified=normal_exit,
             simulation_context_cleanup_completed=cleanup_complete)
@@ -113,4 +118,5 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--execute-probe', action='store_true')
     parser.add_argument('--isaac-launcher')
+    parser.add_argument('--expected-commit')
     main(parser.parse_args())

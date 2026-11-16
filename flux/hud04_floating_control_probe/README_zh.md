@@ -62,18 +62,20 @@ python probe.py
 python worker.py
 ```
 
-本版 CPU 检查：新增 22 项全部通过；原资产包 34 项回归通过。
+本版 CPU 检查：新增 23 项全部通过；原资产包 34 项回归通过。
 这些是软件测试，不是物理、接触、站姿或真实管理器运行的证据。
 
 在已核对任务状态、源码提交、资源和时间边界后才可显式启动：
 
 ```sh
-python worker.py --execute-probe
+python worker.py --execute-probe --expected-commit "$(git rev-parse HEAD)"
 # 若镜像需要专用 Python 启动器，显式添加 --isaac-launcher /已核实的路径
 ```
 
-Flux 候选入口为 `gm-run ins1116/flux/hud04_floating_control_probe/worker.py --execute-probe`，
+Flux 候选入口为 `gm-run ins1116/flux/hud04_floating_control_probe/worker.py --execute-probe --expected-commit 固定的40位提交哈希`，
 必须先回读当前平台代码配置；不能把这条候选命令当成已经提交的任务。
+平台配置必须传入本次已核实提交的**字面值**，不能在远端用 `git rev-parse` 动态代替预期提交。
+worker 在初始化 GPU 前拒绝缺失或不匹配的提交。
 只允许一个子进程，无自动重试；初始化 300 秒、子进程 540 秒、关闭 30 秒上限。
 不在线安装或升级环境。已有结果/日志时拒绝覆盖。
 
@@ -93,4 +95,4 @@ Flux 候选入口为 `gm-run ins1116/flux/hud04_floating_control_probe/worker.py
   静态对照不是新探针在 Flux 镜像上成功的证明。
 - HUD04 资产及初始控制参数沿用原包，来源、Apache-2.0 模型许可和限制见原包 README / licenses。
 
-此处没有提交 Flux 任务、启动 GPU、执行求解器或 PPO 的自动入口。
+此目录自身没有提交 Flux 任务、执行求解器或 PPO 的自动入口；只有显式参数能启动 GPU 诊断。

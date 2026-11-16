@@ -161,6 +161,14 @@ class ContractTests(unittest.TestCase):
         for name, digest in manifest['files'].items():
             self.assertEqual(hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), digest)
 
+    def test_execute_without_commit_fails_before_gpu(self):
+        result = subprocess.run([sys.executable, str(ROOT/'worker.py'), '--execute-probe'],
+                                capture_output=True, text=True, timeout=10)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn('Explicit expected commit required', result.stderr)
+        self.assertNotIn('isaac_initialization_started', result.stdout)
+        self.assertFalse((ROOT/'floating_probe.log').exists())
+
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
