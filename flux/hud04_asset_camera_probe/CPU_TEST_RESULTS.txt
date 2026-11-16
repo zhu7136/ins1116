@@ -1,0 +1,22 @@
+
+test_evidence_duplicate_rejected (test_cpu.PackageTests.test_evidence_duplicate_rejected) ... ok
+test_evidence_missing_chunk_rejected (test_cpu.PackageTests.test_evidence_missing_chunk_rejected) ... ok
+test_evidence_roundtrip (test_cpu.PackageTests.test_evidence_roundtrip) ... ok
+test_evidence_unexpected_file_rejected (test_cpu.PackageTests.test_evidence_unexpected_file_rejected) ... ok
+test_evidence_wrong_hash_rejected (test_cpu.PackageTests.test_evidence_wrong_hash_rejected) ... ok
+test_head_zero_pose_and_quaternion_sign (test_cpu.PackageTests.test_head_zero_pose_and_quaternion_sign) ... ok
+test_initialization_deadline (test_cpu.PackageTests.test_initialization_deadline) ... ok
+test_integrity_and_robot (test_cpu.PackageTests.test_integrity_and_robot) ... ok
+test_no_full_training_import (test_cpu.PackageTests.test_no_full_training_import) ... ok
+test_nonfinite_head_rejected (test_cpu.PackageTests.test_nonfinite_head_rejected) ... ok
+test_nonfinite_metrics_rejected (test_cpu.PackageTests.test_nonfinite_metrics_rejected) ... ok
+test_probe_default_no_gpu (test_cpu.PackageTests.test_probe_default_no_gpu) ... ok
+test_tamper_rejected (test_cpu.PackageTests.test_tamper_rejected) ... ok
+test_total_deadline (test_cpu.PackageTests.test_total_deadline) ... ok
+test_worker_default_no_gpu (test_cpu.PackageTests.test_worker_default_no_gpu) ... ok
+test_wrong_fixed_head_pose_rejected (test_cpu.PackageTests.test_wrong_fixed_head_pose_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.175s
+
+OK

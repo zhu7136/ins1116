@@ -1,0 +1,65 @@
+# HUD04 固定头部／胸口深度相机验证探针
+
+这是 **独立资产验证程序**，不是已经训练完成的 HUD04 策略，也不替换本仓库已有训练入口。
+
+## 范围
+
+- HUD04 串联模型，29个可动身体关节；头部 yaw/pitch 在模型零位改为 fixed，不存在可供策略控制的头部动作自由度。
+- 固定根基座仅用于此诊断探针，不能作为自由站立、平衡或接触稳定性的证据。
+- 原始胸口深度使用标准 IsaacLab RayCasterCamera，对独立静态平面采样，形状 `[1,27,48,1]`。
+- 检查关节集合、头部导入零位与相对变换、有限值、传感器更新及目标有效像素。
+- 不调用 Instinct-RL、参考动作、PPO、训练任务注册或外部下载。
+- 不验证 InstinctLab 自定义 grouped/noisy 深度管线、18×32策略输入、奖励、重置或技能成功率。
+
+## 离线检查（不会初始化 Isaac/CUDA）
+
+在本目录执行：
+
+```sh
+python -m unittest -v test_cpu.py
+python preflight.py
+python worker.py
+```
+
+发布前16项CPU测试通过；这不是GPU运行结果。`manifest.json`记录实际发布输入的SHA256。
+
+## 有界GPU探针
+
+需要预装兼容的IsaacSim/IsaacLab GPU环境。候选接口对照为IsaacLab v2.3.2，源码依据见`SOURCE_MANIFEST.json`与`API_COMPATIBILITY_REVIEW.md`。
+
+```sh
+python worker.py --execute-probe
+```
+
+若当前Python不能导入IsaacLab，应使用环境实际的Python启动器：
+
+```sh
+python worker.py --execute-probe --isaac-launcher /isaac-sim/python.sh
+```
+
+启动器路径是候选，不保证所有镜像相同。无启动器即失败，不在线安装或升级Torch。
+最多120个0.005秒物理步；初始化300秒、子进程540秒超时停止，不自动重试。
+worker看门狗不是平台费用或clone/启动/释放时长的硬上限。
+平台入口可调用`gm-run InstinctLab/flux/hud04_asset_camera_probe/worker.py --execute-probe`，最终路径以平台回读为准。
+
+## 结果
+
+成功后保存`output/report.json`、`output/depth_samples.npz`及`worker_result.json`；原始子进程日志保留在worker本地。
+只有正常退出且验收通过才报告`probe_passed=true`；`training_ready`始终为false。
+三个结果文件还会作为带整体与逐文件SHA256的JSON分块输出到应用日志；原始文件总量上限128KiB，不导出其他文件。
+
+获取完整平台日志后，可离线恢复：
+
+```sh
+python evidence_transport.py application.log --output recovered_probe
+```
+
+缺块、重复、大小或校验不符将拒收；CPU已验证传输逻辑，实际平台完整日志传输仍须验证。
+
+## 来源、许可与修改说明
+
+- InstinctLab：https://github.com/project-instinct/InstinctLab ，基线`de6b92f01eb155d51f30e8ed1ea7aecd2eb1f057`。许可原文保存在`licenses/InstinctLab-LICENSE`，CC BY-NC 4.0，保留署名及非商业条件。
+- HUD04资产：https://github.com/limxdynamics/humanoid-description ，基线`4c0a3c71200b810a52831c7c2b2de0ed6ce819a4`。许可原文保存在`licenses/humanoid-description-LICENSE`，Apache 2.0。
+- 控制参数是参考公开LimX GMR配置的初始值，不是调优结果或硬件安全参数。
+- 本分支新增探针、固定头部URDF和身体碰撞近似，修改日期2026-11-16；这些修改不能仅由上游基线commit代表，以文件manifest为准。
+- 本目录不含账号凭据、签名下载链接、账单信息、私有数据、正式动作数据或训练checkpoint。
