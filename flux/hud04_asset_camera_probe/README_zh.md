@@ -2,6 +2,17 @@
 
 这是 **独立资产验证程序**，不是已经训练完成的 HUD04 策略，也不替换本仓库已有训练入口。
 
+## 退出问题的空场景对照
+
+`lifecycle_probe.py` 默认仅打印计划，不初始化 GPU。显式执行
+`python lifecycle_probe.py --execute-probe` 后，在同一个 GPU 任务中依次启动两个独立子进程：
+仅 AppLauncher，以及不加载机器人或传感器的 SimulationContext（3 步）。
+两者均调用正常的 `app.close(wait_for_replicator=False)`，分别记录返回和进程退出。
+每个子进程初始化上限 90 秒、关闭上限 30 秒、总上限 120 秒，无自动重试。
+截止后终止子进程只用于止损，**不算正常退出通过**；工作进程限时不是平台总费用硬上限。
+CPU 检查：`python -m unittest -v test_cpu.py test_lifecycle_cpu.py`。
+诊断不加载 HUD04、不生成深度测量，不进行策略训练。
+
 ## 范围
 
 - HUD04 串联模型，29个可动身体关节；头部 yaw/pitch 在模型零位改为 fixed，不存在可供策略控制的头部动作自由度。
