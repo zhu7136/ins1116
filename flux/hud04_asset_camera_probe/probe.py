@@ -41,6 +41,7 @@ def main(args):
     from isaaclab.app import AppLauncher
     launcher=AppLauncher(headless=True,enable_cameras=False,device=args.device)
     app=launcher.app
+    sim=None
     try:
         import numpy as np
         import torch
@@ -140,6 +141,10 @@ def main(args):
         # This ray-casting probe has no Replicator writer jobs to drain.
         # IsaacSim v5.1.0 SimulationApp.close supports this documented option.
         event('simulator_shutdown_started',wait_for_replicator=False)
+        if sim is not None:
+            event('simulation_context_cleanup_started')
+            sim.clear_instance()
+            event('simulation_context_cleanup_completed')
         app.close(wait_for_replicator=False)
         event('simulator_shutdown_completed')
 

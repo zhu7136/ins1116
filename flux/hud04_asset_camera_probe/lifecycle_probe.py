@@ -31,6 +31,13 @@ def deadline(age,initialized,close_age):
     if age>=90 and not initialized:return 'app_initialization_deadline'
     return None
 
+def normal_process_exit(reason,code,stages,mode,physics):
+    # SimulationApp.close may terminate the interpreter successfully without
+    # returning to Python; an after-close marker is not required in that case.
+    return (reason is None and code==0 and 'lifecycle_app_initialized' in stages
+            and 'lifecycle_app_closing' in stages
+            and (mode=='app-only' or physics is not None))
+
 def child(mode):
     os.environ['ENABLE_CAMERAS']='0'
     event('lifecycle_app_initializing',mode=mode)
@@ -38,6 +45,7 @@ def child(mode):
     launcher=AppLauncher(headless=True,enable_cameras=False,device='cuda:0')
     app=launcher.app
     event('lifecycle_app_initialized',mode=mode)
+    sim=None
     try:
         if mode=='empty-physics':
             import torch
@@ -49,6 +57,12 @@ def child(mode):
             event('lifecycle_physics_completed',mode=mode,steps=3,
                   simulation_device=str(sim.device),cuda_available=torch.cuda.is_available())
     finally:
+        if sim is not None:
+            # IsaacLab's standalone STOP subscription can wait for playback
+            # during app.close. Public lifecycle API unsubscribes this callback.
+            event('lifecycle_context_cleanup_started',mode=mode)
+            sim.clear_instance()
+            event('lifecycle_context_cleanup_completed',mode=mode)
         event('lifecycle_app_closing',mode=mode,wait_for_replicator=False)
         app.close(wait_for_replicator=False)
         event('lifecycle_app_close_returned',mode=mode)
@@ -85,10 +99,12 @@ def case(mode,launcher,out):
     closed='lifecycle_app_close_returned' in stages
     completed='lifecycle_child_main_completed' in stages
     physics=next((x for x in seen if x['stage']=='lifecycle_physics_completed'),None)
-    passed=reason is None and code==0 and closed and completed and (mode=='app-only' or physics is not None)
+    passed=normal_process_exit(reason,code,stages,mode,physics)
     result=dict(mode=mode,passed=passed,return_code=code,stop_reason=reason,
                 wall_s=round(time.monotonic()-started,3),app_initialized=initialized,
                 normal_close_returned=closed,child_main_completed=completed,
+                normal_process_exit_verified=passed,
+                context_cleanup_completed='lifecycle_context_cleanup_completed' in stages,
                 last_phase=stages[-1] if stages else None,physics=physics,
                 training_updates=0,robot_loaded=False,sensor_loaded=False)
     event('lifecycle_case_result',**result)

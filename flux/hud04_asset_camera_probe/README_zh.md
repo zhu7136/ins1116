@@ -8,6 +8,10 @@
 `python lifecycle_probe.py --execute-probe` 后，在同一个 GPU 任务中依次启动两个独立子进程：
 仅 AppLauncher，以及不加载机器人或传感器的 SimulationContext（3 步）。
 两者均调用正常的 `app.close(wait_for_replicator=False)`，分别记录返回和进程退出。
+`app.close` 可能直接正常结束解释器，不一定返回 Python；必须以未触发看门狗、
+初始化和关闭入口标记齐全且退出码为 0 判定进程正常退出，不能强制要求返回后的标记。
+创建过物理上下文的程序先调用公开生命周期 API `sim.clear_instance()`，
+解除 IsaacLab standalone STOP 回调，再关闭应用；不修改库内私有属性或强制退出解释器。
 每个子进程初始化上限 90 秒、关闭上限 30 秒、总上限 120 秒，无自动重试。
 截止后终止子进程只用于止损，**不算正常退出通过**；工作进程限时不是平台总费用硬上限。
 CPU 检查：`python -m unittest -v test_cpu.py test_lifecycle_cpu.py`。

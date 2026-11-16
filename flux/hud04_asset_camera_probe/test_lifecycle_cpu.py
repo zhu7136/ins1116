@@ -1,9 +1,24 @@
 """CPU-only validation of diagnostic controls, not Isaac runtime proof."""
 import json,subprocess,sys,unittest
 from pathlib import Path
-from lifecycle_probe import deadline,phases,MODES
+from lifecycle_probe import deadline,phases,MODES,normal_process_exit
 
 class LifecycleTests(unittest.TestCase):
+    def test_close_can_exit_without_returning(self):
+        stages=['lifecycle_app_initialized','lifecycle_app_closing']
+        self.assertTrue(normal_process_exit(None,0,stages,'app-only',None))
+        self.assertFalse(normal_process_exit(None,0,stages,'empty-physics',None))
+
+    def test_watchdog_zero_exit_still_fails(self):
+        stages=['lifecycle_app_initialized','lifecycle_app_closing']
+        self.assertFalse(normal_process_exit('normal_shutdown_deadline',0,stages,'app-only',None))
+        self.assertFalse(normal_process_exit(None,1,stages,'app-only',None))
+
+    def test_public_context_cleanup_precedes_app_close(self):
+        for name in ['lifecycle_probe.py','probe.py']:
+            text=Path(__file__).with_name(name).read_text()
+            self.assertLess(text.index('sim.clear_instance()'),text.index('app.close(wait_for_replicator=False)'))
+
     def test_plan_no_simulator(self):
         p=subprocess.run([sys.executable,str(Path(__file__).with_name('lifecycle_probe.py'))],
                          capture_output=True,text=True,check=True,timeout=5)
