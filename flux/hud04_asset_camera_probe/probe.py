@@ -32,11 +32,14 @@ def main(args):
     args.output.mkdir(parents=True,exist_ok=False)
     os.environ['HUMANOID_DESCRIPTION_DIR']=str(ROOT/'humanoid-description')
     os.environ['HUD04_CAMERA_PROFILE']='sim_chest_35deg_v1'
+    # RayCasterCamera uses Warp/CUDA, not RTX or Replicator image rendering.
+    # False alone does not override ENABLE_CAMERAS=1 in AppLauncher2.3.2.
+    os.environ['ENABLE_CAMERAS']='0'
     # This isolated probe does not import instinctlab.__init__/task registry.
     # No motion folder or instinct_rl installation is needed.
     event('isaac_initialization_started')
     from isaaclab.app import AppLauncher
-    launcher=AppLauncher(headless=True,enable_cameras=True,device=args.device)
+    launcher=AppLauncher(headless=True,enable_cameras=False,device=args.device)
     app=launcher.app
     try:
         import numpy as np
@@ -98,7 +101,7 @@ def main(args):
         for step in range(args.steps):
             if not app.is_running():raise RuntimeError('Simulator stopped before requested steps')
             robot.set_joint_position_target(target);robot.write_data_to_sim()
-            sim.step();robot.update(.005);camera.update(.005)
+            sim.step(render=False);robot.update(.005);camera.update(.005)
             pos,quat=head_relative()
             check_head_zero(pos[0].cpu().tolist(),quat[0].cpu().tolist())
             max_head_translation=max(max_head_translation,float((pos-refpos).abs().max()))
@@ -124,6 +127,9 @@ def main(args):
             raw_depth_shape=[1,27,48,1],min_valid_target_fraction=min(valid_fractions),
             unique_sensor_frames=len(set(camera_frames)),head_zero_pose_verified=True,
             physics_steps=args.steps,physics_dt_s=.005,fixed_base_diagnostic=True,
+            simulation_device=str(sim.device),
+            gpu_cuda_execution_verified=torch.device(sim.device).type=='cuda' and torch.cuda.is_available(),
+            rtx_camera_rendering_enabled=False,
             camera_backend='IsaacLab_standard_RayCasterCamera',camera_calibration_validated=False,
             limitations=['Not InstinctLab custom grouped/noisy depth pipeline or18x32policyinput',
               'No body occlusion/terrain/contact/balance/actuator-load assessment',

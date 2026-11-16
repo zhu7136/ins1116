@@ -21,7 +21,7 @@ python preflight.py
 python worker.py
 ```
 
-发布前25项CPU测试通过，包含纯CPU伪子进程的正常退出及关闭超时回传测试；这不是GPU运行结果。`manifest.json`记录实际发布输入的SHA256。
+发布前26项CPU测试通过，包含纯CPU伪子进程的正常退出及关闭超时回传测试；这不是GPU运行结果。`manifest.json`记录实际发布输入的SHA256。
 
 ## 有界GPU探针
 
@@ -40,6 +40,7 @@ python worker.py --execute-probe --isaac-launcher /isaac-sim/python.sh
 启动器路径是候选，不保证所有镜像相同。无启动器即失败，不在线安装或升级Torch。
 最多120个0.005秒物理步；初始化300秒、子进程540秒超时停止，不自动重试。
 仿真器关闭阶段另设30秒上限，不延长540秒总上限。本RayCaster探针没有Replicator写出作业，关闭使用`app.close(wait_for_replicator=False)`，不跳过正常清理。该参数已对照IsaacSim v5.1.0官方源码（commit `47d886f2858d1ceed556b21c88927aa67bc81c12`，`source/extensions/isaacsim.simulation_app/isaacsim/simulation_app/simulation_app.py`）；这不代表关闭卡住的根因已确定或修复已通过GPU实测。
+本探针仅使用Warp/CUDA射线深度，不使用RTX图像相机：显式设置`ENABLE_CAMERAS=0`、`enable_cameras=False`并用`sim.step(render=False)`推进物理；相机仍通过`camera.update`更新射线。此改动用于单独验证关闭问题是否与不需要的渲染流程有关，不是对根因的既定结论。报告显式记录CUDA设备与RTX开关。
 worker看门狗不是平台费用或clone/启动/释放时长的硬上限。
 本仓库的Flux入口为`gm-run ins1116/flux/hud04_asset_camera_probe/worker.py --execute-probe`。完整平台日志已确认克隆目录名为`ins1116`，不能添加GitHub所有者目录。
 

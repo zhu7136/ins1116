@@ -8,7 +8,7 @@
   "verification": "CPU tests only; no Isaac/GPU proof",
   "files": {
     "API_COMPATIBILITY_REVIEW.md": "4889bdc4a272858b6bab201670fc453a39522769d042d6095729f41bc3177076",
-    "README_zh.md": "8a4695add27e1c35fed70a45d5060205ee47d0a6201ba3b1cca35b77d07f3315",
+    "README_zh.md": "ff6178bf65fc64dc24e36f72ebf21a585dd24af1645fabdfd3057d855519074f",
     "SOURCE_MANIFEST.json": "5ba4798ee4b5e588c8a00390824878f12c9425809790a0785b59f4d13d7b1963",
     "asset_config.py": "4fdb08b4aa352893a6feef5afb6deb8ec273e1fbdcfc2d67ac0e691729321021",
     "camera_mount.py": "02695e048a19f4d62d9c2798c9810b48570f482357893f79e0bfb27474bc8e2f",
@@ -49,9 +49,9 @@
     "licenses/InstinctLab-LICENSE": "0afbf192c4dfb4f8ffd7783eb61a8829d1ebee17d3f2b1dc1b0bdb62838f2a93",
     "licenses/humanoid-description-LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
     "preflight.py": "ffa6a0d060fba3f75ab8b455138109f70c39c968075d428680165fdee8243085",
-    "probe.py": "98b9224c3864840dab6cd390e2a7c64c3691b94eacec536d60308bc0f093cd52",
+    "probe.py": "2c8e9d87513b6a8120cc32d9f1568fcadc783bd3e3f0dc23bcf6eea523c6c588",
     "probe_checks.py": "1df08ffd55c5153f4481df10a2be0876b55816ebfad151a627d019438b53109d",
-    "test_cpu.py": "c5a0235e3b9219903f35d74867cc500b64cbf99736d40f2f624ecb3b831fa74a",
+    "test_cpu.py": "f34868b4dce45cc7baea44a571d0abd63836b4c1178c5780a38479bd0c533e13",
     "worker.py": "b7b24ba4cb907f8e936e38caee227f9151184820858b244c9ad80de751285b2a"
   }
 }

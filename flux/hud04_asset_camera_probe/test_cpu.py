@@ -12,6 +12,13 @@ from evidence_transport import encode_evidence,decode_evidence,parse_evidence_lo
 ROOT=Path(__file__).resolve().parent
 
 class PackageTests(unittest.TestCase):
+    def test_warp_depth_probe_does_not_enable_rtx_camera(self):
+        text=(ROOT/'probe.py').read_text()
+        self.assertIn("os.environ['ENABLE_CAMERAS']='0'",text)
+        self.assertIn('AppLauncher(headless=True,enable_cameras=False',text)
+        self.assertIn('sim.step(render=False)',text)
+        self.assertIn('camera.update(.005)',text)
+
     def test_diagnostic_tail_bounded(self):
         self.assertEqual(len(diagnostic_tail('x'*40000)),8192)
 
