@@ -3,13 +3,22 @@ import contextlib,io,json,subprocess,sys,unittest
 from pathlib import Path
 from unittest.mock import patch
 import preflight
-from worker import deadline_reason
+from worker import deadline_reason,diagnostic_tail
 from probe_checks import HEAD_ZERO_TRANSLATIONS,check_head_zero,require_finite_values
 from evidence_transport import encode_evidence,decode_evidence
 
 ROOT=Path(__file__).resolve().parent
 
 class PackageTests(unittest.TestCase):
+    def test_diagnostic_tail_bounded(self):
+        self.assertEqual(len(diagnostic_tail('x'*40000)),8192)
+
+    def test_diagnostic_tail_redaction(self):
+        text=diagnostic_tail('api_key=synthetic_secret https://example.org/private?sig=synthetic_secret password=synthetic_secret')
+        self.assertNotIn('synthetic_secret',text)
+        self.assertNotIn('https://',text)
+        self.assertIn('[REDACTED]',text)
+
     def test_integrity_and_robot(self):
         with contextlib.redirect_stdout(io.StringIO()):report=preflight.audit(ROOT)
         self.assertEqual(report['body_dof'],29);self.assertEqual(report['mesh_count'],32)

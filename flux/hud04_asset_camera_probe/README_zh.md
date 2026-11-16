@@ -21,7 +21,7 @@ python preflight.py
 python worker.py
 ```
 
-发布前16项CPU测试通过；这不是GPU运行结果。`manifest.json`记录实际发布输入的SHA256。
+发布前18项CPU测试通过；这不是GPU运行结果。`manifest.json`记录实际发布输入的SHA256。
 
 ## 有界GPU探针
 
@@ -40,11 +40,11 @@ python worker.py --execute-probe --isaac-launcher /isaac-sim/python.sh
 启动器路径是候选，不保证所有镜像相同。无启动器即失败，不在线安装或升级Torch。
 最多120个0.005秒物理步；初始化300秒、子进程540秒超时停止，不自动重试。
 worker看门狗不是平台费用或clone/启动/释放时长的硬上限。
-平台入口可调用`gm-run InstinctLab/flux/hud04_asset_camera_probe/worker.py --execute-probe`，最终路径以平台回读为准。
+本仓库的Flux入口为`gm-run ins1116/flux/hud04_asset_camera_probe/worker.py --execute-probe`。完整平台日志已确认克隆目录名为`ins1116`，不能添加GitHub所有者目录。
 
 ## 结果
 
-成功后保存`output/report.json`、`output/depth_samples.npz`及`worker_result.json`；原始子进程日志保留在worker本地。
+成功后保存`output/report.json`、`output/depth_samples.npz`及`worker_result.json`；原始子进程日志保留在worker本地。worker每30秒输出一次进度，失败时将脱敏后的最多8192字符子进程日志尾部输出到平台日志。
 只有正常退出且验收通过才报告`probe_passed=true`；`training_ready`始终为false。
 三个结果文件还会作为带整体与逐文件SHA256的JSON分块输出到应用日志；原始文件总量上限128KiB，不导出其他文件。
 
