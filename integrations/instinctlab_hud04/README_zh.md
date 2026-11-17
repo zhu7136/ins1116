@@ -185,3 +185,43 @@ python -B audit_motion.py --dataset /path/to/downloaded/folder \
 按 SHA256 排除拿到的是旧版。若当前文件确实是唯一版本，则先约定有界的 HUD04 重定向
 与接触修复方案及求解预算，再生成新候选，不默认续用历史 LP/QP 配额。
 目前未启动任何新的 GPU 任务、求解或 PPO，也没有修改原有参考门禁。
+
+## TerrainMotion 接入前的只读契约检查
+
+新增 `audit_terrain_bundle.py`，不安装/导入 IsaacLab，不调用求解器，也不注册新的
+Terrain 任务。它将加载器静态兼容性与动作数值验收分开报告，不能替代参考动作门禁。
+
+对固定上游提交的 `terrain_motion.py::match_scene` 与
+`mesh_terrains.py::motion_matched_terrain` 的源码核对发现：
+
+- 网格按 `terrains` 列表位置选择，场景来源匹配也使用该位置作为字典键。
+  因此本版本要求按列表顺序使用整数 `terrain_id: 0, 1, ...`。
+  仅检查动作与地形 ID 能互相引用还不够；不能照搬配置注释里的任意字符串 ID。
+- 动作采样权重必须有限、非负且总量为正；工具拒绝布尔值和数字字符串，避免隐式转换。
+- 网格先按 `[-size[0]/2,size[0]/2] × [-size[1]/2,size[1]/2]` 裁剪，随后根据边缘高度
+  进行平移。不能只加载原 STL 后宣称场景中保持了全部地形或原点对齐。
+- 通用感知环境的原始 tile size 是 `(9,12)`。本工具必须显式传入尺寸，
+  不将它默认为 HUD04 已验收地形尺寸，也不自动调整它。
+
+```sh
+python -B -m unittest -v test_cpu.py test_motion_audit.py test_terrain_bundle_audit.py
+python -B audit_terrain_bundle.py --dataset /path/to/downloaded/folder \
+  --metadata metadata_kneelClimbStep1.yaml \
+  --urdf "$HUMANOID_DESCRIPTION_DIR/HU_D04_description/urdf/HU_D04_01_fixed_head_body_collision.urdf" \
+  --tile-size 9 12 --report /path/to/new_terrain_audit.json
+```
+
+对已提供 Step1 配对数据的检查：静态文件/ID/权重契约通过，但动作数值门禁仍失败。
+假定原始数据使用同一坐标与单位，8087 个三角面中有 59 个含裁剪框外顶点，
+其中 33 个完全位于同一裁剪平面之外；997 帧根位置的 XY 均在框内。
+根位置在框内不说明手足没有越界，更不证明接触成立。这些计数不是精确裁剪后网格，
+未计算边缘高度偏移，也未证明地形单位、根坐标或物理回放兼容。
+
+`TERRAIN_REVIEW_20261117.json` 记录配对文件哈希、上游来源和上述结果；
+七个源文件哈希再次全部一致，无数据重写。默认 `metadata.yaml` 仍引用缺失的 Step6，
+工具不会代为改成 Step1。现有 Plane 只允许足部支撑，不应直接加载攀爬数据。
+
+当前合计 **58 项 CPU 软件测试通过**（含 14 项新 Terrain 检查测试）。
+没有提交 GPU、调用求解器、运行 PPO 或改变 `accepted` 状态；原有六文件 overlay 和
+已验证探针不变。下一步仍需确认原调试模型、根坐标及既有约束；若必须新做重定向，
+先约定有界求解方案/预算，而不是以本工具通过作为自动开跑许可。
