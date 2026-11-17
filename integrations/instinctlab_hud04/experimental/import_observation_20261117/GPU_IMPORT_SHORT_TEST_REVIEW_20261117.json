@@ -1,0 +1,62 @@
+{
+  "review_date_utc": "2026-11-17",
+  "scope": "Standalone two-environment HUD04 imported USD observation, NOT full perceptive task/Terrain/retargeting/PPO",
+  "new_gpu_tasks_this_continuation": 2,
+  "gpu_count_per_task": 1,
+  "child_deadline_seconds": 240,
+  "platform_billing_hard_deadline_verified": false,
+  "old_completed_tasks_not_resubmitted": ["TASK_20261116_732", "TASK_20261117_016"],
+  "live_and_duplicate_checks_performed_before_new_submissions": true,
+  "tasks": [
+    {
+      "task_id": "TASK_20261117_339",
+      "actual_commit": "0acf47c020418ae1e0aaf1809c636384733526c0",
+      "terminal_status_code_read_back": "6",
+      "platform_start_time_CST": "2026-11-17 21:16:45",
+      "platform_end_time_CST": "2026-11-17 21:17:09",
+      "observation_completed": false,
+      "signed_log_bytes": 128670,
+      "signed_log_sha256": "a6d85d5a3bdd419e930a0e585d30d67b077fd20302ebc8c148aabbef080908bf",
+      "diagnosis": "Supervisor RLIMIT_FSIZE=8MiB incorrectly applied to USD conversion assets, NOT just logs; USD reports File too large and corrupt/truncated layer with table offset25896964 vs file size8388608.",
+      "responsibility": "New supervisor implementation bug; not evidence of bad original robot geometry",
+      "followup": "Replaced process-global file limit with bounded stdout pipe/selectors; preserved original model and added 26MiB synthetic regular-file regression test. Fix commit6f0f7e11 was separately published and tested."
+    },
+    {
+      "task_id": "TASK_20261117_341",
+      "actual_commit": "6f0f7e11fbd9a2472d03670689b8d49acd8f76b1",
+      "terminal_status_code_read_back": "6",
+      "platform_start_time_CST": "2026-11-17 21:22:05",
+      "platform_end_time_CST": "2026-11-17 21:26:16",
+      "observation_completed": false,
+      "signed_log_bytes": 136596,
+      "signed_log_sha256": "9c37ac8832e4f0e1ddfbe980c335d1b920e7a29813e03b21cb83ecb3a66ac662",
+      "worker_stop_reason": "child_wall_deadline",
+      "worker_child_wall_seconds": 240.5185973905027,
+      "worker_direct_child_reaped": true,
+      "worker_return_code": 0,
+      "return_code_zero_is_not_completion": true,
+      "worker_log_bytes": 9485,
+      "worker_log_sha256": "db61ebec5f6cd2e03c6c10de75c9b947aca4d8029afff0b864e2a86282808bd9",
+      "runtime_report_present": false,
+      "complete_snapshots_recovered": 0,
+      "diagnosis": "240-second child watchdog fired; complete snapshot evidence unavailable. Diagnostic contains importer left/right hip-axis warnings around14seconds, but no phase markers sufficient to identify exact blocked call.",
+      "not_proven": ["Asset import or clone completion", "Physics initialization completion", "Exactly which call blocked", "Shader cache or kvdb warnings as the actual cause", "PhysX actual pair filters", "Cooked collider geometry"],
+      "followup": "Prepared phase markers and periodic own-process Python stack dumps within the existing child-log budget. This instrumented version has NOT run on GPU. Do not clear shared caches or extend budgets blindly."
+    }
+  ],
+  "cpu_validation": {
+    "stream_fix_tests_passed": 15,
+    "subsequent_instrumentation_tests_passed": 17,
+    "synthetic_fixture_results_are_not_robot_physics_acceptance": true,
+    "real_bundle_manifest_head_fixed_29_joint_offline_check_included": true
+  },
+  "source_model_changes": 0,
+  "source_motion_changes": 0,
+  "solver_calls": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false,
+  "training_ready": false,
+  "unresolved_provenance": ["Actual source exporter/command/generating URDF binding", "Source named root and quaternion convention", "World and STL units/alignment", "Auditable hand/foot/knee material-point support annotations"],
+  "signed_urls_or_credentials_published": false,
+  "third_new_gpu_task_submitted": false
+}

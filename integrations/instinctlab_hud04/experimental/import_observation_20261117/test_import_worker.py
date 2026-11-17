@@ -5,6 +5,16 @@ from import_observation_probe import plan,verify_bundle
 
 ROOT=Path(__file__).resolve().parent
 class ImportWorkerTests(unittest.TestCase):
+    def test_phase_marker_is_not_success_receipt(self):
+        import contextlib,io
+        from import_observation_probe import record_phase
+        stream=io.StringIO()
+        with contextlib.redirect_stdout(stream):record_phase('before_scene_import')
+        row=json.loads(stream.getvalue());self.assertEqual(row['phase'],'before_scene_import')
+        self.assertFalse(row['proves_import_or_collision_acceptance']);self.assertFalse(row['training_ready'])
+    def test_unknown_phase_marker_rejected(self):
+        from import_observation_probe import record_phase
+        with self.assertRaises(ValueError):record_phase('fake_accepted_motion')
     def run_fixture(self,mode,seconds=2):
         out=ROOT/'test_outputs'/uuid.uuid4().hex
         result=run_child([sys.executable,str(ROOT/'fixture_child.py'),str(out),mode],out,seconds=seconds)
