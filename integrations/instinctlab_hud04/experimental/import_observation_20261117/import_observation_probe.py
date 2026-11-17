@@ -15,6 +15,11 @@ def record_phase(phase):
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 
+def app_launch_options():
+    # AppLauncher v2.3.2 supports this SimulationApp option. Fast shutdown can
+    # terminate Python inside close(), before our post-close report is written.
+    return dict(headless=True,enable_cameras=False,device='cuda:0',fast_shutdown=False)
+
 def close_probe(app,sim):
     """Do not call SimulationContext.stop(): its app-stop callback can render-loop.
 
@@ -76,7 +81,7 @@ def main(args):
     # It records call sites (not values) within the already bounded child log.
     faulthandler.enable();faulthandler.dump_traceback_later(60,repeat=True)
     record_phase('before_app')
-    app=AppLauncher(headless=True,enable_cameras=False,device='cuda:0').app
+    app=AppLauncher(**app_launch_options()).app
     record_phase('after_app')
     sim=None;report=None;phases=[]
     try:

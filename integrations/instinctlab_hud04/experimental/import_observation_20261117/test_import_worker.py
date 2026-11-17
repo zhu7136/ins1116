@@ -5,6 +5,12 @@ from import_observation_probe import plan,verify_bundle
 
 ROOT=Path(__file__).resolve().parent
 class ImportWorkerTests(unittest.TestCase):
+    def test_explicit_nonfast_app_shutdown_preserves_postclose_reporting(self):
+        from import_observation_probe import app_launch_options
+        options=app_launch_options()
+        self.assertIs(options['fast_shutdown'],False)
+        self.assertIs(options['enable_cameras'],False)
+        self.assertIs(options['headless'],True);self.assertEqual(options['device'],'cuda:0')
     def test_cleanup_never_calls_stop(self):
         from import_observation_probe import close_probe
         calls=[]
