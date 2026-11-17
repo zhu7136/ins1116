@@ -1,0 +1,8 @@
+{
+  "stage": "UNVALIDATED_INDEPENDENT_CONTACT_INSTRUMENT",
+  "files": {
+    "contact_instrument.py": "dd7e984911be5679fe670533bbb93b1742414f78b153e7c1858f71610a244d9a",
+    "terrain_contact_bridge.py": "41e142c8d8d50cb26071d50c61ce7ac631965f3c01ba2862729be4f6874f2252",
+    "contact_instrument_worker.py": "3a788b7bd6fbe231c9254f2d4f188aba4d23b78d7f98d2af8c8aa126ce2082ec"
+  }
+}
