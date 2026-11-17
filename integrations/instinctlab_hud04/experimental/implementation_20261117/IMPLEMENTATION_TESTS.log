@@ -1,0 +1,30 @@
+test_actual_adapter_dispatch_reorders (test_implementation.ImplementationTests.test_actual_adapter_dispatch_reorders) ... ok
+test_actual_adapter_source_clock_uses_reset_stub (test_implementation.ImplementationTests.test_actual_adapter_source_clock_uses_reset_stub) ... ok
+test_actual_conditional_contact_adapter (test_implementation.ImplementationTests.test_actual_conditional_contact_adapter) ... ok
+test_all_overlay_sources_compile (test_implementation.ImplementationTests.test_all_overlay_sources_compile) ... ok
+test_duplicate_names (test_implementation.ImplementationTests.test_duplicate_names) ... ok
+test_existing_real_fit_independent_residual (test_implementation.ImplementationTests.test_existing_real_fit_independent_residual) ... ok
+test_head_rejected (test_implementation.ImplementationTests.test_head_rejected) ... ok
+test_joint_fit_not_reference (test_implementation.ImplementationTests.test_joint_fit_not_reference) ... ok
+test_lp_couples_time_not_pointwise_clip (test_implementation.ImplementationTests.test_lp_couples_time_not_pointwise_clip) ... ok
+test_lp_preserves_feasible_input (test_implementation.ImplementationTests.test_lp_preserves_feasible_input) ... ok
+test_named_order (test_implementation.ImplementationTests.test_named_order) ... ok
+test_no_angle_clip (test_implementation.ImplementationTests.test_no_angle_clip) ... ok
+test_no_frame_trimming (test_implementation.ImplementationTests.test_no_frame_trimming) ... ok
+test_no_quaternion_normalization (test_implementation.ImplementationTests.test_no_quaternion_normalization) ... ok
+test_no_resampling (test_implementation.ImplementationTests.test_no_resampling) ... ok
+test_no_speed_clip (test_implementation.ImplementationTests.test_no_speed_clip) ... ok
+test_nonfinite (test_implementation.ImplementationTests.test_nonfinite) ... ok
+test_pickle_rejected (test_implementation.ImplementationTests.test_pickle_rejected) ... ok
+test_real_runtime_order_regression (test_implementation.ImplementationTests.test_real_runtime_order_regression) ... ok
+test_support_accepts_explicit_empty_schedules (test_implementation.ImplementationTests.test_support_accepts_explicit_empty_schedules) ... ok
+test_support_boundaries_fail_closed (test_implementation.ImplementationTests.test_support_boundaries_fail_closed) ... ok
+test_support_rejects_overlap (test_implementation.ImplementationTests.test_support_rejects_overlap) ... ok
+test_support_rejects_unreviewed (test_implementation.ImplementationTests.test_support_rejects_unreviewed) ... ok
+test_support_requires_all_six_links (test_implementation.ImplementationTests.test_support_requires_all_six_links) ... ok
+test_terrain_bundle_binds_checksums_and_rejects_escape (test_implementation.ImplementationTests.test_terrain_bundle_binds_checksums_and_rejects_escape) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 2.704s
+
+OK

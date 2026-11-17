@@ -1,0 +1,42 @@
+test_existing_different_file_never_overwritten (test_cpu.InstallerTests.test_existing_different_file_never_overwritten) ... ok
+test_identical_existing_file_is_noop (test_cpu.InstallerTests.test_identical_existing_file_is_noop) ... ok
+test_modified_audited_source_rejected (test_cpu.InstallerTests.test_modified_audited_source_rejected) ... ok
+test_plan_only_writes_nothing (test_cpu.InstallerTests.test_plan_only_writes_nothing) ... ok
+test_symlink_destination_rejected (test_cpu.InstallerTests.test_symlink_destination_rejected) ... ok
+test_wrong_upstream_commit_rejected (test_cpu.InstallerTests.test_wrong_upstream_commit_rejected) ... ok
+test_all_overlay_sources_compile (test_cpu.IntegrationSourceTests.test_all_overlay_sources_compile) ... ok
+test_no_g1_asset_or_environment_inheritance (test_cpu.IntegrationSourceTests.test_no_g1_asset_or_environment_inheritance) ... ok
+test_plan_entrypoint_has_no_simulator_import (test_cpu.IntegrationSourceTests.test_plan_entrypoint_has_no_simulator_import) ... ok
+test_reference_loader_preserves_native_rate_and_samples (test_cpu.IntegrationSourceTests.test_reference_loader_preserves_native_rate_and_samples) ... ok
+test_registration_is_lazy_and_additive (test_cpu.IntegrationSourceTests.test_registration_is_lazy_and_additive) ... ok
+test_runner_is_one_iteration_no_resume (test_cpu.IntegrationSourceTests.test_runner_is_one_iteration_no_resume) ... ok
+test_synthetic_postinit_assignments (test_cpu.IntegrationSourceTests.test_synthetic_postinit_assignments) ... ok
+test_29_body_zero_head (test_cpu.ModelTests.test_29_body_zero_head) ... ok
+test_hand_anchors_are_downstream_roll (test_cpu.ModelTests.test_hand_anchors_are_downstream_roll) ... ok
+test_missing_delivery_refused (test_cpu.ModelTests.test_missing_delivery_refused) ... ok
+test_reuse_three_baseline_modules (test_cpu.ModelTests.test_reuse_three_baseline_modules) ... ok
+test_semantic_keys_exist_and_unique (test_cpu.ModelTests.test_semantic_keys_exist_and_unique) ... ok
+test_sim_camera_is_explicit_and_not_calibration (test_cpu.ModelTests.test_sim_camera_is_explicit_and_not_calibration) ... ok
+test_bad_framerate (test_cpu.ReferenceTests.test_bad_framerate) ... ok
+test_checksum_tampering (test_cpu.ReferenceTests.test_checksum_tampering) ... ok
+test_duplicate_files (test_cpu.ReferenceTests.test_duplicate_files) ... ok
+test_duplicate_joint_names (test_cpu.ReferenceTests.test_duplicate_joint_names) ... ok
+test_escape_path (test_cpu.ReferenceTests.test_escape_path) ... ok
+test_head_action_column (test_cpu.ReferenceTests.test_head_action_column) ... ok
+test_joint_limit_violation (test_cpu.ReferenceTests.test_joint_limit_violation) ... ok
+test_joint_velocity_violation (test_cpu.ReferenceTests.test_joint_velocity_violation) ... ok
+test_missing_review_evidence (test_cpu.ReferenceTests.test_missing_review_evidence) ... ok
+test_nan_rejected (test_cpu.ReferenceTests.test_nan_rejected) ... ok
+test_nonunit_quaternion (test_cpu.ReferenceTests.test_nonunit_quaternion) ... ok
+test_pickle_object_arrays_rejected (test_cpu.ReferenceTests.test_pickle_object_arrays_rejected) ... ok
+test_reordered_joint_columns (test_cpu.ReferenceTests.test_reordered_joint_columns) ... ok
+test_shape_mismatch (test_cpu.ReferenceTests.test_shape_mismatch) ... ok
+test_synthetic_numerical_contract (test_cpu.ReferenceTests.test_synthetic_numerical_contract) ... ok
+test_unaccepted_status_rejected (test_cpu.ReferenceTests.test_unaccepted_status_rejected) ... ok
+test_unreviewed_extra_motion (test_cpu.ReferenceTests.test_unreviewed_extra_motion) ... ok
+test_wrong_robot_root_and_units (test_cpu.ReferenceTests.test_wrong_robot_root_and_units) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 0.467s
+
+OK

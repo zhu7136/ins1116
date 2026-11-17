@@ -1,0 +1,13 @@
+{
+  "parent": "2e0506721c1cae6a9bd117899db1b3e48192b0ba",
+  "tree": "70ca4a87a0ea3b6d8a99d7564b9ce4c22fb669cc",
+  "files": {
+    "integrations/instinctlab_hud04/install_overlay.py": "364d1074d94f0d7a8cf83f189700e75298646fe8",
+    "integrations/instinctlab_hud04/overlay/instinctlab/assets/hud04.py": "8703a356b20d4a6ce0bfaa8f93e862fe5229437c",
+    "integrations/instinctlab_hud04/overlay/instinctlab/assets/hud04_contract.py": "d13f50372edc5d768ea27863c34c261be2252694",
+    "integrations/instinctlab_hud04/overlay/instinctlab/tasks/shadowing/perceptive/config/hud04/__init__.py": "7ca834945a7616a892dfd0e85bed6305ec3e2694",
+    "integrations/instinctlab_hud04/overlay/instinctlab/tasks/shadowing/perceptive/config/hud04/agents/__init__.py": "c524f53d20308d068336506f01a8d943bcf9a848",
+    "integrations/instinctlab_hud04/overlay/instinctlab/tasks/shadowing/perceptive/config/hud04/agents/instinct_rl_ppo_cfg.py": "e465c40f2f9dd6beba3fcfd96e2243d6827c8024",
+    "integrations/instinctlab_hud04/overlay/instinctlab/tasks/shadowing/perceptive/config/hud04/perceptive_shadowing_cfg.py": "526bcd9d2d8e60886aa28f0687ff18b7ebec29f6"
+  }
+}

@@ -40,7 +40,17 @@ def plan(upstream):
         if target.exists() and target.read_bytes() != raw:
             raise FileExistsError("Refuse to overwrite existing file: " + str(relative))
         files.append((source, target, target.exists()))
-    if len(files) != 6:
+    expected = {
+        "assets/hud04.py", "assets/hud04_contract.py", "assets/hud04_motion.py",
+        "motion_reference/motion_files/hud04_motion.py",
+        "tasks/shadowing/perceptive/config/hud04/__init__.py",
+        "tasks/shadowing/perceptive/config/hud04/perceptive_shadowing_cfg.py",
+        "tasks/shadowing/perceptive/config/hud04/terrain_shadowing_cfg.py",
+        "tasks/shadowing/perceptive/config/hud04/conditional_contacts.py",
+        "tasks/shadowing/perceptive/config/hud04/agents/__init__.py",
+        "tasks/shadowing/perceptive/config/hud04/agents/instinct_rl_ppo_cfg.py",
+    }
+    if {str(t.relative_to(package)) for _, t, _ in files} != expected:
         raise ValueError("Unexpected overlay file set")
     return files
 

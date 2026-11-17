@@ -1,0 +1,12 @@
+{
+  "run_url": null,
+  "run_id": "w8qv59ak",
+  "server_readback_verified": false,
+  "logging_mode": "offline_pending_sync_invalid_audience",
+  "child_exit_code": 0,
+  "child_reaped": true,
+  "gpu_submissions": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false,
+  "training_ready": false
+}

@@ -79,3 +79,17 @@ class HUD04PerceptivePlanePPORunnerCfg(InstinctRlOnPolicyRunnerCfg):
         # No silent resume into a differently ordered/semantically different G1 model.
         if self.resume or self.load_run is not None:
             raise ValueError("HUD04 integration candidate does not accept checkpoint resume")
+
+
+@configclass
+class HUD04PerceptiveTerrainPPORunnerCfg(HUD04PerceptivePlanePPORunnerCfg):
+    experiment_name = "hud04_perceptive_terrain"
+
+    def __post_init__(self):
+        super().__post_init__()
+        # This remains only the bounded one-update plumbing configuration.
+        # Construction itself does not launch PPO or assert dynamic readiness.
+        if self.max_iterations != 1 or self.num_steps_per_env != 24:
+            raise ValueError("Terrain integration smoke is bounded to 24 steps / one update")
+        if self.algorithm.num_learning_epochs != 1 or self.algorithm.num_mini_batches != 1:
+            raise ValueError("Terrain smoke requires one epoch and one minibatch")

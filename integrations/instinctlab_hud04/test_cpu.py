@@ -15,7 +15,7 @@ from unittest.mock import patch
 import numpy as np
 
 ROOT = Path(__file__).resolve().parent
-DELIVERY = ROOT.parents[1]
+DELIVERY = Path(os.environ.get("HUD04_DELIVERY_ROOT", str(ROOT.parents[1])))
 OVERLAY = ROOT / "overlay/instinctlab"
 os.environ["HUD04_DELIVERY_ROOT"] = str(DELIVERY)
 URDF = DELIVERY / "flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/urdf/HU_D04_01_fixed_head_body_collision.urdf"
@@ -175,7 +175,7 @@ class IntegrationSourceTests(unittest.TestCase):
         tree = ast.parse(CFG.read_text())
         function = next(n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == "_motion_cfg")
         ns = dict(os=NS(environ={"HUD04_REFERENCE_MANIFEST": "SYNTHETIC-TEST-ONLY"}),
-                  validate_reference_manifest=lambda *args: (Path("synthetic-reviewed-directory"), []),
+                  validate_reference_manifest=lambda *args, **kwargs: (Path("synthetic-reviewed-directory"), []),
                   HUD04_URDF=str(URDF), ROOT_LINK=C.ROOT_LINK, KEY_LINKS=C.KEY_LINKS,
                   MotionReferenceManagerCfg=lambda **kw: NS(**kw),
                   AmassMotionCfg=lambda **kw: NS(**kw))
@@ -190,7 +190,7 @@ class IntegrationSourceTests(unittest.TestCase):
 
     def test_all_overlay_sources_compile(self):
         files = list(OVERLAY.rglob("*.py"))
-        self.assertEqual(len(files), 6)
+        self.assertEqual(len(files), 10)
         for path in files: compile(path.read_bytes(), str(path), "exec")
 
     def test_registration_is_lazy_and_additive(self):
@@ -200,7 +200,9 @@ class IntegrationSourceTests(unittest.TestCase):
         with patch.dict(sys.modules, {"gymnasium": fake}):
             load("synthetic_registration", path)
         self.assertEqual([c["id"] for c in calls], ["Instinct-Perceptive-Shadowing-HUD04-Plane-v0",
-            "Instinct-Perceptive-Shadowing-HUD04-Plane-Play-v0"])
+            "Instinct-Perceptive-Shadowing-HUD04-Plane-Play-v0",
+            "Instinct-Perceptive-Shadowing-HUD04-Terrain-v0",
+            "Instinct-Perceptive-Shadowing-HUD04-Terrain-Play-v0"])
         self.assertTrue(all("instinct_rl_cfg_entry_point" in c["kwargs"] for c in calls))
         self.assertNotIn("isaaclab", sys.modules)
 
@@ -217,7 +219,8 @@ class IntegrationSourceTests(unittest.TestCase):
         # This is NOT an IsaacLab configclass/import or simulator validation.
         term = lambda: NS(params={"asset_cfg": NS(), "sensor_cfg": NS(), "reference_cfg": NS()})
         group = lambda: NS(**{k: term() for k in ("joint_pos", "joint_vel", "link_pos", "link_rot")})
-        cfg = NS(scene=NS(motion_reference=None, terrain=NS(), height_scanner=NS(),
+        cfg = NS(reference_acceptance_status="accepted_for_plane_replay",
+                 scene=NS(motion_reference=None, terrain=NS(), height_scanner=NS(),
                           camera=NS(offset=NS(), pattern_cfg=NS())),
                  actions=NS(joint_pos=NS()), observations=NS(policy=group(), critic=group()),
                  events=NS(**{k: term() for k in ("physics_material", "add_joint_default_pos", "base_com",
@@ -233,7 +236,7 @@ class IntegrationSourceTests(unittest.TestCase):
         names, limits = C.validate_model(URDF)
         control = C.load_verified_module("control")
         ns = {k: getattr(C, k) for k in ("ROOT_LINK", "CHEST_LINK", "KEY_LINKS", "FEET", "HANDS")}
-        ns.update(_motion_cfg=lambda: NS(), HUD04_URDF=str(URDF), HUD04_JOINT_NAMES=names,
+        ns.update(_motion_cfg=lambda *args: NS(), HUD04_URDF=str(URDF), HUD04_JOINT_NAMES=names,
                   HUD04_ACTION_SCALE={n: control.control_values(n)[3] for n in names},
                   HUD04_VISUAL_LINKS=list(C.KEY_LINKS), SceneEntityCfg=lambda *a, **kw: NS(**kw),
                   load_verified_module=C.load_verified_module, get_link_prim_targets=lambda names: list(names), os=os)
@@ -285,7 +288,7 @@ class InstallerTests(unittest.TestCase):
             return INSTALL.plan(self.upstream)
 
     def test_plan_only_writes_nothing(self):
-        self.assertEqual(len(self.plan()), 6)
+        self.assertEqual(len(self.plan()), 10)
         self.assertEqual(list(self.package.iterdir()), [self.package / "stub.py"])
 
     def test_wrong_upstream_commit_rejected(self):

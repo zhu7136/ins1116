@@ -60,7 +60,7 @@ def validate_model(path):
     return names, limits
 
 
-def validate_reference_manifest(manifest_path, urdf_path):
+def validate_reference_manifest(manifest_path, urdf_path, *, accepted_status="accepted_for_plane_replay"):
     """Only explicitly accepted, checksummed HUD04 Plane references can be loaded.
 
     Never retarget, rescale, clip, infer quaternion order, or create reference data.
@@ -68,9 +68,11 @@ def validate_reference_manifest(manifest_path, urdf_path):
     """
     path = Path(manifest_path).expanduser().resolve()
     manifest = json.loads(path.read_text())
+    if accepted_status not in ("accepted_for_plane_replay", "accepted_for_terrain_replay"):
+        raise ValueError("Unsupported accepted reference status")
     expected = dict(schema_version=1, robot="HUD04", root_link=ROOT_LINK,
                     quaternion_order="wxyz", angle_unit="rad", position_unit="m",
-                    status="accepted_for_plane_replay", model_sha256=sha256(urdf_path))
+                    status=accepted_status, model_sha256=sha256(urdf_path))
     if any(manifest.get(k) != v for k, v in expected.items()):
         raise ValueError("Reference identity/convention/acceptance mismatch")
     evidence = manifest.get("review_evidence")

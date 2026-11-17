@@ -14,17 +14,17 @@ from instinctlab.assets.hud04 import (HUD04_ACTION_SCALE, HUD04_CFG, HUD04_JOINT
 from instinctlab.assets.hud04_contract import (CHEST_LINK, FEET, HANDS, KEY_LINKS, ROOT_LINK,
                                               load_verified_module, validate_reference_manifest)
 from instinctlab.motion_reference import MotionReferenceManagerCfg
-from instinctlab.motion_reference.motion_files.amass_motion_cfg import AmassMotionCfg
+from instinctlab.motion_reference.motion_files.hud04_motion import HUD04AmassMotionCfg as AmassMotionCfg
 from instinctlab.sensors import get_link_prim_targets
 from instinctlab.tasks.shadowing.perceptive.perceptive_env_cfg import (
     PerceptiveShadowingEnvCfg, PerceptiveShadowingSceneCfg)
 
 
-def _motion_cfg():
+def _motion_cfg(accepted_status="accepted_for_plane_replay"):
     manifest = os.environ.get("HUD04_REFERENCE_MANIFEST")
     if not manifest:
         raise RuntimeError("HUD04_REFERENCE_MANIFEST is required; no fallback to G1/raw AMASS motions")
-    directory, _ = validate_reference_manifest(manifest, HUD04_URDF)
+    directory, _ = validate_reference_manifest(manifest, HUD04_URDF, accepted_status=accepted_status)
     return MotionReferenceManagerCfg(
         prim_path="{ENV_REGEX_NS}/Robot/" + ROOT_LINK,
         robot_model_path=HUD04_URDF,
@@ -53,12 +53,13 @@ def _motion_cfg():
 
 @configclass
 class HUD04PerceptivePlaneEnvCfg(PerceptiveShadowingEnvCfg):
+    reference_acceptance_status: str = "accepted_for_plane_replay"
     scene: PerceptiveShadowingSceneCfg = PerceptiveShadowingSceneCfg(
         num_envs=2, robot=HUD04_CFG.replace(prim_path="{ENV_REGEX_NS}/Robot"))
 
     def __post_init__(self):
         super().__post_init__()
-        self.scene.motion_reference = _motion_cfg()
+        self.scene.motion_reference = _motion_cfg(self.reference_acceptance_status)
         self.scene.terrain.terrain_type = "plane"
         self.scene.terrain.terrain_generator = None
         # Do not use finite motion-matched terrain bounds on an infinite plane.

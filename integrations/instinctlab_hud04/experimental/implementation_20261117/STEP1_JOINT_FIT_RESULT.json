@@ -1,0 +1,275 @@
+{
+  "stage": "joint_temporal_fit_only",
+  "solver": "scipy.linprog/HiGHS/L1",
+  "elapsed_seconds": 0.47648847199997135,
+  "frames": 997,
+  "framerate": 90,
+  "joints": 29,
+  "solver_calls": 29,
+  "per_joint": [
+    {
+      "joint_index": 0,
+      "status": 0,
+      "iterations": 1080,
+      "success": true,
+      "l1_objective": 4.714199331899481
+    },
+    {
+      "joint_index": 1,
+      "status": 0,
+      "iterations": 1011,
+      "success": true,
+      "l1_objective": 0.09711142546600751
+    },
+    {
+      "joint_index": 2,
+      "status": 0,
+      "iterations": 1151,
+      "success": true,
+      "l1_objective": 6.346517859854629
+    },
+    {
+      "joint_index": 3,
+      "status": 0,
+      "iterations": 1022,
+      "success": true,
+      "l1_objective": 40.83770250436676
+    },
+    {
+      "joint_index": 4,
+      "status": 0,
+      "iterations": 1009,
+      "success": true,
+      "l1_objective": 0.6394411394000054
+    },
+    {
+      "joint_index": 5,
+      "status": 0,
+      "iterations": 999,
+      "success": true,
+      "l1_objective": 0.0035684927635722674
+    },
+    {
+      "joint_index": 6,
+      "status": 0,
+      "iterations": 1032,
+      "success": true,
+      "l1_objective": 0.16797916342814714
+    },
+    {
+      "joint_index": 7,
+      "status": 0,
+      "iterations": 1038,
+      "success": true,
+      "l1_objective": 1.032720053671963
+    },
+    {
+      "joint_index": 8,
+      "status": 0,
+      "iterations": 1027,
+      "success": true,
+      "l1_objective": 1.0140789664453922
+    },
+    {
+      "joint_index": 9,
+      "status": 0,
+      "iterations": 1198,
+      "success": true,
+      "l1_objective": 7.171989253494457
+    },
+    {
+      "joint_index": 10,
+      "status": 0,
+      "iterations": 1007,
+      "success": true,
+      "l1_objective": 0.3467948583099578
+    },
+    {
+      "joint_index": 11,
+      "status": 0,
+      "iterations": 1005,
+      "success": true,
+      "l1_objective": 0.20794817785422007
+    },
+    {
+      "joint_index": 12,
+      "status": 0,
+      "iterations": 997,
+      "success": true,
+      "l1_objective": 0.0
+    },
+    {
+      "joint_index": 13,
+      "status": 0,
+      "iterations": 1000,
+      "success": true,
+      "l1_objective": 0.23938508325152927
+    },
+    {
+      "joint_index": 14,
+      "status": 0,
+      "iterations": 997,
+      "success": true,
+      "l1_objective": 0.0
+    },
+    {
+      "joint_index": 15,
+      "status": 0,
+      "iterations": 1010,
+      "success": true,
+      "l1_objective": 0.45714506255255793
+    },
+    {
+      "joint_index": 16,
+      "status": 0,
+      "iterations": 997,
+      "success": true,
+      "l1_objective": 0.0
+    },
+    {
+      "joint_index": 17,
+      "status": 0,
+      "iterations": 1010,
+      "success": true,
+      "l1_objective": 0.37220955388413524
+    },
+    {
+      "joint_index": 18,
+      "status": 0,
+      "iterations": 997,
+      "success": true,
+      "l1_objective": 0.0
+    },
+    {
+      "joint_index": 19,
+      "status": 0,
+      "iterations": 927,
+      "success": true,
+      "l1_objective": 14.582776772975913
+    },
+    {
+      "joint_index": 20,
+      "status": 0,
+      "iterations": 997,
+      "success": true,
+      "l1_objective": 0.0
+    },
+    {
+      "joint_index": 21,
+      "status": 0,
+      "iterations": 997,
+      "success": true,
+      "l1_objective": 0.0
+    },
+    {
+      "joint_index": 22,
+      "status": 0,
+      "iterations": 997,
+      "success": true,
+      "l1_objective": 0.0
+    },
+    {
+      "joint_index": 23,
+      "status": 0,
+      "iterations": 997,
+      "success": true,
+      "l1_objective": 0.0
+    },
+    {
+      "joint_index": 24,
+      "status": 0,
+      "iterations": 997,
+      "success": true,
+      "l1_objective": 0.0
+    },
+    {
+      "joint_index": 25,
+      "status": 0,
+      "iterations": 972,
+      "success": true,
+      "l1_objective": 0.15083847045898557
+    },
+    {
+      "joint_index": 26,
+      "status": 0,
+      "iterations": 882,
+      "success": true,
+      "l1_objective": 42.96925253457502
+    },
+    {
+      "joint_index": 27,
+      "status": 0,
+      "iterations": 997,
+      "success": true,
+      "l1_objective": 0.0
+    },
+    {
+      "joint_index": 28,
+      "status": 0,
+      "iterations": 1005,
+      "success": true,
+      "l1_objective": 0.03680251447690863
+    }
+  ],
+  "residuals": {
+    "position_max_violation_rad": 0.0,
+    "velocity_max_violation_rad_s": 3.552713678800501e-15
+  },
+  "rms_change_rad": 0.03811414436089886,
+  "max_change_rad": 0.8353422944330509,
+  "posthoc_angle_clipping": false,
+  "full_retarget_solver_calls": 0,
+  "root_generated": false,
+  "terrain_constraints_implemented": false,
+  "self_collision_constraints_implemented": false,
+  "contact_constraints_implemented": false,
+  "accepted_reference": false,
+  "training_ready": false,
+  "source_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+  "model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+  "candidate_sha256": "48f8d43e058420e5ff89861d2336ead3317dc18223c36a7305503f3df54a66eb",
+  "candidate_file": "step1.joint_fit.npz",
+  "candidate_is_reference_motion": false,
+  "source_data_modified": false,
+  "source_position_bad_frames": 261,
+  "source_overspeed_intervals": 165,
+  "output_position_bad_frames": 0,
+  "output_overspeed_intervals": 0,
+  "joint_names": [
+    "left_hip_pitch_joint",
+    "left_hip_roll_joint",
+    "left_hip_yaw_joint",
+    "left_knee_joint",
+    "left_ankle_pitch_joint",
+    "left_ankle_roll_joint",
+    "right_hip_pitch_joint",
+    "right_hip_roll_joint",
+    "right_hip_yaw_joint",
+    "right_knee_joint",
+    "right_ankle_pitch_joint",
+    "right_ankle_roll_joint",
+    "waist_yaw_joint",
+    "waist_roll_joint",
+    "waist_pitch_joint",
+    "left_shoulder_pitch_joint",
+    "left_shoulder_roll_joint",
+    "left_shoulder_yaw_joint",
+    "left_elbow_joint",
+    "left_wrist_yaw_joint",
+    "left_wrist_pitch_joint",
+    "left_wrist_roll_joint",
+    "right_shoulder_pitch_joint",
+    "right_shoulder_roll_joint",
+    "right_shoulder_yaw_joint",
+    "right_elbow_joint",
+    "right_wrist_yaw_joint",
+    "right_wrist_pitch_joint",
+    "right_wrist_roll_joint"
+  ],
+  "missing": [
+    "root/pose optimization",
+    "terrain and self-collision constraints",
+    "auditable support/contact constraints",
+    "dynamic feasibility"
+  ]
+}
