@@ -326,3 +326,33 @@ python -B audit_source_contact_model.py \
 下一步按实际上游任务模型重建有明确假设标记的足/手/膝—地形关系，
 补齐导出/坐标证据后再决定接触约束与有界重定向；不自动选择 NPZ 来源解释，
 不启动已有 GPU 任务，也不把本 preflight 当作站立或攀爬成功证明。
+
+## 正确 G1 几何下的条件式窗口重建（2026-11-17）
+
+新增 `audit_conditional_contact_windows.py`。沿用已审查的 popsicle 模型与圆柱转胶囊
+规则，在 611–641、659–689、711–741 三个独立窗口（零起始、含端点，共 93 帧），
+分别计算 `torso_link`/`pelvis` × `wxyz`/`xyzw` 四种明确标记、**不排序、不选择**的假设。
+每帧对每个真实名义胶囊取一个沿世界负 z 的支撑极值点：每侧足 7 个、腕 1 个、膝 1 个。
+每假设 1674 点，共 6696 点；不是按点数累计出的接触帧数。
+
+```sh
+python -B -m unittest discover -p 'test_*.py'
+python -B audit_conditional_contact_windows.py \
+  --source-urdf "$G1_POPSICLE_TASK_URDF" \
+  --motion "$MOTION_DIR/kneelClimbStep1-x-0.1-ziwen-retargeted.npz" \
+  --terrain "$MOTION_DIR/50cmboxes_19_36_49.stl" \
+  --report "$NEW_CONDITIONAL_CONTACT_JSON"
+```
+
+源 URDF/NPZ/STL 均固定 SHA256、运行前后复核；输出拒绝覆盖。报告给出原始 STL
+上方 XY 包络的垂向间隙分布、无高度交点数和明确以原始单位表述的阈值计数。
+独立解析胶囊极值与另一套三维平面/重心坐标射线求交公式已复核全部 6696 点，
+最大支撑点误差 `4.45e-16`，高度误差 `2.17e-19`，阈值计数全部一致。
+合计 **123 项 CPU 测试通过**（新增 10 项），七个原始文件哈希不变。
+`CONDITIONAL_CONTACT_WINDOWS_REVIEW_20261117.json` 保存精简证据。
+
+**这些间隙不是完整碰撞距离或支撑标签。** 原始世界单位、根/四元数来源未证明，
+尚未应用实际地形裁剪/边缘高度平移；垂直墙、侧向手掌支撑及悬垂不能由上方包络判定。
+某假设低于包络的点少，不表示它正确或更适合训练。极值点随姿态可以换到不同材料点，
+因此不对极值轨迹做差并冒充足/手滑移速度。工具不生成动作/接触标签，不调用求解器
+或 GPU，不改变任何门禁。下一步仍需坐标证据与接触面/支撑区间审查，再接入有界修复。
