@@ -1,0 +1,130 @@
+{
+  "observed_utc": "2026-11-17T15:37:06.630374+00:00",
+  "remote_head": "2e2eee2832230586b5bca492a75063058be38acb",
+  "file_records": 9,
+  "unique_backup_objects": 9,
+  "files": [
+    {
+      "name": "jumpsit2-ziwen-retargeted.npz",
+      "local_original": "/workspace/hud04-original-drive-20261117/jumpsit2-ziwen-retargeted.npz",
+      "bytes": 143554,
+      "sha256": "064e7d9e890d99ae94902a116b7ac26c09900386e0d9e42ca62f300c2559c5cb",
+      "backup": "/workspace/hud04-backups/sha256/064e7d9e890d99ae94902a116b7ac26c09900386e0d9e42ca62f300c2559c5cb.npz",
+      "backup_readback_verified": true,
+      "remote_identical_blob_paths": [],
+      "remote_readback_verified": false,
+      "kind": "original_G1_source_not_HUD04_reference",
+      "accepted_HUD04_reference": false
+    },
+    {
+      "name": "kneelClimbStep1-x-0.1-ziwen-retargeted.npz",
+      "local_original": "/workspace/hud04-original-drive-20261117/kneelClimbStep1-x-0.1-ziwen-retargeted.npz",
+      "bytes": 147874,
+      "sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+      "backup": "/workspace/hud04-backups/sha256/56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056.npz",
+      "backup_readback_verified": true,
+      "remote_identical_blob_paths": [],
+      "remote_readback_verified": false,
+      "kind": "original_G1_source_not_HUD04_reference",
+      "accepted_HUD04_reference": false
+    },
+    {
+      "name": "rollVault11-ziwen-retargeted.npz",
+      "local_original": "/workspace/hud04-original-drive-20261117/rollVault11-ziwen-retargeted.npz",
+      "bytes": 139954,
+      "sha256": "78fcbae898a0944d2028810edd73b604f26058351d45675e89d132367dc83f6a",
+      "backup": "/workspace/hud04-backups/sha256/78fcbae898a0944d2028810edd73b604f26058351d45675e89d132367dc83f6a.npz",
+      "backup_readback_verified": true,
+      "remote_identical_blob_paths": [],
+      "remote_readback_verified": false,
+      "kind": "original_G1_source_not_HUD04_reference",
+      "accepted_HUD04_reference": false
+    },
+    {
+      "name": "superheroLanding-retargeted.npz",
+      "local_original": "/workspace/hud04-original-drive-20261117/superheroLanding-retargeted.npz",
+      "bytes": 154642,
+      "sha256": "49d85e012920b3cb03d08e1fb2d3fd039162b293e76a301193940d8321cb5834",
+      "backup": "/workspace/hud04-backups/sha256/49d85e012920b3cb03d08e1fb2d3fd039162b293e76a301193940d8321cb5834.npz",
+      "backup_readback_verified": true,
+      "remote_identical_blob_paths": [],
+      "remote_readback_verified": false,
+      "kind": "original_G1_source_not_HUD04_reference",
+      "accepted_HUD04_reference": false
+    },
+    {
+      "name": "jumpsit2-ziwen-retargeted.source-stage.npz",
+      "local_original": "/workspace/hud04-source-staging-20261117/jumpsit2-ziwen-retargeted.source-stage.npz",
+      "bytes": 132690,
+      "sha256": "1bf6159e95548d557a81c35ac611a2947173453595ca790b54ee9cfca5165af6",
+      "backup": "/workspace/hud04-backups/sha256/1bf6159e95548d557a81c35ac611a2947173453595ca790b54ee9cfca5165af6.npz",
+      "backup_readback_verified": true,
+      "remote_identical_blob_paths": [],
+      "remote_readback_verified": false,
+      "kind": "source_staging_not_HUD04_reference",
+      "accepted_HUD04_reference": false
+    },
+    {
+      "name": "kneelClimbStep1-x-0.1-ziwen-retargeted.source-stage.npz",
+      "local_original": "/workspace/hud04-source-staging-20261117/kneelClimbStep1-x-0.1-ziwen-retargeted.source-stage.npz",
+      "bytes": 136115,
+      "sha256": "78be4a123296ac51e4f00899e686a0d5a5038f866503f91b7de17a008120b780",
+      "backup": "/workspace/hud04-backups/sha256/78be4a123296ac51e4f00899e686a0d5a5038f866503f91b7de17a008120b780.npz",
+      "backup_readback_verified": true,
+      "remote_identical_blob_paths": [],
+      "remote_readback_verified": false,
+      "kind": "source_staging_not_HUD04_reference",
+      "accepted_HUD04_reference": false
+    },
+    {
+      "name": "rollVault11-ziwen-retargeted.source-stage.npz",
+      "local_original": "/workspace/hud04-source-staging-20261117/rollVault11-ziwen-retargeted.source-stage.npz",
+      "bytes": 127120,
+      "sha256": "f070c07217c09b37832f4e422e98d3ecb1acf69c5c034888bd0a04ed27469797",
+      "backup": "/workspace/hud04-backups/sha256/f070c07217c09b37832f4e422e98d3ecb1acf69c5c034888bd0a04ed27469797.npz",
+      "backup_readback_verified": true,
+      "remote_identical_blob_paths": [],
+      "remote_readback_verified": false,
+      "kind": "source_staging_not_HUD04_reference",
+      "accepted_HUD04_reference": false
+    },
+    {
+      "name": "superheroLanding-retargeted.source-stage.npz",
+      "local_original": "/workspace/hud04-source-staging-20261117/superheroLanding-retargeted.source-stage.npz",
+      "bytes": 87005,
+      "sha256": "dc0fffac773a88f232ad6296c681c1cf9eeb3afb774e1ddf4f36260d42886998",
+      "backup": "/workspace/hud04-backups/sha256/dc0fffac773a88f232ad6296c681c1cf9eeb3afb774e1ddf4f36260d42886998.npz",
+      "backup_readback_verified": true,
+      "remote_identical_blob_paths": [],
+      "remote_readback_verified": false,
+      "kind": "source_staging_not_HUD04_reference",
+      "accepted_HUD04_reference": false
+    },
+    {
+      "name": "step1.joint_fit.npz",
+      "local_original": "/workspace/hud04-implementation-20261117/step1.joint_fit.npz",
+      "bytes": 112293,
+      "sha256": "48f8d43e058420e5ff89861d2336ead3317dc18223c36a7305503f3df54a66eb",
+      "backup": "/workspace/hud04-backups/sha256/48f8d43e058420e5ff89861d2336ead3317dc18223c36a7305503f3df54a66eb.npz",
+      "backup_readback_verified": true,
+      "remote_identical_blob_paths": [
+        "integrations/instinctlab_hud04/experimental/implementation_20261117/step1.joint_fit.npz"
+      ],
+      "remote_readback_verified": true,
+      "kind": "joint_temporal_fit_not_reference",
+      "accepted_HUD04_reference": false
+    }
+  ],
+  "local_only_count": 8,
+  "all_remote_verified": false,
+  "notes": [
+    "Only these nine motion/source-staging files audited; other NPZ geometry/matrices are not motion outputs.",
+    "No claim that all historical temporary files were backed up.",
+    "Local backups share this sandbox fault domain; remote byte readback is separately stated per file.",
+    "Content hash names and exclusive writes prevent accidental replacement by this tool."
+  ],
+  "generated_motion_this_turn": false,
+  "gpu_submissions": 0,
+  "accepted_reference": false,
+  "training_ready": false
+}

@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "stage": "bounded_cpu_diagnostic_supervision",
+  "status": "completed",
+  "budget": {
+    "window_seconds": 30,
+    "total_seconds": 40,
+    "iterations": 5,
+    "numeric_threads": 2,
+    "max_windows": 1
+  },
+  "windows": [
+    {
+      "index": 0,
+      "wall_seconds": 1.422533618999978,
+      "child_reaped": true,
+      "status": "completed",
+      "iterations": 4,
+      "diagnostic": {
+        "stage": "root_and_joint_window_linear_system_not_motion",
+        "frames": 93,
+        "variables": 3255,
+        "variables_per_frame": 35,
+        "root_variables_per_frame": 6,
+        "body_variables_per_frame": 29,
+        "head_variables": 0,
+        "native_fps": 90,
+        "tracking_jacobian_shape": [
+          3627,
+          3255
+        ],
+        "hard_joint_matrix_shape": [
+          5307,
+          3255
+        ],
+        "adjacent_intervals": 90,
+        "cross_gap_velocity_edges": 0,
+        "target_objective_supplied": false,
+        "tracking_residual_is_null": true,
+        "zero_joint_increment_max_violation": 5.551115123125783e-17,
+        "trust_region_units": "target_model_coordinate_units_translation_and_radians_rotation_joints_NOT_source_unit_proof",
+        "model_limits_modified": false,
+        "posthoc_angle_clipping": false,
+        "solver_implemented": false,
+        "solver_calls": 0,
+        "candidate_motion_generated": false,
+        "terrain_constraints_implemented": false,
+        "self_collision_constraints_implemented": false,
+        "accepted_reference": false,
+        "training_ready": false,
+        "windows_zero_based_inclusive": [
+          [
+            611,
+            641
+          ],
+          [
+            659,
+            689
+          ],
+          [
+            711,
+            741
+          ]
+        ],
+        "actual_joint_seed_frames": 997,
+        "selected_construction_frames": 93,
+        "actual_temporal_edges": 90,
+        "independent_window_directional_finite_difference_max_error": 7.763572007490893e-10,
+        "root_seed_kind": "algebraic_SE3_software_fixture_NOT_source_or_candidate_motion",
+        "anatomical_targets": "NOT_SUPPLIED_no_implicit_zero_residual",
+        "no_source_coordinate_hypothesis_selected": true,
+        "no_support_labels_generated": true,
+        "input_sha256": {
+          "/workspace/hud04-recovery-bf4a057/flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/urdf/HU_D04_01_fixed_head_body_collision.urdf": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+          "/workspace/hud04-implementation-20261117/step1.joint_fit.npz": "48f8d43e058420e5ff89861d2336ead3317dc18223c36a7305503f3df54a66eb"
+        },
+        "inputs_unchanged": true,
+        "full_retarget_solver_calls": 0,
+        "gpu_submissions": 0,
+        "ppo_updates": 0
+      },
+      "supported_numeric_pools": [
+        {
+          "api": "openblas",
+          "threads": 2
+        },
+        {
+          "api": "openblas",
+          "threads": 2
+        }
+      ]
+    }
+  ],
+  "wall_seconds": 1.4226078210000423,
+  "retries": 0,
+  "hard_parent_deadline": true,
+  "cleanup_grace_seconds_max": 0.7,
+  "iteration_limit_scope": "trusted_workers_calling_gate_each_iteration_only",
+  "thread_limit_scope": "supported_BLAS_OpenMP_pools_not_all_OS_threads_or_CPU_cores",
+  "gpu_submissions": 0,
+  "solver_calls": 0,
+  "candidate_motion_generated": false,
+  "accepted_reference": false,
+  "training_ready": false,
+  "implementation_sha256": {
+    "named_target.py": "ce946040de2a74dd4a72744a1153d78098d9b247e91bc3c8fdee1300e071a464",
+    "window_problem.py": "2c5911dd8c5b80a3ebb285834b376dcb9c4eae81a119399bd7ef11ad16cc999d",
+    "window_worker.py": "b5a28213ee737265895ce45c8e025dc38d28c6903ee1b8d0fcedc4d576f307cc",
+    "bounded_runtime.py": "01974a3ec53c7d287d85d09d48c71756e70d2f7024666c603b8f5442c5ea3c35",
+    "run_window_diagnostic.py": "00cdff79bdd1ad043cb5e4081e9c9d1d8e6e42fce190e9abceacb3841365144e"
+  }
+}

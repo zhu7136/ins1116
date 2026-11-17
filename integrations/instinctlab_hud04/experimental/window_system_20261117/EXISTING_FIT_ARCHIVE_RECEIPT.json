@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "sha256": "48f8d43e058420e5ff89861d2336ead3317dc18223c36a7305503f3df54a66eb",
+  "bytes": 112293,
+  "role": "joint_temporal_fit_not_reference",
+  "source_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+  "model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+  "accepted_reference": false,
+  "training_ready": false,
+  "backup_scope": "local_same_sandbox_NOT_independent_offsite",
+  "backup_path": "/workspace/hud04-backups/sha256/48f8d43e058420e5ff89861d2336ead3317dc18223c36a7305503f3df54a66eb.npz",
+  "manifest_path": "/workspace/hud04-backups/sha256/48f8d43e058420e5ff89861d2336ead3317dc18223c36a7305503f3df54a66eb.json",
+  "readback_verified": true
+}

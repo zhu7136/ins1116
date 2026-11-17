@@ -17,6 +17,7 @@ def worker(connection):
     sys.path.insert(0,str(INTEGRATION))
     import retarget_dry_run as r
     from joint_temporal_fit import fit
+    from motion_archive import freeze_file
     os.environ['HUD04_DELIVERY_ROOT']=str(INTEGRATION.parent.parent)
     r.require_hash(MOTION,r.MOTION_SHA256);r.require_hash(TARGET,r.TARGET_MODEL_SHA256)
     names,model=r.A.C.validate_model(TARGET)
@@ -29,13 +30,17 @@ def worker(connection):
     with result.open('xb') as f: np.savez_compressed(f,joint_pos=out,joint_names=np.array(names),framerate=np.array(90))
     with np.load(result,allow_pickle=False) as z: np.testing.assert_array_equal(z['joint_pos'],out)
     r.require_hash(MOTION,r.MOTION_SHA256);r.require_hash(TARGET,r.TARGET_MODEL_SHA256)
+    # Every future successful fit must create and re-read a second local,
+    # hash-addressed copy BEFORE reporting success. This is not remote backup.
+    archive=freeze_file(result,Path(os.environ.get('HUD04_ARCHIVE_ROOT',str(ROOT/'archive/sha256'))),
+        role='joint_temporal_fit_not_reference',source_sha256=r.MOTION_SHA256,model_sha256=r.TARGET_MODEL_SHA256)
     report.update(source_sha256=r.MOTION_SHA256,model_sha256=r.TARGET_MODEL_SHA256,candidate_sha256=digest(result),
         candidate_file=result.name,candidate_is_reference_motion=False,source_data_modified=False,
         source_position_bad_frames=int(np.any((q<lower-1e-6)|(q>upper+1e-6),axis=1).sum()),
         source_overspeed_intervals=int(np.any(np.abs(np.diff(q,axis=0))*90>vmax+1e-6,axis=1).sum()),
         output_position_bad_frames=int(np.any((out<lower-1e-6)|(out>upper+1e-6),axis=1).sum()),
         output_overspeed_intervals=int(np.any(np.abs(np.diff(out,axis=0))*90>vmax+1e-6,axis=1).sum()),
-        joint_names=names,missing=['root/pose optimization','terrain and self-collision constraints','auditable support/contact constraints','dynamic feasibility'])
+        joint_names=names,local_backup=archive,missing=['root/pose optimization','terrain and self-collision constraints','auditable support/contact constraints','dynamic feasibility'])
     with (ROOT/'STEP1_JOINT_FIT_RESULT.json').open('x') as f:json.dump(report,f,indent=2,allow_nan=False)
     connection.send(dict(status='completed',report='STEP1_JOINT_FIT_RESULT.json'));connection.close()
 

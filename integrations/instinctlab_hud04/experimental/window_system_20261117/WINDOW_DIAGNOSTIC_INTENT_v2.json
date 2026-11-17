@@ -1,0 +1,15 @@
+{
+  "kind": "CPU_software_diagnostic_NOT_training_trial",
+  "label": "v2",
+  "model": "/workspace/hud04-recovery-bf4a057/flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/urdf/HU_D04_01_fixed_head_body_collision.urdf",
+  "fit": "/workspace/hud04-implementation-20261117/step1.joint_fit.npz",
+  "implementation_sha256": {
+    "named_target.py": "ce946040de2a74dd4a72744a1153d78098d9b247e91bc3c8fdee1300e071a464",
+    "window_problem.py": "2c5911dd8c5b80a3ebb285834b376dcb9c4eae81a119399bd7ef11ad16cc999d",
+    "window_worker.py": "b5a28213ee737265895ce45c8e025dc38d28c6903ee1b8d0fcedc4d576f307cc",
+    "bounded_runtime.py": "01974a3ec53c7d287d85d09d48c71756e70d2f7024666c603b8f5442c5ea3c35",
+    "run_window_diagnostic.py": "00cdff79bdd1ad043cb5e4081e9c9d1d8e6e42fce190e9abceacb3841365144e"
+  },
+  "solver_calls": 0,
+  "gpu_submissions": 0
+}
