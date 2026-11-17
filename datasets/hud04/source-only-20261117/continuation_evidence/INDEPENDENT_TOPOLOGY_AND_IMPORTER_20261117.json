@@ -1,0 +1,86 @@
+{
+  "stage": "independent_raw_stl_topology_and_pinned_importer_read",
+  "rows": [
+    {
+      "side": "left",
+      "boundary_edges": 4,
+      "nonmanifold_edges": 27,
+      "duplicate_faces": 0,
+      "exact_vertex_matching": true,
+      "no_welding_or_repair": true,
+      "after_discarding_duplicate_faces_DIAGNOSTIC_ONLY": {
+        "boundary_edges": 4,
+        "nonmanifold_edges": 27
+      },
+      "mesh_actually_modified": false,
+      "physx_shape_validity_determined": false
+    },
+    {
+      "side": "right",
+      "boundary_edges": 1,
+      "nonmanifold_edges": 27,
+      "duplicate_faces": 0,
+      "exact_vertex_matching": true,
+      "no_welding_or_repair": true,
+      "after_discarding_duplicate_faces_DIAGNOSTIC_ONLY": {
+        "boundary_edges": 1,
+        "nonmanifold_edges": 27
+      },
+      "mesh_actually_modified": false,
+      "physx_shape_validity_determined": false
+    }
+  ],
+  "sources": [
+    {
+      "repo": "isaac-sim/IsaacLab",
+      "commit": "f73c33173801f5f8afea4142482e47b7710c2b75",
+      "path": "source/isaaclab/isaaclab/sim/converters/urdf_converter_cfg.py",
+      "git_blob_sha1": "c04ede2400aed989b616ddd9aec83d6da4c43f0c",
+      "sha256": "e02850fcd999d1dee6ab1613872be796f2c1be1bb2335f109d9ea6090bb4bb36",
+      "relevant_lines": [
+        {
+          "line": 119,
+          "context": "    \"\"\"Whether to create collision geometry from visual geometry. Defaults to False.\"\"\"\n\n    collider_type: Literal[\"convex_hull\", \"convex_decomposition\"] = \"convex_hull\"\n    \"\"\"The collision shape simplification. Defaults to \"convex_hull\".\n\n    Supported values are:"
+        },
+        {
+          "line": 120,
+          "context": "\n    collider_type: Literal[\"convex_hull\", \"convex_decomposition\"] = \"convex_hull\"\n    \"\"\"The collision shape simplification. Defaults to \"convex_hull\".\n\n    Supported values are:\n"
+        },
+        {
+          "line": 124,
+          "context": "    Supported values are:\n\n    * ``\"convex_hull\"``: The collision shape is simplified to a convex hull.\n    * ``\"convex_decomposition\"``: The collision shape is decomposed into smaller convex shapes for a closer fit.\n    \"\"\"\n"
+        },
+        {
+          "line": 125,
+          "context": "\n    * ``\"convex_hull\"``: The collision shape is simplified to a convex hull.\n    * ``\"convex_decomposition\"``: The collision shape is decomposed into smaller convex shapes for a closer fit.\n    \"\"\"\n\n    self_collision: bool = False"
+        }
+      ]
+    },
+    {
+      "repo": "isaac-sim/IsaacLab",
+      "commit": "f73c33173801f5f8afea4142482e47b7710c2b75",
+      "path": "source/isaaclab/isaaclab/sim/converters/urdf_converter.py",
+      "git_blob_sha1": "ba80f520355e177ca0731e90e7b960d8a1671778",
+      "sha256": "37bf84138fbd79ddc0331806d05bedecd5a54531387460b1a230e6ef1ed6cedd",
+      "relevant_lines": [
+        {
+          "line": 137,
+          "context": "        import_config.set_density(self.cfg.link_density)\n        # mesh simplification settings\n        convex_decomp = self.cfg.collider_type == \"convex_decomposition\"\n        import_config.set_convex_decomp(convex_decomp)\n        # create collision geometry from visual geometry\n        import_config.set_collision_from_visuals(self.cfg.collision_from_visuals)"
+        },
+        {
+          "line": 138,
+          "context": "        # mesh simplification settings\n        convex_decomp = self.cfg.collider_type == \"convex_decomposition\"\n        import_config.set_convex_decomp(convex_decomp)\n        # create collision geometry from visual geometry\n        import_config.set_collision_from_visuals(self.cfg.collision_from_visuals)\n        # consolidating links that are connected by fixed joints"
+        }
+      ]
+    }
+  ],
+  "pinned_source_not_runtime_observation": true,
+  "assets_modified": false,
+  "source_motion_modified": false,
+  "cooked_physics_validated": false,
+  "accepted_reference": false,
+  "training_ready": false,
+  "retarget_solver_calls": 0,
+  "gpu_submissions": 0,
+  "ppo_updates": 0
+}

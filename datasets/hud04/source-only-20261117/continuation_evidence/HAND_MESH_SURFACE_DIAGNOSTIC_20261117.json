@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "stage": "bounded_cpu_diagnostic_supervision",
+  "status": "completed",
+  "budget": {
+    "window_seconds": 45,
+    "total_seconds": 50,
+    "iterations": 6,
+    "numeric_threads": 2,
+    "max_windows": 1
+  },
+  "windows": [
+    {
+      "index": 0,
+      "wall_seconds": 0.8723083010000323,
+      "child_reaped": true,
+      "status": "completed",
+      "iterations": 4,
+      "diagnostic": {
+        "stage": "actual_hand_stl_surface_kernel_cpu_diagnostic",
+        "rows": [
+          {
+            "side": "left",
+            "mesh_sha256": "5aa0af4ccdaf46d498267b0fae247b8d547d8d72dd8db4f7691fe42b567eb5d6",
+            "input_triangles": 4792,
+            "unique_vertices_exact": 2305,
+            "boundary_edges": 4,
+            "nonmanifold_edges": 27,
+            "degenerate_triangles": 0,
+            "collision_origin_applied": true,
+            "mesh_scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "link_local_bounds": [
+              [
+                -0.037743713706731796,
+                -0.04389365017414093,
+                -0.2326989322900772
+              ],
+              [
+                0.047991637140512466,
+                0.033118557184934616,
+                0.02920691668987274
+              ]
+            ],
+            "analytic_plane_error": 1.3877787807814457e-17,
+            "rigid_transform_distance_error": 2.0816681711721685e-17,
+            "plane_pair_queries": 14382,
+            "surface_distance_report": {
+              "unsigned_surface_distance": 0.04999999999999999,
+              "first_triangle": 0,
+              "second_triangle": 4009,
+              "first_witness": [
+                0.009660691022872925,
+                -0.03187708556652069,
+                -0.2826989322900772
+              ],
+              "second_witness": [
+                0.009660691022872925,
+                -0.03187708556652069,
+                -0.2326989322900772
+              ],
+              "triangle_pairs_tested": 4798,
+              "signed_solid_distance": false,
+              "containment_excluded": false,
+              "cooked_physics_validated": false,
+              "complete_robot_collision_check": false,
+              "accepted_reference": false,
+              "training_ready": false
+            },
+            "raw_stl_not_convex_hull": true
+          },
+          {
+            "side": "right",
+            "mesh_sha256": "e4804755e9991f05ad5389340e1e83ee1ef687a403896c21c0f785c28ff871fc",
+            "input_triangles": 4789,
+            "unique_vertices_exact": 2303,
+            "boundary_edges": 1,
+            "nonmanifold_edges": 27,
+            "degenerate_triangles": 0,
+            "collision_origin_applied": true,
+            "mesh_scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "link_local_bounds": [
+              [
+                -0.03777395561337471,
+                -0.03304024413228035,
+                -0.2325994372367859
+              ],
+              [
+                0.04791327565908432,
+                0.043858084827661514,
+                0.02920691668987274
+              ]
+            ],
+            "analytic_plane_error": 1.3877787807814457e-17,
+            "rigid_transform_distance_error": 2.0816681711721685e-17,
+            "plane_pair_queries": 14389,
+            "surface_distance_report": {
+              "unsigned_surface_distance": 0.04999999999999999,
+              "first_triangle": 1,
+              "second_triangle": 1211,
+              "first_witness": [
+                0.01385132409632206,
+                0.03395429626107216,
+                -0.2825994372367859
+              ],
+              "second_witness": [
+                0.01385132409632206,
+                0.03395429626107216,
+                -0.2325994372367859
+              ],
+              "triangle_pairs_tested": 4811,
+              "signed_solid_distance": false,
+              "containment_excluded": false,
+              "cooked_physics_validated": false,
+              "complete_robot_collision_check": false,
+              "accepted_reference": false,
+              "training_ready": false
+            },
+            "raw_stl_not_convex_hull": true
+          }
+        ],
+        "collision_link_count": 19,
+        "collision_shape_count": 43,
+        "target_model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+        "body_actions": 29,
+        "head_actions": 0,
+        "actual_matched_terrain_tested": false,
+        "complete_robot_self_collision": false,
+        "containment_excluded": false,
+        "cooked_physics_validated": false,
+        "palm_correspondence_accepted": false,
+        "support_schedule_accepted": false,
+        "reference_loaded": false,
+        "candidate_motion_generated": false,
+        "retarget_solver_calls": 0,
+        "gpu_submissions": 0,
+        "accepted_reference": false,
+        "training_ready": false,
+        "ppo_updates": 0
+      },
+      "supported_numeric_pools": [
+        {
+          "api": "openblas",
+          "threads": 2
+        },
+        {
+          "api": "openblas",
+          "threads": 2
+        }
+      ]
+    }
+  ],
+  "wall_seconds": 0.8724037169999974,
+  "retries": 0,
+  "hard_parent_deadline": true,
+  "cleanup_grace_seconds_max": 0.7,
+  "iteration_limit_scope": "trusted_workers_calling_gate_each_iteration_only",
+  "thread_limit_scope": "supported_BLAS_OpenMP_pools_not_all_OS_threads_or_CPU_cores",
+  "gpu_submissions": 0,
+  "solver_calls": 0,
+  "candidate_motion_generated": false,
+  "accepted_reference": false,
+  "training_ready": false
+}

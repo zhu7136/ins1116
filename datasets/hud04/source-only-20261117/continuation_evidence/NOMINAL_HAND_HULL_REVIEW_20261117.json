@@ -1,0 +1,70 @@
+{
+  "stage": "pinned_default_hand_hull_not_runtime_cooked_geometry",
+  "rows": [
+    {
+      "side": "left",
+      "mesh_sha256": "5aa0af4ccdaf46d498267b0fae247b8d547d8d72dd8db4f7691fe42b567eb5d6",
+      "raw_triangles": 4792,
+      "nominal_hull_vertices": 151,
+      "nominal_hull_triangles": 298,
+      "hull_surface_closed_edge_count_checked": true,
+      "max_raw_vertex_outside_halfspace": 2.7755575615628914e-17,
+      "support_directions_checked": 134,
+      "support_function_max_error": 0.0,
+      "raw_triangle_centroid_count": 4792,
+      "max_centroid_depth_inside_nominal_hull": 0.031591759964362934,
+      "max_depth_raw_triangle": 1347,
+      "raw_triangle_centroid": [
+        0.0004078052394712965,
+        -0.00030352505079160136,
+        -0.03442778065800667
+      ],
+      "raw_triangle_centroids_deeper_than_1e_minus_6_model_units": 4707,
+      "original_mesh_not_same_boundary_as_nominal_hull": true,
+      "topology_repairs_applied": false,
+      "original_asset_modified": false,
+      "source_world_unit_calibrated": false,
+      "hull_is_pinned_default_surrogate_only": true,
+      "cooked_shape_identity_verified": false
+    },
+    {
+      "side": "right",
+      "mesh_sha256": "e4804755e9991f05ad5389340e1e83ee1ef687a403896c21c0f785c28ff871fc",
+      "raw_triangles": 4789,
+      "nominal_hull_vertices": 153,
+      "nominal_hull_triangles": 302,
+      "hull_surface_closed_edge_count_checked": true,
+      "max_raw_vertex_outside_halfspace": 2.7755575615628914e-17,
+      "support_directions_checked": 134,
+      "support_function_max_error": 0.0,
+      "raw_triangle_centroid_count": 4789,
+      "max_centroid_depth_inside_nominal_hull": 0.031498564072371026,
+      "max_depth_raw_triangle": 3229,
+      "raw_triangle_centroid": [
+        0.0004066798525551955,
+        -0.00030352493437627953,
+        -0.03442778065800667
+      ],
+      "raw_triangle_centroids_deeper_than_1e_minus_6_model_units": 4701,
+      "original_mesh_not_same_boundary_as_nominal_hull": true,
+      "topology_repairs_applied": false,
+      "original_asset_modified": false,
+      "source_world_unit_calibrated": false,
+      "hull_is_pinned_default_surrogate_only": true,
+      "cooked_shape_identity_verified": false
+    }
+  ],
+  "asset_config_sha256": "4fdb08b4aa352893a6feef5afb6deb8ec273e1fbdcfc2d67ac0e691729321021",
+  "asset_explicit_collider_type": false,
+  "pinned_isaaclab_default": "convex_hull",
+  "pinned_isaaclab_commit": "f73c33173801f5f8afea4142482e47b7710c2b75",
+  "interpretation": "Raw STL surface distance alone cannot establish clearance for default hull import; nominal hull is not a PhysX-cooked shape receipt.",
+  "collider_policy_changed": false,
+  "assets_modified": false,
+  "reference_exported": false,
+  "retarget_solver_calls": 0,
+  "gpu_submissions": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false,
+  "training_ready": false
+}
