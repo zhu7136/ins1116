@@ -1,0 +1,17 @@
+{
+  "baseline_commit": "6fc7a1e8840e06ad305caca36cf3bfd0310d4805",
+  "change": "Separate bounded failure-only evidence manifest/chunks with source binding, hashes, missing-files list and strict JSON/size/secret/allowlist validation. Worker still exits1; old success emitter/supervisor gate unchanged.",
+  "cpu_tests": 41,
+  "cpu_tests_seconds": 0.910,
+  "test_scope": "Synthetic software fixtures and pinned model integrity, NOT robot physics",
+  "gpu_tested_at_publication": false,
+  "planned_new_gpu_tasks_max": 1,
+  "planned_child_seconds_max": 240,
+  "planned_gpu_count": 1,
+  "automatic_retries": 0,
+  "platform_billing_cap_verified": false,
+  "solver_calls": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false,
+  "training_ready": false
+}

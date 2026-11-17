@@ -2,6 +2,7 @@
 import argparse,importlib.util,json,os,subprocess,sys
 from pathlib import Path
 from bounded_import_runner import emit_evidence,run_child
+from failure_evidence import emit_failure_evidence
 from import_observation_probe import plan,verify_bundle
 
 def main(args):
@@ -29,7 +30,10 @@ def main(args):
         '--repo-root',str(repo),'--expected-commit',args.expected_commit,'--output',str(Path(args.output).resolve())],
         args.output,seconds=240,env=env)
     print(json.dumps(result),flush=True)
-    if not result['observation_completed']:raise SystemExit(1)
+    if not result['observation_completed']:
+        # Separate FAILURE channel; original success gate and exit remain intact.
+        emit_failure_evidence(args.output,args.expected_commit)
+        raise SystemExit(1)
     emit_evidence(args.output)
 
 if __name__=='__main__':

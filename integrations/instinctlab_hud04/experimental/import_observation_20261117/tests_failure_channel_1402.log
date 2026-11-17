@@ -1,0 +1,46 @@
+test_app_close_attempted_if_unsubscription_fails (test_import_worker.ImportWorkerTests.test_app_close_attempted_if_unsubscription_fails) ... ok
+test_bad_json_rejected (test_import_worker.ImportWorkerTests.test_bad_json_rejected) ... ok
+test_cleanup_app_attempted_even_if_callbacks_fail (test_import_worker.ImportWorkerTests.test_cleanup_app_attempted_even_if_callbacks_fail) ... ok
+test_cleanup_never_calls_stop (test_import_worker.ImportWorkerTests.test_cleanup_never_calls_stop) ... ok
+test_cleanup_without_context (test_import_worker.ImportWorkerTests.test_cleanup_without_context) ... ok
+test_evidence_roundtrip_hashes_no_raw_log (test_import_worker.ImportWorkerTests.test_evidence_roundtrip_hashes_no_raw_log) ... ok
+test_exception_and_phase_survive_noisy_tail (test_import_worker.ImportWorkerTests.test_exception_and_phase_survive_noisy_tail) ... ok
+test_exception_stops_without_report (test_import_worker.ImportWorkerTests.test_exception_stops_without_report) ... ok
+test_explicit_nonfast_app_shutdown_preserves_postclose_reporting (test_import_worker.ImportWorkerTests.test_explicit_nonfast_app_shutdown_preserves_postclose_reporting) ... ok
+test_invalid_budgets_rejected (test_import_worker.ImportWorkerTests.test_invalid_budgets_rejected) ... ok
+test_large_conversion_asset_not_truncated_by_log_budget (test_import_worker.ImportWorkerTests.test_large_conversion_asset_not_truncated_by_log_budget) ... ok
+test_log_bound_enforced (test_import_worker.ImportWorkerTests.test_log_bound_enforced) ... ok
+test_noncooperative_sleep_stopped (test_import_worker.ImportWorkerTests.test_noncooperative_sleep_stopped) ... ok
+test_nonzero_after_report_rejected (test_import_worker.ImportWorkerTests.test_nonzero_after_report_rejected) ... ok
+test_normal_fixture_is_not_physics_acceptance (test_import_worker.ImportWorkerTests.test_normal_fixture_is_not_physics_acceptance) ... ok
+test_output_not_overwritten (test_import_worker.ImportWorkerTests.test_output_not_overwritten) ... ok
+test_partial_phases_rejected (test_import_worker.ImportWorkerTests.test_partial_phases_rejected) ... ok
+test_phase_marker_is_not_success_receipt (test_import_worker.ImportWorkerTests.test_phase_marker_is_not_success_receipt) ... ok
+test_pinned_bundle_integrity_offline (test_import_worker.ImportWorkerTests.test_pinned_bundle_integrity_offline) ... ok
+test_plan_no_gpu_or_promotion (test_import_worker.ImportWorkerTests.test_plan_no_gpu_or_promotion) ... ok
+test_promoted_acceptance_rejected (test_import_worker.ImportWorkerTests.test_promoted_acceptance_rejected) ... ok
+test_record_credentials_redacted_and_noise_not_collected (test_import_worker.ImportWorkerTests.test_record_credentials_redacted_and_noise_not_collected) ... ok
+test_report_before_hang_not_success (test_import_worker.ImportWorkerTests.test_report_before_hang_not_success) ... ok
+test_timeline_subscription_removed_before_app_stop (test_import_worker.ImportWorkerTests.test_timeline_subscription_removed_before_app_stop) ... ok
+test_unknown_phase_marker_rejected (test_import_worker.ImportWorkerTests.test_unknown_phase_marker_rejected) ... ok
+test_archive_corruption_rejected (test_failure_evidence.FailureEvidenceTests.test_archive_corruption_rejected) ... ok
+test_complete_failure_roundtrip_remains_failure (test_failure_evidence.FailureEvidenceTests.test_complete_failure_roundtrip_remains_failure) ... ok
+test_expanded_budget_and_allowlist (test_failure_evidence.FailureEvidenceTests.test_expanded_budget_and_allowlist) ... ok
+test_file_budget_rejected_before_read (test_failure_evidence.FailureEvidenceTests.test_file_budget_rejected_before_read) ... ok
+test_individual_file_hash_rejected (test_failure_evidence.FailureEvidenceTests.test_individual_file_hash_rejected) ... ok
+test_malformed_or_nonfinite_rejected (test_failure_evidence.FailureEvidenceTests.test_malformed_or_nonfinite_rejected) ... ok
+test_manifest_budget_rejected_before_decode (test_failure_evidence.FailureEvidenceTests.test_manifest_budget_rejected_before_decode) ... ok
+test_missing_duplicate_chunks_rejected (test_failure_evidence.FailureEvidenceTests.test_missing_duplicate_chunks_rejected) ... ok
+test_nested_acceptance_claim_rejected (test_failure_evidence.FailureEvidenceTests.test_nested_acceptance_claim_rejected) ... ok
+test_no_runtime_still_cannot_pass_success_emitter (test_failure_evidence.FailureEvidenceTests.test_no_runtime_still_cannot_pass_success_emitter) ... ok
+test_partial_failure_explicit_missing (test_failure_evidence.FailureEvidenceTests.test_partial_failure_explicit_missing) ... ok
+test_secret_rejected_no_partial_output (test_failure_evidence.FailureEvidenceTests.test_secret_rejected_no_partial_output) ... ok
+test_success_worker_not_exported_as_failure (test_failure_evidence.FailureEvidenceTests.test_success_worker_not_exported_as_failure) ... ok
+test_symlink_rejected (test_failure_evidence.FailureEvidenceTests.test_symlink_rejected) ... ok
+test_worker_still_exits_nonzero_and_no_success_envelope (test_failure_evidence.FailureEvidenceTests.test_worker_still_exits_nonzero_and_no_success_envelope) ... ok
+test_wrong_source_commit_rejected (test_failure_evidence.FailureEvidenceTests.test_wrong_source_commit_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 41 tests in 0.910s
+
+OK
