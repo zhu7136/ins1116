@@ -169,6 +169,25 @@ class ReferenceTests(unittest.TestCase):
 
 
 class IntegrationSourceTests(unittest.TestCase):
+    def test_reference_loader_preserves_native_rate_and_samples(self):
+        # Execute the actual _motion_cfg body with explicit CPU-only stubs.
+        # This exercises the passed options; it is NOT an IsaacLab import.
+        tree = ast.parse(CFG.read_text())
+        function = next(n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == "_motion_cfg")
+        ns = dict(os=NS(environ={"HUD04_REFERENCE_MANIFEST": "SYNTHETIC-TEST-ONLY"}),
+                  validate_reference_manifest=lambda *args: (Path("synthetic-reviewed-directory"), []),
+                  HUD04_URDF=str(URDF), ROOT_LINK=C.ROOT_LINK, KEY_LINKS=C.KEY_LINKS,
+                  MotionReferenceManagerCfg=lambda **kw: NS(**kw),
+                  AmassMotionCfg=lambda **kw: NS(**kw))
+        exec(compile(ast.Module(body=[function], type_ignores=[]), "<synthetic-motion-cfg>", "exec"), ns)
+        motion = ns["_motion_cfg"]().motion_buffers["AMASSMotion"]
+        self.assertIsNone(motion.motion_interpolate_func)
+        self.assertEqual(motion.skip_frames, 0)
+        self.assertFalse(motion.clip_joint_ref_to_robot_limits)
+        self.assertIsNone(motion.retargetting_func)
+        self.assertFalse(motion.ensure_link_below_zero_ground)
+        self.assertEqual(motion.motion_start_height_offset, 0.0)
+
     def test_all_overlay_sources_compile(self):
         files = list(OVERLAY.rglob("*.py"))
         self.assertEqual(len(files), 6)

@@ -15,7 +15,6 @@ from instinctlab.assets.hud04_contract import (CHEST_LINK, FEET, HANDS, KEY_LINK
                                               load_verified_module, validate_reference_manifest)
 from instinctlab.motion_reference import MotionReferenceManagerCfg
 from instinctlab.motion_reference.motion_files.amass_motion_cfg import AmassMotionCfg
-from instinctlab.motion_reference.utils import motion_interpolate_bilinear
 from instinctlab.sensors import get_link_prim_targets
 from instinctlab.tasks.shadowing.perceptive.perceptive_env_cfg import (
     PerceptiveShadowingEnvCfg, PerceptiveShadowingSceneCfg)
@@ -43,7 +42,10 @@ def _motion_cfg():
             retargetting_func=None, clip_joint_ref_to_robot_limits=False,
             ensure_link_below_zero_ground=False, motion_start_from_middle_range=[0.0, 0.0],
             motion_start_height_offset=0.0, motion_bin_length_s=None,
-            buffer_device="output_device", motion_interpolate_func=motion_interpolate_bilinear,
+            # Preserve native reference samples/fps (Step1: 997 frames at 90 Hz).
+            # Upstream interpolation otherwise defaults to resampling at 50 Hz.
+            # Policy/control frequency does not determine reference-file frequency.
+            buffer_device="output_device", motion_interpolate_func=None, skip_frames=0,
             velocity_estimation_method="frontbackward", env_starting_stub_sampling_strategy="independent",
         )},
     )

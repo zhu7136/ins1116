@@ -3,6 +3,26 @@
 这不是再跑一次独立资产探针。这里将已验证的 HUD04 资产接到原 InstinctLab
 的感知运动跟踪环境，新增 HUD04 Plane / PLAY 配置，**不修改 G1**。
 
+## 2026-11-17 恢复续接：保持原始参考频率，补核地形变换链
+
+从远端 `fd12fe13ce9293903d04e83d974987025f03b75e` 恢复全部 85 个仓库文件；
+此前本地工作树、原始动作/地形数据和详细逐点报告不在本轮环境内。
+已重新运行原有 **123 项 CPU 测试通过**，但尚未重新计算真实数据的 6696 个探测点。
+此前测试数与数据复核结果不能混称为本轮重新测得的证据。
+
+发现并修正一项频率契约问题：原 overlay 开启 `motion_interpolate_bilinear`，
+却继承 `AmassMotionCfg.motion_target_framerate=50.0`，会在加载后对参考重采样。
+现显式设置 `motion_interpolate_func=None, skip_frames=0`，保留文件原始帧数和频率，
+不改变 50 Hz 控制/200 Hz 物理设置，不改源 NPZ，不放宽位置/速度门禁。
+新增一项执行真实 `_motion_cfg` 函数体的 CPU stub 回归测试，合计 **124 项通过**。
+此测试不等于真实 IsaacLab 导入、参考动作验收或动力学验证。
+
+地形裁剪、边缘均值、生成器布局平移、动作原点及墙面证据见
+`TERRAIN_TRANSFORM_RECOVERY_REVIEW_20261117.md`。这是源码契约审查，
+不是已完成真实 STL 裁剪/边缘高度计算或接触回放。
+未恢复原始数据前，不生成支撑区间、候选动作或坐标选择。
+本轮无 GPU 提交、无求解、无 PPO，`training_ready=false`。
+
 ## 状态与边界
 
 - 上游仓库：<https://github.com/project-instinct/InstinctLab>，固定提交
