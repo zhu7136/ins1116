@@ -1,0 +1,346 @@
+{
+  "task_id": "TASK_20261117_366",
+  "actual_commit": "4031da1e8d01deb132162bf8548eb8ca53a32745",
+  "terminal_status": "6",
+  "full_platform_log_sha256": "b0455339079897db85b4b1b4bd54651e3261de15cd4573ce6b99438cd7c8ef00",
+  "worker_result": {
+    "stage": "bounded_import_worker_result",
+    "observation_completed": false,
+    "stop_reason": null,
+    "return_code": -11,
+    "direct_child_reaped": true,
+    "cleanup_grace_seconds_max": 0.8,
+    "child_wall_seconds": 31.19819522369653,
+    "log_bytes": 12461,
+    "log_sha256": "05924ed791eb591c832892cd757bc84907200fa69834e10a23a1e9daafdc12f3",
+    "local_report_present": true,
+    "platform_deadline_verified": false,
+    "gpu_submissions": 0,
+    "solver_calls": 0,
+    "ppo_updates": 0,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  "source_model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+  "urdf_collision_types": {
+    "cylinder": 24,
+    "sphere": 14,
+    "box": 3,
+    "mesh": 2
+  },
+  "snapshots": {
+    "post_import.json": {
+      "file_sha256": "41c5826335c5ff3ec0decb382bac0de399d97cf96a90dad570ff1547a2f96082",
+      "runtime_phase": "post_import",
+      "collider_count": 43,
+      "exact_per_link_shape_counts_match": true,
+      "joint_types": {
+        "PhysicsRevoluteJoint": 29,
+        "PhysicsFixedJoint": 12
+      },
+      "exact_joint_name_types_match": true,
+      "head_joints_fixed": true,
+      "collider_types": {
+        "Cylinder": 24,
+        "Sphere": 14,
+        "Cube": 3,
+        "Xform": 2
+      },
+      "self_collision_attributes": [
+        {
+          "path": "/World/envs/env_0/Robot/base_link",
+          "self_collision": {
+            "present": true,
+            "authored": true,
+            "value": true,
+            "time_samples": 0
+          }
+        }
+      ],
+      "meters_per_unit": 1.0,
+      "meters_per_unit_authored": true,
+      "up_axis": "Z",
+      "explicit_usd_filtered_pairs": 0,
+      "explicit_usd_collision_groups": 0,
+      "mesh_like_xforms": [
+        {
+          "path": "/World/envs/env_0/Robot/left_wrist_roll_link/collisions/official_left_wrist_roll_link_1/node_STL_BINARY_",
+          "approximation": {
+            "present": true,
+            "authored": true,
+            "value": "convexHull",
+            "time_samples": 0
+          },
+          "cooked_geometry_verified": false
+        },
+        {
+          "path": "/World/envs/env_0/Robot/right_wrist_roll_link/collisions/official_right_wrist_roll_link_1/node_STL_BINARY_",
+          "approximation": {
+            "present": true,
+            "authored": true,
+            "value": "convexHull",
+            "time_samples": 0
+          },
+          "cooked_geometry_verified": false
+        }
+      ],
+      "joint_collision_attribute_authored_count": 0
+    },
+    "post_clone.json": {
+      "file_sha256": "12c7e7f9e91d367abba3d8fc78b15266029d8e6555f52cfd2a445848a303289a",
+      "runtime_phase": "post_clone",
+      "collider_count": 43,
+      "exact_per_link_shape_counts_match": true,
+      "joint_types": {
+        "PhysicsRevoluteJoint": 29,
+        "PhysicsFixedJoint": 12
+      },
+      "exact_joint_name_types_match": true,
+      "head_joints_fixed": true,
+      "collider_types": {
+        "Cylinder": 24,
+        "Sphere": 14,
+        "Cube": 3,
+        "Xform": 2
+      },
+      "self_collision_attributes": [
+        {
+          "path": "/World/envs/env_0/Robot/base_link",
+          "self_collision": {
+            "present": true,
+            "authored": true,
+            "value": true,
+            "time_samples": 0
+          }
+        }
+      ],
+      "meters_per_unit": 1.0,
+      "meters_per_unit_authored": true,
+      "up_axis": "Z",
+      "explicit_usd_filtered_pairs": 0,
+      "explicit_usd_collision_groups": 0,
+      "mesh_like_xforms": [
+        {
+          "path": "/World/envs/env_0/Robot/left_wrist_roll_link/collisions/official_left_wrist_roll_link_1/node_STL_BINARY_",
+          "approximation": {
+            "present": true,
+            "authored": true,
+            "value": "convexHull",
+            "time_samples": 0
+          },
+          "cooked_geometry_verified": false
+        },
+        {
+          "path": "/World/envs/env_0/Robot/right_wrist_roll_link/collisions/official_right_wrist_roll_link_1/node_STL_BINARY_",
+          "approximation": {
+            "present": true,
+            "authored": true,
+            "value": "convexHull",
+            "time_samples": 0
+          },
+          "cooked_geometry_verified": false
+        }
+      ],
+      "joint_collision_attribute_authored_count": 0
+    },
+    "post_physics_init.json": {
+      "file_sha256": "b6c078d5c04cb348b371d3cb3150b96cfb301478b31bc41746b982b363c7732b",
+      "runtime_phase": "post_physics_init",
+      "collider_count": 43,
+      "exact_per_link_shape_counts_match": true,
+      "joint_types": {
+        "PhysicsRevoluteJoint": 29,
+        "PhysicsFixedJoint": 12
+      },
+      "exact_joint_name_types_match": true,
+      "head_joints_fixed": true,
+      "collider_types": {
+        "Cylinder": 24,
+        "Sphere": 14,
+        "Cube": 3,
+        "Xform": 2
+      },
+      "self_collision_attributes": [
+        {
+          "path": "/World/envs/env_0/Robot/base_link",
+          "self_collision": {
+            "present": true,
+            "authored": true,
+            "value": true,
+            "time_samples": 0
+          }
+        }
+      ],
+      "meters_per_unit": 1.0,
+      "meters_per_unit_authored": true,
+      "up_axis": "Z",
+      "explicit_usd_filtered_pairs": 0,
+      "explicit_usd_collision_groups": 0,
+      "mesh_like_xforms": [
+        {
+          "path": "/World/envs/env_0/Robot/left_wrist_roll_link/collisions/official_left_wrist_roll_link_1/node_STL_BINARY_",
+          "approximation": {
+            "present": true,
+            "authored": true,
+            "value": "convexHull",
+            "time_samples": 0
+          },
+          "cooked_geometry_verified": false
+        },
+        {
+          "path": "/World/envs/env_0/Robot/right_wrist_roll_link/collisions/official_right_wrist_roll_link_1/node_STL_BINARY_",
+          "approximation": {
+            "present": true,
+            "authored": true,
+            "value": "convexHull",
+            "time_samples": 0
+          },
+          "cooked_geometry_verified": false
+        }
+      ],
+      "joint_collision_attribute_authored_count": 0
+    }
+  },
+  "model_joint_order": [
+    "left_hip_pitch_joint",
+    "left_hip_roll_joint",
+    "left_hip_yaw_joint",
+    "left_knee_joint",
+    "left_ankle_pitch_joint",
+    "left_ankle_roll_joint",
+    "right_hip_pitch_joint",
+    "right_hip_roll_joint",
+    "right_hip_yaw_joint",
+    "right_knee_joint",
+    "right_ankle_pitch_joint",
+    "right_ankle_roll_joint",
+    "waist_yaw_joint",
+    "waist_roll_joint",
+    "waist_pitch_joint",
+    "left_shoulder_pitch_joint",
+    "left_shoulder_roll_joint",
+    "left_shoulder_yaw_joint",
+    "left_elbow_joint",
+    "left_wrist_yaw_joint",
+    "left_wrist_pitch_joint",
+    "left_wrist_roll_joint",
+    "right_shoulder_pitch_joint",
+    "right_shoulder_roll_joint",
+    "right_shoulder_yaw_joint",
+    "right_elbow_joint",
+    "right_wrist_yaw_joint",
+    "right_wrist_pitch_joint",
+    "right_wrist_roll_joint"
+  ],
+  "runtime_joint_order": [
+    "left_hip_pitch_joint",
+    "right_hip_pitch_joint",
+    "waist_yaw_joint",
+    "left_hip_roll_joint",
+    "right_hip_roll_joint",
+    "waist_roll_joint",
+    "left_hip_yaw_joint",
+    "right_hip_yaw_joint",
+    "waist_pitch_joint",
+    "left_knee_joint",
+    "right_knee_joint",
+    "left_shoulder_pitch_joint",
+    "right_shoulder_pitch_joint",
+    "left_ankle_pitch_joint",
+    "right_ankle_pitch_joint",
+    "left_shoulder_roll_joint",
+    "right_shoulder_roll_joint",
+    "left_ankle_roll_joint",
+    "right_ankle_roll_joint",
+    "left_shoulder_yaw_joint",
+    "right_shoulder_yaw_joint",
+    "left_elbow_joint",
+    "right_elbow_joint",
+    "left_wrist_yaw_joint",
+    "right_wrist_yaw_joint",
+    "left_wrist_pitch_joint",
+    "right_wrist_pitch_joint",
+    "left_wrist_roll_joint",
+    "right_wrist_roll_joint"
+  ],
+  "joint_orders_identical": false,
+  "runtime_columns_from_model_order": [
+    0,
+    6,
+    12,
+    1,
+    7,
+    13,
+    2,
+    8,
+    14,
+    3,
+    9,
+    15,
+    22,
+    4,
+    10,
+    16,
+    23,
+    5,
+    11,
+    17,
+    24,
+    18,
+    25,
+    19,
+    26,
+    20,
+    27,
+    21,
+    28
+  ],
+  "model_columns_from_runtime_order": [
+    0,
+    3,
+    6,
+    9,
+    13,
+    17,
+    1,
+    4,
+    7,
+    10,
+    14,
+    18,
+    2,
+    5,
+    8,
+    11,
+    15,
+    19,
+    21,
+    23,
+    25,
+    27,
+    12,
+    16,
+    20,
+    22,
+    24,
+    26,
+    28
+  ],
+  "mapping_scope": "Verified name permutation only, NOT a policy/action/reset integration test",
+  "interpretation": [
+    "All three USD snapshots match all43 nominal per-link collision counts and all41 joint names/types:29revolute+12fixed. Matching counts do not verify shape cooking.",
+    "The two wrist mesh collision API owners are Xform with authored convexHull. Current snapshot does not collect their descendant mesh points or actual cooked hulls.",
+    "Stage metadata is authored metersPerUnit=1,upAxis=Z. This does NOT prove original source-motion or STL alignment/units.",
+    "Zero explicit USD filteredPairs/collisionGroups does NOT prove no PhysX filters, inter-env collisions, or valid adjacent/self-collision policy.",
+    "Worker remains failed (-11). Runtime report cleanup_completed is a code-path observation, not proof of normal process exit or physical acceptance."
+  ],
+  "exact_native_crash_location_known": false,
+  "full_runtime_acceptance": false,
+  "actual_physx_pair_filters_verified": false,
+  "cooked_geometry_verified": false,
+  "source_motion_units_or_alignment_proven": false,
+  "solver_calls": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false,
+  "training_ready": false
+}

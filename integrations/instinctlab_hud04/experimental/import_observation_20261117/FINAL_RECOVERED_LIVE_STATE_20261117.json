@@ -1,0 +1,209 @@
+{
+  "observed_utc": "2026-11-17T14:10:56.065110+00:00",
+  "tasks": [
+    {
+      "task": {
+        "projectId": "PRO_20261116_016",
+        "taskId": "TASK_20261117_339",
+        "taskName": "hud04-import-filter-once-0acf47c0",
+        "taskStatus": "6",
+        "imageId": "BJX00000178",
+        "imageVersion": "V000446",
+        "goodsId": "ESKU000001",
+        "goodsBackId": "SKUSL000002",
+        "goodsName": "1*4090D*24G",
+        "hashrateResourceId": "SL00000009",
+        "createTime": "2026-11-17 21:16:36",
+        "updateTime": "2026-11-17 21:17:15",
+        "startTime": "2026-11-17 21:16:45",
+        "endTime": "2026-11-17 21:17:09",
+        "goodsPrice": 5.76,
+        "gpuNum": 1
+      },
+      "actual_commit": "0acf47c020418ae1e0aaf1809c636384733526c0"
+    },
+    {
+      "task": {
+        "projectId": "PRO_20261116_016",
+        "taskId": "TASK_20261117_341",
+        "taskName": "hud04-import-streamfix-6f0f7e11",
+        "taskStatus": "6",
+        "imageId": "BJX00000178",
+        "imageVersion": "V000446",
+        "goodsId": "ESKU000001",
+        "goodsBackId": "SKUSL000002",
+        "goodsName": "1*4090D*24G",
+        "hashrateResourceId": "SL00000009",
+        "createTime": "2026-11-17 21:21:56",
+        "updateTime": "2026-11-17 21:26:22",
+        "startTime": "2026-11-17 21:22:05",
+        "endTime": "2026-11-17 21:26:16",
+        "goodsPrice": 5.76,
+        "gpuNum": 1
+      },
+      "actual_commit": "6f0f7e11fbd9a2472d03670689b8d49acd8f76b1"
+    },
+    {
+      "task": {
+        "projectId": "PRO_20261116_016",
+        "taskId": "TASK_20261117_347",
+        "taskName": "hud04-phase-diag-cf190d8",
+        "taskStatus": "6",
+        "imageId": "BJX00000178",
+        "imageVersion": "V000446",
+        "goodsId": "ESKU000001",
+        "goodsBackId": "SKUSL000002",
+        "goodsName": "1*4090D*24G",
+        "hashrateResourceId": "SL00000009",
+        "createTime": "2026-11-17 21:35:23",
+        "updateTime": "2026-11-17 21:39:51",
+        "startTime": "2026-11-17 21:35:34",
+        "endTime": "2026-11-17 21:39:46",
+        "goodsPrice": 5.76,
+        "gpuNum": 1
+      },
+      "actual_commit": "cf190d8a6214dcd4155193fb89661a97d77cd1e2"
+    },
+    {
+      "task": {
+        "projectId": "PRO_20261116_016",
+        "taskId": "TASK_20261117_350",
+        "taskName": "hud04-cleanup-diag-a5b6559f",
+        "taskStatus": "6",
+        "imageId": "BJX00000178",
+        "imageVersion": "V000446",
+        "goodsId": "ESKU000001",
+        "goodsBackId": "SKUSL000002",
+        "goodsName": "1*4090D*24G",
+        "hashrateResourceId": "SL00000009",
+        "createTime": "2026-11-17 21:42:18",
+        "updateTime": "2026-11-17 21:47:47",
+        "startTime": "2026-11-17 21:42:25",
+        "endTime": "2026-11-17 21:47:43",
+        "goodsPrice": 5.76,
+        "gpuNum": 1
+      },
+      "actual_commit": "a5b6559fcfe7cf1c6e8fe2fafd4dd2e82a350e84"
+    },
+    {
+      "task": {
+        "projectId": "PRO_20261116_016",
+        "taskId": "TASK_20261117_358",
+        "taskName": "hud04-unsubscribe-diag-52fabc2d",
+        "taskStatus": "6",
+        "imageId": "BJX00000178",
+        "imageVersion": "V000446",
+        "goodsId": "ESKU000001",
+        "goodsBackId": "SKUSL000002",
+        "goodsName": "1*4090D*24G",
+        "hashrateResourceId": "SL00000009",
+        "createTime": "2026-11-17 21:49:38",
+        "updateTime": "2026-11-17 21:50:12",
+        "startTime": "2026-11-17 21:49:46",
+        "endTime": "2026-11-17 21:50:07",
+        "goodsPrice": 5.76,
+        "gpuNum": 1
+      },
+      "actual_commit": "52fabc2d0025421e820f4bebb5e18030b388673d"
+    },
+    {
+      "task": {
+        "projectId": "PRO_20261116_016",
+        "taskId": "TASK_20261117_359",
+        "taskName": "hud04-report-flush-aaec5c06",
+        "taskStatus": "6",
+        "imageId": "BJX00000178",
+        "imageVersion": "V000446",
+        "goodsId": "ESKU000001",
+        "goodsBackId": "SKUSL000002",
+        "goodsName": "1*4090D*24G",
+        "hashrateResourceId": "SL00000009",
+        "createTime": "2026-11-17 21:51:43",
+        "updateTime": "2026-11-17 21:52:37",
+        "startTime": "2026-11-17 21:51:50",
+        "endTime": "2026-11-17 21:52:31",
+        "goodsPrice": 5.76,
+        "gpuNum": 1
+      },
+      "actual_commit": "aaec5c0688f66fb0d406fa8d67d9e6be3664540e"
+    },
+    {
+      "task": {
+        "projectId": "PRO_20261116_016",
+        "taskId": "TASK_20261117_366",
+        "taskName": "hud04-failure-evidence-4031da1e",
+        "taskStatus": "6",
+        "imageId": "BJX00000178",
+        "imageVersion": "V000446",
+        "goodsId": "ESKU000001",
+        "goodsBackId": "SKUSL000002",
+        "goodsName": "1*4090D*24G",
+        "hashrateResourceId": "SL00000009",
+        "createTime": "2026-11-17 22:05:28",
+        "updateTime": "2026-11-17 22:06:22",
+        "startTime": "2026-11-17 22:05:36",
+        "endTime": "2026-11-17 22:06:12",
+        "goodsPrice": 5.76,
+        "gpuNum": 1
+      },
+      "actual_commit": "4031da1e8d01deb132162bf8548eb8ca53a32745"
+    }
+  ],
+  "live": {
+    "account_active": {
+      "response_type": "dict",
+      "response_keys": [
+        "code",
+        "hasNext",
+        "msg",
+        "msgEn",
+        "pageNum",
+        "pageSize",
+        "rows",
+        "success",
+        "time",
+        "total"
+      ],
+      "pagination": {
+        "total": 0,
+        "hasNext": false,
+        "pageNum": 1,
+        "pageSize": 50
+      },
+      "returned_rows": 0,
+      "row_keys": [],
+      "rows": []
+    },
+    "project_draft_and_active": {
+      "response_type": "dict",
+      "response_keys": [
+        "code",
+        "hasNext",
+        "msg",
+        "msgEn",
+        "pageNum",
+        "pageSize",
+        "rows",
+        "success",
+        "time",
+        "total"
+      ],
+      "pagination": {
+        "total": 0,
+        "hasNext": false,
+        "pageNum": 1,
+        "pageSize": 50
+      },
+      "returned_rows": 0,
+      "row_keys": [],
+      "rows": []
+    }
+  },
+  "final_check_task_mutations": 0,
+  "new_diagnostics_across_recovered_continuations": 7,
+  "old_tasks_732_016_not_resubmitted": true,
+  "solver_calls": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false,
+  "training_ready": false
+}

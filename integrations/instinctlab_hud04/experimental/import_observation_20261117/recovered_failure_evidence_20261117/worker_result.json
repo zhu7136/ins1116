@@ -1,0 +1,18 @@
+{
+  "stage": "bounded_import_worker_result",
+  "observation_completed": false,
+  "stop_reason": null,
+  "return_code": -11,
+  "direct_child_reaped": true,
+  "cleanup_grace_seconds_max": 0.8,
+  "child_wall_seconds": 31.19819522369653,
+  "log_bytes": 12461,
+  "log_sha256": "05924ed791eb591c832892cd757bc84907200fa69834e10a23a1e9daafdc12f3",
+  "local_report_present": true,
+  "platform_deadline_verified": false,
+  "gpu_submissions": 0,
+  "solver_calls": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false,
+  "training_ready": false
+}
