@@ -1,0 +1,12 @@
+{
+  "archive": "hud04-source-only-20261117.zip",
+  "bytes": 1170767,
+  "sha256": "c38418c6ba949ed41fdafa67330a0487f1d6cea2bf15d71378c4402079149152",
+  "archive_entries": 22,
+  "zip_readback_verified": true,
+  "original_hashes_rechecked": true,
+  "source_backup_complete": true,
+  "hud04_reference_complete": false,
+  "accepted_reference": false,
+  "training_ready": false
+}

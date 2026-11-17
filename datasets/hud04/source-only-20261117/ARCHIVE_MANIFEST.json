@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "status": "SOURCE_ONLY_NOT_HUD04_REFERENCE",
+  "original_file_count": 7,
+  "source_motion_count": 4,
+  "total_frames": 3428,
+  "fps": 90,
+  "motions": [
+    {
+      "name": "jumpsit2-ziwen-retargeted.npz",
+      "frames": 967,
+      "fps": 90,
+      "lossless_roundtrip": true,
+      "position_violating_frames": 484,
+      "overspeed_intervals": 106
+    },
+    {
+      "name": "kneelClimbStep1-x-0.1-ziwen-retargeted.npz",
+      "frames": 997,
+      "fps": 90,
+      "lossless_roundtrip": true,
+      "position_violating_frames": 261,
+      "overspeed_intervals": 165
+    },
+    {
+      "name": "rollVault11-ziwen-retargeted.npz",
+      "frames": 942,
+      "fps": 90,
+      "lossless_roundtrip": true,
+      "position_violating_frames": 585,
+      "overspeed_intervals": 131
+    },
+    {
+      "name": "superheroLanding-retargeted.npz",
+      "frames": 522,
+      "fps": 90,
+      "lossless_roundtrip": true,
+      "position_violating_frames": 115,
+      "overspeed_intervals": 100
+    }
+  ],
+  "body_actions": 29,
+  "head_actions": 0,
+  "original_bytes_preserved": true,
+  "lossless_roundtrip_verified": true,
+  "accepted_reference": false,
+  "training_ready": false,
+  "retarget_solver_calls": 0,
+  "ppo_updates": 0,
+  "files": [
+    {
+      "path": "README_zh.md",
+      "bytes": 1235,
+      "sha256": "18bc10ec92b40f7ae1bd5f9390e90e70d0d319cd6bb30800421dd80a2ae9541f"
+    },
+    {
+      "path": "evidence/CONTACT_CORRESPONDENCE_GEOMETRY_REVIEW_20261117.json",
+      "bytes": 44707,
+      "sha256": "c039d1386ff6267e7b6012e86f48a17fd58b931a85aa1d8cd47eb706ed23864b"
+    },
+    {
+      "path": "evidence/MULTIPATCH_REVIEW_zh_20261117.md",
+      "bytes": 8620,
+      "sha256": "d9b84853b70463574277f7ea0c324baa209c589e60023f184c90e68e1f0876e7"
+    },
+    {
+      "path": "evidence/PROCESSED_TERRAIN_REVIEW_20261117.md",
+      "bytes": 8079,
+      "sha256": "9de51c87f24619ff66ec2e9687729a5cb2a733a167b4c2d564ace15094ee2112"
+    },
+    {
+      "path": "evidence/SEARCH_FINDINGS_20261117.md",
+      "bytes": 7053,
+      "sha256": "176b1e59f0d1063c1648862a292d7ffa1bc045e85bb92eee906bf31b0153443d"
+    },
+    {
+      "path": "evidence/SOURCE_CONVERSION_PREPARATION_20261117.md",
+      "bytes": 5673,
+      "sha256": "85661db29eb8e4b78b0befd0767d16c230ba5768fc49186f2b0aa29bb103e0d3"
+    },
+    {
+      "path": "evidence/SOURCE_ROOT_TARGET_JACOBIAN_REVIEW_20261117.json",
+      "bytes": 6403,
+      "sha256": "71edb579a2f2409cdfeda4828d9220929acdd97fe4d573b539e89d0a4e0e2369"
+    },
+    {
+      "path": "evidence/motion_source_comparison.json",
+      "bytes": 15233,
+      "sha256": "75529105f61d5946c65707c0a639796d03f8fe4f820ae0541c755ea93517f9ca"
+    },
+    {
+      "path": "evidence/source_interface_chain.json",
+      "bytes": 1872,
+      "sha256": "9cb3e1d70d0f2595e247e2061fb1391a46c4e2374620c05eba36bd4866a65f64"
+    },
+    {
+      "path": "original/50cmboxes_19_36_49.stl",
+      "bytes": 404434,
+      "sha256": "3aee33efea6793974d901dd0f7e46859e2d12d2dfd79f38f12c777686566c2de"
+    },
+    {
+      "path": "original/jumpsit2-ziwen-retargeted.npz",
+      "bytes": 143554,
+      "sha256": "064e7d9e890d99ae94902a116b7ac26c09900386e0d9e42ca62f300c2559c5cb"
+    },
+    {
+      "path": "original/kneelClimbStep1-x-0.1-ziwen-retargeted.npz",
+      "bytes": 147874,
+      "sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056"
+    },
+    {
+      "path": "original/metadata.yaml",
+      "bytes": 153,
+      "sha256": "5ea48d393d9f14829380897407f1354235a6faa029810368b45f74f47e3e3e15"
+    },
+    {
+      "path": "original/metadata_kneelClimbStep1.yaml",
+      "bytes": 153,
+      "sha256": "cbd3010b21111f8fc69a354c37befaf72bd33508a93763edc024b3a29f887ea1"
+    },
+    {
+      "path": "original/rollVault11-ziwen-retargeted.npz",
+      "bytes": 139954,
+      "sha256": "78fcbae898a0944d2028810edd73b604f26058351d45675e89d132367dc83f6a"
+    },
+    {
+      "path": "original/superheroLanding-retargeted.npz",
+      "bytes": 154642,
+      "sha256": "49d85e012920b3cb03d08e1fb2d3fd039162b293e76a301193940d8321cb5834"
+    },
+    {
+      "path": "source_staging/STAGING_MANIFEST.json",
+      "bytes": 5808,
+      "sha256": "94f9270c865e917805ddaa72607d5bd0b7d63763409691b95ea4c53768401995"
+    },
+    {
+      "path": "source_staging/jumpsit2-ziwen-retargeted.source-stage.npz",
+      "bytes": 132690,
+      "sha256": "1bf6159e95548d557a81c35ac611a2947173453595ca790b54ee9cfca5165af6"
+    },
+    {
+      "path": "source_staging/kneelClimbStep1-x-0.1-ziwen-retargeted.source-stage.npz",
+      "bytes": 136115,
+      "sha256": "78be4a123296ac51e4f00899e686a0d5a5038f866503f91b7de17a008120b780"
+    },
+    {
+      "path": "source_staging/rollVault11-ziwen-retargeted.source-stage.npz",
+      "bytes": 127120,
+      "sha256": "f070c07217c09b37832f4e422e98d3ecb1acf69c5c034888bd0a04ed27469797"
+    },
+    {
+      "path": "source_staging/superheroLanding-retargeted.source-stage.npz",
+      "bytes": 87005,
+      "sha256": "dc0fffac773a88f232ad6296c681c1cf9eeb3afb774e1ddf4f36260d42886998"
+    }
+  ]
+}
