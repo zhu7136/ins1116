@@ -1,0 +1,2136 @@
+{
+  "stage": "independent_primitive_to_actual_terrain_NOT_reference_acceptance",
+  "checks": [
+    {
+      "shape": "base_link#0",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_bounded_geometry_query",
+        "lower": 0.014299963121302425,
+        "upper": 0.01429999800492332,
+        "initial_fw_width": 3.488362089465458e-08,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.014299997988484964,
+        0.014299997989840588
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": false
+    },
+    {
+      "shape": "base_link#0",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.020530393040017,
+        "upper": 1.0205303966086567,
+        "initial_fw_width": 3.568639828088749e-09,
+        "fw_iterations": 2,
+        "local_refinement_calls": 0,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        1.0205303966082877,
+        1.0205303966090773
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "base_link#1",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.0,
+        "upper": 0.0,
+        "initial_fw_width": 0.0,
+        "fw_iterations": 2,
+        "local_refinement_calls": 0,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.0,
+        1.7859270954227777e-15
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "base_link#1",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.0955150223809298,
+        "upper": 1.0955150223809298,
+        "initial_fw_width": 0.0,
+        "fw_iterations": 2,
+        "local_refinement_calls": 0,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        1.0955150223529198,
+        1.0955150224530903
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "base_link#2",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.0,
+        "upper": 0.0,
+        "initial_fw_width": 0.0,
+        "fw_iterations": 2,
+        "local_refinement_calls": 0,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.0,
+        1.7090125564715406e-15
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "base_link#2",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.9356261791570727,
+        "upper": 0.9356261819525736,
+        "initial_fw_width": 2.795500941843443e-09,
+        "fw_iterations": 13,
+        "local_refinement_calls": 0,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.9356261819064342,
+        0.9356261819687575
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_hip_pitch_link#0",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.03406054097218216,
+        "upper": 0.03406054186182384,
+        "initial_fw_width": 5.8020482074094826e-06,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.03406054182109514,
+        0.03406054187779071
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_hip_pitch_link#0",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.1484747745355588,
+        "upper": 1.148474778530787,
+        "initial_fw_width": 3.995228148312435e-09,
+        "fw_iterations": 4,
+        "local_refinement_calls": 0,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        1.1484747785238298,
+        1.148474778533874
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_hip_yaw_link#0",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.14652903687257393,
+        "upper": 0.1465290390221698,
+        "initial_fw_width": 0.005532982247643731,
+        "fw_iterations": 80,
+        "local_refinement_calls": 2,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.14652903902189687,
+        0.14652903902223188
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_hip_yaw_link#0",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.1299019735970774,
+        "upper": 1.1299019735970774,
+        "initial_fw_width": 0.0,
+        "fw_iterations": 1,
+        "local_refinement_calls": 0,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        1.129901973555266,
+        1.129901974524767
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_hip_yaw_link#1",
+      "kind": "sphere",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.2885257537335596,
+        "upper": 0.2885257537335596,
+        "triangle_count": 8068,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        0.2885257537334791,
+        0.28852575373367817
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_hip_yaw_link#1",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.1290320530413775,
+        "upper": 1.1290320530413775,
+        "triangle_count": 2958,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        1.1290320530031923,
+        1.1290320539036272
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_hip_yaw_link#2",
+      "kind": "sphere",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.12548924556765934,
+        "upper": 0.12548924556765934,
+        "triangle_count": 8068,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        0.1254892455652372,
+        0.12548924556888474
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_hip_yaw_link#2",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.1812035776889795,
+        "upper": 1.1812035776889795,
+        "triangle_count": 2958,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        1.1812035776607663,
+        1.1812035783554948
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_knee_link#0",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.39564553184823975,
+        "upper": 0.3956455331644284,
+        "initial_fw_width": 0.003685154698630566,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.3956455329081518,
+        0.39564553386642914
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_knee_link#0",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.1106230421723988,
+        "upper": 1.1106230421723988,
+        "initial_fw_width": 0.0,
+        "fw_iterations": 2,
+        "local_refinement_calls": 0,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        1.1106230419547254,
+        1.1106230423372665
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_knee_link#1",
+      "kind": "sphere",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.4457543425539442,
+        "upper": 0.4457543425539442,
+        "triangle_count": 8068,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        0.44575434239126177,
+        0.4457543425758284
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_knee_link#1",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.1108654281966794,
+        "upper": 1.1108654281966794,
+        "triangle_count": 2958,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        1.1108654276425496,
+        1.1108654285355763
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_knee_link#2",
+      "kind": "sphere",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.39506727901383787,
+        "upper": 0.39506727901383787,
+        "triangle_count": 8068,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        0.3950672789655442,
+        0.39506727907869343
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_knee_link#2",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.1181994767668917,
+        "upper": 1.1181994767668917,
+        "triangle_count": 2958,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        1.118199476763117,
+        1.118199476887484
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_ankle_roll_link#0",
+      "kind": "box",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.40676501350212085,
+        "upper": 0.40676501350212085,
+        "triangle_count": 8068,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "13axis_SAT_and_exhaustive_vertex_face_edge_edge"
+      },
+      "primary_bracket": [
+        0.4067650135021208,
+        0.4067650135021209
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_ankle_roll_link#0",
+      "kind": "box",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.0959579192299735,
+        "upper": 1.0959579192299735,
+        "triangle_count": 2958,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "13axis_SAT_and_exhaustive_vertex_face_edge_edge"
+      },
+      "primary_bracket": [
+        1.095957919229973,
+        1.0959579192299735
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_hip_pitch_link#0",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.03406052785081423,
+        "upper": 0.03406053056672731,
+        "initial_fw_width": 8.950985906607672e-05,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.034060530354952955,
+        0.03406053096994332
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_hip_pitch_link#0",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.8906587658846791,
+        "upper": 0.8906587658846791,
+        "initial_fw_width": 0.0,
+        "fw_iterations": 1,
+        "local_refinement_calls": 0,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.8906587657588668,
+        0.8906587659025517
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_hip_yaw_link#0",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.14652898020739952,
+        "upper": 0.14652898050711172,
+        "initial_fw_width": 2.553610890937419e-06,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.14652898048406846,
+        0.14652898051959737
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_hip_yaw_link#0",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.7869395746291389,
+        "upper": 0.7869395746291389,
+        "initial_fw_width": 0.0,
+        "fw_iterations": 1,
+        "local_refinement_calls": 0,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.786939574623379,
+        0.7869395746361242
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_hip_yaw_link#1",
+      "kind": "sphere",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.28852561624860235,
+        "upper": 0.28852561624860235,
+        "triangle_count": 8068,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        0.28852561624395767,
+        0.28852561626067075
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_hip_yaw_link#1",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.7861516819694945,
+        "upper": 0.7861516819694945,
+        "triangle_count": 2958,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        0.7861516819642305,
+        0.7861516819757702
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_hip_yaw_link#2",
+      "kind": "sphere",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.12548922864797468,
+        "upper": 0.12548922864797468,
+        "triangle_count": 8068,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        0.1254892286239035,
+        0.12548922866233758
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_hip_yaw_link#2",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.8424815432301447,
+        "upper": 0.8424815432301447,
+        "triangle_count": 2958,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        0.8424815432272404,
+        0.842481543233774
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_knee_link#0",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.39564532156214943,
+        "upper": 0.3956453219712236,
+        "initial_fw_width": 1.1786936288671335e-06,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.3956453216139195,
+        0.3956453220601269
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_knee_link#0",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.7925108274755487,
+        "upper": 0.7925108274755487,
+        "initial_fw_width": 0.0,
+        "fw_iterations": 2,
+        "local_refinement_calls": 0,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.7925108274523652,
+        0.7925108274829769
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_knee_link#1",
+      "kind": "sphere",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.44575426590345446,
+        "upper": 0.44575426590345446,
+        "triangle_count": 8068,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        0.4457542659008175,
+        0.44575426591160844
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_knee_link#1",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.7923806627274826,
+        "upper": 0.7923806627274826,
+        "triangle_count": 2958,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        0.7923806627138806,
+        0.7923806627336232
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_knee_link#2",
+      "kind": "sphere",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.3950670690042605,
+        "upper": 0.3950670690042605,
+        "triangle_count": 8068,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        0.3950670690035772,
+        0.39506706900538674
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_knee_link#2",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.7932671103448251,
+        "upper": 0.7932671103448251,
+        "triangle_count": 2958,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        0.7932671102943357,
+        0.7932671103493824
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_ankle_roll_link#0",
+      "kind": "box",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.40676525720271367,
+        "upper": 0.40676525720271367,
+        "triangle_count": 8068,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "13axis_SAT_and_exhaustive_vertex_face_edge_edge"
+      },
+      "primary_bracket": [
+        0.4067652572027135,
+        0.4067652572027136
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 5.551115123125783e-17,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_ankle_roll_link#0",
+      "kind": "box",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.7775362681503206,
+        "upper": 0.7775362681503206,
+        "triangle_count": 2958,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "13axis_SAT_and_exhaustive_vertex_face_edge_edge"
+      },
+      "primary_bracket": [
+        0.7775362681503205,
+        0.7775362681503206
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "waist_pitch_link#0",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.3040537182444987,
+        "upper": 0.3040537182444992,
+        "initial_fw_width": 0.00021760891068167698,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.30405371820909954,
+        0.30405371839947126
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "waist_pitch_link#0",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.0092388822856273,
+        "upper": 1.009238882322831,
+        "initial_fw_width": 9.021265931385969e-06,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        1.0092388817506042,
+        1.0092388824049263
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "waist_pitch_link#1",
+      "kind": "sphere",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.3040536839538205,
+        "upper": 0.3040536839538205,
+        "triangle_count": 8068,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        0.30405368395358706,
+        0.3040536839538745
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "waist_pitch_link#1",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.0113636201484149,
+        "upper": 1.0113636201484149,
+        "triangle_count": 2958,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        1.0113636200328169,
+        1.011363620230704
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "waist_pitch_link#2",
+      "kind": "sphere",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.304140539858398,
+        "upper": 0.304140539858398,
+        "triangle_count": 8068,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        0.3041405398289034,
+        0.30414053994104334
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "waist_pitch_link#2",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.9013821419332578,
+        "upper": 0.9013821419332578,
+        "triangle_count": 2958,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        0.9013821416446063,
+        0.9013821421467137
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "waist_pitch_link#3",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.17195132657296294,
+        "upper": 0.17195132670490618,
+        "initial_fw_width": 0.00016339306719950764,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.17195132669698945,
+        0.1719513267065347
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "waist_pitch_link#3",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.006310119385429,
+        "upper": 1.0063101193870723,
+        "initial_fw_width": 4.1530634553588186e-07,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        1.0063101188765073,
+        1.0063101194739577
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "waist_pitch_link#4",
+      "kind": "sphere",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.17195130800089953,
+        "upper": 0.17195130800089953,
+        "triangle_count": 8068,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        0.1719513079865031,
+        0.1719513082315531
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "waist_pitch_link#4",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.067481054386583,
+        "upper": 1.067481054386583,
+        "triangle_count": 2958,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        1.067481054385645,
+        1.0674810543868891
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "waist_pitch_link#5",
+      "kind": "sphere",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.17204605989680227,
+        "upper": 0.17204605989680227,
+        "triangle_count": 8068,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        0.17204605988030194,
+        0.17204606014554266
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "waist_pitch_link#5",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.9475021393716039,
+        "upper": 0.9475021393716039,
+        "triangle_count": 2958,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        0.9475021393695727,
+        0.9475021393722873
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "waist_pitch_link#6",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.21934178072645855,
+        "upper": 0.21934178072656618,
+        "initial_fw_width": 0.0002582054278854884,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.2193417807222998,
+        0.21934178072743624
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "waist_pitch_link#6",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.0150445001213475,
+        "upper": 1.0150445002834736,
+        "initial_fw_width": 2.887518446570425e-07,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        1.0150445001129107,
+        1.015044500344866
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "waist_pitch_link#7",
+      "kind": "sphere",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.21934177137456287,
+        "upper": 0.21934177137456287,
+        "triangle_count": 8068,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        0.21934177137429828,
+        0.21934177137578
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "waist_pitch_link#7",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.085604314348208,
+        "upper": 1.085604314348208,
+        "triangle_count": 2958,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        1.0856043142399296,
+        1.0856043143510319
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "waist_pitch_link#8",
+      "kind": "sphere",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.2194207312878152,
+        "upper": 0.2194207312878152,
+        "triangle_count": 8068,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        0.2194207312264393,
+        0.21942073129204276
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "waist_pitch_link#8",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.9856229021133318,
+        "upper": 0.9856229021133318,
+        "triangle_count": 2958,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "center_triangle_minus_radius"
+      },
+      "primary_bracket": [
+        0.9856229019813608,
+        0.9856229021164609
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_shoulder_roll_link#0",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.3938856113835913,
+        "upper": 0.39388561222984125,
+        "initial_fw_width": 0.0018305611152437118,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.39388561216142426,
+        0.39388561240912073
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_shoulder_roll_link#0",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.1195913295810918,
+        "upper": 1.1195913295810918,
+        "initial_fw_width": 0.0,
+        "fw_iterations": 1,
+        "local_refinement_calls": 0,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        1.1195913295773958,
+        1.1195913295908435
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_shoulder_roll_link#1",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.3984999207222403,
+        "upper": 0.39849992074418034,
+        "initial_fw_width": 0.002766780154924653,
+        "fw_iterations": 80,
+        "local_refinement_calls": 2,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.3984999206158193,
+        0.39849992115462995
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_shoulder_roll_link#1",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.042579283165494,
+        "upper": 1.042579283165494,
+        "initial_fw_width": 0.0,
+        "fw_iterations": 1,
+        "local_refinement_calls": 0,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        1.0425792828762739,
+        1.0425792831742344
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_elbow_link#0",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.3817292446408571,
+        "upper": 0.3817292446408893,
+        "initial_fw_width": 0.005172141987962342,
+        "fw_iterations": 80,
+        "local_refinement_calls": 2,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.38172924463581187,
+        0.38172924464605323
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_elbow_link#0",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.8715373877434235,
+        "upper": 0.8715373877434235,
+        "initial_fw_width": 0.0,
+        "fw_iterations": 1,
+        "local_refinement_calls": 0,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.8715373877054166,
+        0.8715373877454589
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_elbow_link#1",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.3645348235410372,
+        "upper": 0.36453482357401246,
+        "initial_fw_width": 0.00499058576973066,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.364534822958487,
+        0.3645348236693076
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_elbow_link#1",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.8026520702621069,
+        "upper": 0.8026520702621069,
+        "initial_fw_width": 0.0,
+        "fw_iterations": 1,
+        "local_refinement_calls": 0,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.8026520702450343,
+        0.8026520702768627
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_wrist_pitch_link#0",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.34915025126439075,
+        "upper": 0.3491502512792634,
+        "initial_fw_width": 0.004705690018900255,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.3491502512783697,
+        0.3491502512850689
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_wrist_pitch_link#0",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.7430068412690944,
+        "upper": 0.7430068412690944,
+        "initial_fw_width": 0.0,
+        "fw_iterations": 1,
+        "local_refinement_calls": 0,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.7430068412616757,
+        0.7430068412842072
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_wrist_pitch_link#1",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.32001134493890726,
+        "upper": 0.3200113455723953,
+        "initial_fw_width": 0.0019796616289965985,
+        "fw_iterations": 80,
+        "local_refinement_calls": 2,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.3200113455723734,
+        0.3200113455724503
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "left_wrist_pitch_link#1",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.6904621785255172,
+        "upper": 0.6904621785255172,
+        "initial_fw_width": 0.0,
+        "fw_iterations": 1,
+        "local_refinement_calls": 0,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.6904621785114744,
+        0.6904621785918831
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_shoulder_roll_link#0",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.39388564679620147,
+        "upper": 0.3938856469153178,
+        "initial_fw_width": 0.002795992159630889,
+        "fw_iterations": 80,
+        "local_refinement_calls": 2,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.3938856469021637,
+        0.3938856469162997
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_shoulder_roll_link#0",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.8116526040174401,
+        "upper": 0.8116526048724326,
+        "initial_fw_width": 2.0319096960541572e-08,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.8116526042518574,
+        0.811652604990296
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_shoulder_roll_link#1",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.39850000516959844,
+        "upper": 0.3985000076217211,
+        "initial_fw_width": 1.1682412214275573e-06,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.3985000076190481,
+        0.39850000762325183
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_shoulder_roll_link#1",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.7345870862210753,
+        "upper": 0.7345870915926562,
+        "initial_fw_width": 5.371580957813649e-09,
+        "fw_iterations": 39,
+        "local_refinement_calls": 0,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.7345870915893095,
+        0.7345870915940406
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_elbow_link#0",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.3817205709680088,
+        "upper": 0.3817205709705208,
+        "initial_fw_width": 2.5386173266306322e-06,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.3817205709675861,
+        0.38172057097174805
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_elbow_link#0",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.5629334357743716,
+        "upper": 0.5629334433685012,
+        "initial_fw_width": 7.594129547427997e-09,
+        "fw_iterations": 22,
+        "local_refinement_calls": 0,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.5629334426995295,
+        0.5629334434106246
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_elbow_link#1",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.3645352113711215,
+        "upper": 0.3645352140520711,
+        "initial_fw_width": 4.987057690697405e-07,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.36453521404938033,
+        0.3645352140545865
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_elbow_link#1",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.49313989949765624,
+        "upper": 0.4931398995125072,
+        "initial_fw_width": 3.9071401392032357e-08,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.49313989951087334,
+        0.49313989951438
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_wrist_pitch_link#0",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.3491677678035234,
+        "upper": 0.349167773981668,
+        "initial_fw_width": 5.958916036163941e-07,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.34916777391999526,
+        0.3491677739919583
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_wrist_pitch_link#0",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.43056531773615614,
+        "upper": 0.43056531877263765,
+        "initial_fw_width": 9.582607030100831e-08,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.43056531877246773,
+        0.43056531877268556
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_wrist_pitch_link#1",
+      "kind": "cylinder",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.3200118671082905,
+        "upper": 0.3200118675759841,
+        "initial_fw_width": 9.544648269521616e-07,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 8068,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.3200118675606039,
+        0.32001186758937067
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "right_wrist_pitch_link#1",
+      "kind": "cylinder",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.3708888846145374,
+        "upper": 0.37088888533634085,
+        "initial_fw_width": 7.047282118977094e-08,
+        "fw_iterations": 80,
+        "local_refinement_calls": 1,
+        "triangle_count": 2958,
+        "max_fw_iterations": 80,
+        "max_local_calls": 32,
+        "max_local_iterations": 100,
+        "optimizer_success_used_as_certificate": false,
+        "certificate": "convex_tangent_lower_and_feasible_point_upper",
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "retarget_solver_called": false
+      },
+      "primary_bracket": [
+        0.37088888519154545,
+        0.37088888535127346
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "head_pitch_link#0",
+      "kind": "box",
+      "subset": "all",
+      "independent": {
+        "status": "converged",
+        "lower": 0.6018232762579776,
+        "upper": 0.6018232762579776,
+        "triangle_count": 8068,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "13axis_SAT_and_exhaustive_vertex_face_edge_edge"
+      },
+      "primary_bracket": [
+        0.6018232762579776,
+        0.6018232762579776
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    },
+    {
+      "shape": "head_pitch_link#0",
+      "kind": "box",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.9960927886829274,
+        "upper": 0.9960927886829274,
+        "triangle_count": 2958,
+        "gjk_called": false,
+        "primary_broadphase_used": false,
+        "method": "13axis_SAT_and_exhaustive_vertex_face_edge_edge"
+      },
+      "primary_bracket": [
+        0.9960927886829273,
+        0.9960927886829275
+      ],
+      "brackets_compatible": true,
+      "discrepancy": 0.0,
+      "fully_verified": true
+    }
+  ],
+  "query_count": 82,
+  "type_counts": {
+    "cylinder": 48,
+    "sphere": 28,
+    "box": 6
+  },
+  "independent_status_counts": {
+    "unresolved_bounded_geometry_query": 1,
+    "converged": 81
+  },
+  "compatible_count": 82,
+  "fully_verified_count": 81,
+  "max_bracket_discrepancy": 5.551115123125783e-17,
+  "primary_sha256": "18da9191bd8f9c3d3ab1f762607e6970446f1f5aec629cd4806609922ee6ca57",
+  "all_triangles_in_each_subset_evaluated": true,
+  "primary_broadphase_reused": false,
+  "gjk_used": false,
+  "nominal_hand_hulls_independently_full_mesh_verified": false,
+  "cooked_physics_validated": false,
+  "source_coordinate_hypothesis_selected": false,
+  "gpu_submissions": 0,
+  "retarget_solver_calls": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false,
+  "training_ready": false
+}

@@ -1,0 +1,24 @@
+test_acceptance_stays_false (test_terrain_binding.ActualBindingTests.test_acceptance_stays_false) ... ok
+test_actual_crop_counts (test_terrain_binding.ActualBindingTests.test_actual_crop_counts) ... ok
+test_no_random_wall_mixin (test_terrain_binding.ActualBindingTests.test_no_random_wall_mixin) ... ok
+test_nonflat_border_preserved_not_flattened (test_terrain_binding.ActualBindingTests.test_nonflat_border_preserved_not_flattened) ... ok
+test_shift_is_explicit (test_terrain_binding.ActualBindingTests.test_shift_is_explicit) ... ok
+test_side_faces_have_original_face_identity (test_terrain_binding.ActualBindingTests.test_side_faces_have_original_face_identity) ... ok
+test_box_contains_entire_triangle (test_terrain_binding.IndependentGeometryTests.test_box_contains_entire_triangle) ... ok
+test_box_degenerate_point_analytic_32_cases (test_terrain_binding.IndependentGeometryTests.test_box_degenerate_point_analytic_32_cases) ... ok
+test_box_face_crossing_without_contained_vertices (test_terrain_binding.IndependentGeometryTests.test_box_face_crossing_without_contained_vertices) ... ok
+test_box_plane (test_terrain_binding.IndependentGeometryTests.test_box_plane) ... ok
+test_cylinder_diagonal_point (test_terrain_binding.IndependentGeometryTests.test_cylinder_diagonal_point) ... ok
+test_cylinder_side_and_cap (test_terrain_binding.IndependentGeometryTests.test_cylinder_side_and_cap) ... ok
+test_hand_hull_contains_triangle (test_terrain_binding.IndependentGeometryTests.test_hand_hull_contains_triangle) ... ok
+test_independent_queries_do_not_call_gjk (test_terrain_binding.IndependentGeometryTests.test_independent_queries_do_not_call_gjk) ... ok
+test_local_lower_may_exceed_global_upper (test_terrain_binding.IndependentGeometryTests.test_local_lower_may_exceed_global_upper) ... ok
+test_primitive_rigid_equivariance (test_terrain_binding.IndependentGeometryTests.test_primitive_rigid_equivariance) ... ok
+test_projection_side_cap_and_inside (test_terrain_binding.IndependentGeometryTests.test_projection_side_cap_and_inside) ... ok
+test_sphere_plane_all_triangles (test_terrain_binding.IndependentGeometryTests.test_sphere_plane_all_triangles) ... ok
+test_sphere_surface_intersection_zero (test_terrain_binding.IndependentGeometryTests.test_sphere_surface_intersection_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.404s
+
+OK

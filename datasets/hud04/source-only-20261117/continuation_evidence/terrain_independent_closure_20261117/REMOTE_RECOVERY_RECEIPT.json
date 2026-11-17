@@ -1,0 +1,303 @@
+{
+  "commit": "6fa434956487f800977b7e158cdc37d9ceefb723",
+  "files": [
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/ACTUAL_TERRAIN_BINDING_DIAGNOSTIC_20261117.json",
+      "bytes": 8594,
+      "git_blob_sha": "525b41fde3cfe55658522ea48dcad0db54fab3cf",
+      "sha256": "bec2ffe97d539964511c41c65b1c362bd11b8daf5418baf16005e7f92d9fe9f0"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/COMPLETED_TASK_LOG_LAUNCHER_RECOVERY_20261117.json",
+      "bytes": 1036,
+      "git_blob_sha": "1ebacbb9c3ec7ecd43ec85db1d0057939ec9080d",
+      "sha256": "874c1cffd67c78853ed4ed20ed6ad245fa02c2c9848edde8211ce68c0ca4d14f"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/COMPLETED_TASK_LOG_LAUNCHER_RECOVERY_V2_20261117.json",
+      "bytes": 1482,
+      "git_blob_sha": "91a0de7c724298d84f25d71994c28efd65394bb2",
+      "sha256": "49ab262a4b8ee791ec58a8d9ab479f0b259ee10e98d9c7d7e16fe2ff1630f8cf"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/CYLINDER_REFINED_SUPERVISION_20261117.json",
+      "bytes": 877,
+      "git_blob_sha": "237af28352d0543d6212c942e70b5ff2d15afe92",
+      "sha256": "93d08a235ffdf31fd1b0fb80e014ea305bf5b8ebba2aac1d8184ee62962d4b4c"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/CYLINDER_REFINED_V2_SUPERVISION_20261117.json",
+      "bytes": 1981,
+      "git_blob_sha": "3c5b21dd239a021b217e4157b7be2559b0a34bd1",
+      "sha256": "acfa58904e5f103343ec04e1e364c0da46afb028627fa358a7772c55e9163906"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/CYLINDER_VERIFICATION_SUPERVISION_20261117.json",
+      "bytes": 1925,
+      "git_blob_sha": "8d707f6f288839047a9533aa10e8f13fbe29546c",
+      "sha256": "bb53fb82e28182b72b585ab9fc49bc3193e723106cd8bf4bb6c6f2c0b89939cb"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/INDEPENDENT_CYLINDER_TERRAIN_CHECK_20261117.json",
+      "bytes": 31615,
+      "git_blob_sha": "7642cc4d6627798aa1910422660d3dfa1b003768",
+      "sha256": "ea76c6f156a9574577a52373101939414ce4a8d486112e66a26452ef651da983"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/INDEPENDENT_CYLINDER_TERRAIN_CHECK_REFINED_V2_20261117.json",
+      "bytes": 41003,
+      "git_blob_sha": "5e57e743350a40532ed7f4711a017c3450c842be",
+      "sha256": "5180a851875d92562c03550d3b03dae51929665b1aeb41fafe5d8c17971d84cf"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/INDEPENDENT_TARGET_TERRAIN_CHECK_20261117.json",
+      "bytes": 25370,
+      "git_blob_sha": "57d0101406750a6dc9b6cac780780feabbbdd0e6",
+      "sha256": "d42324024049fb323d419e6ab0164eac591e63b8f1e5eb8a9b73e8085b845df9"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/INDEPENDENT_VERIFICATION_SUPERVISION_20261117.json",
+      "bytes": 2176,
+      "git_blob_sha": "521d039518f517d390ba14b08a36562c543ae79b",
+      "sha256": "27da6fd5fcc5a692fb0fb1b1cdf61e50657b292b4ad63b2b8603cc04fe2c17e3"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/REVIEW_zh.md",
+      "bytes": 5813,
+      "git_blob_sha": "54f1eed5f4a47927b51d0f835fbaa1501357035b",
+      "sha256": "320978afdf025e25a3f0ca88a5a81edb2b9e4748470235b16b420c536ef72dd0"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/SOURCE_ACTUAL_TERRAIN_DETAIL_20261117.json",
+      "bytes": 211485,
+      "git_blob_sha": "4a81e661ca388f7fb013ca44d3b608853f663744",
+      "sha256": "5bb02fe5380c12d7a2424f1ff1b0e059c15437237ce99a30e6013750687bef64"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/TARGET_ACTUAL_TERRAIN_DETAIL_20261117.json",
+      "bytes": 123974,
+      "git_blob_sha": "c5167f0e76868953a54c38d2dc405dd36e4718d3",
+      "sha256": "ddf730843f67830f72a0eb483d3612a9f04823de678be90ec24f7cd0369624e0"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/cylinder_verification_REFINED_V2_progress.jsonl",
+      "bytes": 32371,
+      "git_blob_sha": "e8a5ab3cdd892fb862e2f578535885e49397770e",
+      "sha256": "33b2b24e392dbb58d36e9493c498e3d42eabb82b84b37f00020c559be8bf34c9"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/cylinder_verification_REFINED_progress.jsonl",
+      "bytes": 3984,
+      "git_blob_sha": "596923f21f256c9b513ebae0e121dcf062ec1587",
+      "sha256": "95ca0e90c0561257ca9074df93521f1d130f0a3835ffc5ede8354af0502476cc"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/cylinder_verification_progress.jsonl",
+      "bytes": 24559,
+      "git_blob_sha": "f2040fb57954c05c85595d5b1dce21159d385a68",
+      "sha256": "dca0a0624737fc0ec710a0a3f1e2a2a7a940f2ae0803ff4e952785425b788229"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/debug_cylinder_disagreement.log",
+      "bytes": 564,
+      "git_blob_sha": "40c6ded67b76ccbc2094abeeaece772903ee7031",
+      "sha256": "90853b65bf59e670cff12148cdf41ad0c0ce67c07d9783422ded2b626a6349af"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/publish_snapshot.log",
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/run_binding.log",
+      "bytes": 11344,
+      "git_blob_sha": "c2efc7e770447076f7d23bcd56dd3f9275f115e1",
+      "sha256": "060f163879e986eff5d60d853ddf3400134a6964b6f97248429f74bf54829e39"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/run_cylinder_refinement.log",
+      "bytes": 877,
+      "git_blob_sha": "237af28352d0543d6212c942e70b5ff2d15afe92",
+      "sha256": "93d08a235ffdf31fd1b0fb80e014ea305bf5b8ebba2aac1d8184ee62962d4b4c"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/run_cylinder_refinement_v2.log",
+      "bytes": 1981,
+      "git_blob_sha": "3c5b21dd239a021b217e4157b7be2559b0a34bd1",
+      "sha256": "acfa58904e5f103343ec04e1e364c0da46afb028627fa358a7772c55e9163906"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/run_cylinder_verification.log",
+      "bytes": 1925,
+      "git_blob_sha": "8d707f6f288839047a9533aa10e8f13fbe29546c",
+      "sha256": "bb53fb82e28182b72b585ab9fc49bc3193e723106cd8bf4bb6c6f2c0b89939cb"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/run_verification.log",
+      "bytes": 2176,
+      "git_blob_sha": "521d039518f517d390ba14b08a36562c543ae79b",
+      "sha256": "27da6fd5fcc5a692fb0fb1b1cdf61e50657b292b4ad63b2b8603cc04fe2c17e3"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/source_progress.jsonl",
+      "bytes": 160632,
+      "git_blob_sha": "9ab8d7802064a039b1817e5b69f59922388cfbfd",
+      "sha256": "02f8579501aedf983768a0dc928e9d62d3f03acffbe68eca2ddc4047ee21eb5a"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/target_progress.jsonl",
+      "bytes": 93430,
+      "git_blob_sha": "ccbcb53048052bf8a27c958abe6a2f92e0cbddd7",
+      "sha256": "c1cb571c2c8f444bf02b36de4eb4b16bfaf37908c28e6ca4d89b3845f0d3e21f"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/tests_all_final.log",
+      "bytes": 1243,
+      "git_blob_sha": "147caeb8fe37d27d208a9fe2f4b46ba47b298ec2",
+      "sha256": "73750e7f903e5d1905c51cc3889d2052c4ee4a1d03a4e5d660220a3373491628"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/tests_binding.log",
+      "bytes": 2582,
+      "git_blob_sha": "f5607450d6f5d7350de0baa33d1864e6d29fc865",
+      "sha256": "6f39a81bc002c977360c8f3e167adca5b575d0baca53b0f2387e5085a338b1a3"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/tests_binding_complete.log",
+      "bytes": 1631,
+      "git_blob_sha": "6d89363a4247d55c6c226ae633fbef924ff72caf",
+      "sha256": "24b3a6877a5bcfe642a5d1861cec6077fcc6740790bd7d03e3d62d47a5b497d8"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/tests_binding_final.log",
+      "bytes": 777,
+      "git_blob_sha": "bbd379a478f32a2d6c00417a5c4fdd157b45f495",
+      "sha256": "11ce05c67bebbd0b7cb2b00522bbe0c87e5d22b1eedeed420304dcc4e2aded2e"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/tests_combined47.log",
+      "bytes": 5077,
+      "git_blob_sha": "4933608923505d97a114b90461fcb8296ee420bf",
+      "sha256": "525332b9dad7da1dd2dd28a1d1d8509c76e97133fd63a4a33ea18f63f7a72ac8"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/tests_cylinder.log",
+      "bytes": 337,
+      "git_blob_sha": "5d7dc2d5f9581733641920d8f73dafb834ad9603",
+      "sha256": "15105295ac31c381d9bc396255be35e59dff758c995a6c1d3f1bac6a717ac47e"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/README_zh.md",
+      "bytes": 5813,
+      "git_blob_sha": "54f1eed5f4a47927b51d0f835fbaa1501357035b",
+      "sha256": "320978afdf025e25a3f0ca88a5a81edb2b9e4748470235b16b420c536ef72dd0"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/binding_worker.py",
+      "bytes": 7032,
+      "git_blob_sha": "d84c1d302808509dd215e1c131d36cc27cd5f12c",
+      "sha256": "3a1e08e1eaaf0b341f26be9d35bba7b1990a5fa47603bd173fed27756a2e6493"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/cylinder_verification_worker.py",
+      "bytes": 3317,
+      "git_blob_sha": "cf39df751093e9ad0ddcf93e3c7e372fdcc264b0",
+      "sha256": "c385252f330327186a3c89db9dbeea193ca2b942165b5776c89114bd10e2e7e5"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/debug_cylinder_disagreement.py",
+      "bytes": 752,
+      "git_blob_sha": "c9bd85672bffe3964d027cb148bd7e57adb8b58d",
+      "sha256": "cdf89c54fff127062060477ab96dc761422738dc10c541c441501605d1db1f81"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/independent_cylinder.py",
+      "bytes": 3446,
+      "git_blob_sha": "eda60d02f1fcd1f18725d2352cce4700b3ebd12d",
+      "sha256": "d2c7c1b6667162609586773ebfa55158fd5783d9c38d807ace611fa80b4bfd6d"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/independent_cylinder_refined.py",
+      "bytes": 2727,
+      "git_blob_sha": "e38b2d40f775fed088caadde59d681ae69337b30",
+      "sha256": "52c79b97b8e64cfa3f96b6fa8eea36ca6a68b8aebacd70986c725b634d96a742"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/independent_primitives.py",
+      "bytes": 2192,
+      "git_blob_sha": "6874d9e6452efa4f9178837aa5e8628da1da83ff",
+      "sha256": "2c1018b8be3ee616b3d2a2cc4d74a9570778671c20593feb67acd384968f9d87"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/run_binding_diagnostic.py",
+      "bytes": 783,
+      "git_blob_sha": "356811e55e7477ae64f046ec4d0972cf9bd624b4",
+      "sha256": "ffcf8bafe4eb63a0b4bdc41056673462c08528ff2a2ca5713d1156e2834e4b6d"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/run_cylinder_refinement.py",
+      "bytes": 678,
+      "git_blob_sha": "476108ba43af1e374765930483208c0ca848acd1",
+      "sha256": "2b619b6f8862872d530add18dbd58bac88b491ceb4f46dc018e2c8721545d46b"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/run_cylinder_refinement_v2.py",
+      "bytes": 762,
+      "git_blob_sha": "55ea1abaeda3d5eee0127ce0ae3e41f1623ebb79",
+      "sha256": "dff91ddb8f7ee2c6dc4e8188a6c959e37fcbafa540beb349173ebbfe5273860f"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/run_cylinder_verification.py",
+      "bytes": 637,
+      "git_blob_sha": "29df438b954cc7183e1d27112d33834c3a9f9c8a",
+      "sha256": "557cbfc3e690e5a7e7dc78653c9020454025a3a6491c1c430090b5a42f7b8dfb"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/run_verification.py",
+      "bytes": 625,
+      "git_blob_sha": "5657848474ebc0d687e1ae7931aa90668ef7f845",
+      "sha256": "71a0a66c20be405f65a2ea99d672cf091b8bdcf966a96a0c54a3916abb6ba8e5"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/snapshot_manifest.json",
+      "bytes": 12164,
+      "git_blob_sha": "93c3c1f6d4b0584dfb3b82841c9c2fbc6ae251c0",
+      "sha256": "6f562dc676eca34e77fde3111f467a86e82912898fbf3dd20b87571999f9f1b4"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/terrain_binding.py",
+      "bytes": 5488,
+      "git_blob_sha": "d01e70a26075db7a94f9ae45310a669acd599ef8",
+      "sha256": "b71fc2280e4587f14df60acc819f9b10d8f163dd7d1332bf30ed9db13e8c6f38"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/test_binding.py",
+      "bytes": 2462,
+      "git_blob_sha": "55062f56513232b3e8c3c7626311e766d080f1e5",
+      "sha256": "29c8ca397f0ed885b1a9cb3d8a5df9ea52f33c4653a16a812c188d9ab7beb2b9"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/test_cylinder.py",
+      "bytes": 2029,
+      "git_blob_sha": "42c5873f510b479a7e685a35c310f6eb67055071",
+      "sha256": "17ce732ce04ab29b6fcb6a77333300f7601092e65a6a194799f6fddd401b0fee"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/test_independent.py",
+      "bytes": 1286,
+      "git_blob_sha": "f565b4672bb2413d5a6c615709f7ba5786b7f299",
+      "sha256": "edb9306a12f1875eda2925494f038df0290d385590044b25716e3957b34344ca"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/verification_worker.py",
+      "bytes": 3715,
+      "git_blob_sha": "d8c63783db1c7a6fcea938bae7f0a7704089aa23",
+      "sha256": "7269883e542d785296ea8cf56c417fc9641fd0811d415a9b0a8c756e8663469e"
+    }
+  ],
+  "file_count": 49,
+  "recovered_code_executed": false,
+  "remote_mutations": 0,
+  "gpu_submissions": 0
+}

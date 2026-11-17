@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "parent_commit": "6fa434956487f800977b7e158cdc37d9ceefb723",
+  "source_and_evidence_only": true,
+  "old_files_modified": 0,
+  "body_actions": 29,
+  "head_actions": 0,
+  "nominal_pose_queries_verified": 86,
+  "gpu_submissions": 0,
+  "retarget_solver_calls": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false,
+  "training_ready": false,
+  "files": [
+    {
+      "path": "integrations/instinctlab_hud04/experimental/terrain_independent_closure_20261117/terrain_binding.py",
+      "bytes": 6351,
+      "sha256": "74071df23bd0a2ab9c219148c72b9928f8cd92c6021fdc7e491f4b55d4503b22"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/terrain_independent_closure_20261117/terrain_worker.py",
+      "bytes": 5355,
+      "sha256": "18b09355bfb228886f11141a3953f047c2bfc6703f1ce9f2a7a1511acf5d054b"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/terrain_independent_closure_20261117/independent_primitives.py",
+      "bytes": 7185,
+      "sha256": "e92ade4d3091233906cd27d40a25300bfb799e47806ce0dadb8cb0fedd9d2dff"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/terrain_independent_closure_20261117/independent_worker.py",
+      "bytes": 3680,
+      "sha256": "e710054008843c12becbe8c82e4dc9745a0088cbf02f4ee339fa380bc8d23787"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/terrain_independent_closure_20261117/remaining_geometry_worker.py",
+      "bytes": 3895,
+      "sha256": "81fec796e0bc60fcc8a7eb73ebc74a19767befbd25d9ba44dd73e4178dcb5c30"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/terrain_independent_closure_20261117/run_terrain_diagnostic.py",
+      "bytes": 641,
+      "sha256": "05be62a25357853c1ebd11a786c9483f8919aa6c061c52abf926000debc056c0"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/terrain_independent_closure_20261117/run_independent_check.py",
+      "bytes": 642,
+      "sha256": "0bb2bd3f637922ae0be3cfbccb1195c7dac8c363ce6810b005d344a272f515d5"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/terrain_independent_closure_20261117/run_remaining_check.py",
+      "bytes": 647,
+      "sha256": "3c06e2e2f5a1f4cfb1eb51cc2ed5217beebf0b7fecb095e2e365732d9b987aa7"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/terrain_independent_closure_20261117/reconcile_and_summarize.py",
+      "bytes": 4213,
+      "sha256": "1b605cb37a348a9dd9ad45b4779cee3cfedc76df4724c6fd30f4267d801c5fe6"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/terrain_independent_closure_20261117/test_terrain_binding.py",
+      "bytes": 6001,
+      "sha256": "6eb37b01e10a2d2c1b348cf096f8de287d285066042321e887c1f172f5598de0"
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/terrain_independent_closure_20261117/README_zh.md",
+      "bytes": 5722,
+      "sha256": "ad47fc16921b941250d2507f17b4c95a8bfc8973be41e9750ff0b6fd7b3ddb39"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/terrain_independent_closure_20261117/ACTUAL_TERRAIN_DETAIL_20261117.json",
+      "bytes": 115897,
+      "sha256": "18da9191bd8f9c3d3ab1f762607e6970446f1f5aec629cd4806609922ee6ca57"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/terrain_independent_closure_20261117/ACTUAL_TERRAIN_SUPERVISION_20261117.json",
+      "bytes": 5582,
+      "sha256": "369c253a31da16e700e3545765d473a8f6cd7c1db12d6af60981cfa43600747d"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/terrain_independent_closure_20261117/INDEPENDENT_PRIMITIVE_CHECK_20261117.json",
+      "bytes": 63758,
+      "sha256": "73766fbebe2dec1ed35f6261c395f14e6f7f8e14ba2cfe3e3b6ab6923ecb3710"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/terrain_independent_closure_20261117/INDEPENDENT_SUPERVISION_20261117.json",
+      "bytes": 2173,
+      "sha256": "c284ad2419d05dc983556b44b3a90bb7f604518702c35d0c42607bf9c241f039"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/terrain_independent_closure_20261117/REMAINING_GEOMETRY_CHECK_20261117.json",
+      "bytes": 4127,
+      "sha256": "413c29e38dc163023a5fef300ce5606c178f284506d378e9b64a058c4408819a"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/terrain_independent_closure_20261117/REMAINING_SUPERVISION_20261117.json",
+      "bytes": 5886,
+      "sha256": "72e83ba02370cfa451d6fa13da5bfb89af9c911790791466e5efa57f42b82a9d"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/terrain_independent_closure_20261117/INDEPENDENT_CLOSURE_RECONCILIATION_20261117.json",
+      "bytes": 68290,
+      "sha256": "1305090e46311430eabc8cf5b960f73663a3f97e95abb7dd689f35b6859fc5da"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/terrain_independent_closure_20261117/run_terrain_diagnostic.log",
+      "bytes": 5582,
+      "sha256": "369c253a31da16e700e3545765d473a8f6cd7c1db12d6af60981cfa43600747d"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/terrain_independent_closure_20261117/run_independent_check.log",
+      "bytes": 2173,
+      "sha256": "c284ad2419d05dc983556b44b3a90bb7f604518702c35d0c42607bf9c241f039"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/terrain_independent_closure_20261117/run_remaining_check.log",
+      "bytes": 5886,
+      "sha256": "72e83ba02370cfa451d6fa13da5bfb89af9c911790791466e5efa57f42b82a9d"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/terrain_independent_closure_20261117/tests_binding.log",
+      "bytes": 2394,
+      "sha256": "5cf943ac75e4cd4025458dfcd8b492695b3a01b9945d01922024dbf278c66692"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/terrain_independent_closure_20261117/tests_prior_solid.log",
+      "bytes": 3545,
+      "sha256": "46b1de607eeaeb88105dfd7eb03f6c6581d8ecc0768aba02cb147351a66f183a"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/terrain_independent_closure_20261117/REVIEW_zh.md",
+      "bytes": 5722,
+      "sha256": "ad47fc16921b941250d2507f17b4c95a8bfc8973be41e9750ff0b6fd7b3ddb39"
+    },
+    {
+      "path": "datasets/hud04/source-only-20261117/continuation_evidence/terrain_independent_closure_20261117/REMOTE_RECOVERY_RECEIPT.json",
+      "bytes": 15822,
+      "sha256": "15a361edc536942195a727cd69fa6e5263b5f9a52c6030122242bf8c4f4ac53c"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "stage": "bounded_cpu_diagnostic_supervision",
+  "status": "completed",
+  "budget": {
+    "window_seconds": 45,
+    "total_seconds": 50,
+    "iterations": 100,
+    "numeric_threads": 2,
+    "max_windows": 1
+  },
+  "windows": [
+    {
+      "index": 0,
+      "wall_seconds": 8.79133434100001,
+      "child_reaped": true,
+      "status": "completed",
+      "iterations": 95,
+      "diagnostic": {
+        "stage": "actual_matched_terrain_one_algebraic_target_pose_NOT_reference",
+        "terrain": {
+          "inputs_sha256": {
+            "/workspace/hud04-recovery-fd12fe1/upstream/source/instinctlab/instinctlab/terrains/trimesh/utils.py": "40d3427da3a56592367c61b4327647940b0a09360638b1102be092de9b269c01",
+            "/workspace/hud04-recovery-fd12fe1/upstream/source/instinctlab/instinctlab/terrains/trimesh/mesh_terrains.py": "9ac841818fd44d753bad0850a768d631339d0436b6542ca2af6cfad5d9fe8a20",
+            "/workspace/hud04-original-drive-20261117/metadata_kneelClimbStep1.yaml": "cbd3010b21111f8fc69a354c37befaf72bd33508a93763edc024b3a29f887ea1",
+            "/workspace/hud04-original-drive-20261117/50cmboxes_19_36_49.stl": "3aee33efea6793974d901dd0f7e46859e2d12d2dfd79f38f12c777686566c2de"
+          },
+          "crop_stats": {
+            "trimesh_version": "5.2.1",
+            "input_faces": 8087,
+            "input_processed_vertices": 5517,
+            "cropped_faces": 8068,
+            "cropped_vertices": 5524,
+            "crop_bounds_raw": [
+              [
+                -1.8844000101089478,
+                -6.0,
+                -0.013334252871572971
+              ],
+              [
+                2.1979832649230957,
+                1.566604733467102,
+                1.6899999380111694
+              ]
+            ],
+            "border_vertex_count": 62,
+            "border_height_raw": 0.13514180794761088,
+            "border_fallback_used": false,
+            "border_z_range_raw": [
+              0.002699737307128007,
+              0.694706916809082
+            ],
+            "border_z_std_raw": 0.19273899276557915,
+            "terrain_function_shared_shift_raw": [
+              4.5,
+              6.0,
+              -0.13514180794761088
+            ]
+          },
+          "triangle_count": 8068,
+          "lateral_triangle_count": 2958,
+          "lateral_definition": "normal norm > .5 AND abs(normal.z) <= .1; diagnostic ONLY",
+          "raw_to_terrain_function_shift": [
+            4.5,
+            6.0,
+            -0.13514180794761088
+          ],
+          "upstream_ast_crop_and_shift_verified": true,
+          "random_decorator_walls_included": false,
+          "static_config_proof": {
+            "task_sha256": "ca9beeca2e9d59d1fbb588e35d2452261b171bdf9ebf85ba8efd786aa8e81504",
+            "terrain_cfg_sha256": "9f568cd3ca08752db1850c8226e8d360d3044b226c9eb137216f446be479366a",
+            "task_size": [
+              9,
+              12
+            ],
+            "terrain_class_direct_base": "SubTerrainBaseCfg",
+            "wall_mixin_not_inherited": true,
+            "decorator_returns_early_without_wall_prob": true,
+            "runtime_cfg_overrides_observed": false
+          },
+          "lateral_faces_are_from_matched_stl_not_random_decorator": true,
+          "generator_grid_placement_included": false,
+          "source_root_or_units_inferred": false,
+          "actual_terrain_runtime_cooking_verified": false,
+          "accepted_reference": false,
+          "training_ready": false
+        },
+        "importer_policy": {
+          "merge_fixed_joints": false,
+          "replace_cylinders_with_capsules": false,
+          "self_collision": true,
+          "mesh_collider_type": "convex_hull",
+          "mesh_default_isaaclab_commit": "f73c33173801f5f8afea4142482e47b7710c2b75",
+          "actual_runtime_policy_observed": false,
+          "cooked_shape_identity_verified": false
+        },
+        "pose": "29 joint-limit midpoints / identity root; NOT a retargeted source frame",
+        "shape_count": 43,
+        "surface_queries": 86,
+        "query_status_counts": {
+          "surface_distance_bracket_converged": 86
+        },
+        "max_shape_membership_residual": 1.0408340855860843e-16,
+        "max_triangle_membership_residual": 3.8956808310314346e-16,
+        "max_converged_bracket": 9.695009239862884e-10,
+        "complete_mesh_solid_containment_excluded": false,
+        "full_signed_collision_distance": false,
+        "contact_support_schedule_accepted": false,
+        "cooked_physics_validated": false,
+        "source_coordinate_hypothesis_selected": false,
+        "gpu_submissions": 0,
+        "retarget_solver_calls": 0,
+        "ppo_updates": 0,
+        "accepted_reference": false,
+        "training_ready": false,
+        "common_shift_checks": 8,
+        "detail_file": "ACTUAL_TERRAIN_DETAIL_20261117.json",
+        "detail_sha256": "18da9191bd8f9c3d3ab1f762607e6970446f1f5aec629cd4806609922ee6ca57"
+      },
+      "supported_numeric_pools": [
+        {
+          "api": "openblas",
+          "threads": 2
+        },
+        {
+          "api": "openblas",
+          "threads": 2
+        }
+      ]
+    }
+  ],
+  "wall_seconds": 8.791461977000012,
+  "retries": 0,
+  "hard_parent_deadline": true,
+  "cleanup_grace_seconds_max": 0.7,
+  "iteration_limit_scope": "trusted_workers_calling_gate_each_iteration_only",
+  "thread_limit_scope": "supported_BLAS_OpenMP_pools_not_all_OS_threads_or_CPU_cores",
+  "gpu_submissions": 0,
+  "solver_calls": 0,
+  "candidate_motion_generated": false,
+  "accepted_reference": false,
+  "training_ready": false
+}

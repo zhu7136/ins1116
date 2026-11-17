@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "stage": "bounded_cpu_diagnostic_supervision",
+  "status": "completed",
+  "budget": {
+    "window_seconds": 45,
+    "total_seconds": 50,
+    "iterations": 100,
+    "numeric_threads": 2,
+    "max_windows": 1
+  },
+  "windows": [
+    {
+      "index": 0,
+      "wall_seconds": 3.760043096000004,
+      "child_reaped": true,
+      "status": "completed",
+      "iterations": 15,
+      "diagnostic": {
+        "stage": "remaining_independent_nominal_geometry_NOT_acceptance",
+        "checks": [
+          {
+            "shape": "base_link#0",
+            "subset": "all",
+            "independent": {
+              "status": "converged",
+              "lower": 0.014299997989633828,
+              "upper": 0.01429999800492332,
+              "initial_fw_width": 1.5289491894776575e-11,
+              "fw_iterations": 6,
+              "local_refinement_calls": 0,
+              "triangle_count": 8068,
+              "max_fw_iterations": 80,
+              "max_local_calls": 32,
+              "max_local_iterations": 100,
+              "analytic_face_plane_lower_enabled": true,
+              "optimizer_success_used_as_certificate": false,
+              "certificate": "convex_tangent_lower_and_feasible_point_upper",
+              "gjk_called": false,
+              "primary_broadphase_used": false,
+              "retarget_solver_called": false
+            },
+            "discrepancy": 0.0,
+            "fully_verified": true
+          },
+          {
+            "shape": "left_wrist_roll_link#0",
+            "subset": "all",
+            "independent": {
+              "lower": 0.24912168251262565,
+              "upper": 0.24912168251262565,
+              "status": "converged",
+              "triangle_count": 8068,
+              "local_hull_triangle_queries": 15,
+              "max_queries": 128,
+              "method": "local_frame_AABB_proof_then_halfspace_clipping_and_explicit_triangle_surface_features",
+              "gjk_called": false,
+              "primary_broadphase_reused": false,
+              "solid_containment_checked_for_hand_hull": true,
+              "terrain_solid_containment_excluded": false,
+              "nominal_hull_not_cooked": true
+            },
+            "discrepancy": 0.0,
+            "fully_verified": true
+          },
+          {
+            "shape": "left_wrist_roll_link#0",
+            "subset": "lateral",
+            "independent": {
+              "lower": 0.5370916778806376,
+              "upper": 0.5370916778806376,
+              "status": "converged",
+              "triangle_count": 2958,
+              "local_hull_triangle_queries": 22,
+              "max_queries": 128,
+              "method": "local_frame_AABB_proof_then_halfspace_clipping_and_explicit_triangle_surface_features",
+              "gjk_called": false,
+              "primary_broadphase_reused": false,
+              "solid_containment_checked_for_hand_hull": true,
+              "terrain_solid_containment_excluded": false,
+              "nominal_hull_not_cooked": true
+            },
+            "discrepancy": 0.0,
+            "fully_verified": true
+          },
+          {
+            "shape": "right_wrist_roll_link#0",
+            "subset": "all",
+            "independent": {
+              "lower": 0.18925963037904356,
+              "upper": 0.18925963037904356,
+              "status": "converged",
+              "triangle_count": 8068,
+              "local_hull_triangle_queries": 13,
+              "max_queries": 128,
+              "method": "local_frame_AABB_proof_then_halfspace_clipping_and_explicit_triangle_surface_features",
+              "gjk_called": false,
+              "primary_broadphase_reused": false,
+              "solid_containment_checked_for_hand_hull": true,
+              "terrain_solid_containment_excluded": false,
+              "nominal_hull_not_cooked": true
+            },
+            "discrepancy": 2.7755575615628914e-17,
+            "fully_verified": true
+          },
+          {
+            "shape": "right_wrist_roll_link#0",
+            "subset": "lateral",
+            "independent": {
+              "lower": 0.18925963037904356,
+              "upper": 0.18925963037904356,
+              "status": "converged",
+              "triangle_count": 2958,
+              "local_hull_triangle_queries": 10,
+              "max_queries": 128,
+              "method": "local_frame_AABB_proof_then_halfspace_clipping_and_explicit_triangle_surface_features",
+              "gjk_called": false,
+              "primary_broadphase_reused": false,
+              "solid_containment_checked_for_hand_hull": true,
+              "terrain_solid_containment_excluded": false,
+              "nominal_hull_not_cooked": true
+            },
+            "discrepancy": 2.7755575615628914e-17,
+            "fully_verified": true
+          }
+        ],
+        "analytic_plane_refinement_changes_no_iteration_or_acceptance_tolerance": true,
+        "prior_unresolved_record_retained": true,
+        "independent_verified_count": 5,
+        "max_discrepancy": 2.7755575615628914e-17,
+        "gpu_submissions": 0,
+        "retarget_solver_calls": 0,
+        "ppo_updates": 0,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "supported_numeric_pools": [
+        {
+          "api": "openblas",
+          "threads": 2
+        },
+        {
+          "api": "openblas",
+          "threads": 2
+        }
+      ]
+    }
+  ],
+  "wall_seconds": 3.7601515360000235,
+  "retries": 0,
+  "hard_parent_deadline": true,
+  "cleanup_grace_seconds_max": 0.7,
+  "iteration_limit_scope": "trusted_workers_calling_gate_each_iteration_only",
+  "thread_limit_scope": "supported_BLAS_OpenMP_pools_not_all_OS_threads_or_CPU_cores",
+  "gpu_submissions": 0,
+  "solver_calls": 0,
+  "candidate_motion_generated": false,
+  "accepted_reference": false,
+  "training_ready": false
+}

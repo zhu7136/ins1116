@@ -1,0 +1,3657 @@
+{
+  "stage": "actual_matched_terrain_one_algebraic_target_pose_NOT_reference",
+  "terrain": {
+    "inputs_sha256": {
+      "/workspace/hud04-recovery-fd12fe1/upstream/source/instinctlab/instinctlab/terrains/trimesh/utils.py": "40d3427da3a56592367c61b4327647940b0a09360638b1102be092de9b269c01",
+      "/workspace/hud04-recovery-fd12fe1/upstream/source/instinctlab/instinctlab/terrains/trimesh/mesh_terrains.py": "9ac841818fd44d753bad0850a768d631339d0436b6542ca2af6cfad5d9fe8a20",
+      "/workspace/hud04-original-drive-20261117/metadata_kneelClimbStep1.yaml": "cbd3010b21111f8fc69a354c37befaf72bd33508a93763edc024b3a29f887ea1",
+      "/workspace/hud04-original-drive-20261117/50cmboxes_19_36_49.stl": "3aee33efea6793974d901dd0f7e46859e2d12d2dfd79f38f12c777686566c2de"
+    },
+    "crop_stats": {
+      "trimesh_version": "5.2.1",
+      "input_faces": 8087,
+      "input_processed_vertices": 5517,
+      "cropped_faces": 8068,
+      "cropped_vertices": 5524,
+      "crop_bounds_raw": [
+        [
+          -1.8844000101089478,
+          -6.0,
+          -0.013334252871572971
+        ],
+        [
+          2.1979832649230957,
+          1.566604733467102,
+          1.6899999380111694
+        ]
+      ],
+      "border_vertex_count": 62,
+      "border_height_raw": 0.13514180794761088,
+      "border_fallback_used": false,
+      "border_z_range_raw": [
+        0.002699737307128007,
+        0.694706916809082
+      ],
+      "border_z_std_raw": 0.19273899276557915,
+      "terrain_function_shared_shift_raw": [
+        4.5,
+        6.0,
+        -0.13514180794761088
+      ]
+    },
+    "triangle_count": 8068,
+    "lateral_triangle_count": 2958,
+    "lateral_definition": "normal norm > .5 AND abs(normal.z) <= .1; diagnostic ONLY",
+    "raw_to_terrain_function_shift": [
+      4.5,
+      6.0,
+      -0.13514180794761088
+    ],
+    "upstream_ast_crop_and_shift_verified": true,
+    "random_decorator_walls_included": false,
+    "static_config_proof": {
+      "task_sha256": "ca9beeca2e9d59d1fbb588e35d2452261b171bdf9ebf85ba8efd786aa8e81504",
+      "terrain_cfg_sha256": "9f568cd3ca08752db1850c8226e8d360d3044b226c9eb137216f446be479366a",
+      "task_size": [
+        9,
+        12
+      ],
+      "terrain_class_direct_base": "SubTerrainBaseCfg",
+      "wall_mixin_not_inherited": true,
+      "decorator_returns_early_without_wall_prob": true,
+      "runtime_cfg_overrides_observed": false
+    },
+    "lateral_faces_are_from_matched_stl_not_random_decorator": true,
+    "generator_grid_placement_included": false,
+    "source_root_or_units_inferred": false,
+    "actual_terrain_runtime_cooking_verified": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  "importer_policy": {
+    "merge_fixed_joints": false,
+    "replace_cylinders_with_capsules": false,
+    "self_collision": true,
+    "mesh_collider_type": "convex_hull",
+    "mesh_default_isaaclab_commit": "f73c33173801f5f8afea4142482e47b7710c2b75",
+    "actual_runtime_policy_observed": false,
+    "cooked_shape_identity_verified": false
+  },
+  "pose": "29 joint-limit midpoints / identity root; NOT a retargeted source frame",
+  "joint_names": [
+    "left_hip_pitch_joint",
+    "left_hip_roll_joint",
+    "left_hip_yaw_joint",
+    "left_knee_joint",
+    "left_ankle_pitch_joint",
+    "left_ankle_roll_joint",
+    "right_hip_pitch_joint",
+    "right_hip_roll_joint",
+    "right_hip_yaw_joint",
+    "right_knee_joint",
+    "right_ankle_pitch_joint",
+    "right_ankle_roll_joint",
+    "waist_yaw_joint",
+    "waist_roll_joint",
+    "waist_pitch_joint",
+    "left_shoulder_pitch_joint",
+    "left_shoulder_roll_joint",
+    "left_shoulder_yaw_joint",
+    "left_elbow_joint",
+    "left_wrist_yaw_joint",
+    "left_wrist_pitch_joint",
+    "left_wrist_roll_joint",
+    "right_shoulder_pitch_joint",
+    "right_shoulder_roll_joint",
+    "right_shoulder_yaw_joint",
+    "right_elbow_joint",
+    "right_wrist_yaw_joint",
+    "right_wrist_pitch_joint",
+    "right_wrist_roll_joint"
+  ],
+  "joint_positions": [
+    0.0,
+    0.6106499999999999,
+    0.0,
+    1.248,
+    -0.2005,
+    0.0,
+    0.0,
+    -0.6106499999999999,
+    0.0,
+    1.248,
+    -0.2005,
+    0.0,
+    0.0,
+    0.0,
+    0.1305,
+    0.0,
+    1.571,
+    -0.916,
+    -0.43600000000000005,
+    -0.7854999999999999,
+    0.0,
+    0.0,
+    0.0,
+    -1.571,
+    0.916,
+    -0.43600000000000005,
+    0.7854999999999999,
+    0.0,
+    0.0
+  ],
+  "root_transform": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "rows": [
+    {
+      "shape": "base_link#0",
+      "link": "base_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.014299997988484964,
+        "distance_upper_bound": 0.014299997989840588,
+        "triangle_queries": 14,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 5091,
+        "first_witness": [
+          -0.059718689288499806,
+          0.04699518135877306,
+          0.015000000000000001
+        ],
+        "second_witness": [
+          -0.05971868928833324,
+          0.046995181982637774,
+          0.0007000020101594263
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5091,
+      "original_face_normal": [
+        -1.2596265257641877e-11,
+        -4.3625491905079946e-08,
+        0.9999999999999991
+      ],
+      "independent_witness_triangle_residual": 8.886119947416683e-17,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "base_link#0",
+      "link": "base_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 1.0205303966082877,
+        "distance_upper_bound": 1.0205303966090773,
+        "triangle_queries": 4,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1816,
+        "first_witness": [
+          -0.05842545655873327,
+          -0.04697361826528172,
+          0.02388152391864996
+        ],
+        "second_witness": [
+          -0.02423364008855297,
+          -1.0669310733042408,
+          0.0238815239186533
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4632,
+      "original_face_normal": [
+        -0.03241888553334972,
+        0.9994226000675189,
+        0.010172626752983313
+      ],
+      "independent_witness_triangle_residual": 2.2247786310271853e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "base_link#1",
+      "link": "base_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.0,
+        "distance_upper_bound": 1.7859270954227777e-15,
+        "triangle_queries": 9,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 5093,
+        "first_witness": [
+          -0.033454603147663485,
+          0.10064969244500528,
+          0.0007000043511948325
+        ],
+        "second_witness": [
+          -0.03345460314766245,
+          0.10064969244500381,
+          0.0007000043511946675
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5093,
+      "original_face_normal": [
+        1.837905040384664e-09,
+        -4.6335452683917254e-08,
+        0.999999999999999
+      ],
+      "independent_witness_triangle_residual": 1.0569013876606217e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "base_link#1",
+      "link": "base_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 1.0955150223529198,
+        "distance_upper_bound": 1.0955150224530903,
+        "triangle_queries": 3,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1819,
+        "first_witness": [
+          0.017863819671222143,
+          0.03018074953033309,
+          -0.009879292753842629
+        ],
+        "second_witness": [
+          0.039866384118795395,
+          -1.0647822618484497,
+          0.01704755797982216
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4640,
+      "original_face_normal": [
+        -0.00814409252017757,
+        0.999966499482189,
+        -0.0008207742442830205
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "base_link#2",
+      "link": "base_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.0,
+        "distance_upper_bound": 1.7090125564715406e-15,
+        "triangle_queries": 4,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 5091,
+        "first_witness": [
+          0.023452714302863997,
+          -0.08060776909231357,
+          0.0006999964444662875
+        ],
+        "second_witness": [
+          0.02345271430286433,
+          -0.0806077690923151,
+          0.0006999964444655663
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5091,
+      "original_face_normal": [
+        -1.2596265257641877e-11,
+        -4.3625491905079946e-08,
+        0.9999999999999991
+      ],
+      "independent_witness_triangle_residual": 1.3878211317825933e-17,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "base_link#2",
+      "link": "base_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.9356261819064342,
+        "distance_upper_bound": 0.9356261819687575,
+        "triangle_queries": 3,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1817,
+        "first_witness": [
+          0.019179598620527424,
+          -0.12978476184283688,
+          0.06580222802242412
+        ],
+        "second_witness": [
+          0.047641023424461575,
+          -1.064933179138655,
+          0.056651418621559244
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4633,
+      "original_face_normal": [
+        -0.016858838988835115,
+        0.9998325314417612,
+        0.007119593998813308
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 1.3877787807814457e-17
+    },
+    {
+      "shape": "left_hip_pitch_link#0",
+      "link": "left_hip_pitch_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.03406054182109514,
+        "distance_upper_bound": 0.03406054187779071,
+        "triangle_queries": 14,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 5091,
+        "first_witness": [
+          0.06626716464038615,
+          0.1294993883646868,
+          -0.033360536266757765
+        ],
+        "second_witness": [
+          0.06626716464050164,
+          0.1294993868760888,
+          0.0007000056110329003
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5091,
+      "original_face_normal": [
+        -1.2596265257641877e-11,
+        -4.3625491905079946e-08,
+        0.9999999999999991
+      ],
+      "independent_witness_triangle_residual": 5.551125711027526e-17,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "left_hip_pitch_link#0",
+      "link": "left_hip_pitch_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 1.1484747785238298,
+        "distance_upper_bound": 1.148474778533874,
+        "triangle_queries": 5,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1819,
+        "first_witness": [
+          0.06630356573900137,
+          0.07968427233043258,
+          -0.07907178340057724
+        ],
+        "second_witness": [
+          0.06709632738409249,
+          -1.0645585379026183,
+          0.01942735206453583
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4640,
+      "original_face_normal": [
+        -0.00814409252017757,
+        0.999966499482189,
+        -0.0008207742442830205
+      ],
+      "independent_witness_triangle_residual": 2.2247786310271853e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "left_hip_yaw_link#0",
+      "link": "left_hip_yaw_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.14652903902189687,
+        "distance_upper_bound": 0.14652903902223188,
+        "triangle_queries": 14,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 5096,
+        "first_witness": [
+          0.019049013241212474,
+          0.2337558795474411,
+          -0.14582902883739013
+        ],
+        "second_witness": [
+          0.019049013195473058,
+          0.2337558731945054,
+          0.0007000101848416271
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5096,
+      "original_face_normal": [
+        -3.10561277486692e-10,
+        -4.335778991664268e-08,
+        0.9999999999999991
+      ],
+      "independent_witness_triangle_residual": 8.777090367822615e-17,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "left_hip_yaw_link#0",
+      "link": "left_hip_yaw_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 1.129901973555266,
+        "distance_upper_bound": 1.129901974524767,
+        "triangle_queries": 17,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1625,
+        "first_witness": [
+          0.023416464293507286,
+          0.3485580097389512,
+          -0.3102894892652168
+        ],
+        "second_witness": [
+          -0.1452006846666336,
+          1.3771133422851562,
+          0.1259680688381195
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4278,
+      "original_face_normal": [
+        -0.023157690291156035,
+        -0.9990558313381184,
+        -0.03675822696594473
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "left_hip_yaw_link#1",
+      "link": "left_hip_yaw_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.2885257537334791,
+        "distance_upper_bound": 0.28852575373367817,
+        "triangle_queries": 13,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 835,
+        "first_witness": [
+          0.031990360700875936,
+          0.30771395357279885,
+          -0.28782574032145
+        ],
+        "second_witness": [
+          0.03199036078531059,
+          0.307713940884198,
+          0.0007000134122279155
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 835,
+      "original_face_normal": [
+        2.9260894471797555e-10,
+        -4.3977495274218605e-08,
+        0.999999999999999
+      ],
+      "independent_witness_triangle_residual": 1.5700928330229436e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "left_hip_yaw_link#1",
+      "link": "left_hip_yaw_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 1.1290320530031923,
+        "distance_upper_bound": 1.1290320539036272,
+        "triangle_queries": 2,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1625,
+        "first_witness": [
+          0.024467101164582533,
+          0.3530634145726005,
+          -0.3181580019400826
+        ],
+        "second_witness": [
+          -0.1452006846666336,
+          1.3771133422851562,
+          0.1259680688381195
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4278,
+      "original_face_normal": [
+        -0.023157690291156035,
+        -0.9990558313381184,
+        -0.03675822696594473
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "left_hip_yaw_link#2",
+      "link": "left_hip_yaw_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.1254892455652372,
+        "distance_upper_bound": 0.12548924556888474,
+        "triangle_queries": 14,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 5096,
+        "first_witness": [
+          0.012023516798030869,
+          0.1936069166828247,
+          -0.12478923712699509
+        ],
+        "second_witness": [
+          0.012023516756847985,
+          0.19360691124415974,
+          0.0007000084418895222
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5096,
+      "original_face_normal": [
+        -3.10561277486692e-10,
+        -4.335778991664268e-08,
+        0.9999999999999991
+      ],
+      "independent_witness_triangle_residual": 1.1102235540206224e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "left_hip_yaw_link#2",
+      "link": "left_hip_yaw_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 1.1812035776607663,
+        "distance_upper_bound": 1.1812035783554948,
+        "triangle_queries": 2,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1625,
+        "first_witness": [
+          0.005630742523906983,
+          0.24166880400967045,
+          -0.16257564464713248
+        ],
+        "second_witness": [
+          -0.1452006846666336,
+          1.3771133422851562,
+          0.1259680688381195
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4278,
+      "original_face_normal": [
+        -0.023157690291156035,
+        -0.9990558313381184,
+        -0.03675822696594473
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "left_knee_link#0",
+      "link": "left_knee_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.3956455329081518,
+        "distance_upper_bound": 0.39564553386642914,
+        "triangle_queries": 13,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 794,
+        "first_witness": [
+          -0.04764765297678576,
+          0.3726055702961888,
+          -0.3949455176127048
+        ],
+        "second_witness": [
+          -0.047647653736689326,
+          0.3726055537287347,
+          0.0007000162537239818
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 794,
+      "original_face_normal": [
+        1.644905557700877e-10,
+        -4.3821518501449135e-08,
+        0.9999999999999991
+      ],
+      "independent_witness_triangle_residual": 1.1123898438781028e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "left_knee_link#0",
+      "link": "left_knee_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 1.1106230419547254,
+        "distance_upper_bound": 1.1106230423372665,
+        "triangle_queries": 20,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1626,
+        "first_witness": [
+          -0.22589422143763052,
+          0.4258542490662883,
+          -0.4457483554542312
+        ],
+        "second_witness": [
+          -0.20800501108169556,
+          1.3786158561706543,
+          0.12469781935214996
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4281,
+      "original_face_normal": [
+        -0.9033223303695882,
+        -0.42861571909277246,
+        -0.017243340808612968
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "left_knee_link#1",
+      "link": "left_knee_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.44575434239126177,
+        "distance_upper_bound": 0.4457543425758284,
+        "triangle_queries": 13,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 742,
+        "first_witness": [
+          -0.31444438787173296,
+          0.40725769510185755,
+          -0.4450543248127286
+        ],
+        "second_witness": [
+          -0.31444438772051647,
+          0.4072576755761062,
+          0.0007000177630992825
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 742,
+      "original_face_normal": [
+        1.745231498112024e-11,
+        -4.3699801026221235e-08,
+        0.9999999999999991
+      ],
+      "independent_witness_triangle_residual": 2.830524433501838e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "left_knee_link#1",
+      "link": "left_knee_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 1.1108654276425496,
+        "distance_upper_bound": 1.1108654285355763,
+        "triangle_queries": 8,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1631,
+        "first_witness": [
+          -0.3152476608385436,
+          0.4370096323722187,
+          -0.4616374047222445
+        ],
+        "second_witness": [
+          -0.34063597457507044,
+          1.381297404785255,
+          0.12291202579015559
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4290,
+      "original_face_normal": [
+        -0.015094662129865148,
+        -0.9998855203507893,
+        0.0010475533478306342
+      ],
+      "independent_witness_triangle_residual": 2.2247786310271853e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "left_knee_link#2",
+      "link": "left_knee_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.3950672789655442,
+        "distance_upper_bound": 0.39506727907869343,
+        "triangle_queries": 13,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 815,
+        "first_witness": [
+          -0.041365337433943286,
+          0.37178418483472564,
+          -0.3943672628610076
+        ],
+        "second_witness": [
+          -0.041365337533840085,
+          0.3717841676754754,
+          0.0007000162176854635
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 815,
+      "original_face_normal": [
+        -1.92520642967483e-10,
+        -4.356589959227125e-08,
+        0.999999999999999
+      ],
+      "independent_witness_triangle_residual": 1.0842021724855044e-19,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "left_knee_link#2",
+      "link": "left_knee_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 1.118199476763117,
+        "distance_upper_bound": 1.118199476887484,
+        "triangle_queries": 2,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1625,
+        "first_witness": [
+          -0.04451972888368293,
+          0.40229451237794545,
+          -0.41251281672088597
+        ],
+        "second_witness": [
+          -0.1452006846666336,
+          1.3771133422851562,
+          0.1259680688381195
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4278,
+      "original_face_normal": [
+        -0.023157690291156035,
+        -0.9990558313381184,
+        -0.03675822696594473
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "left_ankle_roll_link#0",
+      "link": "left_ankle_roll_link",
+      "kind": "box",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.4067650135021208,
+        "distance_upper_bound": 0.4067650135021209,
+        "triangle_queries": 14,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 742,
+        "first_witness": [
+          -0.44925920250009704,
+          0.41284138927930236,
+          -0.406064995492662
+        ],
+        "second_witness": [
+          -0.449259202492998,
+          0.4128413715037523,
+          0.0007000180094585142
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 742,
+      "original_face_normal": [
+        1.745231498112024e-11,
+        -4.3699801026221235e-08,
+        0.9999999999999991
+      ],
+      "independent_witness_triangle_residual": 5.551115123125783e-17,
+      "independent_witness_shape_residual": 1.734723475976807e-18
+    },
+    {
+      "shape": "left_ankle_roll_link#0",
+      "link": "left_ankle_roll_link",
+      "kind": "box",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 1.095957919229973,
+        "distance_upper_bound": 1.0959579192299735,
+        "triangle_queries": 34,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1632,
+        "first_witness": [
+          -0.3760958927495428,
+          0.48555490448899935,
+          -0.5099582439831236
+        ],
+        "second_witness": [
+          -0.3710188567638397,
+          1.381753921508789,
+          0.12085496634244919
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4291,
+      "original_face_normal": [
+        -0.9448786528540875,
+        -0.3245156623842131,
+        0.04351914806128897
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 6.938893903907228e-18
+    },
+    {
+      "shape": "right_hip_pitch_link#0",
+      "link": "right_hip_pitch_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.034060530354952955,
+        "distance_upper_bound": 0.03406053096994332,
+        "triangle_queries": 16,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 5609,
+        "first_witness": [
+          0.06626716464069432,
+          -0.1294948721654615,
+          -0.033360536653756864
+        ],
+        "second_witness": [
+          0.06626716465628671,
+          -0.1294948736729338,
+          0.0006999943161864147
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5609,
+      "original_face_normal": [
+        -2.6301313263945027e-11,
+        -4.355760575176267e-08,
+        0.999999999999999
+      ],
+      "independent_witness_triangle_residual": 3.8956808310314346e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "right_hip_pitch_link#0",
+      "link": "right_hip_pitch_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.8906587657588668,
+        "distance_upper_bound": 0.8906587659025517,
+        "triangle_queries": 5,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1819,
+        "first_witness": [
+          0.03994210646072977,
+          -0.17921409709032105,
+          -0.07804217391644203
+        ],
+        "second_witness": [
+          0.039866384118795395,
+          -1.0647822618484497,
+          0.01704755797982216
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4640,
+      "original_face_normal": [
+        -0.00814409252017757,
+        0.999966499482189,
+        -0.0008207742442830205
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "right_hip_yaw_link#0",
+      "link": "right_hip_yaw_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.14652898048406846,
+        "distance_upper_bound": 0.14652898051959737,
+        "triangle_queries": 2,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 3329,
+        "first_witness": [
+          0.01904815053855216,
+          -0.23375603048680405,
+          -0.14582902885001245
+        ],
+        "second_witness": [
+          0.019048143421801,
+          -0.2337561817998058,
+          0.0006999516695066198
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 3329,
+      "original_face_normal": [
+        -4.853755757154395e-08,
+        -1.0326206758822225e-06,
+        0.9999999999994658
+      ],
+      "independent_witness_triangle_residual": 4.85722573273506e-17,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "right_hip_yaw_link#0",
+      "link": "right_hip_yaw_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.786939574623379,
+        "distance_upper_bound": 0.7869395746361242,
+        "triangle_queries": 12,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1817,
+        "first_witness": [
+          0.03160005136590566,
+          -0.3486988406506716,
+          -0.30918869959586176
+        ],
+        "second_witness": [
+          0.039866384118795395,
+          -1.0647822618484497,
+          0.01704755797982216
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4633,
+      "original_face_normal": [
+        -0.016858838988835115,
+        0.9998325314417612,
+        0.007119593998813308
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 1.3877787807814457e-17
+    },
+    {
+      "shape": "right_hip_yaw_link#1",
+      "link": "right_hip_yaw_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.28852561624395767,
+        "distance_upper_bound": 0.28852561626067075,
+        "triangle_queries": 2,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 3329,
+        "first_witness": [
+          0.031990530079175614,
+          -0.3077147329786745,
+          -0.2878257403342556
+        ],
+        "second_witness": [
+          0.031990516076763786,
+          -0.3077150309195055,
+          0.0006998759262610122
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 3329,
+      "original_face_normal": [
+        -4.853755757154395e-08,
+        -1.0326206758822225e-06,
+        0.9999999999994658
+      ],
+      "independent_witness_triangle_residual": 1.3877787807814457e-17,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "right_hip_yaw_link#1",
+      "link": "right_hip_yaw_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.7861516819642305,
+        "distance_upper_bound": 0.7861516819757702,
+        "triangle_queries": 7,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1817,
+        "first_witness": [
+          0.03246207949383464,
+          -0.3529848624499359,
+          -0.31660511405483416
+        ],
+        "second_witness": [
+          0.039866384118795395,
+          -1.0647822618484497,
+          0.01704755797982216
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4633,
+      "original_face_normal": [
+        -0.016858838988835115,
+        0.9998325314417612,
+        0.007119593998813308
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 2.0816681711721685e-17
+    },
+    {
+      "shape": "right_hip_yaw_link#2",
+      "link": "right_hip_yaw_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.1254892286239035,
+        "distance_upper_bound": 0.12548922866233758,
+        "triangle_queries": 16,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 5609,
+        "first_witness": [
+          0.01202349914149552,
+          -0.1936061219077418,
+          -0.12478923714011048
+        ],
+        "second_witness": [
+          0.012023499134854232,
+          -0.1936061273591484,
+          0.0006999915222270228
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5609,
+      "original_face_normal": [
+        -2.6301313263945027e-11,
+        -4.355760575176267e-08,
+        0.999999999999999
+      ],
+      "independent_witness_triangle_residual": 1.1443916996305594e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "right_hip_yaw_link#2",
+      "link": "right_hip_yaw_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.8424815432272404,
+        "distance_upper_bound": 0.842481543233774,
+        "triangle_queries": 6,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1817,
+        "first_witness": [
+          0.013584092197308554,
+          -0.24241311436629362,
+          -0.16404185940945262
+        ],
+        "second_witness": [
+          0.039866384118795395,
+          -1.0647822618484497,
+          0.01704755797982216
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4633,
+      "original_face_normal": [
+        -0.016858838988835115,
+        0.9998325314417612,
+        0.007119593998813308
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 1.3877787807814457e-17
+    },
+    {
+      "shape": "right_knee_link#0",
+      "link": "right_knee_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.3956453216139195,
+        "distance_upper_bound": 0.3956453220601269,
+        "triangle_queries": 2,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 3329,
+        "first_witness": [
+          -0.04764842474307114,
+          -0.3725996303049382,
+          -0.3949455170007359
+        ],
+        "second_witness": [
+          -0.047648444101539456,
+          -0.3726000389807643,
+          0.0006998050591795187
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 3329,
+      "original_face_normal": [
+        -4.853755757154395e-08,
+        -1.0326206758822225e-06,
+        0.9999999999994658
+      ],
+      "independent_witness_triangle_residual": 4.163336342344337e-17,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "right_knee_link#0",
+      "link": "right_knee_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.7925108274523652,
+        "distance_upper_bound": 0.7925108274829769,
+        "triangle_queries": 12,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 2146,
+        "first_witness": [
+          -0.3147031068583861,
+          -0.43526265800103087,
+          -0.459062413496012
+        ],
+        "second_witness": [
+          -0.3885800540447235,
+          -1.0757495164871216,
+          0.0017978608375415206
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5334,
+      "original_face_normal": [
+        -0.024843863942055747,
+        0.999691207154113,
+        0.0005222673463228859
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "right_knee_link#1",
+      "link": "right_knee_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.4457542659008175,
+        "distance_upper_bound": 0.44575426591160844,
+        "triangle_queries": 2,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 3589,
+        "first_witness": [
+          -0.3144447410088785,
+          -0.40725841371631455,
+          -0.445054324798528
+        ],
+        "second_witness": [
+          -0.3144438651245528,
+          -0.4072580635641593,
+          0.0006999411120823271
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 3589,
+      "original_face_normal": [
+        1.9649487678451208e-06,
+        7.855385452552093e-07,
+        0.999999999997761
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "right_knee_link#1",
+      "link": "right_knee_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.7923806627138806,
+        "distance_upper_bound": 0.7923806627336232,
+        "triangle_queries": 6,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 2146,
+        "first_witness": [
+          -0.31758081276017924,
+          -0.4355368154844725,
+          -0.4596714446271748
+        ],
+        "second_witness": [
+          -0.3885800540447235,
+          -1.0757495164871216,
+          0.0017978608375415206
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5334,
+      "original_face_normal": [
+        -0.024843863942055747,
+        0.999691207154113,
+        0.0005222673463228859
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 1.3877787807814457e-17
+    },
+    {
+      "shape": "right_knee_link#2",
+      "link": "right_knee_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.3950670690035772,
+        "distance_upper_bound": 0.39506706900538674,
+        "triangle_queries": 2,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 3329,
+        "first_witness": [
+          -0.04136523189946344,
+          -0.3717826384605176,
+          -0.3943672627973818
+        ],
+        "second_witness": [
+          -0.04136525107446071,
+          -0.3717830464151269,
+          0.0006998062077937774
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 3329,
+      "original_face_normal": [
+        -4.853755757154395e-08,
+        -1.0326206758822225e-06,
+        0.9999999999994658
+      ],
+      "independent_witness_triangle_residual": 6.938902374231531e-17,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "right_knee_link#2",
+      "link": "right_knee_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.7932671102943357,
+        "distance_upper_bound": 0.7932671103493824,
+        "triangle_queries": 6,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1816,
+        "first_witness": [
+          -0.038367106349576414,
+          -0.4010812398481816,
+          -0.4104569909972162
+        ],
+        "second_witness": [
+          0.029588387348114135,
+          -1.065126808944594,
+          0.018143337282854
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4632,
+      "original_face_normal": [
+        -0.03241888553334972,
+        0.9994226000675189,
+        0.010172626752983313
+      ],
+      "independent_witness_triangle_residual": 3.469446951953614e-18,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "right_ankle_roll_link#0",
+      "link": "right_ankle_roll_link",
+      "kind": "box",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.4067652572027135,
+        "distance_upper_bound": 0.4067652572027136,
+        "triangle_queries": 8,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 3334,
+        "first_witness": [
+          -0.44925920250009704,
+          -0.41284138927930236,
+          -0.40606499549266195
+        ],
+        "second_witness": [
+          -0.4492574706043503,
+          -0.4128410412854811,
+          0.0007002617062158653
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 3334,
+      "original_face_normal": [
+        4.25772780784766e-06,
+        8.555151036041515e-07,
+        0.9999999999905699
+      ],
+      "independent_witness_triangle_residual": 7.850462293418876e-17,
+      "independent_witness_shape_residual": 5.551115123125783e-17
+    },
+    {
+      "shape": "right_ankle_roll_link#0",
+      "link": "right_ankle_roll_link",
+      "kind": "box",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.7775362681503205,
+        "distance_upper_bound": 0.7775362681503206,
+        "triangle_queries": 14,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 2146,
+        "first_witness": [
+          -0.4142111887491882,
+          -0.4476739343026919,
+          -0.45583382107115084
+        ],
+        "second_witness": [
+          -0.3885800540447235,
+          -1.0757495164871216,
+          0.0017978608375415206
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5334,
+      "original_face_normal": [
+        -0.024843863942055747,
+        0.999691207154113,
+        0.0005222673463228859
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 5.204170427930421e-18
+    },
+    {
+      "shape": "waist_pitch_link#0",
+      "link": "waist_pitch_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.30405371820909954,
+        "distance_upper_bound": 0.30405371839947126,
+        "triangle_queries": 14,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 5091,
+        "first_witness": [
+          0.02746753459815457,
+          0.0549131318234429,
+          0.30475372075615365
+        ],
+        "second_witness": [
+          0.0274675346032085,
+          0.05491314513268275,
+          0.0007000023566826844
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5091,
+      "original_face_normal": [
+        -1.2596265257641877e-11,
+        -4.3625491905079946e-08,
+        0.9999999999999991
+      ],
+      "independent_witness_triangle_residual": 9.0205685907151e-17,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "waist_pitch_link#0",
+      "link": "waist_pitch_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 1.0092388817506042,
+        "distance_upper_bound": 1.0092388824049263,
+        "triangle_queries": 6,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1810,
+        "first_witness": [
+          0.13746584683966645,
+          -0.054987441607516,
+          0.4162882966092285
+        ],
+        "second_witness": [
+          0.15787097847611198,
+          -1.0640194620741914,
+          0.4173532068320343
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4624,
+      "original_face_normal": [
+        -0.020218331615388805,
+        0.9997950318414017,
+        -0.0010551644140991375
+      ],
+      "independent_witness_triangle_residual": 2.220446049250313e-16,
+      "independent_witness_shape_residual": 6.938893903907228e-18
+    },
+    {
+      "shape": "waist_pitch_link#1",
+      "link": "waist_pitch_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.30405368395358706,
+        "distance_upper_bound": 0.3040536839538745,
+        "triangle_queries": 14,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 5091,
+        "first_witness": [
+          0.027463989654539146,
+          0.054999941523309066,
+          0.30475368631434396
+        ],
+        "second_witness": [
+          0.02746398965839364,
+          0.0549999547876789,
+          0.0007000023604697537
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5091,
+      "original_face_normal": [
+        -1.2596265257641877e-11,
+        -4.3625491905079946e-08,
+        0.9999999999999991
+      ],
+      "independent_witness_triangle_residual": 6.138078244619834e-17,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "waist_pitch_link#1",
+      "link": "waist_pitch_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 1.0113636200328169,
+        "distance_upper_bound": 1.011363620230704,
+        "triangle_queries": 12,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1809,
+        "first_witness": [
+          0.029496025177939762,
+          -0.054981182402746555,
+          0.4148725853628233
+        ],
+        "second_witness": [
+          0.048157463368992154,
+          -1.066172044572884,
+          0.4159511559039042
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4623,
+      "original_face_normal": [
+        -0.01845175888053837,
+        0.9998291830490446,
+        -0.0010664509807644005
+      ],
+      "independent_witness_triangle_residual": 2.220446049250313e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "waist_pitch_link#2",
+      "link": "waist_pitch_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.3041405398289034,
+        "distance_upper_bound": 0.30414053994104334,
+        "triangle_queries": 14,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 5091,
+        "first_witness": [
+          0.027478702894679373,
+          -0.05499844392977272,
+          0.30484053750277923
+        ],
+        "second_witness": [
+          0.02747870291589117,
+          -0.05499843065347301,
+          0.0006999975617362653
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5091,
+      "original_face_normal": [
+        -1.2596265257641877e-11,
+        -4.3625491905079946e-08,
+        0.9999999999999991
+      ],
+      "independent_witness_triangle_residual": 1.6897314337043116e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "waist_pitch_link#2",
+      "link": "waist_pitch_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.9013821416446063,
+        "distance_upper_bound": 0.9013821421467137,
+        "triangle_queries": 11,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1809,
+        "first_witness": [
+          0.029508981557737297,
+          -0.1649811176730294,
+          0.4149603524157578
+        ],
+        "second_witness": [
+          0.04614106874534614,
+          -1.0662092884456955,
+          0.4159216341312062
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4623,
+      "original_face_normal": [
+        -0.01845175888053837,
+        0.9998291830490446,
+        -0.0010664509807644005
+      ],
+      "independent_witness_triangle_residual": 1.3877787807814457e-17,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "waist_pitch_link#3",
+      "link": "waist_pitch_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.17195132669698945,
+        "distance_upper_bound": 0.1719513267065347,
+        "triangle_queries": 14,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 5091,
+        "first_witness": [
+          -0.02064191519657056,
+          0.05995260765740259,
+          0.17265132928246057
+        ],
+        "second_witness": [
+          -0.020641915195451555,
+          0.05995261515952127,
+          0.000700002575926044
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5091,
+      "original_face_normal": [
+        -1.2596265257641877e-11,
+        -4.3625491905079946e-08,
+        0.9999999999999991
+      ],
+      "independent_witness_triangle_residual": 1.2436895360500342e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "waist_pitch_link#3",
+      "link": "waist_pitch_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 1.0063101188765073,
+        "distance_upper_bound": 1.0063101194739577,
+        "triangle_queries": 8,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1816,
+        "first_witness": [
+          0.036188079754947006,
+          -0.060009316496705184,
+          0.2134652063815833
+        ],
+        "second_witness": [
+          0.06881152832437872,
+          -1.0657383927399482,
+          0.20322839251974076
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4632,
+      "original_face_normal": [
+        -0.03241888553334972,
+        0.9994226000675189,
+        0.010172626752983313
+      ],
+      "independent_witness_triangle_residual": 2.237726045655905e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "waist_pitch_link#4",
+      "link": "waist_pitch_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.1719513079865031,
+        "distance_upper_bound": 0.1719513082315531,
+        "triangle_queries": 14,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 5091,
+        "first_witness": [
+          -0.020639307694159535,
+          0.059995784477129735,
+          0.17265131080936263
+        ],
+        "second_witness": [
+          -0.020639307658755726,
+          0.059995791930219707,
+          0.0007000025778096847
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5091,
+      "original_face_normal": [
+        -1.2596265257641877e-11,
+        -4.3625491905079946e-08,
+        0.9999999999999991
+      ],
+      "independent_witness_triangle_residual": 4.5633578725673124e-17,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "waist_pitch_link#4",
+      "link": "waist_pitch_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 1.067481054385645,
+        "distance_upper_bound": 1.0674810543868891,
+        "triangle_queries": 8,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1815,
+        "first_witness": [
+          -0.019511449512118778,
+          1.0683750801581831e-05,
+          0.23272877178287701
+        ],
+        "second_witness": [
+          0.0006022459081148762,
+          -1.0672799723175068,
+          0.2341057978416445
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4631,
+      "original_face_normal": [
+        -0.018842203647878277,
+        0.9998216377539132,
+        -0.0012899770443020378
+      ],
+      "independent_witness_triangle_residual": 3.925231146709438e-17,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "waist_pitch_link#5",
+      "link": "waist_pitch_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.17204605988030194,
+        "distance_upper_bound": 0.17204606014554266,
+        "triangle_queries": 14,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 5091,
+        "first_witness": [
+          -0.020630450308262053,
+          -0.05999482002188266,
+          0.17274605748870317
+        ],
+        "second_witness": [
+          -0.02063045031505107,
+          -0.05999481245838751,
+          0.0006999973431606558
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5091,
+      "original_face_normal": [
+        -1.2596265257641877e-11,
+        -4.3625491905079946e-08,
+        0.9999999999999991
+      ],
+      "independent_witness_triangle_residual": 3.5381721535210965e-17,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "waist_pitch_link#5",
+      "link": "waist_pitch_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.9475021393695727,
+        "distance_upper_bound": 0.9475021393722873,
+        "triangle_queries": 8,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1815,
+        "first_witness": [
+          -0.019498988109171608,
+          -0.11998927766204365,
+          0.23282355185131415
+        ],
+        "second_witness": [
+          -0.0016459598360749478,
+          -1.0673224184244543,
+          0.23404580786707951
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4631,
+      "original_face_normal": [
+        -0.018842203647878277,
+        0.9998216377539132,
+        -0.0012899770443020378
+      ],
+      "independent_witness_triangle_residual": 2.237726045655905e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "waist_pitch_link#6",
+      "link": "waist_pitch_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.2193417807222998,
+        "distance_upper_bound": 0.21934178072743624,
+        "triangle_queries": 13,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 5091,
+        "first_witness": [
+          0.07745519583739723,
+          0.049976297490007524,
+          0.2200417828693764
+        ],
+        "second_witness": [
+          0.07745519584046112,
+          0.04997630705735415,
+          0.0007000021419403528
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5091,
+      "original_face_normal": [
+        -1.2596265257641877e-11,
+        -4.3625491905079946e-08,
+        0.9999999999999991
+      ],
+      "independent_witness_triangle_residual": 1.1857187100668868e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "waist_pitch_link#6",
+      "link": "waist_pitch_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 1.0150445001129107,
+        "distance_upper_bound": 1.015044500344866,
+        "triangle_queries": 6,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1812,
+        "first_witness": [
+          0.10744504221054171,
+          -0.049996003490895294,
+          0.2512276734850528
+        ],
+        "second_witness": [
+          0.12710716109691556,
+          -1.0648489147266549,
+          0.2527466591862367
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4627,
+      "original_face_normal": [
+        -0.01937069798299508,
+        0.9998112505035429,
+        -0.0014964712471034758
+      ],
+      "independent_witness_triangle_residual": 2.7755575615628914e-17,
+      "independent_witness_shape_residual": 6.938893903907228e-18
+    },
+    {
+      "shape": "waist_pitch_link#7",
+      "link": "waist_pitch_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.21934177137429828,
+        "distance_upper_bound": 0.21934177137578,
+        "triangle_queries": 13,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 5091,
+        "first_witness": [
+          0.07745506879879827,
+          0.05000022216857851,
+          0.22004177351876392
+        ],
+        "second_witness": [
+          0.07745506880149083,
+          0.05000023173789278,
+          0.0007000021429840772
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5091,
+      "original_face_normal": [
+        -1.2596265257641877e-11,
+        -4.3625491905079946e-08,
+        0.9999999999999991
+      ],
+      "independent_witness_triangle_residual": 1.0103187843545154e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "waist_pitch_link#7",
+      "link": "waist_pitch_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 1.0856043142399296,
+        "distance_upper_bound": 1.0856043143510319,
+        "triangle_queries": 10,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1812,
+        "first_witness": [
+          0.07803621444509067,
+          0.02000564619435173,
+          0.25008660487249473
+        ],
+        "second_witness": [
+          0.09906512762180773,
+          -1.0653937608920736,
+          0.2517111800836687
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4627,
+      "original_face_normal": [
+        -0.01937069798299508,
+        0.9998112505035429,
+        -0.0014964712471034758
+      ],
+      "independent_witness_triangle_residual": 1.3877787807814457e-17,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "waist_pitch_link#8",
+      "link": "waist_pitch_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.2194207312264393,
+        "distance_upper_bound": 0.21942073129204276,
+        "triangle_queries": 13,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 5091,
+        "first_witness": [
+          0.0774654051646996,
+          -0.049999678027217234,
+          0.22012072907248192
+        ],
+        "second_witness": [
+          0.07746540517139339,
+          -0.04999966847421197,
+          0.0006999977804393701
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5091,
+      "original_face_normal": [
+        -1.2596265257641877e-11,
+        -4.3625491905079946e-08,
+        0.9999999999999991
+      ],
+      "independent_witness_triangle_residual": 7.473417450352271e-17,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "waist_pitch_link#8",
+      "link": "waist_pitch_link",
+      "kind": "sphere",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.9856229019813608,
+        "distance_upper_bound": 0.9856229021164609,
+        "triangle_queries": 7,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1812,
+        "first_witness": [
+          0.07804657769138962,
+          -0.07999432208633538,
+          0.2501655601005335
+        ],
+        "second_witness": [
+          0.09713878111473892,
+          -1.065431188379724,
+          0.25164051595822756
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4627,
+      "original_face_normal": [
+        -0.01937069798299508,
+        0.9998112505035429,
+        -0.0014964712471034758
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "left_shoulder_roll_link#0",
+      "link": "left_shoulder_roll_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.39388561216142426,
+        "distance_upper_bound": 0.39388561240912073,
+        "triangle_queries": 14,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 5094,
+        "first_witness": [
+          0.06919433457502117,
+          0.2138772097879395,
+          0.3945856217292863
+        ],
+        "second_witness": [
+          0.069194334244402,
+          0.21387722750628352,
+          0.0007000093201659363
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5094,
+      "original_face_normal": [
+        -3.0895626319219387e-10,
+        -4.331243499266025e-08,
+        0.999999999999999
+      ],
+      "independent_witness_triangle_residual": 3.002224531865041e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "left_shoulder_roll_link#0",
+      "link": "left_shoulder_roll_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 1.1195913295773958,
+        "distance_upper_bound": 1.1195913295908435,
+        "triangle_queries": 10,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1606,
+        "first_witness": [
+          -0.000882939451670707,
+          0.25392908483350884,
+          0.44443365170328614
+        ],
+        "second_witness": [
+          -0.013700000010430813,
+          1.3733999729156494,
+          0.4547000527381897
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4246,
+      "original_face_normal": [
+        0.9491565901691466,
+        -0.314614530907975,
+        0.010929971639212896
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 1.3877787807814457e-17
+    },
+    {
+      "shape": "left_shoulder_roll_link#1",
+      "link": "left_shoulder_roll_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.3984999206158193,
+        "distance_upper_bound": 0.39849992115462995,
+        "triangle_queries": 13,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 5096,
+        "first_witness": [
+          0.03672812414127269,
+          0.26090807656769743,
+          0.3991999325222219
+        ],
+        "second_witness": [
+          0.036728123834391516,
+          0.2609080944310366,
+          0.0007000113675923784
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5096,
+      "original_face_normal": [
+        -3.10561277486692e-10,
+        -4.335778991664268e-08,
+        0.9999999999999991
+      ],
+      "independent_witness_triangle_residual": 3.0436364816617974e-16,
+      "independent_witness_shape_residual": 1.3877787807814457e-17
+    },
+    {
+      "shape": "left_shoulder_roll_link#1",
+      "link": "left_shoulder_roll_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 1.0425792828762739,
+        "distance_upper_bound": 1.0425792831742344,
+        "triangle_queries": 8,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1607,
+        "first_witness": [
+          -0.001556967960133486,
+          0.33089867080647667,
+          0.4508085777729004
+        ],
+        "second_witness": [
+          -0.013700000010430813,
+          1.3733999729156494,
+          0.4547000527381897
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4248,
+      "original_face_normal": [
+        0.9643398805588811,
+        -0.25450741933129517,
+        -0.07262622301212733
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 6.938893903907228e-18
+    },
+    {
+      "shape": "left_elbow_link#0",
+      "link": "left_elbow_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.38172924463581187,
+        "distance_upper_bound": 0.38172924464605323,
+        "triangle_queries": 13,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 815,
+        "first_witness": [
+          0.02335869665020966,
+          0.46019127375438795,
+          0.38242926472773486
+        ],
+        "second_witness": [
+          0.02335869672181279,
+          0.460191290389191,
+          0.0007000200816820077
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 815,
+      "original_face_normal": [
+        -1.92520642967483e-10,
+        -4.356589959227125e-08,
+        0.999999999999999
+      ],
+      "independent_witness_triangle_residual": 1.2412670766236366e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "left_elbow_link#0",
+      "link": "left_elbow_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.8715373877054166,
+        "distance_upper_bound": 0.8715373877454589,
+        "triangle_queries": 11,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1606,
+        "first_witness": [
+          0.0051728089306777875,
+          0.5026409049096684,
+          0.4230791608120278
+        ],
+        "second_witness": [
+          -0.013700000010430813,
+          1.3733999729156494,
+          0.4547000527381897
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4246,
+      "original_face_normal": [
+        0.9491565901691466,
+        -0.314614530907975,
+        0.010929971639212896
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "left_elbow_link#1",
+      "link": "left_elbow_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.364534822958487,
+        "distance_upper_bound": 0.3645348236693076,
+        "triangle_queries": 13,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 794,
+        "first_witness": [
+          0.056241462852328436,
+          0.5438524433203038,
+          0.365234847410242
+        ],
+        "second_witness": [
+          0.05624146431420357,
+          0.5438524582051381,
+          0.0007000237409345959
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 794,
+      "original_face_normal": [
+        1.644905557700877e-10,
+        -4.3821518501449135e-08,
+        0.9999999999999991
+      ],
+      "independent_witness_triangle_residual": 1.0842021724855044e-19,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "left_elbow_link#1",
+      "link": "left_elbow_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.8026520702450343,
+        "distance_upper_bound": 0.8026520702768627,
+        "triangle_queries": 6,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1606,
+        "first_witness": [
+          0.03962923857576324,
+          0.5729713120497995,
+          0.42786170152108394
+        ],
+        "second_witness": [
+          -0.013700000010430813,
+          1.3733999729156494,
+          0.4547000527381897
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4246,
+      "original_face_normal": [
+        0.9491565901691466,
+        -0.314614530907975,
+        0.010929971639212896
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 2.42861286636753e-17
+    },
+    {
+      "shape": "left_wrist_pitch_link#0",
+      "link": "left_wrist_pitch_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.3491502512783697,
+        "distance_upper_bound": 0.3491502512850689,
+        "triangle_queries": 13,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 794,
+        "first_witness": [
+          0.09733009840358697,
+          0.5901541691532406,
+          0.34985027704825644
+        ],
+        "second_witness": [
+          0.0973300983357597,
+          0.5901541844606686,
+          0.0007000257631878575
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 794,
+      "original_face_normal": [
+        1.644905557700877e-10,
+        -4.3821518501449135e-08,
+        0.9999999999999991
+      ],
+      "independent_witness_triangle_residual": 8.326672684688674e-17,
+      "independent_witness_shape_residual": 6.938893903907228e-18
+    },
+    {
+      "shape": "left_wrist_pitch_link#0",
+      "link": "left_wrist_pitch_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.7430068412616757,
+        "distance_upper_bound": 0.7430068412842072,
+        "triangle_queries": 5,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1607,
+        "first_witness": [
+          0.04569310135306424,
+          0.6355062425823813,
+          0.39110391731774885
+        ],
+        "second_witness": [
+          -0.013700000010430813,
+          1.3733999729156494,
+          0.4547000527381897
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4248,
+      "original_face_normal": [
+        0.9643398805588811,
+        -0.25450741933129517,
+        -0.07262622301212733
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "left_wrist_pitch_link#1",
+      "link": "left_wrist_pitch_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.3200113455723734,
+        "distance_upper_bound": 0.3200113455724503,
+        "triangle_queries": 12,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 794,
+        "first_witness": [
+          0.093332944782622,
+          0.6677162641176163,
+          0.3207113747351841
+        ],
+        "second_witness": [
+          0.09333294473006469,
+          0.6677162781409426,
+          0.0007000291627340747
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 794,
+      "original_face_normal": [
+        1.644905557700877e-10,
+        -4.3821518501449135e-08,
+        0.9999999999999991
+      ],
+      "independent_witness_triangle_residual": 1.3878211317825933e-17,
+      "independent_witness_shape_residual": 3.8163916471489756e-17
+    },
+    {
+      "shape": "left_wrist_pitch_link#1",
+      "link": "left_wrist_pitch_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.6904621785114744,
+        "distance_upper_bound": 0.6904621785918831,
+        "triangle_queries": 6,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1605,
+        "first_witness": [
+          0.08485523485712668,
+          0.694014081395934,
+          0.38081029600553085
+        ],
+        "second_witness": [
+          -0.013700000010430813,
+          1.3733999729156494,
+          0.4547000527381897
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4245,
+      "original_face_normal": [
+        -0.9560281483142008,
+        -0.293116428386123,
+        -0.009640489670305591
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 1.3877787807814457e-17
+    },
+    {
+      "shape": "left_wrist_roll_link#0",
+      "link": "left_wrist_roll_link",
+      "kind": "mesh",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.2491216825126253,
+        "distance_upper_bound": 0.24912168251262565,
+        "triangle_queries": 12,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 771,
+        "first_witness": [
+          0.10245307808386382,
+          0.8550602472175755,
+          0.2498217198435408
+        ],
+        "second_witness": [
+          0.10245307817220421,
+          0.8550602580572639,
+          0.0007000373309153899
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 771,
+      "original_face_normal": [
+        -3.5460750932705626e-10,
+        -4.351162248619227e-08,
+        0.999999999999999
+      ],
+      "independent_witness_triangle_residual": 1.3877787807814457e-17,
+      "independent_witness_shape_residual": 8.326672684688674e-17
+    },
+    {
+      "shape": "left_wrist_roll_link#0",
+      "link": "left_wrist_roll_link",
+      "kind": "mesh",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.5370916778806376,
+        "distance_upper_bound": 0.5370916778806376,
+        "triangle_queries": 15,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1607,
+        "first_witness": [
+          0.10372072387108539,
+          0.8736675429784683,
+          0.2967527750761177
+        ],
+        "second_witness": [
+          -0.013700000010430813,
+          1.3733999729156494,
+          0.4547000527381897
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4248,
+      "original_face_normal": [
+        0.9643398805588811,
+        -0.25450741933129517,
+        -0.07262622301212733
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "right_shoulder_roll_link#0",
+      "link": "right_shoulder_roll_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.3938856469021637,
+        "distance_upper_bound": 0.3938856469162997,
+        "triangle_queries": 3,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 3329,
+        "first_witness": [
+          0.06919433201944665,
+          -0.21387405705941614,
+          0.39458562155068333
+        ],
+        "second_witness": [
+          0.06919435113840172,
+          -0.21387365031901184,
+          0.0006999746345941599
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 3329,
+      "original_face_normal": [
+        -4.853755757154395e-08,
+        -1.0326206758822225e-06,
+        0.9999999999994658
+      ],
+      "independent_witness_triangle_residual": 5.551125711027526e-17,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "right_shoulder_roll_link#0",
+      "link": "right_shoulder_roll_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.8116526042518574,
+        "distance_upper_bound": 0.811652604990296,
+        "triangle_queries": 3,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1810,
+        "first_witness": [
+          0.07444992073504877,
+          -0.2538694657642536,
+          0.4343846529126039
+        ],
+        "second_witness": [
+          0.09086017827893522,
+          -1.0653557078955909,
+          0.4352410794636603
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4624,
+      "original_face_normal": [
+        -0.020218331615388805,
+        0.9997950318414017,
+        -0.0010551644140991375
+      ],
+      "independent_witness_triangle_residual": 1.3877787807814457e-17,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "right_shoulder_roll_link#1",
+      "link": "right_shoulder_roll_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.3985000076190481,
+        "distance_upper_bound": 0.39850000762325183,
+        "triangle_queries": 2,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 3329,
+        "first_witness": [
+          0.03672376941123889,
+          -0.2609080766831977,
+          0.3991999321132952
+        ],
+        "second_witness": [
+          0.03672378875201615,
+          -0.26090766518504127,
+          0.0006999244902561482
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 3329,
+      "original_face_normal": [
+        -4.853755757154395e-08,
+        -1.0326206758822225e-06,
+        0.9999999999994658
+      ],
+      "independent_witness_triangle_residual": 4.163336342344337e-17,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "right_shoulder_roll_link#1",
+      "link": "right_shoulder_roll_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.7345870915893095,
+        "distance_upper_bound": 0.7345870915940406,
+        "triangle_queries": 3,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1810,
+        "first_witness": [
+          0.07669010376378027,
+          -0.33089859736615923,
+          0.4409026421157033
+        ],
+        "second_witness": [
+          0.0915422291855434,
+          -1.065335121996621,
+          0.44167775228627204
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4624,
+      "original_face_normal": [
+        -0.020218331615388805,
+        0.9997950318414017,
+        -0.0010551644140991375
+      ],
+      "independent_witness_triangle_residual": 2.2247786310271853e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "right_elbow_link#0",
+      "link": "right_elbow_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.3817205709675861,
+        "distance_upper_bound": 0.38172057097174805,
+        "triangle_queries": 2,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 3329,
+        "first_witness": [
+          0.02339689515919617,
+          -0.4602128236911933,
+          0.3824202890087258
+        ],
+        "second_witness": [
+          0.023396913687077844,
+          -0.4602124295169046,
+          0.0006997180371817314
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 3329,
+      "original_face_normal": [
+        -4.853755757154395e-08,
+        -1.0326206758822225e-06,
+        0.9999999999994658
+      ],
+      "independent_witness_triangle_residual": 1.2412670766236366e-16,
+      "independent_witness_shape_residual": 3.469446951953614e-17
+    },
+    {
+      "shape": "right_elbow_link#0",
+      "link": "right_elbow_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.5629334426995295,
+        "distance_upper_bound": 0.5629334434106246,
+        "triangle_queries": 5,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1809,
+        "first_witness": [
+          0.07155789874556578,
+          -0.5026646690561622,
+          0.4589876422779118
+        ],
+        "second_witness": [
+          0.08194501592931465,
+          -1.06550195379978,
+          0.4595879831690733
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4623,
+      "original_face_normal": [
+        -0.01845175888053837,
+        0.9998291830490446,
+        -0.0010664509807644005
+      ],
+      "independent_witness_triangle_residual": 5.721958498152797e-17,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "right_elbow_link#1",
+      "link": "right_elbow_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.36453521404938033,
+        "distance_upper_bound": 0.3645352140545865,
+        "triangle_queries": 2,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 3329,
+        "first_witness": [
+          0.05624081554678041,
+          -0.5438525942617366,
+          0.3652348473175623
+        ],
+        "second_witness": [
+          0.05624083324200155,
+          -0.5438522178357034,
+          0.0006996332631706232
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 3329,
+      "original_face_normal": [
+        -4.853755757154395e-08,
+        -1.0326206758822225e-06,
+        0.9999999999994658
+      ],
+      "independent_witness_triangle_residual": 1.1443922132196074e-16,
+      "independent_witness_shape_residual": 4.163336342344337e-17
+    },
+    {
+      "shape": "right_elbow_link#1",
+      "link": "right_elbow_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.49313989951087334,
+        "distance_upper_bound": 0.49313989951438,
+        "triangle_queries": 5,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1809,
+        "first_witness": [
+          0.043631853168366916,
+          -0.5730161206107387,
+          0.43028892198373264
+        ],
+        "second_witness": [
+          0.052731151677234245,
+          -1.0660717834713056,
+          0.4308148315064701
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4623,
+      "original_face_normal": [
+        -0.01845175888053837,
+        0.9998291830490446,
+        -0.0010664509807644005
+      ],
+      "independent_witness_triangle_residual": 2.0816681711721685e-17,
+      "independent_witness_shape_residual": 1.0408340855860843e-16
+    },
+    {
+      "shape": "right_wrist_pitch_link#0",
+      "link": "right_wrist_pitch_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.34916777391999526,
+        "distance_upper_bound": 0.3491677739919583,
+        "triangle_queries": 2,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 3329,
+        "first_witness": [
+          0.09733598550543275,
+          -0.5901063512334175,
+          0.3498673614869994
+        ],
+        "second_witness": [
+          0.09733600243103874,
+          -0.5901059906951613,
+          0.0006995874952275714
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 3329,
+      "original_face_normal": [
+        -4.853755757154395e-08,
+        -1.0326206758822225e-06,
+        0.9999999999994658
+      ],
+      "independent_witness_triangle_residual": 0.0,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "right_wrist_pitch_link#0",
+      "link": "right_wrist_pitch_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.43056531877246773,
+        "distance_upper_bound": 0.43056531877268556,
+        "triangle_queries": 5,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1809,
+        "first_witness": [
+          0.045375095427989426,
+          -0.6356129775070787,
+          0.38926553033661404
+        ],
+        "second_witness": [
+          0.053319782872931036,
+          -1.066104748424813,
+          0.3897247071430982
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4623,
+      "original_face_normal": [
+        -0.01845175888053837,
+        0.9998291830490446,
+        -0.0010664509807644005
+      ],
+      "independent_witness_triangle_residual": 2.2215299868541707e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "right_wrist_pitch_link#1",
+      "link": "right_wrist_pitch_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.3200118675606039,
+        "distance_upper_bound": 0.32001186758937067,
+        "triangle_queries": 2,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 3329,
+        "first_witness": [
+          0.09333380425375593,
+          -0.667715426415819,
+          0.32071137474940437
+        ],
+        "second_witness": [
+          0.09333381979402464,
+          -0.6677150959667135,
+          0.000699507160204661
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 3329,
+      "original_face_normal": [
+        -4.853755757154395e-08,
+        -1.0326206758822225e-06,
+        0.9999999999994658
+      ],
+      "independent_witness_triangle_residual": 1.1102235540206224e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "right_wrist_pitch_link#1",
+      "link": "right_wrist_pitch_link",
+      "kind": "cylinder",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.37088888519154545,
+        "distance_upper_bound": 0.37088888535127346,
+        "triangle_queries": 2,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1810,
+        "first_witness": [
+          0.09033323118962705,
+          -0.6944608981927923,
+          0.37890551425339414
+        ],
+        "second_witness": [
+          0.09783198519201819,
+          -1.065273763141775,
+          0.37929686300983123
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4624,
+      "original_face_normal": [
+        -0.020218331615388805,
+        0.9997950318414017,
+        -0.0010551644140991375
+      ],
+      "independent_witness_triangle_residual": 2.220446049250313e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "right_wrist_roll_link#0",
+      "link": "right_wrist_roll_link",
+      "kind": "mesh",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.1892596303790435,
+        "distance_upper_bound": 0.18925963037904353,
+        "triangle_queries": 5,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 4627,
+        "first_witness": [
+          0.09569331592158244,
+          -0.8761317474219346,
+          0.2730776630795963
+        ],
+        "second_witness": [
+          0.0993594070620281,
+          -1.0653556551410444,
+          0.273360884674696
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4627,
+      "original_face_normal": [
+        -0.01937069798299508,
+        0.9998112505035429,
+        -0.0014964712471034758
+      ],
+      "independent_witness_triangle_residual": 1.3877787807814457e-17,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "right_wrist_roll_link#0",
+      "link": "right_wrist_roll_link",
+      "kind": "mesh",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.1892596303790435,
+        "distance_upper_bound": 0.18925963037904353,
+        "triangle_queries": 5,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1812,
+        "first_witness": [
+          0.09569331592158244,
+          -0.8761317474219346,
+          0.2730776630795963
+        ],
+        "second_witness": [
+          0.0993594070620281,
+          -1.0653556551410444,
+          0.273360884674696
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4627,
+      "original_face_normal": [
+        -0.01937069798299508,
+        0.9998112505035429,
+        -0.0014964712471034758
+      ],
+      "independent_witness_triangle_residual": 1.3877787807814457e-17,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "head_pitch_link#0",
+      "link": "head_pitch_link",
+      "kind": "box",
+      "layout": "raw",
+      "subset": "all",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.6018232762579776,
+        "distance_upper_bound": 0.6018232762579776,
+        "triangle_queries": 14,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 5091,
+        "first_witness": [
+          0.0956904978120258,
+          0.075,
+          0.6025232794918192
+        ],
+        "second_witness": [
+          0.09569049781960653,
+          0.07500002625483647,
+          0.0007000032338421087
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 5091,
+      "original_face_normal": [
+        -1.2596265257641877e-11,
+        -4.3625491905079946e-08,
+        0.9999999999999991
+      ],
+      "independent_witness_triangle_residual": 1.6883057536160649e-16,
+      "independent_witness_shape_residual": 0.0
+    },
+    {
+      "shape": "head_pitch_link#0",
+      "link": "head_pitch_link",
+      "kind": "box",
+      "layout": "raw",
+      "subset": "lateral",
+      "result": {
+        "status": "surface_distance_bracket_converged",
+        "distance_lower_bound": 0.9960927886829273,
+        "distance_upper_bound": 0.9960927886829275,
+        "triangle_queries": 4,
+        "triangle_budget_exhausted": false,
+        "best_triangle": 1810,
+        "first_witness": [
+          0.09569049781202582,
+          -0.07500000000000001,
+          0.6025232794918192
+        ],
+        "second_witness": [
+          0.1146823712507872,
+          -1.0648135541373975,
+          0.4924811036894916
+        ],
+        "terrain_solid_containment_excluded": false,
+        "contact_or_support_label": false,
+        "source_root_or_units_inferred": false,
+        "cooked_physics_validated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "original_face_index": 4624,
+      "original_face_normal": [
+        -0.020218331615388805,
+        0.9997950318414017,
+        -0.0010551644140991375
+      ],
+      "independent_witness_triangle_residual": 5.551115123125783e-17,
+      "independent_witness_shape_residual": 1.3877787807814457e-17
+    }
+  ],
+  "common_shift_checks": [
+    {
+      "shape": "left_ankle_roll_link#0",
+      "subset": "all",
+      "raw_bracket": [
+        0.4067650135021208,
+        0.4067650135021209
+      ],
+      "shifted_bracket": [
+        0.4067650135021208,
+        0.4067650135021208
+      ],
+      "compatible": true,
+      "is_coordinate_hypothesis_selection": false
+    },
+    {
+      "shape": "left_ankle_roll_link#0",
+      "subset": "lateral",
+      "raw_bracket": [
+        1.095957919229973,
+        1.0959579192299735
+      ],
+      "shifted_bracket": [
+        1.095957919229974,
+        1.095957919229974
+      ],
+      "compatible": true,
+      "is_coordinate_hypothesis_selection": false
+    },
+    {
+      "shape": "right_ankle_roll_link#0",
+      "subset": "all",
+      "raw_bracket": [
+        0.4067652572027135,
+        0.4067652572027136
+      ],
+      "shifted_bracket": [
+        0.40676525720271356,
+        0.4067652572027136
+      ],
+      "compatible": true,
+      "is_coordinate_hypothesis_selection": false
+    },
+    {
+      "shape": "right_ankle_roll_link#0",
+      "subset": "lateral",
+      "raw_bracket": [
+        0.7775362681503205,
+        0.7775362681503206
+      ],
+      "shifted_bracket": [
+        0.7775362681503212,
+        0.7775362681503214
+      ],
+      "compatible": true,
+      "is_coordinate_hypothesis_selection": false
+    },
+    {
+      "shape": "left_wrist_roll_link#0",
+      "subset": "all",
+      "raw_bracket": [
+        0.2491216825126253,
+        0.24912168251262565
+      ],
+      "shifted_bracket": [
+        0.24912168251262554,
+        0.24912168251262565
+      ],
+      "compatible": true,
+      "is_coordinate_hypothesis_selection": false
+    },
+    {
+      "shape": "left_wrist_roll_link#0",
+      "subset": "lateral",
+      "raw_bracket": [
+        0.5370916778806376,
+        0.5370916778806376
+      ],
+      "shifted_bracket": [
+        0.5370916778806372,
+        0.5370916778806372
+      ],
+      "compatible": true,
+      "is_coordinate_hypothesis_selection": false
+    },
+    {
+      "shape": "right_wrist_roll_link#0",
+      "subset": "all",
+      "raw_bracket": [
+        0.1892596303790435,
+        0.18925963037904353
+      ],
+      "shifted_bracket": [
+        0.18925963037904311,
+        0.18925963037904311
+      ],
+      "compatible": true,
+      "is_coordinate_hypothesis_selection": false
+    },
+    {
+      "shape": "right_wrist_roll_link#0",
+      "subset": "lateral",
+      "raw_bracket": [
+        0.1892596303790435,
+        0.18925963037904353
+      ],
+      "shifted_bracket": [
+        0.18925963037904311,
+        0.18925963037904311
+      ],
+      "compatible": true,
+      "is_coordinate_hypothesis_selection": false
+    }
+  ],
+  "shape_count": 43,
+  "surface_queries": 86,
+  "query_status_counts": {
+    "surface_distance_bracket_converged": 86
+  },
+  "max_shape_membership_residual": 1.0408340855860843e-16,
+  "max_triangle_membership_residual": 3.8956808310314346e-16,
+  "max_converged_bracket": 9.695009239862884e-10,
+  "complete_mesh_solid_containment_excluded": false,
+  "full_signed_collision_distance": false,
+  "contact_support_schedule_accepted": false,
+  "cooked_physics_validated": false,
+  "source_coordinate_hypothesis_selected": false,
+  "gpu_submissions": 0,
+  "retarget_solver_calls": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false,
+  "training_ready": false
+}
