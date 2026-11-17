@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "stage": "bounded_cpu_diagnostic_supervision",
+  "status": "completed",
+  "budget": {
+    "window_seconds": 45,
+    "total_seconds": 50,
+    "iterations": 60,
+    "numeric_threads": 2,
+    "max_windows": 1
+  },
+  "windows": [
+    {
+      "index": 0,
+      "wall_seconds": 0.8864053689999878,
+      "child_reaped": true,
+      "status": "completed",
+      "iterations": 48,
+      "diagnostic": {
+        "stage": "all_pairs_on_one_in_limit_algebraic_pose_NOT_trajectory",
+        "shape_count": 43,
+        "collision_link_count": 19,
+        "shape_type_counts": {
+          "cylinder": 24,
+          "sphere": 14,
+          "box": 3,
+          "mesh": 2
+        },
+        "all_shape_pairs": 903,
+        "cross_link_pairs": 846,
+        "same_link_records": 57,
+        "link_pair_count": 171,
+        "broadphase_status_counts": {
+          "same_rigid_link_record_only": 57,
+          "separated_by_nominal_aabb": 834,
+          "unresolved_narrowphase_required": 12
+        },
+        "gjk_narrowphase_queries": 12,
+        "gjk_status_counts": {
+          "separated": 10,
+          "within_numerical_tolerance": 2
+        },
+        "gjk_queries_involving_hands": 4,
+        "max_converged_distance_bracket": 6.990425772956943e-10,
+        "max_witness_distance_error": 3.122502256758253e-17,
+        "hand_checks": [
+          {
+            "link": "left_wrist_roll_link",
+            "contained_point_detected": true,
+            "analytic_planes": [
+              {
+                "normal_axis": 0,
+                "expected_distance": 0.05,
+                "distance": 0.04999999999999999,
+                "error": 1.3877787807814457e-17
+              },
+              {
+                "normal_axis": 2,
+                "expected_distance": 0.05,
+                "distance": 0.04999999999999999,
+                "error": 1.3877787807814457e-17
+              }
+            ],
+            "actual_task_terrain": false,
+            "cooked_physics": false
+          },
+          {
+            "link": "right_wrist_roll_link",
+            "contained_point_detected": true,
+            "analytic_planes": [
+              {
+                "normal_axis": 0,
+                "expected_distance": 0.05,
+                "distance": 0.05000000000000002,
+                "error": 1.3877787807814457e-17
+              },
+              {
+                "normal_axis": 2,
+                "expected_distance": 0.05,
+                "distance": 0.04999999999999999,
+                "error": 1.3877787807814457e-17
+              }
+            ],
+            "actual_task_terrain": false,
+            "cooked_physics": false
+          }
+        ],
+        "detail_sha256": "37fce25e20dbb8a7bb29d03c0c7d47b100cc48723637ac29ea02a350e937ff37",
+        "detail_bytes": 592395,
+        "detail_file": "ALL_SHAPE_PAIR_DETAIL_20261117.json",
+        "importer_policy": {
+          "merge_fixed_joints": false,
+          "replace_cylinders_with_capsules": false,
+          "self_collision": true,
+          "mesh_collider_type": "convex_hull",
+          "mesh_default_isaaclab_commit": "f73c33173801f5f8afea4142482e47b7710c2b75",
+          "actual_runtime_policy_observed": false,
+          "cooked_shape_identity_verified": false
+        },
+        "overlap_results_are_not_penetration_depth": true,
+        "self_collision_policy_accepted": false,
+        "actual_task_terrain_queried": false,
+        "cooked_physics_validated": false,
+        "retarget_solver_calls": 0,
+        "gpu_submissions": 0,
+        "ppo_updates": 0,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "supported_numeric_pools": [
+        {
+          "api": "openblas",
+          "threads": 2
+        },
+        {
+          "api": "openblas",
+          "threads": 2
+        }
+      ]
+    }
+  ],
+  "wall_seconds": 0.8865114910000216,
+  "retries": 0,
+  "hard_parent_deadline": true,
+  "cleanup_grace_seconds_max": 0.7,
+  "iteration_limit_scope": "trusted_workers_calling_gate_each_iteration_only",
+  "thread_limit_scope": "supported_BLAS_OpenMP_pools_not_all_OS_threads_or_CPU_cores",
+  "gpu_submissions": 0,
+  "solver_calls": 0,
+  "candidate_motion_generated": false,
+  "accepted_reference": false,
+  "training_ready": false
+}

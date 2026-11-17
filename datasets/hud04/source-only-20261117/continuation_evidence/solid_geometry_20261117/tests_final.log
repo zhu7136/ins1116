@@ -1,0 +1,36 @@
+test_capsule_axis_inside (test_solid_geometry.ConvexSolidTests.test_capsule_axis_inside) ... ok
+test_capsule_disjoint_and_touch (test_solid_geometry.ConvexSolidTests.test_capsule_disjoint_and_touch) ... ok
+test_contained_segment_zero_solid_distance (test_solid_geometry.ConvexSolidTests.test_contained_segment_zero_solid_distance) ... ok
+test_contained_triangle (test_solid_geometry.ConvexSolidTests.test_contained_triangle) ... ok
+test_crossing_segment (test_solid_geometry.ConvexSolidTests.test_crossing_segment) ... ok
+test_crossing_triangle_no_inside_vertices (test_solid_geometry.ConvexSolidTests.test_crossing_triangle_no_inside_vertices) ... ok
+test_cube_point_distances_independent_formula_96 (test_solid_geometry.ConvexSolidTests.test_cube_point_distances_independent_formula_96) ... ok
+test_degenerate_point_triangle (test_solid_geometry.ConvexSolidTests.test_degenerate_point_triangle) ... ok
+test_exact_parallel_segment (test_solid_geometry.ConvexSolidTests.test_exact_parallel_segment) ... ok
+test_invalid_hull_and_points (test_solid_geometry.ConvexSolidTests.test_invalid_hull_and_points) ... ok
+test_rigid_equivariance (test_solid_geometry.ConvexSolidTests.test_rigid_equivariance) ... ok
+test_sidewall_triangle_distance (test_solid_geometry.ConvexSolidTests.test_sidewall_triangle_distance) ... ok
+test_actual_inventory_no_pairs_omitted (test_solid_geometry.ShapeSupportTests.test_actual_inventory_no_pairs_omitted) ... ok
+test_exact_cylinder_not_capsule (test_solid_geometry.ShapeSupportTests.test_exact_cylinder_not_capsule) ... ok
+test_invalid_direction_or_pose (test_solid_geometry.ShapeSupportTests.test_invalid_direction_or_pose) ... ok
+test_mesh_support (test_solid_geometry.ShapeSupportTests.test_mesh_support) ... ok
+test_sphere_box_support (test_solid_geometry.ShapeSupportTests.test_sphere_box_support) ... ok
+test_transformed_support_aabb (test_solid_geometry.ShapeSupportTests.test_transformed_support_aabb) ... ok
+test_boxes_exact_gap_and_witness (test_solid_geometry.SupportDistanceTests.test_boxes_exact_gap_and_witness) ... ok
+test_contained_sphere (test_solid_geometry.SupportDistanceTests.test_contained_sphere) ... ok
+test_exact_cylinder_caps_and_sides (test_solid_geometry.SupportDistanceTests.test_exact_cylinder_caps_and_sides) ... ok
+test_invalid_iteration_budget (test_solid_geometry.SupportDistanceTests.test_invalid_iteration_budget) ... ok
+test_nonconvergence_is_unresolved (test_solid_geometry.SupportDistanceTests.test_nonconvergence_is_unresolved) ... ok
+test_rotated_equivariance (test_solid_geometry.SupportDistanceTests.test_rotated_equivariance) ... ok
+test_sphere_distances_32_analytic (test_solid_geometry.SupportDistanceTests.test_sphere_distances_32_analytic) ... ok
+test_floor_and_sidewall (test_terrain_shape_query.TerrainShapeTests.test_floor_and_sidewall) ... ok
+test_near_surface_not_support_label (test_terrain_shape_query.TerrainShapeTests.test_near_surface_not_support_label) ... ok
+test_query_budget_does_not_accept_unseen_triangles (test_terrain_shape_query.TerrainShapeTests.test_query_budget_does_not_accept_unseen_triangles) ... ok
+test_rigid_equivariance (test_terrain_shape_query.TerrainShapeTests.test_rigid_equivariance) ... ok
+test_transform_mandatory_and_invalid_inputs (test_terrain_shape_query.TerrainShapeTests.test_transform_mandatory_and_invalid_inputs) ... ok
+test_triangle_inside_shape (test_terrain_shape_query.TerrainShapeTests.test_triangle_inside_shape) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.224s
+
+OK

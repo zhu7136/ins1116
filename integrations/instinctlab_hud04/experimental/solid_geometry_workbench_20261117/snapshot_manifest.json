@@ -1,0 +1,79 @@
+{
+  "stage": "workbench_snapshot_NOT_installed_or_standalone_training",
+  "base": "aa7333ccceadf768e72ba2c2d8b0eca3608e3b9f",
+  "files": {
+    "integrations/instinctlab_hud04/experimental/solid_geometry_workbench_20261117/convex_solid.py": {
+      "sha256": "56e1bffd77e5c3119d3a6435744cab4379efd73c61f3546789a383a1874e66b5",
+      "bytes": 5004
+    },
+    "integrations/instinctlab_hud04/experimental/solid_geometry_workbench_20261117/robot_shape_inventory.py": {
+      "sha256": "8dc4ed215573e95123d849a39e2964023188e273a0c86f62c62fd47f4019f5eb",
+      "bytes": 6438
+    },
+    "integrations/instinctlab_hud04/experimental/solid_geometry_workbench_20261117/support_distance.py": {
+      "sha256": "d877cbb6297337290fc97ecaf34955c14cfde448ba75f1f1fd34a856bb2d607d",
+      "bytes": 2859
+    },
+    "integrations/instinctlab_hud04/experimental/solid_geometry_workbench_20261117/terrain_shape_query.py": {
+      "sha256": "956bbee9955224c4431964e9a79ee15d54293ff76226c623686117dad0ca5cc3",
+      "bytes": 3136
+    },
+    "integrations/instinctlab_hud04/experimental/solid_geometry_workbench_20261117/test_solid_geometry.py": {
+      "sha256": "1ee5dd639c95d29ac8903876afea8b6908c0728afcfa1493fb2b79e9a7515c0d",
+      "bytes": 8789
+    },
+    "integrations/instinctlab_hud04/experimental/solid_geometry_workbench_20261117/test_terrain_shape_query.py": {
+      "sha256": "8a56ef770e24bb1756da7d9acc71cf01ef92da55b7f0aa7a20b303fceae9cf4d",
+      "bytes": 2532
+    },
+    "integrations/instinctlab_hud04/experimental/solid_geometry_workbench_20261117/solid_worker.py": {
+      "sha256": "1a0bf7bee58eab0e710093a8d7ab6fb4891b3ca4c93c78894b88169cad176cb2",
+      "bytes": 5321
+    },
+    "integrations/instinctlab_hud04/experimental/solid_geometry_workbench_20261117/run_solid_diagnostic.py": {
+      "sha256": "efc37d2c39b10d20feed1f5bee4dbc11b07dcc8449c7fcdc424eb95a9693fea7",
+      "bytes": 749
+    },
+    "integrations/instinctlab_hud04/experimental/solid_geometry_workbench_20261117/verify_pair_witnesses.py": {
+      "sha256": "518d380018f35b9480afd2a9bc9ffd6f880d36f303d8c91549fdfafe994efb8f",
+      "bytes": 2944
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/solid_geometry_20261117/REVIEW_zh.md": {
+      "sha256": "e4395d6aac8e86e6efc8e6b27672317955698be9d8c7767bd6169dc0201bdf53",
+      "bytes": 5706
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/solid_geometry_20261117/SOLID_PAIR_DIAGNOSTIC_20261117.json": {
+      "sha256": "85a10edacedc90d8329b10e7897b9f9d7f178e51a85cad91deba145b8798870b",
+      "bytes": 4254
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/solid_geometry_20261117/ALL_SHAPE_PAIR_DETAIL_20261117.json": {
+      "sha256": "37fce25e20dbb8a7bb29d03c0c7d47b100cc48723637ac29ea02a350e937ff37",
+      "bytes": 592395
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/solid_geometry_20261117/INDEPENDENT_OVERLAP_WITNESSES_20261117.json": {
+      "sha256": "5484764ad5238a4360e8984e9af74d6eb8efd03d55c2ed9717f5efdd57534b6b",
+      "bytes": 1501
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/solid_geometry_20261117/tests_solid.log": {
+      "sha256": "cb9fa9434caf6f4436481b2a3969d5862289af2aa3906e92782b05876bb1dc6e",
+      "bytes": 2605
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/solid_geometry_20261117/tests_solid_v2.log": {
+      "sha256": "65a5c66a4e05127ea2be792b9b8e5c08619678b2e172cd3dc097940a46ade631",
+      "bytes": 2821
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/solid_geometry_20261117/tests_final.log": {
+      "sha256": "03dbc4b570c1fe58c9594a990fba1466e272d276bf146f5744c0d20c33467119",
+      "bytes": 3545
+    },
+    "integrations/instinctlab_hud04/experimental/solid_geometry_workbench_20261117/README_zh.md": {
+      "sha256": "e4395d6aac8e86e6efc8e6b27672317955698be9d8c7767bd6169dc0201bdf53",
+      "bytes": 5706
+    }
+  },
+  "accepted_reference": false,
+  "training_ready": false,
+  "gpu_submissions": 0,
+  "retarget_solver_calls": 0,
+  "ppo_updates": 0
+}

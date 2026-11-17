@@ -1,0 +1,40 @@
+{
+  "stage": "independent_membership_of_nominal_static_pose_witnesses",
+  "detail_sha256": "37fce25e20dbb8a7bb29d03c0c7d47b100cc48723637ac29ea02a350e937ff37",
+  "rows": [
+    {
+      "first": "left_wrist_pitch_link#1",
+      "second": "left_wrist_roll_link#0",
+      "cylinder_radial_interior_margin": 0.01838886439838519,
+      "cylinder_cap_interior_margin": 0.02930029990805988,
+      "hull_max_halfspace_residual": -0.027955504298394267,
+      "witness_separation": 1.3877787807814457e-17,
+      "joint_connected": true,
+      "actual_runtime_pair_filter_known": false,
+      "pair_exclusion_authorized": false,
+      "physical_penetration_depth_computed": false
+    },
+    {
+      "first": "right_wrist_pitch_link#1",
+      "second": "right_wrist_roll_link#0",
+      "cylinder_radial_interior_margin": 0.018586516207842504,
+      "cylinder_cap_interior_margin": 0.02934663177362681,
+      "hull_max_halfspace_residual": -0.028042123156280054,
+      "witness_separation": 1.3877787807814457e-17,
+      "joint_connected": true,
+      "actual_runtime_pair_filter_known": false,
+      "pair_exclusion_authorized": false,
+      "physical_penetration_depth_computed": false
+    }
+  ],
+  "all_29_joint_positions_in_limits": true,
+  "head_variables": 0,
+  "source_motion_used": false,
+  "original_assets_changed": false,
+  "physical_collision_violation_concluded": false,
+  "retarget_solver_calls": 0,
+  "gpu_submissions": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false,
+  "training_ready": false
+}
