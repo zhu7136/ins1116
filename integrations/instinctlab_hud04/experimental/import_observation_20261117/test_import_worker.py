@@ -5,6 +5,52 @@ from import_observation_probe import plan,verify_bundle
 
 ROOT=Path(__file__).resolve().parent
 class ImportWorkerTests(unittest.TestCase):
+    def test_cleanup_never_calls_stop(self):
+        from import_observation_probe import close_probe
+        calls=[]
+        class Sim:
+            def stop(self):raise AssertionError('Would enter app-stop rendering callback')
+            def clear_all_callbacks(self):calls.append('callbacks')
+            def clear_instance(self):calls.append('instance')
+        class App:
+            def close(self):calls.append('app_close')
+        close_probe(App(),Sim());self.assertEqual(calls,['callbacks','app_close','instance'])
+    def test_cleanup_app_attempted_even_if_callbacks_fail(self):
+        from import_observation_probe import close_probe
+        calls=[]
+        class Sim:
+            def clear_all_callbacks(self):raise ValueError('fixture')
+            def clear_instance(self):calls.append('instance')
+        class App:
+            def close(self):calls.append('app_close')
+        with self.assertRaises(ValueError):close_probe(App(),Sim())
+        self.assertEqual(calls,['app_close','instance'])
+    def test_cleanup_without_context(self):
+        from import_observation_probe import close_probe
+        calls=[]
+        class App:
+            def close(self):calls.append('closed')
+        close_probe(App(),None);self.assertEqual(calls,['closed'])
+    def test_exception_and_phase_survive_noisy_tail(self):
+        from import_observation_probe import record_exception,record_phase
+        from launch_once import safe_records
+        out=ROOT/'test_outputs'/uuid.uuid4().hex;out.mkdir(parents=True)
+        stream=io.StringIO()
+        with contextlib.redirect_stdout(stream):
+            record_phase('before_cleanup')
+            try:raise ValueError('synthetic original failure')
+            except ValueError as exc:record_exception(exc)
+        path=out/'child.log';path.write_text(stream.getvalue()+'noise\n'*5000)
+        rows=safe_records(path)
+        self.assertEqual([r['stage'] for r in rows],['hud04_import_progress','hud04_probe_exception'])
+        self.assertEqual(rows[1]['error_type'],'ValueError');self.assertFalse(rows[1]['accepted_reference'])
+    def test_record_credentials_redacted_and_noise_not_collected(self):
+        from launch_once import safe_records
+        from unittest.mock import patch
+        out=ROOT/'test_outputs'/uuid.uuid4().hex;out.mkdir(parents=True)
+        path=out/'child.log';path.write_text(json.dumps(dict(stage='hud04_probe_exception',message='https://example.invalid/path ghp_FAKE123 fixtureSecret123'))+'\n')
+        with patch.dict('os.environ',{'FLUX_API_KEY':'fixtureSecret123'}):rows=safe_records(path)
+        text=json.dumps(rows);self.assertNotIn('fixtureSecret123',text);self.assertNotIn('ghp_FAKE123',text);self.assertNotIn('example.invalid',text)
     def test_phase_marker_is_not_success_receipt(self):
         import contextlib,io
         from import_observation_probe import record_phase

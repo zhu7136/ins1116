@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "task_id": "TASK_20261117_347",
+  "actual_commit": "cf190d8a6214dcd4155193fb89661a97d77cd1e2",
+  "terminal_status": "6",
+  "child_stop_reason": "child_wall_deadline",
+  "child_wall_seconds": 240.58259949460626,
+  "direct_child_reaped": true,
+  "complete_runtime_report_recovered": false,
+  "full_signed_log_sha256": "f69c1a53e7f5cac091d254a45b1786ab1771971823e4f5b6aa26750b7c118a15",
+  "observed_stack": "import_observation_probe.py:111 sim.stop -> SimulationContext._app_control_on_stop_handle_fn -> render; repeated own-child stacks",
+  "conclusion": "Cleanup stop callback/render loop was observed. The original pre-cleanup outcome remains unknown; no import/collision success can be inferred.",
+  "new_code": "Avoid explicit sim.stop; clear own simulation callbacks, close own app, clear own instance, all under unchanged parent deadline. Record original errors before cleanup and preserve bounded phase/error records outside truncated tail.",
+  "cpu_tests": 22,
+  "cpu_scope": "Trusted-supervisor and synthetic cleanup/diagnostic regression plus pinned model integrity; NOT GPU physics acceptance",
+  "new_fix_gpu_validated_at_publication": false,
+  "unchanged": ["original motion", "90Hz", "URDF and mesh assets", "29 body actions", "head fixed zero", "240 second child budget", "8MiB stdout budget", "zero automatic retries"],
+  "solver_calls": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false,
+  "training_ready": false
+}

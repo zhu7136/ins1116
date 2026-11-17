@@ -1,5 +1,5 @@
 """NEW opt-in HUD04 import observation. No motion, PPO, or contact acceptance."""
-import argparse,faulthandler,hashlib,json,os,runpy,subprocess,sys,time
+import argparse,faulthandler,hashlib,json,os,runpy,subprocess,sys,time,traceback
 from pathlib import Path
 
 MODEL_SHA='865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7'
@@ -14,6 +14,24 @@ def record_phase(phase):
         proves_import_or_collision_acceptance=False,accepted_reference=False,training_ready=False)),flush=True)
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
+
+def close_probe(app,sim):
+    """Do not call SimulationContext.stop(): its app-stop callback can render-loop.
+
+    Normal standalone IsaacLab ownership is app.close(). Keep this under the
+    independent parent deadline; never treat a close request as proof of exit.
+    """
+    try:
+        if sim is not None:sim.clear_all_callbacks()
+    finally:
+        try:app.close()
+        finally:
+            if sim is not None:sim.clear_instance()
+
+def record_exception(exc):
+    print(json.dumps(dict(stage='hud04_probe_exception',error_type=type(exc).__name__,
+        message=str(exc)[:2000],frames=traceback.format_tb(exc.__traceback__)[-12:],
+        accepted_reference=False,training_ready=False)),flush=True)
 
 def verify_bundle(repo):
     import xml.etree.ElementTree as ET
@@ -104,13 +122,19 @@ def main(args):
             explicit_physics_steps=0,initialization_may_step_physics=True,body_dof=len(names),head_policy_dof=0,joint_names=names,
             snapshot_phases=phases,cooked_geometry_verified=False,actual_physx_pair_filters_verified=False,
             dynamics_acceptance=False,solver_calls=0,ppo_updates=0,accepted_reference=False,training_ready=False,cleanup_completed=False)
+    except BaseException as exc:
+        # Persist the original failure BEFORE cleanup can block or raise.
+        record_exception(exc)
+        raise
     finally:
         record_phase('before_cleanup')
         try:
-            if sim is not None:
-                sim.stop();sim.clear_all_callbacks();sim.clear_instance()
-        finally:
-            app.close();record_phase('after_cleanup');faulthandler.cancel_dump_traceback_later()
+            close_probe(app,sim)
+            record_phase('after_cleanup')
+        except BaseException as exc:
+            record_exception(exc)
+            raise
+        finally:faulthandler.cancel_dump_traceback_later()
     if report is None:raise RuntimeError('No observation completed')
     report['cleanup_completed']=True;write_new(out/'runtime_report.json',report)
 

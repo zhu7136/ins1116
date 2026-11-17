@@ -16,6 +16,28 @@ def safe_tail(path):
     text=re.sub(r'(?i)(api[-_ ]?key|authorization|password|secret|access[-_]?token)\s*[:=]\s*[^\s,]+',r'\1=[REDACTED]',text)
     return '\n'.join(text.splitlines()[-60:])[-8192:]
 
+def safe_records(path):
+    """Preserve bounded phase/original-error records even after long cleanup logs."""
+    if not path.is_file():return []
+    if path.stat().st_size>8*1024*1024:raise ValueError('Unexpected diagnostic log size')
+    records=[]
+    for line in path.read_text(errors='replace').splitlines():
+        if not line.startswith('{"stage":'):continue
+        try:row=json.loads(line)
+        except ValueError:continue
+        if row.get('stage') not in ('hud04_import_progress','hud04_probe_exception'):continue
+        text=json.dumps(row)
+        for name in ('github1117','flux1117','WANDB_API_KEY','OPENAI_API_KEY','FLUX_API_KEY'):
+            value=os.environ.get(name)
+            if value:text=text.replace(value,'[REDACTED]')
+        text=re.sub(r'https?://[^\s"\\]+','[URL omitted]',text)
+        text=re.sub(r'\b(?:gh[pousr]_[A-Za-z0-9]+|github_pat_[A-Za-z0-9_]+|gm_sk_[A-Za-z0-9_]+)\b','[REDACTED]',text)
+        try:row=json.loads(text)
+        except ValueError:continue
+        if len(text)<=10000:records.append(row)
+        if len(records)>=32:break
+    return records
+
 def main(args):
     if not args.execute:
         observe(SimpleNamespace(execute=False));return
@@ -29,7 +51,8 @@ def main(args):
         observe(SimpleNamespace(execute=True,repo_root=str(repo),expected_commit=args.expected_commit,output=str(output),isaac_launcher=None))
     except BaseException as exc:
         print(json.dumps(dict(stage='hud04_import_entry_failed',error_type=type(exc).__name__,
-            diagnostic_tail=safe_tail(output/'child.log'),accepted_reference=False,training_ready=False)),flush=True)
+            diagnostic_tail=safe_tail(output/'child.log'),diagnostic_records=safe_records(output/'child.log'),
+            accepted_reference=False,training_ready=False)),flush=True)
         raise
 
 if __name__=='__main__':
