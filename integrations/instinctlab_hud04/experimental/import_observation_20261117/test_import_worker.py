@@ -31,6 +31,11 @@ class ImportWorkerTests(unittest.TestCase):
         r,_=self.run_fixture('error');self.assertFalse(r['observation_completed']);self.assertFalse(r['local_report_present'])
     def test_log_bound_enforced(self):
         r,_=self.run_fixture('flood');self.assertLessEqual(r['log_bytes'],8*1024*1024);self.assertFalse(r['observation_completed'])
+        self.assertEqual(r['stop_reason'],'child_log_budget')
+    def test_large_conversion_asset_not_truncated_by_log_budget(self):
+        r,out=self.run_fixture('large_asset');self.assertTrue(r['observation_completed'])
+        self.assertEqual((out/'synthetic_conversion_cache.bin').stat().st_size,26*1024*1024)
+        self.assertLess(r['log_bytes'],8*1024*1024)
     def test_output_not_overwritten(self):
         _,out=self.run_fixture('normal')
         with self.assertRaises(FileExistsError):run_child([sys.executable,'-V'],out)

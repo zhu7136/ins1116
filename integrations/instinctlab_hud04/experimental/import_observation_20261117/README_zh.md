@@ -2,7 +2,7 @@
 
 ## 本阶段实质增量
 
-新增独立 `worker.py` 和 `import_observation_probe.py`，接入已经发布的只读 USD 采集器。**未运行 Isaac/GPU，未提交/启动/停止/重试云任务，未运行重定向或 PPO。** 默认命令只打印计划，不导入 Isaac。
+新增独立 `worker.py` 和 `import_observation_probe.py`，接入已经发布的只读 USD 采集器。初版只做CPU准备；后续已执行首次新GPU导入短测，失败原因与修复记录见下文。**未运行重定向或 PPO，默认命令仍只打印计划，不导入 Isaac。**
 
 真实执行设计为 2 个环境、`replicate_physics=True`、请求场景碰撞过滤、关闭相机；新建独立场景读取原固定头浮动基座 HUD04 资产配置。源资产 manifest 全量校验，额外锁定 URDF 与 asset_config SHA256；实际 Git HEAD 必须匹配显式指定值且所有 tracked 文件无修改。不得通过 reset 清除检查失败。
 
@@ -14,7 +14,9 @@
 
 `bounded_import_runner.py` 与原 CPU-only supervisor 分离，避免原监督器强制隐藏 CUDA 的设置。新监督器只运行可信子进程：240秒子进程墙钟截止（库上限300秒）、日志8MiB、零重试；只按自己创建的进程组回收，无进程扫描、无守护接口。清理宽限最多0.8秒；最后正常退出且三阶段报告齐全才记 observation_completed。报告先写完但进程卡住、异常、非零退出、日志超限、任何接受标记被抬高均失败。
 
-父监督器设置文件大小上限，限于可信子任务的诊断文件，不是任意代码安全沙箱。child.log 为本地诊断，不经证据回传。允许回传的5个JSON以固定清单ZIP编码，展开总量≤1MiB、压缩≤512KiB，8192字符分块，文件与归档SHA256可核对；缺文件/失败结果拒绝回传为完整观测。无自动重试/任务删除/费用推断。
+父监督器通过PIPE+selectors限制日志流8MiB，**不再施加进程全局RLIMIT_FSIZE**。旧实现的RLIMIT_FSIZE误将USD转换资产截为8MiB，导致首次新GPU短测 TASK_20261117_339 失败（24秒平台起止时间差；不是计费上限或费用证据）。实际USD日志显示预期table offset25896964而文件仅8388608，不能将其视为模型几何问题。该任务已终止，不可原样重跑；修复后需新提交、新排重、新任务。转换TMPDIR改到本次新输出目录内，不修改原模型文件。26MiB合成转换文件回归验证其不再受日志上限影响，日志洪泛仍失败停止。
+
+这不是任意代码安全沙箱。child.log 为本地诊断，不经完整证据回传；失败入口允许输出脱敏的末尾诊断片段以定位错误。允许回传的5个JSON以固定清单ZIP编码，展开总量≤1MiB、压缩≤512KiB，8192字符分块，文件与归档SHA256可核对；缺文件/失败结果拒绝回传为完整观测。无自动重试/任务删除/费用推断。
 
 **子进程时限不是 Flux 云任务/计费硬上限。** 2026-11-17T12:50:17Z 的官方能力描述只明确 `task.stop` 对 running 有效；batch.stop 跳过非运行；未发现覆盖 preparing/queued 的可靠取消或创建参数硬截止。runtimeReminderConfig 不是硬终止。不要猜测额外字段或用删除当取消。真实新GPU提交前仍须重新查实时任务、排除已完成任务重复、核对镜像/项目和可控执行/费用边界。
 
@@ -30,6 +32,6 @@ python -B worker.py
 
 ## 已实际验证（CPU）
 
-`HUD04_TEST_REPO_ROOT=/workspace/hud04-recovery-bf4a057 python -B -m unittest -v test_import_worker`：14项通过，含真实已恢复资产的离线全manifest/SHA256/固定头结构检查；其余子进程是明确标记的 synthetic CPU fixture，不是HUD04物理结果。测试输出目录唯一新建、无覆盖或删除。未设置 HUD04_TEST_REPO_ROOT 时该离线资产项会显式skip，不将skip当通过。
+`HUD04_TEST_REPO_ROOT=/workspace/hud04-recovery-bf4a057 python -B -m unittest -v test_import_worker`：修复后15项通过，含真实已恢复资产的离线全manifest/SHA256/固定头结构检查、26MiB大文件/8MiB日志上限分离；其余子进程是明确标记的 synthetic CPU fixture，不是HUD04物理结果。测试输出目录唯一新建、无覆盖或删除。未设置 HUD04_TEST_REPO_ROOT 时该离线资产项会显式skip，不将skip当通过。
 
-两入口 plan 实际运行，无 Isaac 导入/GPU启动。现阶段 `solver_calls=0`、`ppo_updates=0`、`accepted_reference=false`、`training_ready=false`。导出/根坐标/四元数/世界单位和支撑时序来源仍待证实，不用更小间隙替代来源证明；两处腕部名义重叠仍保留，不自动豁免或判实际违反。
+初版两入口 plan 实际运行，无 Isaac 导入/GPU启动。后续用户授权下首次新GPU任务TASK_20261117_339的App已启动，但因上述全局文件限制未取得有效快照；终态6已读回，无自动重试。真实结果须以每个新任务独立证据为准。现阶段 `solver_calls=0`、`ppo_updates=0`、`accepted_reference=false`、`training_ready=false`。导出/根坐标/四元数/世界单位和支撑时序来源仍待证实，不用更小间隙替代来源证明；两处腕部名义重叠仍保留，不自动豁免或判实际违反。

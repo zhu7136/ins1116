@@ -22,6 +22,9 @@ def main(args):
     env=os.environ.copy()
     for key in ['flux1117','github1117','WANDB_API_KEY','OPENAI_API_KEY','FLUX_API_KEY']:env.pop(key,None)
     for key in ['OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS','PXR_WORK_THREAD_LIMIT']:env[key]='2'
+    # The supervisor creates this directory before starting the child. Keep
+    # conversion scratch inside our new output, without changing model data.
+    env['TMPDIR']=str(Path(args.output).resolve())
     result=run_child([str(launcher),str(Path(__file__).with_name('import_observation_probe.py')),'--execute',
         '--repo-root',str(repo),'--expected-commit',args.expected_commit,'--output',str(Path(args.output).resolve())],
         args.output,seconds=240,env=env)

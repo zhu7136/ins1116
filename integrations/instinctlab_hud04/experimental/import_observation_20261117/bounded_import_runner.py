@@ -1,5 +1,5 @@
 """Bound a trusted diagnostic child. This is NOT a platform billing cap."""
-import hashlib,json,math,os,signal,subprocess,time
+import hashlib,json,math,os,selectors,signal,subprocess,time
 from pathlib import Path
 
 MAX_LOG=8*1024*1024
@@ -8,19 +8,26 @@ def run_child(argv,output,*,seconds=240,env=None):
     if isinstance(seconds,bool) or not isinstance(seconds,(float,int)) or not math.isfinite(seconds) or not 0<seconds<=300:raise ValueError('Child deadline must be <=300 seconds')
     if not isinstance(argv,list) or not argv or any(not isinstance(x,str) for x in argv):raise ValueError('Explicit trusted argv required')
     out=Path(output);out.mkdir(exist_ok=False,parents=True);log=out/'child.log';start=time.monotonic();reason=None
-    def limits():
-        import resource
-        resource.setrlimit(resource.RLIMIT_FSIZE,(MAX_LOG,MAX_LOG))
     # POSIX trusted supervisor; no process discovery, daemon sockets or host APIs.
+    # DO NOT use RLIMIT_FSIZE for a log bound: it also truncates USD/asset files.
     with log.open('xb') as stream:
-        proc=subprocess.Popen(argv,stdin=subprocess.DEVNULL,stdout=stream,stderr=subprocess.STDOUT,
-            env=env,start_new_session=True,preexec_fn=limits)
+        proc=subprocess.Popen(argv,stdin=subprocess.DEVNULL,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,
+            env=env,start_new_session=True,bufsize=0)
+        selector=selectors.DefaultSelector();selector.register(proc.stdout,selectors.EVENT_READ)
         try:
-            while proc.poll() is None:
+            eof=False;written=0
+            while not eof or proc.poll() is None:
                 if time.monotonic()-start>=seconds:reason='child_wall_deadline';break
-                if log.stat().st_size>=MAX_LOG:reason='child_log_budget';break
-                time.sleep(.02)
+                ready=selector.select(.02)
+                if not ready:continue
+                data=os.read(proc.stdout.fileno(),65536)
+                if not data:
+                    eof=True;selector.unregister(proc.stdout);continue
+                remaining=MAX_LOG-written
+                stream.write(data[:remaining]);written+=min(len(data),remaining)
+                if len(data)>remaining:reason='child_log_budget';break
         finally:
+            selector.close();proc.stdout.close()
             # The process group belongs to THIS child only. Never discover/kill
             # other tasks. Clean surviving owned descendants even if leader exits.
             for sig in (signal.SIGTERM,signal.SIGKILL):

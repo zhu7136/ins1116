@@ -5,6 +5,9 @@ out=Path(sys.argv[1]);mode=sys.argv[2]
 if mode=='sleep':time.sleep(10)
 if mode=='error':raise RuntimeError('synthetic fixture exception')
 if mode=='flood':sys.stdout.write('x'*(9*1024*1024));sys.stdout.flush();raise SystemExit(0)
+if mode=='large_asset':
+    with (out/'synthetic_conversion_cache.bin').open('xb') as f:
+        for _ in range(26):f.write(b'x'*(1024*1024))
 report=dict(stage='hud04_import_observed',synthetic_fixture_only=True,cleanup_completed=True,
     snapshot_phases=['post_import','post_clone','post_physics_init'],accepted_reference=False,training_ready=False,
     actual_physx_pair_filters_verified=False,cooked_geometry_verified=False)
