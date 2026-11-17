@@ -1,0 +1,38 @@
+{
+  "review_date": "2026-11-17",
+  "latest_tested_commit": "aaec5c0688f66fb0d406fa8d67d9e6be3664540e",
+  "runtime_or_collision_acceptance": false,
+  "tasks": [
+    {"task_id":"TASK_20261117_347","actual_commit":"cf190d8a6214dcd4155193fb89661a97d77cd1e2","terminal_status":"6","child_wall_seconds":240.58259949460626,"stop_reason":"child_wall_deadline","return_code":0,"direct_child_reaped":true,"observation_completed":false,"finding":"Own-child stack locates sim.stop -> timeline STOP callback -> render loop; zero exit after deadline is not success."},
+    {"task_id":"TASK_20261117_350","actual_commit":"a5b6559fcfe7cf1c6e8fe2fafd4dd2e82a350e84","terminal_status":"6","child_wall_seconds":240.36888317391276,"stop_reason":"child_wall_deadline","return_code":0,"direct_child_reaped":true,"observation_completed":false,"finding":"Post-import/post-clone/post-physics snapshot markers reached; app.close still triggers timeline STOP callback before context unsubscription."},
+    {"task_id":"TASK_20261117_358","actual_commit":"52fabc2d0025421e820f4bebb5e18030b388673d","terminal_status":"6","child_wall_seconds":16.492332134395838,"stop_reason":null,"return_code":0,"direct_child_reaped":true,"observation_completed":false,"local_report_present":false,"finding":"clear_instance before app.close removes timeout; process exits before after_cleanup and post-close report. Zero code without evidence correctly rejected."},
+    {"task_id":"TASK_20261117_359","actual_commit":"aaec5c0688f66fb0d406fa8d67d9e6be3664540e","terminal_status":"6","child_wall_seconds":31.700544137507677,"stop_reason":null,"return_code":-11,"direct_child_reaped":true,"observation_completed":false,"local_report_present":true,"finding":"Explicit supported fast_shutdown=False reaches after_cleanup and writes local runtime report, but process subsequently SIGSEGVs. Exact native failure stack and complete snapshot contents NOT recovered."}
+  ],
+  "evidence_limit": "Phase markers show execution reached corresponding code, NOT snapshot contents or physical correctness. Current success-only evidence exporter refuses failed run; do not relabel failure as success to recover files.",
+  "last_full_signed_log_sha256": "d52be67b820e37267cfaf9034edc63dc420eeb888308e534df146e2ebf5f973e",
+  "last_child_log_sha256": "863200bd6d5afefd29be1fd7e4e255a59851b3e6079c0040ada7ae79b6f088f5",
+  "last_signed_url_persisted": false,
+  "raw_platform_logs_published": false,
+  "new_tasks_this_turn": 4,
+  "single_task_gpu_count": 1,
+  "single_child_deadline_seconds": 240,
+  "single_stdout_cap_bytes": 8388608,
+  "automatic_retries": 0,
+  "platform_billing_hard_cap_verified": false,
+  "latest_cpu_tests_passed": 25,
+  "cpu_test_scope": "Supervisor/cleanup/options and pinned-asset regression; not physics or reference-motion acceptance",
+  "no_more_gpu_tasks_this_turn": true,
+  "next_cpu_change": "Add a separately named bounded failure-evidence envelope/export path, preserving observation_completed=false and nonzero exit. Test incomplete/malformed/hash/size/nonfinite/secret rejection. Do NOT weaken normal-success emission or relabel failed runtime as valid.",
+  "critical_path": [
+    "Recover and independently inspect actual imported/cloned/initialized snapshot contents and collision representations/filters; diagnose native exit without assuming assets wrong or right.",
+    "Resolve actual exporter, generating popsicle model, root/quaternion, world/STL units/alignment and auditable support policy. Do not infer from GPU progress or ambiguous terrain gaps.",
+    "Implement bounded full target-terrain/self-collision-aware retargeting with native90Hz hard position/velocity constraints and independent candidate review; no clipping.",
+    "Add dedicated HUD04 TerrainMotion task: correct crop/transforms, conditional hand/knee/foot contacts, actual depth18x32, dynamic replay and reset/isolation/torque checks. Current Plane registration is insufficient.",
+    "After gates pass only, 2env x24steps / 1PPO update / 1epoch / 1minibatch plumbing smoke, no resume or G1 weights; then bounded skill training. Smoke is not learned skill."
+  ],
+  "solver_calls": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false,
+  "training_ready": false,
+  "wb_audience_access_retested": false
+}
