@@ -1,0 +1,219 @@
+{
+  "processed_report_sha256": "e14aef7350b2e957edb9d3aa4b6f83bcfe9051c17c0d544992c652a7e4d169ed",
+  "raw_report_sha256": "a2c4fe5c2ab03017552391973bd11851c02023b788dcfef18ef1366b344114e6",
+  "raw_report_byte_identical_to_historical_hash": true,
+  "upstream_ast_mesh_vertices_max_abs_error": 0.0,
+  "upstream_ast_faces_equal": true,
+  "upstream_ast_origin_max_abs_error": 0.0,
+  "upstream_source_hashes": {
+    "utils.py": "40d3427da3a56592367c61b4327647940b0a09360638b1102be092de9b269c01",
+    "mesh_terrains.py": "9ac841818fd44d753bad0850a768d631339d0436b6542ca2af6cfad5d9fe8a20"
+  },
+  "independent_method": "65 ternary steps minimizing trimesh point-triangle distance separately over EVERY triangle; endpoints included",
+  "witness_count": 24,
+  "surface_queries_verified": 48,
+  "max_all_faces_distance_error": 8.674537101566616e-14,
+  "max_lateral_distance_error": 3.3306690738754696e-16,
+  "checks": [
+    {
+      "anchor": "torso_link",
+      "order": "wxyz",
+      "link": "left_ankle_roll_link",
+      "frame": 616,
+      "all_faces_distance_error": 1.1235881087424303e-14,
+      "lateral_faces_distance_error": 0.0
+    },
+    {
+      "anchor": "torso_link",
+      "order": "wxyz",
+      "link": "left_wrist_yaw_link",
+      "frame": 689,
+      "all_faces_distance_error": 0.0,
+      "lateral_faces_distance_error": 0.0
+    },
+    {
+      "anchor": "torso_link",
+      "order": "wxyz",
+      "link": "left_knee_link",
+      "frame": 670,
+      "all_faces_distance_error": 6.453133334609531e-14,
+      "lateral_faces_distance_error": 3.3306690738754696e-16
+    },
+    {
+      "anchor": "torso_link",
+      "order": "wxyz",
+      "link": "right_ankle_roll_link",
+      "frame": 728,
+      "all_faces_distance_error": 2.2453433742305775e-15,
+      "lateral_faces_distance_error": 0.0
+    },
+    {
+      "anchor": "torso_link",
+      "order": "wxyz",
+      "link": "right_wrist_yaw_link",
+      "frame": 641,
+      "all_faces_distance_error": 0.0,
+      "lateral_faces_distance_error": 0.0
+    },
+    {
+      "anchor": "torso_link",
+      "order": "wxyz",
+      "link": "right_knee_link",
+      "frame": 641,
+      "all_faces_distance_error": 0.0,
+      "lateral_faces_distance_error": 0.0
+    },
+    {
+      "anchor": "pelvis",
+      "order": "wxyz",
+      "link": "left_ankle_roll_link",
+      "frame": 615,
+      "all_faces_distance_error": 0.0,
+      "lateral_faces_distance_error": 2.220446049250313e-16
+    },
+    {
+      "anchor": "pelvis",
+      "order": "wxyz",
+      "link": "left_wrist_yaw_link",
+      "frame": 634,
+      "all_faces_distance_error": 9.455151042247236e-15,
+      "lateral_faces_distance_error": 0.0
+    },
+    {
+      "anchor": "pelvis",
+      "order": "wxyz",
+      "link": "left_knee_link",
+      "frame": 635,
+      "all_faces_distance_error": 6.938893903907228e-18,
+      "lateral_faces_distance_error": 0.0
+    },
+    {
+      "anchor": "pelvis",
+      "order": "wxyz",
+      "link": "right_ankle_roll_link",
+      "frame": 734,
+      "all_faces_distance_error": 1.2979405539914554e-14,
+      "lateral_faces_distance_error": 0.0
+    },
+    {
+      "anchor": "pelvis",
+      "order": "wxyz",
+      "link": "right_wrist_yaw_link",
+      "frame": 711,
+      "all_faces_distance_error": 0.0,
+      "lateral_faces_distance_error": 0.0
+    },
+    {
+      "anchor": "pelvis",
+      "order": "wxyz",
+      "link": "right_knee_link",
+      "frame": 634,
+      "all_faces_distance_error": 8.674537101566616e-14,
+      "lateral_faces_distance_error": 2.220446049250313e-16
+    },
+    {
+      "anchor": "torso_link",
+      "order": "xyzw",
+      "link": "left_ankle_roll_link",
+      "frame": 630,
+      "all_faces_distance_error": 5.551115123125783e-17,
+      "lateral_faces_distance_error": 0.0
+    },
+    {
+      "anchor": "torso_link",
+      "order": "xyzw",
+      "link": "left_wrist_yaw_link",
+      "frame": 613,
+      "all_faces_distance_error": 0.0,
+      "lateral_faces_distance_error": 0.0
+    },
+    {
+      "anchor": "torso_link",
+      "order": "xyzw",
+      "link": "left_knee_link",
+      "frame": 630,
+      "all_faces_distance_error": 2.7755575615628914e-17,
+      "lateral_faces_distance_error": 0.0
+    },
+    {
+      "anchor": "torso_link",
+      "order": "xyzw",
+      "link": "right_ankle_roll_link",
+      "frame": 620,
+      "all_faces_distance_error": 5.551115123125783e-17,
+      "lateral_faces_distance_error": 0.0
+    },
+    {
+      "anchor": "torso_link",
+      "order": "xyzw",
+      "link": "right_wrist_yaw_link",
+      "frame": 669,
+      "all_faces_distance_error": 0.0,
+      "lateral_faces_distance_error": 0.0
+    },
+    {
+      "anchor": "torso_link",
+      "order": "xyzw",
+      "link": "right_knee_link",
+      "frame": 630,
+      "all_faces_distance_error": 1.1102230246251565e-16,
+      "lateral_faces_distance_error": 0.0
+    },
+    {
+      "anchor": "pelvis",
+      "order": "xyzw",
+      "link": "left_ankle_roll_link",
+      "frame": 669,
+      "all_faces_distance_error": 1.3877787807814457e-17,
+      "lateral_faces_distance_error": 0.0
+    },
+    {
+      "anchor": "pelvis",
+      "order": "xyzw",
+      "link": "left_wrist_yaw_link",
+      "frame": 611,
+      "all_faces_distance_error": 0.0,
+      "lateral_faces_distance_error": 0.0
+    },
+    {
+      "anchor": "pelvis",
+      "order": "xyzw",
+      "link": "left_knee_link",
+      "frame": 669,
+      "all_faces_distance_error": 0.0,
+      "lateral_faces_distance_error": 0.0
+    },
+    {
+      "anchor": "pelvis",
+      "order": "xyzw",
+      "link": "right_ankle_roll_link",
+      "frame": 669,
+      "all_faces_distance_error": 0.0,
+      "lateral_faces_distance_error": 2.220446049250313e-16
+    },
+    {
+      "anchor": "pelvis",
+      "order": "xyzw",
+      "link": "right_wrist_yaw_link",
+      "frame": 689,
+      "all_faces_distance_error": 0.0,
+      "lateral_faces_distance_error": 0.0
+    },
+    {
+      "anchor": "pelvis",
+      "order": "xyzw",
+      "link": "right_knee_link",
+      "frame": 633,
+      "all_faces_distance_error": 1.1102230246251565e-16,
+      "lateral_faces_distance_error": 0.0
+    }
+  ],
+  "exporter_provenance_verified": false,
+  "hypothesis_selected": false,
+  "accepted_reference": false,
+  "training_ready": false,
+  "limitations": [
+    "Independent numerical verification on 24 real diagnostic-minimum witnesses, not every one of 6696 queries",
+    "Both terrain paths use installed trimesh 5.2.1; original GPU trimesh version remains unverified"
+  ]
+}
