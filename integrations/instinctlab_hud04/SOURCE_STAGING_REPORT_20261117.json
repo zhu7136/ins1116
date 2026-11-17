@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "status": "source_staging_only_NOT_HUD04_reference",
+  "files": [
+    {
+      "source_name": "jumpsit2-ziwen-retargeted.npz",
+      "source_sha256": "064e7d9e890d99ae94902a116b7ac26c09900386e0d9e42ca62f300c2559c5cb",
+      "staged_name": "jumpsit2-ziwen-retargeted.source-stage.npz",
+      "staged_sha256": "1bf6159e95548d557a81c35ac611a2947173453595ca790b54ee9cfca5165af6",
+      "frames": 967,
+      "fps": 90,
+      "original_joint_dtype": "float32",
+      "lossless_roundtrip_verified": true,
+      "position_violating_frames": 484,
+      "overspeed_intervals": 106,
+      "body_channels": 29,
+      "head_action_channels": 0,
+      "root_and_quaternion_interpretation": "unverified_raw_values"
+    },
+    {
+      "source_name": "kneelClimbStep1-x-0.1-ziwen-retargeted.npz",
+      "source_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+      "staged_name": "kneelClimbStep1-x-0.1-ziwen-retargeted.source-stage.npz",
+      "staged_sha256": "78be4a123296ac51e4f00899e686a0d5a5038f866503f91b7de17a008120b780",
+      "frames": 997,
+      "fps": 90,
+      "original_joint_dtype": "float32",
+      "lossless_roundtrip_verified": true,
+      "position_violating_frames": 261,
+      "overspeed_intervals": 165,
+      "body_channels": 29,
+      "head_action_channels": 0,
+      "root_and_quaternion_interpretation": "unverified_raw_values"
+    },
+    {
+      "source_name": "rollVault11-ziwen-retargeted.npz",
+      "source_sha256": "78fcbae898a0944d2028810edd73b604f26058351d45675e89d132367dc83f6a",
+      "staged_name": "rollVault11-ziwen-retargeted.source-stage.npz",
+      "staged_sha256": "f070c07217c09b37832f4e422e98d3ecb1acf69c5c034888bd0a04ed27469797",
+      "frames": 942,
+      "fps": 90,
+      "original_joint_dtype": "float32",
+      "lossless_roundtrip_verified": true,
+      "position_violating_frames": 585,
+      "overspeed_intervals": 131,
+      "body_channels": 29,
+      "head_action_channels": 0,
+      "root_and_quaternion_interpretation": "unverified_raw_values"
+    },
+    {
+      "source_name": "superheroLanding-retargeted.npz",
+      "source_sha256": "49d85e012920b3cb03d08e1fb2d3fd039162b293e76a301193940d8321cb5834",
+      "staged_name": "superheroLanding-retargeted.source-stage.npz",
+      "staged_sha256": "dc0fffac773a88f232ad6296c681c1cf9eeb3afb774e1ddf4f36260d42886998",
+      "frames": 522,
+      "fps": 90,
+      "original_joint_dtype": "float64",
+      "lossless_roundtrip_verified": true,
+      "position_violating_frames": 115,
+      "overspeed_intervals": 100,
+      "body_channels": 29,
+      "head_action_channels": 0,
+      "root_and_quaternion_interpretation": "unverified_raw_values"
+    }
+  ],
+  "target_model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+  "total_frames": 3428,
+  "original_input_hashes_verified": [
+    {
+      "name": "jumpsit2-ziwen-retargeted.npz",
+      "sha256": "064e7d9e890d99ae94902a116b7ac26c09900386e0d9e42ca62f300c2559c5cb",
+      "frames": 967,
+      "fps": 90,
+      "position_violating_frames": 484,
+      "overspeed_intervals": 106,
+      "peak_position_excess_deg": 31.318348375590606
+    },
+    {
+      "name": "kneelClimbStep1-x-0.1-ziwen-retargeted.npz",
+      "sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+      "frames": 997,
+      "fps": 90,
+      "position_violating_frames": 261,
+      "overspeed_intervals": 165,
+      "peak_position_excess_deg": 37.523445462952964
+    },
+    {
+      "name": "rollVault11-ziwen-retargeted.npz",
+      "sha256": "78fcbae898a0944d2028810edd73b604f26058351d45675e89d132367dc83f6a",
+      "frames": 942,
+      "fps": 90,
+      "position_violating_frames": 585,
+      "overspeed_intervals": 131,
+      "peak_position_excess_deg": 47.522835577662455
+    },
+    {
+      "name": "superheroLanding-retargeted.npz",
+      "sha256": "49d85e012920b3cb03d08e1fb2d3fd039162b293e76a301193940d8321cb5834",
+      "frames": 522,
+      "fps": 90,
+      "position_violating_frames": 115,
+      "overspeed_intervals": 100,
+      "peak_position_excess_deg": 37.523445462952964
+    },
+    {
+      "name": "metadata.yaml",
+      "sha256": "5ea48d393d9f14829380897407f1354235a6faa029810368b45f74f47e3e3e15",
+      "file_and_id_links_resolve": false,
+      "missing_motion": "kneelClimbStep6-x-0.2-ziwen-retargeted.npz"
+    },
+    {
+      "name": "metadata_kneelClimbStep1.yaml",
+      "sha256": "cbd3010b21111f8fc69a354c37befaf72bd33508a93763edc024b3a29f887ea1",
+      "file_and_id_links_resolve": true,
+      "motion": "kneelClimbStep1-x-0.1-ziwen-retargeted.npz",
+      "terrain": "50cmboxes_19_36_49.stl"
+    },
+    {
+      "name": "50cmboxes_19_36_49.stl",
+      "sha256": "3aee33efea6793974d901dd0f7e46859e2d12d2dfd79f38f12c777686566c2de",
+      "triangle_count": 8087,
+      "units_verified": false
+    }
+  ],
+  "original_input_file_count": 7,
+  "head_lock": {
+    "head_yaw_joint": 0,
+    "head_pitch_joint": 0,
+    "included_in_actions": false
+  },
+  "transformations_applied": [
+    "lossless_joint_column_permutation_by_name",
+    "derived_timestamps_and_violation_masks"
+  ],
+  "joint_sign_changes": false,
+  "root_transform_applied": false,
+  "quaternion_reordered": false,
+  "terrain_scaled": false,
+  "joint_clipping": false,
+  "resampling": false,
+  "original_data_modified": false,
+  "source_exporter_proven": false,
+  "generating_model_proven": false,
+  "coordinate_hypothesis_selected": false,
+  "accepted_reference": false,
+  "training_ready": false,
+  "gpu_submissions": 0,
+  "solver_calls": 0,
+  "ppo_updates": 0,
+  "blockers": [
+    "Bind the actual Step1 exporter revision/command and generating URDF",
+    "Confirm root frame, quaternion order and world/STL units/alignment",
+    "Review material-point hand/foot/knee support constraints before a bounded solver"
+  ]
+}
