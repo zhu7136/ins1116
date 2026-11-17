@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "review_type": "read_only_source_motion_compatibility",
+  "source_folder": "https://drive.google.com/drive/folders/11FgL1RjM32bNNR1d1M1_Wgfntz7Hxtst?usp=sharing",
+  "hud04_model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+  "audit_tool": "audit_motion.py",
+  "numeric_comparison_tolerance": 0.000001,
+  "motions": [
+    {
+      "name": "jumpsit2-ziwen-retargeted.npz",
+      "sha256": "064e7d9e890d99ae94902a116b7ac26c09900386e0d9e42ca62f300c2559c5cb",
+      "frames": 967,
+      "fps": 90,
+      "position_violating_frames": 484,
+      "overspeed_intervals": 106,
+      "peak_position_excess_deg": 31.318348375590606
+    },
+    {
+      "name": "kneelClimbStep1-x-0.1-ziwen-retargeted.npz",
+      "sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+      "frames": 997,
+      "fps": 90,
+      "position_violating_frames": 261,
+      "overspeed_intervals": 165,
+      "peak_position_excess_deg": 37.523445462952964
+    },
+    {
+      "name": "rollVault11-ziwen-retargeted.npz",
+      "sha256": "78fcbae898a0944d2028810edd73b604f26058351d45675e89d132367dc83f6a",
+      "frames": 942,
+      "fps": 90,
+      "position_violating_frames": 585,
+      "overspeed_intervals": 131,
+      "peak_position_excess_deg": 47.522835577662455
+    },
+    {
+      "name": "superheroLanding-retargeted.npz",
+      "sha256": "49d85e012920b3cb03d08e1fb2d3fd039162b293e76a301193940d8321cb5834",
+      "frames": 522,
+      "fps": 90,
+      "position_violating_frames": 115,
+      "overspeed_intervals": 100,
+      "peak_position_excess_deg": 37.523445462952964
+    }
+  ],
+  "metadata": [
+    {
+      "name": "metadata.yaml",
+      "sha256": "5ea48d393d9f14829380897407f1354235a6faa029810368b45f74f47e3e3e15",
+      "file_and_id_links_resolve": false,
+      "missing_motion": "kneelClimbStep6-x-0.2-ziwen-retargeted.npz"
+    },
+    {
+      "name": "metadata_kneelClimbStep1.yaml",
+      "sha256": "cbd3010b21111f8fc69a354c37befaf72bd33508a93763edc024b3a29f887ea1",
+      "file_and_id_links_resolve": true,
+      "motion": "kneelClimbStep1-x-0.1-ziwen-retargeted.npz",
+      "terrain": "50cmboxes_19_36_49.stl"
+    }
+  ],
+  "terrain": {
+    "name": "50cmboxes_19_36_49.stl",
+    "sha256": "3aee33efea6793974d901dd0f7e46859e2d12d2dfd79f38f12c777686566c2de",
+    "triangle_count": 8087,
+    "units_verified": false
+  },
+  "named_body_channels": 29,
+  "head_channels": 0,
+  "quaternions_have_unit_norm_within_1e_3": true,
+  "source_robot_identity_verified": false,
+  "root_frame_and_quaternion_order_verified": false,
+  "all_four_require_changes_or_different_verified_export": true,
+  "accepted_reference": false,
+  "training_ready": false,
+  "source_data_modified": false,
+  "gpu_submissions": 0,
+  "solver_calls": 0,
+  "ppo_updates": 0,
+  "notes": [
+    "Counts use at least one violating joint per frame or interval, not sums over joints.",
+    "Velocity check is abs(diff(joint_pos))*fps versus current HUD04 URDF; not measured actuator speed.",
+    "Some knee lower-limit excess is only about 0.000267 rad due differing rounded limits; large knee and wrist excess remains independently blocking.",
+    "A known joint set and normalized quaternion do not establish compatible kinematics, root frame or robot identity.",
+    "Do not rename joint columns, clip values, relax model limits or mark accepted to bypass incompatibility.",
+    "Climbing references need matching terrain and contact permissions; do not load this dataset into the feet-only Plane configuration.",
+    "The explicitly named kneelClimbStep1 metadata resolves existing files, but does not validate motion or contacts.",
+    "No source NPZ/STL data republished; only hashes and deterministic audit results."
+  ]
+}

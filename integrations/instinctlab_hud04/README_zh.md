@@ -136,3 +136,52 @@ export HUD04_CAMERA_PROFILE=sim_chest_35deg_v1
 当前不提供一键 GPU/长训练命令，防止跳过数据验收或重复提交已完成任务。
 W&B 指定项目此前返回 audience 权限错误；本次没有创建新的 W&B run/artifact，
 后续执行前需要恢复该项目的实际可写日志通路。
+
+## 2026-11-17：已调试动作文件夹的实际兼容性审查
+
+来源：<https://drive.google.com/drive/folders/11FgL1RjM32bNNR1d1M1_Wgfntz7Hxtst?usp=sharing>。
+已读取其中全部四个 NPZ、两个 YAML 和一个二进制 STL，保留原文件不变。
+源数据未上传到本仓库；`MOTION_REVIEW_20261117.json` 记录 SHA256 和结果。
+
+**可继续复用为源动作候选，但四段均不能原样作为当前 HUD04 已验收参考加载。**
+29 个关节名称匹配且无头部通道，并不代表两种机器人运动学、限位及根坐标相同。
+文件本身没有足够的源机器人版本和调试验收证据，不能仅凭文件名断言是 G1 或 HUD04。
+
+| 源文件简名 | 帧数（90 Hz） | 至少一关节位置超限的帧数 | 最大超限角度 | 至少一关节超速的相邻帧区间数 |
+|---|---:|---:|---:|---:|
+| jumpsit2 | 967 | 484 | 31.32° | 106 |
+| kneelClimbStep1 | 997 | 261 | 37.52° | 165 |
+| rollVault11 | 942 | 585 | 47.52° | 131 |
+| superheroLanding | 522 | 115 | 37.52° | 100 |
+
+位置/速度对比采用当前固定头部 HUD04 URDF，数值容差 `1e-6`。
+速度是 `abs(diff(joint_pos))*fps` 的离散参考值，不是测得的执行器速度。
+膝下限有约 `0.000267 rad` 的微小舍入差异，但结论并不依赖它：
+爬台阶动作左膝上限实测为 `2.879800 rad`，HUD04 为 `2.583 rad`；
+右腕 yaw 最小值为 `-1.439908 rad`，HUD04 下限为 `-0.785 rad`。
+不能靠放宽容差、直接裁剪、降低帧率或放宽模型限位来宣称验收通过。
+
+引用关系也有差异：
+
+- `metadata.yaml` 引用缺失的 `kneelClimbStep6-x-0.2-ziwen-retargeted.npz`，不可直接使用。
+- `metadata_kneelClimbStep1.yaml` 的动作与网格文件确实齐全，可作为该源动作的配对元数据。
+  这只说明引用可解析，不说明运动学、地形单位、接触或动力学已经验收。
+- STL 有 8087 个三角面；单位、坐标对齐和物理碰撞尚未验收，不能按文件名假设尺寸。
+- 攀爬动作不应塞进当前只允许足部接触的 Plane 环境；需要配套 Terrain 与接触配置。
+
+新增只读检查工具，不调用网络、GPU、求解器，不生成 accepted 清单、不修改数据：
+
+```sh
+python -B -m unittest -v test_cpu.py test_motion_audit.py
+python -B audit_motion.py --dataset /path/to/downloaded/folder \
+  --urdf "$HUMANOID_DESCRIPTION_DIR/HU_D04_description/urdf/HU_D04_01_fixed_head_body_collision.urdf" \
+  --report /path/to/new_audit_report.json
+```
+
+报告路径必须尚不存在。当前合计 **44 项 CPU 软件测试通过**，其中八项是新增审查器测试；
+不是仿真或参考动作验收。
+
+下一步先找回这段动作针对 HUD04 调试后的导出文件、源机器人/根坐标约定及验收记录，
+按 SHA256 排除拿到的是旧版。若当前文件确实是唯一版本，则先约定有界的 HUD04 重定向
+与接触修复方案及求解预算，再生成新候选，不默认续用历史 LP/QP 配额。
+目前未启动任何新的 GPU 任务、求解或 PPO，也没有修改原有参考门禁。
