@@ -1,0 +1,29 @@
+test_app_close_attempted_if_unsubscription_fails (test_import_worker.ImportWorkerTests.test_app_close_attempted_if_unsubscription_fails) ... ok
+test_bad_json_rejected (test_import_worker.ImportWorkerTests.test_bad_json_rejected) ... ok
+test_cleanup_app_attempted_even_if_callbacks_fail (test_import_worker.ImportWorkerTests.test_cleanup_app_attempted_even_if_callbacks_fail) ... ok
+test_cleanup_never_calls_stop (test_import_worker.ImportWorkerTests.test_cleanup_never_calls_stop) ... ok
+test_cleanup_without_context (test_import_worker.ImportWorkerTests.test_cleanup_without_context) ... ok
+test_evidence_roundtrip_hashes_no_raw_log (test_import_worker.ImportWorkerTests.test_evidence_roundtrip_hashes_no_raw_log) ... ok
+test_exception_and_phase_survive_noisy_tail (test_import_worker.ImportWorkerTests.test_exception_and_phase_survive_noisy_tail) ... ok
+test_exception_stops_without_report (test_import_worker.ImportWorkerTests.test_exception_stops_without_report) ... ok
+test_invalid_budgets_rejected (test_import_worker.ImportWorkerTests.test_invalid_budgets_rejected) ... ok
+test_large_conversion_asset_not_truncated_by_log_budget (test_import_worker.ImportWorkerTests.test_large_conversion_asset_not_truncated_by_log_budget) ... ok
+test_log_bound_enforced (test_import_worker.ImportWorkerTests.test_log_bound_enforced) ... ok
+test_noncooperative_sleep_stopped (test_import_worker.ImportWorkerTests.test_noncooperative_sleep_stopped) ... ok
+test_nonzero_after_report_rejected (test_import_worker.ImportWorkerTests.test_nonzero_after_report_rejected) ... ok
+test_normal_fixture_is_not_physics_acceptance (test_import_worker.ImportWorkerTests.test_normal_fixture_is_not_physics_acceptance) ... ok
+test_output_not_overwritten (test_import_worker.ImportWorkerTests.test_output_not_overwritten) ... ok
+test_partial_phases_rejected (test_import_worker.ImportWorkerTests.test_partial_phases_rejected) ... ok
+test_phase_marker_is_not_success_receipt (test_import_worker.ImportWorkerTests.test_phase_marker_is_not_success_receipt) ... ok
+test_pinned_bundle_integrity_offline (test_import_worker.ImportWorkerTests.test_pinned_bundle_integrity_offline) ... ok
+test_plan_no_gpu_or_promotion (test_import_worker.ImportWorkerTests.test_plan_no_gpu_or_promotion) ... ok
+test_promoted_acceptance_rejected (test_import_worker.ImportWorkerTests.test_promoted_acceptance_rejected) ... ok
+test_record_credentials_redacted_and_noise_not_collected (test_import_worker.ImportWorkerTests.test_record_credentials_redacted_and_noise_not_collected) ... ok
+test_report_before_hang_not_success (test_import_worker.ImportWorkerTests.test_report_before_hang_not_success) ... ok
+test_timeline_subscription_removed_before_app_stop (test_import_worker.ImportWorkerTests.test_timeline_subscription_removed_before_app_stop) ... ok
+test_unknown_phase_marker_rejected (test_import_worker.ImportWorkerTests.test_unknown_phase_marker_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.683s
+
+OK

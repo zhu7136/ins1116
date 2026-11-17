@@ -18,15 +18,17 @@ def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def close_probe(app,sim):
     """Do not call SimulationContext.stop(): its app-stop callback can render-loop.
 
-    Normal standalone IsaacLab ownership is app.close(). Keep this under the
-    independent parent deadline; never treat a close request as proof of exit.
+    IsaacLab v2.3.2 clear_instance() unsubscribes its timeline STOP callback;
+    clear_all_callbacks() alone does not. Unsubscribe BEFORE app.close(). Keep
+    this under the parent deadline; a close request is not proof of exit.
     """
     try:
-        if sim is not None:sim.clear_all_callbacks()
-    finally:
-        try:app.close()
+        try:
+            if sim is not None:sim.clear_all_callbacks()
         finally:
             if sim is not None:sim.clear_instance()
+    finally:
+        app.close()
 
 def record_exception(exc):
     print(json.dumps(dict(stage='hud04_probe_exception',error_type=type(exc).__name__,

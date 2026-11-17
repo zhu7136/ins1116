@@ -14,7 +14,7 @@ class ImportWorkerTests(unittest.TestCase):
             def clear_instance(self):calls.append('instance')
         class App:
             def close(self):calls.append('app_close')
-        close_probe(App(),Sim());self.assertEqual(calls,['callbacks','app_close','instance'])
+        close_probe(App(),Sim());self.assertEqual(calls,['callbacks','instance','app_close'])
     def test_cleanup_app_attempted_even_if_callbacks_fail(self):
         from import_observation_probe import close_probe
         calls=[]
@@ -24,7 +24,27 @@ class ImportWorkerTests(unittest.TestCase):
         class App:
             def close(self):calls.append('app_close')
         with self.assertRaises(ValueError):close_probe(App(),Sim())
-        self.assertEqual(calls,['app_close','instance'])
+        self.assertEqual(calls,['instance','app_close'])
+    def test_timeline_subscription_removed_before_app_stop(self):
+        from import_observation_probe import close_probe
+        state={'subscribed':True}
+        class Sim:
+            def clear_all_callbacks(self):pass
+            def clear_instance(self):state['subscribed']=False
+        class App:
+            def close(self):
+                if state['subscribed']:raise AssertionError('Would render-loop in timeline STOP subscriber')
+        close_probe(App(),Sim());self.assertFalse(state['subscribed'])
+    def test_app_close_attempted_if_unsubscription_fails(self):
+        from import_observation_probe import close_probe
+        calls=[]
+        class Sim:
+            def clear_all_callbacks(self):pass
+            def clear_instance(self):raise ValueError('fixture')
+        class App:
+            def close(self):calls.append('app_close')
+        with self.assertRaises(ValueError):close_probe(App(),Sim())
+        self.assertEqual(calls,['app_close'])
     def test_cleanup_without_context(self):
         from import_observation_probe import close_probe
         calls=[]
