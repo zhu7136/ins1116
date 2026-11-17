@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "stage_observation_kind": "composed_USD_metadata_ONLY",
+  "robot_root": "/Fixture",
+  "usd_library_version": [
+    0,
+    25,
+    11
+  ],
+  "meters_per_unit": 0.01,
+  "meters_per_unit_authored": false,
+  "up_axis": "Y",
+  "source_motion_units_or_alignment_proven": false,
+  "visited_prims": 3,
+  "articulations": [],
+  "joints": [
+    {
+      "path": "/Fixture/J",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [],
+      "body1": [],
+      "collision_enabled": {
+        "present": true,
+        "authored": false,
+        "value": false,
+        "time_samples": 0
+      },
+      "joint_enabled": {
+        "present": true,
+        "authored": false,
+        "value": true,
+        "time_samples": 0
+      },
+      "exclude_from_articulation": {
+        "present": true,
+        "authored": false,
+        "value": false,
+        "time_samples": 0
+      },
+      "actual_physx_pair_filter_verified": false
+    }
+  ],
+  "colliders": [
+    {
+      "path": "/Fixture/C",
+      "type": "Cube",
+      "rigid_body_path": null,
+      "instance_proxy": false,
+      "collision_enabled": {
+        "present": true,
+        "authored": false,
+        "value": true,
+        "time_samples": 0
+      },
+      "world_transform_gf_row_vector": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "contact_offset": {
+        "present": false,
+        "authored": false,
+        "value": null
+      },
+      "rest_offset": {
+        "present": false,
+        "authored": false,
+        "value": null
+      },
+      "approximation": {
+        "present": false,
+        "authored": false,
+        "value": null
+      },
+      "cooked_geometry_verified": false,
+      "radius": {
+        "present": false,
+        "authored": false,
+        "value": null
+      },
+      "height": {
+        "present": false,
+        "authored": false,
+        "value": null
+      },
+      "axis": {
+        "present": false,
+        "authored": false,
+        "value": null
+      },
+      "size": {
+        "present": true,
+        "authored": false,
+        "value": 2.0,
+        "time_samples": 0
+      },
+      "extent": {
+        "present": true,
+        "authored": false,
+        "value": [
+          [
+            -1.0,
+            -1.0,
+            -1.0
+          ],
+          [
+            1.0,
+            1.0,
+            1.0
+          ]
+        ],
+        "time_samples": 0
+      },
+      "xformOp:scale": {
+        "present": false,
+        "authored": false,
+        "value": null
+      }
+    }
+  ],
+  "global_filtered_pairs": [],
+  "collision_groups": [],
+  "cooked_geometry_verified": false,
+  "actual_physx_pair_filters_verified": false,
+  "contact_schedule_accepted": false,
+  "automatic_pair_exclusions": 0,
+  "gpu_started": false,
+  "solver_calls": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false,
+  "training_ready": false,
+  "fixture_only_not_actual_HUD04": true
+}

@@ -1,0 +1,670 @@
+{
+  "stage": "USD_filter_observation_and_HUD04_28_adjacent_pair_evidence_contract",
+  "base_commit": "39650cbae894aacacc6f7d896e31dcc70ca5d417",
+  "source_hashes": {
+    "model": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+    "config": "4fdb08b4aa352893a6feef5afb6deb8ec273e1fbdcfc2d67ac0e691729321021",
+    "historical_903_pair_detail": "37fce25e20dbb8a7bb29d03c0c7d47b100cc48723637ac29ea02a350e937ff37",
+    "historical_overlap_witnesses": "5484764ad5238a4360e8984e9af74d6eb8efd03d55c2ed9717f5efdd57534b6b",
+    "pinned_source_receipt": "4a5b8d5d129dd3933c94f1ce2d667b3fc4cb0b9d496425395238db57fb2a567f"
+  },
+  "joint_counts": {
+    "revolute": 29,
+    "fixed": 12
+  },
+  "body_actions": 29,
+  "head_actions": 0,
+  "nominal_collision_shapes": 43,
+  "retained_all_shape_pairs": 903,
+  "same_link_records": 57,
+  "directly_joint_connected_shape_pairs": 28,
+  "directly_joint_connected_link_pairs": 6,
+  "old_independent_nominal_overlaps_retained": [
+    {
+      "first": "left_wrist_pitch_link#1",
+      "second": "left_wrist_roll_link#0",
+      "cylinder_radial_interior_margin": 0.01838886439838519,
+      "cylinder_cap_interior_margin": 0.02930029990805988,
+      "hull_max_halfspace_residual": -0.027955504298394267,
+      "witness_separation": 1.3877787807814457e-17,
+      "joint_connected": true,
+      "actual_runtime_pair_filter_known": false,
+      "pair_exclusion_authorized": false,
+      "physical_penetration_depth_computed": false
+    },
+    {
+      "first": "right_wrist_pitch_link#1",
+      "second": "right_wrist_roll_link#0",
+      "cylinder_radial_interior_margin": 0.018586516207842504,
+      "cylinder_cap_interior_margin": 0.02934663177362681,
+      "hull_max_halfspace_residual": -0.028042123156280054,
+      "witness_separation": 1.3877787807814457e-17,
+      "joint_connected": true,
+      "actual_runtime_pair_filter_known": false,
+      "pair_exclusion_authorized": false,
+      "physical_penetration_depth_computed": false
+    }
+  ],
+  "adjacent_shape_pair_evidence_contract": [
+    {
+      "first": "base_link#0",
+      "second": "left_hip_pitch_link#0",
+      "urdf_joint": {
+        "joint": "left_hip_pitch_joint",
+        "type": "revolute",
+        "parent": "base_link",
+        "child": "left_hip_pitch_link"
+      },
+      "nominal_result": "separated_by_nominal_aabb",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "base_link#0",
+      "second": "right_hip_pitch_link#0",
+      "urdf_joint": {
+        "joint": "right_hip_pitch_joint",
+        "type": "revolute",
+        "parent": "base_link",
+        "child": "right_hip_pitch_link"
+      },
+      "nominal_result": "separated_by_nominal_aabb",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "base_link#1",
+      "second": "left_hip_pitch_link#0",
+      "urdf_joint": {
+        "joint": "left_hip_pitch_joint",
+        "type": "revolute",
+        "parent": "base_link",
+        "child": "left_hip_pitch_link"
+      },
+      "nominal_result": "separated",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "base_link#1",
+      "second": "right_hip_pitch_link#0",
+      "urdf_joint": {
+        "joint": "right_hip_pitch_joint",
+        "type": "revolute",
+        "parent": "base_link",
+        "child": "right_hip_pitch_link"
+      },
+      "nominal_result": "separated_by_nominal_aabb",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "base_link#2",
+      "second": "left_hip_pitch_link#0",
+      "urdf_joint": {
+        "joint": "left_hip_pitch_joint",
+        "type": "revolute",
+        "parent": "base_link",
+        "child": "left_hip_pitch_link"
+      },
+      "nominal_result": "separated_by_nominal_aabb",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "base_link#2",
+      "second": "right_hip_pitch_link#0",
+      "urdf_joint": {
+        "joint": "right_hip_pitch_joint",
+        "type": "revolute",
+        "parent": "base_link",
+        "child": "right_hip_pitch_link"
+      },
+      "nominal_result": "separated",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "left_hip_yaw_link#0",
+      "second": "left_knee_link#0",
+      "urdf_joint": {
+        "joint": "left_knee_joint",
+        "type": "revolute",
+        "parent": "left_hip_yaw_link",
+        "child": "left_knee_link"
+      },
+      "nominal_result": "separated_by_nominal_aabb",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "left_hip_yaw_link#0",
+      "second": "left_knee_link#1",
+      "urdf_joint": {
+        "joint": "left_knee_joint",
+        "type": "revolute",
+        "parent": "left_hip_yaw_link",
+        "child": "left_knee_link"
+      },
+      "nominal_result": "separated_by_nominal_aabb",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "left_hip_yaw_link#0",
+      "second": "left_knee_link#2",
+      "urdf_joint": {
+        "joint": "left_knee_joint",
+        "type": "revolute",
+        "parent": "left_hip_yaw_link",
+        "child": "left_knee_link"
+      },
+      "nominal_result": "separated_by_nominal_aabb",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "left_hip_yaw_link#1",
+      "second": "left_knee_link#0",
+      "urdf_joint": {
+        "joint": "left_knee_joint",
+        "type": "revolute",
+        "parent": "left_hip_yaw_link",
+        "child": "left_knee_link"
+      },
+      "nominal_result": "separated_by_nominal_aabb",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "left_hip_yaw_link#1",
+      "second": "left_knee_link#1",
+      "urdf_joint": {
+        "joint": "left_knee_joint",
+        "type": "revolute",
+        "parent": "left_hip_yaw_link",
+        "child": "left_knee_link"
+      },
+      "nominal_result": "separated_by_nominal_aabb",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "left_hip_yaw_link#1",
+      "second": "left_knee_link#2",
+      "urdf_joint": {
+        "joint": "left_knee_joint",
+        "type": "revolute",
+        "parent": "left_hip_yaw_link",
+        "child": "left_knee_link"
+      },
+      "nominal_result": "separated_by_nominal_aabb",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "left_hip_yaw_link#2",
+      "second": "left_knee_link#0",
+      "urdf_joint": {
+        "joint": "left_knee_joint",
+        "type": "revolute",
+        "parent": "left_hip_yaw_link",
+        "child": "left_knee_link"
+      },
+      "nominal_result": "separated_by_nominal_aabb",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "left_hip_yaw_link#2",
+      "second": "left_knee_link#1",
+      "urdf_joint": {
+        "joint": "left_knee_joint",
+        "type": "revolute",
+        "parent": "left_hip_yaw_link",
+        "child": "left_knee_link"
+      },
+      "nominal_result": "separated_by_nominal_aabb",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "left_hip_yaw_link#2",
+      "second": "left_knee_link#2",
+      "urdf_joint": {
+        "joint": "left_knee_joint",
+        "type": "revolute",
+        "parent": "left_hip_yaw_link",
+        "child": "left_knee_link"
+      },
+      "nominal_result": "separated_by_nominal_aabb",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "right_hip_yaw_link#0",
+      "second": "right_knee_link#0",
+      "urdf_joint": {
+        "joint": "right_knee_joint",
+        "type": "revolute",
+        "parent": "right_hip_yaw_link",
+        "child": "right_knee_link"
+      },
+      "nominal_result": "separated_by_nominal_aabb",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "right_hip_yaw_link#0",
+      "second": "right_knee_link#1",
+      "urdf_joint": {
+        "joint": "right_knee_joint",
+        "type": "revolute",
+        "parent": "right_hip_yaw_link",
+        "child": "right_knee_link"
+      },
+      "nominal_result": "separated_by_nominal_aabb",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "right_hip_yaw_link#0",
+      "second": "right_knee_link#2",
+      "urdf_joint": {
+        "joint": "right_knee_joint",
+        "type": "revolute",
+        "parent": "right_hip_yaw_link",
+        "child": "right_knee_link"
+      },
+      "nominal_result": "separated_by_nominal_aabb",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "right_hip_yaw_link#1",
+      "second": "right_knee_link#0",
+      "urdf_joint": {
+        "joint": "right_knee_joint",
+        "type": "revolute",
+        "parent": "right_hip_yaw_link",
+        "child": "right_knee_link"
+      },
+      "nominal_result": "separated_by_nominal_aabb",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "right_hip_yaw_link#1",
+      "second": "right_knee_link#1",
+      "urdf_joint": {
+        "joint": "right_knee_joint",
+        "type": "revolute",
+        "parent": "right_hip_yaw_link",
+        "child": "right_knee_link"
+      },
+      "nominal_result": "separated_by_nominal_aabb",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "right_hip_yaw_link#1",
+      "second": "right_knee_link#2",
+      "urdf_joint": {
+        "joint": "right_knee_joint",
+        "type": "revolute",
+        "parent": "right_hip_yaw_link",
+        "child": "right_knee_link"
+      },
+      "nominal_result": "separated_by_nominal_aabb",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "right_hip_yaw_link#2",
+      "second": "right_knee_link#0",
+      "urdf_joint": {
+        "joint": "right_knee_joint",
+        "type": "revolute",
+        "parent": "right_hip_yaw_link",
+        "child": "right_knee_link"
+      },
+      "nominal_result": "separated_by_nominal_aabb",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "right_hip_yaw_link#2",
+      "second": "right_knee_link#1",
+      "urdf_joint": {
+        "joint": "right_knee_joint",
+        "type": "revolute",
+        "parent": "right_hip_yaw_link",
+        "child": "right_knee_link"
+      },
+      "nominal_result": "separated_by_nominal_aabb",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "right_hip_yaw_link#2",
+      "second": "right_knee_link#2",
+      "urdf_joint": {
+        "joint": "right_knee_joint",
+        "type": "revolute",
+        "parent": "right_hip_yaw_link",
+        "child": "right_knee_link"
+      },
+      "nominal_result": "separated_by_nominal_aabb",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "left_wrist_pitch_link#0",
+      "second": "left_wrist_roll_link#0",
+      "urdf_joint": {
+        "joint": "left_wrist_roll_joint",
+        "type": "revolute",
+        "parent": "left_wrist_pitch_link",
+        "child": "left_wrist_roll_link"
+      },
+      "nominal_result": "separated",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "left_wrist_pitch_link#1",
+      "second": "left_wrist_roll_link#0",
+      "urdf_joint": {
+        "joint": "left_wrist_roll_joint",
+        "type": "revolute",
+        "parent": "left_wrist_pitch_link",
+        "child": "left_wrist_roll_link"
+      },
+      "nominal_result": "within_numerical_tolerance",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "right_wrist_pitch_link#0",
+      "second": "right_wrist_roll_link#0",
+      "urdf_joint": {
+        "joint": "right_wrist_roll_joint",
+        "type": "revolute",
+        "parent": "right_wrist_pitch_link",
+        "child": "right_wrist_roll_link"
+      },
+      "nominal_result": "separated",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    },
+    {
+      "first": "right_wrist_pitch_link#1",
+      "second": "right_wrist_roll_link#0",
+      "urdf_joint": {
+        "joint": "right_wrist_roll_joint",
+        "type": "revolute",
+        "parent": "right_wrist_pitch_link",
+        "child": "right_wrist_roll_link"
+      },
+      "nominal_result": "within_numerical_tolerance",
+      "required_USD_evidence": [
+        "exact composed Joint body0/body1 targets",
+        "resolved physics:collisionEnabled AND authored/fallback status",
+        "resolved physics:jointEnabled",
+        "articulation self-collision flag",
+        "FilteredPairsAPI on collider/body/articulation",
+        "collision groups, collections and clone/fabric env ids"
+      ],
+      "actual_runtime_policy": "UNRESOLVED",
+      "pair_exclusion_authorized": false
+    }
+  ],
+  "important_distinction": "Root self-collision flag is not Joint collisionEnabled, FilteredPairsAPI, CollisionGroup or runtime env-id filtering. Never whitelist every adjacent pair from schema fallback alone.",
+  "schema_reference": "OpenUSD v25.05 pinned source; CPU usd-core25.11 actual resolved fallback confirmed. Neither identifies the historical IsaacSim runtime USD/PhysX build.",
+  "composed_USD_points_are_not_cooked_PhysX_vertices": true,
+  "stage_metersPerUnit_is_not_source_motion_unit_proof": true,
+  "historical_log_recovery": {
+    "task_id": "TASK_20261117_016",
+    "task_status": 5,
+    "complete_log_recovered": true,
+    "sha256": "2690a7443f62f5d216d2061ed62ba13466163f8ae6f8f142aa3e9b75fe30c880",
+    "bytes": 124484,
+    "launcher_recovered": false,
+    "cooked_geometry_or_pair_filters_recovered": false
+  },
+  "live_status_projection": {
+    "queried_at_utc": "2026-11-17T12:28:53.506869+00:00",
+    "sha256": "61f7d83a63ffdfdf51adb989c5d65b436a7fa82b05e6841349518e63423f8f5e",
+    "account_nonterminal_total": 0,
+    "project_nonterminal_total": 0,
+    "status_is_not_permanent_submission_permission": true
+  },
+  "CPU_tests_passed": 26,
+  "tests_are_USD_schema_and_collector_only": true,
+  "actual_imported_HUD04_USD_available": false,
+  "cooked_geometry_verified": false,
+  "actual_physx_pair_filters_verified": false,
+  "hard_platform_stop_budget_verified": false,
+  "solver_calls": 0,
+  "gpu_submissions": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false,
+  "training_ready": false,
+  "next_required_observation": "In a separately bounded authorized runtime, call collect(existing_stage, exact_robot_root) after actual HUD04 import and after scene clone/filter setup, recording both phases; do not recreate or alter filters. Refresh live task state/duplicates and verify launcher/platform stop-budget BEFORE any GPU submission."
+}

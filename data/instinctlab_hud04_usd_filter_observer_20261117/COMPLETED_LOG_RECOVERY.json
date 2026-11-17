@@ -1,0 +1,99 @@
+{
+  "task_id": "TASK_20261117_016",
+  "queried_at": "2026-11-17T12:29:36.294088+00:00",
+  "task_status": 5,
+  "origin_hostname": "argo-prod.oss-cn-beijing.aliyuncs.com",
+  "log_url_persisted": false,
+  "account_headers_sent_to_object_store": false,
+  "old_start_script_executed": false,
+  "gpu_mutations": 0,
+  "complete_log_recovered": true,
+  "http_status": 200,
+  "bytes": 124484,
+  "log_sha256": "2690a7443f62f5d216d2061ed62ba13466163f8ae6f8f142aa3e9b75fe30c880",
+  "launcher_paths": [],
+  "launcher_argument_present": false,
+  "self_collision_mentions": 0,
+  "cooked_geometry_mentions": 0,
+  "report_markers": {
+    "training_ready": 3,
+    "accepted_reference": 0,
+    "joint_names": 1,
+    "29": 54,
+    "TASK_20261117_016": 11
+  },
+  "report_json_blocks": [
+    {
+      "keys": [
+        "taskStatus",
+        "taskId"
+      ]
+    },
+    {
+      "keys": [
+        "commitId",
+        "taskId"
+      ]
+    },
+    {
+      "keys": [
+        "code",
+        "msg",
+        "msgEn",
+        "success",
+        "time"
+      ]
+    },
+    {
+      "keys": [
+        "stage",
+        "source_commit"
+      ]
+    },
+    {
+      "keys": [
+        "stage",
+        "passed",
+        "body_dof",
+        "head_fixed",
+        "mesh_count",
+        "mesh_bytes",
+        "manifest_files",
+        "gpu_initialized",
+        "Isaac_runtime_verified",
+        "training_ready"
+      ]
+    },
+    {
+      "keys": [
+        "stage",
+        "age_s",
+        "asset_initialized"
+      ]
+    },
+    {
+      "keys": [
+        "stage",
+        "report",
+        "sha256",
+        "bytes"
+      ]
+    },
+    {
+      "keys": [
+        "stage",
+        "probe_passed",
+        "return_code",
+        "source_commit",
+        "stop_reason",
+        "worker_wall_s",
+        "training_ready",
+        "training_updates",
+        "report_present",
+        "normal_exit_verified",
+        "simulation_context_cleanup_completed"
+      ]
+    }
+  ],
+  "historical_log_is_fresh_physics_validation": false
+}

@@ -1,0 +1,46 @@
+{
+  "sources": [
+    {
+      "repository": "PixarAnimationStudios/OpenUSD",
+      "ref": "v25.05",
+      "path": "pxr/usd/usdPhysics/schema.usda",
+      "local_name": "openusd_v25_05_schema.usda",
+      "git_blob_sha": "5bca4eb1d8bcaba17629528304e7ad350a842fec",
+      "sha256": "159780115745948d49d95d07333d52e88867495824158e2bfd54083ba95c17ce",
+      "bytes": 28114,
+      "executed": false
+    },
+    {
+      "repository": "isaac-sim/IsaacLab",
+      "ref": "f73c33173801f5f8afea4142482e47b7710c2b75",
+      "path": "source/isaaclab/isaaclab/sim/schemas/schemas.py",
+      "local_name": "isaaclab_schemas.py",
+      "git_blob_sha": "91eb3b2cd6a96a59e0f1b6540fa7383485b445e1",
+      "sha256": "ba72769e57cae4729074231a9f5d58cfed1679b713fb0bf1bc3a8b35483084ef",
+      "bytes": 45968,
+      "executed": false
+    },
+    {
+      "repository": "isaac-sim/IsaacLab",
+      "ref": "f73c33173801f5f8afea4142482e47b7710c2b75",
+      "path": "source/isaaclab/isaaclab/sim/spawners/from_files/from_files.py",
+      "local_name": "isaaclab_from_files.py",
+      "git_blob_sha": "242829d777e833449d8653ab3783c60feb5181b0",
+      "sha256": "e521ccb2d09ef8f604b9607090dcf7ac89dddd84ce6488e2c251395321c1fe76",
+      "bytes": 18849,
+      "executed": false
+    },
+    {
+      "repository": "isaac-sim/IsaacLab",
+      "ref": "f73c33173801f5f8afea4142482e47b7710c2b75",
+      "path": "source/isaaclab/isaaclab/scene/interactive_scene.py",
+      "local_name": "isaaclab_interactive_scene.py",
+      "git_blob_sha": "46e5895687aa3eedc601e5786530bc0e42852751",
+      "sha256": "b3b61c5fe84cb47da8b3ae889909ce667c1873119ebdc9a91846b959fb6228ad",
+      "bytes": 36389,
+      "executed": false
+    }
+  ],
+  "openusd_reference_is_not_actual_runtime_version_proof": true,
+  "executed": false
+}

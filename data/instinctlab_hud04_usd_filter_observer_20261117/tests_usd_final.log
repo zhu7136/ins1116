@@ -1,0 +1,34 @@
+##################################################################
+#  PXR_WORK_THREAD_LIMIT is overridden to '2'.  Default is '0'.  #
+##################################################################
+test_body_mapping_no_collision_index_guess (test_usd_filter_snapshot.SnapshotTests.test_body_mapping_no_collision_index_guess) ... ok
+test_collider_fallback_true_is_distinct (test_usd_filter_snapshot.SnapshotTests.test_collider_fallback_true_is_distinct) ... ok
+test_collision_group_collections_recorded_not_interpreted (test_usd_filter_snapshot.SnapshotTests.test_collision_group_collections_recorded_not_interpreted) ... ok
+test_disabled_collider_is_not_omitted (test_usd_filter_snapshot.SnapshotTests.test_disabled_collider_is_not_omitted) ... ok
+test_disabled_joint_still_reports_relation_and_flag (test_usd_filter_snapshot.SnapshotTests.test_disabled_joint_still_reports_relation_and_flag) ... ok
+test_duplicate_body_leaf_names_not_merged_as_identity (test_usd_filter_snapshot.SnapshotTests.test_duplicate_body_leaf_names_not_merged_as_identity) ... ok
+test_existing_output_never_overwritten (test_usd_filter_snapshot.SnapshotTests.test_existing_output_never_overwritten) ... ok
+test_explicit_joint_false_is_retained (test_usd_filter_snapshot.SnapshotTests.test_explicit_joint_false_is_retained) ... ok
+test_explicit_joint_true_is_retained_without_exclusion (test_usd_filter_snapshot.SnapshotTests.test_explicit_joint_true_is_retained_without_exclusion) ... ok
+test_external_filter_owner_is_recorded (test_usd_filter_snapshot.SnapshotTests.test_external_filter_owner_is_recorded) ... ok
+test_extra_shape_count_mismatch_stays_false (test_usd_filter_snapshot.SnapshotTests.test_extra_shape_count_mismatch_stays_false) ... ok
+test_instance_proxies_are_traversed (test_usd_filter_snapshot.SnapshotTests.test_instance_proxies_are_traversed) ... ok
+test_joint_body_relation_absence_not_inferred (test_usd_filter_snapshot.SnapshotTests.test_joint_body_relation_absence_not_inferred) ... ok
+test_mesh_points_are_hashed_not_claimed_cooked (test_usd_filter_snapshot.SnapshotTests.test_mesh_points_are_hashed_not_claimed_cooked) ... ok
+test_missing_explicit_root_rejected (test_usd_filter_snapshot.SnapshotTests.test_missing_explicit_root_rejected) ... ok
+test_missing_physx_schema_remains_unknown (test_usd_filter_snapshot.SnapshotTests.test_missing_physx_schema_remains_unknown) ... ok
+test_no_promoted_acceptance_flags (test_usd_filter_snapshot.SnapshotTests.test_no_promoted_acceptance_flags) ... ok
+test_nonfinite_dimension_fails_closed (test_usd_filter_snapshot.SnapshotTests.test_nonfinite_dimension_fails_closed) ... ok
+test_plain_authored_physx_value_observed_not_validated (test_usd_filter_snapshot.SnapshotTests.test_plain_authored_physx_value_observed_not_validated) ... ok
+test_prim_budget_fails_no_partial_result (test_usd_filter_snapshot.SnapshotTests.test_prim_budget_fails_no_partial_result) ... ok
+test_resolved_joint_fallback_is_false_not_authored (test_usd_filter_snapshot.SnapshotTests.test_resolved_joint_fallback_is_false_not_authored) ... ok
+test_stage_units_are_not_source_motion_proof (test_usd_filter_snapshot.SnapshotTests.test_stage_units_are_not_source_motion_proof) ... ok
+test_static_shape_does_not_invent_body (test_usd_filter_snapshot.SnapshotTests.test_static_shape_does_not_invent_body) ... ok
+test_topology_budget_catches_many_indices_few_points (test_usd_filter_snapshot.SnapshotTests.test_topology_budget_catches_many_indices_few_points) ... ok
+test_unset_units_marked_unauthored (test_usd_filter_snapshot.SnapshotTests.test_unset_units_marked_unauthored) ... ok
+test_world_transform_retained_in_gf_convention (test_usd_filter_snapshot.SnapshotTests.test_world_transform_retained_in_gf_convention) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.036s
+
+OK
