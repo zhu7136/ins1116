@@ -221,7 +221,54 @@ python -B audit_terrain_bundle.py --dataset /path/to/downloaded/folder \
 七个源文件哈希再次全部一致，无数据重写。默认 `metadata.yaml` 仍引用缺失的 Step6，
 工具不会代为改成 Step1。现有 Plane 只允许足部支撑，不应直接加载攀爬数据。
 
-当前合计 **58 项 CPU 软件测试通过**（含 14 项新 Terrain 检查测试）。
+截至 Terrain 检查阶段，合计 **58 项 CPU 软件测试通过**（含 14 项新 Terrain 检查测试）。
 没有提交 GPU、调用求解器、运行 PPO 或改变 `accepted` 状态；原有六文件 overlay 和
 已验证探针不变。下一步仍需确认原调试模型、根坐标及既有约束；若必须新做重定向，
 先约定有界求解方案/预算，而不是以本工具通过作为自动开跑许可。
+
+## G1 → HUD04 重定向准备入口（2026-11-17，纯 CPU 已执行）
+
+源机器人家族已确认为 G1；具体导出模型、NPZ 根坐标和四元数顺序仍未得到来源证明。
+新增 `retarget_dry_run.py` 和 `kinematic_diagnostics.py`，只执行确定性 FK 与原始网格探测，
+**不存在 `--solve` 或 GPU 执行模式**，不构造优化器、不生成动作、不改已有验收门禁。
+
+- 严格固定候选 G1 URDF、HUD04 固定头 URDF、Step1 NPZ 和配对 STL 的 SHA256；
+  任一字节不同即拒绝。执行前后都核对输入哈希，输出报告拒绝覆盖已有文件。
+- G1 候选模型来自上述上游固定提交的
+  `assets/resources/unitree_g1/urdf/g1_29dof_torsobase_simplified.urdf`。
+  此文件是诊断候选，不宣称就是生成此 NPZ 的模型。
+- 在全部 997 帧计算源 FK；对三个独立窗口 611–641、659–689、711–741（零起始、含端点）
+  的 93 帧，分别评估 `torso_link`/`pelvis` × `wxyz`/`xyzw` 四种条件假设。
+  不自动排序、选择假设或把几何外观当作来源证明。
+- 足部取真实碰撞盒的八个角点，计算到原始 STL 上方包络的垂向间隙；速度仅使用各窗口
+  内的实际相邻帧，不跨窗口做差。这不是完整碰撞距离、实际穿透深度或支撑标签。
+  原始网格与世界坐标/单位尚未校准，阈值明确以原始单位记录。
+- 手部仅报告腕末端原点范围，不把腕原点称为校准后的掌心接触点。
+  HUD04 默认姿态的足盒/末端几何单独报告，不复制 G1 的关节角或根位姿作为目标解。
+
+实测：候选 G1 模型的胸部→骨盆变换相对首帧最大变化为 **43.3298°**，
+平移最大变化为 **0.0170164**（URDF 长度单位）。因此固定偏移的根坐标转换不可用。
+以独立的标量 SciPy FK 复核 5 个真实帧的全部连杆，最大矩阵元素误差小于 `1e-14`；
+另对全部 997 帧腰部链、世界坐标重新锚定及 8 个真实网格探测点进行了独立公式复核。
+
+运行时设置好前文的 `HUD04_DELIVERY_ROOT`；以下输入变量指用户保存的原始文件，
+脚本不下载模型或数据、不安装依赖：
+
+```sh
+python -B -m unittest -v test_cpu.py test_motion_audit.py test_terrain_bundle_audit.py test_retarget_dry_run.py
+python -B retarget_dry_run.py \
+  --source-urdf "$G1_CANDIDATE_URDF" \
+  --target-urdf "$HUMANOID_DESCRIPTION_DIR/HU_D04_description/urdf/HU_D04_01_fixed_head_body_collision.urdf" \
+  --motion "$MOTION_DIR/kneelClimbStep1-x-0.1-ziwen-retargeted.npz" \
+  --terrain "$MOTION_DIR/50cmboxes_19_36_49.stl" \
+  --report "$NEW_RETARGET_DIAGNOSTIC_JSON"
+```
+
+合计 **90 项 CPU 软件测试通过**，其中新入口/几何测试 32 项。七个原始数据文件哈希不变。
+`RETARGET_DRY_RUN_REVIEW_20261117.json` 保存结果摘要；不发布原始 NPZ/STL。
+本次无 GPU 提交、无求解、无 PPO，`accepted_reference=false`、`training_ready=false`。
+
+下一阶段应补足来源/坐标证据与手/足/膝接触审查，再实现带进程超时监督的有界求解。
+报告中的 93 帧、每窗口 90 秒、总计 600 秒、零重试等值只是求解预算记录，
+本入口不运行求解，也不能用这些字段冒充已实现的进程资源控制。
+短时 GPU 许可不能替代上述技术前提，更不能被解释为长训练或无限重试预算。
