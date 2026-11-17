@@ -72,8 +72,8 @@
       "bytes": 762
     },
     "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/README_zh.md": {
-      "sha256": "e4be7bffa1a99eec9f9f30ac30656724bff63e19e94a3fbf7bae698213ab95f8",
-      "bytes": 4547
+      "sha256": "320978afdf025e25a3f0ca88a5a81edb2b9e4748470235b16b420c536ef72dd0",
+      "bytes": 5813
     },
     "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/tests_binding.log": {
       "sha256": "6f39a81bc002c977360c8f3e167adca5b575d0baca53b0f2387e5085a338b1a3",
@@ -184,17 +184,32 @@
       "bytes": 5077
     },
     "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/REVIEW_zh.md": {
-      "sha256": "e4be7bffa1a99eec9f9f30ac30656724bff63e19e94a3fbf7bae698213ab95f8",
-      "bytes": 4547
+      "sha256": "320978afdf025e25a3f0ca88a5a81edb2b9e4748470235b16b420c536ef72dd0",
+      "bytes": 5813
     },
     "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/publish_snapshot.log": {
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "bytes": 0
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/COMPLETED_TASK_LOG_LAUNCHER_RECOVERY_20261117.json": {
+      "sha256": "874c1cffd67c78853ed4ed20ed6ad245fa02c2c9848edde8211ce68c0ca4d14f",
+      "bytes": 1036
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/COMPLETED_TASK_LOG_LAUNCHER_RECOVERY_V2_20261117.json": {
+      "sha256": "49ab262a4b8ee791ec58a8d9ab479f0b259ee10e98d9c7d7e16fe2ff1630f8cf",
+      "bytes": 1482
     }
   },
   "accepted_reference": false,
   "training_ready": false,
   "gpu_submissions": 0,
   "retarget_solver_calls": 0,
-  "ppo_updates": 0
+  "ppo_updates": 0,
+  "documentation_followup_parent": "ee38dca9c6788453c9128f79c1aa25d78b6aba84",
+  "manual_inventory_text_corrected_to": {
+    "sphere": 14,
+    "cylinder": 24,
+    "box": 3,
+    "mesh_hull": 2
+  }
 }
