@@ -1,0 +1,8 @@
+test_caps_and_sides (test_cylinder.CylinderTests.test_caps_and_sides) ... ok
+test_contained_triangle (test_cylinder.CylinderTests.test_contained_triangle) ... ok
+test_point_cases_64 (test_cylinder.CylinderTests.test_point_cases_64) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.025s
+
+OK

@@ -1,0 +1,200 @@
+{
+  "stage": "actual_cropped_terrain_cpu_surface_query_workbench_NOT_motion_acceptance",
+  "base": "c565e32dc52f9a7c90a5e1b3030a8a37103b015d",
+  "target_queries": 86,
+  "primary_converged": 86,
+  "independent_fully_tightened": 81,
+  "independent_unresolved_cylinder": 1,
+  "independent_hand_global_queries_not_recomputed": 4,
+  "files": {
+    "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/terrain_binding.py": {
+      "sha256": "b71fc2280e4587f14df60acc819f9b10d8f163dd7d1332bf30ed9db13e8c6f38",
+      "bytes": 5488
+    },
+    "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/binding_worker.py": {
+      "sha256": "3a1e08e1eaaf0b341f26be9d35bba7b1990a5fa47603bd173fed27756a2e6493",
+      "bytes": 7032
+    },
+    "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/run_binding_diagnostic.py": {
+      "sha256": "ffcf8bafe4eb63a0b4bdc41056673462c08528ff2a2ca5713d1156e2834e4b6d",
+      "bytes": 783
+    },
+    "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/test_binding.py": {
+      "sha256": "29c8ca397f0ed885b1a9cb3d8a5df9ea52f33c4653a16a812c188d9ab7beb2b9",
+      "bytes": 2462
+    },
+    "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/independent_primitives.py": {
+      "sha256": "2c1018b8be3ee616b3d2a2cc4d74a9570778671c20593feb67acd384968f9d87",
+      "bytes": 2192
+    },
+    "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/verification_worker.py": {
+      "sha256": "7269883e542d785296ea8cf56c417fc9641fd0811d415a9b0a8c756e8663469e",
+      "bytes": 3715
+    },
+    "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/run_verification.py": {
+      "sha256": "71a0a66c20be405f65a2ea99d672cf091b8bdcf966a96a0c54a3916abb6ba8e5",
+      "bytes": 625
+    },
+    "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/test_independent.py": {
+      "sha256": "edb9306a12f1875eda2925494f038df0290d385590044b25716e3957b34344ca",
+      "bytes": 1286
+    },
+    "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/independent_cylinder.py": {
+      "sha256": "d2c7c1b6667162609586773ebfa55158fd5783d9c38d807ace611fa80b4bfd6d",
+      "bytes": 3446
+    },
+    "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/test_cylinder.py": {
+      "sha256": "17ce732ce04ab29b6fcb6a77333300f7601092e65a6a194799f6fddd401b0fee",
+      "bytes": 2029
+    },
+    "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/cylinder_verification_worker.py": {
+      "sha256": "c385252f330327186a3c89db9dbeea193ca2b942165b5776c89114bd10e2e7e5",
+      "bytes": 3317
+    },
+    "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/run_cylinder_verification.py": {
+      "sha256": "557cbfc3e690e5a7e7dc78653c9020454025a3a6491c1c430090b5a42f7b8dfb",
+      "bytes": 637
+    },
+    "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/independent_cylinder_refined.py": {
+      "sha256": "52c79b97b8e64cfa3f96b6fa8eea36ca6a68b8aebacd70986c725b634d96a742",
+      "bytes": 2727
+    },
+    "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/run_cylinder_refinement.py": {
+      "sha256": "2b619b6f8862872d530add18dbd58bac88b491ceb4f46dc018e2c8721545d46b",
+      "bytes": 678
+    },
+    "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/debug_cylinder_disagreement.py": {
+      "sha256": "cdf89c54fff127062060477ab96dc761422738dc10c541c441501605d1db1f81",
+      "bytes": 752
+    },
+    "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/run_cylinder_refinement_v2.py": {
+      "sha256": "dff91ddb8f7ee2c6dc4e8188a6c959e37fcbafa540beb349173ebbfe5273860f",
+      "bytes": 762
+    },
+    "integrations/instinctlab_hud04/experimental/actual_terrain_binding_workbench_20261117/README_zh.md": {
+      "sha256": "e4be7bffa1a99eec9f9f30ac30656724bff63e19e94a3fbf7bae698213ab95f8",
+      "bytes": 4547
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/tests_binding.log": {
+      "sha256": "6f39a81bc002c977360c8f3e167adca5b575d0baca53b0f2387e5085a338b1a3",
+      "bytes": 2582
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/tests_binding_final.log": {
+      "sha256": "11ce05c67bebbd0b7cb2b00522bbe0c87e5d22b1eedeed420304dcc4e2aded2e",
+      "bytes": 777
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/run_binding.log": {
+      "sha256": "060f163879e986eff5d60d853ddf3400134a6964b6f97248429f74bf54829e39",
+      "bytes": 11344
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/source_progress.jsonl": {
+      "sha256": "02f8579501aedf983768a0dc928e9d62d3f03acffbe68eca2ddc4047ee21eb5a",
+      "bytes": 160632
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/SOURCE_ACTUAL_TERRAIN_DETAIL_20261117.json": {
+      "sha256": "5bb02fe5380c12d7a2424f1ff1b0e059c15437237ce99a30e6013750687bef64",
+      "bytes": 211485
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/target_progress.jsonl": {
+      "sha256": "c1cb571c2c8f444bf02b36de4eb4b16bfaf37908c28e6ca4d89b3845f0d3e21f",
+      "bytes": 93430
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/TARGET_ACTUAL_TERRAIN_DETAIL_20261117.json": {
+      "sha256": "ddf730843f67830f72a0eb483d3612a9f04823de678be90ec24f7cd0369624e0",
+      "bytes": 123974
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/ACTUAL_TERRAIN_BINDING_DIAGNOSTIC_20261117.json": {
+      "sha256": "bec2ffe97d539964511c41c65b1c362bd11b8daf5418baf16005e7f92d9fe9f0",
+      "bytes": 8594
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/tests_all_final.log": {
+      "sha256": "73750e7f903e5d1905c51cc3889d2052c4ee4a1d03a4e5d660220a3373491628",
+      "bytes": 1243
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/run_verification.log": {
+      "sha256": "27da6fd5fcc5a692fb0fb1b1cdf61e50657b292b4ad63b2b8603cc04fe2c17e3",
+      "bytes": 2176
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/INDEPENDENT_TARGET_TERRAIN_CHECK_20261117.json": {
+      "sha256": "d42324024049fb323d419e6ab0164eac591e63b8f1e5eb8a9b73e8085b845df9",
+      "bytes": 25370
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/INDEPENDENT_VERIFICATION_SUPERVISION_20261117.json": {
+      "sha256": "27da6fd5fcc5a692fb0fb1b1cdf61e50657b292b4ad63b2b8603cc04fe2c17e3",
+      "bytes": 2176
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/tests_cylinder.log": {
+      "sha256": "15105295ac31c381d9bc396255be35e59dff758c995a6c1d3f1bac6a717ac47e",
+      "bytes": 337
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/run_cylinder_verification.log": {
+      "sha256": "bb53fb82e28182b72b585ab9fc49bc3193e723106cd8bf4bb6c6f2c0b89939cb",
+      "bytes": 1925
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/cylinder_verification_progress.jsonl": {
+      "sha256": "dca0a0624737fc0ec710a0a3f1e2a2a7a940f2ae0803ff4e952785425b788229",
+      "bytes": 24559
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/INDEPENDENT_CYLINDER_TERRAIN_CHECK_20261117.json": {
+      "sha256": "ea76c6f156a9574577a52373101939414ce4a8d486112e66a26452ef651da983",
+      "bytes": 31615
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/CYLINDER_VERIFICATION_SUPERVISION_20261117.json": {
+      "sha256": "bb53fb82e28182b72b585ab9fc49bc3193e723106cd8bf4bb6c6f2c0b89939cb",
+      "bytes": 1925
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/run_cylinder_refinement.log": {
+      "sha256": "93d08a235ffdf31fd1b0fb80e014ea305bf5b8ebba2aac1d8184ee62962d4b4c",
+      "bytes": 877
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/cylinder_verification_REFINED_progress.jsonl": {
+      "sha256": "95ca0e90c0561257ca9074df93521f1d130f0a3835ffc5ede8354af0502476cc",
+      "bytes": 3984
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/CYLINDER_REFINED_SUPERVISION_20261117.json": {
+      "sha256": "93d08a235ffdf31fd1b0fb80e014ea305bf5b8ebba2aac1d8184ee62962d4b4c",
+      "bytes": 877
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/debug_cylinder_disagreement.log": {
+      "sha256": "90853b65bf59e670cff12148cdf41ad0c0ce67c07d9783422ded2b626a6349af",
+      "bytes": 564
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/tests_binding_complete.log": {
+      "sha256": "24b3a6877a5bcfe642a5d1861cec6077fcc6740790bd7d03e3d62d47a5b497d8",
+      "bytes": 1631
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/run_cylinder_refinement_v2.log": {
+      "sha256": "acfa58904e5f103343ec04e1e364c0da46afb028627fa358a7772c55e9163906",
+      "bytes": 1981
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/cylinder_verification_REFINED_V2_progress.jsonl": {
+      "sha256": "33b2b24e392dbb58d36e9493c498e3d42eabb82b84b37f00020c559be8bf34c9",
+      "bytes": 32371
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/INDEPENDENT_CYLINDER_TERRAIN_CHECK_REFINED_V2_20261117.json": {
+      "sha256": "5180a851875d92562c03550d3b03dae51929665b1aeb41fafe5d8c17971d84cf",
+      "bytes": 41003
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/CYLINDER_REFINED_V2_SUPERVISION_20261117.json": {
+      "sha256": "acfa58904e5f103343ec04e1e364c0da46afb028627fa358a7772c55e9163906",
+      "bytes": 1981
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/tests_combined47.log": {
+      "sha256": "525332b9dad7da1dd2dd28a1d1d8509c76e97133fd63a4a33ea18f63f7a72ac8",
+      "bytes": 5077
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/REVIEW_zh.md": {
+      "sha256": "e4be7bffa1a99eec9f9f30ac30656724bff63e19e94a3fbf7bae698213ab95f8",
+      "bytes": 4547
+    },
+    "datasets/hud04/source-only-20261117/continuation_evidence/actual_terrain_binding_20261117/publish_snapshot.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  },
+  "accepted_reference": false,
+  "training_ready": false,
+  "gpu_submissions": 0,
+  "retarget_solver_calls": 0,
+  "ppo_updates": 0
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "stage": "bounded_cpu_diagnostic_supervision",
+  "status": "completed",
+  "budget": {
+    "window_seconds": 45,
+    "total_seconds": 50,
+    "iterations": 60,
+    "numeric_threads": 2,
+    "max_windows": 1
+  },
+  "windows": [
+    {
+      "index": 0,
+      "wall_seconds": 4.941612242000019,
+      "child_reaped": true,
+      "status": "completed",
+      "iterations": 48,
+      "diagnostic": {
+        "stage": "independent_finite_cylinder_actual_terrain_brackets_NOT_acceptance",
+        "bounded_refinement_enabled": true,
+        "queries": 48,
+        "converged": 47,
+        "unresolved": 1,
+        "maximum_bracket_width": 3.674702213352088e-08,
+        "maximum_upper_difference": 1.8784839742741477e-09,
+        "gjk_called": false,
+        "primary_aabb_candidates_used": false,
+        "all_subset_triangles_evaluated": true,
+        "target_pose_is_only_algebraic_fixture": true,
+        "physics_or_motion_validated": false,
+        "accepted_reference": false,
+        "training_ready": false,
+        "gpu_submissions": 0,
+        "solver_calls": 0,
+        "ppo_updates": 0,
+        "detail": {
+          "file": "INDEPENDENT_CYLINDER_TERRAIN_CHECK_REFINED_V2_20261117.json",
+          "sha256": "5180a851875d92562c03550d3b03dae51929665b1aeb41fafe5d8c17971d84cf",
+          "bytes": 41003
+        }
+      },
+      "supported_numeric_pools": [
+        {
+          "api": "openblas",
+          "threads": 2
+        },
+        {
+          "api": "openblas",
+          "threads": 2
+        }
+      ]
+    }
+  ],
+  "wall_seconds": 4.941677480999999,
+  "retries": 0,
+  "hard_parent_deadline": true,
+  "cleanup_grace_seconds_max": 0.7,
+  "iteration_limit_scope": "trusted_workers_calling_gate_each_iteration_only",
+  "thread_limit_scope": "supported_BLAS_OpenMP_pools_not_all_OS_threads_or_CPU_cores",
+  "gpu_submissions": 0,
+  "solver_calls": 0,
+  "candidate_motion_generated": false,
+  "accepted_reference": false,
+  "training_ready": false
+}

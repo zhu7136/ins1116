@@ -1,0 +1,932 @@
+{
+  "stage": "independent_finite_cylinder_actual_terrain_brackets_NOT_acceptance",
+  "checks": [
+    {
+      "shape": "base_link#0",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.014299963121302425,
+        "upper": 0.014299999868324559,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 5091,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.014299997988491533,
+      "primary_upper": 0.014299997989840585,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "base_link#0",
+      "subset": "lateral",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 1.0205073892220156,
+        "upper": 1.0205566156116364,
+        "iterations": 80,
+        "triangle_count": 2958,
+        "best_triangle": 1816,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 1.0205303966082877,
+      "primary_upper": 1.0205303966090773,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "base_link#1",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.0,
+        "upper": 2.8123442407313284e-06,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 5091,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.0,
+      "primary_upper": 4.1575860998215363e-16,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "base_link#1",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.0955150223809298,
+        "upper": 1.0955150223809298,
+        "iterations": 3,
+        "triangle_count": 2958,
+        "best_triangle": 1816,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 1.0955150223529198,
+      "primary_upper": 1.0955150224530903,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "base_link#2",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.0,
+        "upper": 0.0007446789203761116,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 5091,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.0,
+      "primary_upper": 3.1562434375920655e-16,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "base_link#2",
+      "subset": "lateral",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.9356174883627086,
+        "upper": 0.9356379953233399,
+        "iterations": 80,
+        "triangle_count": 2958,
+        "best_triangle": 1816,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.9356261819064342,
+      "primary_upper": 0.9356261819687575,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "left_hip_pitch_link#0",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.004225457477322191,
+        "upper": 0.034113073841183776,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 5093,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.03406054182109747,
+      "primary_upper": 0.0340605418777907,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "left_hip_pitch_link#0",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.148474777155084,
+        "upper": 1.1484747785307863,
+        "iterations": 3,
+        "triangle_count": 2958,
+        "best_triangle": 1819,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 1.1484747785238298,
+      "primary_upper": 1.148474778533874,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "left_hip_yaw_link#0",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.1448350211233665,
+        "upper": 0.14653304459924288,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 5096,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.1465290390218969,
+      "primary_upper": 0.14652903902223186,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "left_hip_yaw_link#0",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.1299019735970774,
+        "upper": 1.1299019735970774,
+        "iterations": 2,
+        "triangle_count": 2958,
+        "best_triangle": 1625,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 1.1299019735552664,
+      "primary_upper": 1.129901974524767,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "left_knee_link#0",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.3938894600233001,
+        "upper": 0.39622305956481335,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 794,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.3956455329081519,
+      "primary_upper": 0.3956455338664292,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "left_knee_link#0",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.1106230421723988,
+        "upper": 1.1106230421723988,
+        "iterations": 2,
+        "triangle_count": 2958,
+        "best_triangle": 1625,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 1.1106230419547254,
+      "primary_upper": 1.1106230423372665,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "right_hip_pitch_link#0",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.031771940844662686,
+        "upper": 0.034060864791404306,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 5609,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.03406053035495344,
+      "primary_upper": 0.03406053096994332,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "right_hip_pitch_link#0",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.8906587658846791,
+        "upper": 0.8906587658846791,
+        "iterations": 2,
+        "triangle_count": 2958,
+        "best_triangle": 1816,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.8906587657588668,
+      "primary_upper": 0.8906587659025517,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "right_hip_yaw_link#0",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.14346286112537338,
+        "upper": 0.14666766502285716,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 3329,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.1465289804840689,
+      "primary_upper": 0.14652898051959737,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "right_hip_yaw_link#0",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.7869395746291389,
+        "upper": 0.7869395746291389,
+        "iterations": 2,
+        "triangle_count": 2958,
+        "best_triangle": 1816,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.786939574623379,
+      "primary_upper": 0.7869395746361242,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "right_knee_link#0",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.39564511909681777,
+        "upper": 0.3956453219714964,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 3329,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.39564532161391913,
+      "primary_upper": 0.3956453220601269,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "right_knee_link#0",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.7925108274755487,
+        "upper": 0.7925108274755487,
+        "iterations": 3,
+        "triangle_count": 2958,
+        "best_triangle": 731,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.7925108274523652,
+      "primary_upper": 0.7925108274829769,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "waist_pitch_link#0",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.3030813492118947,
+        "upper": 0.30407894706095434,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 5091,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.30405371820909954,
+      "primary_upper": 0.30405371839947126,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "waist_pitch_link#0",
+      "subset": "lateral",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 1.0092330395048439,
+        "upper": 1.0092389542367515,
+        "iterations": 80,
+        "triangle_count": 2958,
+        "best_triangle": 1810,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 1.0092388817506042,
+      "primary_upper": 1.009238882404926,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "waist_pitch_link#3",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.1717491950242343,
+        "upper": 0.17199724261400162,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 5091,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.1719513266969902,
+      "primary_upper": 0.1719513267065347,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "waist_pitch_link#3",
+      "subset": "lateral",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 1.0063097817605207,
+        "upper": 1.0063101200045088,
+        "iterations": 80,
+        "triangle_count": 2958,
+        "best_triangle": 1816,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 1.0063101188765073,
+      "primary_upper": 1.0063101194739579,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "waist_pitch_link#6",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.21636797183286308,
+        "upper": 0.219347035691258,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 5091,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.2193417807222998,
+      "primary_upper": 0.21934178072743624,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "waist_pitch_link#6",
+      "subset": "lateral",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 1.0150442069609844,
+        "upper": 1.0150445004631503,
+        "iterations": 80,
+        "triangle_count": 2958,
+        "best_triangle": 1812,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 1.0150445001129107,
+      "primary_upper": 1.015044500344866,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "left_shoulder_roll_link#0",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.39085034080136133,
+        "upper": 0.3939320528246585,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 5094,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.3938856121614243,
+      "primary_upper": 0.3938856124091207,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "left_shoulder_roll_link#0",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.1195913295810918,
+        "upper": 1.1195913295810918,
+        "iterations": 2,
+        "triangle_count": 2958,
+        "best_triangle": 1605,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 1.1195913295773956,
+      "primary_upper": 1.1195913295908435,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "left_shoulder_roll_link#1",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.39774175989006766,
+        "upper": 0.3985123086318513,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 835,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.3984999206158193,
+      "primary_upper": 0.39849992115462995,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "left_shoulder_roll_link#1",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 1.042579283165494,
+        "upper": 1.042579283165494,
+        "iterations": 2,
+        "triangle_count": 2958,
+        "best_triangle": 1605,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 1.0425792828762737,
+      "primary_upper": 1.0425792831742344,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "left_elbow_link#0",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.37884999720658274,
+        "upper": 0.3823219573222563,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 815,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.38172924463581176,
+      "primary_upper": 0.38172924464605323,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "left_elbow_link#0",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.8715373877434235,
+        "upper": 0.8715373877434235,
+        "iterations": 2,
+        "triangle_count": 2958,
+        "best_triangle": 1605,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.8715373877054166,
+      "primary_upper": 0.8715373877454589,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "left_elbow_link#1",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.36217592904220347,
+        "upper": 0.364808925606366,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 794,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.3645348229584867,
+      "primary_upper": 0.36453482366930773,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "left_elbow_link#1",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.8026520702621069,
+        "upper": 0.8026520702621069,
+        "iterations": 2,
+        "triangle_count": 2958,
+        "best_triangle": 1605,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.8026520702450343,
+      "primary_upper": 0.8026520702768627,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "left_wrist_pitch_link#0",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.34664232994986566,
+        "upper": 0.34972136881634636,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 794,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.34915025127836957,
+      "primary_upper": 0.34915025128506894,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "left_wrist_pitch_link#0",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.7430068412690944,
+        "upper": 0.7430068412690944,
+        "iterations": 2,
+        "triangle_count": 2958,
+        "best_triangle": 1605,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.7430068412616756,
+      "primary_upper": 0.7430068412842074,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "left_wrist_pitch_link#1",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.3185391010480902,
+        "upper": 0.32014742928422935,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 794,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.3200113455723734,
+      "primary_upper": 0.3200113455724503,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "left_wrist_pitch_link#1",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.6904621785255172,
+        "upper": 0.6904621785255172,
+        "iterations": 2,
+        "triangle_count": 2958,
+        "best_triangle": 1605,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.6904621785114744,
+      "primary_upper": 0.6904621785918831,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "right_shoulder_roll_link#0",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.39079353496155744,
+        "upper": 0.394510991533784,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 3329,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.3938856469021638,
+      "primary_upper": 0.3938856469162996,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "right_shoulder_roll_link#0",
+      "subset": "lateral",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.8116316495837121,
+        "upper": 0.8116556883466814,
+        "iterations": 80,
+        "triangle_count": 2958,
+        "best_triangle": 1810,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.8116526042518575,
+      "primary_upper": 0.811652604990296,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "right_shoulder_roll_link#1",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.3984689376156036,
+        "upper": 0.39851416483260615,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 3329,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.3985000076190481,
+      "primary_upper": 0.39850000762325194,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "right_shoulder_roll_link#1",
+      "subset": "lateral",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.7345848462749275,
+        "upper": 0.7345871333694571,
+        "iterations": 80,
+        "triangle_count": 2958,
+        "best_triangle": 1810,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.7345870915893101,
+      "primary_upper": 0.7345870915940402,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "right_elbow_link#0",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.3817174675238255,
+        "upper": 0.38172057099756146,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 3329,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.38172057096758644,
+      "primary_upper": 0.3817205709717481,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "right_elbow_link#0",
+      "subset": "lateral",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.5629254879194129,
+        "upper": 0.5629339528015133,
+        "iterations": 80,
+        "triangle_count": 2958,
+        "best_triangle": 1809,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.5629334426995295,
+      "primary_upper": 0.5629334434106247,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "right_elbow_link#1",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.36437052745832066,
+        "upper": 0.36453531810824713,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 3329,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.3645352140493802,
+      "primary_upper": 0.36453521405458655,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "right_elbow_link#1",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.4931398903277428,
+        "upper": 0.49313989951251647,
+        "iterations": 45,
+        "triangle_count": 2958,
+        "best_triangle": 1809,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.49313989951087345,
+      "primary_upper": 0.49313989951437986,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "right_wrist_pitch_link#0",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.34905331551841867,
+        "upper": 0.34916782273431224,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 3329,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.3491677739199949,
+      "primary_upper": 0.34916777399195836,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "right_wrist_pitch_link#0",
+      "subset": "lateral",
+      "independent": {
+        "status": "converged",
+        "lower": 0.43056531191665287,
+        "upper": 0.4305653187726444,
+        "iterations": 72,
+        "triangle_count": 2958,
+        "best_triangle": 1809,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.43056531877246773,
+      "primary_upper": 0.43056531877268556,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "right_wrist_pitch_link#1",
+      "subset": "all",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.3173836761252972,
+        "upper": 0.3201050862506081,
+        "iterations": 80,
+        "triangle_count": 8068,
+        "best_triangle": 3329,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.32001186756060385,
+      "primary_upper": 0.3200118675893707,
+      "brackets_compatible": true
+    },
+    {
+      "shape": "right_wrist_pitch_link#1",
+      "subset": "lateral",
+      "independent": {
+        "status": "unresolved_iteration_budget",
+        "lower": 0.3708166807617751,
+        "upper": 0.37089079256343405,
+        "iterations": 80,
+        "triangle_count": 2958,
+        "best_triangle": 1810,
+        "method": "closed_form_cylinder_projection_and_triangle_convex_tangent_bounds",
+        "gjk_called": false,
+        "primary_support_mapping_called": false,
+        "primary_aabb_candidates_used": false
+      },
+      "primary_lower": 0.37088888519154545,
+      "primary_upper": 0.3708888853512735,
+      "brackets_compatible": true
+    }
+  ],
+  "queries": 48,
+  "converged": 15,
+  "unresolved": 33,
+  "maximum_bracket_width": 0.029887616363861585,
+  "maximum_upper_difference": 0.000744678920375796,
+  "gjk_called": false,
+  "primary_aabb_candidates_used": false,
+  "all_subset_triangles_evaluated": true,
+  "target_pose_is_only_algebraic_fixture": true,
+  "physics_or_motion_validated": false,
+  "accepted_reference": false,
+  "training_ready": false,
+  "gpu_submissions": 0,
+  "solver_calls": 0,
+  "ppo_updates": 0
+}

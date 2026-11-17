@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/workspace/hud04-terrain-binding-20261117/debug_cylinder_disagreement.py", line 13, in <module>
+    result=refined_bracket(shape,world[shape.link],terrain.triangles)
+  File "/workspace/hud04-terrain-binding-20261117/independent_cylinder_refined.py", line 31, in refined_bracket
+    if lower[index]-upper>1e-8:raise RuntimeError('Inconsistent independent distance bounds')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Inconsistent independent distance bounds

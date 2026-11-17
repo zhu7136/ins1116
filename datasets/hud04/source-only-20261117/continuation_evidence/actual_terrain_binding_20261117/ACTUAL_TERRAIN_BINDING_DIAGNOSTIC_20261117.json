@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "stage": "bounded_cpu_diagnostic_supervision",
+  "status": "completed",
+  "budget": {
+    "window_seconds": 55,
+    "total_seconds": 115,
+    "iterations": 100,
+    "numeric_threads": 2,
+    "max_windows": 2
+  },
+  "windows": [
+    {
+      "index": 0,
+      "wall_seconds": 2.9905837459999987,
+      "child_reaped": true,
+      "status": "completed",
+      "iterations": 26,
+      "diagnostic": {
+        "mode": "source",
+        "terrain": {
+          "input_sha256": "3aee33efea6793974d901dd0f7e46859e2d12d2dfd79f38f12c777686566c2de",
+          "historical_report_sha256": "e14aef7350b2e957edb9d3aa4b6f83bcfe9051c17c0d544992c652a7e4d169ed",
+          "preprocessing": {
+            "trimesh_version": "5.2.1",
+            "input_faces": 8087,
+            "input_processed_vertices": 5517,
+            "cropped_faces": 8068,
+            "cropped_vertices": 5524,
+            "crop_bounds_raw": [
+              [
+                -1.8844000101089478,
+                -6.0,
+                -0.013334252871572971
+              ],
+              [
+                2.1979832649230957,
+                1.566604733467102,
+                1.6899999380111694
+              ]
+            ],
+            "border_vertex_count": 62,
+            "border_height_raw": 0.13514180794761088,
+            "border_fallback_used": false,
+            "border_z_range_raw": [
+              0.002699737307128007,
+              0.694706916809082
+            ],
+            "border_z_std_raw": 0.19273899276557915,
+            "terrain_function_shared_shift_raw": [
+              4.5,
+              6.0,
+              -0.13514180794761088
+            ]
+          },
+          "surface_faces": 8068,
+          "lateral_faces": 2958,
+          "watertight": false,
+          "triangles_float64_sha256": "ca3c6b5cbdddfd53aabde3fc240908748d39c46067af14586c06ef72693001e4",
+          "terrain_function_transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              4.5
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              6.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -0.13514180794761088
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "single_tile_final_transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -0.13514180794761088
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "single_tile_is_explicit_software_layout_not_observed_runtime": true,
+          "no_caps_added": true,
+          "no_extra_perimeter_walls_added": true,
+          "units_and_source_alignment_proven": false
+        },
+        "fixture_count": 24,
+        "query_count": 144,
+        "query_status_counts": {
+          "surface_distance_bracket_converged": 144
+        },
+        "total_triangle_queries": 603,
+        "exhausted_triangle_budgets": 0,
+        "independent_bracket_misses": 0,
+        "source_reference_max_centerline_error": 0.0,
+        "max_terrain_witness_membership_residual": 8.882868333007365e-16,
+        "common_translation_converged_groups": 48,
+        "max_common_translation_distance_spread": 2.3483083276213402e-15,
+        "detail": {
+          "file": "SOURCE_ACTUAL_TERRAIN_DETAIL_20261117.json",
+          "sha256": "5bb02fe5380c12d7a2424f1ff1b0e059c15437237ce99a30e6013750687bef64",
+          "bytes": 211485
+        },
+        "target_motion_or_pose_accepted": false,
+        "cooked_physics_validated": false,
+        "candidate_motion_generated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "supported_numeric_pools": [
+        {
+          "api": "openblas",
+          "threads": 2
+        },
+        {
+          "api": "openblas",
+          "threads": 2
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "wall_seconds": 3.301603935000003,
+      "child_reaped": true,
+      "status": "completed",
+      "iterations": 45,
+      "diagnostic": {
+        "mode": "target",
+        "terrain": {
+          "input_sha256": "3aee33efea6793974d901dd0f7e46859e2d12d2dfd79f38f12c777686566c2de",
+          "historical_report_sha256": "e14aef7350b2e957edb9d3aa4b6f83bcfe9051c17c0d544992c652a7e4d169ed",
+          "preprocessing": {
+            "trimesh_version": "5.2.1",
+            "input_faces": 8087,
+            "input_processed_vertices": 5517,
+            "cropped_faces": 8068,
+            "cropped_vertices": 5524,
+            "crop_bounds_raw": [
+              [
+                -1.8844000101089478,
+                -6.0,
+                -0.013334252871572971
+              ],
+              [
+                2.1979832649230957,
+                1.566604733467102,
+                1.6899999380111694
+              ]
+            ],
+            "border_vertex_count": 62,
+            "border_height_raw": 0.13514180794761088,
+            "border_fallback_used": false,
+            "border_z_range_raw": [
+              0.002699737307128007,
+              0.694706916809082
+            ],
+            "border_z_std_raw": 0.19273899276557915,
+            "terrain_function_shared_shift_raw": [
+              4.5,
+              6.0,
+              -0.13514180794761088
+            ]
+          },
+          "surface_faces": 8068,
+          "lateral_faces": 2958,
+          "watertight": false,
+          "triangles_float64_sha256": "ca3c6b5cbdddfd53aabde3fc240908748d39c46067af14586c06ef72693001e4",
+          "terrain_function_transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              4.5
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              6.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -0.13514180794761088
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "single_tile_final_transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -0.13514180794761088
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "single_tile_is_explicit_software_layout_not_observed_runtime": true,
+          "no_caps_added": true,
+          "no_extra_perimeter_walls_added": true,
+          "units_and_source_alignment_proven": false
+        },
+        "fixture_count": 43,
+        "query_count": 86,
+        "query_status_counts": {
+          "surface_distance_bracket_converged": 86
+        },
+        "total_triangle_queries": 771,
+        "exhausted_triangle_budgets": 0,
+        "independent_bracket_misses": 0,
+        "source_reference_max_centerline_error": 0.0,
+        "max_terrain_witness_membership_residual": 4.3819542125671615e-16,
+        "common_translation_converged_groups": 0,
+        "max_common_translation_distance_spread": null,
+        "detail": {
+          "file": "TARGET_ACTUAL_TERRAIN_DETAIL_20261117.json",
+          "sha256": "ddf730843f67830f72a0eb483d3612a9f04823de678be90ec24f7cd0369624e0",
+          "bytes": 123974
+        },
+        "target_motion_or_pose_accepted": false,
+        "cooked_physics_validated": false,
+        "candidate_motion_generated": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "supported_numeric_pools": [
+        {
+          "api": "openblas",
+          "threads": 2
+        },
+        {
+          "api": "openblas",
+          "threads": 2
+        }
+      ]
+    }
+  ],
+  "wall_seconds": 6.292464340999999,
+  "retries": 0,
+  "hard_parent_deadline": true,
+  "cleanup_grace_seconds_max": 0.7,
+  "iteration_limit_scope": "trusted_workers_calling_gate_each_iteration_only",
+  "thread_limit_scope": "supported_BLAS_OpenMP_pools_not_all_OS_threads_or_CPU_cores",
+  "gpu_submissions": 0,
+  "solver_calls": 0,
+  "candidate_motion_generated": false,
+  "accepted_reference": false,
+  "training_ready": false
+}

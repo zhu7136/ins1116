@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "stage": "bounded_cpu_diagnostic_supervision",
+  "status": "completed",
+  "budget": {
+    "window_seconds": 40,
+    "total_seconds": 45,
+    "iterations": 100,
+    "numeric_threads": 2,
+    "max_windows": 1
+  },
+  "windows": [
+    {
+      "index": 0,
+      "wall_seconds": 2.7368030520000275,
+      "child_reaped": true,
+      "status": "completed",
+      "iterations": 86,
+      "diagnostic": {
+        "stage": "independent_target_full_triangle_sphere_box_checks_NOT_acceptance",
+        "independent_global_queries": 34,
+        "sphere_queries": 28,
+        "box_queries": 6,
+        "all_target_witness_membership_checks": 86,
+        "maximum_distance_difference": 8.622496050492146e-10,
+        "max_target_membership_outside_residual": 8.326672684688674e-17,
+        "independent_cylinder_hand_global_distances_verified": false,
+        "limitations": [
+          "Cylinder and hand witnesses checked for membership only, not independently recomputed global distances",
+          "Pose is algebraic in-limit midpoint; not retargeted or accepted motion",
+          "Surface separation does not exclude terrain solid containment"
+        ],
+        "accepted_reference": false,
+        "training_ready": false,
+        "gpu_submissions": 0,
+        "solver_calls": 0,
+        "ppo_updates": 0,
+        "detail": {
+          "file": "INDEPENDENT_TARGET_TERRAIN_CHECK_20261117.json",
+          "sha256": "d42324024049fb323d419e6ab0164eac591e63b8f1e5eb8a9b73e8085b845df9",
+          "bytes": 25370
+        }
+      },
+      "supported_numeric_pools": [
+        {
+          "api": "openblas",
+          "threads": 2
+        },
+        {
+          "api": "openblas",
+          "threads": 2
+        }
+      ]
+    }
+  ],
+  "wall_seconds": 2.736883232000025,
+  "retries": 0,
+  "hard_parent_deadline": true,
+  "cleanup_grace_seconds_max": 0.7,
+  "iteration_limit_scope": "trusted_workers_calling_gate_each_iteration_only",
+  "thread_limit_scope": "supported_BLAS_OpenMP_pools_not_all_OS_threads_or_CPU_cores",
+  "gpu_submissions": 0,
+  "solver_calls": 0,
+  "candidate_motion_generated": false,
+  "accepted_reference": false,
+  "training_ready": false
+}

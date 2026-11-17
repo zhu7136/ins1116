@@ -1,0 +1,12 @@
+test_actual_input_inventory (test_binding.BindingTests.test_actual_input_inventory) ... ok
+test_capsule_rigid_support (test_binding.BindingTests.test_capsule_rigid_support) ... ok
+test_capsule_support_exact_128_directions (test_binding.BindingTests.test_capsule_support_exact_128_directions) ... ok
+test_fail_closed_subset_or_transform (test_binding.BindingTests.test_fail_closed_subset_or_transform) ... ok
+test_invalid_layout (test_binding.BindingTests.test_invalid_layout) ... ok
+test_layout_chain_36_tiles (test_binding.BindingTests.test_layout_chain_36_tiles) ... ok
+test_single_tile_not_function_shift (test_binding.BindingTests.test_single_tile_not_function_shift) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.916s
+
+OK

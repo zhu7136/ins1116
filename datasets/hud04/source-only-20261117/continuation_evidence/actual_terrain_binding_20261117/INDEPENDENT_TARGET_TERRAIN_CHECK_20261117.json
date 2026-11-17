@@ -1,0 +1,862 @@
+{
+  "stage": "independent_target_full_triangle_sphere_box_checks_NOT_acceptance",
+  "independent_global_queries": 34,
+  "sphere_queries": 28,
+  "box_queries": 6,
+  "checks": [
+    {
+      "shape": "left_hip_yaw_link#1",
+      "kind": "sphere",
+      "subset": "all",
+      "independent_distance": 0.2885257537335596,
+      "primary_lower": 0.2885257537334793,
+      "primary_upper": 0.28852575373367817,
+      "upper_error": 1.1857181902996672e-13,
+      "all_subset_triangles_evaluated": 8068,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "left_hip_yaw_link#1",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent_distance": 1.1290320530413775,
+      "primary_lower": 1.1290320530031923,
+      "primary_upper": 1.1290320539036272,
+      "upper_error": 8.622496050492146e-10,
+      "all_subset_triangles_evaluated": 2958,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "left_hip_yaw_link#2",
+      "kind": "sphere",
+      "subset": "all",
+      "independent_distance": 0.12548924556765934,
+      "primary_lower": 0.1254892455652374,
+      "primary_upper": 0.12548924556888472,
+      "upper_error": 1.225380907854401e-12,
+      "all_subset_triangles_evaluated": 8068,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "left_hip_yaw_link#2",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent_distance": 1.1812035776889795,
+      "primary_lower": 1.1812035776607663,
+      "primary_upper": 1.1812035783554948,
+      "upper_error": 6.665152874063551e-10,
+      "all_subset_triangles_evaluated": 2958,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "left_knee_link#1",
+      "kind": "sphere",
+      "subset": "all",
+      "independent_distance": 0.4457543425539442,
+      "primary_lower": 0.4457543423912616,
+      "primary_upper": 0.44575434257582836,
+      "upper_error": 2.1884161149898773e-11,
+      "all_subset_triangles_evaluated": 8068,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "left_knee_link#1",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent_distance": 1.1108654281966794,
+      "primary_lower": 1.1108654276425494,
+      "primary_upper": 1.1108654285355763,
+      "upper_error": 3.388969105344586e-10,
+      "all_subset_triangles_evaluated": 2958,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "left_knee_link#2",
+      "kind": "sphere",
+      "subset": "all",
+      "independent_distance": 0.39506727901383787,
+      "primary_lower": 0.39506727896554433,
+      "primary_upper": 0.39506727907869343,
+      "upper_error": 6.485556536262038e-11,
+      "all_subset_triangles_evaluated": 8068,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "left_knee_link#2",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent_distance": 1.1181994767668917,
+      "primary_lower": 1.118199476763117,
+      "primary_upper": 1.118199476887484,
+      "upper_error": 1.2059220289017958e-10,
+      "all_subset_triangles_evaluated": 2958,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "left_ankle_roll_link#0",
+      "kind": "box",
+      "subset": "all",
+      "independent_distance": 0.40676501350212074,
+      "primary_lower": 0.40676501350212074,
+      "primary_upper": 0.4067650135021209,
+      "upper_error": 1.6653345369377348e-16,
+      "all_subset_triangles_evaluated": 8068,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "left_ankle_roll_link#0",
+      "kind": "box",
+      "subset": "lateral",
+      "independent_distance": 1.0959579192299735,
+      "primary_lower": 1.0959579192299733,
+      "primary_upper": 1.0959579192299733,
+      "upper_error": 2.220446049250313e-16,
+      "all_subset_triangles_evaluated": 2958,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "right_hip_yaw_link#1",
+      "kind": "sphere",
+      "subset": "all",
+      "independent_distance": 0.28852561624860235,
+      "primary_lower": 0.2885256162439576,
+      "primary_upper": 0.28852561626067075,
+      "upper_error": 1.2068401833431608e-11,
+      "all_subset_triangles_evaluated": 8068,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "right_hip_yaw_link#1",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent_distance": 0.7861516819694945,
+      "primary_lower": 0.7861516819642307,
+      "primary_upper": 0.7861516819757702,
+      "upper_error": 6.275757691298622e-12,
+      "all_subset_triangles_evaluated": 2958,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "right_hip_yaw_link#2",
+      "kind": "sphere",
+      "subset": "all",
+      "independent_distance": 0.12548922864797468,
+      "primary_lower": 0.12548922862390335,
+      "primary_upper": 0.1254892286623376,
+      "upper_error": 1.4362927514000035e-11,
+      "all_subset_triangles_evaluated": 8068,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "right_hip_yaw_link#2",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent_distance": 0.8424815432301447,
+      "primary_lower": 0.8424815432272406,
+      "primary_upper": 0.842481543233774,
+      "upper_error": 3.6293190674996367e-12,
+      "all_subset_triangles_evaluated": 2958,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "right_knee_link#1",
+      "kind": "sphere",
+      "subset": "all",
+      "independent_distance": 0.44575426590345446,
+      "primary_lower": 0.4457542659008175,
+      "primary_upper": 0.4457542659116084,
+      "upper_error": 8.153921982057e-12,
+      "all_subset_triangles_evaluated": 8068,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "right_knee_link#1",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent_distance": 0.7923806627274826,
+      "primary_lower": 0.7923806627138806,
+      "primary_upper": 0.7923806627336232,
+      "upper_error": 6.140532526899278e-12,
+      "all_subset_triangles_evaluated": 2958,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "right_knee_link#2",
+      "kind": "sphere",
+      "subset": "all",
+      "independent_distance": 0.3950670690042605,
+      "primary_lower": 0.39506706900357713,
+      "primary_upper": 0.39506706900538674,
+      "upper_error": 1.12626574733099e-12,
+      "all_subset_triangles_evaluated": 8068,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "right_knee_link#2",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent_distance": 0.7932671103448251,
+      "primary_lower": 0.7932671102943356,
+      "primary_upper": 0.7932671103493822,
+      "upper_error": 4.55713244917888e-12,
+      "all_subset_triangles_evaluated": 2958,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "right_ankle_roll_link#0",
+      "kind": "box",
+      "subset": "all",
+      "independent_distance": 0.4067652572027136,
+      "primary_lower": 0.40676525720271356,
+      "primary_upper": 0.4067652572027136,
+      "upper_error": 0.0,
+      "all_subset_triangles_evaluated": 8068,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "right_ankle_roll_link#0",
+      "kind": "box",
+      "subset": "lateral",
+      "independent_distance": 0.7775362681503206,
+      "primary_lower": 0.7775362681503205,
+      "primary_upper": 0.7775362681503205,
+      "upper_error": 1.1102230246251565e-16,
+      "all_subset_triangles_evaluated": 2958,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "waist_pitch_link#1",
+      "kind": "sphere",
+      "subset": "all",
+      "independent_distance": 0.3040536839538205,
+      "primary_lower": 0.30405368395358723,
+      "primary_upper": 0.3040536839538745,
+      "upper_error": 5.4012350148013866e-14,
+      "all_subset_triangles_evaluated": 8068,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "waist_pitch_link#1",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent_distance": 1.0113636201484149,
+      "primary_lower": 1.0113636200328167,
+      "primary_upper": 1.0113636202307041,
+      "upper_error": 8.228928649600675e-11,
+      "all_subset_triangles_evaluated": 2958,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "waist_pitch_link#2",
+      "kind": "sphere",
+      "subset": "all",
+      "independent_distance": 0.304140539858398,
+      "primary_lower": 0.30414053982890343,
+      "primary_upper": 0.3041405399410433,
+      "upper_error": 8.264527950885281e-11,
+      "all_subset_triangles_evaluated": 8068,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "waist_pitch_link#2",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent_distance": 0.9013821419332578,
+      "primary_lower": 0.9013821416446062,
+      "primary_upper": 0.9013821421467136,
+      "upper_error": 2.1345580858422863e-10,
+      "all_subset_triangles_evaluated": 2958,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "waist_pitch_link#4",
+      "kind": "sphere",
+      "subset": "all",
+      "independent_distance": 0.17195130800089953,
+      "primary_lower": 0.17195130798650246,
+      "primary_upper": 0.17195130823155308,
+      "upper_error": 2.3065355181373093e-10,
+      "all_subset_triangles_evaluated": 8068,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "waist_pitch_link#4",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent_distance": 1.067481054386583,
+      "primary_lower": 1.0674810543856448,
+      "primary_upper": 1.0674810543868891,
+      "upper_error": 3.0619951019161817e-13,
+      "all_subset_triangles_evaluated": 2958,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "waist_pitch_link#5",
+      "kind": "sphere",
+      "subset": "all",
+      "independent_distance": 0.17204605989680227,
+      "primary_lower": 0.1720460598803019,
+      "primary_upper": 0.1720460601455427,
+      "upper_error": 2.487404171525043e-10,
+      "all_subset_triangles_evaluated": 8068,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "waist_pitch_link#5",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent_distance": 0.9475021393716039,
+      "primary_lower": 0.9475021393695733,
+      "primary_upper": 0.9475021393722873,
+      "upper_error": 6.834532939592464e-13,
+      "all_subset_triangles_evaluated": 2958,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "waist_pitch_link#7",
+      "kind": "sphere",
+      "subset": "all",
+      "independent_distance": 0.21934177137456287,
+      "primary_lower": 0.21934177137429806,
+      "primary_upper": 0.21934177137578004,
+      "upper_error": 1.2171652574721747e-12,
+      "all_subset_triangles_evaluated": 8068,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "waist_pitch_link#7",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent_distance": 1.085604314348208,
+      "primary_lower": 1.0856043142399296,
+      "primary_upper": 1.0856043143510319,
+      "upper_error": 2.823963285436548e-12,
+      "all_subset_triangles_evaluated": 2958,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "waist_pitch_link#8",
+      "kind": "sphere",
+      "subset": "all",
+      "independent_distance": 0.2194207312878152,
+      "primary_lower": 0.21942073122643926,
+      "primary_upper": 0.21942073129204276,
+      "upper_error": 4.227562744318902e-12,
+      "all_subset_triangles_evaluated": 8068,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "waist_pitch_link#8",
+      "kind": "sphere",
+      "subset": "lateral",
+      "independent_distance": 0.9856229021133318,
+      "primary_lower": 0.9856229019813608,
+      "primary_upper": 0.9856229021164609,
+      "upper_error": 3.129052572603541e-12,
+      "all_subset_triangles_evaluated": 2958,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "head_pitch_link#0",
+      "kind": "box",
+      "subset": "all",
+      "independent_distance": 0.6018232762579777,
+      "primary_lower": 0.6018232762579776,
+      "primary_upper": 0.6018232762579776,
+      "upper_error": 1.1102230246251565e-16,
+      "all_subset_triangles_evaluated": 8068,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    },
+    {
+      "shape": "head_pitch_link#0",
+      "kind": "box",
+      "subset": "lateral",
+      "independent_distance": 0.9960927886829275,
+      "primary_lower": 0.9960927886829273,
+      "primary_upper": 0.9960927886829274,
+      "upper_error": 1.1102230246251565e-16,
+      "all_subset_triangles_evaluated": 2958,
+      "gjk_called": false,
+      "aabb_candidates_used": false
+    }
+  ],
+  "all_target_witness_membership_checks": 86,
+  "witness_checks": [
+    {
+      "shape": "base_link#0",
+      "subset": "all",
+      "local_membership_residual": 0.0
+    },
+    {
+      "shape": "base_link#0",
+      "subset": "lateral",
+      "local_membership_residual": -2.0378143616994748e-13
+    },
+    {
+      "shape": "base_link#1",
+      "subset": "all",
+      "local_membership_residual": -0.015174448759379006
+    },
+    {
+      "shape": "base_link#1",
+      "subset": "lateral",
+      "local_membership_residual": 0.0
+    },
+    {
+      "shape": "base_link#2",
+      "subset": "all",
+      "local_membership_residual": -0.011006436048716147
+    },
+    {
+      "shape": "base_link#2",
+      "subset": "lateral",
+      "local_membership_residual": 1.0408340855860843e-17
+    },
+    {
+      "shape": "left_hip_pitch_link#0",
+      "subset": "all",
+      "local_membership_residual": -1.3877787807814457e-17
+    },
+    {
+      "shape": "left_hip_pitch_link#0",
+      "subset": "lateral",
+      "local_membership_residual": 1.3877787807814457e-17
+    },
+    {
+      "shape": "left_hip_yaw_link#0",
+      "subset": "all",
+      "local_membership_residual": 4.163336342344337e-17
+    },
+    {
+      "shape": "left_hip_yaw_link#0",
+      "subset": "lateral",
+      "local_membership_residual": 1.3877787807814457e-17
+    },
+    {
+      "shape": "left_hip_yaw_link#1",
+      "subset": "all",
+      "local_membership_residual": -4.651140583789015e-14
+    },
+    {
+      "shape": "left_hip_yaw_link#1",
+      "subset": "lateral",
+      "local_membership_residual": -2.7755575615628914e-17
+    },
+    {
+      "shape": "left_hip_yaw_link#2",
+      "subset": "all",
+      "local_membership_residual": -8.135297990818913e-13
+    },
+    {
+      "shape": "left_hip_yaw_link#2",
+      "subset": "lateral",
+      "local_membership_residual": 6.938893903907228e-18
+    },
+    {
+      "shape": "left_knee_link#0",
+      "subset": "all",
+      "local_membership_residual": -2.7755575615628914e-17
+    },
+    {
+      "shape": "left_knee_link#0",
+      "subset": "lateral",
+      "local_membership_residual": -5.534799008000135e-11
+    },
+    {
+      "shape": "left_knee_link#1",
+      "subset": "all",
+      "local_membership_residual": -1.9405928253224403e-11
+    },
+    {
+      "shape": "left_knee_link#1",
+      "subset": "lateral",
+      "local_membership_residual": -2.1037209474439322e-10
+    },
+    {
+      "shape": "left_knee_link#2",
+      "subset": "all",
+      "local_membership_residual": -2.7735799768002778e-11
+    },
+    {
+      "shape": "left_knee_link#2",
+      "subset": "lateral",
+      "local_membership_residual": -6.938893903907228e-18
+    },
+    {
+      "shape": "left_ankle_roll_link#0",
+      "subset": "all",
+      "local_membership_residual": 0.0
+    },
+    {
+      "shape": "left_ankle_roll_link#0",
+      "subset": "lateral",
+      "local_membership_residual": 6.938893903907228e-18
+    },
+    {
+      "shape": "right_hip_pitch_link#0",
+      "subset": "all",
+      "local_membership_residual": -6.938893903907228e-18
+    },
+    {
+      "shape": "right_hip_pitch_link#0",
+      "subset": "lateral",
+      "local_membership_residual": -4.770239758755679e-12
+    },
+    {
+      "shape": "right_hip_yaw_link#0",
+      "subset": "all",
+      "local_membership_residual": 0.0
+    },
+    {
+      "shape": "right_hip_yaw_link#0",
+      "subset": "lateral",
+      "local_membership_residual": 1.3877787807814457e-17
+    },
+    {
+      "shape": "right_hip_yaw_link#1",
+      "subset": "all",
+      "local_membership_residual": -5.170329442361066e-12
+    },
+    {
+      "shape": "right_hip_yaw_link#1",
+      "subset": "lateral",
+      "local_membership_residual": 2.0816681711721685e-17
+    },
+    {
+      "shape": "right_hip_yaw_link#2",
+      "subset": "all",
+      "local_membership_residual": -9.836666203799638e-12
+    },
+    {
+      "shape": "right_hip_yaw_link#2",
+      "subset": "lateral",
+      "local_membership_residual": 6.938893903907228e-18
+    },
+    {
+      "shape": "right_knee_link#0",
+      "subset": "all",
+      "local_membership_residual": -2.7755575615628914e-17
+    },
+    {
+      "shape": "right_knee_link#0",
+      "subset": "lateral",
+      "local_membership_residual": -6.938893903907228e-18
+    },
+    {
+      "shape": "right_knee_link#1",
+      "subset": "all",
+      "local_membership_residual": -1.9914070392701433e-12
+    },
+    {
+      "shape": "right_knee_link#1",
+      "subset": "lateral",
+      "local_membership_residual": 1.3877787807814457e-17
+    },
+    {
+      "shape": "right_knee_link#2",
+      "subset": "all",
+      "local_membership_residual": -4.594866154228328e-13
+    },
+    {
+      "shape": "right_knee_link#2",
+      "subset": "lateral",
+      "local_membership_residual": -4.125047525782577e-12
+    },
+    {
+      "shape": "right_ankle_roll_link#0",
+      "subset": "all",
+      "local_membership_residual": 2.7755575615628914e-17
+    },
+    {
+      "shape": "right_ankle_roll_link#0",
+      "subset": "lateral",
+      "local_membership_residual": 3.469446951953614e-18
+    },
+    {
+      "shape": "waist_pitch_link#0",
+      "subset": "all",
+      "local_membership_residual": 0.0
+    },
+    {
+      "shape": "waist_pitch_link#0",
+      "subset": "lateral",
+      "local_membership_residual": 6.938893903907228e-18
+    },
+    {
+      "shape": "waist_pitch_link#1",
+      "subset": "all",
+      "local_membership_residual": -4.403422071419527e-14
+    },
+    {
+      "shape": "waist_pitch_link#1",
+      "subset": "lateral",
+      "local_membership_residual": -4.56656240599429e-11
+    },
+    {
+      "shape": "waist_pitch_link#2",
+      "subset": "all",
+      "local_membership_residual": -2.1738527644643568e-11
+    },
+    {
+      "shape": "waist_pitch_link#2",
+      "subset": "lateral",
+      "local_membership_residual": -1.1544772082761057e-10
+    },
+    {
+      "shape": "waist_pitch_link#3",
+      "subset": "all",
+      "local_membership_residual": -6.938893903907228e-18
+    },
+    {
+      "shape": "waist_pitch_link#3",
+      "subset": "lateral",
+      "local_membership_residual": 0.0
+    },
+    {
+      "shape": "waist_pitch_link#4",
+      "subset": "all",
+      "local_membership_residual": -2.1838454655753736e-11
+    },
+    {
+      "shape": "waist_pitch_link#4",
+      "subset": "lateral",
+      "local_membership_residual": -2.521663433618926e-13
+    },
+    {
+      "shape": "waist_pitch_link#5",
+      "subset": "all",
+      "local_membership_residual": -2.0942865497364238e-11
+    },
+    {
+      "shape": "waist_pitch_link#5",
+      "subset": "lateral",
+      "local_membership_residual": -5.566450078653418e-13
+    },
+    {
+      "shape": "waist_pitch_link#6",
+      "subset": "all",
+      "local_membership_residual": 0.0
+    },
+    {
+      "shape": "waist_pitch_link#6",
+      "subset": "lateral",
+      "local_membership_residual": 1.3877787807814457e-17
+    },
+    {
+      "shape": "waist_pitch_link#7",
+      "subset": "all",
+      "local_membership_residual": -2.5308227735720834e-13
+    },
+    {
+      "shape": "waist_pitch_link#7",
+      "subset": "lateral",
+      "local_membership_residual": -2.7531726898288866e-12
+    },
+    {
+      "shape": "waist_pitch_link#8",
+      "subset": "all",
+      "local_membership_residual": -2.6001700792477322e-12
+    },
+    {
+      "shape": "waist_pitch_link#8",
+      "subset": "lateral",
+      "local_membership_residual": -3.057627068203672e-12
+    },
+    {
+      "shape": "left_shoulder_roll_link#0",
+      "subset": "all",
+      "local_membership_residual": 0.0
+    },
+    {
+      "shape": "left_shoulder_roll_link#0",
+      "subset": "lateral",
+      "local_membership_residual": 1.3877787807814457e-17
+    },
+    {
+      "shape": "left_shoulder_roll_link#1",
+      "subset": "all",
+      "local_membership_residual": -3.469446951953614e-17
+    },
+    {
+      "shape": "left_shoulder_roll_link#1",
+      "subset": "lateral",
+      "local_membership_residual": 6.938893903907228e-18
+    },
+    {
+      "shape": "left_elbow_link#0",
+      "subset": "all",
+      "local_membership_residual": 0.0
+    },
+    {
+      "shape": "left_elbow_link#0",
+      "subset": "lateral",
+      "local_membership_residual": -5.412337245047638e-16
+    },
+    {
+      "shape": "left_elbow_link#1",
+      "subset": "all",
+      "local_membership_residual": 1.734723475976807e-17
+    },
+    {
+      "shape": "left_elbow_link#1",
+      "subset": "lateral",
+      "local_membership_residual": 2.42861286636753e-17
+    },
+    {
+      "shape": "left_wrist_pitch_link#0",
+      "subset": "all",
+      "local_membership_residual": 6.938893903907228e-18
+    },
+    {
+      "shape": "left_wrist_pitch_link#0",
+      "subset": "lateral",
+      "local_membership_residual": -2.0816681711721685e-17
+    },
+    {
+      "shape": "left_wrist_pitch_link#1",
+      "subset": "all",
+      "local_membership_residual": 3.469446951953614e-17
+    },
+    {
+      "shape": "left_wrist_pitch_link#1",
+      "subset": "lateral",
+      "local_membership_residual": 1.3877787807814457e-17
+    },
+    {
+      "shape": "left_wrist_roll_link#0",
+      "subset": "all",
+      "local_membership_residual": 8.326672684688674e-17
+    },
+    {
+      "shape": "left_wrist_roll_link#0",
+      "subset": "lateral",
+      "local_membership_residual": -2.7755575615628914e-17
+    },
+    {
+      "shape": "right_shoulder_roll_link#0",
+      "subset": "all",
+      "local_membership_residual": 0.0
+    },
+    {
+      "shape": "right_shoulder_roll_link#0",
+      "subset": "lateral",
+      "local_membership_residual": -1.3877787807814457e-17
+    },
+    {
+      "shape": "right_shoulder_roll_link#1",
+      "subset": "all",
+      "local_membership_residual": -2.0816681711721685e-17
+    },
+    {
+      "shape": "right_shoulder_roll_link#1",
+      "subset": "lateral",
+      "local_membership_residual": -6.245004513516506e-17
+    },
+    {
+      "shape": "right_elbow_link#0",
+      "subset": "all",
+      "local_membership_residual": 2.7755575615628914e-17
+    },
+    {
+      "shape": "right_elbow_link#0",
+      "subset": "lateral",
+      "local_membership_residual": -6.938893903907228e-18
+    },
+    {
+      "shape": "right_elbow_link#1",
+      "subset": "all",
+      "local_membership_residual": 0.0
+    },
+    {
+      "shape": "right_elbow_link#1",
+      "subset": "lateral",
+      "local_membership_residual": 1.734723475976807e-17
+    },
+    {
+      "shape": "right_wrist_pitch_link#0",
+      "subset": "all",
+      "local_membership_residual": 0.0
+    },
+    {
+      "shape": "right_wrist_pitch_link#0",
+      "subset": "lateral",
+      "local_membership_residual": -2.0816681711721685e-17
+    },
+    {
+      "shape": "right_wrist_pitch_link#1",
+      "subset": "all",
+      "local_membership_residual": -2.0816681711721685e-17
+    },
+    {
+      "shape": "right_wrist_pitch_link#1",
+      "subset": "lateral",
+      "local_membership_residual": -1.3877787807814457e-17
+    },
+    {
+      "shape": "right_wrist_roll_link#0",
+      "subset": "all",
+      "local_membership_residual": -2.7755575615628914e-17
+    },
+    {
+      "shape": "right_wrist_roll_link#0",
+      "subset": "lateral",
+      "local_membership_residual": -2.7755575615628914e-17
+    },
+    {
+      "shape": "head_pitch_link#0",
+      "subset": "all",
+      "local_membership_residual": -1.3877787807814457e-17
+    },
+    {
+      "shape": "head_pitch_link#0",
+      "subset": "lateral",
+      "local_membership_residual": 6.938893903907228e-18
+    }
+  ],
+  "maximum_distance_difference": 8.622496050492146e-10,
+  "max_target_membership_outside_residual": 8.326672684688674e-17,
+  "independent_cylinder_hand_global_distances_verified": false,
+  "limitations": [
+    "Cylinder and hand witnesses checked for membership only, not independently recomputed global distances",
+    "Pose is algebraic in-limit midpoint; not retargeted or accepted motion",
+    "Surface separation does not exclude terrain solid containment"
+  ],
+  "accepted_reference": false,
+  "training_ready": false,
+  "gpu_submissions": 0,
+  "solver_calls": 0,
+  "ppo_updates": 0
+}

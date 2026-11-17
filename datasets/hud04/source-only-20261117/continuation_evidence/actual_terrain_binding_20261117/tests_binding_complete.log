@@ -1,0 +1,21 @@
+test_actual_input_inventory (test_binding.BindingTests.test_actual_input_inventory) ... ok
+test_capsule_rigid_support (test_binding.BindingTests.test_capsule_rigid_support) ... ok
+test_capsule_support_exact_128_directions (test_binding.BindingTests.test_capsule_support_exact_128_directions) ... ok
+test_fail_closed_subset_or_transform (test_binding.BindingTests.test_fail_closed_subset_or_transform) ... ok
+test_invalid_layout (test_binding.BindingTests.test_invalid_layout) ... ok
+test_layout_chain_36_tiles (test_binding.BindingTests.test_layout_chain_36_tiles) ... ok
+test_single_tile_not_function_shift (test_binding.BindingTests.test_single_tile_not_function_shift) ... ok
+test_box_plane (test_independent.IndependentTests.test_box_plane) ... ok
+test_crossing_without_inside_vertices (test_independent.IndependentTests.test_crossing_without_inside_vertices) ... ok
+test_cube_point_distances_96 (test_independent.IndependentTests.test_cube_point_distances_96) ... ok
+test_sphere_planes (test_independent.IndependentTests.test_sphere_planes) ... ok
+test_triangle_contained (test_independent.IndependentTests.test_triangle_contained) ... ok
+test_caps_and_sides (test_cylinder.CylinderTests.test_caps_and_sides) ... ok
+test_contained_triangle (test_cylinder.CylinderTests.test_contained_triangle) ... ok
+test_point_cases_64 (test_cylinder.CylinderTests.test_point_cases_64) ... ok
+test_refinement_local_bound_not_global_bound_regression (test_cylinder.CylinderTests.test_refinement_local_bound_not_global_bound_regression) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.928s
+
+OK
