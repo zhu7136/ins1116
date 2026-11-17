@@ -272,3 +272,57 @@ python -B retarget_dry_run.py \
 报告中的 93 帧、每窗口 90 秒、总计 600 秒、零重试等值只是求解预算记录，
 本入口不运行求解，也不能用这些字段冒充已实现的进程资源控制。
 短时 GPU 许可不能替代上述技术前提，更不能被解释为长训练或无限重试预算。
+
+## 实际上游任务模型与接触几何补核（2026-11-17，纯 CPU）
+
+**重要区分：上一节的 simplified URDF 是条件诊断候选，不是已证明的 NPZ 导出模型，
+也不是固定上游 G1 感知任务实际配置的模型。不要把上一节足盒间隙当作本任务接触结果。**
+
+本次沿实际配置路径核实：`G1_CFG = G1_29DOF_TORSOBASE_POPSICLE_CFG`，
+`robot_model_path = G1_CFG.spawn.asset_path`；物理资产和参考 FK 都使用
+`g1_29dof_torsobase_popsicle.urdf`，SHA256 为
+`5e99d930af64f3f0bfd34235239e288cc380ba62c8b01fcfcf8cc9f0996e7fa4`。
+该 URDF 根是 `torso_link`；NPZ 加载器直接使用四元数字段，按 IsaacLab 的 `wxyz`
+约定处理。**这些是已核实的运行时解释，不足以证明所提供 NPZ 当初按此约定导出。**
+
+新增 `audit_source_contact_model.py` 与 `contact_geometry.py`：
+
+- 在全部 997 帧比较实际任务模型与早先候选的 35 个共有连杆：同名连杆原点
+  最大相差 **19 mm**，足/膝原点最大相差约 **12.05 mm**，腕原点相差 **10 mm**。
+- 实际 G1 每只脚有 **7 个圆柱碰撞体**，且资产配置开启圆柱转胶囊；HUD04 则明确关闭
+  此转换。已核实 Isaac Sim 5.1.0 固定提交
+  `47d886f2858d1ceed556b21c88927aa67bc81c12` 的 `UrdfImporter.cpp`：
+  胶囊保留圆柱的轴段长度，再加半球端帽，不能按原始圆柱包围盒计算轴向端点。
+- G1 的手部胶囊中心在 wrist-yaw 连杆局部 `[0.075, 0, 0]`；HUD04 的实际手网格在
+  yaw→pitch→roll 链的末端 wrist-roll 连杆。不能把同名 wrist-yaw 原点直接对齐为掌心。
+  新工具读取并固定两侧手网格哈希，支持盒、球、圆柱、胶囊及网格顶点的方向支撑点。
+- HUD04 足盒局部边界是 `[-.107,-.047,-.0635]` 至 `[.143,.047,-.0435]`。
+  现有 `contact_foot_tip_L/R` 的 x=.154，比碰撞盒前缘多出 **11 mm**；三个现有足标记
+  z=-.0625，均比盒底高 **1 mm**。center 标记也比盒底几何中心向后 **18 mm**。
+  **这些标记没有被修改或自动接受为支撑目标**；它们可能服务于原始模型的不同用途。
+
+独立复核采用闭式投影包围盒、`struct` STL 解析和 SciPy 标量 FK：14 个几何连杆、
+两个源模型的全部 997 帧均交叉检查；包围盒最大误差 `4.67e-15`，FK 最大矩阵元素误差
+`1.12e-15`。合计 **113 项 CPU 软件测试通过**，本阶段新增 23 项。
+
+工具仍是只读 preflight；参数只接收本地固定哈希输入与一个不存在的 JSON 报告路径，
+没有求解/回放/训练模式。运行示例（沿用上文的本地输入变量）：
+
+```sh
+python -B -m unittest discover -p 'test_*.py'
+python -B audit_source_contact_model.py \
+  --task-urdf "$G1_POPSICLE_TASK_URDF" \
+  --earlier-urdf "$G1_CANDIDATE_URDF" \
+  --target-urdf "$HUMANOID_DESCRIPTION_DIR/HU_D04_description/urdf/HU_D04_01_fixed_head_body_collision.urdf" \
+  --motion "$MOTION_DIR/kneelClimbStep1-x-0.1-ziwen-retargeted.npz" \
+  --report "$NEW_SOURCE_CONTACT_MODEL_JSON"
+```
+
+`SOURCE_CONTACT_MODEL_REVIEW_20261117.json` 保存摘要与来源。几何方向支撑/包围盒不是
+物理接触标签、网格完整碰撞距离或校准后的掌心坐标；未验证 PhysX 烘焙结果、接触裕量
+或地形世界对齐。七个源数据文件、既有探针、HUD04 资产和 overlay 均未改动；
+本阶段 GPU/求解/PPO 全为 0，`accepted_reference=false`、`training_ready=false`。
+
+下一步按实际上游任务模型重建有明确假设标记的足/手/膝—地形关系，
+补齐导出/坐标证据后再决定接触约束与有界重定向；不自动选择 NPZ 来源解释，
+不启动已有 GPU 任务，也不把本 preflight 当作站立或攀爬成功证明。
