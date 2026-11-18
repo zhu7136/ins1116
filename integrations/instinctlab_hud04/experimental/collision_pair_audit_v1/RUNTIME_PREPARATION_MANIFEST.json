@@ -1,0 +1,76 @@
+{
+  "schema": "hud04.runtime_observation_preparation.v1",
+  "baseline_commit": "f9924ea919eeeabeb8ddca4e51d8463d0f2fb18c",
+  "preparation_only": true,
+  "source_files_sha256": {
+    "AUDIT.json": "7dcc546ac43bf3aeb1efd61c47d795ba157a216b5645cdb1451786bfb358d1cf",
+    "contact_report_1073.py": "7bcd43ade928db7437202b09f91e81354642257e5632be34f1174785d4492626",
+    "native_contact_observer.py": "bbdc0adb8a6322aaa853bc2b90f5ef37247f6296d3fe915f8d03f48a8a717453",
+    "NVIDIA1073_API_EVIDENCE.json": "405d4da9cda54bf5e259be84bdc1f9b7ed00810801456dc7180ffa4ecbb99e89"
+  },
+  "verified_historical_input_files_sha256": {
+    "flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/urdf/HU_D04_01_fixed_head_body_collision.urdf": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+    "integrations/instinctlab_hud04/experimental/pair_feasibility_obstruction_20261118/INVARIANT_WRIST_OBSTRUCTION.json": "21806d623de424d88c3a21f90082c2467ea9d92b3cd26cb53692ae23b49e7efa",
+    "integrations/instinctlab_hud04/experimental/pair_feasibility_obstruction_20261118/BOUND_PAIR_POLICY_EVIDENCE.json": "bafc7870e6e659d40a3b1e60d56fa5626ceb49e5e02c1043ab69f6db65a054fb",
+    "integrations/instinctlab_hud04/experimental/import_observation_20261117/recovered_failure_evidence_20261117/post_import.json": "41c5826335c5ff3ec0decb382bac0de399d97cf96a90dad570ff1547a2f96082",
+    "integrations/instinctlab_hud04/experimental/import_observation_20261117/recovered_failure_evidence_20261117/post_clone.json": "12c7e7f9e91d367abba3d8fc78b15266029d8e6555f52cfd2a445848a303289a",
+    "integrations/instinctlab_hud04/experimental/import_observation_20261117/recovered_failure_evidence_20261117/post_physics_init.json": "b6c078d5c04cb348b371d3cb3150b96cfb301478b31bc41746b982b363c7732b",
+    "integrations/instinctlab_hud04/experimental/physx_detached_wrist_v2_20261118/measured_task138/INDEPENDENT_MEASURED_REVIEW.json": "3ede56d7aeed457a6fc7007e04fe0c56d97dc25185bb78e8b05c434bf8fb8b19",
+    "integrations/instinctlab_hud04/experimental/physx_detached_wrist_v2_20261118/measured_task138/contact_report.json": "8ea43578e2f16930efb7115d66059b61095d4ae302c948feece369dc136e0cea",
+    "integrations/instinctlab_hud04/experimental/physx_detached_wrist_v2_20261118/measured_task138/supervisor_result.json": "495258a0611b05beb803484b9fa06dc6e3fdf90d29d5d8fc4596be547fce9b63",
+    "integrations/instinctlab_hud04/experimental/material_trajectory_v1/TRIAL_MATERIAL_003_FULL_SEQUENCE/INDEPENDENT_VERIFICATION.json": "f47e329d3de7113b1103262ccc8b922bdfecc8c507a7194f754144693b65f83a",
+    "integrations/instinctlab_hud04/experimental/material_trajectory_v1/TRIAL_MATERIAL_003_FULL_SEQUENCE/FULL997_ENGINEERING_CANDIDATE_UNACCEPTED.npz": "2b4070e32e3a5f120caea7942b42e91a6f31bbca9e0b6d7e8e135b50803ad2f4",
+    "integrations/instinctlab_hud04/experimental/material_trajectory_v1/TRIAL_MATERIAL_003_FULL_SEQUENCE/STEP1_READER_LAYOUT_UNACCEPTED.npz": "851f88daf394fe38144b40379219aba61375e8ccbab05b6309f4df3f4764a32e",
+    "integrations/instinctlab_hud04/experimental/material_trajectory_v1/TRIAL_MATERIAL_003_FULL_SEQUENCE/RESULT.json": "d6923575d16def65e2380299aaebdfbafed1788e6c6e6b5109509682fcbecc73",
+    "integrations/instinctlab_hud04/experimental/material_trajectory_v1/TRIAL_MATERIAL_003_FULL_SEQUENCE/INTENT.json": "8cc1fad38300db44b0056b824c62b50c7de377962a0ca7736186dbe136097b4d",
+    "flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/urdf/../meshes/HU_D04_01/left_wrist_roll_link.STL": "5aa0af4ccdaf46d498267b0fae247b8d547d8d72dd8db4f7691fe42b567eb5d6",
+    "flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/urdf/../meshes/HU_D04_01/right_wrist_roll_link.STL": "e4804755e9991f05ad5389340e1e83ee1ef687a403896c21c0f785c28ff871fc",
+    "flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/meshes/HU_D04_01/left_wrist_pitch_link.STL": "76b99c5f53059abb1d07b77e3e076f200bfc1f91f1cf54f9258bb63785d74c7c",
+    "flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/meshes/HU_D04_01/left_wrist_roll_link.STL": "5aa0af4ccdaf46d498267b0fae247b8d547d8d72dd8db4f7691fe42b567eb5d6",
+    "flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/meshes/HU_D04_01/right_wrist_pitch_link.STL": "3c87d40c9f28e287328333b3342ea6292bbd20447b149a1986393789bd7e8b92",
+    "flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/meshes/HU_D04_01/right_wrist_roll_link.STL": "e4804755e9991f05ad5389340e1e83ee1ef687a403896c21c0f785c28ff871fc"
+  },
+  "historical_image": {
+    "image_id": "BJX00000178",
+    "image_version": "V000446",
+    "evidence_path": "integrations/instinctlab_hud04/experimental/physx_detached_wrist_v2_20261118/measured_task138/TASK133_DUPLICATE_REVIEW.json",
+    "evidence_sha256": "f5f3c63257c2cc9973123301ff09b74aec762a459abce32511359c8dd53a3c6a",
+    "immutable_image_digest": null,
+    "current_runtime_identity_verified": false
+  },
+  "original_generated_usd_bytes_sha256": null,
+  "original_generated_usd_status": "NOT_RETAINED; JSON snapshots are NOT USD file hashes",
+  "exact_expected_pairs": [
+    {
+      "key": "left_wrist_roll_joint",
+      "actor0": "/World/envs/env_0/Robot/left_wrist_pitch_link",
+      "actor1": "/World/envs/env_0/Robot/left_wrist_roll_link",
+      "collider0": "/World/envs/env_0/Robot/left_wrist_pitch_link/collisions/official_left_wrist_pitch_link_2/cylinder",
+      "collider1": "/World/envs/env_0/Robot/left_wrist_roll_link/collisions/official_left_wrist_roll_link_1/node_STL_BINARY_"
+    },
+    {
+      "key": "right_wrist_roll_joint",
+      "actor0": "/World/envs/env_0/Robot/right_wrist_pitch_link",
+      "actor1": "/World/envs/env_0/Robot/right_wrist_roll_link",
+      "collider0": "/World/envs/env_0/Robot/right_wrist_pitch_link/collisions/official_right_wrist_pitch_link_2/cylinder",
+      "collider1": "/World/envs/env_0/Robot/right_wrist_roll_link/collisions/official_right_wrist_roll_link_1/node_STL_BINARY_"
+    }
+  ],
+  "current_runtime_config_snapshot": null,
+  "existing_authorized_runtime_verified": false,
+  "execution_status": "WAITING_RUNTIME_IDENTITY_AND_AUTHORIZATION",
+  "can_start_new_process": false,
+  "can_submit_gpu": false,
+  "planned_limits": {
+    "host_steps": 8,
+    "wall_seconds": 30,
+    "events": 256,
+    "points": 4096
+  },
+  "frozen_candidate_sha256": "2b4070e32e3a5f120caea7942b42e91a6f31bbca9e0b6d7e8e135b50803ad2f4",
+  "gpu_tasks_submitted": 0,
+  "physics_steps_executed": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false,
+  "training_ready": false
+}
