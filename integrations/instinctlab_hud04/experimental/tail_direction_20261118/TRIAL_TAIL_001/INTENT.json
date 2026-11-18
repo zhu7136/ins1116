@@ -1,0 +1,11 @@
+{
+  "source_parent_commit": "30510780e7853ff657d011b4b288b34c9aede61b",
+  "goal": "reduce remaining997frame angular tails without joint/velocity relaxation",
+  "max_lp_calls": 144,
+  "algorithm_seconds": 90,
+  "child_seconds": 110,
+  "automatic_retries": 0,
+  "gpu_submissions": 0,
+  "root_motion_or_contact_generation": false,
+  "accepted_reference": false
+}
