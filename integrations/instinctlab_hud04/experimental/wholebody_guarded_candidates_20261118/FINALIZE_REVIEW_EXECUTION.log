@@ -1,0 +1,21 @@
+{
+  "new_lp_calls": 300,
+  "local_updates": 230,
+  "trials": 3,
+  "strict008": {
+    "left": {
+      "reject": false,
+      "new_hit_pose_indices": [],
+      "worsened_pose_indices": [],
+      "scope": "nominal_box_triangle_endpoint_guard_only_NOT_full_collision_or_motion_acceptance"
+    },
+    "right": {
+      "reject": false,
+      "new_hit_pose_indices": [],
+      "worsened_pose_indices": [],
+      "scope": "nominal_box_triangle_endpoint_guard_only_NOT_full_collision_or_motion_acceptance"
+    }
+  },
+  "accepted_reference": false,
+  "training_ready": false
+}

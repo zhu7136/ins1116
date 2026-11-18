@@ -1,0 +1,17 @@
+{
+  "verifier_path": "/workspace/hud04-world-candidate-20261118/verify_world_candidate.py",
+  "verifier_sha256": "859681abba0538742b54ade92d813157815f93e7e2289391090555ec532f8a81",
+  "aliases": {
+    "WORLD_CANDIDATE_RESULT.json": {
+      "source": "RESULT.json",
+      "sha256": "bbf13ef217073e56c7d78e308da320f725f7d80e0b670ae04d28520d703a348a",
+      "reason": "Identical-byte filename adapter for unchanged prior independent verification function"
+    },
+    "CORRESPONDENCE_PROPOSAL_NOT_ACCEPTED.json": {
+      "source": "CORRESPONDENCE_NOT_ACCEPTED.json",
+      "sha256": "15a5b992c8e52d43f9bb2037842ac8baf709b762947fa0bdf45ce2f96d7abd27",
+      "reason": "Identical-byte filename adapter for unchanged prior independent verification function"
+    }
+  },
+  "artifact_sha256": "ac20ec8ff3406c00d3762f4ffeeee5014ca28023850d6bf2f6f33df8ec8563fd"
+}

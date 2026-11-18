@@ -1,0 +1,242 @@
+{
+  "role": "EXPLICIT_UNACCEPTED_model_zero_coordinate_kinematic_correspondence",
+  "source_contract": "CONDITIONED_on_official_consumer_torso_link_wxyz_unchanged_raw_units",
+  "source_target_orientation_offsets": [
+    [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        0.9999999801369396,
+        -0.00019158999853865027,
+        -5.49489999723479e-05
+      ],
+      [
+        0.0001915932954229668,
+        0.9999999798460042,
+        5.999999987338353e-05
+      ],
+      [
+        5.4937503465017926e-05,
+        -6.001052654159311e-05,
+        0.9999999966903035
+      ]
+    ],
+    [
+      [
+        0.9999999999999999,
+        0.0,
+        -1.0167239606370283e-17
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        -1.0167239606370283e-17,
+        0.0,
+        0.9999999999999998
+      ]
+    ],
+    [
+      [
+        0.9999999801369396,
+        0.00019158999853865027,
+        -5.49489999723479e-05
+      ],
+      [
+        -0.0001915932954229668,
+        0.9999999798460042,
+        -5.999999987338353e-05
+      ],
+      [
+        5.4937503465017926e-05,
+        6.001052654159311e-05,
+        0.9999999966903035
+      ]
+    ],
+    [
+      [
+        0.9999999999999999,
+        0.0,
+        -1.0167239606370283e-17
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        -1.0167239606370283e-17,
+        0.0,
+        0.9999999999999998
+      ]
+    ]
+  ],
+  "source_orientation_links": [
+    "torso_link",
+    "left_wrist_yaw_link",
+    "left_ankle_roll_link",
+    "right_wrist_yaw_link",
+    "right_ankle_roll_link"
+  ],
+  "target_orientation_links": [
+    "waist_pitch_link",
+    "left_wrist_roll_link",
+    "left_ankle_roll_link",
+    "right_wrist_roll_link",
+    "right_ankle_roll_link"
+  ],
+  "source_positions": [
+    {
+      "label": "torso_link_pivot",
+      "link": "torso_link",
+      "local_point": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "left_distal_wrist_pivot",
+      "link": "left_wrist_yaw_link",
+      "local_point": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "left_knee_pivot",
+      "link": "left_knee_link",
+      "local_point": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "left_nominal_sole_bounds_center",
+      "link": "left_ankle_roll_link",
+      "local_point": [
+        0.03900000000000001,
+        0.0,
+        -0.03500034160807462
+      ]
+    },
+    {
+      "label": "right_distal_wrist_pivot",
+      "link": "right_wrist_yaw_link",
+      "local_point": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "right_knee_pivot",
+      "link": "right_knee_link",
+      "local_point": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "right_nominal_sole_bounds_center",
+      "link": "right_ankle_roll_link",
+      "local_point": [
+        0.03900000000000001,
+        0.0,
+        -0.03500034160807462
+      ]
+    }
+  ],
+  "target_positions": [
+    {
+      "label": "torso_link_pivot",
+      "link": "waist_pitch_link",
+      "local_point": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "left_distal_wrist_pivot",
+      "link": "left_wrist_roll_link",
+      "local_point": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "left_knee_pivot",
+      "link": "left_knee_link",
+      "local_point": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "left_nominal_sole_bounds_center",
+      "link": "left_ankle_roll_link",
+      "local_point": [
+        0.017999999999999995,
+        0.0,
+        -0.0635
+      ]
+    },
+    {
+      "label": "right_distal_wrist_pivot",
+      "link": "right_wrist_roll_link",
+      "local_point": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "right_knee_pivot",
+      "link": "right_knee_link",
+      "local_point": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "right_nominal_sole_bounds_center",
+      "link": "right_ankle_roll_link",
+      "local_point": [
+        0.017999999999999995,
+        0.0,
+        -0.0635
+      ]
+    }
+  ],
+  "position_correspondences_are_soft": true,
+  "source_root_copied": false,
+  "zero_offset_is_not_anatomical_palm_calibration": true,
+  "source_units_exporter_proven": false,
+  "contact_schedule_accepted": false,
+  "source_target_material_calibration_accepted": false,
+  "reference_acceptance_authorized_by_this_mapping": false
+}

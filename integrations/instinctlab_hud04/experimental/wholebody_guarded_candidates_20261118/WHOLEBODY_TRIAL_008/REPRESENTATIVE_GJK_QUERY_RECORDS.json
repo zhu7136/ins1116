@@ -1,0 +1,3782 @@
+[
+  {
+    "record": {
+      "frame": 0,
+      "kind": "terrain",
+      "first": 7,
+      "second": 5091,
+      "normal": [
+        -1.2596265257641877e-11,
+        -4.362549190507995e-08,
+        0.9999999999999991
+      ],
+      "first_local": [
+        0.033713562316282544,
+        0.012066068076800142,
+        -0.34258054771461866
+      ],
+      "second_local": [
+        1.0579867362976074,
+        0.8459422588348389,
+        0.0007000368786975741
+      ]
+    },
+    "sampled_projection_gap_raw": -0.006582934360047729,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.265541554116904e-16,
+    "first_witness": [
+      0.04010956153057602,
+      -0.06028303196793032,
+      0.0006999973313521957
+    ],
+    "second_witness": [
+      0.04010956153057606,
+      -0.06028303196793048,
+      0.0006999973313520352
+    ],
+    "iterations": 5,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 0,
+      "kind": "self",
+      "first": 0,
+      "second": 1,
+      "normal": [
+        -0.7228428595898212,
+        0.6856196275447276,
+        0.08616221135416093
+      ],
+      "first_local": [
+        -0.02785476694257748,
+        0.03428824859458401,
+        0.015000000000000078
+      ],
+      "second_local": [
+        -0.03968710737285513,
+        0.05022401860958721,
+        0.03490733084683268
+      ]
+    },
+    "sampled_projection_gap_raw": -0.0013287617876512354,
+    "status": "separated",
+    "converged": true,
+    "distance_lower_bound": 0.002611163127717737,
+    "distance_upper_bound": 0.0026111639192066293,
+    "first_witness": [
+      -0.024790476242393764,
+      -0.044390794689440655,
+      0.7956934128880495
+    ],
+    "second_witness": [
+      -0.02259824530671456,
+      -0.04577930607793365,
+      0.7959838206387084
+    ],
+    "iterations": 30,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 0,
+      "kind": "self",
+      "first": 33,
+      "second": 34,
+      "normal": [
+        0.12887881674340365,
+        -0.4715193769153442,
+        0.8723873725520023
+      ],
+      "first_local": [
+        -0.02997689701334375,
+        3.2072696323010905e-18,
+        -0.09402388060634526
+      ],
+      "second_local": [
+        -0.028311528265476213,
+        0.01613598130643368,
+        0.024191087111830687
+      ]
+    },
+    "sampled_projection_gap_raw": -0.05808998048364387,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 7.359808400080195e-18,
+    "first_witness": [
+      0.14793797087690527,
+      -0.044568295434396256,
+      0.7537963504342221
+    ],
+    "second_witness": [
+      0.14793797087690527,
+      -0.04456829543439626,
+      0.7537963504342221
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 24,
+      "kind": "terrain",
+      "first": 18,
+      "second": 815,
+      "normal": [
+        0.3456418961377025,
+        -0.2895812041383517,
+        0.8925661912957021
+      ],
+      "first_local": [
+        -0.10700000000000005,
+        -0.04699999999999998,
+        -0.0635
+      ],
+      "second_local": [
+        0.5896000266075134,
+        1.0490000247955322,
+        0.0007000458426773548
+      ]
+    },
+    "sampled_projection_gap_raw": -0.010064290641729923,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.2104047815239576e-16,
+    "first_witness": [
+      -0.2350193320274157,
+      0.06474057337985825,
+      0.0007000028037727393
+    ],
+    "second_witness": [
+      -0.23501933202741582,
+      0.06474057337985833,
+      0.0007000028037726726
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 27,
+      "kind": "terrain",
+      "first": 18,
+      "second": 5609,
+      "normal": [
+        -0.03548932998605803,
+        0.1757917728190546,
+        -0.9837874567538836
+      ],
+      "first_local": [
+        -0.10700000000000005,
+        -0.04700000000000003,
+        -0.043500000000000025
+      ],
+      "second_local": [
+        -0.4342000186443329,
+        -0.17299999296665192,
+        0.0006999924080446362
+      ]
+    },
+    "sampled_projection_gap_raw": -0.005629326547951237,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 3.20194547749743e-16,
+    "first_witness": [
+      -0.2534868828107657,
+      -0.1365171156648029,
+      0.0006999940019041639
+    ],
+    "second_witness": [
+      -0.25348688281076565,
+      -0.1365171156648031,
+      0.0006999940019044152
+    ],
+    "iterations": 7,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 44,
+      "kind": "terrain",
+      "first": 10,
+      "second": 5093,
+      "normal": [
+        0.14677626373329442,
+        -0.2149460769080566,
+        0.9655334859166358
+      ],
+      "first_local": [
+        -0.1070000000000001,
+        -0.047000000000000056,
+        -0.06350000000000003
+      ],
+      "second_local": [
+        -0.4342000186443329,
+        -0.17299999296665192,
+        0.0006999924080446362
+      ]
+    },
+    "sampled_projection_gap_raw": -0.0007824050796299692,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.2555563737760094e-15,
+    "first_witness": [
+      -0.07215266743031315,
+      0.0742246537359206,
+      0.0007000031979007455
+    ],
+    "second_witness": [
+      -0.07215266743031287,
+      0.07422465373592023,
+      0.0007000031979019042
+    ],
+    "iterations": 7,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 46,
+      "kind": "self",
+      "first": 3,
+      "second": 34,
+      "normal": [
+        -0.968202559903541,
+        0.023609906973979085,
+        -0.24905094918291334
+      ],
+      "first_local": [
+        -0.0706999809759101,
+        0.05120000000000005,
+        -0.09164777960264395
+      ],
+      "second_local": [
+        0.02886383980512617,
+        -0.02467902004718779,
+        0.015805840492248577
+      ]
+    },
+    "sampled_projection_gap_raw": -0.00498708712792173,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.458644841964054e-18,
+    "first_witness": [
+      0.10938634931270577,
+      -0.09192217535718122,
+      0.8112631840474103
+    ],
+    "second_witness": [
+      0.10938634931270579,
+      -0.09192217535718122,
+      0.8112631840474104
+    ],
+    "iterations": 6,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 52,
+      "kind": "self",
+      "first": 15,
+      "second": 16,
+      "normal": [
+        -0.04893827899730102,
+        -0.20927186328255634,
+        0.9766321375456725
+      ],
+      "first_local": [
+        0.023922122226291836,
+        0.026369797615016472,
+        -0.3415981267839451
+      ],
+      "second_local": [
+        0.004517491252083037,
+        -7.258720408777388e-18,
+        -0.3044754373541927
+      ]
+    },
+    "sampled_projection_gap_raw": -0.03500000000000003,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 7.089275318937225e-18,
+    "first_witness": [
+      -0.20443554670176317,
+      -0.0883730987846181,
+      -0.02121283875200924
+    ],
+    "second_witness": [
+      -0.20443554670176317,
+      -0.0883730987846181,
+      -0.02121283875200924
+    ],
+    "iterations": 3,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 90,
+      "kind": "terrain",
+      "first": 15,
+      "second": 5091,
+      "normal": [
+        -1.2596265257641877e-11,
+        -4.362549190507995e-08,
+        0.9999999999999991
+      ],
+      "first_local": [
+        0.033072703055695284,
+        -0.013692941856736628,
+        -0.3425162473108547
+      ],
+      "second_local": [
+        1.0579867362976074,
+        0.8459422588348389,
+        0.0007000368786975741
+      ]
+    },
+    "sampled_projection_gap_raw": -0.02288241211409375,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.297642805105979e-16,
+    "first_witness": [
+      -0.19766649048451232,
+      -0.09478017656282728,
+      0.000699995823401912
+    ],
+    "second_witness": [
+      -0.19766649048451232,
+      -0.0947801765628273,
+      0.0006999958234020426
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 97,
+      "kind": "self",
+      "first": 33,
+      "second": 34,
+      "normal": [
+        0.05366202609220613,
+        -0.6699866765461916,
+        0.7404311177998046
+      ],
+      "first_local": [
+        0.030023083962566324,
+        9.908523404869254e-19,
+        -0.0939761010037012
+      ],
+      "second_local": [
+        -0.024902792647480968,
+        0.01352603267878294,
+        0.025757865980267528
+      ]
+    },
+    "sampled_projection_gap_raw": -0.05810091183132557,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.4258804400026772e-17,
+    "first_witness": [
+      0.0835805727213267,
+      -0.11215768276665322,
+      0.780629303848323
+    ],
+    "second_witness": [
+      0.08358057272132668,
+      -0.11215768276665321,
+      0.7806293038483231
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 104,
+      "kind": "self",
+      "first": 25,
+      "second": 27,
+      "normal": [
+        0.9915708937119294,
+        0.1065589991511409,
+        0.07370442621195038
+      ],
+      "first_local": [
+        0.04687101293114531,
+        -0.05001901851772966,
+        0.07613710800467981
+      ],
+      "second_local": [
+        0.06500000000000003,
+        -0.0199999936586367,
+        0.10001592653421469
+      ]
+    },
+    "sampled_projection_gap_raw": -0.030000000000000006,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.2628581107858299e-17,
+    "first_witness": [
+      -0.20196363977509046,
+      -0.26085972422300957,
+      1.07265635486807
+    ],
+    "second_witness": [
+      -0.20196363977509046,
+      -0.2608597242230095,
+      1.07265635486807
+    ],
+    "iterations": 3,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 119,
+      "kind": "terrain",
+      "first": 18,
+      "second": 794,
+      "normal": [
+        -1.644905557700877e-10,
+        4.3821518501449135e-08,
+        -0.9999999999999991
+      ],
+      "first_local": [
+        -0.10700000000000001,
+        -0.04699999999999998,
+        -0.043500000000000004
+      ],
+      "second_local": [
+        0.34678545594215393,
+        1.1555644273757935,
+        0.0007000504992902279
+      ]
+    },
+    "sampled_projection_gap_raw": -0.01275295751291364,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 5.990908399525888e-16,
+    "first_witness": [
+      -0.2445426644061023,
+      0.1403664932549865,
+      0.0007000061090424751
+    ],
+    "second_witness": [
+      -0.24454266440610223,
+      0.14036649325498649,
+      0.0007000061090430662
+    ],
+    "iterations": 6,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 153,
+      "kind": "terrain",
+      "first": 8,
+      "second": 3329,
+      "normal": [
+        4.853755757154395e-08,
+        1.0326206758822225e-06,
+        -0.9999999999994658
+      ],
+      "first_local": [
+        0.0008609426712442895,
+        -0.003948649745502666,
+        -0.3045244160377567
+      ],
+      "second_local": [
+        0.7519670724868774,
+        -0.23117874562740326,
+        0.000699989905115217
+      ]
+    },
+    "sampled_projection_gap_raw": -0.0059896456859272786,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 4.527536882688255e-16,
+    "first_witness": [
+      0.0562249203781849,
+      -0.61454481233538,
+      0.0006995602637631
+    ],
+    "second_witness": [
+      0.05622492037818497,
+      -0.6145448123353802,
+      0.0006995602637635396
+    ],
+    "iterations": 5,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 153,
+      "kind": "self",
+      "first": 40,
+      "second": 41,
+      "normal": [
+        -0.2971933163083433,
+        -0.8335950733044065,
+        0.4656129148813103
+      ],
+      "first_local": [
+        -0.02997689701334381,
+        3.2611653543550515e-18,
+        -0.09402388060634524
+      ],
+      "second_local": [
+        0.028862712904810902,
+        -0.024679020047187857,
+        0.015805840492248546
+      ]
+    },
+    "sampled_projection_gap_raw": -0.057839169309730196,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.883244014823445e-17,
+    "first_witness": [
+      -0.2317463648440071,
+      -0.40740042148905636,
+      0.8818238644416626
+    ],
+    "second_witness": [
+      -0.23174636484400712,
+      -0.40740042148905636,
+      0.8818238644416625
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 157,
+      "kind": "self",
+      "first": 12,
+      "second": 14,
+      "normal": [
+        -0.6744182139275917,
+        -0.6295160300777625,
+        -0.38583628730052166
+      ],
+      "first_local": [
+        -0.042893888773633496,
+        0.013471131012055016,
+        0.06159332749419154
+      ],
+      "second_local": [
+        0.010008329167658637,
+        1.544457726160141e-17,
+        0.016650208263901307
+      ]
+    },
+    "sampled_projection_gap_raw": -0.05000000000000007,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.0617977408626722e-17,
+    "first_witness": [
+      -0.22868909040311802,
+      -0.6774908004872644,
+      0.7018915555279541
+    ],
+    "second_witness": [
+      -0.22868909040311802,
+      -0.6774908004872644,
+      0.7018915555279541
+    ],
+    "iterations": 3,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 209,
+      "kind": "self",
+      "first": 25,
+      "second": 26,
+      "normal": [
+        -0.8531037480493303,
+        0.03579135064888383,
+        0.5205122229908857
+      ],
+      "first_local": [
+        0.08239844729515718,
+        0.05001944605260349,
+        0.12439977557905676
+      ],
+      "second_local": [
+        0.06500000000000007,
+        0.019999993658636753,
+        0.09998407346578535
+      ]
+    },
+    "sampled_projection_gap_raw": -0.029999999999999947,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.6991534401680568e-17,
+    "first_witness": [
+      0.15199618518007735,
+      -0.9263349330816798,
+      1.0542307625005214
+    ],
+    "second_witness": [
+      0.15199618518007735,
+      -0.9263349330816797,
+      1.0542307625005214
+    ],
+    "iterations": 3,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 209,
+      "kind": "self",
+      "first": 40,
+      "second": 41,
+      "normal": [
+        -0.011264490857683872,
+        -0.7883182911058039,
+        0.6151645171445946
+      ],
+      "first_local": [
+        -0.02997689701334383,
+        1.0782586865892253e-16,
+        -0.09402388060634523
+      ],
+      "second_local": [
+        -0.02488462254405022,
+        -0.01806575246155258,
+        0.022864155471324914
+      ]
+    },
+    "sampled_projection_gap_raw": -0.058158768679073984,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 8.673617379884035e-18,
+    "first_witness": [
+      -0.32431593629676375,
+      -0.7136020254211228,
+      1.1914895534508438
+    ],
+    "second_witness": [
+      -0.32431593629676375,
+      -0.7136020254211228,
+      1.191489553450844
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 237,
+      "kind": "terrain",
+      "first": 8,
+      "second": 3329,
+      "normal": [
+        -4.853755757154395e-08,
+        -1.0326206758822225e-06,
+        0.9999999999994658
+      ],
+      "first_local": [
+        0.014444780007576017,
+        -0.0040197817706964945,
+        -0.3713740271478503
+      ],
+      "second_local": [
+        0.7519670724868774,
+        -0.23117874562740326,
+        0.000699989905115217
+      ]
+    },
+    "sampled_projection_gap_raw": -0.010308272714501318,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.9942613637045133e-15,
+    "first_witness": [
+      0.02772692229656733,
+      -0.661978569065188,
+      0.0006995098994593885
+    ],
+    "second_witness": [
+      0.027726922296567327,
+      -0.661978569065188,
+      0.000699509899462383
+    ],
+    "iterations": 5,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 253,
+      "kind": "terrain",
+      "first": 15,
+      "second": 5337,
+      "normal": [
+        -0.4049672479360519,
+        -0.45791932620953824,
+        0.7913983944783454
+      ],
+      "first_local": [
+        0.05824793344081832,
+        0.018962281368822123,
+        -0.06363633864409417
+      ],
+      "second_local": [
+        -0.11626264452934265,
+        -1.0901341438293457,
+        0.5030235052108765
+      ]
+    },
+    "sampled_projection_gap_raw": -0.0030569032688120418,
+    "status": "separated",
+    "converged": true,
+    "distance_lower_bound": 0.00046468544379046553,
+    "distance_upper_bound": 0.00046468591880231906,
+    "first_witness": [
+      -0.16650902819340854,
+      -1.070337772985946,
+      0.4892953313367366
+    ],
+    "second_witness": [
+      -0.16617973148822784,
+      -1.070094108581543,
+      0.4890759587287902
+    ],
+    "iterations": 23,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 262,
+      "kind": "self",
+      "first": 12,
+      "second": 13,
+      "normal": [
+        -0.4920835321487683,
+        0.5740786376386976,
+        0.6544367923603388
+      ],
+      "first_local": [
+        0.059412143767914025,
+        -0.03609327760990399,
+        -0.12914601395847994
+      ],
+      "second_local": [
+        0.019991670832341372,
+        1.2802184422687105e-18,
+        -0.08285020826390133
+      ]
+    },
+    "sampled_projection_gap_raw": -0.049999999999999906,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.887870765972139e-17,
+    "first_witness": [
+      -0.05796492096640249,
+      -1.2447204861022234,
+      0.5752986436147203
+    ],
+    "second_witness": [
+      -0.0579649209664025,
+      -1.2447204861022234,
+      0.5752986436147202
+    ],
+    "iterations": 3,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 265,
+      "kind": "terrain",
+      "first": 15,
+      "second": 2065,
+      "normal": [
+        -0.43635513750636545,
+        -0.5340435283018962,
+        0.724148951425508
+      ],
+      "first_local": [
+        0.029948148746738214,
+        0.01949184004239473,
+        -0.3422027461788524
+      ],
+      "second_local": [
+        -0.11626264452934265,
+        -1.0901341438293457,
+        0.5030235052108765
+      ]
+    },
+    "sampled_projection_gap_raw": -0.012982822580509673,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.51768459847021e-17,
+    "first_witness": [
+      -0.11011448204978659,
+      -1.0906856957567057,
+      0.5030502473376391
+    ],
+    "second_witness": [
+      -0.11011448204978658,
+      -1.0906856957567057,
+      0.5030502473376393
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 266,
+      "kind": "self",
+      "first": 33,
+      "second": 34,
+      "normal": [
+        -0.6197616844385339,
+        0.0865677075057481,
+        -0.7800009528962836
+      ],
+      "first_local": [
+        -0.02999999048795494,
+        0.028999999999999842,
+        -0.06502388980132193
+      ],
+      "second_local": [
+        -0.024894412606954592,
+        -0.028629459440708105,
+        0.006050276570022068
+      ]
+    },
+    "sampled_projection_gap_raw": -0.05806632441661766,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.878049733005565e-17,
+    "first_witness": [
+      -0.039170843124114126,
+      -0.8863269015424077,
+      1.4048338683472372
+    ],
+    "second_witness": [
+      -0.03917084312411413,
+      -0.8863269015424078,
+      1.4048338683472372
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 275,
+      "kind": "terrain",
+      "first": 12,
+      "second": 2081,
+      "normal": [
+        5.548246857686055e-05,
+        7.613635482244201e-05,
+        0.9999999955624755
+      ],
+      "first_local": [
+        -0.017804579906594845,
+        -0.02551005598343779,
+        -0.13689352860787468
+      ],
+      "second_local": [
+        0.03161517158150673,
+        -1.57724130153656,
+        0.503700852394104
+      ]
+    },
+    "sampled_projection_gap_raw": -0.0037609893592013997,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 3.888279739759772e-16,
+    "first_witness": [
+      -0.03378332148400083,
+      -1.1733994761441746,
+      0.5036737338193104
+    ],
+    "second_witness": [
+      -0.033783321484000844,
+      -1.173399476144175,
+      0.5036737338193099
+    ],
+    "iterations": 6,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 289,
+      "kind": "terrain",
+      "first": 15,
+      "second": 2069,
+      "normal": [
+        -0.1009425741356467,
+        -0.33873939806050324,
+        0.93544974046096
+      ],
+      "first_local": [
+        0.03584846745417496,
+        -9.359183356383094e-17,
+        -0.34279475272156246
+      ],
+      "second_local": [
+        -0.11626264452934265,
+        -1.0901341438293457,
+        0.5030235052108765
+      ]
+    },
+    "sampled_projection_gap_raw": -0.030471142375328913,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 9.813077866773595e-18,
+    "first_witness": [
+      -0.08579317631135543,
+      -1.0907089566688826,
+      0.5031230035698696
+    ],
+    "second_witness": [
+      -0.08579317631135541,
+      -1.0907089566688826,
+      0.5031230035698696
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 301,
+      "kind": "terrain",
+      "first": 15,
+      "second": 5337,
+      "normal": [
+        0.01264505907916614,
+        0.26251241972804273,
+        -0.9648457555326719
+      ],
+      "first_local": [
+        -0.03350040441125706,
+        0.004594948212545476,
+        -0.3358366564034488
+      ],
+      "second_local": [
+        -0.06292511522769928,
+        -1.068142056465149,
+        0.4909602999687195
+      ]
+    },
+    "sampled_projection_gap_raw": -0.01674566637127088,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 3.238989345801982e-17,
+    "first_witness": [
+      -0.10706224134696216,
+      -1.0689764789207539,
+      0.49015482114394093
+    ],
+    "second_witness": [
+      -0.10706224134696216,
+      -1.0689764789207539,
+      0.49015482114394093
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 302,
+      "kind": "self",
+      "first": 33,
+      "second": 34,
+      "normal": [
+        0.46999350263372836,
+        -0.8722730422585394,
+        -0.1350771898993759
+      ],
+      "first_local": [
+        0.030023075058165066,
+        0.000805246501835566,
+        -0.09396491916306805
+      ],
+      "second_local": [
+        -0.024934617802500718,
+        0.00282351858913899,
+        0.02920691668987278
+      ]
+    },
+    "sampled_projection_gap_raw": -0.058226755882474945,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.0816681711721685e-17,
+    "first_witness": [
+      -0.14113374243920637,
+      -0.9064516869539733,
+      1.3747394244311764
+    ],
+    "second_witness": [
+      -0.1411337424392064,
+      -0.9064516869539733,
+      1.3747394244311761
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 307,
+      "kind": "self",
+      "first": 33,
+      "second": 34,
+      "normal": [
+        0.7228974096651323,
+        -0.6210011423074654,
+        -0.3029470520606944
+      ],
+      "first_local": [
+        0.0300230824208759,
+        0.0003350886381704418,
+        -0.09397416500184036
+      ],
+      "second_local": [
+        -0.02493461780250074,
+        0.0028235185891389842,
+        0.029206916689872763
+      ]
+    },
+    "sampled_projection_gap_raw": -0.05822676220713609,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.2484586062492888e-17,
+    "first_witness": [
+      -0.11925146635133503,
+      -0.9154117779358847,
+      1.4434098892256368
+    ],
+    "second_witness": [
+      -0.11925146635133503,
+      -0.9154117779358846,
+      1.4434098892256366
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 311,
+      "kind": "self",
+      "first": 19,
+      "second": 20,
+      "normal": [
+        -0.4474553945172606,
+        -0.32295879934602,
+        -0.8339552049375194
+      ],
+      "first_local": [
+        -0.03937659491286549,
+        0.05508344885667548,
+        0.36158030387507956
+      ],
+      "second_local": [
+        -0.005999999999999955,
+        -0.05499998256125103,
+        0.25685379796909036
+      ]
+    },
+    "sampled_projection_gap_raw": -0.11000000000000018,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 8.984840710790029e-18,
+    "first_witness": [
+      -0.13814809125040708,
+      -1.39648066402771,
+      1.1595227520202829
+    ],
+    "second_witness": [
+      -0.13814809125040708,
+      -1.39648066402771,
+      1.1595227520202829
+    ],
+    "iterations": 3,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 314,
+      "kind": "self",
+      "first": 22,
+      "second": 24,
+      "normal": [
+        0.4290598407304474,
+        0.32960726716483574,
+        0.8409914996624471
+      ],
+      "first_local": [
+        0.029044399139727273,
+        -0.059991487527895904,
+        0.08071355937207098
+      ],
+      "second_local": [
+        -0.030000000000000054,
+        8.456355757825543e-17,
+        0.06999999999999992
+      ]
+    },
+    "sampled_projection_gap_raw": -0.060000000000000116,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.4823200952824248e-17,
+    "first_witness": [
+      -0.17299704377099287,
+      -1.227001576235048,
+      1.0683107594425234
+    ],
+    "second_witness": [
+      -0.17299704377099287,
+      -1.227001576235048,
+      1.0683107594425234
+    ],
+    "iterations": 3,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 319,
+      "kind": "terrain",
+      "first": 15,
+      "second": 2065,
+      "normal": [
+        -0.2252876102848651,
+        0.012008375315500397,
+        -0.9742182977004777
+      ],
+      "first_local": [
+        -0.0043651290704778325,
+        0.010106066698662878,
+        -0.057354077548757425
+      ],
+      "second_local": [
+        -0.06292511522769928,
+        -1.068142056465149,
+        0.4909602999687195
+      ]
+    },
+    "sampled_projection_gap_raw": -0.007636576330576231,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 4.7830890911045856e-17,
+    "first_witness": [
+      -0.0842422958451227,
+      -1.0769315393046228,
+      0.4957815492530239
+    ],
+    "second_witness": [
+      -0.0842422958451227,
+      -1.076931539304623,
+      0.49578154925302387
+    ],
+    "iterations": 5,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 322,
+      "kind": "self",
+      "first": 33,
+      "second": 34,
+      "normal": [
+        0.016196246238958826,
+        0.05150103895348885,
+        -0.9985415988302532
+      ],
+      "first_local": [
+        -0.029999990487955083,
+        0.028999999999999936,
+        -0.06502388980132198
+      ],
+      "second_local": [
+        -0.02489441260695455,
+        -0.02862945944070809,
+        0.006050276570022071
+      ]
+    },
+    "sampled_projection_gap_raw": -0.057939637061865557,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.3985787785349405e-17,
+    "first_witness": [
+      -0.12567458504811238,
+      -0.923321937886108,
+      1.3647432338468983
+    ],
+    "second_witness": [
+      -0.12567458504811238,
+      -0.9233219378861081,
+      1.3647432338468983
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 333,
+      "kind": "terrain",
+      "first": 15,
+      "second": 5337,
+      "normal": [
+        0.019584934215897343,
+        -0.07343212807566094,
+        -0.9971078943213912
+      ],
+      "first_local": [
+        -0.03380149564387448,
+        0.00015201426202048266,
+        -0.33580644651335595
+      ],
+      "second_local": [
+        -0.06292511522769928,
+        -1.068142056465149,
+        0.4909602999687195
+      ]
+    },
+    "sampled_projection_gap_raw": -0.03194387107390986,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.0166160408230382e-17,
+    "first_witness": [
+      -0.1025047022528481,
+      -1.0688903176026803,
+      0.4902379937824016
+    ],
+    "second_witness": [
+      -0.1025047022528481,
+      -1.06889031760268,
+      0.49023799378240174
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 338,
+      "kind": "self",
+      "first": 19,
+      "second": 20,
+      "normal": [
+        -0.3912453850387598,
+        -0.3363197367921522,
+        -0.8566306574772643
+      ],
+      "first_local": [
+        0.09239097372201198,
+        0.05496081481050807,
+        0.2075806883513553
+      ],
+      "second_local": [
+        -0.005999999999999989,
+        -0.05499998256125096,
+        0.25685379796909036
+      ]
+    },
+    "sampled_projection_gap_raw": -0.11000000000000024,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.328911929456733e-17,
+    "first_witness": [
+      -0.10307171190727094,
+      -1.3286393921181094,
+      1.1888712697478387
+    ],
+    "second_witness": [
+      -0.10307171190727091,
+      -1.3286393921181094,
+      1.1888712697478387
+    ],
+    "iterations": 3,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 338,
+      "kind": "self",
+      "first": 33,
+      "second": 34,
+      "normal": [
+        0.6733034532948662,
+        -0.4524558944627694,
+        -0.5847615953079539
+      ],
+      "first_local": [
+        -0.029976900115354053,
+        0.0004753082852996068,
+        -0.09401998520861116
+      ],
+      "second_local": [
+        -0.02493461780250075,
+        0.002823518589138977,
+        0.029206916689872728
+      ]
+    },
+    "sampled_projection_gap_raw": -0.05822676086680181,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.4628339063450876e-17,
+    "first_witness": [
+      -0.12718837929546262,
+      -0.8628043867498232,
+      1.406964409060984
+    ],
+    "second_witness": [
+      -0.12718837929546264,
+      -0.8628043867498233,
+      1.4069644090609839
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 346,
+      "kind": "self",
+      "first": 33,
+      "second": 34,
+      "normal": [
+        0.4692196126325819,
+        -0.7537444553081695,
+        -0.46011112919937147
+      ],
+      "first_local": [
+        -0.029976905582503367,
+        0.0007899455924247665,
+        -0.09401311975053156
+      ],
+      "second_local": [
+        -0.02493461780250067,
+        0.0028235185891389097,
+        0.029206916689872787
+      ]
+    },
+    "sampled_projection_gap_raw": -0.05822675617045164,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.7809732887839817e-17,
+    "first_witness": [
+      -0.03338092897304424,
+      -0.8302369796497647,
+      1.3891344944598751
+    ],
+    "second_witness": [
+      -0.033380928973044226,
+      -0.8302369796497647,
+      1.3891344944598751
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 347,
+      "kind": "self",
+      "first": 19,
+      "second": 20,
+      "normal": [
+        -0.48417436192122226,
+        -0.1485975051532472,
+        -0.8622609632358453
+      ],
+      "first_local": [
+        0.07823309860387692,
+        0.055056318300849845,
+        0.32751068539091444
+      ],
+      "second_local": [
+        -0.0060000000000000235,
+        -0.05499998256125102,
+        0.2568537979690902
+      ]
+    },
+    "sampled_projection_gap_raw": -0.11000000000000017,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.9859668928516675e-17,
+    "first_witness": [
+      -0.14685532532858564,
+      -1.3028864894690886,
+      1.1937555630104117
+    ],
+    "second_witness": [
+      -0.1468553253285856,
+      -1.3028864894690886,
+      1.1937555630104117
+    ],
+    "iterations": 3,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 347,
+      "kind": "self",
+      "first": 20,
+      "second": 21,
+      "normal": [
+        0.48417436192122293,
+        0.1485975051532465,
+        0.8622609632358451
+      ],
+      "first_local": [
+        -0.006000000000000065,
+        -0.05499998256125105,
+        0.25685379796909025
+      ],
+      "second_local": [
+        -0.006000000000000022,
+        0.05499998256125108,
+        0.2567662020309097
+      ]
+    },
+    "sampled_projection_gap_raw": -0.1100000000000003,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 3.540689079607317e-17,
+    "first_witness": [
+      -0.1531802851679656,
+      -1.3060098570240426,
+      1.1756317195872206
+    ],
+    "second_witness": [
+      -0.1531802851679656,
+      -1.3060098570240426,
+      1.1756317195872206
+    ],
+    "iterations": 3,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 354,
+      "kind": "terrain",
+      "first": 15,
+      "second": 2069,
+      "normal": [
+        0.00012040792022422552,
+        0.2609651408389919,
+        -0.9653482173644999
+      ],
+      "first_local": [
+        -0.032043545277178426,
+        -0.010980656796992104,
+        -0.33598282988694117
+      ],
+      "second_local": [
+        -0.11626264452934265,
+        -1.0901341438293457,
+        0.5030235052108765
+      ]
+    },
+    "sampled_projection_gap_raw": -0.003569169306493647,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 5.754374814585095e-16,
+    "first_witness": [
+      -0.0845943287845778,
+      -1.0898179325344215,
+      0.5031129374381258
+    ],
+    "second_witness": [
+      -0.08459432878457773,
+      -1.0898179325344217,
+      0.5031129374381262
+    ],
+    "iterations": 5,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 367,
+      "kind": "self",
+      "first": 7,
+      "second": 9,
+      "normal": [
+        -0.3681737347378384,
+        0.23946240806857996,
+        -0.8983907035200157
+      ],
+      "first_local": [
+        0.02525399847423887,
+        0.03479945606014221,
+        -0.0603259029984136
+      ],
+      "second_local": [
+        0.025482508747916955,
+        -3.146624362274336e-17,
+        -0.09552456264580726
+      ]
+    },
+    "sampled_projection_gap_raw": -0.03500000000000007,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.5783479626665256e-17,
+    "first_witness": [
+      0.34032782628211056,
+      -1.448525705729448,
+      0.880128500581188
+    ],
+    "second_witness": [
+      0.34032782628211056,
+      -1.448525705729448,
+      0.8801285005811879
+    ],
+    "iterations": 3,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 375,
+      "kind": "terrain",
+      "first": 15,
+      "second": 5335,
+      "normal": [
+        0.08508823573855002,
+        -0.05962283849381901,
+        0.9945879092713932
+      ],
+      "first_local": [
+        0.0622577957519224,
+        0.010306145380400382,
+        -0.0640386668641867
+      ],
+      "second_local": [
+        -0.16617973148822784,
+        -1.070094108581543,
+        0.4890759587287903
+      ]
+    },
+    "sampled_projection_gap_raw": -0.060680462182819785,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.4304896245381992e-17,
+    "first_witness": [
+      -0.2194228484018829,
+      -1.0713218444327142,
+      0.4552480059560408
+    ],
+    "second_witness": [
+      -0.21942284840188292,
+      -1.071321844432714,
+      0.4552480059560408
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 378,
+      "kind": "self",
+      "first": 33,
+      "second": 34,
+      "normal": [
+        -0.5135809196309209,
+        -0.17641589013561043,
+        -0.8397095168561077
+      ],
+      "first_local": [
+        0.029999990487954938,
+        0.02899999999999997,
+        -0.06497611019867801
+      ],
+      "second_local": [
+        0.028863839805126086,
+        -0.0246790200471878,
+        0.0158058404922485
+      ]
+    },
+    "sampled_projection_gap_raw": -0.05789465449193495,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.236717227791581e-17,
+    "first_witness": [
+      0.5297255761900479,
+      -1.233409267548005,
+      1.113897263823988
+    ],
+    "second_witness": [
+      0.5297255761900479,
+      -1.233409267548005,
+      1.1138972638239877
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 395,
+      "kind": "terrain",
+      "first": 15,
+      "second": 5337,
+      "normal": [
+        0.017102119122374422,
+        0.05887340454815293,
+        -0.9981189507059937
+      ],
+      "first_local": [
+        -0.032920519086659425,
+        -0.007824102608891827,
+        -0.33589483900733935
+      ],
+      "second_local": [
+        -0.06292511522769928,
+        -1.068142056465149,
+        0.4909602999687195
+      ]
+    },
+    "sampled_projection_gap_raw": -0.0033337414839216713,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.8411017109413452e-17,
+    "first_witness": [
+      -0.09753121482302282,
+      -1.0687962926862662,
+      0.4903287572543866
+    ],
+    "second_witness": [
+      -0.09753121482302282,
+      -1.0687962926862662,
+      0.49032875725438674
+    ],
+    "iterations": 7,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 419,
+      "kind": "self",
+      "first": 22,
+      "second": 23,
+      "normal": [
+        -0.9560360927593854,
+        -0.10244321405200278,
+        0.2747733197311257
+      ],
+      "first_local": [
+        -0.06508611013628494,
+        0.05996122215168001,
+        0.02128022256227624
+      ],
+      "second_local": [
+        -0.029999999999999936,
+        5.315268278029322e-17,
+        0.06999999999999994
+      ]
+    },
+    "sampled_projection_gap_raw": -0.059999999999999894,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.9562842743533762e-17,
+    "first_witness": [
+      0.23759058887121798,
+      -1.3543890849638665,
+      1.3189607900296996
+    ],
+    "second_witness": [
+      0.237590588871218,
+      -1.3543890849638665,
+      1.3189607900296996
+    ],
+    "iterations": 3,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 434,
+      "kind": "self",
+      "first": 40,
+      "second": 41,
+      "normal": [
+        0.3374859692822385,
+        -0.9180456971283415,
+        0.20807527128845832
+      ],
+      "first_local": [
+        0.03002308396256632,
+        6.799895566275509e-17,
+        -0.09397610100370128
+      ],
+      "second_local": [
+        0.0288627129048109,
+        -0.024679020047187684,
+        0.01580584049224851
+      ]
+    },
+    "sampled_projection_gap_raw": -0.05794842624507199,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.2753210695091524e-17,
+    "first_witness": [
+      -0.17548150348348696,
+      -1.3526083645025342,
+      1.278026034478357
+    ],
+    "second_witness": [
+      -0.17548150348348698,
+      -1.3526083645025344,
+      1.2780260344783567
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 450,
+      "kind": "terrain",
+      "first": 10,
+      "second": 2035,
+      "normal": [
+        0.00631363381772933,
+        -0.007681318676794216,
+        0.9999505664638634
+      ],
+      "first_local": [
+        -0.10699999999999997,
+        -0.04700000000000005,
+        -0.06350000000000007
+      ],
+      "second_local": [
+        0.03161517158150673,
+        -1.57724130153656,
+        0.503700852394104
+      ]
+    },
+    "sampled_projection_gap_raw": -0.0014728224338167776,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.1594623490323256e-16,
+    "first_witness": [
+      0.1836108481082765,
+      -1.4223728586608626,
+      0.5031965127239684
+    ],
+    "second_witness": [
+      0.1836108481082765,
+      -1.4223728586608626,
+      0.5031965127239685
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 463,
+      "kind": "terrain",
+      "first": 10,
+      "second": 2044,
+      "normal": [
+        -0.34207221530469034,
+        0.02133729559140103,
+        0.9394313808540711
+      ],
+      "first_local": [
+        -0.10700000000000003,
+        0.04700000000000003,
+        -0.0635
+      ],
+      "second_local": [
+        0.3840087652206421,
+        -1.3756296634674072,
+        0.5030245780944824
+      ]
+    },
+    "sampled_projection_gap_raw": -0.009039848972855367,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 8.808313614772899e-17,
+    "first_witness": [
+      0.3776057912540006,
+      -1.4965112018609,
+      0.5034386643543903
+    ],
+    "second_witness": [
+      0.3776057912540006,
+      -1.4965112018609,
+      0.5034386643543902
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 472,
+      "kind": "self",
+      "first": 7,
+      "second": 8,
+      "normal": [
+        -0.07598641041338514,
+        -0.04526928475224065,
+        0.9960806981818838
+      ],
+      "first_local": [
+        -0.011762441579653664,
+        -0.032555775835567895,
+        -0.33801772777596295
+      ],
+      "second_local": [
+        0.004517491252083043,
+        -9.68879629517503e-17,
+        -0.3044754373541926
+      ]
+    },
+    "sampled_projection_gap_raw": -0.03499999999999991,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 6.26408529446821e-17,
+    "first_witness": [
+      0.5397616545320996,
+      -1.4157863828021573,
+      0.6193978865882852
+    ],
+    "second_witness": [
+      0.5397616545320996,
+      -1.4157863828021573,
+      0.6193978865882852
+    ],
+    "iterations": 3,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 490,
+      "kind": "self",
+      "first": 40,
+      "second": 41,
+      "normal": [
+        0.7804669031676227,
+        -0.4531870369316848,
+        -0.4306888930736672
+      ],
+      "first_local": [
+        0.02999999048795506,
+        -0.02900000000000004,
+        -0.06497611019867819
+      ],
+      "second_local": [
+        -0.028312655165791515,
+        0.01613598316907878,
+        0.024191085249185635
+      ]
+    },
+    "sampled_projection_gap_raw": -0.058075854719756036,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 6.548437517301135e-18,
+    "first_witness": [
+      -0.11803788391413705,
+      -1.4655825821101018,
+      1.3939354660583858
+    ],
+    "second_witness": [
+      -0.11803788391413707,
+      -1.4655825821101018,
+      1.3939354660583858
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 495,
+      "kind": "terrain",
+      "first": 7,
+      "second": 2036,
+      "normal": [
+        0.24378206018642629,
+        -0.23619675106253898,
+        0.9406281953666723
+      ],
+      "first_local": [
+        0.0010233216694441791,
+        -0.03500000000000004,
+        -0.33930058313892364
+      ],
+      "second_local": [
+        0.37857797741889954,
+        -1.2237207889556885,
+        0.5025495886802673
+      ]
+    },
+    "sampled_projection_gap_raw": -0.002828608148541578,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.4038985360300156e-16,
+    "first_witness": [
+      0.19881543667985885,
+      -1.4068808985574326,
+      0.5031460620969507
+    ],
+    "second_witness": [
+      0.19881543667985876,
+      -1.4068808985574326,
+      0.5031460620969509
+    ],
+    "iterations": 6,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 496,
+      "kind": "terrain",
+      "first": 18,
+      "second": 2074,
+      "normal": [
+        0.011786899924894328,
+        -0.996941454316906,
+        0.07725804588942799
+      ],
+      "first_local": [
+        -0.10699999999999998,
+        -0.046999999999999986,
+        -0.06350000000000004
+      ],
+      "second_local": [
+        0.13402216136455536,
+        -1.6062453985214233,
+        0.5053542852401733
+      ]
+    },
+    "sampled_projection_gap_raw": -5.711775092792073e-05,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 5.423907788098249e-17,
+    "first_witness": [
+      0.07795307786696605,
+      -1.6074500091659845,
+      0.4983641315857492
+    ],
+    "second_witness": [
+      0.07795307786696604,
+      -1.6074500091659845,
+      0.4983641315857492
+    ],
+    "iterations": 6,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 519,
+      "kind": "terrain",
+      "first": 10,
+      "second": 2030,
+      "normal": [
+        -0.2303514991533474,
+        -0.012646877781813528,
+        0.9730253045631329
+      ],
+      "first_local": [
+        0.14300000000000027,
+        -0.04700000000000007,
+        -0.06350000000000001
+      ],
+      "second_local": [
+        0.38042378425598145,
+        -1.4294617176055908,
+        0.486449658870697
+      ]
+    },
+    "sampled_projection_gap_raw": -0.0024482468707422134,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.492863501088077e-17,
+    "first_witness": [
+      0.3797200740997883,
+      -1.3826398503261779,
+      0.48488254387075924
+    ],
+    "second_witness": [
+      0.37972007409978836,
+      -1.382639850326178,
+      0.4848825438707593
+    ],
+    "iterations": 5,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 524,
+      "kind": "self",
+      "first": 20,
+      "second": 21,
+      "normal": [
+        0.9935673061056516,
+        0.1049968027810211,
+        0.042422631268249335
+      ],
+      "first_local": [
+        -0.006000000000000098,
+        -0.05499998256125091,
+        0.2568537979690902
+      ],
+      "second_local": [
+        -0.0059999999999999325,
+        0.05499998256125086,
+        0.2567662020309098
+      ]
+    },
+    "sampled_projection_gap_raw": -0.10999999999999999,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.1160523179854632e-17,
+    "first_witness": [
+      -0.04551793795298157,
+      -1.6281761326952053,
+      1.7771299915998793
+    ],
+    "second_witness": [
+      -0.04551793795298159,
+      -1.6281761326952053,
+      1.7771299915998793
+    ],
+    "iterations": 3,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 539,
+      "kind": "terrain",
+      "first": 10,
+      "second": 2052,
+      "normal": [
+        -0.02271599983409455,
+        -0.15162652671443028,
+        0.9881767957951936
+      ],
+      "first_local": [
+        0.14299999999999993,
+        -0.04699999999999996,
+        -0.06349999999999999
+      ],
+      "second_local": [
+        0.03161517158150673,
+        -1.57724130153656,
+        0.503700852394104
+      ]
+    },
+    "sampled_projection_gap_raw": -0.0010004686880140806,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 7.45392147619795e-17,
+    "first_witness": [
+      0.13515765148110737,
+      -1.5914076616743316,
+      0.5037276463147339
+    ],
+    "second_witness": [
+      0.1351576514811073,
+      -1.5914076616743313,
+      0.5037276463147339
+    ],
+    "iterations": 6,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 546,
+      "kind": "self",
+      "first": 3,
+      "second": 32,
+      "normal": [
+        0.2847459735596187,
+        -0.6994026001750724,
+        -0.6555575744432619
+      ],
+      "first_local": [
+        -0.07073706975675531,
+        0.019387502557485396,
+        -0.04507296478665361
+      ],
+      "second_local": [
+        0.02517419465793854,
+        -0.03499117482404966,
+        0.011096288017035836
+      ]
+    },
+    "sampled_projection_gap_raw": -0.003044047874459145,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.0579573845387615e-17,
+    "first_witness": [
+      0.17710792960782112,
+      -1.5459464433072934,
+      1.3799532184337422
+    ],
+    "second_witness": [
+      0.1771079296078211,
+      -1.5459464433072931,
+      1.379953218433742
+    ],
+    "iterations": 8,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 577,
+      "kind": "self",
+      "first": 4,
+      "second": 6,
+      "normal": [
+        0.13880051290091253,
+        -0.6494368833697366,
+        -0.747640389584088
+      ],
+      "first_local": [
+        -0.044509853432513735,
+        -0.004736182208676471,
+        0.06143119021004104
+      ],
+      "second_local": [
+        0.010008329167658495,
+        4.97977372883601e-17,
+        0.01665020826390121
+      ]
+    },
+    "sampled_projection_gap_raw": -0.05000000000000006,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 5.433362451894303e-17,
+    "first_witness": [
+      0.15392146038484666,
+      -1.8278756994266503,
+      1.0978291248289613
+    ],
+    "second_witness": [
+      0.1539214603848467,
+      -1.8278756994266505,
+      1.0978291248289613
+    ],
+    "iterations": 3,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 600,
+      "kind": "self",
+      "first": 33,
+      "second": 34,
+      "normal": [
+        -0.30646454750594687,
+        -0.6520235050655812,
+        -0.6935018601013044
+      ],
+      "first_local": [
+        0.02999999048795492,
+        0.02900000000000005,
+        -0.06497611019867847
+      ],
+      "second_local": [
+        0.028863839805126267,
+        -0.024679020047187902,
+        0.015805840492248556
+      ]
+    },
+    "sampled_projection_gap_raw": -0.05813170580856021,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.8111044797400594e-17,
+    "first_witness": [
+      0.7227085035828245,
+      -2.18212501213236,
+      1.4077273372303967
+    ],
+    "second_witness": [
+      0.7227085035828245,
+      -2.18212501213236,
+      1.4077273372303964
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 621,
+      "kind": "terrain",
+      "first": 18,
+      "second": 5952,
+      "normal": [
+        -7.893441231894172e-12,
+        -4.370225962854683e-08,
+        0.999999999999999
+      ],
+      "first_local": [
+        -0.10700000000000001,
+        0.047000000000000014,
+        -0.06349999999999999
+      ],
+      "second_local": [
+        -0.897901713848114,
+        -3.1156961917877197,
+        0.0006998637691140175
+      ]
+    },
+    "sampled_projection_gap_raw": -0.0005610486835001016,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 6.4809731147246216e-15,
+    "first_witness": [
+      0.09777320974416129,
+      -2.4522972235867013,
+      0.0006998927690007841
+    ],
+    "second_witness": [
+      0.09777320974416126,
+      -2.4522972235867018,
+      0.0006998927690072647
+    ],
+    "iterations": 6,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 629,
+      "kind": "self",
+      "first": 19,
+      "second": 21,
+      "normal": [
+        0.8728318494587033,
+        -0.3147182962256964,
+        -0.37298385567111925
+      ],
+      "first_local": [
+        -0.11543934707473581,
+        -0.05500881530397492,
+        0.24576194357777248
+      ],
+      "second_local": [
+        -0.005999999999999774,
+        0.05499998256125103,
+        0.2567662020309099
+      ]
+    },
+    "sampled_projection_gap_raw": -0.11000000000000015,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.938280825000938e-17,
+    "first_witness": [
+      0.062176485769833686,
+      -2.2959840952674173,
+      0.8725832945988972
+    ],
+    "second_witness": [
+      0.06217648576983367,
+      -2.2959840952674173,
+      0.8725832945988972
+    ],
+    "iterations": 3,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 637,
+      "kind": "terrain",
+      "first": 15,
+      "second": 5952,
+      "normal": [
+        -7.893441231894172e-12,
+        -4.370225962854683e-08,
+        0.999999999999999
+      ],
+      "first_local": [
+        0.008590291874295584,
+        -0.03416378978574279,
+        -0.3400598126131078
+      ],
+      "second_local": [
+        -0.897901713848114,
+        -3.1156961917877197,
+        0.0006998637691140175
+      ]
+    },
+    "sampled_projection_gap_raw": -0.04759254956554381,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.917844077466585e-16,
+    "first_witness": [
+      0.016837325228642445,
+      -2.5779376816731365,
+      0.0006998872775961997
+    ],
+    "second_witness": [
+      0.016837325228642508,
+      -2.5779376816731365,
+      0.0006998872775964829
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 643,
+      "kind": "terrain",
+      "first": 15,
+      "second": 5952,
+      "normal": [
+        -7.893441231894172e-12,
+        -4.370225962854683e-08,
+        0.999999999999999
+      ],
+      "first_local": [
+        -0.003644975958556453,
+        -0.03468411172404598,
+        -0.3388321910272209
+      ],
+      "second_local": [
+        -0.897901713848114,
+        -3.1156961917877197,
+        0.0006998637691140175
+      ]
+    },
+    "sampled_projection_gap_raw": -0.13099154323996184,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 8.326672684688674e-17,
+    "first_witness": [
+      -0.00751777515822291,
+      -2.5569215620195003,
+      0.0006998881958561812
+    ],
+    "second_witness": [
+      -0.007517775158222842,
+      -2.5569215620195,
+      0.0006998881958561547
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 644,
+      "kind": "terrain",
+      "first": 15,
+      "second": 5952,
+      "normal": [
+        -7.893441231894172e-12,
+        -4.370225962854683e-08,
+        0.999999999999999
+      ],
+      "first_local": [
+        -0.006179960805251691,
+        -0.034243106896852324,
+        -0.33857784415388603
+      ],
+      "second_local": [
+        -0.897901713848114,
+        -3.1156961917877197,
+        0.0006998637691140175
+      ]
+    },
+    "sampled_projection_gap_raw": -0.12629390761545917,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.1491151892306092e-16,
+    "first_witness": [
+      -0.010065341555809753,
+      -2.5589613280278445,
+      0.0006998881066936566
+    ],
+    "second_witness": [
+      -0.010065341555809765,
+      -2.558961328027845,
+      0.000699888106693662
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 645,
+      "kind": "terrain",
+      "first": 15,
+      "second": 5952,
+      "normal": [
+        -7.893441231894172e-12,
+        -4.370225962854683e-08,
+        0.999999999999999
+      ],
+      "first_local": [
+        -0.006510802317130995,
+        -0.03417112142957503,
+        -0.33854464927927935
+      ],
+      "second_local": [
+        -0.897901713848114,
+        -3.1156961917877197,
+        0.0006998637691140175
+      ]
+    },
+    "sampled_projection_gap_raw": -0.12106156552509607,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.5589376332604516e-16,
+    "first_witness": [
+      -0.010380625668443789,
+      -2.557062164091439,
+      0.0006998881896886702
+    ],
+    "second_witness": [
+      -0.01038062566844379,
+      -2.557062164091439,
+      0.0006998881896889288
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 646,
+      "kind": "terrain",
+      "first": 15,
+      "second": 5952,
+      "normal": [
+        -7.893441231894172e-12,
+        -4.370225962854683e-08,
+        0.999999999999999
+      ],
+      "first_local": [
+        -0.0072981187407975025,
+        -0.03398612250717001,
+        -0.3384656541440833
+      ],
+      "second_local": [
+        -0.897901713848114,
+        -3.1156961917877197,
+        0.0006998637691140175
+      ]
+    },
+    "sampled_projection_gap_raw": -0.11858093768605794,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.4513674455376916e-16,
+    "first_witness": [
+      -0.00875775483367187,
+      -2.5553114341892154,
+      0.0006998882662123673
+    ],
+    "second_witness": [
+      -0.008757754833671777,
+      -2.5553114341892154,
+      0.0006998882662125915
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 653,
+      "kind": "self",
+      "first": 5,
+      "second": 33,
+      "normal": [
+        0.29403735931871733,
+        0.7501034399345906,
+        0.5923570382152723
+      ],
+      "first_local": [
+        0.025278101358690182,
+        -0.029931645767163437,
+        -0.1726505063952655
+      ],
+      "second_local": [
+        -0.030016702580757865,
+        0.020014188749863587,
+        -0.044037418697518295
+      ]
+    },
+    "sampled_projection_gap_raw": -0.006224460913919175,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.3303474337924044e-17,
+    "first_witness": [
+      0.3470765164395293,
+      -2.5409556226987147,
+      0.13299142307848022
+    ],
+    "second_witness": [
+      0.3470765164395293,
+      -2.5409556226987147,
+      0.13299142307848022
+    ],
+    "iterations": 6,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 682,
+      "kind": "self",
+      "first": 4,
+      "second": 5,
+      "normal": [
+        -0.3252843755714841,
+        0.49335909696903213,
+        0.8067136272847825
+      ],
+      "first_local": [
+        0.05594881892837283,
+        0.03913420909926646,
+        -0.12949350552058084
+      ],
+      "second_local": [
+        0.01999167083234142,
+        1.8303533922368466e-17,
+        -0.08285020826390134
+      ]
+    },
+    "sampled_projection_gap_raw": -0.05000000000000001,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.2260444733553485e-17,
+    "first_witness": [
+      0.2346668534849912,
+      -2.457080926716264,
+      0.04172827111622264
+    ],
+    "second_witness": [
+      0.2346668534849912,
+      -2.457080926716264,
+      0.04172827111622265
+    ],
+    "iterations": 3,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 695,
+      "kind": "terrain",
+      "first": 7,
+      "second": 5952,
+      "normal": [
+        -7.893441231894172e-12,
+        -4.370225962854683e-08,
+        0.999999999999999
+      ],
+      "first_local": [
+        0.05735688696073876,
+        -0.02028436328973146,
+        -0.06354693578770253
+      ],
+      "second_local": [
+        -0.897901713848114,
+        -3.1156961917877197,
+        0.0006998637691140175
+      ]
+    },
+    "sampled_projection_gap_raw": -0.03323923744899848,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 5.714106392571751e-16,
+    "first_witness": [
+      0.2755515564929627,
+      -2.4492562329593706,
+      0.0006998929033081476
+    ],
+    "second_witness": [
+      0.2755515564929626,
+      -2.449256232959371,
+      0.0006998929033087095
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 700,
+      "kind": "self",
+      "first": 33,
+      "second": 34,
+      "normal": [
+        -0.9605990439578682,
+        0.2682697515571881,
+        -0.07266923108630141
+      ],
+      "first_local": [
+        -0.02999999048795524,
+        0.028999999999999897,
+        -0.06502388980132175
+      ],
+      "second_local": [
+        -0.024883497506380133,
+        -0.018065758049488085,
+        0.022864151746034587
+      ]
+    },
+    "sampled_projection_gap_raw": -0.05806564583475995,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.5881248940572338e-17,
+    "first_witness": [
+      0.30780471765993933,
+      -2.64033179146864,
+      0.14973022836486635
+    ],
+    "second_witness": [
+      0.30780471765993933,
+      -2.64033179146864,
+      0.14973022836486635
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 734,
+      "kind": "self",
+      "first": 19,
+      "second": 20,
+      "normal": [
+        -0.9572359496540086,
+        0.1633072881156936,
+        0.23880968644149714
+      ],
+      "first_local": [
+        -0.07925977097816526,
+        0.05506532506667566,
+        0.3388210720057245
+      ],
+      "second_local": [
+        -0.006000000000000013,
+        -0.05499998256125088,
+        0.2568537979690904
+      ]
+    },
+    "sampled_projection_gap_raw": -0.10999999999999997,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 6.635568912840897e-17,
+    "first_witness": [
+      0.11477881771421852,
+      -2.560990821673518,
+      0.8203099133872752
+    ],
+    "second_witness": [
+      0.11477881771421854,
+      -2.5609908216735175,
+      0.8203099133872752
+    ],
+    "iterations": 3,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 754,
+      "kind": "self",
+      "first": 40,
+      "second": 41,
+      "normal": [
+        -0.06961529079632893,
+        -0.706852433579298,
+        0.7039270902802128
+      ],
+      "first_local": [
+        -0.029976897013343915,
+        -1.3376367844957885e-16,
+        -0.09402388060634538
+      ],
+      "second_local": [
+        -0.024884622544050345,
+        -0.018065752461552613,
+        0.022864155471324758
+      ]
+    },
+    "sampled_projection_gap_raw": -0.0579637612146533,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 3.185709972244696e-17,
+    "first_witness": [
+      -0.33433370756596564,
+      -2.4905153595458582,
+      0.7487790903042808
+    ],
+    "second_witness": [
+      -0.3343337075659656,
+      -2.490515359545858,
+      0.7487790903042807
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 784,
+      "kind": "terrain",
+      "first": 10,
+      "second": 5952,
+      "normal": [
+        -7.893441231894172e-12,
+        -4.370225962854683e-08,
+        0.999999999999999
+      ],
+      "first_local": [
+        0.14300000000000046,
+        0.046999999999999896,
+        -0.06350000000000001
+      ],
+      "second_local": [
+        -0.897901713848114,
+        -3.1156961917877197,
+        0.0006998637691140175
+      ]
+    },
+    "sampled_projection_gap_raw": -0.007193864718432984,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 3.725515412498065e-15,
+    "first_witness": [
+      0.22736767904613459,
+      -2.517751483684828,
+      0.0006998899095274171
+    ],
+    "second_witness": [
+      0.22736767904613464,
+      -2.5177514836848283,
+      0.0006998899095311424
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 787,
+      "kind": "self",
+      "first": 0,
+      "second": 2,
+      "normal": [
+        0.8480008901115871,
+        0.487290324805427,
+        0.2084289560521215
+      ],
+      "first_local": [
+        -0.027854766942577245,
+        -0.03428824859458397,
+        0.01500000000000011
+      ],
+      "second_local": [
+        -0.03968710737285497,
+        -0.0502240186095872,
+        0.034907330846832695
+      ]
+    },
+    "sampled_projection_gap_raw": -0.0013287617876512866,
+    "status": "separated",
+    "converged": true,
+    "distance_lower_bound": 0.0026111631296185057,
+    "distance_upper_bound": 0.0026111640426620835,
+    "first_witness": [
+      0.04192018133261793,
+      -2.533271369219674,
+      0.9218356410598514
+    ],
+    "second_witness": [
+      0.039539631039884976,
+      -2.534336863141233,
+      0.9219616595687392
+    ],
+    "iterations": 28,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 811,
+      "kind": "self",
+      "first": 33,
+      "second": 34,
+      "normal": [
+        0.32943004060459774,
+        -0.8516182209294186,
+        0.4077036351668514
+      ],
+      "first_local": [
+        -0.029976897013343745,
+        -4.969738793733112e-17,
+        -0.094023880606345
+      ],
+      "second_local": [
+        0.028868651017546605,
+        0.020137580111622786,
+        0.021359898149967114
+      ]
+    },
+    "sampled_projection_gap_raw": -0.05815372710830709,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 6.2546344413855015e-18,
+    "first_witness": [
+      0.3990608942631331,
+      -2.5629828586637484,
+      0.8772857908126901
+    ],
+    "second_witness": [
+      0.3990608942631331,
+      -2.5629828586637484,
+      0.8772857908126901
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 839,
+      "kind": "terrain",
+      "first": 8,
+      "second": 5952,
+      "normal": [
+        7.893441231894172e-12,
+        4.370225962854683e-08,
+        -0.999999999999999
+      ],
+      "first_local": [
+        -0.003790503850249424,
+        -0.0010425049152385096,
+        -0.3046488837957796
+      ],
+      "second_local": [
+        0.3668999969959259,
+        -1.7000998258590698,
+        0.0006999256438575685
+      ]
+    },
+    "sampled_projection_gap_raw": -0.01944348287519833,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.4766033072910755e-15,
+    "first_witness": [
+      0.1988464610776901,
+      -2.606103433714043,
+      0.0006998860481246779
+    ],
+    "second_witness": [
+      0.19884646107769008,
+      -2.606103433714043,
+      0.0006998860481261528
+    ],
+    "iterations": 5,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 839,
+      "kind": "self",
+      "first": 15,
+      "second": 17,
+      "normal": [
+        0.03985199868706817,
+        0.13525338650216523,
+        -0.9900092624012877
+      ],
+      "first_local": [
+        0.0637873149466908,
+        0.0010102121663735663,
+        -0.06419213067104208
+      ],
+      "second_local": [
+        0.025482508747916882,
+        -5.367826874371256e-18,
+        -0.09552456264580728
+      ]
+    },
+    "sampled_projection_gap_raw": -0.03499999999999997,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.3352826314795084e-17,
+    "first_witness": [
+      0.03716276462079827,
+      -2.5942608077719567,
+      0.30455861587077787
+    ],
+    "second_witness": [
+      0.03716276462079826,
+      -2.5942608077719567,
+      0.3045586158707778
+    ],
+    "iterations": 3,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 867,
+      "kind": "terrain",
+      "first": 18,
+      "second": 5952,
+      "normal": [
+        -7.893441231894172e-12,
+        -4.370225962854683e-08,
+        0.999999999999999
+      ],
+      "first_local": [
+        0.14300000000000018,
+        0.04700000000000003,
+        -0.06350000000000001
+      ],
+      "second_local": [
+        -0.897901713848114,
+        -3.1156961917877197,
+        0.0006998637691140175
+      ]
+    },
+    "sampled_projection_gap_raw": -0.0002620959770265552,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.5794456864434274e-15,
+    "first_witness": [
+      0.09102889464604808,
+      -2.689960129948113,
+      0.0006998823825495687
+    ],
+    "second_witness": [
+      0.09102889464604802,
+      -2.689960129948113,
+      0.0006998823825479909
+    ],
+    "iterations": 6,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 867,
+      "kind": "self",
+      "first": 11,
+      "second": 39,
+      "normal": [
+        0.729066494499583,
+        0.039897464045599976,
+        -0.6832790344806574
+      ],
+      "first_local": [
+        0.04928384522332232,
+        -0.04691019361821024,
+        -0.07128949750473311
+      ],
+      "second_local": [
+        0.022846178836831085,
+        0.03498779958522609,
+        -0.015334796794858009
+      ]
+    },
+    "sampled_projection_gap_raw": -0.002679099726703787,
+    "status": "separated",
+    "converged": true,
+    "distance_lower_bound": 0.0007606210686536497,
+    "distance_upper_bound": 0.0007606219949389616,
+    "first_witness": [
+      0.009750521900316368,
+      -2.663590657771567,
+      0.86084598507518
+    ],
+    "second_witness": [
+      0.009202269222345419,
+      -2.6635746667164133,
+      0.8613729662004944
+    ],
+    "iterations": 23,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 892,
+      "kind": "self",
+      "first": 0,
+      "second": 1,
+      "normal": [
+        -0.4204251447315937,
+        0.750393705220027,
+        0.5100509629866191
+      ],
+      "first_local": [
+        -0.027854766942577484,
+        0.03428824859458392,
+        0.015000000000000078
+      ],
+      "second_local": [
+        -0.03968710737285511,
+        0.05022401860958724,
+        0.03490733084683274
+      ]
+    },
+    "sampled_projection_gap_raw": -0.0013287617876511799,
+    "status": "separated",
+    "converged": true,
+    "distance_lower_bound": 0.0026111630707729154,
+    "distance_upper_bound": 0.0026111639461408216,
+    "first_witness": [
+      0.23118850854819545,
+      -2.6315789265571476,
+      0.8662964779043132
+    ],
+    "second_witness": [
+      0.23285526641719767,
+      -2.6333627878560746,
+      0.8653702305151476
+    ],
+    "iterations": 27,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 917,
+      "kind": "self",
+      "first": 33,
+      "second": 34,
+      "normal": [
+        -0.98321585247164,
+        -0.1549372924803619,
+        -0.09633806541196954
+      ],
+      "first_local": [
+        0.029999990487955132,
+        0.029,
+        -0.06497611019867844
+      ],
+      "second_local": [
+        0.028863839805126322,
+        -0.024679020047187777,
+        0.015805840492248615
+      ]
+    },
+    "sampled_projection_gap_raw": -0.05791338532410341,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 8.254190001063689e-18,
+    "first_witness": [
+      0.40815390436691384,
+      -2.6204259401658967,
+      0.8156279728741983
+    ],
+    "second_witness": [
+      0.4081539043669138,
+      -2.6204259401658967,
+      0.8156279728741983
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 944,
+      "kind": "self",
+      "first": 15,
+      "second": 16,
+      "normal": [
+        0.08243203292388425,
+        -0.26243749872777883,
+        0.961421613658411
+      ],
+      "first_local": [
+        0.006108726585274992,
+        -0.03462482215838686,
+        -0.33981082557357517
+      ],
+      "second_local": [
+        0.0045174912520831445,
+        -1.0251724427154102e-16,
+        -0.3044754373541925
+      ]
+    },
+    "sampled_projection_gap_raw": -0.035000000000000094,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.2856268029824422e-16,
+    "first_witness": [
+      0.03651532890613829,
+      -2.540401421674976,
+      0.037700189988908686
+    ],
+    "second_witness": [
+      0.03651532890613832,
+      -2.5404014216749764,
+      0.03770018998890867
+    ],
+    "iterations": 3,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 945,
+      "kind": "self",
+      "first": 40,
+      "second": 41,
+      "normal": [
+        0.9582440143364049,
+        -0.2514793741055393,
+        -0.13611220881294298
+      ],
+      "first_local": [
+        -0.02999999048795494,
+        -0.028999999999999967,
+        -0.06502388980132193
+      ],
+      "second_local": [
+        -0.02831265516579147,
+        0.016135983169078855,
+        0.024191085249185538
+      ]
+    },
+    "sampled_projection_gap_raw": -0.0580685592813384,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 7.930670245153116e-17,
+    "first_witness": [
+      -0.14481033075040503,
+      -2.6456945279606066,
+      0.8139286262956558
+    ],
+    "second_witness": [
+      -0.1448103307504051,
+      -2.645694527960606,
+      0.8139286262956557
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 974,
+      "kind": "terrain",
+      "first": 10,
+      "second": 5952,
+      "normal": [
+        7.893441231894172e-12,
+        4.370225962854683e-08,
+        -0.999999999999999
+      ],
+      "first_local": [
+        0.14299999999999982,
+        0.046999999999999965,
+        -0.0435
+      ],
+      "second_local": [
+        0.3668999969959259,
+        -1.7000998258590698,
+        0.0006999256438575685
+      ]
+    },
+    "sampled_projection_gap_raw": -0.0030413835746127714,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.5699987812445307e-15,
+    "first_witness": [
+      0.21656108291351,
+      -2.7037719622912593,
+      0.0006998817799321526
+    ],
+    "second_witness": [
+      0.21656108291350995,
+      -2.7037719622912593,
+      0.0006998817799305889
+    ],
+    "iterations": 5,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 996,
+      "kind": "terrain",
+      "first": 16,
+      "second": 5952,
+      "normal": [
+        -7.893441231894172e-12,
+        -4.370225962854683e-08,
+        0.999999999999999
+      ],
+      "first_local": [
+        0.00664287708997904,
+        -0.0025571538975419613,
+        -0.3737517305917999
+      ],
+      "second_local": [
+        -0.897901713848114,
+        -3.1156961917877197,
+        0.0006998637691140175
+      ]
+    },
+    "sampled_projection_gap_raw": -0.012179285156670027,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 1.6062211594802705e-15,
+    "first_witness": [
+      0.03788173393066746,
+      -2.5122923327157043,
+      0.0006998901466110745
+    ],
+    "second_witness": [
+      0.03788173393066743,
+      -2.5122923327157043,
+      0.0006998901466126792
+    ],
+    "iterations": 6,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 996,
+      "kind": "self",
+      "first": 25,
+      "second": 27,
+      "normal": [
+        0.9978621223684185,
+        -0.06397698101875163,
+        0.013346559186605347
+      ],
+      "first_local": [
+        0.09349428839606778,
+        -0.05000745755838357,
+        0.0906549629562968
+      ],
+      "second_local": [
+        0.06500000000000004,
+        -0.01999999365863672,
+        0.10001592653421455
+      ]
+    },
+    "sampled_projection_gap_raw": -0.030000000000000023,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 3.254729513239996e-17,
+    "first_witness": [
+      0.12593083835439406,
+      -2.690889264077613,
+      1.0819547327887649
+    ],
+    "second_witness": [
+      0.12593083835439403,
+      -2.690889264077613,
+      1.0819547327887649
+    ],
+    "iterations": 3,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  {
+    "record": {
+      "frame": 996,
+      "kind": "self",
+      "first": 40,
+      "second": 41,
+      "normal": [
+        0.9100133131393231,
+        -0.38989718049014643,
+        -0.14091117256990843
+      ],
+      "first_local": [
+        -0.02999999048795503,
+        -0.029000000000000026,
+        -0.06502388980132201
+      ],
+      "second_local": [
+        -0.024903915822505875,
+        0.013526029884815147,
+        0.025757867842912806
+      ]
+    },
+    "sampled_projection_gap_raw": -0.05805734368314361,
+    "status": "within_numerical_tolerance",
+    "converged": true,
+    "distance_lower_bound": 0.0,
+    "distance_upper_bound": 2.60353041552843e-17,
+    "first_witness": [
+      -0.12987516899082924,
+      -2.577444471105593,
+      0.8330236466932504
+    ],
+    "second_witness": [
+      -0.1298751689908292,
+      -2.5774444711055926,
+      0.8330236466932504
+    ],
+    "iterations": 4,
+    "tolerance": 1e-09,
+    "penetration_depth_computed": false,
+    "nominal_geometry_only": true,
+    "cooked_physics_validated": false,
+    "accepted_reference": false,
+    "training_ready": false
+  }
+]

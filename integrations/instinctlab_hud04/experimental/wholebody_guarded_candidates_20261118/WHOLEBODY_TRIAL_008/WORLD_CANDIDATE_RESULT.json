@@ -1,0 +1,113 @@
+{
+  "actual_lp_calls": 100,
+  "accepted_updates": 68,
+  "planned_lp_calls": 100,
+  "coverage_min": 1,
+  "coverage_max": 2,
+  "visited_frames": 997,
+  "changed_frames": 691,
+  "elapsed_seconds": 150.08598023199988,
+  "algorithm_wall_seconds": 160,
+  "termination": "finite_plan_finished_NOT_convergence",
+  "nonlinear_all43_newcontact_refresh": true,
+  "sampled_separation_axes_are_not_penetration_depth": true,
+  "no_new_foot_frame_and_no_foot_overlap_score_increase_guard": true,
+  "pinned86f05_no_per_pose_max_sat_increase_guard": true,
+  "same_link_adaptive_scores_constant_not_geometry_exemptions": true,
+  "accepted_reference": false,
+  "training_ready": false,
+  "position_max_violation_rad": 5.551115123125783e-17,
+  "velocity_max_violation_rad_s": 4.263256414560601e-14,
+  "initial": {
+    "position_mean_raw": [
+      0.12931433661062977,
+      0.12114956052107018,
+      0.10115954412643066,
+      0.08025325542068273,
+      0.11665946183526196,
+      0.1117796861551575,
+      0.07010460651637565
+    ],
+    "position_max_raw": [
+      0.22704189495342922,
+      0.28995345646373366,
+      0.3123589348278484,
+      0.5138199150099148,
+      0.2214325289046922,
+      0.4039152334556338,
+      0.5993818486448046
+    ],
+    "orientation_mean_degrees": [
+      0.11212740186711513,
+      21.993210514463062,
+      11.630018853080212,
+      21.7274216778166,
+      9.241921688696737
+    ],
+    "orientation_max_degrees": [
+      2.485967616727934,
+      62.35890709229367,
+      73.05445989898766,
+      60.046366895745216,
+      52.51036029964091
+    ],
+    "weighted_l1": 8752.997291282514,
+    "root_max_linear_speed_raw_per_s": 4.7894525484169606,
+    "root_max_linear_acceleration_raw_per_s2": 698.9636307501942
+  },
+  "final": {
+    "position_mean_raw": [
+      0.13103249592981392,
+      0.12955563256395927,
+      0.10104172371200358,
+      0.07822879778511808,
+      0.12574662097709582,
+      0.1096689796550088,
+      0.07307388719309979
+    ],
+    "position_max_raw": [
+      0.22704189495342922,
+      0.29890948262453626,
+      0.2994897278732137,
+      0.5138199150099148,
+      0.2832590269005127,
+      0.4039152334556338,
+      0.5993818486448046
+    ],
+    "orientation_mean_degrees": [
+      2.6120794567138237,
+      22.69479153045405,
+      11.232191287246817,
+      22.680359700840665,
+      9.2158815173128
+    ],
+    "orientation_max_degrees": [
+      14.581400329331261,
+      78.89898100829869,
+      73.05445989898766,
+      71.2407525259834,
+      52.51036029964091
+    ],
+    "weighted_l1": 9304.73350455001,
+    "root_max_linear_speed_raw_per_s": 4.7894525484169606,
+    "root_max_linear_acceleration_raw_per_s2": 698.9636307501942
+  },
+  "artifact_sha256": "d5cdb5382b5eb910b3273adab662de286e0452376ee9d134124d4ceddd2f30cf",
+  "inputs_sha256": {
+    "/workspace/hud04-world-candidate-20261118/WORLD_TRIAL_005_FOOT_PRIORITY/STEP1_WORLD_CANDIDATE_UNACCEPTED.npz": "9353b185d92c21ceeb56a289b926f89d3dc72c5343745fc14e26889bc6d728d4",
+    "/workspace/hud04-recovery-fd12fe1/upstream/source/instinctlab/instinctlab/assets/resources/unitree_g1/urdf/g1_29dof_torsobase_popsicle.urdf": "5e99d930af64f3f0bfd34235239e288cc380ba62c8b01fcfcf8cc9f0996e7fa4",
+    "/workspace/hud04-recovery-bf4a057/flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/urdf/HU_D04_01_fixed_head_body_collision.urdf": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+    "/workspace/hud04-original-drive-20261117/kneelClimbStep1-x-0.1-ziwen-retargeted.npz": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+    "/workspace/hud04-multipatch-review-20261117/CONTACT_CORRESPONDENCE_GEOMETRY_REVIEW_20261117.json": "c039d1386ff6267e7b6012e86f48a17fd58b931a85aa1d8cd47eb706ed23864b"
+  },
+  "offline_wandb_run_id": "1k7c8kzm",
+  "online_verified": false,
+  "head_fixed_zero": true,
+  "frames": 997,
+  "fps": 90,
+  "body_actions": 29,
+  "no_joint_clipping": true,
+  "no_resampling": true,
+  "gpu_submissions": 0,
+  "ppo_updates": 0
+}

@@ -1,0 +1,396 @@
+{
+  "stage": "300_real_data_LP_calls_all43_refresh_and_strict_per_pose_guard_BUT_NO_ACCEPTED_REFERENCE",
+  "publication_expected_parent": "86f05dffa8696465147d7e3ebf99aff568a84c26",
+  "previous_feature_code_base": "e50115ec3fdabc3583224ea060e3054d61631939",
+  "previous_world_series_real_data_lp_calls": 347,
+  "new_stage_real_data_lp_calls": 300,
+  "new_stage_local_updates_not_reference_acceptance": 230,
+  "trials": [
+    {
+      "trial": "WHOLEBODY_TRIAL_006",
+      "artifact_sha256": "ac20ec8ff3406c00d3762f4ffeeee5014ca28023850d6bf2f6f33df8ec8563fd",
+      "seed_sha256": "9353b185d92c21ceeb56a289b926f89d3dc72c5343745fc14e26889bc6d728d4",
+      "real_data_lp_calls": 100,
+      "accepted_local_steps_NOT_reference_acceptance": 89,
+      "visited_frames": 997,
+      "algorithm_seconds": 111.91275033300002,
+      "algorithm_cap_seconds": 140,
+      "parent_cap_seconds": 170,
+      "parent_receipt": {
+        "child_exit": 0,
+        "child_reaped": true,
+        "parent_timeout": false,
+        "elapsed_seconds": 115.338586556,
+        "result_exists": true,
+        "artifact_exists": true,
+        "accepted_reference": false,
+        "training_ready": false,
+        "gpu_submissions": 0,
+        "ppo_updates": 0
+      },
+      "foot_interior_hit_frames": {
+        "left": 220,
+        "right": 128
+      },
+      "position_bad_frames": 0,
+      "overspeed_intervals": 0,
+      "max_quaternion_norm_error": 2.220446049250313e-16,
+      "independent_metric_max_disagreement": 2.842170943040401e-14,
+      "root_speed_raw_per_s": {
+        "mean": 0.8555104426152587,
+        "p95": 1.9552494711313586,
+        "maximum": 4.856136722999601
+      },
+      "root_acceleration_raw_per_s2": {
+        "mean": 41.07744664060618,
+        "p95": 162.2353167445708,
+        "maximum": 504.34688414550857
+      },
+      "left_right_nominal_sole_position_max_raw": [
+        0.440386456859881,
+        0.5903004382374312
+      ],
+      "offline_wandb_run_id": "lxlw282k",
+      "online_verified": false,
+      "nominal_footbox_geometry_rejection": true,
+      "accepted_reference": false,
+      "training_ready": false,
+      "termination": "finite_plan_finished_NOT_convergence"
+    },
+    {
+      "trial": "WHOLEBODY_TRIAL_007",
+      "artifact_sha256": "76fe75f0fe63b58fd4f4f3e71e535fced0dd0e6f4dc221fab84a46a64da3face",
+      "seed_sha256": "9353b185d92c21ceeb56a289b926f89d3dc72c5343745fc14e26889bc6d728d4",
+      "real_data_lp_calls": 100,
+      "accepted_local_steps_NOT_reference_acceptance": 73,
+      "visited_frames": 997,
+      "algorithm_seconds": 137.98068408899996,
+      "algorithm_cap_seconds": 140,
+      "parent_cap_seconds": 170,
+      "parent_receipt": {
+        "child_exit": 0,
+        "child_reaped": true,
+        "parent_timeout": false,
+        "elapsed_seconds": 140.485174336,
+        "result_exists": true,
+        "artifact_exists": true,
+        "accepted_reference": false,
+        "training_ready": false,
+        "gpu_submissions": 0,
+        "ppo_updates": 0
+      },
+      "foot_interior_hit_frames": {
+        "left": 131,
+        "right": 82
+      },
+      "position_bad_frames": 0,
+      "overspeed_intervals": 0,
+      "max_quaternion_norm_error": 2.220446049250313e-16,
+      "independent_metric_max_disagreement": 4.973799150320701e-14,
+      "root_speed_raw_per_s": {
+        "mean": 0.870052397840924,
+        "p95": 2.170090403068821,
+        "maximum": 4.7894525484169606
+      },
+      "root_acceleration_raw_per_s2": {
+        "mean": 44.26788578672212,
+        "p95": 185.16820974986393,
+        "maximum": 698.9636307501942
+      },
+      "left_right_nominal_sole_position_max_raw": [
+        0.5138199150099148,
+        0.5993818486448046
+      ],
+      "offline_wandb_run_id": "8mvbf1zf",
+      "online_verified": false,
+      "nominal_footbox_geometry_rejection": true,
+      "accepted_reference": false,
+      "training_ready": false,
+      "termination": "finite_plan_finished_NOT_convergence"
+    },
+    {
+      "trial": "WHOLEBODY_TRIAL_008",
+      "artifact_sha256": "d5cdb5382b5eb910b3273adab662de286e0452376ee9d134124d4ceddd2f30cf",
+      "seed_sha256": "9353b185d92c21ceeb56a289b926f89d3dc72c5343745fc14e26889bc6d728d4",
+      "real_data_lp_calls": 100,
+      "accepted_local_steps_NOT_reference_acceptance": 68,
+      "visited_frames": 997,
+      "algorithm_seconds": 150.08598023199988,
+      "algorithm_cap_seconds": 160,
+      "parent_cap_seconds": 190,
+      "parent_receipt": {
+        "child_exit": 0,
+        "child_reaped": true,
+        "parent_timeout": false,
+        "elapsed_seconds": 152.55003527600002,
+        "result_exists": true,
+        "artifact_exists": true,
+        "accepted_reference": false,
+        "training_ready": false,
+        "gpu_submissions": 0,
+        "ppo_updates": 0
+      },
+      "foot_interior_hit_frames": {
+        "left": 148,
+        "right": 84
+      },
+      "position_bad_frames": 0,
+      "overspeed_intervals": 0,
+      "max_quaternion_norm_error": 2.220446049250313e-16,
+      "independent_metric_max_disagreement": 2.842170943040401e-14,
+      "root_speed_raw_per_s": {
+        "mean": 0.8629618189307476,
+        "p95": 2.0496591413506993,
+        "maximum": 4.7894525484169606
+      },
+      "root_acceleration_raw_per_s2": {
+        "mean": 43.66210672586415,
+        "p95": 179.0701485396034,
+        "maximum": 698.9636307501942
+      },
+      "left_right_nominal_sole_position_max_raw": [
+        0.5138199150099148,
+        0.5993818486448046
+      ],
+      "offline_wandb_run_id": "1k7c8kzm",
+      "online_verified": false,
+      "nominal_footbox_geometry_rejection": true,
+      "accepted_reference": false,
+      "training_ready": false,
+      "termination": "finite_plan_finished_NOT_convergence"
+    }
+  ],
+  "all_three_start_same005_seed_not_chained": true,
+  "new_software_tests": 24,
+  "concurrent_remote_tests_recovered_and_passed": 28,
+  "historical_full_regression_rerun": false,
+  "remote_advance_review": {
+    "base": "e50115ec3fdabc3583224ea060e3054d61631939",
+    "head": "86f05dffa8696465147d7e3ebf99aff568a84c26",
+    "ahead_by": 1,
+    "files": {
+      "integrations/instinctlab_hud04/experimental/nonlinear_guard_20261118/FRESH_SAT_AUDIT.json": {
+        "git_blob": "4183690d62b6487705c450e0a79458a72fa7757b",
+        "status": "added",
+        "recovered": false,
+        "reason": "Large audit output not needed for code review; do not claim local recovery"
+      },
+      "integrations/instinctlab_hud04/experimental/nonlinear_guard_20261118/README_zh.md": {
+        "local_file": "nonlinear_guard_20261118/README_zh.md",
+        "git_blob": "52bab870dc120b7aec35da9a0d42704eaab26d5f",
+        "sha256": "b80e113d2926e5480181fc7454ba98f24abe30a73e6df2d15d7911da3bfcbb6b",
+        "status": "added"
+      },
+      "integrations/instinctlab_hud04/experimental/nonlinear_guard_20261118/audit_saved_candidates.py": {
+        "local_file": "nonlinear_guard_20261118/audit_saved_candidates.py",
+        "git_blob": "f5fbf03769a2e647aca9d4c427cd53df8d9473e9",
+        "sha256": "5d8ba65e53706587f222002f20d99514b6c9b62802ed5227954a33ffd162579f",
+        "status": "added"
+      },
+      "integrations/instinctlab_hud04/experimental/nonlinear_guard_20261118/box_triangle_guard.py": {
+        "local_file": "nonlinear_guard_20261118/box_triangle_guard.py",
+        "git_blob": "933b8b752c89a73aba802ba9208e66b698133aa1",
+        "sha256": "f69a24efb4ccf34e82c53d9c45fb71b1dca6555aba97663bca920d38b6d0a797",
+        "status": "added"
+      },
+      "integrations/instinctlab_hud04/experimental/nonlinear_guard_20261118/test_box_triangle_guard.py": {
+        "local_file": "nonlinear_guard_20261118/test_box_triangle_guard.py",
+        "git_blob": "025158b3565314fe275bda7b190e80a90e293324",
+        "sha256": "32d94cc7107cabbd21f3f2c3f80f03a30a11827ef1d775790033c7ec961b9515",
+        "status": "added"
+      },
+      "integrations/instinctlab_hud04/experimental/nonlinear_guard_20261118/test_solver_rejection_wiring.py": {
+        "local_file": "nonlinear_guard_20261118/test_solver_rejection_wiring.py",
+        "git_blob": "7aef97597ef77157e9bc1839d60eb29f3d3f8682",
+        "sha256": "b8f8472018bfe0aff05555ca57c73f4b4c4ecb5452bbe6a200800c612ca7b172",
+        "status": "added"
+      },
+      "integrations/instinctlab_hud04/experimental/world_candidate_20261118/README_zh.md": {
+        "local_file": "world_candidate_20261118/README_zh.md",
+        "git_blob": "3e336d8aabff164c70f5016c221c818b0694d1b9",
+        "sha256": "7f937a84398dcc81bc90143ac2ed1b0310e64a8327b3aa74ed8ddd071cd65c46",
+        "status": "modified"
+      },
+      "integrations/instinctlab_hud04/experimental/world_candidate_20261118/collision_temporal_solver.py": {
+        "local_file": "world_candidate_20261118/collision_temporal_solver.py",
+        "git_blob": "f26720a4b81d4942d9ed65b02618e7357955ccf6",
+        "sha256": "f1998fa7688af99f6ed75a0325d54bc94c4c657167c72865b6cdee7ae88c8511",
+        "status": "modified"
+      },
+      "integrations/instinctlab_hud04/experimental/world_candidate_20261118/terrain_temporal_terms.py": {
+        "local_file": "world_candidate_20261118/terrain_temporal_terms.py",
+        "git_blob": "81fb28b168dbb3cb509123440f57194ea6e1e06c",
+        "sha256": "e3c466eed62b84ac841da1acb11df1e5e0bba8649661e42337c09cf299a998e2",
+        "status": "modified"
+      }
+    },
+    "read_only": true
+  },
+  "strict_final_trial008_vs_seed005": {
+    "left": {
+      "reject": false,
+      "new_hit_frames": 0,
+      "worse_per_pose_scores": 0
+    },
+    "right": {
+      "reject": false,
+      "new_hit_frames": 0,
+      "worse_per_pose_scores": 0
+    }
+  },
+  "all997_nominal_geometry_audits": {
+    "007": {
+      "stage": "all997_nominal43shape_newcontact_audit_NOT_acceptance",
+      "artifact_sha256": "76fe75f0fe63b58fd4f4f3e71e535fced0dd0e6f4dc221fab84a46a64da3face",
+      "poses_from_independent_legacy_RobotTree": true,
+      "projection_code_shared_with_solver": true,
+      "frames": 997,
+      "shapes": 43,
+      "pairs_per_frame": 903,
+      "all_native_frame_broadphase_complete": true,
+      "broadphase_counts": {
+        "frames": 997,
+        "shapes": 43,
+        "shape_pairs": 903,
+        "terrain_pairs_broadphase": 17918,
+        "self_pairs_broadphase": 63233,
+        "negative_terrain_projection_pairs": 2833,
+        "negative_self_projection_pairs": 19456,
+        "negative_self_same_link_pairs": 17330,
+        "all_adjacency_pairs_retained": true
+      },
+      "negative_projection_records_gt_1e_minus7": {
+        "terrain": 2833,
+        "self_same_link": 16949,
+        "self_distinct_links": 2126
+      },
+      "frames_with_negative_projection_by_group": {
+        "terrain": 665,
+        "self_same_link": 997,
+        "self_distinct_links": 997
+      },
+      "negative_projection_NOT_signed_depth_or_full_collision_proof": true,
+      "nominal_box_terrain_SAT_strict_negative_frames": {
+        "right_ankle_roll_link": 82,
+        "left_ankle_roll_link": 131
+      },
+      "independent_saved_foot_witnesses_covered": 213,
+      "bounded_GJK_selection": "up to20evenly-spaced+4worst per 3 category +12foot; <=84 total, <=64iterations/query, 70second cooperative deadline",
+      "GJK_queries": 84,
+      "GJK_budget_stop": false,
+      "GJK_counts": {
+        "terrain:within_numerical_tolerance": 35,
+        "self:separated": 3,
+        "self:within_numerical_tolerance": 45,
+        "terrain:separated": 1
+      },
+      "GJK_not_signed_penetration_depth": true,
+      "all_frame_narrowphase_complete": false,
+      "adjacency_auto_exclusions": 0,
+      "cooked_actual_filters_verified": false,
+      "no_support_labels_inferred": true,
+      "source_physical_units_proven": false,
+      "foot_collision_rejection": true,
+      "accepted_reference": false,
+      "training_ready": false,
+      "gpu_submissions": 0,
+      "ppo_updates": 0,
+      "elapsed_seconds": 25.424182029999997
+    },
+    "008": {
+      "stage": "all997_nominal43shape_newcontact_audit_NOT_acceptance",
+      "artifact_sha256": "d5cdb5382b5eb910b3273adab662de286e0452376ee9d134124d4ceddd2f30cf",
+      "poses_from_independent_legacy_RobotTree": true,
+      "projection_code_shared_with_solver": true,
+      "frames": 997,
+      "shapes": 43,
+      "pairs_per_frame": 903,
+      "all_native_frame_broadphase_complete": true,
+      "broadphase_counts": {
+        "frames": 997,
+        "shapes": 43,
+        "shape_pairs": 903,
+        "terrain_pairs_broadphase": 18079,
+        "self_pairs_broadphase": 63051,
+        "negative_terrain_projection_pairs": 2942,
+        "negative_self_projection_pairs": 19478,
+        "negative_self_same_link_pairs": 17341,
+        "all_adjacency_pairs_retained": true
+      },
+      "negative_projection_records_gt_1e_minus7": {
+        "terrain": 2942,
+        "self_same_link": 16949,
+        "self_distinct_links": 2137
+      },
+      "frames_with_negative_projection_by_group": {
+        "terrain": 680,
+        "self_same_link": 997,
+        "self_distinct_links": 997
+      },
+      "negative_projection_NOT_signed_depth_or_full_collision_proof": true,
+      "nominal_box_terrain_SAT_strict_negative_frames": {
+        "right_ankle_roll_link": 84,
+        "left_ankle_roll_link": 148
+      },
+      "independent_saved_foot_witnesses_covered": 232,
+      "bounded_GJK_selection": "up to20evenly-spaced+4worst per 3 category +12foot; <=84 total, <=64iterations/query, 70second cooperative deadline",
+      "GJK_queries": 84,
+      "GJK_budget_stop": false,
+      "GJK_counts": {
+        "terrain:within_numerical_tolerance": 35,
+        "self:separated": 4,
+        "self:within_numerical_tolerance": 44,
+        "terrain:separated": 1
+      },
+      "GJK_not_signed_penetration_depth": true,
+      "all_frame_narrowphase_complete": false,
+      "adjacency_auto_exclusions": 0,
+      "cooked_actual_filters_verified": false,
+      "no_support_labels_inferred": true,
+      "source_physical_units_proven": false,
+      "foot_collision_rejection": true,
+      "accepted_reference": false,
+      "training_ready": false,
+      "gpu_submissions": 0,
+      "ppo_updates": 0,
+      "elapsed_seconds": 25.428320572999837
+    }
+  },
+  "all_frames_all_pairs_independent_narrowphase_complete": false,
+  "projection_values_are_not_signed_depth": true,
+  "software_tests_not_physics_acceptance": true,
+  "original_input_hashes_preserved": true,
+  "head_fixed_zero": true,
+  "body_actions": 29,
+  "native_frames": 997,
+  "fps": 90,
+  "joint_angle_clipping": false,
+  "resampling": false,
+  "accepted_manifests_created": 0,
+  "source_motion_files_uploaded": 0,
+  "new_derived_unaccepted_motion_files": 3,
+  "production_startup_gate_changed": false,
+  "existing_remote_guard_changed": false,
+  "only_offline_wandb_records": true,
+  "online_wandb_access_retested": false,
+  "live_gpu_status_checked_this_stage": false,
+  "new_gpu_submissions": 0,
+  "ppo_updates": 0,
+  "all_launched_direct_children_reaped": true,
+  "remaining_gates": [
+    "148left/84right nominal footbox strict terrain intersections in008",
+    "Full-body projection score is soft, not a hard collision-free certificate; full independent narrowphase/runtime cooked pair filters remain incomplete",
+    "Per-pose foot SAT nonregression does not guarantee no swept collision, solid containment, support or convergence",
+    "Root/joint temporal and dynamic feasibility not accepted; root acceleration mean worsens vs005",
+    "Auditable source exporter/root/quaternion/physical-unit/STL/world-alignment provenance still conditional",
+    "Hand/foot/knee material-frame calibration/support schedule not accepted; zero-model offsets remain hypotheses",
+    "Actual HUD04 terrain perception task/dynamic replay/reset/depth/cleanexit and eventual bounded learning-chain smoke still blocked"
+  ],
+  "current_trial_budgets_exhausted": true,
+  "automatic_retries": 0,
+  "unlimited_budget_authorized": false,
+  "long_PPO_authorized": false,
+  "do_not_replay_launchers": true,
+  "accepted_reference": false,
+  "training_ready": false
+}

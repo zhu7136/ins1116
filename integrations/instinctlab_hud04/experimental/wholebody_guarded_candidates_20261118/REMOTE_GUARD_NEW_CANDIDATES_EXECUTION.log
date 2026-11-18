@@ -1,0 +1,45 @@
+{
+  "hits": {
+    "seed005": {
+      "left": 167,
+      "right": 94
+    },
+    "trial006": {
+      "left": 220,
+      "right": 128
+    },
+    "trial007": {
+      "left": 131,
+      "right": 82
+    }
+  },
+  "stricter_guard": {
+    "trial006": {
+      "left": {
+        "reject": true,
+        "new_hits": 119,
+        "worse_poses": 135
+      },
+      "right": {
+        "reject": true,
+        "new_hits": 57,
+        "worse_poses": 69
+      }
+    },
+    "trial007": {
+      "left": {
+        "reject": true,
+        "new_hits": 0,
+        "worse_poses": 11
+      },
+      "right": {
+        "reject": true,
+        "new_hits": 0,
+        "worse_poses": 8
+      }
+    }
+  },
+  "accepted_steps_audited": 73,
+  "accepted_reference": false,
+  "elapsed_seconds": 3.017953029999944
+}

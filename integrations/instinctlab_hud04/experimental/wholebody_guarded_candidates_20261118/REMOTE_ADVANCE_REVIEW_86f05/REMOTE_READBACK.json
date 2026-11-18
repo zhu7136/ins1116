@@ -1,0 +1,62 @@
+{
+  "base": "e50115ec3fdabc3583224ea060e3054d61631939",
+  "head": "86f05dffa8696465147d7e3ebf99aff568a84c26",
+  "ahead_by": 1,
+  "files": {
+    "integrations/instinctlab_hud04/experimental/nonlinear_guard_20261118/FRESH_SAT_AUDIT.json": {
+      "git_blob": "4183690d62b6487705c450e0a79458a72fa7757b",
+      "status": "added",
+      "recovered": false,
+      "reason": "Large audit output not needed for code review; do not claim local recovery"
+    },
+    "integrations/instinctlab_hud04/experimental/nonlinear_guard_20261118/README_zh.md": {
+      "local_file": "nonlinear_guard_20261118/README_zh.md",
+      "git_blob": "52bab870dc120b7aec35da9a0d42704eaab26d5f",
+      "sha256": "b80e113d2926e5480181fc7454ba98f24abe30a73e6df2d15d7911da3bfcbb6b",
+      "status": "added"
+    },
+    "integrations/instinctlab_hud04/experimental/nonlinear_guard_20261118/audit_saved_candidates.py": {
+      "local_file": "nonlinear_guard_20261118/audit_saved_candidates.py",
+      "git_blob": "f5fbf03769a2e647aca9d4c427cd53df8d9473e9",
+      "sha256": "5d8ba65e53706587f222002f20d99514b6c9b62802ed5227954a33ffd162579f",
+      "status": "added"
+    },
+    "integrations/instinctlab_hud04/experimental/nonlinear_guard_20261118/box_triangle_guard.py": {
+      "local_file": "nonlinear_guard_20261118/box_triangle_guard.py",
+      "git_blob": "933b8b752c89a73aba802ba9208e66b698133aa1",
+      "sha256": "f69a24efb4ccf34e82c53d9c45fb71b1dca6555aba97663bca920d38b6d0a797",
+      "status": "added"
+    },
+    "integrations/instinctlab_hud04/experimental/nonlinear_guard_20261118/test_box_triangle_guard.py": {
+      "local_file": "nonlinear_guard_20261118/test_box_triangle_guard.py",
+      "git_blob": "025158b3565314fe275bda7b190e80a90e293324",
+      "sha256": "32d94cc7107cabbd21f3f2c3f80f03a30a11827ef1d775790033c7ec961b9515",
+      "status": "added"
+    },
+    "integrations/instinctlab_hud04/experimental/nonlinear_guard_20261118/test_solver_rejection_wiring.py": {
+      "local_file": "nonlinear_guard_20261118/test_solver_rejection_wiring.py",
+      "git_blob": "7aef97597ef77157e9bc1839d60eb29f3d3f8682",
+      "sha256": "b8f8472018bfe0aff05555ca57c73f4b4c4ecb5452bbe6a200800c612ca7b172",
+      "status": "added"
+    },
+    "integrations/instinctlab_hud04/experimental/world_candidate_20261118/README_zh.md": {
+      "local_file": "world_candidate_20261118/README_zh.md",
+      "git_blob": "3e336d8aabff164c70f5016c221c818b0694d1b9",
+      "sha256": "7f937a84398dcc81bc90143ac2ed1b0310e64a8327b3aa74ed8ddd071cd65c46",
+      "status": "modified"
+    },
+    "integrations/instinctlab_hud04/experimental/world_candidate_20261118/collision_temporal_solver.py": {
+      "local_file": "world_candidate_20261118/collision_temporal_solver.py",
+      "git_blob": "f26720a4b81d4942d9ed65b02618e7357955ccf6",
+      "sha256": "f1998fa7688af99f6ed75a0325d54bc94c4c657167c72865b6cdee7ae88c8511",
+      "status": "modified"
+    },
+    "integrations/instinctlab_hud04/experimental/world_candidate_20261118/terrain_temporal_terms.py": {
+      "local_file": "world_candidate_20261118/terrain_temporal_terms.py",
+      "git_blob": "81fb28b168dbb3cb509123440f57194ea6e1e06c",
+      "sha256": "e3c466eed62b84ac841da1acb11df1e5e0bba8649661e42337c09cf299a998e2",
+      "status": "modified"
+    }
+  },
+  "read_only": true
+}

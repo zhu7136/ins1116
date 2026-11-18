@@ -1,0 +1,58 @@
+{
+  "stage": "all997_nominal43shape_newcontact_audit_NOT_acceptance",
+  "artifact_sha256": "76fe75f0fe63b58fd4f4f3e71e535fced0dd0e6f4dc221fab84a46a64da3face",
+  "poses_from_independent_legacy_RobotTree": true,
+  "projection_code_shared_with_solver": true,
+  "frames": 997,
+  "shapes": 43,
+  "pairs_per_frame": 903,
+  "all_native_frame_broadphase_complete": true,
+  "broadphase_counts": {
+    "frames": 997,
+    "shapes": 43,
+    "shape_pairs": 903,
+    "terrain_pairs_broadphase": 17918,
+    "self_pairs_broadphase": 63233,
+    "negative_terrain_projection_pairs": 2833,
+    "negative_self_projection_pairs": 19456,
+    "negative_self_same_link_pairs": 17330,
+    "all_adjacency_pairs_retained": true
+  },
+  "negative_projection_records_gt_1e_minus7": {
+    "terrain": 2833,
+    "self_same_link": 16949,
+    "self_distinct_links": 2126
+  },
+  "frames_with_negative_projection_by_group": {
+    "terrain": 665,
+    "self_same_link": 997,
+    "self_distinct_links": 997
+  },
+  "negative_projection_NOT_signed_depth_or_full_collision_proof": true,
+  "nominal_box_terrain_SAT_strict_negative_frames": {
+    "right_ankle_roll_link": 82,
+    "left_ankle_roll_link": 131
+  },
+  "independent_saved_foot_witnesses_covered": 213,
+  "bounded_GJK_selection": "up to20evenly-spaced+4worst per 3 category +12foot; <=84 total, <=64iterations/query, 70second cooperative deadline",
+  "GJK_queries": 84,
+  "GJK_budget_stop": false,
+  "GJK_counts": {
+    "terrain:within_numerical_tolerance": 35,
+    "self:separated": 3,
+    "self:within_numerical_tolerance": 45,
+    "terrain:separated": 1
+  },
+  "GJK_not_signed_penetration_depth": true,
+  "all_frame_narrowphase_complete": false,
+  "adjacency_auto_exclusions": 0,
+  "cooked_actual_filters_verified": false,
+  "no_support_labels_inferred": true,
+  "source_physical_units_proven": false,
+  "foot_collision_rejection": true,
+  "accepted_reference": false,
+  "training_ready": false,
+  "gpu_submissions": 0,
+  "ppo_updates": 0,
+  "elapsed_seconds": 25.424182029999997
+}

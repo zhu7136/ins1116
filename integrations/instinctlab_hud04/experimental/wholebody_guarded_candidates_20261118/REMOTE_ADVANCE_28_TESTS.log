@@ -1,0 +1,33 @@
+test_all_poses_not_just_first (test_box_triangle_guard.GuardTests.test_all_poses_not_just_first) ... ok
+test_bad_rotation_rejected (test_box_triangle_guard.GuardTests.test_bad_rotation_rejected) ... ok
+test_clear_above (test_box_triangle_guard.GuardTests.test_clear_above) ... ok
+test_crop_area_and_originating_ids (test_box_triangle_guard.GuardTests.test_crop_area_and_originating_ids) ... ok
+test_crop_invalid_rejected (test_box_triangle_guard.GuardTests.test_crop_invalid_rejected) ... ok
+test_crossing_depth_along_sat_axis (test_box_triangle_guard.GuardTests.test_crossing_depth_along_sat_axis) ... ok
+test_degenerate_rejected (test_box_triangle_guard.GuardTests.test_degenerate_rejected) ... ok
+test_explicit_numerical_tolerance (test_box_triangle_guard.GuardTests.test_explicit_numerical_tolerance) ... ok
+test_face_touch_not_strict (test_box_triangle_guard.GuardTests.test_face_touch_not_strict) ... ok
+test_finite_triangle_not_infinite_plane (test_box_triangle_guard.GuardTests.test_finite_triangle_not_infinite_plane) ... ok
+test_geometry_binding_rejected (test_box_triangle_guard.GuardTests.test_geometry_binding_rejected) ... ok
+test_incomplete_report_rejected (test_box_triangle_guard.GuardTests.test_incomplete_report_rejected) ... ok
+test_increased_same_frame_overlap_rejected (test_box_triangle_guard.GuardTests.test_increased_same_frame_overlap_rejected) ... ok
+test_mutated_geometry_refused (test_box_triangle_guard.GuardTests.test_mutated_geometry_refused) ... ok
+test_nan_rejected (test_box_triangle_guard.GuardTests.test_nan_rejected) ... ok
+test_new_sidewall_is_rejected (test_box_triangle_guard.GuardTests.test_new_sidewall_is_rejected) ... ok
+test_not_motion_acceptance (test_box_triangle_guard.GuardTests.test_not_motion_acceptance) ... ok
+test_pose_binding_rejected (test_box_triangle_guard.GuardTests.test_pose_binding_rejected) ... ok
+test_random500_against_independent_polygon_clipping (test_box_triangle_guard.GuardTests.test_random500_against_independent_polygon_clipping) ... ok
+test_reducing_overlap_does_not_reject (test_box_triangle_guard.GuardTests.test_reducing_overlap_does_not_reject) ... ok
+test_rigid_equivariance (test_box_triangle_guard.GuardTests.test_rigid_equivariance) ... ok
+test_solid_containment_not_excluded (test_box_triangle_guard.GuardTests.test_solid_containment_not_excluded) ... ok
+test_source_not_modified (test_box_triangle_guard.GuardTests.test_source_not_modified) ... ok
+test_strict_crossing (test_box_triangle_guard.GuardTests.test_strict_crossing) ... ok
+test_winding_invariant (test_box_triangle_guard.GuardTests.test_winding_invariant) ... ok
+test_both_real_foot_methods_detect_new_collision (test_solver_rejection_wiring.WiringTests.test_both_real_foot_methods_detect_new_collision) ... ok
+test_frame_indices_required (test_solver_rejection_wiring.WiringTests.test_frame_indices_required) ... ok
+test_real_solve_function_rejects_improved_merit_before_assignment (test_solver_rejection_wiring.WiringTests.test_real_solve_function_rejects_improved_merit_before_assignment) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.897s
+
+OK

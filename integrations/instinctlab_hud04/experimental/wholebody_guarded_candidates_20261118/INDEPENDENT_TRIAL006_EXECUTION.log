@@ -1,0 +1,25 @@
+{
+  "frames": 997,
+  "position_bad_frames": 0,
+  "overspeed_intervals": 0,
+  "quaternion_norm_max_error": 2.220446049250313e-16,
+  "independent_metric_max_disagreement": 2.842170943040401e-14,
+  "foot_box_surface_strict_interior_hit_frames": {
+    "left": 220,
+    "right": 128
+  },
+  "foot_triangle_narrow_queries": 1507,
+  "nominal_footbox_geometry_rejection": true,
+  "root_linear_speed_raw_per_s": {
+    "mean": 0.8555104426152587,
+    "p95": 1.9552494711313586,
+    "maximum": 4.856136722999601
+  },
+  "root_linear_acceleration_raw_per_s2": {
+    "mean": 41.07744664060618,
+    "p95": 162.2353167445708,
+    "maximum": 504.34688414550857
+  },
+  "accepted_reference": false,
+  "elapsed_seconds": 0.9349706450000212
+}

@@ -1,0 +1,29 @@
+test_all35_frozen_jacobian (test_wholebody_terms.DerivativeTests.test_all35_frozen_jacobian) ... ok
+test_newly_entered_contacts_are_detected (test_wholebody_terms.DerivativeTests.test_newly_entered_contacts_are_detected) ... ok
+test_no_adjacency_exemption (test_wholebody_terms.DerivativeTests.test_no_adjacency_exemption) ... ok
+test_root_translation_self_cancels (test_wholebody_terms.DerivativeTests.test_root_translation_self_cancels) ... ok
+test_witness_values_reproduce (test_wholebody_terms.DerivativeTests.test_witness_values_reproduce) ... ok
+test_boxes_overlap_not_depth_claim (test_wholebody_terms.GeometryTests.test_boxes_overlap_not_depth_claim) ... ok
+test_boxes_separate (test_wholebody_terms.GeometryTests.test_boxes_separate) ... ok
+test_finite_triangle_not_infinite_plane (test_wholebody_terms.GeometryTests.test_finite_triangle_not_infinite_plane) ... ok
+test_original_supports_all43 (test_wholebody_terms.GeometryTests.test_original_supports_all43) ... ok
+test_side_wall_contact (test_wholebody_terms.GeometryTests.test_side_wall_contact) ... ok
+test_spheres_exact (test_wholebody_terms.GeometryTests.test_spheres_exact) ... ok
+test_triangle_world_transform_equivariance (test_wholebody_terms.GeometryTests.test_triangle_world_transform_equivariance) ... ok
+test_world_transform_equivariance (test_wholebody_terms.GeometryTests.test_world_transform_equivariance) ... ok
+test_lp_failure_no_candidate (test_wholebody_solver.SolverTests.test_lp_failure_no_candidate) ... ok
+test_new_contact_rechecked_and_rejected (test_wholebody_solver.SolverTests.test_new_contact_rechecked_and_rejected) ... ok
+test_plan_native_full997 (test_wholebody_solver.SolverTests.test_plan_native_full997) ... ok
+test_improvement_permitted (test_foot_guard.GuardTests.test_improvement_permitted) ... ok
+test_includes_only_boxfeet_terrain (test_foot_guard.GuardTests.test_includes_only_boxfeet_terrain) ... ok
+test_new_frame_forbidden_even_lower_score (test_foot_guard.GuardTests.test_new_frame_forbidden_even_lower_score) ... ok
+test_score_increase_forbidden_even_lower_count (test_foot_guard.GuardTests.test_score_increase_forbidden_even_lower_count) ... ok
+test_actual_solver_assignment_after_perpose_rejection (test_per_pose_foot_guard.GuardAdapterTests.test_actual_solver_assignment_after_perpose_rejection) ... ok
+test_equal_recheck_passes (test_per_pose_foot_guard.GuardAdapterTests.test_equal_recheck_passes) ... ok
+test_frame_binding_required (test_per_pose_foot_guard.GuardAdapterTests.test_frame_binding_required) ... ok
+test_original_both_boxes_new_wall_frame_rejected (test_per_pose_foot_guard.GuardAdapterTests.test_original_both_boxes_new_wall_frame_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.322s
+
+OK
