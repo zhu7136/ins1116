@@ -13,3 +13,5 @@
 - 无机器人、相机、参考动作、优化器或PPO。所有结果 `accepted_reference=false`, `training_ready=false`。
 
 CPU单元测试仅验证软件决策、默认不执行、预算常量和订阅顺序；不是GPU或物理证明。真实任务结果另外归档。
+
+已执行的唯一正对照为任务542，未通过，禁止原样重提；详见 [TASK542_REVIEW_ZH.md](TASK542_REVIEW_ZH.md)。实际执行代码为be711fec，后续文档提交不是第二次执行。
