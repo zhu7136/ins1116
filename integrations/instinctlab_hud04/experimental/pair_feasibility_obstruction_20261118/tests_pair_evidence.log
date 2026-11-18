@@ -1,0 +1,14 @@
+test_actual_metadata_is_not_exclusion_permission (test_pair_evidence.EvidenceTests.test_actual_metadata_is_not_exclusion_permission) ... ok
+test_all_pairs_remain_and_failure_is_preserved (test_pair_evidence.EvidenceTests.test_all_pairs_remain_and_failure_is_preserved) ... ok
+test_both_exact_original_geometry_invariant_witnesses (test_pair_evidence.EvidenceTests.test_both_exact_original_geometry_invariant_witnesses) ... ok
+test_disabled_joint_cannot_bind (test_pair_evidence.EvidenceTests.test_disabled_joint_cannot_bind) ... ok
+test_exact_body_binding_not_suffix_match (test_pair_evidence.EvidenceTests.test_exact_body_binding_not_suffix_match) ... ok
+test_excluded_articulation_cannot_bind (test_pair_evidence.EvidenceTests.test_excluded_articulation_cannot_bind) ... ok
+test_explicit_true_is_not_rewritten_disabled (test_pair_evidence.EvidenceTests.test_explicit_true_is_not_rewritten_disabled) ... ok
+test_invariant_axis_for_angles_outside_joint_limits (test_pair_evidence.EvidenceTests.test_invariant_axis_for_angles_outside_joint_limits) ... ok
+test_missing_collision_property_not_disabled (test_pair_evidence.EvidenceTests.test_missing_collision_property_not_disabled) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.132s
+
+OK

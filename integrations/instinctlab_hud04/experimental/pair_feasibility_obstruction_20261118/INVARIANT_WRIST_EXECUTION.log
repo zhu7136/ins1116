@@ -1,0 +1,85 @@
+{
+  "stage": "ANALYTIC_nominal_all_angle_obstruction_NOT_runtime_collision",
+  "model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+  "pairs": [
+    {
+      "first": "left_wrist_pitch_link#1",
+      "second": "left_wrist_roll_link#0",
+      "joint": "left_wrist_roll_joint",
+      "axis_child": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "point_child": [
+        0.00029347021336764744,
+        0.0,
+        0.0
+      ],
+      "point_parent": [
+        0.00029347021336764744,
+        0.0,
+        -0.065
+      ],
+      "cylinder_radial_margin_raw": 0.028999766301830293,
+      "cylinder_cap_margin_raw": 0.029706529879682413,
+      "hull_halfspace_margin_raw": 0.028706529786632354,
+      "invariant_for_all_angles_analytic": true,
+      "supplementary_grid_angles": 1001,
+      "original_joint_limits": [
+        -1.571,
+        1.571
+      ],
+      "Delaunay_point_membership": true,
+      "all_upstream_joints_and_world_rigid_motions_preserve_intersection": true,
+      "reason": "R_x(theta) @ (t,0,0) == (t,0,0) for every real theta. Same strict common point remains in both original nominal solids.",
+      "witness_is_not_physical_penetration_depth": true,
+      "mesh_sha256": "5aa0af4ccdaf46d498267b0fae247b8d547d8d72dd8db4f7691fe42b567eb5d6"
+    },
+    {
+      "first": "right_wrist_pitch_link#1",
+      "second": "right_wrist_roll_link#0",
+      "joint": "right_wrist_roll_joint",
+      "axis_child": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "point_child": [
+        0.00029346872051323313,
+        0.0,
+        0.0
+      ],
+      "point_parent": [
+        0.00029346872051323313,
+        0.0,
+        -0.065
+      ],
+      "cylinder_radial_margin_raw": 0.028999766303019092,
+      "cylinder_cap_margin_raw": 0.029706531372536354,
+      "hull_halfspace_margin_raw": 0.028706531279486767,
+      "invariant_for_all_angles_analytic": true,
+      "supplementary_grid_angles": 1001,
+      "original_joint_limits": [
+        -1.571,
+        1.571
+      ],
+      "Delaunay_point_membership": true,
+      "all_upstream_joints_and_world_rigid_motions_preserve_intersection": true,
+      "reason": "R_x(theta) @ (t,0,0) == (t,0,0) for every real theta. Same strict common point remains in both original nominal solids.",
+      "witness_is_not_physical_penetration_depth": true,
+      "mesh_sha256": "e4804755e9991f05ad5389340e1e83ee1ef687a403896c21c0f785c28ff871fc"
+    }
+  ],
+  "impossible_contract": "Demand ALL different-link nominal shapes strictly disjoint, including both wrist joint-connected cylinder/hull pairs, at any pose",
+  "no_claim_genuine_task_infeasible": true,
+  "actual_runtime_filters_verified": false,
+  "automatic_pair_exclusions": 0,
+  "source_motion_modified": false,
+  "new_motion_files": 0,
+  "motion_solver_calls": 0,
+  "gpu_submissions": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false,
+  "training_ready": false
+}

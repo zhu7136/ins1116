@@ -1,0 +1,1560 @@
+{
+  "stage": "REAL_failed_task_USD_joint_metadata_bound_to_nominal_pairs_NOT_runtime_filter_acceptance",
+  "task_id": "TASK_20261117_366",
+  "actual_commit": "4031da1e8d01deb132162bf8548eb8ca53a32745",
+  "platform_status": "6",
+  "worker_return_code": -11,
+  "model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+  "snapshots": {
+    "post_import.json": {
+      "file_sha256": "41c5826335c5ff3ec0decb382bac0de399d97cf96a90dad570ff1547a2f96082",
+      "runtime_phase": "post_import",
+      "rows": [
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_hip_pitch_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/base_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_hip_pitch_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "base_link#0",
+          "second": "left_hip_pitch_link#0",
+          "urdf_joint": "left_hip_pitch_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_hip_pitch_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/base_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_hip_pitch_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "base_link#0",
+          "second": "right_hip_pitch_link#0",
+          "urdf_joint": "right_hip_pitch_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_hip_pitch_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/base_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_hip_pitch_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "base_link#1",
+          "second": "left_hip_pitch_link#0",
+          "urdf_joint": "left_hip_pitch_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_hip_pitch_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/base_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_hip_pitch_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "base_link#1",
+          "second": "right_hip_pitch_link#0",
+          "urdf_joint": "right_hip_pitch_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_hip_pitch_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/base_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_hip_pitch_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "base_link#2",
+          "second": "left_hip_pitch_link#0",
+          "urdf_joint": "left_hip_pitch_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_hip_pitch_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/base_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_hip_pitch_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "base_link#2",
+          "second": "right_hip_pitch_link#0",
+          "urdf_joint": "right_hip_pitch_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#0",
+          "second": "left_knee_link#0",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#0",
+          "second": "left_knee_link#1",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#0",
+          "second": "left_knee_link#2",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#1",
+          "second": "left_knee_link#0",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#1",
+          "second": "left_knee_link#1",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#1",
+          "second": "left_knee_link#2",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#2",
+          "second": "left_knee_link#0",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#2",
+          "second": "left_knee_link#1",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#2",
+          "second": "left_knee_link#2",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#0",
+          "second": "right_knee_link#0",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#0",
+          "second": "right_knee_link#1",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#0",
+          "second": "right_knee_link#2",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#1",
+          "second": "right_knee_link#0",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#1",
+          "second": "right_knee_link#1",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#1",
+          "second": "right_knee_link#2",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#2",
+          "second": "right_knee_link#0",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#2",
+          "second": "right_knee_link#1",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#2",
+          "second": "right_knee_link#2",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_wrist_roll_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_wrist_pitch_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_wrist_roll_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_wrist_pitch_link#0",
+          "second": "left_wrist_roll_link#0",
+          "urdf_joint": "left_wrist_roll_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_wrist_roll_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_wrist_pitch_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_wrist_roll_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_wrist_pitch_link#1",
+          "second": "left_wrist_roll_link#0",
+          "urdf_joint": "left_wrist_roll_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_wrist_roll_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_wrist_pitch_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_wrist_roll_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_wrist_pitch_link#0",
+          "second": "right_wrist_roll_link#0",
+          "urdf_joint": "right_wrist_roll_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_wrist_roll_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_wrist_pitch_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_wrist_roll_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_wrist_pitch_link#1",
+          "second": "right_wrist_roll_link#0",
+          "urdf_joint": "right_wrist_roll_joint"
+        }
+      ]
+    },
+    "post_clone.json": {
+      "file_sha256": "12c7e7f9e91d367abba3d8fc78b15266029d8e6555f52cfd2a445848a303289a",
+      "runtime_phase": "post_clone",
+      "rows": [
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_hip_pitch_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/base_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_hip_pitch_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "base_link#0",
+          "second": "left_hip_pitch_link#0",
+          "urdf_joint": "left_hip_pitch_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_hip_pitch_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/base_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_hip_pitch_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "base_link#0",
+          "second": "right_hip_pitch_link#0",
+          "urdf_joint": "right_hip_pitch_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_hip_pitch_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/base_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_hip_pitch_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "base_link#1",
+          "second": "left_hip_pitch_link#0",
+          "urdf_joint": "left_hip_pitch_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_hip_pitch_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/base_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_hip_pitch_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "base_link#1",
+          "second": "right_hip_pitch_link#0",
+          "urdf_joint": "right_hip_pitch_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_hip_pitch_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/base_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_hip_pitch_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "base_link#2",
+          "second": "left_hip_pitch_link#0",
+          "urdf_joint": "left_hip_pitch_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_hip_pitch_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/base_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_hip_pitch_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "base_link#2",
+          "second": "right_hip_pitch_link#0",
+          "urdf_joint": "right_hip_pitch_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#0",
+          "second": "left_knee_link#0",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#0",
+          "second": "left_knee_link#1",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#0",
+          "second": "left_knee_link#2",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#1",
+          "second": "left_knee_link#0",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#1",
+          "second": "left_knee_link#1",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#1",
+          "second": "left_knee_link#2",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#2",
+          "second": "left_knee_link#0",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#2",
+          "second": "left_knee_link#1",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#2",
+          "second": "left_knee_link#2",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#0",
+          "second": "right_knee_link#0",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#0",
+          "second": "right_knee_link#1",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#0",
+          "second": "right_knee_link#2",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#1",
+          "second": "right_knee_link#0",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#1",
+          "second": "right_knee_link#1",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#1",
+          "second": "right_knee_link#2",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#2",
+          "second": "right_knee_link#0",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#2",
+          "second": "right_knee_link#1",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#2",
+          "second": "right_knee_link#2",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_wrist_roll_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_wrist_pitch_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_wrist_roll_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_wrist_pitch_link#0",
+          "second": "left_wrist_roll_link#0",
+          "urdf_joint": "left_wrist_roll_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_wrist_roll_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_wrist_pitch_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_wrist_roll_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_wrist_pitch_link#1",
+          "second": "left_wrist_roll_link#0",
+          "urdf_joint": "left_wrist_roll_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_wrist_roll_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_wrist_pitch_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_wrist_roll_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_wrist_pitch_link#0",
+          "second": "right_wrist_roll_link#0",
+          "urdf_joint": "right_wrist_roll_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_wrist_roll_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_wrist_pitch_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_wrist_roll_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_wrist_pitch_link#1",
+          "second": "right_wrist_roll_link#0",
+          "urdf_joint": "right_wrist_roll_joint"
+        }
+      ]
+    },
+    "post_physics_init.json": {
+      "file_sha256": "b6c078d5c04cb348b371d3cb3150b96cfb301478b31bc41746b982b363c7732b",
+      "runtime_phase": "post_physics_init",
+      "rows": [
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_hip_pitch_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/base_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_hip_pitch_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "base_link#0",
+          "second": "left_hip_pitch_link#0",
+          "urdf_joint": "left_hip_pitch_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_hip_pitch_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/base_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_hip_pitch_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "base_link#0",
+          "second": "right_hip_pitch_link#0",
+          "urdf_joint": "right_hip_pitch_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_hip_pitch_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/base_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_hip_pitch_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "base_link#1",
+          "second": "left_hip_pitch_link#0",
+          "urdf_joint": "left_hip_pitch_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_hip_pitch_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/base_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_hip_pitch_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "base_link#1",
+          "second": "right_hip_pitch_link#0",
+          "urdf_joint": "right_hip_pitch_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_hip_pitch_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/base_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_hip_pitch_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "base_link#2",
+          "second": "left_hip_pitch_link#0",
+          "urdf_joint": "left_hip_pitch_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_hip_pitch_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/base_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_hip_pitch_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "base_link#2",
+          "second": "right_hip_pitch_link#0",
+          "urdf_joint": "right_hip_pitch_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#0",
+          "second": "left_knee_link#0",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#0",
+          "second": "left_knee_link#1",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#0",
+          "second": "left_knee_link#2",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#1",
+          "second": "left_knee_link#0",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#1",
+          "second": "left_knee_link#1",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#1",
+          "second": "left_knee_link#2",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#2",
+          "second": "left_knee_link#0",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#2",
+          "second": "left_knee_link#1",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_hip_yaw_link#2",
+          "second": "left_knee_link#2",
+          "urdf_joint": "left_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#0",
+          "second": "right_knee_link#0",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#0",
+          "second": "right_knee_link#1",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#0",
+          "second": "right_knee_link#2",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#1",
+          "second": "right_knee_link#0",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#1",
+          "second": "right_knee_link#1",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#1",
+          "second": "right_knee_link#2",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#2",
+          "second": "right_knee_link#0",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#2",
+          "second": "right_knee_link#1",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_knee_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_hip_yaw_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_knee_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_hip_yaw_link#2",
+          "second": "right_knee_link#2",
+          "urdf_joint": "right_knee_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_wrist_roll_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_wrist_pitch_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_wrist_roll_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_wrist_pitch_link#0",
+          "second": "left_wrist_roll_link#0",
+          "urdf_joint": "left_wrist_roll_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/left_wrist_roll_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_wrist_pitch_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_wrist_roll_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "left_wrist_pitch_link#1",
+          "second": "left_wrist_roll_link#0",
+          "urdf_joint": "left_wrist_roll_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_wrist_roll_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_wrist_pitch_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_wrist_roll_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_wrist_pitch_link#0",
+          "second": "right_wrist_roll_link#0",
+          "urdf_joint": "right_wrist_roll_joint"
+        },
+        {
+          "usd_joint": "/World/envs/env_0/Robot/joints/right_wrist_roll_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_wrist_pitch_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_wrist_roll_link"
+          ],
+          "resolved_joint_collision_enabled": false,
+          "collision_enabled_authored": false,
+          "resolved_from_schema_fallback": true,
+          "metadata_intent": "joint_body_collision_disabled",
+          "actual_physx_pair_filter_verified": false,
+          "pair_exclusion_authorized": false,
+          "first": "right_wrist_pitch_link#1",
+          "second": "right_wrist_roll_link#0",
+          "urdf_joint": "right_wrist_roll_joint"
+        }
+      ]
+    }
+  },
+  "total_nominal_shapes": 43,
+  "all_shape_pairs_retained": 903,
+  "same_rigid_link_pairs": 57,
+  "direct_joint_shape_pairs": 28,
+  "unique_joint_body_bindings": 6,
+  "all_three_phases_same_pair_metadata": true,
+  "metadata_disabled_shape_pairs": 28,
+  "actual_physx_pair_filters_verified": false,
+  "automatic_pair_exclusions": 0,
+  "collision_constraints_removed": 0,
+  "pair_exclusion_authorized": false,
+  "cooked_geometry_verified": false,
+  "source_world_unit_alignment_proven": false,
+  "observation_completed": false,
+  "motion_solver_calls": 0,
+  "new_motion_files": 0,
+  "new_gpu_submissions": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false,
+  "training_ready": false
+}
