@@ -1,0 +1,193 @@
+{
+  "covered_frames": 997,
+  "visited_windows": 17,
+  "lp_calls": 17,
+  "accepted_updates": 17,
+  "complete_single_pass": true,
+  "convergence_established": false,
+  "full_endpoint_guard": {
+    "passed": true,
+    "lost_certified_separation_pairs": 0,
+    "newly_strict_pairs": 0,
+    "rejected_examples": [],
+    "previous_strict_pairs": 4765,
+    "new_strict_pairs": 4692,
+    "previous_unresolved_pairs": 290,
+    "new_unresolved_pairs": 277,
+    "old_intersections_not_accepted": true,
+    "penetration_depth_comparison": false,
+    "swept_or_dynamics_checked": false,
+    "accepted_reference": false
+  },
+  "original_position_velocity_limits": {
+    "position_violation_rad": 5.551115123125783e-17,
+    "velocity_violation_rad_s": 4.263256414560601e-14
+  },
+  "initial": {
+    "material_position_mean_m": 0.15709593723064835,
+    "material_position_max_m": 0.6880622412955221,
+    "proposed_support_position_mean_m": 0.13603128611211365,
+    "proposed_support_position_max_m": 0.5146323798939472,
+    "root_speed_max_m_s": 4.7894525484169606,
+    "root_acceleration_max_m_s2": 698.9636307501942,
+    "joint_acceleration_max_rad_s2": 3415.280258947207
+  },
+  "final": {
+    "material_position_mean_m": 0.15582742509681746,
+    "material_position_max_m": 0.6877581446208312,
+    "proposed_support_position_mean_m": 0.13318712885288025,
+    "proposed_support_position_max_m": 0.5060101635046652,
+    "root_speed_max_m_s": 4.699744654761885,
+    "root_acceleration_max_m_s2": 684.5363688883152,
+    "joint_acceleration_max_rad_s2": 3415.720570435695
+  },
+  "self_strict_by_pair": {
+    "initial": [
+      {
+        "first": "right_wrist_pitch_link#1",
+        "second": "right_wrist_roll_link#0",
+        "frame_count": 997
+      },
+      {
+        "first": "left_wrist_pitch_link#1",
+        "second": "left_wrist_roll_link#0",
+        "frame_count": 997
+      },
+      {
+        "first": "left_hip_pitch_link#0",
+        "second": "left_wrist_roll_link#0",
+        "frame_count": 29
+      },
+      {
+        "first": "left_hip_pitch_link#0",
+        "second": "left_wrist_pitch_link#1",
+        "frame_count": 28
+      },
+      {
+        "first": "left_hip_yaw_link#1",
+        "second": "left_wrist_pitch_link#1",
+        "frame_count": 9
+      },
+      {
+        "first": "left_hip_yaw_link#1",
+        "second": "left_wrist_roll_link#0",
+        "frame_count": 9
+      },
+      {
+        "first": "left_hip_pitch_link#0",
+        "second": "left_wrist_pitch_link#0",
+        "frame_count": 3
+      },
+      {
+        "first": "left_ankle_roll_link#0",
+        "second": "right_knee_link#1",
+        "frame_count": 2
+      },
+      {
+        "first": "left_knee_link#2",
+        "second": "left_wrist_roll_link#0",
+        "frame_count": 2
+      },
+      {
+        "first": "left_ankle_roll_link#0",
+        "second": "right_knee_link#0",
+        "frame_count": 1
+      },
+      {
+        "first": "right_hip_pitch_link#0",
+        "second": "right_wrist_roll_link#0",
+        "frame_count": 1
+      },
+      {
+        "first": "right_hip_pitch_link#0",
+        "second": "right_elbow_link#1",
+        "frame_count": 1
+      },
+      {
+        "first": "left_hip_yaw_link#1",
+        "second": "left_wrist_pitch_link#0",
+        "frame_count": 1
+      },
+      {
+        "first": "right_hip_pitch_link#0",
+        "second": "right_wrist_pitch_link#1",
+        "frame_count": 1
+      }
+    ],
+    "final": [
+      {
+        "first": "right_wrist_pitch_link#1",
+        "second": "right_wrist_roll_link#0",
+        "frame_count": 997
+      },
+      {
+        "first": "left_wrist_pitch_link#1",
+        "second": "left_wrist_roll_link#0",
+        "frame_count": 997
+      },
+      {
+        "first": "left_hip_pitch_link#0",
+        "second": "left_wrist_roll_link#0",
+        "frame_count": 24
+      },
+      {
+        "first": "left_hip_pitch_link#0",
+        "second": "left_wrist_pitch_link#1",
+        "frame_count": 22
+      },
+      {
+        "first": "left_hip_yaw_link#1",
+        "second": "left_wrist_roll_link#0",
+        "frame_count": 8
+      },
+      {
+        "first": "left_hip_yaw_link#1",
+        "second": "left_wrist_pitch_link#1",
+        "frame_count": 4
+      },
+      {
+        "first": "left_hip_pitch_link#0",
+        "second": "left_wrist_pitch_link#0",
+        "frame_count": 3
+      },
+      {
+        "first": "left_ankle_roll_link#0",
+        "second": "right_knee_link#1",
+        "frame_count": 2
+      },
+      {
+        "first": "left_ankle_roll_link#0",
+        "second": "right_knee_link#0",
+        "frame_count": 1
+      },
+      {
+        "first": "right_hip_pitch_link#0",
+        "second": "right_wrist_roll_link#0",
+        "frame_count": 1
+      },
+      {
+        "first": "right_hip_pitch_link#0",
+        "second": "right_wrist_pitch_link#1",
+        "frame_count": 1
+      },
+      {
+        "first": "left_knee_link#2",
+        "second": "left_wrist_roll_link#0",
+        "frame_count": 1
+      }
+    ]
+  },
+  "unassigned_support_frames": 346,
+  "contact_or_flight_inferred": false,
+  "physical_effort_verified": false,
+  "swept_motion_verified": false,
+  "actual_runtime_filter_policy_verified": false,
+  "accepted_reference": false,
+  "training_ready": false,
+  "full_candidate_exported": true,
+  "approved_reference_exported": false,
+  "gpu_submissions": 0,
+  "ppo_updates": 0,
+  "final_audit_wall_s": 32.76343702400004,
+  "candidate_sha256": "2b4070e32e3a5f120caea7942b42e91a6f31bbca9e0b6d7e8e135b50803ad2f4"
+}

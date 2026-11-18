@@ -1,0 +1,7 @@
+{"phase": "hard_clearance_rows", "wall_s": 3.3242993389999924}
+{"phase": "geometry_linearization", "wall_s": 5.4295030309999675}
+{"phase": "LP_complete", "wall_s": 5.652865024999983}
+{"phase": "old_endpoint_certificates", "wall_s": 6.855224175999979}
+{"phase": "before_candidate", "wall_s": 6.855377564999969}
+{"phase": "fresh_candidate_geometry", "wall_s": 8.468477360000009}
+{"phase": "candidate_endpoint_certificates", "wall_s": 9.67927367499999}

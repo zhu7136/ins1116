@@ -1,0 +1,39 @@
+{
+  "index": 11,
+  "first": 644,
+  "last": 704,
+  "lp_calls": 1,
+  "accepted_update": true,
+  "accepted_reference": false,
+  "training_ready": false,
+  "gpu_submissions": 0,
+  "ppo_updates": 0,
+  "backtracking": [
+    {
+      "alpha": 0.0625,
+      "old_merit": 66586.5966004038,
+      "merit": 66315.62190408961,
+      "improved": true,
+      "endpoint_guard": {
+        "passed": true,
+        "lost_certified_separation_pairs": 0,
+        "newly_strict_pairs": 0,
+        "rejected_examples": [],
+        "previous_strict_pairs": 306,
+        "new_strict_pairs": 294,
+        "previous_unresolved_pairs": 5,
+        "new_unresolved_pairs": 5,
+        "old_intersections_not_accepted": true,
+        "penetration_depth_comparison": false,
+        "swept_or_dynamics_checked": false,
+        "accepted_reference": false
+      }
+    }
+  ],
+  "lp_status": 0,
+  "lp_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "hard_clearance_rows": 5156,
+  "alpha": 0.0625,
+  "candidate_sha256": "8a621237be70010afb66199d7c4e9ec969562393bc19d06e7952bdf742227773",
+  "wall_s": 11.015722605000008
+}

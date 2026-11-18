@@ -1,0 +1,8 @@
+{
+  "index": 0,
+  "input_checkpoint": "INITIAL_UNACCEPTED.npz",
+  "input_sha256": "b2649a4e4f8be7f8d49cb513a7296979fc62163e9e539022b57c3efa534b0059",
+  "automatic_retries": 0,
+  "supervisor_s": 65,
+  "source_commit": "37c9d51ede3e3910faaeabf41bbe0dbe51884ce3"
+}

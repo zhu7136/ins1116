@@ -1,0 +1,99 @@
+{
+  "index": 5,
+  "first": 292,
+  "last": 352,
+  "lp_calls": 1,
+  "accepted_update": true,
+  "accepted_reference": false,
+  "training_ready": false,
+  "gpu_submissions": 0,
+  "ppo_updates": 0,
+  "backtracking": [
+    {
+      "alpha": 0.0625,
+      "old_merit": 71809.34357322298,
+      "merit": 71425.68728987004,
+      "improved": true,
+      "endpoint_guard": {
+        "passed": false,
+        "lost_certified_separation_pairs": 0,
+        "newly_strict_pairs": 2,
+        "rejected_examples": [
+          [
+            "terrain",
+            318,
+            15,
+            4654
+          ],
+          [
+            "terrain",
+            334,
+            15,
+            4654
+          ]
+        ],
+        "previous_strict_pairs": 596,
+        "new_strict_pairs": 581,
+        "previous_unresolved_pairs": 90,
+        "new_unresolved_pairs": 85,
+        "old_intersections_not_accepted": true,
+        "penetration_depth_comparison": false,
+        "swept_or_dynamics_checked": false,
+        "accepted_reference": false
+      }
+    },
+    {
+      "alpha": 0.015625,
+      "old_merit": 71809.34357322298,
+      "merit": 71712.2074407319,
+      "improved": true,
+      "endpoint_guard": {
+        "passed": false,
+        "lost_certified_separation_pairs": 0,
+        "newly_strict_pairs": 1,
+        "rejected_examples": [
+          [
+            "terrain",
+            334,
+            15,
+            4654
+          ]
+        ],
+        "previous_strict_pairs": 596,
+        "new_strict_pairs": 594,
+        "previous_unresolved_pairs": 90,
+        "new_unresolved_pairs": 88,
+        "old_intersections_not_accepted": true,
+        "penetration_depth_comparison": false,
+        "swept_or_dynamics_checked": false,
+        "accepted_reference": false
+      }
+    },
+    {
+      "alpha": 0.00390625,
+      "old_merit": 71809.34357322298,
+      "merit": 71785.10561184165,
+      "improved": true,
+      "endpoint_guard": {
+        "passed": true,
+        "lost_certified_separation_pairs": 0,
+        "newly_strict_pairs": 0,
+        "rejected_examples": [],
+        "previous_strict_pairs": 596,
+        "new_strict_pairs": 596,
+        "previous_unresolved_pairs": 90,
+        "new_unresolved_pairs": 88,
+        "old_intersections_not_accepted": true,
+        "penetration_depth_comparison": false,
+        "swept_or_dynamics_checked": false,
+        "accepted_reference": false
+      }
+    }
+  ],
+  "lp_status": 0,
+  "lp_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "hard_clearance_rows": 10520,
+  "alpha": 0.00390625,
+  "candidate_sha256": "2ec9a983584871465e65a3df0a06ee001a6eaeb64373d3312a20c57e2c01a807",
+  "wall_s": 17.506291878000013
+}

@@ -1,0 +1,8 @@
+{
+  "index": 11,
+  "input_checkpoint": "WINDOW_10/CANDIDATE_UNACCEPTED.npz",
+  "input_sha256": "a7ba32f6296e9ed200e7f9c3a1261d982c9f0b3f58e3bf2b4a3a9261bdb0024d",
+  "automatic_retries": 0,
+  "supervisor_s": 65,
+  "source_commit": "37c9d51ede3e3910faaeabf41bbe0dbe51884ce3"
+}
