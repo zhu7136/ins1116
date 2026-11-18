@@ -1,0 +1,1383 @@
+{
+  "stage": "nominal_capsule_terrain_witness_feature_diagnostics",
+  "links": [
+    {
+      "link": "left_ankle_roll_link",
+      "witness_records": 3113,
+      "normal_alignment_diagnostic_degrees": 15,
+      "counts": {
+        "near_horizontal_face": {
+          "frames": 512,
+          "intervals": [
+            [
+              0,
+              69
+            ],
+            [
+              115,
+              202
+            ],
+            [
+              210,
+              212
+            ],
+            [
+              215,
+              237
+            ],
+            [
+              373,
+              395
+            ],
+            [
+              608,
+              608
+            ],
+            [
+              610,
+              666
+            ],
+            [
+              669,
+              706
+            ],
+            [
+              727,
+              739
+            ],
+            [
+              796,
+              797
+            ],
+            [
+              803,
+              996
+            ]
+          ]
+        },
+        "near_lateral_face": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_horizontal_face_radially_aligned": {
+          "frames": 512,
+          "intervals": [
+            [
+              0,
+              69
+            ],
+            [
+              115,
+              202
+            ],
+            [
+              210,
+              212
+            ],
+            [
+              215,
+              237
+            ],
+            [
+              373,
+              395
+            ],
+            [
+              608,
+              608
+            ],
+            [
+              610,
+              666
+            ],
+            [
+              669,
+              706
+            ],
+            [
+              727,
+              739
+            ],
+            [
+              796,
+              797
+            ],
+            [
+              803,
+              996
+            ]
+          ]
+        },
+        "near_lateral_face_radially_aligned": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_face_horizontal": {
+          "frames": 268,
+          "intervals": [
+            [
+              0,
+              52
+            ],
+            [
+              134,
+              135
+            ],
+            [
+              138,
+              138
+            ],
+            [
+              145,
+              145
+            ],
+            [
+              153,
+              153
+            ],
+            [
+              158,
+              159
+            ],
+            [
+              172,
+              173
+            ],
+            [
+              375,
+              380
+            ],
+            [
+              385,
+              387
+            ],
+            [
+              392,
+              394
+            ],
+            [
+              656,
+              660
+            ],
+            [
+              675,
+              695
+            ],
+            [
+              698,
+              702
+            ],
+            [
+              810,
+              810
+            ],
+            [
+              813,
+              813
+            ],
+            [
+              816,
+              816
+            ],
+            [
+              823,
+              861
+            ],
+            [
+              864,
+              874
+            ],
+            [
+              877,
+              904
+            ],
+            [
+              907,
+              930
+            ],
+            [
+              933,
+              962
+            ],
+            [
+              965,
+              966
+            ],
+            [
+              968,
+              973
+            ],
+            [
+              975,
+              975
+            ],
+            [
+              977,
+              992
+            ],
+            [
+              994,
+              996
+            ]
+          ]
+        },
+        "near_slow_face_lateral": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_radial_horizontal": {
+          "frames": 270,
+          "intervals": [
+            [
+              0,
+              52
+            ],
+            [
+              134,
+              135
+            ],
+            [
+              138,
+              138
+            ],
+            [
+              145,
+              145
+            ],
+            [
+              153,
+              153
+            ],
+            [
+              158,
+              159
+            ],
+            [
+              172,
+              175
+            ],
+            [
+              375,
+              380
+            ],
+            [
+              385,
+              387
+            ],
+            [
+              392,
+              394
+            ],
+            [
+              656,
+              660
+            ],
+            [
+              675,
+              695
+            ],
+            [
+              698,
+              702
+            ],
+            [
+              810,
+              810
+            ],
+            [
+              813,
+              813
+            ],
+            [
+              816,
+              816
+            ],
+            [
+              823,
+              861
+            ],
+            [
+              864,
+              874
+            ],
+            [
+              877,
+              904
+            ],
+            [
+              907,
+              930
+            ],
+            [
+              933,
+              962
+            ],
+            [
+              965,
+              966
+            ],
+            [
+              968,
+              973
+            ],
+            [
+              975,
+              975
+            ],
+            [
+              977,
+              992
+            ],
+            [
+              994,
+              996
+            ]
+          ]
+        },
+        "near_slow_radial_lateral": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_radial_aligned_horizontal": {
+          "frames": 266,
+          "intervals": [
+            [
+              0,
+              52
+            ],
+            [
+              134,
+              135
+            ],
+            [
+              138,
+              138
+            ],
+            [
+              145,
+              145
+            ],
+            [
+              153,
+              153
+            ],
+            [
+              158,
+              159
+            ],
+            [
+              375,
+              380
+            ],
+            [
+              385,
+              387
+            ],
+            [
+              392,
+              394
+            ],
+            [
+              656,
+              660
+            ],
+            [
+              675,
+              695
+            ],
+            [
+              698,
+              702
+            ],
+            [
+              810,
+              810
+            ],
+            [
+              813,
+              813
+            ],
+            [
+              816,
+              816
+            ],
+            [
+              823,
+              861
+            ],
+            [
+              864,
+              874
+            ],
+            [
+              877,
+              904
+            ],
+            [
+              907,
+              930
+            ],
+            [
+              933,
+              962
+            ],
+            [
+              965,
+              966
+            ],
+            [
+              968,
+              973
+            ],
+            [
+              975,
+              975
+            ],
+            [
+              977,
+              992
+            ],
+            [
+              994,
+              996
+            ]
+          ]
+        },
+        "near_slow_radial_aligned_lateral": {
+          "frames": 0,
+          "intervals": []
+        }
+      },
+      "feature_sha256": "59fde7d381414e5cf754b9be6f74175877262c85b574b90071191810cae37c90",
+      "input_witness_sha256": "23aec9a8daebb7794bdf850879f3185cb558b6b1a36bb31711ce488e399097c5"
+    },
+    {
+      "link": "left_wrist_yaw_link",
+      "witness_records": 0,
+      "normal_alignment_diagnostic_degrees": 15,
+      "counts": {
+        "near_horizontal_face": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_lateral_face": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_horizontal_face_radially_aligned": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_lateral_face_radially_aligned": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_face_horizontal": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_face_lateral": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_radial_horizontal": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_radial_lateral": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_radial_aligned_horizontal": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_radial_aligned_lateral": {
+          "frames": 0,
+          "intervals": []
+        }
+      },
+      "feature_sha256": "3a3915ff9859aa1a2f4cc2e759d48a6a2f82896fab6193d70aff071b2535f51c",
+      "input_witness_sha256": "d77b30bf0ff0b8a45859361ce76c6167264fcf6a3b388050bb4b491cd2d13370"
+    },
+    {
+      "link": "left_knee_link",
+      "witness_records": 95,
+      "normal_alignment_diagnostic_degrees": 15,
+      "counts": {
+        "near_horizontal_face": {
+          "frames": 15,
+          "intervals": [
+            [
+              630,
+              638
+            ],
+            [
+              719,
+              724
+            ]
+          ]
+        },
+        "near_lateral_face": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_horizontal_face_radially_aligned": {
+          "frames": 15,
+          "intervals": [
+            [
+              630,
+              638
+            ],
+            [
+              719,
+              724
+            ]
+          ]
+        },
+        "near_lateral_face_radially_aligned": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_face_horizontal": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_face_lateral": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_radial_horizontal": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_radial_lateral": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_radial_aligned_horizontal": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_radial_aligned_lateral": {
+          "frames": 0,
+          "intervals": []
+        }
+      },
+      "feature_sha256": "01b35eafdfcca9ac48849bf372e8d84535eaafa3278368d3b023e3dd05d8be2e",
+      "input_witness_sha256": "f58100cabb662e0c84f768676ba7cc840dafdedcc5c7f21978fc177087de2faa"
+    },
+    {
+      "link": "right_ankle_roll_link",
+      "witness_records": 6113,
+      "normal_alignment_diagnostic_degrees": 15,
+      "counts": {
+        "near_horizontal_face": {
+          "frames": 423,
+          "intervals": [
+            [
+              0,
+              126
+            ],
+            [
+              190,
+              199
+            ],
+            [
+              620,
+              629
+            ],
+            [
+              668,
+              671
+            ],
+            [
+              697,
+              697
+            ],
+            [
+              699,
+              722
+            ],
+            [
+              727,
+              735
+            ],
+            [
+              759,
+              996
+            ]
+          ]
+        },
+        "near_lateral_face": {
+          "frames": 23,
+          "intervals": [
+            [
+              190,
+              207
+            ],
+            [
+              211,
+              215
+            ]
+          ]
+        },
+        "near_horizontal_face_radially_aligned": {
+          "frames": 412,
+          "intervals": [
+            [
+              0,
+              126
+            ],
+            [
+              620,
+              629
+            ],
+            [
+              668,
+              671
+            ],
+            [
+              697,
+              697
+            ],
+            [
+              699,
+              722
+            ],
+            [
+              727,
+              727
+            ],
+            [
+              729,
+              735
+            ],
+            [
+              759,
+              996
+            ]
+          ]
+        },
+        "near_lateral_face_radially_aligned": {
+          "frames": 23,
+          "intervals": [
+            [
+              190,
+              207
+            ],
+            [
+              211,
+              215
+            ]
+          ]
+        },
+        "near_slow_face_horizontal": {
+          "frames": 280,
+          "intervals": [
+            [
+              0,
+              89
+            ],
+            [
+              94,
+              104
+            ],
+            [
+              106,
+              109
+            ],
+            [
+              112,
+              112
+            ],
+            [
+              115,
+              115
+            ],
+            [
+              697,
+              697
+            ],
+            [
+              703,
+              706
+            ],
+            [
+              710,
+              710
+            ],
+            [
+              713,
+              718
+            ],
+            [
+              768,
+              769
+            ],
+            [
+              772,
+              776
+            ],
+            [
+              779,
+              781
+            ],
+            [
+              785,
+              786
+            ],
+            [
+              789,
+              790
+            ],
+            [
+              797,
+              801
+            ],
+            [
+              807,
+              807
+            ],
+            [
+              810,
+              816
+            ],
+            [
+              822,
+              835
+            ],
+            [
+              839,
+              844
+            ],
+            [
+              851,
+              855
+            ],
+            [
+              858,
+              867
+            ],
+            [
+              870,
+              890
+            ],
+            [
+              893,
+              897
+            ],
+            [
+              900,
+              901
+            ],
+            [
+              911,
+              911
+            ],
+            [
+              916,
+              920
+            ],
+            [
+              923,
+              956
+            ],
+            [
+              959,
+              973
+            ],
+            [
+              977,
+              977
+            ],
+            [
+              982,
+              996
+            ]
+          ]
+        },
+        "near_slow_face_lateral": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_radial_horizontal": {
+          "frames": 283,
+          "intervals": [
+            [
+              0,
+              89
+            ],
+            [
+              94,
+              109
+            ],
+            [
+              112,
+              115
+            ],
+            [
+              697,
+              697
+            ],
+            [
+              703,
+              706
+            ],
+            [
+              710,
+              710
+            ],
+            [
+              713,
+              718
+            ],
+            [
+              768,
+              769
+            ],
+            [
+              772,
+              776
+            ],
+            [
+              779,
+              781
+            ],
+            [
+              785,
+              786
+            ],
+            [
+              789,
+              790
+            ],
+            [
+              797,
+              801
+            ],
+            [
+              807,
+              807
+            ],
+            [
+              810,
+              816
+            ],
+            [
+              822,
+              835
+            ],
+            [
+              839,
+              844
+            ],
+            [
+              851,
+              855
+            ],
+            [
+              858,
+              867
+            ],
+            [
+              870,
+              890
+            ],
+            [
+              893,
+              897
+            ],
+            [
+              900,
+              901
+            ],
+            [
+              911,
+              911
+            ],
+            [
+              916,
+              920
+            ],
+            [
+              923,
+              956
+            ],
+            [
+              959,
+              973
+            ],
+            [
+              977,
+              977
+            ],
+            [
+              982,
+              996
+            ]
+          ]
+        },
+        "near_slow_radial_lateral": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_radial_aligned_horizontal": {
+          "frames": 280,
+          "intervals": [
+            [
+              0,
+              89
+            ],
+            [
+              94,
+              104
+            ],
+            [
+              106,
+              109
+            ],
+            [
+              112,
+              112
+            ],
+            [
+              115,
+              115
+            ],
+            [
+              697,
+              697
+            ],
+            [
+              703,
+              706
+            ],
+            [
+              710,
+              710
+            ],
+            [
+              713,
+              718
+            ],
+            [
+              768,
+              769
+            ],
+            [
+              772,
+              776
+            ],
+            [
+              779,
+              781
+            ],
+            [
+              785,
+              786
+            ],
+            [
+              789,
+              790
+            ],
+            [
+              797,
+              801
+            ],
+            [
+              807,
+              807
+            ],
+            [
+              810,
+              816
+            ],
+            [
+              822,
+              835
+            ],
+            [
+              839,
+              844
+            ],
+            [
+              851,
+              855
+            ],
+            [
+              858,
+              867
+            ],
+            [
+              870,
+              890
+            ],
+            [
+              893,
+              897
+            ],
+            [
+              900,
+              901
+            ],
+            [
+              911,
+              911
+            ],
+            [
+              916,
+              920
+            ],
+            [
+              923,
+              956
+            ],
+            [
+              959,
+              973
+            ],
+            [
+              977,
+              977
+            ],
+            [
+              982,
+              996
+            ]
+          ]
+        },
+        "near_slow_radial_aligned_lateral": {
+          "frames": 0,
+          "intervals": []
+        }
+      },
+      "feature_sha256": "62462ef6803d3aaaf5b0984bca9b316ef55a1693326a8dd5f34a4041f6730c5b",
+      "input_witness_sha256": "afff8be5de6d849b2adec95f2a7ff559fd01fb16a02a62e15e0330c6effc96d0"
+    },
+    {
+      "link": "right_wrist_yaw_link",
+      "witness_records": 223,
+      "normal_alignment_diagnostic_degrees": 15,
+      "counts": {
+        "near_horizontal_face": {
+          "frames": 89,
+          "intervals": [
+            [
+              257,
+              345
+            ]
+          ]
+        },
+        "near_lateral_face": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_horizontal_face_radially_aligned": {
+          "frames": 89,
+          "intervals": [
+            [
+              257,
+              345
+            ]
+          ]
+        },
+        "near_lateral_face_radially_aligned": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_face_horizontal": {
+          "frames": 1,
+          "intervals": [
+            [
+              308,
+              308
+            ]
+          ]
+        },
+        "near_slow_face_lateral": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_radial_horizontal": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_radial_lateral": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_radial_aligned_horizontal": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_radial_aligned_lateral": {
+          "frames": 0,
+          "intervals": []
+        }
+      },
+      "feature_sha256": "a16affb201af099832719a80f9a3175dc0e4fb5cba88e4c1049a7067281b5b89",
+      "input_witness_sha256": "d2259f650deda1505f7231967d2911729e46f13fe212c500c2e0b94e89b9554e"
+    },
+    {
+      "link": "right_knee_link",
+      "witness_records": 3266,
+      "normal_alignment_diagnostic_degrees": 15,
+      "counts": {
+        "near_horizontal_face": {
+          "frames": 209,
+          "intervals": [
+            [
+              203,
+              254
+            ],
+            [
+              263,
+              410
+            ],
+            [
+              633,
+              636
+            ],
+            [
+              660,
+              664
+            ]
+          ]
+        },
+        "near_lateral_face": {
+          "frames": 171,
+          "intervals": [
+            [
+              203,
+              227
+            ],
+            [
+              265,
+              410
+            ]
+          ]
+        },
+        "near_horizontal_face_radially_aligned": {
+          "frames": 29,
+          "intervals": [
+            [
+              203,
+              209
+            ],
+            [
+              398,
+              410
+            ],
+            [
+              633,
+              636
+            ],
+            [
+              660,
+              664
+            ]
+          ]
+        },
+        "near_lateral_face_radially_aligned": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_face_horizontal": {
+          "frames": 82,
+          "intervals": [
+            [
+              267,
+              267
+            ],
+            [
+              270,
+              270
+            ],
+            [
+              276,
+              277
+            ],
+            [
+              284,
+              285
+            ],
+            [
+              288,
+              288
+            ],
+            [
+              291,
+              293
+            ],
+            [
+              296,
+              315
+            ],
+            [
+              331,
+              335
+            ],
+            [
+              341,
+              346
+            ],
+            [
+              353,
+              353
+            ],
+            [
+              357,
+              396
+            ]
+          ]
+        },
+        "near_slow_face_lateral": {
+          "frames": 55,
+          "intervals": [
+            [
+              296,
+              296
+            ],
+            [
+              300,
+              312
+            ],
+            [
+              340,
+              343
+            ],
+            [
+              346,
+              346
+            ],
+            [
+              353,
+              353
+            ],
+            [
+              356,
+              387
+            ],
+            [
+              392,
+              394
+            ]
+          ]
+        },
+        "near_slow_radial_horizontal": {
+          "frames": 74,
+          "intervals": [
+            [
+              242,
+              243
+            ],
+            [
+              284,
+              288
+            ],
+            [
+              292,
+              293
+            ],
+            [
+              296,
+              306
+            ],
+            [
+              309,
+              315
+            ],
+            [
+              323,
+              323
+            ],
+            [
+              331,
+              335
+            ],
+            [
+              342,
+              344
+            ],
+            [
+              353,
+              353
+            ],
+            [
+              356,
+              359
+            ],
+            [
+              363,
+              395
+            ]
+          ]
+        },
+        "near_slow_radial_lateral": {
+          "frames": 75,
+          "intervals": [
+            [
+              278,
+              278
+            ],
+            [
+              284,
+              288
+            ],
+            [
+              291,
+              293
+            ],
+            [
+              296,
+              315
+            ],
+            [
+              331,
+              335
+            ],
+            [
+              342,
+              344
+            ],
+            [
+              353,
+              353
+            ],
+            [
+              356,
+              359
+            ],
+            [
+              363,
+              395
+            ]
+          ]
+        },
+        "near_slow_radial_aligned_horizontal": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_radial_aligned_lateral": {
+          "frames": 0,
+          "intervals": []
+        }
+      },
+      "feature_sha256": "ff6e0211409c28776b34a84ecffd0be5395815919ad5f06f215e5140fc810e8c",
+      "input_witness_sha256": "7e83a8d1eee41b2292d95e827cd26670b76aebb6dd89ae3e5d584f647bb07722"
+    }
+  ],
+  "max_recomputed_geometry_error": 0.0,
+  "max_material_total_speed_error": 0.0,
+  "limitations": [
+    "Face normal is not necessarily the capsule contact radial direction at triangle edges/vertices",
+    "Radial direction is the nominal closest-feature separation direction, NOT an observed PhysX manifold normal",
+    "15-degree alignment is an uncalibrated diagnostic, NOT an acceptance or contact threshold",
+    "No labels, hard support intervals, force/torque/friction constraints or target feasibility inferred"
+  ],
+  "accepted_reference": false,
+  "training_ready": false,
+  "solver_calls": 0,
+  "gpu_submissions": 0
+}

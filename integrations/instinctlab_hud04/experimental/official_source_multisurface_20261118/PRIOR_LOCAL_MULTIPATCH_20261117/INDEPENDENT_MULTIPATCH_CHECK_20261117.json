@@ -1,0 +1,114 @@
+{
+  "stage": "independent_all_triangle_radius_and_shell_enumeration",
+  "method": "65-step convex point/triangle ternary minimization per EVERY triangle using trimesh, endpoints included; exact triangle-ID sets compared",
+  "cases": [
+    {
+      "link": "right_knee_link",
+      "primitive": 0,
+      "frame": 203,
+      "all_triangles": 8068,
+      "returned_triangles": 9,
+      "shell_triangles": 9,
+      "global_min_margin_raw": 0.014958371773593618,
+      "max_distance_error": 1.1102230246251565e-16
+    },
+    {
+      "link": "right_knee_link",
+      "primitive": 0,
+      "frame": 250,
+      "all_triangles": 8068,
+      "returned_triangles": 14,
+      "shell_triangles": 2,
+      "global_min_margin_raw": -0.049999999999931405,
+      "max_distance_error": 6.859680315638853e-14
+    },
+    {
+      "link": "right_knee_link",
+      "primitive": 0,
+      "frame": 267,
+      "all_triangles": 8068,
+      "returned_triangles": 16,
+      "shell_triangles": 8,
+      "global_min_margin_raw": -0.0499999999999929,
+      "max_distance_error": 7.105440910115233e-15
+    },
+    {
+      "link": "right_knee_link",
+      "primitive": 0,
+      "frame": 300,
+      "all_triangles": 8068,
+      "returned_triangles": 17,
+      "shell_triangles": 10,
+      "global_min_margin_raw": -0.03613159424301024,
+      "max_distance_error": 1.249000902703301e-16
+    },
+    {
+      "link": "right_knee_link",
+      "primitive": 0,
+      "frame": 370,
+      "all_triangles": 8068,
+      "returned_triangles": 16,
+      "shell_triangles": 8,
+      "global_min_margin_raw": -0.039946247657695486,
+      "max_distance_error": 1.249000902703301e-16
+    },
+    {
+      "link": "right_knee_link",
+      "primitive": 0,
+      "frame": 405,
+      "all_triangles": 8068,
+      "returned_triangles": 13,
+      "shell_triangles": 13,
+      "global_min_margin_raw": -0.002874297150407157,
+      "max_distance_error": 6.245004513516506e-17
+    },
+    {
+      "link": "right_wrist_yaw_link",
+      "primitive": 0,
+      "frame": 308,
+      "all_triangles": 8068,
+      "returned_triangles": 2,
+      "shell_triangles": 2,
+      "global_min_margin_raw": 0.012928319670249142,
+      "max_distance_error": 0.0
+    },
+    {
+      "link": "left_wrist_yaw_link",
+      "primitive": 0,
+      "frame": 689,
+      "all_triangles": 8068,
+      "returned_triangles": 0,
+      "shell_triangles": 0,
+      "global_min_margin_raw": 0.022378209036337193,
+      "max_distance_error": 0.0
+    },
+    {
+      "link": "right_ankle_roll_link",
+      "primitive": 2,
+      "frame": 195,
+      "all_triangles": 8068,
+      "returned_triangles": 6,
+      "shell_triangles": 6,
+      "global_min_margin_raw": 0.0045952584748936275,
+      "max_distance_error": 2.237793284010081e-16
+    },
+    {
+      "link": "left_ankle_roll_link",
+      "primitive": 0,
+      "frame": 656,
+      "all_triangles": 8068,
+      "returned_triangles": 1,
+      "shell_triangles": 1,
+      "global_min_margin_raw": 0.017006490273663508,
+      "max_distance_error": 0.0
+    }
+  ],
+  "case_count": 10,
+  "per_triangle_distances_checked": 80680,
+  "left_wrist_zero_independently_checked_at_its_prior_minimum_frame": 689,
+  "left_wrist_all_997_frames_exhaustively_recomputed": false,
+  "max_distance_error": 6.859680315638853e-14,
+  "accepted_reference": false,
+  "training_ready": false,
+  "gpu_submissions": 0
+}

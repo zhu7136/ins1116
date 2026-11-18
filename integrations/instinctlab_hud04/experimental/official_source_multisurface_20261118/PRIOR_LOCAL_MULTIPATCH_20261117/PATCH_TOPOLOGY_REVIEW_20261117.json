@@ -1,0 +1,912 @@
+{
+  "stage": "nominal_triangle_feature_review_not_contact_patches",
+  "rows": [
+    {
+      "link": "left_ankle_roll_link",
+      "barycentric_edge_tolerance": 1e-07,
+      "counts": {
+        "near_horizontal_edge_or_vertex": {
+          "frames": 170,
+          "intervals": [
+            [
+              0,
+              69
+            ],
+            [
+              126,
+              198
+            ],
+            [
+              217,
+              236
+            ],
+            [
+              611,
+              617
+            ]
+          ]
+        },
+        "near_horizontal_face_interior": {
+          "frames": 512,
+          "intervals": [
+            [
+              0,
+              69
+            ],
+            [
+              115,
+              202
+            ],
+            [
+              210,
+              212
+            ],
+            [
+              215,
+              237
+            ],
+            [
+              373,
+              395
+            ],
+            [
+              608,
+              608
+            ],
+            [
+              610,
+              666
+            ],
+            [
+              669,
+              706
+            ],
+            [
+              727,
+              739
+            ],
+            [
+              796,
+              797
+            ],
+            [
+              803,
+              996
+            ]
+          ]
+        },
+        "near_lateral_edge_or_vertex": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_lateral_face_interior": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_horizontal_edge_or_vertex": {
+          "frames": 59,
+          "intervals": [
+            [
+              0,
+              52
+            ],
+            [
+              134,
+              134
+            ],
+            [
+              138,
+              138
+            ],
+            [
+              145,
+              145
+            ],
+            [
+              153,
+              153
+            ],
+            [
+              172,
+              173
+            ]
+          ]
+        },
+        "near_slow_horizontal_face_interior": {
+          "frames": 264,
+          "intervals": [
+            [
+              0,
+              50
+            ],
+            [
+              134,
+              135
+            ],
+            [
+              138,
+              138
+            ],
+            [
+              145,
+              145
+            ],
+            [
+              153,
+              153
+            ],
+            [
+              158,
+              159
+            ],
+            [
+              375,
+              380
+            ],
+            [
+              385,
+              387
+            ],
+            [
+              392,
+              394
+            ],
+            [
+              656,
+              660
+            ],
+            [
+              675,
+              695
+            ],
+            [
+              698,
+              702
+            ],
+            [
+              810,
+              810
+            ],
+            [
+              813,
+              813
+            ],
+            [
+              816,
+              816
+            ],
+            [
+              823,
+              861
+            ],
+            [
+              864,
+              874
+            ],
+            [
+              877,
+              904
+            ],
+            [
+              907,
+              930
+            ],
+            [
+              933,
+              962
+            ],
+            [
+              965,
+              966
+            ],
+            [
+              968,
+              973
+            ],
+            [
+              975,
+              975
+            ],
+            [
+              977,
+              992
+            ],
+            [
+              994,
+              996
+            ]
+          ]
+        },
+        "near_slow_lateral_edge_or_vertex": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_lateral_face_interior": {
+          "frames": 0,
+          "intervals": []
+        },
+        "slow_horizontal_and_other_surface_intersection": {
+          "frames": 7,
+          "intervals": [
+            [
+              172,
+              173
+            ],
+            [
+              656,
+              660
+            ]
+          ]
+        },
+        "slow_lateral_and_other_surface_intersection": {
+          "frames": 0,
+          "intervals": []
+        }
+      }
+    },
+    {
+      "link": "left_wrist_yaw_link",
+      "barycentric_edge_tolerance": 1e-07,
+      "counts": {
+        "near_horizontal_edge_or_vertex": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_horizontal_face_interior": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_lateral_edge_or_vertex": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_lateral_face_interior": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_horizontal_edge_or_vertex": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_horizontal_face_interior": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_lateral_edge_or_vertex": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_lateral_face_interior": {
+          "frames": 0,
+          "intervals": []
+        },
+        "slow_horizontal_and_other_surface_intersection": {
+          "frames": 0,
+          "intervals": []
+        },
+        "slow_lateral_and_other_surface_intersection": {
+          "frames": 0,
+          "intervals": []
+        }
+      }
+    },
+    {
+      "link": "left_knee_link",
+      "barycentric_edge_tolerance": 1e-07,
+      "counts": {
+        "near_horizontal_edge_or_vertex": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_horizontal_face_interior": {
+          "frames": 15,
+          "intervals": [
+            [
+              630,
+              638
+            ],
+            [
+              719,
+              724
+            ]
+          ]
+        },
+        "near_lateral_edge_or_vertex": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_lateral_face_interior": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_horizontal_edge_or_vertex": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_horizontal_face_interior": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_lateral_edge_or_vertex": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_lateral_face_interior": {
+          "frames": 0,
+          "intervals": []
+        },
+        "slow_horizontal_and_other_surface_intersection": {
+          "frames": 0,
+          "intervals": []
+        },
+        "slow_lateral_and_other_surface_intersection": {
+          "frames": 0,
+          "intervals": []
+        }
+      }
+    },
+    {
+      "link": "right_ankle_roll_link",
+      "barycentric_edge_tolerance": 1e-07,
+      "counts": {
+        "near_horizontal_edge_or_vertex": {
+          "frames": 136,
+          "intervals": [
+            [
+              0,
+              125
+            ],
+            [
+              190,
+              199
+            ]
+          ]
+        },
+        "near_horizontal_face_interior": {
+          "frames": 413,
+          "intervals": [
+            [
+              0,
+              126
+            ],
+            [
+              620,
+              629
+            ],
+            [
+              668,
+              671
+            ],
+            [
+              697,
+              697
+            ],
+            [
+              699,
+              722
+            ],
+            [
+              727,
+              735
+            ],
+            [
+              759,
+              996
+            ]
+          ]
+        },
+        "near_lateral_edge_or_vertex": {
+          "frames": 12,
+          "intervals": [
+            [
+              190,
+              201
+            ]
+          ]
+        },
+        "near_lateral_face_interior": {
+          "frames": 21,
+          "intervals": [
+            [
+              192,
+              207
+            ],
+            [
+              211,
+              215
+            ]
+          ]
+        },
+        "near_slow_horizontal_edge_or_vertex": {
+          "frames": 107,
+          "intervals": [
+            [
+              0,
+              89
+            ],
+            [
+              94,
+              104
+            ],
+            [
+              106,
+              109
+            ],
+            [
+              112,
+              112
+            ],
+            [
+              115,
+              115
+            ]
+          ]
+        },
+        "near_slow_horizontal_face_interior": {
+          "frames": 278,
+          "intervals": [
+            [
+              0,
+              89
+            ],
+            [
+              94,
+              99
+            ],
+            [
+              102,
+              104
+            ],
+            [
+              106,
+              109
+            ],
+            [
+              112,
+              112
+            ],
+            [
+              115,
+              115
+            ],
+            [
+              697,
+              697
+            ],
+            [
+              703,
+              706
+            ],
+            [
+              710,
+              710
+            ],
+            [
+              713,
+              718
+            ],
+            [
+              768,
+              769
+            ],
+            [
+              772,
+              776
+            ],
+            [
+              779,
+              781
+            ],
+            [
+              785,
+              786
+            ],
+            [
+              789,
+              790
+            ],
+            [
+              797,
+              801
+            ],
+            [
+              807,
+              807
+            ],
+            [
+              810,
+              816
+            ],
+            [
+              822,
+              835
+            ],
+            [
+              839,
+              844
+            ],
+            [
+              851,
+              855
+            ],
+            [
+              858,
+              867
+            ],
+            [
+              870,
+              890
+            ],
+            [
+              893,
+              897
+            ],
+            [
+              900,
+              901
+            ],
+            [
+              911,
+              911
+            ],
+            [
+              916,
+              920
+            ],
+            [
+              923,
+              956
+            ],
+            [
+              959,
+              973
+            ],
+            [
+              977,
+              977
+            ],
+            [
+              982,
+              996
+            ]
+          ]
+        },
+        "near_slow_lateral_edge_or_vertex": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_lateral_face_interior": {
+          "frames": 0,
+          "intervals": []
+        },
+        "slow_horizontal_and_other_surface_intersection": {
+          "frames": 7,
+          "intervals": [
+            [
+              99,
+              100
+            ],
+            [
+              104,
+              104
+            ],
+            [
+              106,
+              109
+            ]
+          ]
+        },
+        "slow_lateral_and_other_surface_intersection": {
+          "frames": 0,
+          "intervals": []
+        }
+      }
+    },
+    {
+      "link": "right_wrist_yaw_link",
+      "barycentric_edge_tolerance": 1e-07,
+      "counts": {
+        "near_horizontal_edge_or_vertex": {
+          "frames": 83,
+          "intervals": [
+            [
+              258,
+              315
+            ],
+            [
+              318,
+              322
+            ],
+            [
+              324,
+              324
+            ],
+            [
+              326,
+              326
+            ],
+            [
+              328,
+              345
+            ]
+          ]
+        },
+        "near_horizontal_face_interior": {
+          "frames": 89,
+          "intervals": [
+            [
+              257,
+              345
+            ]
+          ]
+        },
+        "near_lateral_edge_or_vertex": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_lateral_face_interior": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_horizontal_edge_or_vertex": {
+          "frames": 1,
+          "intervals": [
+            [
+              308,
+              308
+            ]
+          ]
+        },
+        "near_slow_horizontal_face_interior": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_lateral_edge_or_vertex": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_lateral_face_interior": {
+          "frames": 0,
+          "intervals": []
+        },
+        "slow_horizontal_and_other_surface_intersection": {
+          "frames": 0,
+          "intervals": []
+        },
+        "slow_lateral_and_other_surface_intersection": {
+          "frames": 0,
+          "intervals": []
+        }
+      }
+    },
+    {
+      "link": "right_knee_link",
+      "barycentric_edge_tolerance": 1e-07,
+      "counts": {
+        "near_horizontal_edge_or_vertex": {
+          "frames": 200,
+          "intervals": [
+            [
+              203,
+              254
+            ],
+            [
+              263,
+              410
+            ]
+          ]
+        },
+        "near_horizontal_face_interior": {
+          "frames": 9,
+          "intervals": [
+            [
+              633,
+              636
+            ],
+            [
+              660,
+              664
+            ]
+          ]
+        },
+        "near_lateral_edge_or_vertex": {
+          "frames": 171,
+          "intervals": [
+            [
+              203,
+              227
+            ],
+            [
+              265,
+              410
+            ]
+          ]
+        },
+        "near_lateral_face_interior": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_horizontal_edge_or_vertex": {
+          "frames": 82,
+          "intervals": [
+            [
+              267,
+              267
+            ],
+            [
+              270,
+              270
+            ],
+            [
+              276,
+              277
+            ],
+            [
+              284,
+              285
+            ],
+            [
+              288,
+              288
+            ],
+            [
+              291,
+              293
+            ],
+            [
+              296,
+              315
+            ],
+            [
+              331,
+              335
+            ],
+            [
+              341,
+              346
+            ],
+            [
+              353,
+              353
+            ],
+            [
+              357,
+              396
+            ]
+          ]
+        },
+        "near_slow_horizontal_face_interior": {
+          "frames": 0,
+          "intervals": []
+        },
+        "near_slow_lateral_edge_or_vertex": {
+          "frames": 55,
+          "intervals": [
+            [
+              296,
+              296
+            ],
+            [
+              300,
+              312
+            ],
+            [
+              340,
+              343
+            ],
+            [
+              346,
+              346
+            ],
+            [
+              353,
+              353
+            ],
+            [
+              356,
+              387
+            ],
+            [
+              392,
+              394
+            ]
+          ]
+        },
+        "near_slow_lateral_face_interior": {
+          "frames": 0,
+          "intervals": []
+        },
+        "slow_horizontal_and_other_surface_intersection": {
+          "frames": 82,
+          "intervals": [
+            [
+              267,
+              267
+            ],
+            [
+              270,
+              270
+            ],
+            [
+              276,
+              277
+            ],
+            [
+              284,
+              285
+            ],
+            [
+              288,
+              288
+            ],
+            [
+              291,
+              293
+            ],
+            [
+              296,
+              315
+            ],
+            [
+              331,
+              335
+            ],
+            [
+              341,
+              346
+            ],
+            [
+              353,
+              353
+            ],
+            [
+              357,
+              396
+            ]
+          ]
+        },
+        "slow_lateral_and_other_surface_intersection": {
+          "frames": 55,
+          "intervals": [
+            [
+              296,
+              296
+            ],
+            [
+              300,
+              312
+            ],
+            [
+              340,
+              343
+            ],
+            [
+              346,
+              346
+            ],
+            [
+              353,
+              353
+            ],
+            [
+              356,
+              387
+            ],
+            [
+              392,
+              394
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Triangulation edges may be internal coplanar edges, not physical obstacle edges",
+    "A nearest witness on a triangle edge must not inherit its face normal without feature analysis",
+    "Surface intersections are nominal capsule/triangle results, NOT signed solid penetration or cooked PhysX validation"
+  ],
+  "accepted_reference": false,
+  "training_ready": false,
+  "gpu_submissions": 0
+}
