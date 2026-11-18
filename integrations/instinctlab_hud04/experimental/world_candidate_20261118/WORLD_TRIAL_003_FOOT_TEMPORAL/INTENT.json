@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-11-18T01:16:54.695142+00:00",
+  "change": "Add nominal finite footbox/actual terrain triangle local soft escape cuts + root-translation/rotation-matrix and joint temporal second differences",
+  "previous_candidate_status": "REJECTED_nominal_foot_terrain_interior_hits_L240_R162_and_root_jitter",
+  "unchanged": "997frames90Hz/body29/fixedHead/originalnamedPositionVelocityLimits/no_clipping/no_resample/no_longPPO",
+  "new_weights": {
+    "foot_hinge": 100,
+    "root_translation_second_derivative": 0.02,
+    "rotation_matrix_second_derivative": 0.005,
+    "joint_second_derivative": 0.0001
+  },
+  "foot_activation_padding_raw": 0.025,
+  "triangle_normals_used": "raw actual crop mesh winding; conditional world/unit binding unchanged",
+  "parent_wall_seconds": 100,
+  "child_algorithm_seconds": 80,
+  "planned_lp_calls": 98,
+  "maximum_block_frames": 31,
+  "lp_seconds": 1.5,
+  "lp_iterations": 12000,
+  "numeric_threads": 2,
+  "automatic_retries": 0,
+  "accepted_reference": false,
+  "gpu_submissions": 0,
+  "ppo_updates": 0
+}

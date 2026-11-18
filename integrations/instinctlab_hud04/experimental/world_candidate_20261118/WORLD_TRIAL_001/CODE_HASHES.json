@@ -1,0 +1,8 @@
+{
+  "inspect_neutral.py": "1b07032d34e926b4f8090a3525f76164b570838cf632969246a554912d68c456",
+  "run_world_candidate.py": "77db750a91791e36f59cf93acc96c95b0117615c0eb7de8609f81db92da05ad8",
+  "test_world_features.py": "1ab74da89676d077fd49266baea260d9c2fdc9d92faf439f199770c6480946e8",
+  "test_world_solver.py": "36dcd5228158952b923e1fe18edb07ba50682b0ce47de7515e20be817aa951c3",
+  "world_features.py": "12bec251d8810f5f4e31df019db09fb501e8ce13c5c8d0bbd145229bb66487d0",
+  "world_solver.py": "f946aaa79d4bdb9481ad9b97e85d50aad4733037052eb8c96231bc6da4b198b0"
+}

@@ -1,0 +1,18 @@
+test_35_columns_finite_difference (test_world_features.WorldTests.test_35_columns_finite_difference) ... ok
+test_endpoints_observable_not_rank16 (test_world_features.WorldTests.test_endpoints_observable_not_rank16) ... ok
+test_full_native_contract (test_world_features.WorldTests.test_full_native_contract) ... ok
+test_independent_fk_world_features (test_world_features.WorldTests.test_independent_fk_world_features) ... ok
+test_initial_torso_not_copied_root (test_world_features.WorldTests.test_initial_torso_not_copied_root) ... ok
+test_non_se3_and_missing_rejected (test_world_features.WorldTests.test_non_se3_and_missing_rejected) ... ok
+test_world_equivariance (test_world_features.WorldTests.test_world_equivariance) ... ok
+test_bad_native_size_rejected (test_world_solver.SolverTests.test_bad_native_size_rejected) ... ok
+test_exact_native_coverage (test_world_solver.SolverTests.test_exact_native_coverage) ... ok
+test_failed_lp_no_result_returned (test_world_solver.SolverTests.test_failed_lp_no_result_returned) ... ok
+test_hard_rows_match_independent_global_constraints (test_world_solver.SolverTests.test_hard_rows_match_independent_global_constraints) ... ok
+test_root_columns_not_joint_bounds (test_world_solver.SolverTests.test_root_columns_not_joint_bounds) ... ok
+test_seed_full_limits (test_world_solver.SolverTests.test_seed_full_limits) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.630s
+
+OK

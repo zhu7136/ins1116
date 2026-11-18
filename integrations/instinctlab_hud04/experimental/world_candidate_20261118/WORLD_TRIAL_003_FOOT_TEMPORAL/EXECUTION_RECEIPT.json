@@ -1,0 +1,11 @@
+{
+  "child_exit": 1,
+  "child_reaped": true,
+  "parent_timeout": false,
+  "elapsed_seconds": 5.593428162000009,
+  "result_exists": false,
+  "artifact_exists": false,
+  "accepted_reference": false,
+  "gpu_submissions": 0,
+  "ppo_updates": 0
+}

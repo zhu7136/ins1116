@@ -1,0 +1,192 @@
+{
+  "stage": "independent_full997_saved_world_candidate_check_NOT_acceptance",
+  "artifact_sha256": "7c2c98d7811e3c847c7a20239612006647d56f42777a1ddea914c52f2711f253",
+  "method": "legacy RobotTree FK/direct named targetXML/actual crop triangle clipped against nominal footbox + independent barycentric witness",
+  "frames": 997,
+  "intervals": 996,
+  "fps": 90,
+  "body_joints": 29,
+  "head_fixed_zero": true,
+  "position_bad_frames": 0,
+  "overspeed_intervals": 0,
+  "position_max_violation_rad": 0.0,
+  "velocity_max_violation_rad_s": 4.263256414560601e-14,
+  "quaternion_norm_max_error": 2.220446049250313e-16,
+  "adjacent_quaternion_dot_min": 0.9799857982315108,
+  "independent_metric_max_disagreement": 4.263256414560601e-14,
+  "position_metrics": [
+    {
+      "label": "torso_link_pivot",
+      "mean": 0.09606068304705775,
+      "p95": 0.14977948960284432,
+      "maximum": 0.172638757039041
+    },
+    {
+      "label": "left_distal_wrist_pivot",
+      "mean": 0.12293502626311745,
+      "p95": 0.26891171230212907,
+      "maximum": 0.3326428097070985
+    },
+    {
+      "label": "left_knee_pivot",
+      "mean": 0.09936822613960883,
+      "p95": 0.17032358071499445,
+      "maximum": 0.3660093915753849
+    },
+    {
+      "label": "left_nominal_sole_bounds_center",
+      "mean": 0.11517579961590793,
+      "p95": 0.2090991421283145,
+      "maximum": 0.33791872197915723
+    },
+    {
+      "label": "right_distal_wrist_pivot",
+      "mean": 0.1147214975694685,
+      "p95": 0.22416210858797747,
+      "maximum": 0.35486055247222104
+    },
+    {
+      "label": "right_knee_pivot",
+      "mean": 0.10924458274341864,
+      "p95": 0.21420879830153713,
+      "maximum": 0.4747162643247081
+    },
+    {
+      "label": "right_nominal_sole_bounds_center",
+      "mean": 0.10216988655664835,
+      "p95": 0.2322100634727852,
+      "maximum": 0.32959146965188485
+    }
+  ],
+  "orientation_metrics": [
+    {
+      "link": "waist_pitch_link",
+      "mean": 0.5369967890643834,
+      "p95": 1.9692632634194678,
+      "maximum": 15.593145556233656
+    },
+    {
+      "link": "left_wrist_roll_link",
+      "mean": 39.68936037537508,
+      "p95": 72.09877848189983,
+      "maximum": 102.53580962821688
+    },
+    {
+      "link": "left_ankle_roll_link",
+      "mean": 17.82997951402842,
+      "p95": 58.81600330100998,
+      "maximum": 75.82782258887347
+    },
+    {
+      "link": "right_wrist_roll_link",
+      "mean": 41.01885385771569,
+      "p95": 70.46526613922471,
+      "maximum": 93.98742793298496
+    },
+    {
+      "link": "right_ankle_roll_link",
+      "mean": 15.426663536803082,
+      "p95": 63.307369865187546,
+      "maximum": 78.91096674119716
+    }
+  ],
+  "root_linear_speed_raw_per_s": {
+    "mean": 1.6092998894510806,
+    "p95": 5.668627838866906,
+    "maximum": 9.289900626645418
+  },
+  "root_linear_acceleration_raw_per_s2": {
+    "mean": 206.9218354747692,
+    "p95": 596.9668161934062,
+    "maximum": 1290.3955771722563
+  },
+  "root_angular_speed_rad_per_s": {
+    "mean": 6.544584051300387,
+    "p95": 15.46536826564782,
+    "maximum": 36.07311534449192
+  },
+  "foot_box_surface_strict_interior_hit_frames": {
+    "left": 240,
+    "right": 162
+  },
+  "all_rejection_witnesses": 402,
+  "foot_triangle_narrow_queries": 1482,
+  "nominal_footbox_geometry_rejection": true,
+  "full_collision_free_proven": false,
+  "signed_penetration_depth_computed": false,
+  "support_labels_proven": false,
+  "cooked_filters_proven": false,
+  "source_unit_exporter_proven": false,
+  "dynamics_tested": false,
+  "terrain_evidence": {
+    "inputs_sha256": {
+      "/workspace/hud04-recovery-fd12fe1/upstream/source/instinctlab/instinctlab/terrains/trimesh/utils.py": "40d3427da3a56592367c61b4327647940b0a09360638b1102be092de9b269c01",
+      "/workspace/hud04-recovery-fd12fe1/upstream/source/instinctlab/instinctlab/terrains/trimesh/mesh_terrains.py": "9ac841818fd44d753bad0850a768d631339d0436b6542ca2af6cfad5d9fe8a20",
+      "/workspace/hud04-original-drive-20261117/metadata_kneelClimbStep1.yaml": "cbd3010b21111f8fc69a354c37befaf72bd33508a93763edc024b3a29f887ea1",
+      "/workspace/hud04-original-drive-20261117/50cmboxes_19_36_49.stl": "3aee33efea6793974d901dd0f7e46859e2d12d2dfd79f38f12c777686566c2de"
+    },
+    "crop_stats": {
+      "trimesh_version": "5.2.1",
+      "input_faces": 8087,
+      "input_processed_vertices": 5517,
+      "cropped_faces": 8068,
+      "cropped_vertices": 5524,
+      "crop_bounds_raw": [
+        [
+          -1.8844000101089478,
+          -6.0,
+          -0.013334252871572971
+        ],
+        [
+          2.1979832649230957,
+          1.566604733467102,
+          1.6899999380111694
+        ]
+      ],
+      "border_vertex_count": 62,
+      "border_height_raw": 0.13514180794761088,
+      "border_fallback_used": false,
+      "border_z_range_raw": [
+        0.002699737307128007,
+        0.694706916809082
+      ],
+      "border_z_std_raw": 0.19273899276557915,
+      "terrain_function_shared_shift_raw": [
+        4.5,
+        6.0,
+        -0.13514180794761088
+      ]
+    },
+    "triangle_count": 8068,
+    "lateral_triangle_count": 2958,
+    "lateral_definition": "normal norm > .5 AND abs(normal.z) <= .1; diagnostic ONLY",
+    "raw_to_terrain_function_shift": [
+      4.5,
+      6.0,
+      -0.13514180794761088
+    ],
+    "upstream_ast_crop_and_shift_verified": true,
+    "random_decorator_walls_included": false,
+    "static_config_proof": {
+      "task_sha256": "ca9beeca2e9d59d1fbb588e35d2452261b171bdf9ebf85ba8efd786aa8e81504",
+      "terrain_cfg_sha256": "9f568cd3ca08752db1850c8226e8d360d3044b226c9eb137216f446be479366a",
+      "task_size": [
+        9,
+        12
+      ],
+      "terrain_class_direct_base": "SubTerrainBaseCfg",
+      "wall_mixin_not_inherited": true,
+      "decorator_returns_early_without_wall_prob": true,
+      "runtime_cfg_overrides_observed": false
+    },
+    "lateral_faces_are_from_matched_stl_not_random_decorator": true,
+    "generator_grid_placement_included": false,
+    "source_root_or_units_inferred": false,
+    "actual_terrain_runtime_cooking_verified": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  "accepted_reference": false,
+  "training_ready": false,
+  "elapsed_seconds": 1.593772890000082
+}

@@ -1,0 +1,77 @@
+{
+  "original_head": "70393c676c85888db0bdd92f8ab7e64fe83fa88d",
+  "observed_head": "ee8416303d1dd471b05cc6ae6702e5f52008d554",
+  "ahead_by": 1,
+  "behind_by": 0,
+  "commits": [
+    {
+      "sha": "ee8416303d1dd471b05cc6ae6702e5f52008d554",
+      "message": "Wire mandatory HUD04 startup gate before runner construction"
+    }
+  ],
+  "files": [
+    {
+      "filename": "integrations/instinctlab_hud04/README_zh.md",
+      "status": "modified",
+      "additions": 28,
+      "deletions": 1,
+      "sha": "aa2c96050fe32fcd87ddf8fd0475ffa5bbd67c6f"
+    },
+    {
+      "filename": "integrations/instinctlab_hud04/RUNTIME_INTERFACE_GATE_REVIEW_zh.md",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "sha": "e912581b370ac3c219d4dd0d501c910adc49fb2b"
+    },
+    {
+      "filename": "integrations/instinctlab_hud04/STARTUP_GATE_REVIEW_zh.md",
+      "status": "added",
+      "additions": 114,
+      "deletions": 0,
+      "sha": "d5ca0afaa0a41c0ebe6ce492fa5f6b5567f65f61"
+    },
+    {
+      "filename": "integrations/instinctlab_hud04/fixtures/upstream_train.py.txt",
+      "status": "added",
+      "additions": 249,
+      "deletions": 0,
+      "sha": "5a0e906e735e7498df719626feac7d0eb453f5c0"
+    },
+    {
+      "filename": "integrations/instinctlab_hud04/install_overlay.py",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 3,
+      "sha": "f4ddceb1adf9e30b0b181814afe072e0d91946f8"
+    },
+    {
+      "filename": "integrations/instinctlab_hud04/runtime_gate.py",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "sha": "e4a50419d7127e581e3361d54ab8b06bcd7877e5"
+    },
+    {
+      "filename": "integrations/instinctlab_hud04/startup_gate.py",
+      "status": "added",
+      "additions": 228,
+      "deletions": 0,
+      "sha": "48242b3de326278ffcb8d80be0f750786954272d"
+    },
+    {
+      "filename": "integrations/instinctlab_hud04/startup_patch.py",
+      "status": "added",
+      "additions": 118,
+      "deletions": 0,
+      "sha": "ad526c4f0a5a4f92b991d7cf1ccb0fcf1031dfec"
+    },
+    {
+      "filename": "integrations/instinctlab_hud04/test_startup_gate.py",
+      "status": "added",
+      "additions": 476,
+      "deletions": 0,
+      "sha": "32b5abfb602db366d785ae46b7a29ee2739ddd42"
+    }
+  ]
+}

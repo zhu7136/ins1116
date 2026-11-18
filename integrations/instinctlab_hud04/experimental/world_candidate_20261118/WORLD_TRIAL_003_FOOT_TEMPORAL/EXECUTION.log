@@ -1,0 +1,15 @@
+{"update": 0, "first": 0, "last": 30, "lp_status": 1, "lp_iterations": 4379, "accepted": false, "active_triangle_plane_cuts": 0, "old_negative_cut_l1_raw": 0.0, "old_temporal_l1": 309.72738112824396}
+Traceback (most recent call last):
+  File "/workspace/hud04-world-candidate-20261118/run_collision_temporal_candidate.py", line 86, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/workspace/hud04-world-candidate-20261118/run_collision_temporal_candidate.py", line 58, in main
+    if len(sys.argv)==3 and sys.argv[1]=='--worker':return worker(Path(sys.argv[2]))
+                                                           ~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/workspace/hud04-world-candidate-20261118/run_collision_temporal_candidate.py", line 31, in worker
+    q,roots,report=solve(target,q,roots,desired,progress)
+                   ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/hud04-world-candidate-20261118/collision_temporal_solver.py", line 65, in solve
+    if not lp.success:raise RuntimeError('LP unsuccessful; NO motion export; inspect progress status '+str(lp.status))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: LP unsuccessful; NO motion export; inspect progress status 1

@@ -1,0 +1,34 @@
+{"update": 0, "first": 0, "last": 92, "lp_status": 0, "lp_iterations": 10735, "accepted": true, "alpha": 1.0, "merit_before": 3341.7900827946632, "merit_after": 1781.8094046840567, "max_root_translation_step_raw": 0.025, "max_root_rotation_step_rad": 0.1, "max_joint_step_rad": 0.15000000000000005}
+{"update": 1, "first": 56, "last": 148, "lp_status": 0, "lp_iterations": 11204, "accepted": true, "alpha": 1.0, "merit_before": 3012.8536771405034, "merit_after": 1662.3966559877006, "max_root_translation_step_raw": 0.025, "max_root_rotation_step_rad": 0.1, "max_joint_step_rad": 0.15000000000000016}
+{"update": 2, "first": 113, "last": 205, "lp_status": 0, "lp_iterations": 10919, "accepted": true, "alpha": 1.0, "merit_before": 3487.733096822868, "merit_after": 2206.963846167855, "max_root_translation_step_raw": 0.025, "max_root_rotation_step_rad": 0.1, "max_joint_step_rad": 0.15000000000000005}
+{"update": 3, "first": 170, "last": 262, "lp_status": 0, "lp_iterations": 10442, "accepted": true, "alpha": 1.0, "merit_before": 3194.290716841572, "merit_after": 2049.8259929590095, "max_root_translation_step_raw": 0.025, "max_root_rotation_step_rad": 0.1, "max_joint_step_rad": 0.15000000000000005}
+{"update": 4, "first": 226, "last": 318, "lp_status": 0, "lp_iterations": 11183, "accepted": true, "alpha": 1.0, "merit_before": 2832.923205959559, "merit_after": 1565.645716103928, "max_root_translation_step_raw": 0.025, "max_root_rotation_step_rad": 0.1, "max_joint_step_rad": 0.15000000000000002}
+{"update": 5, "first": 282, "last": 374, "lp_status": 0, "lp_iterations": 11481, "accepted": true, "alpha": 1.0, "merit_before": 3167.923929836365, "merit_after": 1695.3715782576855, "max_root_translation_step_raw": 0.025, "max_root_rotation_step_rad": 0.1, "max_joint_step_rad": 0.15000000000000002}
+{"update": 6, "first": 339, "last": 431, "lp_status": 0, "lp_iterations": 11285, "accepted": true, "alpha": 1.0, "merit_before": 3303.0800120714284, "merit_after": 1947.3636443023747, "max_root_translation_step_raw": 0.025, "max_root_rotation_step_rad": 0.1, "max_joint_step_rad": 0.15000000000000005}
+{"update": 7, "first": 396, "last": 488, "lp_status": 0, "lp_iterations": 11274, "accepted": true, "alpha": 1.0, "merit_before": 3536.252558068165, "merit_after": 2042.1786163364416, "max_root_translation_step_raw": 0.025, "max_root_rotation_step_rad": 0.1, "max_joint_step_rad": 0.15000000000000005}
+{"update": 8, "first": 452, "last": 544, "lp_status": 0, "lp_iterations": 10714, "accepted": true, "alpha": 1.0, "merit_before": 3535.270844764843, "merit_after": 2031.3610696989408, "max_root_translation_step_raw": 0.025, "max_root_rotation_step_rad": 0.1, "max_joint_step_rad": 0.15000000000000005}
+{"update": 9, "first": 508, "last": 600, "lp_status": 0, "lp_iterations": 10518, "accepted": true, "alpha": 1.0, "merit_before": 3994.535904859244, "merit_after": 2390.650582524025, "max_root_translation_step_raw": 0.025, "max_root_rotation_step_rad": 0.1, "max_joint_step_rad": 0.15000000000000002}
+{"update": 10, "first": 565, "last": 657, "lp_status": 0, "lp_iterations": 10609, "accepted": true, "alpha": 1.0, "merit_before": 3914.7431080791325, "merit_after": 2322.1839324923894, "max_root_translation_step_raw": 0.025, "max_root_rotation_step_rad": 0.1, "max_joint_step_rad": 0.15000000000000024}
+{"update": 11, "first": 622, "last": 714, "lp_status": 0, "lp_iterations": 10057, "accepted": true, "alpha": 1.0, "merit_before": 3252.7707560953327, "merit_after": 1990.5613127958757, "max_root_translation_step_raw": 0.025, "max_root_rotation_step_rad": 0.1, "max_joint_step_rad": 0.15000000000000002}
+{"update": 12, "first": 678, "last": 770, "lp_status": 0, "lp_iterations": 10109, "accepted": true, "alpha": 1.0, "merit_before": 3459.584576250286, "merit_after": 1994.111020300045, "max_root_translation_step_raw": 0.025, "max_root_rotation_step_rad": 0.1, "max_joint_step_rad": 0.15000000000000005}
+{"update": 13, "first": 734, "last": 826, "lp_status": 0, "lp_iterations": 10330, "accepted": true, "alpha": 1.0, "merit_before": 3649.7845160209226, "merit_after": 2044.4210248803765, "max_root_translation_step_raw": 0.025, "max_root_rotation_step_rad": 0.1, "max_joint_step_rad": 0.15000000000000002}
+{"update": 14, "first": 791, "last": 883, "lp_status": 0, "lp_iterations": 10244, "accepted": true, "alpha": 1.0, "merit_before": 3092.0758584950863, "merit_after": 1836.7141087608497, "max_root_translation_step_raw": 0.025, "max_root_rotation_step_rad": 0.1, "max_joint_step_rad": 0.15}
+{"update": 15, "first": 848, "last": 940, "lp_status": 0, "lp_iterations": 10469, "accepted": true, "alpha": 1.0, "merit_before": 2701.3051888903483, "merit_after": 1762.2171287669375, "max_root_translation_step_raw": 0.025, "max_root_rotation_step_rad": 0.1, "max_joint_step_rad": 0.15000000000000005}
+{"update": 16, "first": 904, "last": 996, "lp_status": 0, "lp_iterations": 10278, "accepted": true, "alpha": 1.0, "merit_before": 2747.314373924385, "merit_after": 1852.594494569744, "max_root_translation_step_raw": 0.025, "max_root_rotation_step_rad": 0.1, "max_joint_step_rad": 0.15}
+{"update": 17, "first": 904, "last": 996, "lp_status": 0, "lp_iterations": 10833, "accepted": true, "alpha": 1.0, "merit_before": 1852.594494569744, "merit_after": 1527.3801879860105, "max_root_translation_step_raw": 0.025, "max_root_rotation_step_rad": 0.1, "max_joint_step_rad": 0.15}
+{"update": 18, "first": 848, "last": 940, "lp_status": 0, "lp_iterations": 11833, "accepted": true, "alpha": 1.0, "merit_before": 1505.5687848850475, "merit_after": 1114.8702239441866, "max_root_translation_step_raw": 0.025, "max_root_rotation_step_rad": 0.1, "max_joint_step_rad": 0.15}
+{"update": 19, "first": 791, "last": 883, "lp_status": 1, "lp_iterations": 12000, "accepted": false}
+Traceback (most recent call last):
+  File "/workspace/hud04-world-candidate-20261118/run_world_candidate.py", line 96, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/workspace/hud04-world-candidate-20261118/run_world_candidate.py", line 68, in main
+    if args.worker:return worker(args.worker)
+                          ~~~~~~^^^^^^^^^^^^^
+  File "/workspace/hud04-world-candidate-20261118/run_world_candidate.py", line 34, in worker
+    q,roots,report=solve(model,q,roots,desired,progress)
+                   ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/hud04-world-candidate-20261118/world_solver.py", line 70, in solve
+    if not lp.success:raise RuntimeError('LP unsuccessful; NO motion export; inspect progress status '+str(lp.status))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: LP unsuccessful; NO motion export; inspect progress status 1

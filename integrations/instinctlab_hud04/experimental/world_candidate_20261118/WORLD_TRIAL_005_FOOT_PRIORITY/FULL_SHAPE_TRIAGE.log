@@ -1,0 +1,16 @@
+{"stage": "all997x43nominal_AABBs_complete", "pairs": 903, "self_query_jobs": 85, "terrain_query_jobs": 47}
+{
+  "frames": 997,
+  "shapes": 43,
+  "shape_pairs": 903,
+  "aabb_exact_support_crosscheck129_max_error": 3.3306690738754696e-16,
+  "query_status_counts": {
+    "self:separated": 55,
+    "self:within_numerical_tolerance": 9,
+    "terrain:separated": 28,
+    "terrain:within_numerical_tolerance": 19
+  },
+  "narrowphase_all_frames_complete": false,
+  "elapsed_seconds": 22.20123721899995,
+  "accepted_reference": false
+}

@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-11-18T01:17:39.323690+00:00",
+  "change_from_trial003": "ONLY block31->11 / full coverage schedule; samefoot/temporal/fitweights and named hardlimits, seedtrial002",
+  "previous_failure": "trial003 first LP hit1.5s time cap,4379iterations, no artifact export; not infeasibility proof",
+  "parent_wall_seconds": 100,
+  "child_algorithm_seconds": 80,
+  "planned_lp_calls": 200,
+  "maximum_block_frames": 11,
+  "lp_seconds": 1.5,
+  "lp_iterations": 12000,
+  "numeric_threads": 2,
+  "automatic_retries": 0,
+  "accepted_reference": false,
+  "gpu_submissions": 0,
+  "ppo_updates": 0
+}

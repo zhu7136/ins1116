@@ -1,0 +1,105 @@
+{
+  "previous_observed_head": "ee8416303d1dd471b05cc6ae6702e5f52008d554",
+  "observed_head": "d1640eee4ca947e3ae176cf31dca1e9179b3266b",
+  "ahead_by": 1,
+  "behind_by": 0,
+  "commits": [
+    {
+      "sha": "d1640eee4ca947e3ae176cf31dca1e9179b3266b",
+      "message": "Add explicit 35D HUD04 pose-task channels and independent CPU checks"
+    }
+  ],
+  "files": [
+    {
+      "filename": "integrations/instinctlab_hud04/experimental/pose_tasks_20261118/POSE_TASK_REVIEW.json",
+      "status": "added",
+      "additions": 413,
+      "deletions": 0,
+      "sha": "067f3c0e4ce31420c43a1ad88939fe4b3191ca79"
+    },
+    {
+      "filename": "integrations/instinctlab_hud04/experimental/pose_tasks_20261118/POSE_TASK_REVIEW_V2.json",
+      "status": "added",
+      "additions": 426,
+      "deletions": 0,
+      "sha": "b5af7319666f418fd93011c29b35a47f50ca2ec7"
+    },
+    {
+      "filename": "integrations/instinctlab_hud04/experimental/pose_tasks_20261118/PRIOR_WINDOW_REGRESSION.log",
+      "status": "added",
+      "additions": 54,
+      "deletions": 0,
+      "sha": "a22e8ee2fa99237951a3fa5285b063d5026588e9"
+    },
+    {
+      "filename": "integrations/instinctlab_hud04/experimental/pose_tasks_20261118/PRIOR_WINDOW_REGRESSION_FIXED_PATH.log",
+      "status": "added",
+      "additions": 36,
+      "deletions": 0,
+      "sha": "2d22c23940d9aa2d645cce10dbab3c155ba96b46"
+    },
+    {
+      "filename": "integrations/instinctlab_hud04/experimental/pose_tasks_20261118/README_zh.md",
+      "status": "added",
+      "additions": 88,
+      "deletions": 0,
+      "sha": "56e51606c282927a8e77d0c6a9cdc8da1218f6a3"
+    },
+    {
+      "filename": "integrations/instinctlab_hud04/experimental/pose_tasks_20261118/REVIEW_EXECUTION.log",
+      "status": "added",
+      "additions": 413,
+      "deletions": 0,
+      "sha": "067f3c0e4ce31420c43a1ad88939fe4b3191ca79"
+    },
+    {
+      "filename": "integrations/instinctlab_hud04/experimental/pose_tasks_20261118/REVIEW_EXECUTION_V2.log",
+      "status": "added",
+      "additions": 426,
+      "deletions": 0,
+      "sha": "b5af7319666f418fd93011c29b35a47f50ca2ec7"
+    },
+    {
+      "filename": "integrations/instinctlab_hud04/experimental/pose_tasks_20261118/TESTS_FINAL.log",
+      "status": "added",
+      "additions": 36,
+      "deletions": 0,
+      "sha": "0e895466700dbd0e3b201b0da7ad59c087346ce2"
+    },
+    {
+      "filename": "integrations/instinctlab_hud04/experimental/pose_tasks_20261118/context.py",
+      "status": "added",
+      "additions": 68,
+      "deletions": 0,
+      "sha": "b5a9619362a888d29f000dc9627fe64f4f5f1ff1"
+    },
+    {
+      "filename": "integrations/instinctlab_hud04/experimental/pose_tasks_20261118/pose_tasks.py",
+      "status": "added",
+      "additions": 148,
+      "deletions": 0,
+      "sha": "98a09c0d175fbfd69e127ae92ac69ee2fe7bfdd5"
+    },
+    {
+      "filename": "integrations/instinctlab_hud04/experimental/pose_tasks_20261118/review_pose_tasks.py",
+      "status": "added",
+      "additions": 192,
+      "deletions": 0,
+      "sha": "8574f502c0617ecbacaee4a4d1b232a24dc620e6"
+    },
+    {
+      "filename": "integrations/instinctlab_hud04/experimental/pose_tasks_20261118/test_pose_tasks.py",
+      "status": "added",
+      "additions": 131,
+      "deletions": 0,
+      "sha": "32af719a2c034a8b52f0d335cf28041fbd87beea"
+    },
+    {
+      "filename": "integrations/instinctlab_hud04/experimental/window_system_20261117/test_window_problem.py",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 2,
+      "sha": "efc079bc5e86001af050fbab3d91b1ab73cbe92c"
+    }
+  ]
+}

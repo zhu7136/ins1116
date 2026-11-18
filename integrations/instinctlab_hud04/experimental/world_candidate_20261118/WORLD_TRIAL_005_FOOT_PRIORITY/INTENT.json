@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-11-18T01:20:26.771160+00:00",
+  "scientific_change": "Continue actual004 candidate; increase nominal foot/triangle hinge weight100->1000; one complete100-window forward sweep instead of200-window forward+reverse schedule",
+  "seed_trial": "WORLD_TRIAL_004_FOOT_TEMPORAL_BLOCK11",
+  "solver_options": {
+    "foot_weight": 1000.0,
+    "max_calls": 100
+  },
+  "previous_candidate_status": "REJECTED_nominal_foot_terrain_interior_hits_L172_R94; sourceunits/material/support/dynamics remain unproven",
+  "unchanged": "Native997frames90Hz/body29/headfixed/originalnamedlimits/no_joint_clip_or_resample/root6D/fitting/temporalweights/trust",
+  "parent_wall_seconds": 100,
+  "child_algorithm_seconds": 80,
+  "planned_lp_calls": 100,
+  "maximum_block_frames": 11,
+  "lp_seconds": 1.5,
+  "lp_iterations": 12000,
+  "numeric_threads": 2,
+  "automatic_retries": 0,
+  "accepted_reference": false,
+  "gpu_submissions": 0,
+  "ppo_updates": 0
+}

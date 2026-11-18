@@ -1,0 +1,274 @@
+{
+  "stage": "Complete_world_candidates_generated_but_REJECTED_not_accepted_reference",
+  "original_base": "70393c676c85888db0bdd92f8ab7e64fe83fa88d",
+  "parallel_advance": {
+    "original_head": "70393c676c85888db0bdd92f8ab7e64fe83fa88d",
+    "observed_head": "ee8416303d1dd471b05cc6ae6702e5f52008d554",
+    "ahead_by": 1,
+    "behind_by": 0,
+    "commits": [
+      {
+        "sha": "ee8416303d1dd471b05cc6ae6702e5f52008d554",
+        "message": "Wire mandatory HUD04 startup gate before runner construction"
+      }
+    ],
+    "files": [
+      {
+        "filename": "integrations/instinctlab_hud04/README_zh.md",
+        "status": "modified",
+        "additions": 28,
+        "deletions": 1,
+        "sha": "aa2c96050fe32fcd87ddf8fd0475ffa5bbd67c6f"
+      },
+      {
+        "filename": "integrations/instinctlab_hud04/RUNTIME_INTERFACE_GATE_REVIEW_zh.md",
+        "status": "modified",
+        "additions": 5,
+        "deletions": 0,
+        "sha": "e912581b370ac3c219d4dd0d501c910adc49fb2b"
+      },
+      {
+        "filename": "integrations/instinctlab_hud04/STARTUP_GATE_REVIEW_zh.md",
+        "status": "added",
+        "additions": 114,
+        "deletions": 0,
+        "sha": "d5ca0afaa0a41c0ebe6ce492fa5f6b5567f65f61"
+      },
+      {
+        "filename": "integrations/instinctlab_hud04/fixtures/upstream_train.py.txt",
+        "status": "added",
+        "additions": 249,
+        "deletions": 0,
+        "sha": "5a0e906e735e7498df719626feac7d0eb453f5c0"
+      },
+      {
+        "filename": "integrations/instinctlab_hud04/install_overlay.py",
+        "status": "modified",
+        "additions": 18,
+        "deletions": 3,
+        "sha": "f4ddceb1adf9e30b0b181814afe072e0d91946f8"
+      },
+      {
+        "filename": "integrations/instinctlab_hud04/runtime_gate.py",
+        "status": "modified",
+        "additions": 2,
+        "deletions": 2,
+        "sha": "e4a50419d7127e581e3361d54ab8b06bcd7877e5"
+      },
+      {
+        "filename": "integrations/instinctlab_hud04/startup_gate.py",
+        "status": "added",
+        "additions": 228,
+        "deletions": 0,
+        "sha": "48242b3de326278ffcb8d80be0f750786954272d"
+      },
+      {
+        "filename": "integrations/instinctlab_hud04/startup_patch.py",
+        "status": "added",
+        "additions": 118,
+        "deletions": 0,
+        "sha": "ad526c4f0a5a4f92b991d7cf1ccb0fcf1031dfec"
+      },
+      {
+        "filename": "integrations/instinctlab_hud04/test_startup_gate.py",
+        "status": "added",
+        "additions": 476,
+        "deletions": 0,
+        "sha": "32b5abfb602db366d785ae46b7a29ee2739ddd42"
+      }
+    ]
+  },
+  "trials": [
+    {
+      "trial": "WORLD_TRIAL_001",
+      "child_exit": 1,
+      "child_reaped": true,
+      "parent_timeout": false,
+      "elapsed_seconds": 18.362532889000022,
+      "result_exists": false,
+      "artifact_exists": false,
+      "gpu_submissions": 0,
+      "ppo_updates": 0,
+      "accepted_reference": false,
+      "actual_lp_calls": 20,
+      "accepted_updates": 19
+    },
+    {
+      "trial": "WORLD_TRIAL_002_BLOCK31",
+      "child_exit": 0,
+      "child_reaped": true,
+      "parent_timeout": false,
+      "elapsed_seconds": 29.45620974100001,
+      "result_exists": true,
+      "artifact_exists": true,
+      "gpu_submissions": 0,
+      "ppo_updates": 0,
+      "accepted_reference": false,
+      "actual_lp_calls": 98,
+      "accepted_updates": 98,
+      "artifact_sha256": "7c2c98d7811e3c847c7a20239612006647d56f42777a1ddea914c52f2711f253",
+      "position_bad_frames": 0,
+      "overspeed_intervals": 0,
+      "root_speed": {
+        "mean": 1.6092998894510806,
+        "p95": 5.668627838866906,
+        "maximum": 9.289900626645418
+      },
+      "root_acceleration": {
+        "mean": 206.9218354747692,
+        "p95": 596.9668161934062,
+        "maximum": 1290.3955771722563
+      },
+      "foot_interior_hit_frames": {
+        "left": 240,
+        "right": 162
+      },
+      "foot_witnesses_with_lateral_normal_abs_z_lt_point5": 98,
+      "sole_position_max_raw": [
+        0.33791872197915757,
+        0.32959146965188485
+      ],
+      "fixed_budget_is_not_convergence": true,
+      "termination": "finite_plan_finished_not_convergence"
+    },
+    {
+      "trial": "WORLD_TRIAL_003_FOOT_TEMPORAL",
+      "child_exit": 1,
+      "child_reaped": true,
+      "parent_timeout": false,
+      "elapsed_seconds": 5.593428162000009,
+      "result_exists": false,
+      "artifact_exists": false,
+      "accepted_reference": false,
+      "gpu_submissions": 0,
+      "ppo_updates": 0,
+      "actual_lp_calls": 1,
+      "accepted_updates": 0
+    },
+    {
+      "trial": "WORLD_TRIAL_004_FOOT_TEMPORAL_BLOCK11",
+      "child_exit": 0,
+      "child_reaped": true,
+      "parent_timeout": false,
+      "elapsed_seconds": 84.25790321,
+      "result_exists": true,
+      "artifact_exists": true,
+      "accepted_reference": false,
+      "gpu_submissions": 0,
+      "ppo_updates": 0,
+      "actual_lp_calls": 128,
+      "accepted_updates": 128,
+      "artifact_sha256": "8788331db4442758ca2b0c03747ce25bb902e22b743618b2d6cd35376816701b",
+      "position_bad_frames": 0,
+      "overspeed_intervals": 0,
+      "root_speed": {
+        "mean": 0.9053300438536049,
+        "p95": 2.084749417602495,
+        "maximum": 6.557815648399276
+      },
+      "root_acceleration": {
+        "mean": 36.3373737105989,
+        "p95": 151.67338306875234,
+        "maximum": 568.8888466133781
+      },
+      "foot_interior_hit_frames": {
+        "left": 172,
+        "right": 94
+      },
+      "foot_witnesses_with_lateral_normal_abs_z_lt_point5": 35,
+      "sole_position_max_raw": [
+        0.37200730638312984,
+        0.38133826849260677
+      ],
+      "fixed_budget_is_not_convergence": true,
+      "termination": "finite_budget_stop_not_convergence"
+    },
+    {
+      "trial": "WORLD_TRIAL_005_FOOT_PRIORITY",
+      "child_exit": 0,
+      "child_reaped": true,
+      "parent_timeout": false,
+      "elapsed_seconds": 74.4690353609999,
+      "result_exists": true,
+      "artifact_exists": true,
+      "accepted_reference": false,
+      "gpu_submissions": 0,
+      "ppo_updates": 0,
+      "actual_lp_calls": 100,
+      "accepted_updates": 100,
+      "artifact_sha256": "9353b185d92c21ceeb56a289b926f89d3dc72c5343745fc14e26889bc6d728d4",
+      "position_bad_frames": 0,
+      "overspeed_intervals": 0,
+      "root_speed": {
+        "mean": 0.8260683299623296,
+        "p95": 1.9178645776874346,
+        "maximum": 4.7894525484169606
+      },
+      "root_acceleration": {
+        "mean": 32.97797625784313,
+        "p95": 149.94584810976752,
+        "maximum": 698.9636307501942
+      },
+      "foot_interior_hit_frames": {
+        "left": 167,
+        "right": 94
+      },
+      "foot_witnesses_with_lateral_normal_abs_z_lt_point5": 40,
+      "sole_position_max_raw": [
+        0.5138199150099149,
+        0.5993818486448046
+      ],
+      "fixed_budget_is_not_convergence": true,
+      "termination": "finite_plan_finished_not_convergence"
+    }
+  ],
+  "total_real_data_lp_calls": 347,
+  "total_accepted_local_updates": 345,
+  "final_cpu_tests": 20,
+  "tests_are_software_not_physical_acceptance": true,
+  "geometry_scope": {
+    "native_frames": 997,
+    "all_shapes": 43,
+    "all_pairs": 903,
+    "all_frame_broadphase_complete": true,
+    "representative_gjk_counts": {
+      "self:separated": 55,
+      "self:within_numerical_tolerance": 9,
+      "terrain:separated": 28,
+      "terrain:within_numerical_tolerance": 19
+    },
+    "all_frame_narrowphase_complete": false,
+    "no_adjacency_auto_exclusion": true
+  },
+  "latest_candidate": "WORLD_TRIAL_005_FOOT_PRIORITY/STEP1_WORLD_CANDIDATE_UNACCEPTED.npz",
+  "important_regressions": [
+    "trial005_vs004 worstrootacceleration568.89->698.96 raw/s2",
+    "trial005_vs004 maxleft/rightsolepositionerror .372/.381 ->.514/.599raw units",
+    "meanerror and hitcount improvement NOT full acceptance; 167L/94R nominal foot interior hits remain"
+  ],
+  "remaining_gates": [
+    "Finite triangle contacts on sides/edges and unseen shapes must be included in nonlinear merit acceptance, not just frozen plane cuts",
+    "All-shape terrain + full native temporal/selfcollision constraints, with actual runtime filter evidence",
+    "Source-target material/hand-foot-knee calibration and auditable support schedule, not model-zero anatomical assumption",
+    "Exporter/model/root/quaternion/physicalunits/alignment evidence remains conditional; no coordinate choice by smaller gap",
+    "Root/joint temporal/dynamic feasibility, original complete env/reset/depth18x32/cleanexit gates remain unpassed"
+  ],
+  "original_input_hashes_preserved": true,
+  "head_fixed_zero": true,
+  "body_actions": 29,
+  "frames": 997,
+  "fps": 90,
+  "no_joint_angle_clipping": true,
+  "no_resampling": true,
+  "source_raw_uploaded_this_stage": false,
+  "no_accepted_manifest_generated": true,
+  "do_not_use_candidates_for_training": true,
+  "offline_wandb_only": true,
+  "online_wandb_access_retested": false,
+  "live_gpu_status_checked": false,
+  "gpu_submissions": 0,
+  "ppo_updates": 0,
+  "background_processes_left": false,
+  "accepted_reference": false,
+  "training_ready": false
+}

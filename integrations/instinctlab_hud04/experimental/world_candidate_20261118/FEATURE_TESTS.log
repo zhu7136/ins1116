@@ -1,0 +1,12 @@
+test_35_columns_finite_difference (test_world_features.WorldTests.test_35_columns_finite_difference) ... ok
+test_endpoints_observable_not_rank16 (test_world_features.WorldTests.test_endpoints_observable_not_rank16) ... ok
+test_full_native_contract (test_world_features.WorldTests.test_full_native_contract) ... ok
+test_independent_fk_world_features (test_world_features.WorldTests.test_independent_fk_world_features) ... ok
+test_initial_torso_not_copied_root (test_world_features.WorldTests.test_initial_torso_not_copied_root) ... ok
+test_non_se3_and_missing_rejected (test_world_features.WorldTests.test_non_se3_and_missing_rejected) ... ok
+test_world_equivariance (test_world_features.WorldTests.test_world_equivariance) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.454s
+
+OK

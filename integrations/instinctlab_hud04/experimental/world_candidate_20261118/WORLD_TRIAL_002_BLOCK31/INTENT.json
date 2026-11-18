@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-11-18T01:08:12.480731+00:00",
+  "change_from_trial001": "ONLY local block size93->31 and full coverage schedule; same objective/weights/seed/trust/limits/LPbound",
+  "previous_failure": "update19 LPstatus1 iteration12000 reached; no artifact exported",
+  "stage": "bounded_full997_world35D_UNACCEPTED",
+  "parent_wall_seconds": 100,
+  "child_algorithm_seconds": 80,
+  "planned_lp_calls": 98,
+  "maximum_block_frames": 31,
+  "lp_seconds": 1.5,
+  "lp_iterations": 12000,
+  "numeric_threads": 2,
+  "automatic_retries": 0,
+  "root_step_raw": 0.025,
+  "root_angle_step_rad": 0.1,
+  "joint_step_rad": 0.15,
+  "accepted_reference": false,
+  "gpu_submissions": 0,
+  "ppo_updates": 0
+}
