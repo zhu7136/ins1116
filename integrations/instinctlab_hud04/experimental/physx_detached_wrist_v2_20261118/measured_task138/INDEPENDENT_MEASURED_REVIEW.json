@@ -1,0 +1,74 @@
+{
+  "stage": "independently_recomputed_measured_context_difference_NOT_filter_or_reference_acceptance",
+  "task_id": "TASK_20261118_138",
+  "source_commit": "5f345dd8b6049adc8f4a0638f85eeba4549a0681",
+  "actual_child_seconds": 14.838521052151918,
+  "report_sha256": {
+    "contact_report.json": "8ea43578e2f16930efb7115d66059b61095d4ae302c948feece369dc136e0cea",
+    "supervisor_result.json": "495258a0611b05beb803484b9fa06dc6e3fdf90d29d5d8fc4596be547fce9b63"
+  },
+  "channels": {
+    "detached_left": {
+      "force_min": 0.05422785505652428,
+      "force_max": 0.0573057159781456,
+      "positive_force_steps": 8,
+      "minimum_contact_points": 3,
+      "maximum_contact_points": 3,
+      "positive_count_steps": 8
+    },
+    "articulated_left": {
+      "force_min": 0.0,
+      "force_max": 0.0,
+      "positive_force_steps": 0,
+      "minimum_contact_points": 0,
+      "maximum_contact_points": 0,
+      "positive_count_steps": 0
+    },
+    "detached_right": {
+      "force_min": 0.06981199234724045,
+      "force_max": 0.06999599188566208,
+      "positive_force_steps": 8,
+      "minimum_contact_points": 3,
+      "maximum_contact_points": 3,
+      "positive_count_steps": 8
+    },
+    "articulated_right": {
+      "force_min": 0.0,
+      "force_max": 0.0,
+      "positive_force_steps": 0,
+      "minimum_contact_points": 0,
+      "maximum_contact_points": 0,
+      "positive_count_steps": 0
+    },
+    "box": {
+      "force_min": 19.987958908081055,
+      "force_max": 19.987958908081055,
+      "positive_force_steps": 8,
+      "minimum_contact_points": 4,
+      "maximum_contact_points": 4,
+      "positive_count_steps": 8
+    }
+  },
+  "maximum_translated_pose_readback_error": 3.6135315895080566e-07,
+  "maximum_quaternion_squared_norm_error": 3.8466352769717105e-07,
+  "observed_context_difference": {
+    "left": true,
+    "right": true
+  },
+  "source_vs_copy_selected_usd_attributes_equal": true,
+  "child_mesh_descendant_present": true,
+  "measured_contact_is_body_pair_not_per_shape_id": true,
+  "disabled_other_copy_shape_not_independently_read_back_after_reset": true,
+  "isolated_parent_kinematic_child_dynamic_vs_articulation_is_a_confound": true,
+  "exact_cooked_geometry_equivalence_proven": false,
+  "articulation_filter_causal_mechanism_proven": false,
+  "automatic_pair_exclusions": 0,
+  "new_reference_files": 0,
+  "motion_solver_calls_this_stage": 0,
+  "ppo_updates_this_stage": 0,
+  "accepted_reference": false,
+  "training_ready": false,
+  "redundant_same_commit_task133_disclosed": true,
+  "failed_task137_retained": true,
+  "online_wandb_verified": false
+}
