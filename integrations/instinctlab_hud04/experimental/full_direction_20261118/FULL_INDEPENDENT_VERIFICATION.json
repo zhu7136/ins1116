@@ -1,0 +1,484 @@
+{
+  "stage": "independent_saved_full997_joint_direction_verification",
+  "method": "legacy RobotTree + separately explicit anatomical pivots + direct named target XML limits",
+  "report_sha256": "d4fced0dfc7f2ad9d36183674fcec36f40bf4c55b3e6a1cfd449de76f92cb33a",
+  "artifact_sha256": "2aa620d3086ed5f1c260c210e38fcb3d3a94cbaea549911844b8e4c31127ddc0",
+  "frames": 997,
+  "intervals": 996,
+  "direction_observations": 7976,
+  "position_bad_frames": 0,
+  "overspeed_intervals": 0,
+  "head_fixed_zero_confirmed": true,
+  "max_position_violation_rad": 1.3877787807814457e-17,
+  "max_velocity_violation_rad_s": 2.4868995751603507e-14,
+  "initial": {
+    "mean_degrees": 28.19132748612645,
+    "p95_degrees": 76.88493575260574,
+    "max_degrees": 135.663516157153,
+    "over25deg_observations": 3213,
+    "over25deg_frames": 997
+  },
+  "final": {
+    "mean_degrees": 6.057161177809987,
+    "p95_degrees": 30.28176740463042,
+    "max_degrees": 87.82595723914383,
+    "over25deg_observations": 598,
+    "over25deg_frames": 378
+  },
+  "max_report_statistic_disagreement": 2.842170943040401e-14,
+  "mean_relative_improvement": 0.7851409735568201,
+  "all_997_frames_changed": true,
+  "same_93_frame_comparison": [
+    {
+      "first": 0,
+      "last": 30,
+      "prior": {
+        "mean_degrees": 3.1578581325119965,
+        "p95_degrees": 16.579045931723023,
+        "max_degrees": 47.874922655499745,
+        "over25deg_observations": 6,
+        "over25deg_frames": 4
+      },
+      "now": {
+        "mean_degrees": 1.2125095455304997,
+        "p95_degrees": 7.612582470073064,
+        "max_degrees": 8.687378481534882,
+        "over25deg_observations": 0,
+        "over25deg_frames": 0
+      },
+      "mean_regressed": false,
+      "max_regressed": false
+    },
+    {
+      "first": 480,
+      "last": 510,
+      "prior": {
+        "mean_degrees": 4.810677690753245,
+        "p95_degrees": 21.10833291993197,
+        "max_degrees": 45.31956182241886,
+        "over25deg_observations": 11,
+        "over25deg_frames": 6
+      },
+      "now": {
+        "mean_degrees": 9.28927639977486,
+        "p95_degrees": 24.304607060288294,
+        "max_degrees": 29.138380742898118,
+        "over25deg_observations": 11,
+        "over25deg_frames": 11
+      },
+      "mean_regressed": true,
+      "max_regressed": false
+    },
+    {
+      "first": 966,
+      "last": 996,
+      "prior": {
+        "mean_degrees": 2.933441835845453,
+        "p95_degrees": 14.534944835781861,
+        "max_degrees": 38.73803358798754,
+        "over25deg_observations": 7,
+        "over25deg_frames": 3
+      },
+      "now": {
+        "mean_degrees": 0.7831461865609002,
+        "p95_degrees": 5.21151837025024,
+        "max_degrees": 5.267222110799365,
+        "over25deg_observations": 0,
+        "over25deg_frames": 0
+      },
+      "mean_regressed": false,
+      "max_regressed": false
+    }
+  ],
+  "same_93_aggregate_prior": {
+    "mean_degrees": 3.633992553036898,
+    "p95_degrees": 20.060835727844456,
+    "max_degrees": 47.874922655499745,
+    "over25deg_observations": 24,
+    "over25deg_frames": 13
+  },
+  "same_93_aggregate_now": {
+    "mean_degrees": 3.76164404395542,
+    "p95_degrees": 20.676492284771488,
+    "max_degrees": 29.138380742898118,
+    "over25deg_observations": 11,
+    "over25deg_frames": 11
+  },
+  "worst_twenty": [
+    {
+      "frame": 257,
+      "direction": "right_forearm",
+      "degrees": 87.82595723914383,
+      "block_visits": 8
+    },
+    {
+      "frame": 258,
+      "direction": "right_forearm",
+      "degrees": 87.42550118458713,
+      "block_visits": 8
+    },
+    {
+      "frame": 256,
+      "direction": "right_forearm",
+      "degrees": 87.28485193498622,
+      "block_visits": 8
+    },
+    {
+      "frame": 255,
+      "direction": "right_forearm",
+      "degrees": 86.9572081251706,
+      "block_visits": 8
+    },
+    {
+      "frame": 259,
+      "direction": "right_forearm",
+      "degrees": 86.77838192059662,
+      "block_visits": 8
+    },
+    {
+      "frame": 254,
+      "direction": "right_forearm",
+      "degrees": 86.02872333727619,
+      "block_visits": 8
+    },
+    {
+      "frame": 260,
+      "direction": "right_forearm",
+      "degrees": 85.90486889748408,
+      "block_visits": 8
+    },
+    {
+      "frame": 253,
+      "direction": "right_forearm",
+      "degrees": 84.84812116727389,
+      "block_visits": 8
+    },
+    {
+      "frame": 252,
+      "direction": "right_forearm",
+      "degrees": 83.53185203522904,
+      "block_visits": 8
+    },
+    {
+      "frame": 262,
+      "direction": "right_forearm",
+      "degrees": 83.24016574587124,
+      "block_visits": 8
+    },
+    {
+      "frame": 261,
+      "direction": "right_forearm",
+      "degrees": 82.73971781473203,
+      "block_visits": 8
+    },
+    {
+      "frame": 263,
+      "direction": "right_forearm",
+      "degrees": 82.68174027670611,
+      "block_visits": 4
+    },
+    {
+      "frame": 264,
+      "direction": "right_forearm",
+      "degrees": 81.74857726247416,
+      "block_visits": 4
+    },
+    {
+      "frame": 265,
+      "direction": "right_forearm",
+      "degrees": 80.61577803928631,
+      "block_visits": 4
+    },
+    {
+      "frame": 251,
+      "direction": "right_forearm",
+      "degrees": 78.2502003970289,
+      "block_visits": 8
+    },
+    {
+      "frame": 266,
+      "direction": "right_forearm",
+      "degrees": 74.3252426902375,
+      "block_visits": 4
+    },
+    {
+      "frame": 218,
+      "direction": "right_upper_arm",
+      "degrees": 66.91229374725282,
+      "block_visits": 4
+    },
+    {
+      "frame": 272,
+      "direction": "right_forearm",
+      "degrees": 66.56065893924305,
+      "block_visits": 4
+    },
+    {
+      "frame": 273,
+      "direction": "right_forearm",
+      "degrees": 66.54712311048029,
+      "block_visits": 4
+    },
+    {
+      "frame": 271,
+      "direction": "right_forearm",
+      "degrees": 66.29580185424899,
+      "block_visits": 4
+    }
+  ],
+  "high_error_intervals_by_direction": [
+    {
+      "direction": "left_thigh",
+      "over25deg_observations": 14,
+      "runs": [
+        [
+          599,
+          612
+        ]
+      ]
+    },
+    {
+      "direction": "left_shin",
+      "over25deg_observations": 1,
+      "runs": [
+        [
+          629,
+          629
+        ]
+      ]
+    },
+    {
+      "direction": "left_upper_arm",
+      "over25deg_observations": 158,
+      "runs": [
+        [
+          93,
+          113
+        ],
+        [
+          278,
+          282
+        ],
+        [
+          318,
+          339
+        ],
+        [
+          404,
+          404
+        ],
+        [
+          427,
+          430
+        ],
+        [
+          543,
+          566
+        ],
+        [
+          583,
+          600
+        ],
+        [
+          757,
+          757
+        ],
+        [
+          770,
+          770
+        ],
+        [
+          773,
+          791
+        ],
+        [
+          826,
+          847
+        ],
+        [
+          884,
+          903
+        ]
+      ]
+    },
+    {
+      "direction": "left_forearm",
+      "over25deg_observations": 151,
+      "runs": [
+        [
+          152,
+          169
+        ],
+        [
+          206,
+          216
+        ],
+        [
+          262,
+          276
+        ],
+        [
+          381,
+          394
+        ],
+        [
+          432,
+          440
+        ],
+        [
+          445,
+          452
+        ],
+        [
+          488,
+          496
+        ],
+        [
+          498,
+          499
+        ],
+        [
+          601,
+          621
+        ],
+        [
+          634,
+          637
+        ],
+        [
+          658,
+          678
+        ],
+        [
+          715,
+          733
+        ]
+      ]
+    },
+    {
+      "direction": "right_thigh",
+      "over25deg_observations": 0,
+      "runs": []
+    },
+    {
+      "direction": "right_shin",
+      "over25deg_observations": 0,
+      "runs": []
+    },
+    {
+      "direction": "right_upper_arm",
+      "over25deg_observations": 135,
+      "runs": [
+        [
+          149,
+          171
+        ],
+        [
+          204,
+          227
+        ],
+        [
+          325,
+          336
+        ],
+        [
+          385,
+          386
+        ],
+        [
+          393,
+          395
+        ],
+        [
+          440,
+          451
+        ],
+        [
+          601,
+          603
+        ],
+        [
+          607,
+          621
+        ],
+        [
+          626,
+          627
+        ],
+        [
+          629,
+          632
+        ],
+        [
+          663,
+          665
+        ],
+        [
+          667,
+          678
+        ],
+        [
+          714,
+          733
+        ]
+      ]
+    },
+    {
+      "direction": "right_forearm",
+      "over25deg_observations": 139,
+      "runs": [
+        [
+          92,
+          112
+        ],
+        [
+          244,
+          283
+        ],
+        [
+          285,
+          285
+        ],
+        [
+          364,
+          389
+        ],
+        [
+          545,
+          557
+        ],
+        [
+          774,
+          775
+        ],
+        [
+          827,
+          827
+        ],
+        [
+          833,
+          847
+        ],
+        [
+          884,
+          903
+        ]
+      ]
+    }
+  ],
+  "observed_high_error_threshold_degrees": 25,
+  "threshold_is_diagnostic_not_reference_acceptance": true,
+  "monotone_global_objective_recomputed_from_saved_q": true,
+  "local_backup_readback_verified": true,
+  "backup_scope": "same sandbox only until separately verified publication",
+  "all_numeric_code_hashes_match": true,
+  "lp_calls_real_data_this_continuation": 86,
+  "lp_calls_in_successful_v4": 84,
+  "source_inputs_unchanged": true,
+  "world_root_optimized": false,
+  "terrain_or_self_collision_validated": false,
+  "accepted_reference": false,
+  "training_ready": false,
+  "gpu_submissions": 0,
+  "ppo_updates": 0
+}

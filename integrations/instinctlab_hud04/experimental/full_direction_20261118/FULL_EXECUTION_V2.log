@@ -1,0 +1,7 @@
+full_direction_iteration {"iteration": 0, "lp_status": 1, "lp_iterations": 10000, "accepted": false, "wall_seconds": 1.2451849419999803}
+{
+  "status": "completed",
+  "numerical_descent_generated": false,
+  "solver_calls": 1,
+  "wall_seconds": 2.459526072000017
+}

@@ -1,0 +1,379 @@
+{
+  "schema_version": 1,
+  "stage": "bounded_cpu_diagnostic_supervision",
+  "status": "completed",
+  "budget": {
+    "window_seconds": 90,
+    "total_seconds": 90,
+    "iterations": 84,
+    "numeric_threads": 2,
+    "max_windows": 1
+  },
+  "windows": [
+    {
+      "index": 0,
+      "wall_seconds": 12.530092077000063,
+      "child_reaped": true,
+      "status": "completed",
+      "iterations": 84,
+      "diagnostic": {
+        "schema_version": 1,
+        "stage": "overlapping_full_length_root_local_joint_direction_diagnostic_NOT_reference",
+        "frames": 997,
+        "native_fps": 90,
+        "native_velocity_edges": 996,
+        "single_global_objective": true,
+        "one_monolithic_LP": false,
+        "overlapping_block_coordinate_descent": true,
+        "fixed_original_seed_regularizer": true,
+        "interpolated_or_blended_frames": 0,
+        "resampling": false,
+        "posthoc_joint_clipping": false,
+        "planned_lp_updates": 84,
+        "actual_lp_calls": 84,
+        "accepted_steps": 84,
+        "line_search_evaluations": 84,
+        "termination": "planned_84_updates_completed",
+        "lp_method": "highs",
+        "native_highs_threads": 2,
+        "lp_time_limit_seconds": 1.0,
+        "lp_iteration_limit": 10000,
+        "joint_trust_radius_rad": 0.15,
+        "original_seed_variable_count": 28913,
+        "maximum_block_frames": 93,
+        "coverage_sweeps": 4,
+        "endpoint_extra_updates": 16,
+        "initial": {
+          "mean_degrees": 28.19132748612645,
+          "p95_degrees": 76.88493575260574,
+          "max_degrees": 135.66351615715303,
+          "sum_l1_chordal": 5674.008289324054,
+          "per_direction_mean_degrees": [
+            9.59698218986389,
+            9.512258850420839,
+            25.445545289477284,
+            65.14440756509315,
+            11.614787819414815,
+            9.707557624968288,
+            28.879772166184683,
+            65.62930838358866
+          ],
+          "over25deg_observations": 3213,
+          "over25deg_frames": 997
+        },
+        "final": {
+          "mean_degrees": 6.057161177809986,
+          "p95_degrees": 30.28176740463041,
+          "max_degrees": 87.82595723914383,
+          "sum_l1_chordal": 1022.8846008115547,
+          "per_direction_mean_degrees": [
+            2.4206867887523487,
+            0.5778227964094789,
+            11.915687272978065,
+            9.196551549308431,
+            2.4821137097238335,
+            0.23156945902689116,
+            10.869164667331082,
+            10.76369317894977
+          ],
+          "over25deg_observations": 598,
+          "over25deg_frames": 378
+        },
+        "initial_global_objective": 5674.008289324054,
+        "final_global_objective": 1029.7508733005131,
+        "optimized_or_visited_frames": 997,
+        "per_frame_visit_min": 4,
+        "per_frame_visit_max": 16,
+        "changed_frames": 997,
+        "max_joint_departure_rad": 2.094174703121185,
+        "elapsed_seconds": 11.32574600199996,
+        "position_max_violation_rad": 1.3877787807814457e-17,
+        "velocity_max_violation_rad_s": 2.4868995751603507e-14,
+        "world_root_optimized": false,
+        "npz_root_fields_read": false,
+        "world_units_inferred": false,
+        "terrain_constraints_implemented": false,
+        "self_collision_constraints_implemented": false,
+        "support_constraints_implemented": false,
+        "root_motion_generated": false,
+        "full_length_joint_diagnostic_generated": true,
+        "candidate_motion_generated": false,
+        "accepted_reference": false,
+        "training_ready": false,
+        "source_motion_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+        "seed_sha256": "48f8d43e058420e5ff89861d2336ead3317dc18223c36a7305503f3df54a66eb",
+        "source_task_model_sha256": "5e99d930af64f3f0bfd34235239e288cc380ba62c8b01fcfcf8cc9f0996e7fa4",
+        "target_model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+        "base_commit": "f4e25561c4c8655faa73b7f68086a61a6034f1de",
+        "dependency_sha256": {
+          "anatomical_directions.py": "23660e03d2fbe7b1e0e334c47b506e9c07e4c8931430bd6f6c3afc762159587d",
+          "bounded_runtime.py": "01974a3ec53c7d287d85d09d48c71756e70d2f7024666c603b8f5442c5ea3c35",
+          "motion_archive.py": "5a46c55da0721f518a910295a4f11ddc748319d0108905748b0c5fd44bca56d3"
+        },
+        "wrist_endpoint": "first_wrist_pivot",
+        "source_root_fields_read": false,
+        "code_sha256": {
+          "inputs.py": "a89c9213458ec5c9b4dd0cc374a5e1cc2f385281a87d7eaf6e3b8f5127e0f96d",
+          "full_direction_solver.py": "6283a047d2251154aa14431715ffc65ec7f89123140478cdb811459c682cedbe",
+          "run_full_direction.py": "1a17277e707fc82ceb55cdca7ffa293910ba654fd424d60d25d4071266b83300",
+          "run_full_direction_v2.py": "8a7bdd95c3bda844668ed547fb4f89773e169ff1fcc42c073e303a0f0b95f0f5",
+          "run_full_direction_v3.py": "3959212d4625310f1edf3fc5e95ed6d8566ca46d724fc81a7f7cc9d202ff9c01",
+          "overlap_solver.py": "a25df654480b52d0e64baf8ea1a2f223e572d4ef1ad64887824f3d40ea6006a0",
+          "run_full_direction_v4.py": "3d5083f077e4c452fb8b94a42c346aaddf16fd9b22073631d79c086a79ff210d"
+        },
+        "source_pairs": [
+          [
+            "left_thigh",
+            "left_hip_pitch_link",
+            "left_knee_link"
+          ],
+          [
+            "left_shin",
+            "left_knee_link",
+            "left_ankle_pitch_link"
+          ],
+          [
+            "left_upper_arm",
+            "left_shoulder_pitch_link",
+            "left_elbow_link"
+          ],
+          [
+            "left_forearm",
+            "left_elbow_link",
+            "left_wrist_roll_link"
+          ],
+          [
+            "right_thigh",
+            "right_hip_pitch_link",
+            "right_knee_link"
+          ],
+          [
+            "right_shin",
+            "right_knee_link",
+            "right_ankle_pitch_link"
+          ],
+          [
+            "right_upper_arm",
+            "right_shoulder_pitch_link",
+            "right_elbow_link"
+          ],
+          [
+            "right_forearm",
+            "right_elbow_link",
+            "right_wrist_roll_link"
+          ]
+        ],
+        "target_pairs": [
+          [
+            "left_thigh",
+            "left_hip_pitch_link",
+            "left_knee_link"
+          ],
+          [
+            "left_shin",
+            "left_knee_link",
+            "left_ankle_pitch_link"
+          ],
+          [
+            "left_upper_arm",
+            "left_shoulder_pitch_link",
+            "left_elbow_link"
+          ],
+          [
+            "left_forearm",
+            "left_elbow_link",
+            "left_wrist_yaw_link"
+          ],
+          [
+            "right_thigh",
+            "right_hip_pitch_link",
+            "right_knee_link"
+          ],
+          [
+            "right_shin",
+            "right_knee_link",
+            "right_ankle_pitch_link"
+          ],
+          [
+            "right_upper_arm",
+            "right_shoulder_pitch_link",
+            "right_elbow_link"
+          ],
+          [
+            "right_forearm",
+            "right_elbow_link",
+            "right_wrist_yaw_link"
+          ]
+        ],
+        "correspondence_status": "conditional URDF-anatomical-basis joint-pivot mapping; NOT accepted material/contact correspondence",
+        "anatomical_basis_assumption": "URDF pelvis/base anatomical axes correspond; no exporter/world calibration assertion",
+        "same_93_frame_comparison": [
+          {
+            "first": 0,
+            "last": 30,
+            "prior_artifact_sha256": "b4e357fb87b060d428b9ad1aebf1d29b9efaf4a330129f48991782853c42c1d1",
+            "prior": {
+              "mean_degrees": 3.1578581325119965,
+              "p95_degrees": 16.57904593172302,
+              "max_degrees": 47.87492265549975,
+              "sum_l1_chordal": 16.28626686125147,
+              "per_direction_mean_degrees": [
+                2.105229249312217,
+                1.1817417514762564e-13,
+                2.8391492184053386,
+                6.275851679889705,
+                5.841521082482922,
+                0.00024696160977767776,
+                3.214802121488921,
+                4.986064746906974
+              ],
+              "over25deg_observations": 6,
+              "over25deg_frames": 4
+            },
+            "global_fit": {
+              "mean_degrees": 1.2125095455304993,
+              "p95_degrees": 7.61258247007306,
+              "max_degrees": 8.687378481534882,
+              "sum_l1_chordal": 6.229342231281006,
+              "per_direction_mean_degrees": [
+                1.8044032606957776e-14,
+                4.754676962324982e-14,
+                0.1566763667147042,
+                2.5859597276034285,
+                4.841223506859752,
+                0.3950408751860846,
+                1.3453187387603682,
+                0.37585714911959117
+              ],
+              "over25deg_observations": 0,
+              "over25deg_frames": 0
+            }
+          },
+          {
+            "first": 480,
+            "last": 510,
+            "prior_artifact_sha256": "9408bcf27704db2c39b6e0c7622181e6b5628939cc2c2dd247874bf0ea092221",
+            "prior": {
+              "mean_degrees": 4.810677690753243,
+              "p95_degrees": 21.108332919931968,
+              "max_degrees": 45.319561822418855,
+              "sum_l1_chordal": 23.49695505059703,
+              "per_direction_mean_degrees": [
+                4.025633853933266,
+                1.5701613978193826e-13,
+                5.233010773617016,
+                8.27294169609858,
+                7.925539032803041,
+                4.285853096886316e-14,
+                8.111291725156624,
+                4.917004444417221
+              ],
+              "over25deg_observations": 11,
+              "over25deg_frames": 6
+            },
+            "global_fit": {
+              "mean_degrees": 9.28927639977486,
+              "p95_degrees": 24.30460706028829,
+              "max_degrees": 29.138380742898125,
+              "sum_l1_chordal": 43.87313497266253,
+              "per_direction_mean_degrees": [
+                2.825987758303915,
+                0.1298125525067125,
+                14.587441593971208,
+                19.091662785340304,
+                6.337576942314135,
+                0.05319812359793075,
+                17.018680418674755,
+                14.26985102348993
+              ],
+              "over25deg_observations": 11,
+              "over25deg_frames": 11
+            }
+          },
+          {
+            "first": 966,
+            "last": 996,
+            "prior_artifact_sha256": "03d1db0a0716b51f20d5a9186383ee40e067497a0fe958ccc032e9c2fa2399b5",
+            "prior": {
+              "mean_degrees": 2.933441835845453,
+              "p95_degrees": 14.53494483578186,
+              "max_degrees": 38.73803358798753,
+              "sum_l1_chordal": 14.654091165926427,
+              "per_direction_mean_degrees": [
+                3.8436532244429924,
+                0.07589301045723115,
+                4.8661468740208935,
+                2.6123422553811637,
+                5.8453035750072635,
+                2.5220665042412386e-13,
+                2.3962281510527195,
+                3.827967596401109
+              ],
+              "over25deg_observations": 7,
+              "over25deg_frames": 3
+            },
+            "global_fit": {
+              "mean_degrees": 0.783146186560901,
+              "p95_degrees": 5.211518370250243,
+              "max_degrees": 5.267222110799362,
+              "sum_l1_chordal": 3.838635536446039,
+              "per_direction_mean_degrees": [
+                0.7913002057868629,
+                0.05603237606044023,
+                0.02278847054066856,
+                0.04385444239503097,
+                5.17184181370149,
+                6.834989561793113e-13,
+                0.05168960110366988,
+                0.12766258289836135
+              ],
+              "over25deg_observations": 0,
+              "over25deg_frames": 0
+            }
+          }
+        ],
+        "artifact": "STEP1_FULL_LENGTH_JOINT_DIAGNOSTIC.npz",
+        "artifact_sha256": "2aa620d3086ed5f1c260c210e38fcb3d3a94cbaea549911844b8e4c31127ddc0",
+        "archive": {
+          "schema_version": 1,
+          "sha256": "2aa620d3086ed5f1c260c210e38fcb3d3a94cbaea549911844b8e4c31127ddc0",
+          "bytes": 178821,
+          "role": "diagnostic_not_motion",
+          "source_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+          "model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+          "accepted_reference": false,
+          "training_ready": false,
+          "backup_scope": "local_same_sandbox_NOT_independent_offsite",
+          "backup_path": "/workspace/hud04-backups/sha256/2aa620d3086ed5f1c260c210e38fcb3d3a94cbaea549911844b8e4c31127ddc0.npz",
+          "manifest_path": "/workspace/hud04-backups/sha256/2aa620d3086ed5f1c260c210e38fcb3d3a94cbaea549911844b8e4c31127ddc0.json",
+          "readback_verified": true
+        },
+        "full_report_sha256": "d4fced0dfc7f2ad9d36183674fcec36f40bf4c55b3e6a1cfd449de76f92cb33a"
+      },
+      "supported_numeric_pools": [
+        {
+          "api": "openblas",
+          "threads": 2
+        },
+        {
+          "api": "openblas",
+          "threads": 2
+        }
+      ]
+    }
+  ],
+  "wall_seconds": 12.530167107000011,
+  "retries": 0,
+  "hard_parent_deadline": true,
+  "cleanup_grace_seconds_max": 0.7,
+  "iteration_limit_scope": "trusted_workers_calling_gate_each_iteration_only",
+  "thread_limit_scope": "supported_BLAS_OpenMP_pools_not_all_OS_threads_or_CPU_cores",
+  "gpu_submissions": 0,
+  "solver_calls": 84,
+  "candidate_motion_generated": false,
+  "accepted_reference": false,
+  "training_ready": false,
+  "actual_solver_call_count_complete": true,
+  "full_length_joint_diagnostic_generated": true,
+  "logging_mode": "offline_pending_sync"
+}

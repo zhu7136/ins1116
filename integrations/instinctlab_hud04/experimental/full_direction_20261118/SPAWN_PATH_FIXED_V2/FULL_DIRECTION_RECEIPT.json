@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "numerical_descent_generated": false,
+  "run_id": "mt3o1yde",
+  "mode": "offline_pending_sync",
+  "offline_directory": "/workspace/hud04-full-direction-20261118/SPAWN_PATH_FIXED_V2/wandb/offline-run-20261118_002846-mt3o1yde",
+  "server_readback_verified": false,
+  "supervision_sha256": "e69bcb5ffc6aa49920d4008ba1a1d0692212ebae01a15fc0a1ae50b2c6d13790",
+  "gpu_submissions": 0,
+  "ppo_updates": 0
+}

@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "numerical_descent_generated": true,
+  "run_id": "2299e4e8",
+  "mode": "offline_pending_sync",
+  "offline_directory": "/workspace/hud04-full-direction-20261118/OVERLAP_V4/wandb/offline-run-20261118_003231-2299e4e8",
+  "server_readback_verified": false,
+  "supervision_sha256": "59220ef603f0658aa94c663a60bffd8b959b13a1a4f819a66e4fca24655ebd26",
+  "gpu_submissions": 0,
+  "ppo_updates": 0
+}

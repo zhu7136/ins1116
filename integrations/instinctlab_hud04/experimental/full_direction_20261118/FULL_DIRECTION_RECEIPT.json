@@ -1,0 +1,11 @@
+{
+  "status": "stopped",
+  "numerical_descent_generated": false,
+  "run_id": "doladb4n",
+  "mode": "offline_pending_sync",
+  "offline_directory": "/workspace/hud04-full-direction-20261118/wandb/offline-run-20261118_002731-doladb4n",
+  "server_readback_verified": false,
+  "supervision_sha256": "abea8b5a07ca44cb5d2a66f40a424b3a405499491dcbe2b55a6590aabd82e00b",
+  "gpu_submissions": 0,
+  "ppo_updates": 0
+}

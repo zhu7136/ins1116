@@ -1,0 +1,316 @@
+{
+  "schema_version": 1,
+  "stage": "full_length_root_local_joint_direction_diagnostic_NOT_reference",
+  "frames": 997,
+  "native_fps": 90,
+  "native_velocity_edges": 996,
+  "single_global_problem": true,
+  "lp_method": "highs-ipm",
+  "native_highs_threads": 2,
+  "window_stitching": false,
+  "resampling": false,
+  "posthoc_joint_clipping": false,
+  "all_frames_are_optimization_variables": true,
+  "joint_unknowns": 28913,
+  "lp_unknowns": 81754,
+  "lp_inequality_rows": 221276,
+  "joint_trust_radius_rad": 0.15,
+  "lp_time_limit_seconds": 4.0,
+  "outer_iteration_limit": 12,
+  "history": [
+    {
+      "iteration": 0,
+      "lp_status": 1,
+      "lp_iterations": 8,
+      "accepted": false,
+      "wall_seconds": 4.4067674210000405
+    }
+  ],
+  "actual_lp_calls": 1,
+  "accepted_steps": 0,
+  "line_search_evaluations": 0,
+  "termination": "LP_stopped_status_1",
+  "initial": {
+    "mean_degrees": 28.19132748612645,
+    "p95_degrees": 76.88493575260574,
+    "max_degrees": 135.66351615715303,
+    "sum_l1_chordal": 5674.008289324054,
+    "per_direction_mean_degrees": [
+      9.59698218986389,
+      9.512258850420839,
+      25.445545289477284,
+      65.14440756509315,
+      11.614787819414815,
+      9.707557624968288,
+      28.879772166184683,
+      65.62930838358866
+    ],
+    "over25deg_observations": 3213,
+    "over25deg_frames": 997
+  },
+  "final": {
+    "mean_degrees": 28.19132748612645,
+    "p95_degrees": 76.88493575260574,
+    "max_degrees": 135.66351615715303,
+    "sum_l1_chordal": 5674.008289324054,
+    "per_direction_mean_degrees": [
+      9.59698218986389,
+      9.512258850420839,
+      25.445545289477284,
+      65.14440756509315,
+      11.614787819414815,
+      9.707557624968288,
+      28.879772166184683,
+      65.62930838358866
+    ],
+    "over25deg_observations": 3213,
+    "over25deg_frames": 997
+  },
+  "elapsed_seconds": 4.418165518000023,
+  "position_max_violation_rad": 0.0,
+  "velocity_max_violation_rad_s": 3.552713678800501e-15,
+  "changed_frames": 0,
+  "changed_joints": [],
+  "max_joint_departure_rad": 0.0,
+  "world_root_optimized": false,
+  "npz_root_fields_read": false,
+  "world_units_inferred": false,
+  "terrain_constraints_implemented": false,
+  "self_collision_constraints_implemented": false,
+  "support_constraints_implemented": false,
+  "root_motion_generated": false,
+  "full_length_joint_diagnostic_generated": false,
+  "candidate_motion_generated": false,
+  "accepted_reference": false,
+  "training_ready": false,
+  "source_motion_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+  "seed_sha256": "48f8d43e058420e5ff89861d2336ead3317dc18223c36a7305503f3df54a66eb",
+  "source_task_model_sha256": "5e99d930af64f3f0bfd34235239e288cc380ba62c8b01fcfcf8cc9f0996e7fa4",
+  "target_model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+  "base_commit": "f4e25561c4c8655faa73b7f68086a61a6034f1de",
+  "dependency_sha256": {
+    "anatomical_directions.py": "23660e03d2fbe7b1e0e334c47b506e9c07e4c8931430bd6f6c3afc762159587d",
+    "bounded_runtime.py": "01974a3ec53c7d287d85d09d48c71756e70d2f7024666c603b8f5442c5ea3c35",
+    "motion_archive.py": "5a46c55da0721f518a910295a4f11ddc748319d0108905748b0c5fd44bca56d3"
+  },
+  "wrist_endpoint": "first_wrist_pivot",
+  "source_root_fields_read": false,
+  "code_sha256": {
+    "inputs.py": "a89c9213458ec5c9b4dd0cc374a5e1cc2f385281a87d7eaf6e3b8f5127e0f96d",
+    "full_direction_solver.py": "6283a047d2251154aa14431715ffc65ec7f89123140478cdb811459c682cedbe",
+    "run_full_direction.py": "6470ea6e42f1518c55b32b702f57b8773454478377aeebbe35d347a2686432d2",
+    "run_full_direction_v2.py": "8a7bdd95c3bda844668ed547fb4f89773e169ff1fcc42c073e303a0f0b95f0f5",
+    "run_full_direction_v3.py": "3959212d4625310f1edf3fc5e95ed6d8566ca46d724fc81a7f7cc9d202ff9c01"
+  },
+  "source_pairs": [
+    [
+      "left_thigh",
+      "left_hip_pitch_link",
+      "left_knee_link"
+    ],
+    [
+      "left_shin",
+      "left_knee_link",
+      "left_ankle_pitch_link"
+    ],
+    [
+      "left_upper_arm",
+      "left_shoulder_pitch_link",
+      "left_elbow_link"
+    ],
+    [
+      "left_forearm",
+      "left_elbow_link",
+      "left_wrist_roll_link"
+    ],
+    [
+      "right_thigh",
+      "right_hip_pitch_link",
+      "right_knee_link"
+    ],
+    [
+      "right_shin",
+      "right_knee_link",
+      "right_ankle_pitch_link"
+    ],
+    [
+      "right_upper_arm",
+      "right_shoulder_pitch_link",
+      "right_elbow_link"
+    ],
+    [
+      "right_forearm",
+      "right_elbow_link",
+      "right_wrist_roll_link"
+    ]
+  ],
+  "target_pairs": [
+    [
+      "left_thigh",
+      "left_hip_pitch_link",
+      "left_knee_link"
+    ],
+    [
+      "left_shin",
+      "left_knee_link",
+      "left_ankle_pitch_link"
+    ],
+    [
+      "left_upper_arm",
+      "left_shoulder_pitch_link",
+      "left_elbow_link"
+    ],
+    [
+      "left_forearm",
+      "left_elbow_link",
+      "left_wrist_yaw_link"
+    ],
+    [
+      "right_thigh",
+      "right_hip_pitch_link",
+      "right_knee_link"
+    ],
+    [
+      "right_shin",
+      "right_knee_link",
+      "right_ankle_pitch_link"
+    ],
+    [
+      "right_upper_arm",
+      "right_shoulder_pitch_link",
+      "right_elbow_link"
+    ],
+    [
+      "right_forearm",
+      "right_elbow_link",
+      "right_wrist_yaw_link"
+    ]
+  ],
+  "correspondence_status": "conditional URDF-anatomical-basis joint-pivot mapping; NOT accepted material/contact correspondence",
+  "anatomical_basis_assumption": "URDF pelvis/base anatomical axes correspond; no exporter/world calibration assertion",
+  "same_93_frame_comparison": [
+    {
+      "first": 0,
+      "last": 30,
+      "prior_artifact_sha256": "b4e357fb87b060d428b9ad1aebf1d29b9efaf4a330129f48991782853c42c1d1",
+      "prior": {
+        "mean_degrees": 3.1578581325119965,
+        "p95_degrees": 16.57904593172302,
+        "max_degrees": 47.87492265549975,
+        "sum_l1_chordal": 16.28626686125147,
+        "per_direction_mean_degrees": [
+          2.105229249312217,
+          1.1817417514762564e-13,
+          2.8391492184053386,
+          6.275851679889705,
+          5.841521082482922,
+          0.00024696160977767776,
+          3.214802121488921,
+          4.986064746906974
+        ],
+        "over25deg_observations": 6,
+        "over25deg_frames": 4
+      },
+      "global_fit": {
+        "mean_degrees": 22.797312239749928,
+        "p95_degrees": 77.33231938305866,
+        "max_degrees": 81.25692534662011,
+        "sum_l1_chordal": 146.11110944979666,
+        "per_direction_mean_degrees": [
+          5.5890410809812625,
+          2.8833488484229797,
+          3.6400593097635716,
+          76.75790942527462,
+          5.883788531756263,
+          2.6035897517992876,
+          7.6758400006570575,
+          77.34492096934439
+        ],
+        "over25deg_observations": 62,
+        "over25deg_frames": 31
+      }
+    },
+    {
+      "first": 480,
+      "last": 510,
+      "prior_artifact_sha256": "9408bcf27704db2c39b6e0c7622181e6b5628939cc2c2dd247874bf0ea092221",
+      "prior": {
+        "mean_degrees": 4.810677690753243,
+        "p95_degrees": 21.108332919931968,
+        "max_degrees": 45.319561822418855,
+        "sum_l1_chordal": 23.49695505059703,
+        "per_direction_mean_degrees": [
+          4.025633853933266,
+          1.5701613978193826e-13,
+          5.233010773617016,
+          8.27294169609858,
+          7.925539032803041,
+          4.285853096886316e-14,
+          8.111291725156624,
+          4.917004444417221
+        ],
+        "over25deg_observations": 11,
+        "over25deg_frames": 6
+      },
+      "global_fit": {
+        "mean_degrees": 22.25755884521559,
+        "p95_degrees": 62.36689469860472,
+        "max_degrees": 64.66206977225337,
+        "sum_l1_chordal": 135.4075701016878,
+        "per_direction_mean_degrees": [
+          5.261674536104858,
+          3.4418218134835503,
+          19.493845304502436,
+          62.13626719243467,
+          7.851091332495342,
+          1.5550391314042333,
+          20.48267360413138,
+          57.838057847168244
+        ],
+        "over25deg_observations": 62,
+        "over25deg_frames": 31
+      }
+    },
+    {
+      "first": 966,
+      "last": 996,
+      "prior_artifact_sha256": "03d1db0a0716b51f20d5a9186383ee40e067497a0fe958ccc032e9c2fa2399b5",
+      "prior": {
+        "mean_degrees": 2.933441835845453,
+        "p95_degrees": 14.53494483578186,
+        "max_degrees": 38.73803358798753,
+        "sum_l1_chordal": 14.654091165926427,
+        "per_direction_mean_degrees": [
+          3.8436532244429924,
+          0.07589301045723115,
+          4.8661468740208935,
+          2.6123422553811637,
+          5.8453035750072635,
+          2.5220665042412386e-13,
+          2.3962281510527195,
+          3.827967596401109
+        ],
+        "over25deg_observations": 7,
+        "over25deg_frames": 3
+      },
+      "global_fit": {
+        "mean_degrees": 22.942158113412994,
+        "p95_degrees": 75.72835696712492,
+        "max_degrees": 75.9927995126911,
+        "sum_l1_chordal": 149.06109652485932,
+        "per_direction_mean_degrees": [
+          1.0847112416134783,
+          6.245051152411284,
+          13.861068816307359,
+          67.60295688662406,
+          7.709755349635146,
+          1.692818829212917,
+          9.64374740194455,
+          75.6971552295552
+        ],
+        "over25deg_observations": 62,
+        "over25deg_frames": 31
+      }
+    }
+  ]
+}

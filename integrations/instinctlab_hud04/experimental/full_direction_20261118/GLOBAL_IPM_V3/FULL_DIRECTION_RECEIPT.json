@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "numerical_descent_generated": false,
+  "run_id": "tynr65qj",
+  "mode": "offline_pending_sync",
+  "offline_directory": "/workspace/hud04-full-direction-20261118/GLOBAL_IPM_V3/wandb/offline-run-20261118_003002-tynr65qj",
+  "server_readback_verified": false,
+  "supervision_sha256": "77d8327d38d2389d0221d363234035cd0a3ca9233969dc18e396dde988900e2d",
+  "gpu_submissions": 0,
+  "ppo_updates": 0
+}

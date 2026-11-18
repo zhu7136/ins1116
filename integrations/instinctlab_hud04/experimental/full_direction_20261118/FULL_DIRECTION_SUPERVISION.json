@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "stage": "bounded_cpu_diagnostic_supervision",
+  "status": "stopped",
+  "budget": {
+    "window_seconds": 90,
+    "total_seconds": 90,
+    "iterations": 12,
+    "numeric_threads": 2,
+    "max_windows": 1
+  },
+  "windows": [
+    {
+      "index": 0,
+      "wall_seconds": 0.10784176199996409,
+      "child_reaped": true,
+      "status": "protocol_error"
+    }
+  ],
+  "wall_seconds": 0.10791579300001786,
+  "retries": 0,
+  "hard_parent_deadline": true,
+  "cleanup_grace_seconds_max": 0.7,
+  "iteration_limit_scope": "trusted_workers_calling_gate_each_iteration_only",
+  "thread_limit_scope": "supported_BLAS_OpenMP_pools_not_all_OS_threads_or_CPU_cores",
+  "gpu_submissions": 0,
+  "solver_calls": 0,
+  "candidate_motion_generated": false,
+  "accepted_reference": false,
+  "training_ready": false,
+  "actual_solver_call_count_complete": false,
+  "full_length_joint_diagnostic_generated": false,
+  "logging_mode": "offline_pending_sync"
+}

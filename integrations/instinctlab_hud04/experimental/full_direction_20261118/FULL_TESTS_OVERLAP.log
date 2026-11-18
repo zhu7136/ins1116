@@ -1,0 +1,29 @@
+test_997_input_binding (test_full_direction.FullTests.test_997_input_binding) ... ok
+test_all_996_temporal_edges (test_full_direction.FullTests.test_all_996_temporal_edges) ... ok
+test_direct_difference_rows (test_full_direction.FullTests.test_direct_difference_rows) ... ok
+test_endpoints_are_free_not_anchored_to_seed (test_full_direction.FullTests.test_endpoints_are_free_not_anchored_to_seed) ... ok
+test_exact_target_has_zero_angle (test_full_direction.FullTests.test_exact_target_has_zero_angle) ... ok
+test_infeasible_seed_not_silently_clipped (test_full_direction.FullTests.test_infeasible_seed_not_silently_clipped) ... ok
+test_input_nonfinite_and_missing_directions (test_full_direction.FullTests.test_input_nonfinite_and_missing_directions) ... ok
+test_ipm_small_fixture (test_full_direction.FullTests.test_ipm_small_fixture) ... ok
+test_lp_and_trust_caps (test_full_direction.FullTests.test_lp_and_trust_caps) ... ok
+test_no_descent_does_not_claim_convergence (test_full_direction.FullTests.test_no_descent_does_not_claim_convergence) ... ok
+test_old_window_seam_is_not_omitted (test_full_direction.FullTests.test_old_window_seam_is_not_omitted) ... ok
+test_pinned_dynamic_supervisor_is_spawn_importable (test_full_direction.FullTests.test_pinned_dynamic_supervisor_is_spawn_importable) ... ok
+test_shape_and_budget_guards (test_full_direction.FullTests.test_shape_and_budget_guards) ... ok
+test_small_synthetic_joint_fit (test_full_direction.FullTests.test_small_synthetic_joint_fit) ... ok
+test_target_endpoint_required (test_full_direction.FullTests.test_target_endpoint_required) ... ok
+test_unknown_lp_algorithm_rejected (test_full_direction.FullTests.test_unknown_lp_algorithm_rejected) ... ok
+test_all_frames_covered_each_sweep (test_overlap.OverlapTests.test_all_frames_covered_each_sweep) ... ok
+test_all_native_internal_edges_solved_not_just_anchored (test_overlap.OverlapTests.test_all_native_internal_edges_solved_not_just_anchored) ... ok
+test_block_guard (test_overlap.OverlapTests.test_block_guard) ... ok
+test_direct_arbitrary_native_edge_values (test_overlap.OverlapTests.test_direct_arbitrary_native_edge_values) ... ok
+test_endpoint_has_only_one_external_edge (test_overlap.OverlapTests.test_endpoint_has_only_one_external_edge) ... ok
+test_hard_rows_contain_seed_for_every_unique_window (test_overlap.OverlapTests.test_hard_rows_contain_seed_for_every_unique_window) ... ok
+test_outside_neighbours_are_current_not_original (test_overlap.OverlapTests.test_outside_neighbours_are_current_not_original) ... ok
+test_plan_exact_finite_and_bidirectional (test_overlap.OverlapTests.test_plan_exact_finite_and_bidirectional) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 1.521s
+
+OK

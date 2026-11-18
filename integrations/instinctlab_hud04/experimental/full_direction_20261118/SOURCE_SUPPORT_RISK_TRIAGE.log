@@ -1,0 +1,245 @@
+{
+  "stage": "same_native_frame_risk_triage_NOT_support_acceptance",
+  "source_support_review_sha256": "9cf60bc372d8397ca0ae11a3c7410890460cfbe101620bb3b44a5e42d34872cd",
+  "source_motion_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+  "target_joint_artifact_sha256": "2aa620d3086ed5f1c260c210e38fcb3d3a94cbaea549911844b8e4c31127ddc0",
+  "direction_error_threshold_degrees": 25,
+  "threshold_is_diagnostic_only": true,
+  "no_world_coordinate_mapping_or_unit_selection": true,
+  "no_solver_calls": true,
+  "links": [
+    {
+      "source_nominal_link": "left_ankle_roll_link",
+      "source_near_intervals": [
+        [
+          0,
+          69
+        ],
+        [
+          115,
+          202
+        ],
+        [
+          210,
+          212
+        ],
+        [
+          215,
+          237
+        ],
+        [
+          373,
+          395
+        ],
+        [
+          608,
+          608
+        ],
+        [
+          610,
+          666
+        ],
+        [
+          669,
+          706
+        ],
+        [
+          727,
+          739
+        ],
+        [
+          796,
+          797
+        ],
+        [
+          803,
+          996
+        ]
+      ],
+      "source_near_frames": 512,
+      "inspected_direction_indices": [
+        0,
+        1
+      ],
+      "overlap_high_error_near_frames": 5,
+      "overlap_runs": [
+        [
+          608,
+          608
+        ],
+        [
+          610,
+          612
+        ],
+        [
+          629,
+          629
+        ]
+      ],
+      "near_interval_max_same_limb_direction_degrees": 32.22035462626963,
+      "source_near_is_conditioned_on_official_consumer_contract": true,
+      "target_contact_or_collision_test": false,
+      "accepted_support_intervals": null
+    },
+    {
+      "source_nominal_link": "left_wrist_yaw_link",
+      "source_near_intervals": [],
+      "source_near_frames": 0,
+      "inspected_direction_indices": [
+        2,
+        3
+      ],
+      "overlap_high_error_near_frames": 0,
+      "overlap_runs": [],
+      "near_interval_max_same_limb_direction_degrees": null,
+      "source_near_is_conditioned_on_official_consumer_contract": true,
+      "target_contact_or_collision_test": false,
+      "accepted_support_intervals": null
+    },
+    {
+      "source_nominal_link": "left_knee_link",
+      "source_near_intervals": [
+        [
+          630,
+          638
+        ],
+        [
+          719,
+          724
+        ]
+      ],
+      "source_near_frames": 15,
+      "inspected_direction_indices": [
+        0,
+        1
+      ],
+      "overlap_high_error_near_frames": 0,
+      "overlap_runs": [],
+      "near_interval_max_same_limb_direction_degrees": 24.1426746466655,
+      "source_near_is_conditioned_on_official_consumer_contract": true,
+      "target_contact_or_collision_test": false,
+      "accepted_support_intervals": null
+    },
+    {
+      "source_nominal_link": "right_ankle_roll_link",
+      "source_near_intervals": [
+        [
+          0,
+          126
+        ],
+        [
+          190,
+          207
+        ],
+        [
+          211,
+          215
+        ],
+        [
+          620,
+          629
+        ],
+        [
+          668,
+          671
+        ],
+        [
+          697,
+          697
+        ],
+        [
+          699,
+          722
+        ],
+        [
+          727,
+          735
+        ],
+        [
+          759,
+          996
+        ]
+      ],
+      "source_near_frames": 436,
+      "inspected_direction_indices": [
+        4,
+        5
+      ],
+      "overlap_high_error_near_frames": 0,
+      "overlap_runs": [],
+      "near_interval_max_same_limb_direction_degrees": 15.649749956774905,
+      "source_near_is_conditioned_on_official_consumer_contract": true,
+      "target_contact_or_collision_test": false,
+      "accepted_support_intervals": null
+    },
+    {
+      "source_nominal_link": "right_wrist_yaw_link",
+      "source_near_intervals": [
+        [
+          257,
+          345
+        ]
+      ],
+      "source_near_frames": 89,
+      "inspected_direction_indices": [
+        6,
+        7
+      ],
+      "overlap_high_error_near_frames": 40,
+      "overlap_runs": [
+        [
+          257,
+          283
+        ],
+        [
+          285,
+          285
+        ],
+        [
+          325,
+          336
+        ]
+      ],
+      "near_interval_max_same_limb_direction_degrees": 87.82595723914383,
+      "source_near_is_conditioned_on_official_consumer_contract": true,
+      "target_contact_or_collision_test": false,
+      "accepted_support_intervals": null
+    },
+    {
+      "source_nominal_link": "right_knee_link",
+      "source_near_intervals": [
+        [
+          203,
+          208
+        ],
+        [
+          402,
+          410
+        ],
+        [
+          633,
+          636
+        ],
+        [
+          660,
+          664
+        ]
+      ],
+      "source_near_frames": 24,
+      "inspected_direction_indices": [
+        4,
+        5
+      ],
+      "overlap_high_error_near_frames": 0,
+      "overlap_runs": [],
+      "near_interval_max_same_limb_direction_degrees": 1.8158958534177412,
+      "source_near_is_conditioned_on_official_consumer_contract": true,
+      "target_contact_or_collision_test": false,
+      "accepted_support_intervals": null
+    }
+  ],
+  "priority": "Right forearm error at frame257 coincides with start of CONDITIONED source wrist-near interval; inspect before root/contact retargeting.",
+  "accepted_support_intervals": null,
+  "accepted_reference": false,
+  "training_ready": false
+}

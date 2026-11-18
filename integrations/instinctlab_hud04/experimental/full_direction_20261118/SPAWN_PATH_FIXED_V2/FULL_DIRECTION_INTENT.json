@@ -1,0 +1,23 @@
+{
+  "utc": "2026-11-18T00:28:47.064653+00:00",
+  "base_commit": "f4e25561c4c8655faa73b7f68086a61a6034f1de",
+  "cpu_only": true,
+  "frames": 997,
+  "body_dof": 29,
+  "run_id": "mt3o1yde",
+  "wandb_mode": "offline_pending_sync",
+  "offline_reason": "previous online init invalid audience; NOT an assertion of present online write access",
+  "prior_write_failure_sha256": "6ebffab5969889fe176667e8c74af76d5fc23acb86cfa6a74b9427901eb3bd98",
+  "max_outer_iterations": 12,
+  "lp_seconds": 4,
+  "hard_parent_seconds": 90,
+  "source_motion_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+  "seed_sha256": "48f8d43e058420e5ff89861d2336ead3317dc18223c36a7305503f3df54a66eb",
+  "source_model_sha256": "5e99d930af64f3f0bfd34235239e288cc380ba62c8b01fcfcf8cc9f0996e7fa4",
+  "target_model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+  "gpu_submissions": 0,
+  "ppo_updates": 0,
+  "candidate_motion_generated": false,
+  "accepted_reference": false,
+  "training_ready": false
+}
