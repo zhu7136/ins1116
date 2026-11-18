@@ -1,0 +1,86 @@
+{
+  "stage": "independent_positive_witness_membership_NOT_motion_acceptance",
+  "self_report_sha256": "aa83fbad3a55f891fdbee8bab3ca1fe697427ebc0927b2cd5c0dff2f000dceb4",
+  "terrain_report_sha256": "0bd629893c79167faeb3ef012d399b79e8033ca1a044a09a12b25b5b3a34f268",
+  "self_strict_witnesses_verified": 2081,
+  "terrain_strict_witnesses_verified": 2702,
+  "mesh_Delaunay_membership_checks": 2152,
+  "minimum_strict_inside_margin_raw": 1.0056833192606529e-08,
+  "maximum_triangle_reconstruction_residual_raw": 1.2267951101453652e-15,
+  "minimum_triangle_barycentric_coordinate": -1.1340033647652422e-14,
+  "nonadjacent_strict_witnesses_verified": 87,
+  "strongest_nonadjacent_witnesses": [
+    {
+      "first": "left_hip_yaw_link#1",
+      "second": "left_wrist_roll_link#0",
+      "frame": 665,
+      "common_inside_margin_raw": 0.002371594355563722
+    },
+    {
+      "first": "left_hip_pitch_link#0",
+      "second": "left_wrist_pitch_link#1",
+      "frame": 931,
+      "common_inside_margin_raw": 0.0005743787827006616
+    },
+    {
+      "first": "left_hip_yaw_link#1",
+      "second": "left_wrist_pitch_link#1",
+      "frame": 664,
+      "common_inside_margin_raw": 0.0005365295693083791
+    },
+    {
+      "first": "left_hip_pitch_link#0",
+      "second": "left_wrist_roll_link#0",
+      "frame": 931,
+      "common_inside_margin_raw": 0.0005256429923557286
+    },
+    {
+      "first": "left_hip_pitch_link#0",
+      "second": "left_wrist_pitch_link#1",
+      "frame": 932,
+      "common_inside_margin_raw": 0.0005009987544342571
+    },
+    {
+      "first": "left_hip_pitch_link#0",
+      "second": "left_wrist_pitch_link#1",
+      "frame": 930,
+      "common_inside_margin_raw": 0.00042668112854915216
+    },
+    {
+      "first": "left_hip_yaw_link#1",
+      "second": "left_wrist_roll_link#0",
+      "frame": 664,
+      "common_inside_margin_raw": 0.0003011839336279423
+    },
+    {
+      "first": "left_hip_pitch_link#0",
+      "second": "left_wrist_roll_link#0",
+      "frame": 930,
+      "common_inside_margin_raw": 0.0002957425162401113
+    },
+    {
+      "first": "left_hip_pitch_link#0",
+      "second": "left_wrist_pitch_link#1",
+      "frame": 929,
+      "common_inside_margin_raw": 0.00025920199618847256
+    },
+    {
+      "first": "left_hip_pitch_link#0",
+      "second": "left_wrist_roll_link#0",
+      "frame": 932,
+      "common_inside_margin_raw": 0.00016746324846757255
+    }
+  ],
+  "all_positive_witnesses_verified": true,
+  "separation_certificates_independently_rechecked": false,
+  "cooked_geometry_verified": false,
+  "actual_pair_filters_verified": false,
+  "dynamics_checked": false,
+  "motion_optimizer_calls": 0,
+  "new_motion_files": 0,
+  "gpu_submissions": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false,
+  "training_ready": false,
+  "elapsed_s": 0.7321427629999562
+}
