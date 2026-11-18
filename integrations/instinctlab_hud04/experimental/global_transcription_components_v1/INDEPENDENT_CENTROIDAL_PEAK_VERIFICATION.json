@@ -1,0 +1,20 @@
+{
+  "schema": "hud04.independent_centroidal_peak_check.v1",
+  "segment": 488,
+  "source_sha256": "2b4070e32e3a5f120caea7942b42e91a6f31bbca9e0b6d7e8e135b50803ad2f4",
+  "mass_from_independent_XML_sum_kg": 52.547297,
+  "independent_required_net_force_N": [
+    -2087.830124788903,
+    15189.606629461983,
+    -9993.037582187848
+  ],
+  "independent_required_force_over_bodyweight": 35.50313489703826,
+  "max_force_component_difference_from_primary_N": 5.355539542506449e-06,
+  "independent_step_halving_force_difference_N": 0.000238366581200808,
+  "method": "Independent XML/Rodrigues FK + SciPy Bernstein translation/joints + direct chart polynomial rotation; inherited SO3 endpoint construction, not a fully independent SO3 interpolant",
+  "assumed_interpolation_only": true,
+  "contact_realizability_proved": false,
+  "accepted_reference": false,
+  "training_ready": false,
+  "candidate_modified": false
+}

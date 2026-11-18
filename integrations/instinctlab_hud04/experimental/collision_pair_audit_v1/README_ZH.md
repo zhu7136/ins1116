@@ -47,3 +47,33 @@ BOUNDARY_DIAGNOSTICS.json检查全部16处窗口起始连接附近的差分。�
 只有CPU只读审计、凸包数值复核和差分诊断。20个输入文件哈希记录并回读；10项CPU测试通过。新运动优化器调用0、GPU任务0、PPO0、自动排除0。未重放任何旧发布/创建/启动/求解intent；未查询新的Flux全账户状态，因此不宣称账户当前无其它活动任务。
 
 `python -m unittest -v test_audit` 可重跑只读测试；`audit.py`的输出禁止覆盖，不能直接重跑。输出JSON与日志随代码保存。accepted_reference=false；training_ready=false。
+
+## 2026-11-18 14:14续：直接接触点材质身份路径
+
+### 新确认的接口路径
+
+对既有NVIDIA107.3官方physx.html快照重新校验SHA256 e01be9c0…，提取8个精确属性条目。ContactData.material0/material1明确为uint64，使用PhysicsSchemaTools.intToSdfPath解码；同一接触头提供collider0/1及contact_data_offset/num_contact_data。
+
+因此可准备另一条**不依赖材质张量槽排序的接触点身份采集路径**：
+
+`同一事件的actor/collider0或1 → 该头指向的接触点 → 同侧material0或1原生ID → 解码材质prim路径`
+
+这条路径尚未获得目标运行时样本，也不建立任何张量槽到shape映射。解码材质路径本身不证明材质数值、组合模式、最终求解器值或有效摩擦。
+
+### 实现与回归
+
+- 新增contact_material_links_1073.py，现有NativeContactObserver在原回调内复制每个点的材质ID、解码状态、face_index0/1。沿用已有stage/proto校验及事件/点预算，不另订阅或创建进程，不步进、设置材质、改变报告阈值或碰撞规则。
+- 保留原事件side0/side1顺序；反向匹配registry时不偷偷对调材质。相同collider的不同接触点可以保留不同材质ID和面索引，不按body或collider合并材质。
+- 材质路径可在/Looks、/physicsScene等命名空间，不强制/World；解析器只是保守绝对prim路径子集，非USD材质绑定解析器。
+- 缺失字段、0ID、无效ID、解码失败或不支持路径保留UNRESOLVED状态，不推断默认摩擦或把接触删掉。0ID含义未获接口条目确认，不擅自设为默认材质。面索引负值/全1值保留，不解释sentinel或原始STL/cooked三角形对应关系。
+- 12项新增软件测试；本目录全部97项通过(.173s)，含旧订阅/预算/阶段身份等回归。只用假回调对象，没有实际运行时采集。97不是物理测试数量；与其他目录50项软件回归分开记账。
+
+证据：CONTACT_MATERIAL_LINK_API_EVIDENCE.json、TEST_CONTACT_MATERIAL_EXECUTION.log。收集脚本collect_contact_material_evidence.py已经执行，独占输出，不能盲目重放。输出记录4个代码哈希，读回全部一致。
+
+### 旧准备记录的版本边界
+
+native_contact_observer.py发生4行改动，旧RUNTIME_PREPARATION_MANIFEST.json对该文件的哈希已不匹配，其余3项匹配。旧清单保留为历史记录，**不得拿它作为当前采集器版本的运行准备/授权证明**，本轮不覆盖或伪造新运行准备回执。新辅助模块也须进入未来完整部署清单。
+
+所有本轮修改仍本地未提交/发布。新GPU任务0、原生接触材质样本0、优化器0、新动作0、PPO0；未重新查询Flux当前任务状态，不能宣称账户无其他任务。accepted_reference=false、training_ready=false，有效配对摩擦仍null。
+
+后续任何GPU观测仍以“已配置且可核验的服务端300秒强制终止”为启动前置条件；客户端超时不计入该证据。目前尚未满足此前置条件。必要短GPU授权不重复索取。本阶段仅准备采集能力，不构成已运行、持续后台运行或可接受参考动作。

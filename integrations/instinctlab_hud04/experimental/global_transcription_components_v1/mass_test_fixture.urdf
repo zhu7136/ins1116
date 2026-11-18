@@ -1,0 +1,7 @@
+<robot name="mass_fixture">
+  <link name="base"><inertial><mass value="1"/><inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/></inertial></link>
+  <link name="arm"><inertial><origin xyz="1 0 0"/><mass value="2"/><inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/></inertial></link>
+  <joint name="hinge" type="revolute"><parent link="base"/><child link="arm"/><axis xyz="0 0 1"/></joint>
+  <link name="fixed_head"><inertial><mass value="3"/><inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/></inertial></link>
+  <joint name="head_fixed" type="fixed"><origin xyz="0 0 1"/><parent link="base"/><child link="fixed_head"/></joint>
+</robot>

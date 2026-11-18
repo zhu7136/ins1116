@@ -1,0 +1,17 @@
+test_both_endpoints (test_euclidean_c2.SharedC2Tests.test_both_endpoints) ... ok
+test_dense_samples_within_stationary_extrema (test_euclidean_c2.SharedC2Tests.test_dense_samples_within_stationary_extrema) ... ok
+test_dt_scaling (test_euclidean_c2.SharedC2Tests.test_dt_scaling) ... ok
+test_every_global_join_not_only_windows (test_euclidean_c2.SharedC2Tests.test_every_global_join_not_only_windows) ... ok
+test_interior_position_overshoot_detected (test_euclidean_c2.SharedC2Tests.test_interior_position_overshoot_detected) ... ok
+test_linear_motion (test_euclidean_c2.SharedC2Tests.test_linear_motion) ... ok
+test_node_change_affects_both_neighbors_only (test_euclidean_c2.SharedC2Tests.test_node_change_affects_both_neighbors_only) ... ok
+test_quintic_zero_endpoint_rates_interior_speed (test_euclidean_c2.SharedC2Tests.test_quintic_zero_endpoint_rates_interior_speed) ... ok
+test_reject_invalid_time (test_euclidean_c2.SharedC2Tests.test_reject_invalid_time) ... ok
+test_reject_mismatched_nodes (test_euclidean_c2.SharedC2Tests.test_reject_mismatched_nodes) ... ok
+test_reject_nonfinite (test_euclidean_c2.SharedC2Tests.test_reject_nonfinite) ... ok
+test_scipy_independent_representation (test_euclidean_c2.SharedC2Tests.test_scipy_independent_representation) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.017s
+
+OK

@@ -1,0 +1,357 @@
+{
+  "schema": "hud04.centroidal_force_initial_guess_diagnostic.v1",
+  "candidate_sha256": "2b4070e32e3a5f120caea7942b42e91a6f31bbca9e0b6d7e8e135b50803ad2f4",
+  "original_urdf_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+  "frames": 997,
+  "body_dof": 29,
+  "head_policy_dof": 0,
+  "head_fixed_link_mass_retained": true,
+  "urdf_root": "base_link",
+  "links_with_inertial": 42,
+  "original_total_mass_kg": 52.547297,
+  "inertial_audit": [
+    {
+      "link": "base_link",
+      "mass_kg": 5.904962,
+      "min_principal_inertia_kg_m2": 0.01391599671390163,
+      "min_second_moment_kg_m2": 0.004669678077229551,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "left_hip_pitch_link",
+      "mass_kg": 2.255011,
+      "min_principal_inertia_kg_m2": 0.002886189562821832,
+      "min_second_moment_kg_m2": 0.0011511779294238929,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "left_hip_roll_link",
+      "mass_kg": 2.121806,
+      "min_principal_inertia_kg_m2": 0.002330984632232724,
+      "min_second_moment_kg_m2": 0.001054960890884835,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "left_hip_yaw_link",
+      "mass_kg": 2.994098,
+      "min_principal_inertia_kg_m2": 0.004783790536241214,
+      "min_second_moment_kg_m2": 0.0021748631346022607,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "left_knee_link",
+      "mass_kg": 2.958367,
+      "min_principal_inertia_kg_m2": 0.0028329144099363632,
+      "min_second_moment_kg_m2": 0.0012610759237842253,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "left_ankle_pitch_link",
+      "mass_kg": 0.042944,
+      "min_principal_inertia_kg_m2": 2e-06,
+      "min_second_moment_kg_m2": 9.999999999999997e-07,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "left_ankle_roll_link",
+      "mass_kg": 1.021,
+      "min_principal_inertia_kg_m2": 0.000808784682820298,
+      "min_second_moment_kg_m2": 0.00027778693838288146,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "contact_foot_center_L",
+      "mass_kg": 0.001,
+      "min_principal_inertia_kg_m2": 1e-07,
+      "min_second_moment_kg_m2": 5e-08,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "contact_foot_heel_L",
+      "mass_kg": 0.001,
+      "min_principal_inertia_kg_m2": 1e-07,
+      "min_second_moment_kg_m2": 5e-08,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "contact_foot_tip_L",
+      "mass_kg": 0.001,
+      "min_principal_inertia_kg_m2": 1e-07,
+      "min_second_moment_kg_m2": 5e-08,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "right_hip_pitch_link",
+      "mass_kg": 2.255011,
+      "min_principal_inertia_kg_m2": 0.002886189562821832,
+      "min_second_moment_kg_m2": 0.0011511779294238929,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "right_hip_roll_link",
+      "mass_kg": 2.121806,
+      "min_principal_inertia_kg_m2": 0.002330984632232724,
+      "min_second_moment_kg_m2": 0.001054960890884835,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "right_hip_yaw_link",
+      "mass_kg": 2.994098,
+      "min_principal_inertia_kg_m2": 0.004783790536241214,
+      "min_second_moment_kg_m2": 0.0021748631346022607,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "right_knee_link",
+      "mass_kg": 2.958367,
+      "min_principal_inertia_kg_m2": 0.0028329144099363632,
+      "min_second_moment_kg_m2": 0.0012610759237842253,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "right_ankle_pitch_link",
+      "mass_kg": 0.042944,
+      "min_principal_inertia_kg_m2": 2e-06,
+      "min_second_moment_kg_m2": 9.999999999999997e-07,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "right_ankle_roll_link",
+      "mass_kg": 1.021,
+      "min_principal_inertia_kg_m2": 0.000808784682820298,
+      "min_second_moment_kg_m2": 0.00027778693838288146,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "contact_foot_center_R",
+      "mass_kg": 0.001,
+      "min_principal_inertia_kg_m2": 1e-07,
+      "min_second_moment_kg_m2": 5e-08,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "contact_foot_heel_R",
+      "mass_kg": 0.001,
+      "min_principal_inertia_kg_m2": 1e-07,
+      "min_second_moment_kg_m2": 5e-08,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "contact_foot_tip_R",
+      "mass_kg": 0.001,
+      "min_principal_inertia_kg_m2": 1e-07,
+      "min_second_moment_kg_m2": 5e-08,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "waist_yaw_link",
+      "mass_kg": 0.654749,
+      "min_principal_inertia_kg_m2": 0.0006151347006018292,
+      "min_second_moment_kg_m2": 0.00028315538697844657,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "waist_roll_link",
+      "mass_kg": 0.291501,
+      "min_principal_inertia_kg_m2": 3.6e-05,
+      "min_second_moment_kg_m2": 1.600000000000001e-05,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "waist_pitch_link",
+      "mass_kg": 11.882244,
+      "min_principal_inertia_kg_m2": 0.104443876007541,
+      "min_second_moment_kg_m2": 0.0357198569145051,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "left_shoulder_pitch_link",
+      "mass_kg": 0.244765,
+      "min_principal_inertia_kg_m2": 0.00024853456255748276,
+      "min_second_moment_kg_m2": 9.549999999999999e-05,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "left_shoulder_roll_link",
+      "mass_kg": 1.740745,
+      "min_principal_inertia_kg_m2": 0.0013654189773655767,
+      "min_second_moment_kg_m2": 0.0006649195133679577,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "left_shoulder_yaw_link",
+      "mass_kg": 0.307657,
+      "min_principal_inertia_kg_m2": 0.00040087118160808764,
+      "min_second_moment_kg_m2": 0.00013308161193970272,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "left_elbow_link",
+      "mass_kg": 1.275459,
+      "min_principal_inertia_kg_m2": 0.0008795216290224549,
+      "min_second_moment_kg_m2": 0.00042315277827738155,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "left_wrist_yaw_link",
+      "mass_kg": 0.132906,
+      "min_principal_inertia_kg_m2": 8.598214854775621e-05,
+      "min_second_moment_kg_m2": 4.1500000000000006e-05,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "left_wrist_pitch_link",
+      "mass_kg": 0.658602,
+      "min_principal_inertia_kg_m2": 0.0002939446382709876,
+      "min_second_moment_kg_m2": 0.0001416375433782021,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "left_wrist_roll_link",
+      "mass_kg": 0.581445,
+      "min_principal_inertia_kg_m2": 0.00043892020291131696,
+      "min_second_moment_kg_m2": 0.0001397192533568684,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "left_hand_contact",
+      "mass_kg": 0.001,
+      "min_principal_inertia_kg_m2": 1e-07,
+      "min_second_moment_kg_m2": 5e-08,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "left_hand_manip",
+      "mass_kg": 0.001,
+      "min_principal_inertia_kg_m2": 1e-07,
+      "min_second_moment_kg_m2": 5e-08,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "right_shoulder_pitch_link",
+      "mass_kg": 0.244765,
+      "min_principal_inertia_kg_m2": 0.00024853456255748276,
+      "min_second_moment_kg_m2": 9.549999999999999e-05,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "right_shoulder_roll_link",
+      "mass_kg": 1.740745,
+      "min_principal_inertia_kg_m2": 0.0013654189773655767,
+      "min_second_moment_kg_m2": 0.0006649195133679577,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "right_shoulder_yaw_link",
+      "mass_kg": 0.307657,
+      "min_principal_inertia_kg_m2": 0.00040087118160808764,
+      "min_second_moment_kg_m2": 0.00013308161193970272,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "right_elbow_link",
+      "mass_kg": 1.275459,
+      "min_principal_inertia_kg_m2": 0.0008795216290224549,
+      "min_second_moment_kg_m2": 0.00042315277827738155,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "right_wrist_yaw_link",
+      "mass_kg": 0.132906,
+      "min_principal_inertia_kg_m2": 8.598214854775621e-05,
+      "min_second_moment_kg_m2": 4.1500000000000006e-05,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "right_wrist_pitch_link",
+      "mass_kg": 0.658602,
+      "min_principal_inertia_kg_m2": 0.0002939446382709876,
+      "min_second_moment_kg_m2": 0.0001416375433782021,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "right_wrist_roll_link",
+      "mass_kg": 0.581445,
+      "min_principal_inertia_kg_m2": 0.00043892020291131696,
+      "min_second_moment_kg_m2": 0.0001397192533568684,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "right_hand_contact",
+      "mass_kg": 0.001,
+      "min_principal_inertia_kg_m2": 1e-07,
+      "min_second_moment_kg_m2": 5e-08,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "right_hand_manip",
+      "mass_kg": 0.001,
+      "min_principal_inertia_kg_m2": 1e-07,
+      "min_second_moment_kg_m2": 5e-08,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "head_yaw_link",
+      "mass_kg": 0.35819,
+      "min_principal_inertia_kg_m2": 0.00014552821982162677,
+      "min_second_moment_kg_m2": 7.221758026448741e-05,
+      "positive_inertia_and_triangle_inequality": true
+    },
+    {
+      "link": "head_pitch_link",
+      "mass_kg": 0.776041,
+      "min_principal_inertia_kg_m2": 0.002336985723356172,
+      "min_second_moment_kg_m2": 0.0007031706621479138,
+      "positive_inertia_and_triangle_inequality": true
+    }
+  ],
+  "independent_rodrigues_com_max_component_error_m": 1.7763568394002505e-15,
+  "minimum_com_inertia_eigenvalue_over_original_nodes_kg_m2": 1.073012248656786,
+  "gravity_m_s2": [
+    0.0,
+    0.0,
+    -9.81
+  ],
+  "gravity_runtime_binding_verified": false,
+  "derivatives": "Same EXPLICIT assumed C2 initial guess as prior Euclidean/SO3 checks, not recovered physical rates or validated playback",
+  "sampled_at": "996 segment midpoints, not a continuous force bound",
+  "acceleration_method": "5-point centered COM finite difference at h and h/2; fine reported",
+  "h_seconds": 0.00011111111111111112,
+  "fine_h_seconds": 5.555555555555556e-05,
+  "max_acceleration_step_halving_difference_m_s2": 6.222776850841913e-05,
+  "max_force_step_halving_difference_N": 0.0032699010334591473,
+  "required_external_force_formula": "F_non_gravity = M*(COM_ddot - g); necessary resultant only, no root virtual actuator",
+  "required_force_over_bodyweight_percentiles": {
+    "p50": 4.462296984147311,
+    "p90": 13.040104482511065,
+    "p99": 24.397856952604748,
+    "max": 35.50313489375021
+  },
+  "worst_midpoint": {
+    "segment_start_frame": 488,
+    "time_s": 5.427777777777778,
+    "com_acceleration_m_s2": [
+      -39.73239805216133,
+      289.0654228022704,
+      -199.98224782358238
+    ],
+    "required_net_force_N": [
+      -2087.830120969143,
+      15189.606624421476,
+      -9993.037587543387
+    ],
+    "required_force_over_bodyweight": 35.50313489375021,
+    "step_halving_force_difference_N": 0.00023180829918388637
+  },
+  "negative_required_vertical_resultant_midpoint_count": 318,
+  "negative_vertical_interpretation": "NOT a contact-feasibility verdict: actual terrain normals, active contact modes and friction remain unbound. No assumption that all contacts have upward normals; unassigned support frames are not flight.",
+  "force_realizability_verified": false,
+  "torque_or_full_floating_base_dynamics_verified": false,
+  "contact_or_flight_labels_created": false,
+  "new_motion_exported": false,
+  "optimizer_calls": 0,
+  "gpu_tasks_created": 0,
+  "accepted_reference": false,
+  "training_ready": false,
+  "candidate_unchanged": true
+}

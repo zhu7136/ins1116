@@ -1,0 +1,42 @@
+test_both_endpoints (test_euclidean_c2.SharedC2Tests.test_both_endpoints) ... ok
+test_dense_samples_within_stationary_extrema (test_euclidean_c2.SharedC2Tests.test_dense_samples_within_stationary_extrema) ... ok
+test_dt_scaling (test_euclidean_c2.SharedC2Tests.test_dt_scaling) ... ok
+test_every_global_join_not_only_windows (test_euclidean_c2.SharedC2Tests.test_every_global_join_not_only_windows) ... ok
+test_interior_position_overshoot_detected (test_euclidean_c2.SharedC2Tests.test_interior_position_overshoot_detected) ... ok
+test_linear_motion (test_euclidean_c2.SharedC2Tests.test_linear_motion) ... ok
+test_node_change_affects_both_neighbors_only (test_euclidean_c2.SharedC2Tests.test_node_change_affects_both_neighbors_only) ... ok
+test_quintic_zero_endpoint_rates_interior_speed (test_euclidean_c2.SharedC2Tests.test_quintic_zero_endpoint_rates_interior_speed) ... ok
+test_reject_invalid_time (test_euclidean_c2.SharedC2Tests.test_reject_invalid_time) ... ok
+test_reject_mismatched_nodes (test_euclidean_c2.SharedC2Tests.test_reject_mismatched_nodes) ... ok
+test_reject_nonfinite (test_euclidean_c2.SharedC2Tests.test_reject_nonfinite) ... ok
+test_scipy_independent_representation (test_euclidean_c2.SharedC2Tests.test_scipy_independent_representation) ... ok
+test_bad_time_and_shape_rejected (test_so3_c2.SO3Tests.test_bad_time_and_shape_rejected) ... ok
+test_both_endpoint_orientations_and_world_rates (test_so3_c2.SO3Tests.test_both_endpoint_orientations_and_world_rates) ... ok
+test_chart_interior_excursion_rejected (test_so3_c2.SO3Tests.test_chart_interior_excursion_rejected) ... ok
+test_constant_axis_constant_world_rate (test_so3_c2.SO3Tests.test_constant_axis_constant_world_rate) ... ok
+test_every_join_is_world_angular_c2 (test_so3_c2.SO3Tests.test_every_join_is_world_angular_c2) ... ok
+test_interior_angular_rates_from_independent_matrix_differences (test_so3_c2.SO3Tests.test_interior_angular_rates_from_independent_matrix_differences) ... ok
+test_jacobian_directional_finite_difference (test_so3_c2.SO3Tests.test_jacobian_directional_finite_difference) ... ok
+test_left_jacobian_from_matrix_exp_differential (test_so3_c2.SO3Tests.test_left_jacobian_from_matrix_exp_differential) ... ok
+test_near_pi_rejected (test_so3_c2.SO3Tests.test_near_pi_rejected) ... ok
+test_nonfinite_rejected (test_so3_c2.SO3Tests.test_nonfinite_rejected) ... ok
+test_rotations_remain_orthonormal (test_so3_c2.SO3Tests.test_rotations_remain_orthonormal) ... ok
+test_silent_rotation_projection_rejected (test_so3_c2.SO3Tests.test_silent_rotation_projection_rejected) ... ok
+test_stationary (test_so3_c2.SO3Tests.test_stationary) ... ok
+test_time_scaling (test_so3_c2.SO3Tests.test_time_scaling) ... ok
+test_world_frame_equivariance (test_so3_c2.SO3Tests.test_world_frame_equivariance) ... ok
+test_zero_jacobian (test_so3_c2.SO3Tests.test_zero_jacobian) ... ok
+test_com_jacobian_finite_difference (test_mass_properties.MassTests.test_com_jacobian_finite_difference) ... ok
+test_exact_planar_com_and_fixed_mass (test_mass_properties.MassTests.test_exact_planar_com_and_fixed_mass) ... ok
+test_inertia_physical (test_mass_properties.MassTests.test_inertia_physical) ... ok
+test_parallel_axis_independent_particle_formula (test_mass_properties.MassTests.test_parallel_axis_independent_particle_formula) ... ok
+test_reject_bad_root (test_mass_properties.MassTests.test_reject_bad_root) ... ok
+test_reject_missing_joint (test_mass_properties.MassTests.test_reject_missing_joint) ... ok
+test_reject_nonfinite (test_mass_properties.MassTests.test_reject_nonfinite) ... ok
+test_reject_unknown_joint (test_mass_properties.MassTests.test_reject_unknown_joint) ... ok
+test_world_rotation_translation_equivariance (test_mass_properties.MassTests.test_world_rotation_translation_equivariance) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 0.184s
+
+OK

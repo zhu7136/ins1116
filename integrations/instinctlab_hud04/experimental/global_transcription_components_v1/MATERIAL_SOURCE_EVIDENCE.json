@@ -1,0 +1,72 @@
+{
+  "stage": "STATIC_SOURCE_DECLARATIONS_ONLY_NOT_RUNTIME",
+  "source_files": {
+    "upstream": {
+      "path": "/workspace/InstinctLab/source/instinctlab/instinctlab/tasks/shadowing/perceptive/perceptive_env_cfg.py",
+      "sha256": "ca9beeca2e9d59d1fbb588e35d2452261b171bdf9ebf85ba8efd786aa8e81504"
+    },
+    "plane": {
+      "path": "/workspace/ins1116-gate-review-20261118/integrations/instinctlab_hud04/overlay/instinctlab/tasks/shadowing/perceptive/config/hud04/perceptive_shadowing_cfg.py",
+      "sha256": "84735b5d19d4417c20b49dded8423770c64e141ad61fed37766afc1d3cd999a8"
+    },
+    "terrain": {
+      "path": "/workspace/ins1116-gate-review-20261118/integrations/instinctlab_hud04/overlay/instinctlab/tasks/shadowing/perceptive/config/hud04/terrain_shadowing_cfg.py",
+      "sha256": "8775667f62995db136a0da81244459031e0f3e24c14e83eea90af139c371bfcd"
+    },
+    "asset": {
+      "path": "/workspace/ins1116-gate-review-20261118/flux/hud04_asset_camera_probe/asset_config.py",
+      "sha256": "4fdb08b4aa352893a6feef5afb6deb8ec273e1fbdcfc2d67ac0e691729321021"
+    }
+  },
+  "terrain_material_explicit_keywords": {
+    "friction_combine_mode": "multiply",
+    "restitution_combine_mode": "multiply",
+    "static_friction": 1.0,
+    "dynamic_friction": 1.0
+  },
+  "hud04_startup_material_randomization_disabled": true,
+  "terrain_restored_from_same_upstream_scene": true,
+  "robot_importer_explicit_physics_material_keyword": false,
+  "robot_shape_materials": null,
+  "effective_pair_static_friction": null,
+  "effective_pair_dynamic_friction": null,
+  "runtime_material_binding_verified": false,
+  "limitations": [
+    "No SDK import, config construction, stage or tensor read occurred",
+    "No inference of robot defaults from missing importer keyword",
+    "Does not prove absence of other overrides or establish combine priority",
+    "Source declarations do not certify runtime values, normals or modes"
+  ],
+  "accepted_reference": false,
+  "training_ready": false,
+  "passive_getter_documentation": {
+    "url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/extensions/runtime/source/omni.physics.tensors/docs/api/python.html#omni.physics.tensors.impl.api.ArticulationView.get_material_properties",
+    "local_html_sha256": "7b122d2b65603f46c7329ea824133dfe943e5e4812a7504fdfdaf251869c5382",
+    "shape": [
+      "count",
+      "max_shapes",
+      3
+    ],
+    "columns": [
+      "static_friction",
+      "dynamic_friction",
+      "restitution"
+    ],
+    "does_not_supply": [
+      "slot-to-collider mapping",
+      "padding mask",
+      "terrain material",
+      "combine modes and pair priority",
+      "effective pair friction"
+    ],
+    "actual_runtime_getter_calls_this_stage": 0
+  },
+  "audit_implementation_sha256": {
+    "material_evidence.py": "f74bde5dcab560217ee7e667af5c9dba0bf042085652b182f21c96271a9a693b",
+    "audit_material_sources.py": "a20b68b4a725b0d13560057612f144575e0b6e05398903ec8981dd351f357868",
+    "test_material_evidence.py": "e606b4b746d6d7a971889508c4412f4f6fd362d6c3d5964a21b1bcc90ef5f5fa"
+  },
+  "gpu_submissions": 0,
+  "optimizer_calls": 0,
+  "new_motion_files": 0
+}

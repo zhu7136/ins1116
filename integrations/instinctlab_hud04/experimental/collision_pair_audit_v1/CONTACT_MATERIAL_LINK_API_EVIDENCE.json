@@ -1,0 +1,67 @@
+{
+  "stage": "OFFICIAL_DOCUMENTATION_AND_CPU_ADAPTER_NOT_RUNTIME",
+  "source_receipt": {
+    "url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/extensions/runtime/source/omni.physx/docs/api/python.html",
+    "status": 200,
+    "sha256": "e01be9c06d57a00649d5e79178d8cad6ddb427fce52497d9a3720fee465ce9a9",
+    "bytes": 849667
+  },
+  "excerpts": [
+    {
+      "field": "ContactData.material0",
+      "url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/extensions/runtime/source/omni.physx/docs/api/python.html#omni.physx.bindings._physx.ContactData.material0",
+      "text": "property material0 # Material0 - uint64 use PhysicsSchemaTools::intToSdfPath to convert to SdfPath."
+    },
+    {
+      "field": "ContactData.material1",
+      "url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/extensions/runtime/source/omni.physx/docs/api/python.html#omni.physx.bindings._physx.ContactData.material1",
+      "text": "property material1 # Material1 - uint64 use PhysicsSchemaTools::intToSdfPath to convert to SdfPath."
+    },
+    {
+      "field": "ContactData.face_index0",
+      "url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/extensions/runtime/source/omni.physx/docs/api/python.html#omni.physx.bindings._physx.ContactData.face_index0",
+      "text": "property face_index0 # Face index 0 - non zero only for meshes"
+    },
+    {
+      "field": "ContactData.face_index1",
+      "url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/extensions/runtime/source/omni.physx/docs/api/python.html#omni.physx.bindings._physx.ContactData.face_index1",
+      "text": "property face_index1 # Face index 1 - non zero only for meshes."
+    },
+    {
+      "field": "ContactEventHeader.collider0",
+      "url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/extensions/runtime/source/omni.physx/docs/api/python.html#omni.physx.bindings._physx.ContactEventHeader.collider0",
+      "text": "property collider0 # Collider0 - uint64 use PhysicsSchemaTools::intToSdfPath to convert to SdfPath."
+    },
+    {
+      "field": "ContactEventHeader.collider1",
+      "url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/extensions/runtime/source/omni.physx/docs/api/python.html#omni.physx.bindings._physx.ContactEventHeader.collider1",
+      "text": "property collider1 # Collider1 - uint64 use PhysicsSchemaTools::intToSdfPath to convert to SdfPath."
+    },
+    {
+      "field": "ContactEventHeader.contact_data_offset",
+      "url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/extensions/runtime/source/omni.physx/docs/api/python.html#omni.physx.bindings._physx.ContactEventHeader.contact_data_offset",
+      "text": "property contact_data_offset # Contact data offset."
+    },
+    {
+      "field": "ContactEventHeader.num_contact_data",
+      "url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/extensions/runtime/source/omni.physx/docs/api/python.html#omni.physx.bindings._physx.ContactEventHeader.num_contact_data",
+      "text": "property num_contact_data # Number of contact data."
+    }
+  ],
+  "direct_contact_identity_path": "event header actor/collider side -> point offset/index -> same-side material native ID -> decoded material prim path",
+  "tensor_slot_order_join_required_for_this_identity_path": false,
+  "no_tensor_slot_mapping_established": true,
+  "limitation": "Material IDs alone do not verify values, combine modes, solver-side overrides or effective friction; no-contact is not separation/coverage proof",
+  "actual_runtime_material_point_samples": 0,
+  "actual_gpu_submissions": 0,
+  "runtime_target_api_verified": false,
+  "effective_pair_friction": null,
+  "accepted_reference": false,
+  "training_ready": false,
+  "code_sha256": {
+    "contact_material_links_1073.py": "58c0a875e4d247e6666dc6f7ada85a8103bc604b74989dc1f4065f13adfe8215",
+    "native_contact_observer.py": "04817dbb7aa463b23ff40c3e7979e84792732a7b4419d7a4a3e646725bd2c1cc",
+    "test_contact_material_links_1073.py": "3c7d16b760e0e10b3b8fa1cb23ecdd61d1cdcd3bb7115faa9f50d6a64f075dd5",
+    "collect_contact_material_evidence.py": "7643e899878a4338c876f2b2e49141fd0e71e5741e8c30fb332c10121e532a68"
+  }
+}

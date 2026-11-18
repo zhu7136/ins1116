@@ -1,0 +1,56 @@
+{
+  "schema": "hud04.euclidean_c2_initial_guess_diagnostic.v1",
+  "source_sha256": "2b4070e32e3a5f120caea7942b42e91a6f31bbca9e0b6d7e8e135b50803ad2f4",
+  "model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+  "frames": 997,
+  "segments": 996,
+  "fps": 90,
+  "body_dof": 29,
+  "head_policy_dof": 0,
+  "purpose": "Global Euclidean interpolation component/preflight only; NO optimization",
+  "derivatives": "Explicit assumed np.gradient(edge_order=2) initial guess, NOT measured/recovered",
+  "root_rotation": "NOT IMPLEMENTED; no Euler/rotation-vector interpolation substitution",
+  "c2_join_max_error_position_velocity_acceleration": [
+    5.273559366969494e-16,
+    2.240430063693566e-13,
+    7.491962605854496e-11
+  ],
+  "independent_scipy_max_error_position_velocity_acceleration": [
+    1.6986412276764895e-14,
+    4.335198866556311e-12,
+    1.622538547962904e-09
+  ],
+  "node_position_violation_rad": 5.551115123125783e-17,
+  "neighbor_average_velocity_violation_rad_s": 4.1744385725905886e-14,
+  "assumed_node_velocity_violation_rad_s": 2.220446049250313e-14,
+  "interior_position_violation_rad": 0.01954146123899303,
+  "interior_velocity_violation_rad_s": 12.811839639025372,
+  "position_exceedance_segment_joint_count": 176,
+  "velocity_exceedance_segment_joint_count": 2725,
+  "diagnostic_count_roundoff_threshold": 1e-08,
+  "worst_position": {
+    "segment_start_frame": 352,
+    "joint": "waist_roll_joint",
+    "u": 0.4693161575118153,
+    "value": 0.543541461238993,
+    "limit": 0.524,
+    "excess": 0.01954146123899303
+  },
+  "worst_velocity": {
+    "segment_start_frame": 349,
+    "joint": "right_shoulder_yaw_joint",
+    "u": 0.4901937962739344,
+    "value": -32.411839639025374,
+    "limit": -19.6,
+    "excess": 12.811839639025372
+  },
+  "extrema_method": "Endpoints + numerical polynomial stationary roots; NOT interval-certified",
+  "acceleration_jerk_limits": "UNRESOLVED, no reviewed limits invented",
+  "collision_support_dynamics_torque_swept_validation": false,
+  "accepted_reference": false,
+  "training_ready": false,
+  "new_motion_exported": false,
+  "source_unchanged_after_diagnosis": true,
+  "gpu_tasks_created": 0,
+  "motion_optimizer_calls": 0
+}

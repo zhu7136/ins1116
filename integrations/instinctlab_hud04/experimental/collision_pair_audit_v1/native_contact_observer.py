@@ -12,6 +12,7 @@ import math
 import numbers
 from itertools import islice
 from pathlib import PurePosixPath
+from contact_material_links_1073 import copy_contact_material_links
 
 
 def exact_path(value):
@@ -98,6 +99,9 @@ class NativeContactObserver:
                     record[field]=vector(getattr(p,field)) if hasattr(p,field) else None
                 record['native_separation_raw']=finite(p.separation) if hasattr(p,'separation') else None
                 record['native_separation_semantics_verified']=False
+                # Copy in this callback, while native point storage remains valid.
+                # Preserve event-side ordering; material identity is NOT a tensor slot.
+                record['contact_material_links']=copy_contact_material_links(p,self.decode_path)
                 contacts.append(record)
             self.events.append(dict(**paths,matched_exact_pair=match[0] if match else None,
                 unmatched_event_is_not_ignored_pair=True,contact_count=count,contacts=contacts,

@@ -1,0 +1,343 @@
+{
+  "independent_scipy_witness_checks": [
+    {
+      "witness": "worst_position",
+      "joint": "waist_roll_joint",
+      "independent_value": 0.543541461238993,
+      "difference_from_primary": 0.0,
+      "verified_excess": 0.01954146123899303
+    },
+    {
+      "witness": "worst_velocity",
+      "joint": "right_shoulder_yaw_joint",
+      "independent_value": -32.41183963902548,
+      "difference_from_primary": 1.0658141036401503e-13,
+      "verified_excess": 12.811839639025479
+    }
+  ],
+  "opposite_near_saturated_adjacent_segment_count": 45,
+  "near_saturation_diagnostic_tolerance_rad_s": 1e-09,
+  "opposite_near_saturated_adjacent_segments": [
+    {
+      "join_frame": 29,
+      "joint": "left_hip_yaw_joint",
+      "left_segment_average_rad_s": 5.000000000000002,
+      "right_segment_average_rad_s": -5.000000000000002,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 119,
+      "joint": "left_hip_yaw_joint",
+      "left_segment_average_rad_s": -4.999999999999992,
+      "right_segment_average_rad_s": 5.000000000000002,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 203,
+      "joint": "right_hip_pitch_joint",
+      "left_segment_average_rad_s": -5.000000000000002,
+      "right_segment_average_rad_s": 5.000000000000002,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 206,
+      "joint": "right_hip_yaw_joint",
+      "left_segment_average_rad_s": 5.000000000000002,
+      "right_segment_average_rad_s": -5.000000000000002,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 271,
+      "joint": "right_hip_roll_joint",
+      "left_segment_average_rad_s": -4.999999999999997,
+      "right_segment_average_rad_s": 4.999999999999997,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 296,
+      "joint": "right_hip_pitch_joint",
+      "left_segment_average_rad_s": -5.000000000000002,
+      "right_segment_average_rad_s": 5.000000000000002,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 297,
+      "joint": "right_hip_pitch_joint",
+      "left_segment_average_rad_s": 5.000000000000002,
+      "right_segment_average_rad_s": -5.000000000000002,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 298,
+      "joint": "right_hip_pitch_joint",
+      "left_segment_average_rad_s": -5.000000000000002,
+      "right_segment_average_rad_s": 5.000000000000002,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 301,
+      "joint": "left_wrist_pitch_joint",
+      "left_segment_average_rad_s": -12.999999999999993,
+      "right_segment_average_rad_s": 12.999999999999993,
+      "original_speed_limit_rad_s": 13.0
+    },
+    {
+      "join_frame": 331,
+      "joint": "right_hip_roll_joint",
+      "left_segment_average_rad_s": -4.999999999999992,
+      "right_segment_average_rad_s": 4.999999999999992,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 333,
+      "joint": "right_hip_roll_joint",
+      "left_segment_average_rad_s": 5.000000000000002,
+      "right_segment_average_rad_s": -5.000000000000002,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 336,
+      "joint": "right_knee_joint",
+      "left_segment_average_rad_s": 5.000000000000022,
+      "right_segment_average_rad_s": -5.000000000000022,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 353,
+      "joint": "right_hip_roll_joint",
+      "left_segment_average_rad_s": -5.000000000000002,
+      "right_segment_average_rad_s": 5.000000000000002,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 354,
+      "joint": "waist_pitch_joint",
+      "left_segment_average_rad_s": -13.600000000000001,
+      "right_segment_average_rad_s": 13.6,
+      "original_speed_limit_rad_s": 13.6
+    },
+    {
+      "join_frame": 365,
+      "joint": "right_hip_yaw_joint",
+      "left_segment_average_rad_s": -5.000000000000012,
+      "right_segment_average_rad_s": 5.000000000000012,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 365,
+      "joint": "right_knee_joint",
+      "left_segment_average_rad_s": -5.000000000000002,
+      "right_segment_average_rad_s": 5.000000000000002,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 366,
+      "joint": "right_hip_yaw_joint",
+      "left_segment_average_rad_s": 5.000000000000012,
+      "right_segment_average_rad_s": -5.000000000000012,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 366,
+      "joint": "right_knee_joint",
+      "left_segment_average_rad_s": 5.000000000000002,
+      "right_segment_average_rad_s": -5.000000000000002,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 374,
+      "joint": "right_hip_roll_joint",
+      "left_segment_average_rad_s": -4.999999999999997,
+      "right_segment_average_rad_s": 5.000000000000002,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 375,
+      "joint": "right_hip_pitch_joint",
+      "left_segment_average_rad_s": -5.000000000000002,
+      "right_segment_average_rad_s": 5.000000000000002,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 398,
+      "joint": "right_wrist_pitch_joint",
+      "left_segment_average_rad_s": -12.999999999999993,
+      "right_segment_average_rad_s": 12.999999999999993,
+      "original_speed_limit_rad_s": 13.0
+    },
+    {
+      "join_frame": 403,
+      "joint": "right_hip_pitch_joint",
+      "left_segment_average_rad_s": -5.000000000000002,
+      "right_segment_average_rad_s": 4.999999999999992,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 453,
+      "joint": "left_hip_yaw_joint",
+      "left_segment_average_rad_s": 5.0,
+      "right_segment_average_rad_s": -5.0,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 477,
+      "joint": "left_ankle_pitch_joint",
+      "left_segment_average_rad_s": -13.599999999999994,
+      "right_segment_average_rad_s": 13.6,
+      "original_speed_limit_rad_s": 13.6
+    },
+    {
+      "join_frame": 481,
+      "joint": "right_hip_yaw_joint",
+      "left_segment_average_rad_s": 4.999999999999999,
+      "right_segment_average_rad_s": -5.000000000000002,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 494,
+      "joint": "right_hip_roll_joint",
+      "left_segment_average_rad_s": 5.000000000000002,
+      "right_segment_average_rad_s": -5.000000000000002,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 494,
+      "joint": "right_knee_joint",
+      "left_segment_average_rad_s": 4.999999999999999,
+      "right_segment_average_rad_s": -4.999999999999999,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 498,
+      "joint": "left_knee_joint",
+      "left_segment_average_rad_s": -4.999999999999999,
+      "right_segment_average_rad_s": 4.999999999999999,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 498,
+      "joint": "right_hip_pitch_joint",
+      "left_segment_average_rad_s": 4.999999999999997,
+      "right_segment_average_rad_s": -5.000000000000002,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 498,
+      "joint": "right_knee_joint",
+      "left_segment_average_rad_s": 4.999999999999999,
+      "right_segment_average_rad_s": -4.999999999999999,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 500,
+      "joint": "left_knee_joint",
+      "left_segment_average_rad_s": 4.999999999999999,
+      "right_segment_average_rad_s": -4.999999999999999,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 506,
+      "joint": "right_hip_yaw_joint",
+      "left_segment_average_rad_s": 4.999999999999999,
+      "right_segment_average_rad_s": -4.999999999999999,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 508,
+      "joint": "right_ankle_roll_joint",
+      "left_segment_average_rad_s": -13.6,
+      "right_segment_average_rad_s": 13.6,
+      "original_speed_limit_rad_s": 13.6
+    },
+    {
+      "join_frame": 562,
+      "joint": "right_knee_joint",
+      "left_segment_average_rad_s": -5.000000000000002,
+      "right_segment_average_rad_s": 5.000000000000002,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 562,
+      "joint": "right_ankle_pitch_joint",
+      "left_segment_average_rad_s": -13.600000000000001,
+      "right_segment_average_rad_s": 13.600000000000007,
+      "original_speed_limit_rad_s": 13.6
+    },
+    {
+      "join_frame": 563,
+      "joint": "right_hip_roll_joint",
+      "left_segment_average_rad_s": -5.000000000000002,
+      "right_segment_average_rad_s": 4.999999999999997,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 635,
+      "joint": "left_hip_roll_joint",
+      "left_segment_average_rad_s": 5.000000000000002,
+      "right_segment_average_rad_s": -5.000000000000002,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 656,
+      "joint": "left_hip_yaw_joint",
+      "left_segment_average_rad_s": -5.000000000000002,
+      "right_segment_average_rad_s": 5.000000000000002,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 694,
+      "joint": "left_wrist_pitch_joint",
+      "left_segment_average_rad_s": -12.999999999999993,
+      "right_segment_average_rad_s": 12.999999999999993,
+      "original_speed_limit_rad_s": 13.0
+    },
+    {
+      "join_frame": 796,
+      "joint": "left_hip_yaw_joint",
+      "left_segment_average_rad_s": 4.999999999999992,
+      "right_segment_average_rad_s": -5.000000000000002,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 799,
+      "joint": "right_wrist_pitch_joint",
+      "left_segment_average_rad_s": -12.999999999999993,
+      "right_segment_average_rad_s": 12.999999999999993,
+      "original_speed_limit_rad_s": 13.0
+    },
+    {
+      "join_frame": 855,
+      "joint": "right_ankle_roll_joint",
+      "left_segment_average_rad_s": 13.599999999999998,
+      "right_segment_average_rad_s": -13.599999999999998,
+      "original_speed_limit_rad_s": 13.6
+    },
+    {
+      "join_frame": 969,
+      "joint": "left_hip_yaw_joint",
+      "left_segment_average_rad_s": 5.000000000000002,
+      "right_segment_average_rad_s": -5.000000000000002,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 974,
+      "joint": "left_hip_yaw_joint",
+      "left_segment_average_rad_s": 4.999999999999997,
+      "right_segment_average_rad_s": -5.000000000000007,
+      "original_speed_limit_rad_s": 5.0
+    },
+    {
+      "join_frame": 981,
+      "joint": "waist_yaw_joint",
+      "left_segment_average_rad_s": 13.600000000000001,
+      "right_segment_average_rad_s": -13.600000000000001,
+      "original_speed_limit_rad_s": 13.6
+    }
+  ],
+  "interpretation": "If opposite saturation were exact, speed-bounded C1 interpolation preserving nodes would be impossible: integral saturation forces constant opposite rates on adjoining intervals. These floating-point near-equalities alone are NOT an exact infeasibility proof, nor a lower bound without an acceleration constraint.",
+  "candidate_modified": false,
+  "accepted_reference": false,
+  "training_ready": false,
+  "optimizer_calls": 0,
+  "gpu_tasks_created": 0
+}

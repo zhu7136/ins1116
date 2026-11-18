@@ -1,0 +1,74 @@
+{
+  "schema": "hud04.so3_c2_component_frozen997_check.v1",
+  "source_sha256": "2b4070e32e3a5f120caea7942b42e91a6f31bbca9e0b6d7e8e135b50803ad2f4",
+  "frames": 997,
+  "segments": 996,
+  "fps": 90,
+  "omega_alpha_convention": "WORLD; local Lie chart mapped by analytic left Jacobian and its directional derivative",
+  "derivatives": "ASSUMED initial guess from adjacent world rotation logs + central averages/extrapolated endpoints, alpha gradient; NOT recovered/true/exported motion rates",
+  "endpoint_max_component_error_rotation_matrix_omega_alpha": [
+    7.771561172376096e-16,
+    3.552713678800501e-14,
+    1.1766587704187259e-11
+  ],
+  "all995_join_max_component_error_rotation_matrix_omega_alpha": [
+    7.771561172376096e-16,
+    3.907985046680551e-14,
+    1.1738165994756855e-11
+  ],
+  "maximum_sampled_local_chart_angle_rad": 0.1621122277045698,
+  "chart_interior_certified": false,
+  "samples_per_segment": 5,
+  "independent_matrix_difference_checks": [
+    {
+      "segment": 0,
+      "omega_world_error_rad_s": 6.696310173026632e-13,
+      "alpha_world_error_rad_s2": 1.284438084780959e-07
+    },
+    {
+      "segment": 58,
+      "omega_world_error_rad_s": 3.91942034383419e-12,
+      "alpha_world_error_rad_s2": 4.979700207741189e-07
+    },
+    {
+      "segment": 292,
+      "omega_world_error_rad_s": 8.042899679594484e-12,
+      "alpha_world_error_rad_s2": 4.1812356244008697e-07
+    },
+    {
+      "segment": 349,
+      "omega_world_error_rad_s": 3.1569191705216326e-12,
+      "alpha_world_error_rad_s2": 1.78332780720325e-06
+    },
+    {
+      "segment": 351,
+      "omega_world_error_rad_s": 1.0862422072932532e-12,
+      "alpha_world_error_rad_s2": 1.0692392322653177e-06
+    },
+    {
+      "segment": 585,
+      "omega_world_error_rad_s": 9.609202322735655e-12,
+      "alpha_world_error_rad_s2": 4.99006048926276e-07
+    },
+    {
+      "segment": 900,
+      "omega_world_error_rad_s": 4.818367926873179e-13,
+      "alpha_world_error_rad_s2": 1.813267000438934e-07
+    },
+    {
+      "segment": 995,
+      "omega_world_error_rad_s": 1.1555756351810942e-12,
+      "alpha_world_error_rad_s2": 1.272317164402459e-06
+    }
+  ],
+  "near_pi_recharting": "Required if encountered; guards reject, no automatic projection or recharting implemented",
+  "global_optimizer_implemented": false,
+  "collision_support_dynamics_torque_verified": false,
+  "angular_acceleration_jerk_limit_binding": "UNRESOLVED",
+  "accepted_reference": false,
+  "training_ready": false,
+  "new_motion_exported": false,
+  "candidate_unchanged": true,
+  "gpu_tasks_created": 0,
+  "optimizer_calls": 0
+}
