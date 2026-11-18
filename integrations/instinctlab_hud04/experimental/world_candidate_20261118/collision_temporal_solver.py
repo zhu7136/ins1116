@@ -53,19 +53,30 @@ def solve(model,q,roots,desired,progress,*,foot_weight=100.,max_calls=200):
             lp=linprog(np.r_[np.zeros(nv),np.ones(na+ng)],A_ub=matrix,b_ub=b,bounds=bounds,method='highs',
                        options={'time_limit':1.5,'maxiter':12000,'threads':2,'parallel':False})
         row=dict(update=number,first=first,last=last,lp_status=int(lp.status),lp_iterations=int(lp.nit),accepted=False,
-                 active_triangle_plane_cuts=ng,old_negative_cut_l1_raw=float(np.maximum(-gaps,0).sum()),old_temporal_l1=float(abs(temp).sum()))
+                 active_triangle_plane_cuts=ng,old_negative_cut_l1_raw=float(np.maximum(-gaps,0).sum()),old_temporal_l1=float(abs(temp).sum()),
+                 fresh_finite_triangle_geometry_rejections=[],fresh_endpoint_guard_is_not_complete_collision=True)
         coverage[frames]+=1
         if lp.success:
             d=lp.x[:nv].reshape(n,35);old=float(abs(all_res).sum()+foot_weight*np.maximum(-gaps,0).sum())
+            old_geometry=None
             for alpha in [1.,.5,.25,.125,.0625]:
                 tq=piece+alpha*d[:,6:];tr=perturb(root,alpha*d[:,:6]);newq=q.copy();newr=roots.copy();newq[frames]=tq;newr[frames]=tr
                 if np.max(hard@(alpha*d.reshape(-1))-rhs)>1e-6:raise ValueError('Hard velocity/position violation; no clipping')
                 newgap=foot.fixed_cut_gaps(model,tq,tr,records);newtemp=temporal_values(newq,newr,first,last)
                 merit=float(abs((model.evaluate(tq,tr)-desired[frames])*w).sum()+rho*abs(tq-seed[frames]).sum()+abs(newtemp).sum()+foot_weight*np.maximum(-newgap,0).sum())
                 if merit<old-1e-9:
+                    if old_geometry is None:
+                        old_geometry=foot.fresh_geometry(model,piece,root,frame_indices=np.arange(first,last+1))
+                    new_geometry=foot.fresh_geometry(model,tq,tr,frame_indices=np.arange(first,last+1))
+                    guard=foot.reject_geometry_step(old_geometry,new_geometry)
+                    if guard['reject']:
+                        row['fresh_finite_triangle_geometry_rejections'].append(dict(alpha=alpha,comparison=guard))
+                        continue
                     q[frames]=tq;roots[frames]=tr
                     row.update(accepted=True,alpha=alpha,merit_before=old,merit_after=merit,new_negative_cut_l1_raw=float(np.maximum(-newgap,0).sum()),
-                               new_temporal_l1=float(abs(newtemp).sum()),max_joint_step_rad=float(abs(alpha*d[:,6:]).max()))
+                               new_temporal_l1=float(abs(newtemp).sum()),max_joint_step_rad=float(abs(alpha*d[:,6:]).max()),
+                               fresh_geometry_endpoint_guard_passed=True,
+                               fresh_foot_maximum_negative_sat_raw={s:new_geometry[s]['maximum_negative_sat_raw'] for s in new_geometry})
                     break
         history.append(row);progress(row)
         if not lp.success:raise RuntimeError('LP unsuccessful; NO motion export; inspect progress status '+str(lp.status))
@@ -78,4 +89,5 @@ def solve(model,q,roots,desired,progress,*,foot_weight=100.,max_calls=200):
         root_translation_change_from_compensated_seed_max_raw=float(np.linalg.norm(roots[:,:3,3]-initial_roots[:,:3,3],axis=1).max()),
         frames_changed=int(np.any(abs(q-seed)>1e-9,axis=1).sum()),root_6d_tangent_optimized=True,body_29d_optimized=True,
         footbox_triangle_escape_soft=True,footbox_weight=foot_weight,temporal_weights_before_dt_squared=[.02,.005,.0001],
+        fresh_finite_triangle_endpoint_guard=True,fresh_geometry_rejected_line_search_steps=sum(len(r['fresh_finite_triangle_geometry_rejections']) for r in history),
         actual_nominal_footbox_cuts_are_not_complete_collision_constraints=True,**feasible)

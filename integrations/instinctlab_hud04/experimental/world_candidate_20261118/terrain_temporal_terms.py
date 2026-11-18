@@ -5,11 +5,18 @@ terrain containment or runtime-cooked shape evidence. Triangle winding sets
 the local escape side; not selected by a root-hypothesis/min-gap contest.
 """
 import sys
+import importlib.util
+from pathlib import Path
 import xml.etree.ElementTree as ET
 import numpy as np
 from scipy import sparse
 sys.path[:0]=['/workspace/hud04-cpu-deps-20261117','/workspace/hud04-terrain-binding-20261117']
-from terrain_binding import ActualTerrain
+
+def load_fresh_guard():
+    path=Path(__file__).resolve().parents[1]/'nonlinear_guard_20261118/box_triangle_guard.py'
+    spec=importlib.util.spec_from_file_location('hud04_fresh_foot_guard',path)
+    module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+    return module
 
 def box_clip(triangle,halfsize):
     poly=np.asarray(triangle,float).copy()
@@ -27,6 +34,7 @@ def box_clip(triangle,halfsize):
 class FootTerms:
     def __init__(self):
         import world_features as F
+        from terrain_binding import ActualTerrain
         self.terrain=ActualTerrain();self.tri=self.terrain.triangles
         self.normals=self.terrain.mesh.face_normals.copy();self.lo=self.tri.min(axis=1);self.hi=self.tri.max(axis=1)
         xml=ET.parse(F.TK.TARGET).getroot();boxes=[]
@@ -40,6 +48,29 @@ class FootTerms:
         self.halfsize=boxes[0][0]/2;self.center=boxes[0][1]
         self.corners=np.array([[x,y,z] for x in [-1,1] for y in [-1,1] for z in [-1,1]])*self.halfsize+self.center
         self.padding=.025  # Local cut activation distance in unchanged RAW units, NOT a physical acceptance threshold.
+        self.fresh_module=load_fresh_guard()
+        self.fresh_guard=self.fresh_module.BoxTriangleGuard(self.tri,tolerance=1e-9)
+
+    def fresh_geometry(self,model,q,roots,*,frame_indices):
+        """Recompute BOTH nominal footboxes against ALL finite terrain faces.
+
+        Endpoint rejection only. Does not assert full-body, swept-path, closed
+        terrain containment, PhysX, contact schedule or motion acceptance.
+        """
+        frame_indices=np.asarray(frame_indices)
+        if frame_indices.shape!=(len(q),) or frame_indices.dtype.kind not in 'iu' or len(set(frame_indices.tolist()))!=len(q) or np.any(frame_indices<0):
+            raise ValueError('Explicit unique native frame indices required')
+        local,_=model.model.fk(q);result={}
+        for side in ['left','right']:
+            poses=(roots@local[side+'_ankle_roll_link']).copy()
+            poses[:,:3,3]+=np.einsum('nij,j->ni',poses[:,:3,:3],self.center)
+            result[side]=self.fresh_guard.scan(poses,self.halfsize,pose_ids=[side+':'+str(f) for f in frame_indices])
+        return result
+
+    def reject_geometry_step(self,before,after):
+        if set(before)!=set(['left','right']) or set(after)!=set(before):raise ValueError('Both feet required')
+        comparisons={s:self.fresh_module.reject_new_or_worse(before[s],after[s],numerical_slack=1e-12) for s in before}
+        return dict(reject=any(r['reject'] for r in comparisons.values()),sides=comparisons)
 
     def cuts(self,model,q,roots):
         n=len(q);local,axes=model.model.fk(q);world={l:roots@t for l,t in local.items()}
