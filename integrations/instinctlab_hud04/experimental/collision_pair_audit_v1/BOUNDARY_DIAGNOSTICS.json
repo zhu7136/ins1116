@@ -1,0 +1,144 @@
+{
+  "frames": 997,
+  "fps": 90,
+  "body_dof": 29,
+  "head_action_dof": 0,
+  "window_joins": [
+    {
+      "frame": 58,
+      "joint_velocity_backward_forward_difference_max_rad_s": 12.200221911182005,
+      "root_translation_velocity_backward_forward_difference_norm_m_s": 0.29791030878636376,
+      "joint_acceleration_left_right_difference_max_rad_s2": 2458.71739263738,
+      "root_translation_acceleration_left_right_difference_norm_m_s2": 25.883289887999695,
+      "derivative_differences_are_not_C2_discontinuity_proofs": true
+    },
+    {
+      "frame": 117,
+      "joint_velocity_backward_forward_difference_max_rad_s": 7.734153817338843,
+      "root_translation_velocity_backward_forward_difference_norm_m_s": 0.31927137112964205,
+      "joint_acceleration_left_right_difference_max_rad_s2": 2239.0315233148976,
+      "root_translation_acceleration_left_right_difference_norm_m_s2": 81.75923923163957,
+      "derivative_differences_are_not_C2_discontinuity_proofs": true
+    },
+    {
+      "frame": 176,
+      "joint_velocity_backward_forward_difference_max_rad_s": 2.870380646278594,
+      "root_translation_velocity_backward_forward_difference_norm_m_s": 0.10218470259976971,
+      "joint_acceleration_left_right_difference_max_rad_s2": 1022.1211875365318,
+      "root_translation_acceleration_left_right_difference_norm_m_s2": 21.681935243953532,
+      "derivative_differences_are_not_C2_discontinuity_proofs": true
+    },
+    {
+      "frame": 234,
+      "joint_velocity_backward_forward_difference_max_rad_s": 7.568584198222231,
+      "root_translation_velocity_backward_forward_difference_norm_m_s": 1.23591824677637,
+      "joint_acceleration_left_right_difference_max_rad_s2": 682.5462766724909,
+      "root_translation_acceleration_left_right_difference_norm_m_s2": 34.79128617501871,
+      "derivative_differences_are_not_C2_discontinuity_proofs": true
+    },
+    {
+      "frame": 292,
+      "joint_velocity_backward_forward_difference_max_rad_s": 14.078477083436157,
+      "root_translation_velocity_backward_forward_difference_norm_m_s": 0.8204037037118594,
+      "joint_acceleration_left_right_difference_max_rad_s2": 3959.62368747224,
+      "root_translation_acceleration_left_right_difference_norm_m_s2": 49.009601896964455,
+      "derivative_differences_are_not_C2_discontinuity_proofs": true
+    },
+    {
+      "frame": 351,
+      "joint_velocity_backward_forward_difference_max_rad_s": 27.027138876403257,
+      "root_translation_velocity_backward_forward_difference_norm_m_s": 0.8638809487305789,
+      "joint_acceleration_left_right_difference_max_rad_s2": 2694.127525536623,
+      "root_translation_acceleration_left_right_difference_norm_m_s2": 49.097812275701834,
+      "derivative_differences_are_not_C2_discontinuity_proofs": true
+    },
+    {
+      "frame": 410,
+      "joint_velocity_backward_forward_difference_max_rad_s": 6.382625891708314,
+      "root_translation_velocity_backward_forward_difference_norm_m_s": 0.136080603762901,
+      "joint_acceleration_left_right_difference_max_rad_s2": 1205.0076754590975,
+      "root_translation_acceleration_left_right_difference_norm_m_s2": 45.34615097217656,
+      "derivative_differences_are_not_C2_discontinuity_proofs": true
+    },
+    {
+      "frame": 468,
+      "joint_velocity_backward_forward_difference_max_rad_s": 15.343503421450395,
+      "root_translation_velocity_backward_forward_difference_norm_m_s": 0.1420065367662203,
+      "joint_acceleration_left_right_difference_max_rad_s2": 1561.7564524992706,
+      "root_translation_acceleration_left_right_difference_norm_m_s2": 59.34931266469749,
+      "derivative_differences_are_not_C2_discontinuity_proofs": true
+    },
+    {
+      "frame": 526,
+      "joint_velocity_backward_forward_difference_max_rad_s": 8.011202442366214,
+      "root_translation_velocity_backward_forward_difference_norm_m_s": 0.039806100530082475,
+      "joint_acceleration_left_right_difference_max_rad_s2": 3035.774659936275,
+      "root_translation_acceleration_left_right_difference_norm_m_s2": 149.60430444568183,
+      "derivative_differences_are_not_C2_discontinuity_proofs": true
+    },
+    {
+      "frame": 585,
+      "joint_velocity_backward_forward_difference_max_rad_s": 10.350247852276032,
+      "root_translation_velocity_backward_forward_difference_norm_m_s": 0.06035083603440114,
+      "joint_acceleration_left_right_difference_max_rad_s2": 711.7730270201229,
+      "root_translation_acceleration_left_right_difference_norm_m_s2": 22.069265915037903,
+      "derivative_differences_are_not_C2_discontinuity_proofs": true
+    },
+    {
+      "frame": 644,
+      "joint_velocity_backward_forward_difference_max_rad_s": 4.352558886954454,
+      "root_translation_velocity_backward_forward_difference_norm_m_s": 0.1461417868886512,
+      "joint_acceleration_left_right_difference_max_rad_s2": 2522.7907108712716,
+      "root_translation_acceleration_left_right_difference_norm_m_s2": 75.60148101440457,
+      "derivative_differences_are_not_C2_discontinuity_proofs": true
+    },
+    {
+      "frame": 702,
+      "joint_velocity_backward_forward_difference_max_rad_s": 15.62292956526012,
+      "root_translation_velocity_backward_forward_difference_norm_m_s": 0.25786863669222754,
+      "joint_acceleration_left_right_difference_max_rad_s2": 1958.288115678693,
+      "root_translation_acceleration_left_right_difference_norm_m_s2": 15.501850904424968,
+      "derivative_differences_are_not_C2_discontinuity_proofs": true
+    },
+    {
+      "frame": 760,
+      "joint_velocity_backward_forward_difference_max_rad_s": 4.107675489690161,
+      "root_translation_velocity_backward_forward_difference_norm_m_s": 0.6165668006881677,
+      "joint_acceleration_left_right_difference_max_rad_s2": 737.3937105506031,
+      "root_translation_acceleration_left_right_difference_norm_m_s2": 18.694693282961136,
+      "derivative_differences_are_not_C2_discontinuity_proofs": true
+    },
+    {
+      "frame": 819,
+      "joint_velocity_backward_forward_difference_max_rad_s": 4.8183511123036675,
+      "root_translation_velocity_backward_forward_difference_norm_m_s": 0.16903651049534635,
+      "joint_acceleration_left_right_difference_max_rad_s2": 600.7804591273497,
+      "root_translation_acceleration_left_right_difference_norm_m_s2": 88.13627593492178,
+      "derivative_differences_are_not_C2_discontinuity_proofs": true
+    },
+    {
+      "frame": 878,
+      "joint_velocity_backward_forward_difference_max_rad_s": 9.760405070531107,
+      "root_translation_velocity_backward_forward_difference_norm_m_s": 0.04000419005108875,
+      "joint_acceleration_left_right_difference_max_rad_s2": 536.6426714365371,
+      "root_translation_acceleration_left_right_difference_norm_m_s2": 139.59137414419718,
+      "derivative_differences_are_not_C2_discontinuity_proofs": true
+    },
+    {
+      "frame": 936,
+      "joint_velocity_backward_forward_difference_max_rad_s": 26.49124024615403,
+      "root_translation_velocity_backward_forward_difference_norm_m_s": 2.640202936543844,
+      "joint_acceleration_left_right_difference_max_rad_s2": 1994.0468539116664,
+      "root_translation_acceleration_left_right_difference_norm_m_s2": 43.89781488708768,
+      "derivative_differences_are_not_C2_discontinuity_proofs": true
+    }
+  ],
+  "global_joint_acceleration_max_rad_s2": 3415.720570435695,
+  "global_root_translation_acceleration_max_m_s2": 684.5363688883152,
+  "interpolation_C2_verified": false,
+  "root_angular_dynamics_verified": false,
+  "physical_acceleration_limits_bound": false,
+  "support_unassigned_frames": 346,
+  "accepted_reference": false,
+  "training_ready": false
+}

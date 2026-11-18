@@ -1,0 +1,15 @@
+test_all_input_bytes_still_match (test_audit.AuditTests.test_all_input_bytes_still_match) ... ok
+test_cross_environment_binding_rejected (test_audit.AuditTests.test_cross_environment_binding_rejected) ... ok
+test_derivatives_include_join_crossing_rows (test_audit.AuditTests.test_derivatives_include_join_crossing_rows) ... ok
+test_duplicate_binding_rejected (test_audit.AuditTests.test_duplicate_binding_rejected) ... ok
+test_exact_model_identity (test_audit.AuditTests.test_exact_model_identity) ... ok
+test_explicit_enabled_not_rewritten (test_audit.AuditTests.test_explicit_enabled_not_rewritten) ... ok
+test_inactive_or_excluded_joint_rejected (test_audit.AuditTests.test_inactive_or_excluded_joint_rejected) ... ok
+test_metadata_does_not_grant_filter_causality (test_audit.AuditTests.test_metadata_does_not_grant_filter_causality) ... ok
+test_missing_attribute_rejected (test_audit.AuditTests.test_missing_attribute_rejected) ... ok
+test_no_policy_or_training_promotion (test_audit.AuditTests.test_no_policy_or_training_promotion) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.015s
+
+OK

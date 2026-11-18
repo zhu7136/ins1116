@@ -1,0 +1,33 @@
+test_all_input_bytes_still_match (test_audit.AuditTests.test_all_input_bytes_still_match) ... ok
+test_cross_environment_binding_rejected (test_audit.AuditTests.test_cross_environment_binding_rejected) ... ok
+test_derivatives_include_join_crossing_rows (test_audit.AuditTests.test_derivatives_include_join_crossing_rows) ... ok
+test_duplicate_binding_rejected (test_audit.AuditTests.test_duplicate_binding_rejected) ... ok
+test_exact_model_identity (test_audit.AuditTests.test_exact_model_identity) ... ok
+test_explicit_enabled_not_rewritten (test_audit.AuditTests.test_explicit_enabled_not_rewritten) ... ok
+test_inactive_or_excluded_joint_rejected (test_audit.AuditTests.test_inactive_or_excluded_joint_rejected) ... ok
+test_metadata_does_not_grant_filter_causality (test_audit.AuditTests.test_metadata_does_not_grant_filter_causality) ... ok
+test_missing_attribute_rejected (test_audit.AuditTests.test_missing_attribute_rejected) ... ok
+test_no_policy_or_training_promotion (test_audit.AuditTests.test_no_policy_or_training_promotion) ... ok
+test_actor_shape_mismatch_not_matched (test_native_contact_observer.ObserverTests.test_actor_shape_mismatch_not_matched) ... ok
+test_buffer_overflow_rejected (test_native_contact_observer.ObserverTests.test_buffer_overflow_rejected) ... ok
+test_duplicate_pair_rejected (test_native_contact_observer.ObserverTests.test_duplicate_pair_rejected) ... ok
+test_event_budget_rejected (test_native_contact_observer.ObserverTests.test_event_budget_rejected) ... ok
+test_exact_shape_paths_match_without_waiver (test_native_contact_observer.ObserverTests.test_exact_shape_paths_match_without_waiver) ... ok
+test_mesh_descendant_not_guessed (test_native_contact_observer.ObserverTests.test_mesh_descendant_not_guessed) ... ok
+test_missing_force_vectors_not_fabricated (test_native_contact_observer.ObserverTests.test_missing_force_vectors_not_fabricated) ... ok
+test_missing_separation_stays_unknown (test_native_contact_observer.ObserverTests.test_missing_separation_stays_unknown) ... ok
+test_missing_shape_fields_fail_closed (test_native_contact_observer.ObserverTests.test_missing_shape_fields_fail_closed) ... ok
+test_nan_rejected (test_native_contact_observer.ObserverTests.test_nan_rejected) ... ok
+test_no_mutation_of_native_buffers (test_native_contact_observer.ObserverTests.test_no_mutation_of_native_buffers) ... ok
+test_noncanonical_or_wildcard_registry_rejected (test_native_contact_observer.ObserverTests.test_noncanonical_or_wildcard_registry_rejected) ... ok
+test_point_budget_rejected (test_native_contact_observer.ObserverTests.test_point_budget_rejected) ... ok
+test_report_not_alias_and_digest_stable (test_native_contact_observer.ObserverTests.test_report_not_alias_and_digest_stable) ... ok
+test_reverse_native_pair_order_supported (test_native_contact_observer.ObserverTests.test_reverse_native_pair_order_supported) ... ok
+test_unknown_decoder_id_does_not_escape_callback (test_native_contact_observer.ObserverTests.test_unknown_decoder_id_does_not_escape_callback) ... ok
+test_wrong_environment_not_matched (test_native_contact_observer.ObserverTests.test_wrong_environment_not_matched) ... ok
+test_zero_event_not_filter_certificate (test_native_contact_observer.ObserverTests.test_zero_event_not_filter_certificate) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.028s
+
+OK

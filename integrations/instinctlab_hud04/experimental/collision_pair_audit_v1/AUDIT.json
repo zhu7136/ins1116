@@ -1,0 +1,1909 @@
+{
+  "stage": "CPU_EXISTING_EVIDENCE_AUDIT_NOT_NEW_PHYSICS",
+  "baseline_commit": "fcf38047fce7eba1ea893fc756334f3bdc0a097a",
+  "model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+  "pairs": [
+    {
+      "first": "left_wrist_pitch_link#1",
+      "second": "left_wrist_roll_link#0",
+      "joint": "left_wrist_roll_joint",
+      "collision": [
+        {
+          "name": "official_left_wrist_pitch_link_2",
+          "type": "cylinder",
+          "attributes": {
+            "radius": "0.029",
+            "length": "0.06"
+          },
+          "link_T_geometry": [
+            [
+              0.0007963267107333194,
+              0.0,
+              0.9999996829318347,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              -0.9999996829318347,
+              0.0,
+              0.0007963267107333194,
+              -0.065
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "name": "official_left_wrist_roll_link_1",
+          "type": "mesh",
+          "attributes": {
+            "filename": "../meshes/HU_D04_01/left_wrist_roll_link.STL",
+            "scale": "1 1 1"
+          },
+          "link_T_geometry": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "mesh_repository_path": "flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/meshes/HU_D04_01/left_wrist_roll_link.STL",
+          "mesh_sha256": "5aa0af4ccdaf46d498267b0fae247b8d547d8d72dd8db4f7691fe42b567eb5d6"
+        }
+      ],
+      "visuals": {
+        "left_wrist_pitch_link": [
+          {
+            "type": "mesh",
+            "attributes": {
+              "filename": "../meshes/HU_D04_01/left_wrist_pitch_link.STL"
+            },
+            "link_T_geometry": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "mesh_repository_path": "flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/meshes/HU_D04_01/left_wrist_pitch_link.STL",
+            "mesh_sha256": "76b99c5f53059abb1d07b77e3e076f200bfc1f91f1cf54f9258bb63785d74c7c"
+          }
+        ],
+        "left_wrist_roll_link": [
+          {
+            "type": "mesh",
+            "attributes": {
+              "filename": "../meshes/HU_D04_01/left_wrist_roll_link.STL"
+            },
+            "link_T_geometry": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "mesh_repository_path": "flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/meshes/HU_D04_01/left_wrist_roll_link.STL",
+            "mesh_sha256": "5aa0af4ccdaf46d498267b0fae247b8d547d8d72dd8db4f7691fe42b567eb5d6"
+          }
+        ]
+      },
+      "parent_T_child_at_zero": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.065
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "joint_axis_child": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "relative_transform_function": "parent_T_child(q) = parent_T_child_at_zero @ homogeneous(Rx(q), 0); NOT a fixed full transform",
+      "candidate_joint_angle_range_rad": [
+        -0.38127146454301136,
+        1.3716731759336378
+      ],
+      "analytic_common_point_child": [
+        0.00029347021336764744,
+        0.0,
+        0.0
+      ],
+      "independently_recomputed_interior_margins_raw": {
+        "cylinder_radial": 0.028999766301830283,
+        "cylinder_cap": 0.029706529879682413,
+        "hull_halfspace": 0.028706529786632354
+      },
+      "all_angle_nominal_intersection": true,
+      "interior_margins_are_not_penetration_depth": true,
+      "runtime_observations": [
+        {
+          "joint_path": "/World/envs/env_0/Robot/joints/left_wrist_roll_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_wrist_pitch_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_wrist_roll_link"
+          ],
+          "collision_enabled": {
+            "present": true,
+            "authored": false,
+            "value": false,
+            "time_samples": 0
+          },
+          "metadata_only": true,
+          "actual_filter_cause_proven": false,
+          "phase": "post_import.json",
+          "colliders": [
+            {
+              "path": "/World/envs/env_0/Robot/left_wrist_pitch_link/collisions/official_left_wrist_pitch_link_2/cylinder",
+              "type": "Cylinder",
+              "rigid_body_path": "/World/envs/env_0/Robot/left_wrist_pitch_link",
+              "instance_proxy": true,
+              "collision_enabled": {
+                "present": true,
+                "authored": false,
+                "value": true,
+                "time_samples": 0
+              },
+              "world_transform_gf_row_vector": [
+                [
+                  0.0007961938642395694,
+                  0.0,
+                  -0.999999683037615,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.999999683037615,
+                  0.0,
+                  0.0007961938642395694,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.21490000188350677,
+                  0.8772899769246578,
+                  1.0
+                ]
+              ],
+              "contact_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "rest_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "approximation": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "cooked_geometry_verified": false,
+              "radius": {
+                "present": true,
+                "authored": true,
+                "value": 0.028999999165534973,
+                "time_samples": 0
+              },
+              "height": {
+                "present": true,
+                "authored": true,
+                "value": 0.05999999865889549,
+                "time_samples": 0
+              },
+              "axis": {
+                "present": true,
+                "authored": true,
+                "value": "Z",
+                "time_samples": 0
+              },
+              "size": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "extent": {
+                "present": true,
+                "authored": true,
+                "value": [
+                  [
+                    -0.028999999165534973,
+                    -0.028999999165534973,
+                    -0.029999999329447746
+                  ],
+                  [
+                    0.028999999165534973,
+                    0.028999999165534973,
+                    0.029999999329447746
+                  ]
+                ],
+                "time_samples": 0
+              },
+              "xformOp:scale": {
+                "present": false,
+                "authored": false,
+                "value": null
+              }
+            },
+            {
+              "path": "/World/envs/env_0/Robot/left_wrist_roll_link/collisions/official_left_wrist_roll_link_1/node_STL_BINARY_",
+              "type": "Xform",
+              "rigid_body_path": "/World/envs/env_0/Robot/left_wrist_roll_link",
+              "instance_proxy": true,
+              "collision_enabled": {
+                "present": true,
+                "authored": false,
+                "value": true,
+                "time_samples": 0
+              },
+              "world_transform_gf_row_vector": [
+                [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.21490000188350677,
+                  0.8772899769246578,
+                  1.0
+                ]
+              ],
+              "contact_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "rest_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "approximation": {
+                "present": true,
+                "authored": true,
+                "value": "convexHull",
+                "time_samples": 0
+              },
+              "cooked_geometry_verified": false,
+              "radius": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "height": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "axis": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "size": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "extent": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "xformOp:scale": {
+                "present": true,
+                "authored": true,
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "time_samples": 0
+              }
+            }
+          ],
+          "cylinder_T_mesh_metadata": [
+            [
+              0.0007961938642395694,
+              0.0,
+              -0.999999683037615,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.9999996830376151,
+              0.0,
+              0.0007961938642395694,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_ids_or_cooked_vertices_bound": false
+        },
+        {
+          "joint_path": "/World/envs/env_0/Robot/joints/left_wrist_roll_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_wrist_pitch_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_wrist_roll_link"
+          ],
+          "collision_enabled": {
+            "present": true,
+            "authored": false,
+            "value": false,
+            "time_samples": 0
+          },
+          "metadata_only": true,
+          "actual_filter_cause_proven": false,
+          "phase": "post_clone.json",
+          "colliders": [
+            {
+              "path": "/World/envs/env_0/Robot/left_wrist_pitch_link/collisions/official_left_wrist_pitch_link_2/cylinder",
+              "type": "Cylinder",
+              "rigid_body_path": "/World/envs/env_0/Robot/left_wrist_pitch_link",
+              "instance_proxy": true,
+              "collision_enabled": {
+                "present": true,
+                "authored": false,
+                "value": true,
+                "time_samples": 0
+              },
+              "world_transform_gf_row_vector": [
+                [
+                  0.0007961938642395694,
+                  0.0,
+                  -0.999999683037615,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.999999683037615,
+                  0.0,
+                  0.0007961938642395694,
+                  0.0
+                ],
+                [
+                  2.0,
+                  0.21490000188350677,
+                  0.8772899769246578,
+                  1.0
+                ]
+              ],
+              "contact_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "rest_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "approximation": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "cooked_geometry_verified": false,
+              "radius": {
+                "present": true,
+                "authored": true,
+                "value": 0.028999999165534973,
+                "time_samples": 0
+              },
+              "height": {
+                "present": true,
+                "authored": true,
+                "value": 0.05999999865889549,
+                "time_samples": 0
+              },
+              "axis": {
+                "present": true,
+                "authored": true,
+                "value": "Z",
+                "time_samples": 0
+              },
+              "size": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "extent": {
+                "present": true,
+                "authored": true,
+                "value": [
+                  [
+                    -0.028999999165534973,
+                    -0.028999999165534973,
+                    -0.029999999329447746
+                  ],
+                  [
+                    0.028999999165534973,
+                    0.028999999165534973,
+                    0.029999999329447746
+                  ]
+                ],
+                "time_samples": 0
+              },
+              "xformOp:scale": {
+                "present": false,
+                "authored": false,
+                "value": null
+              }
+            },
+            {
+              "path": "/World/envs/env_0/Robot/left_wrist_roll_link/collisions/official_left_wrist_roll_link_1/node_STL_BINARY_",
+              "type": "Xform",
+              "rigid_body_path": "/World/envs/env_0/Robot/left_wrist_roll_link",
+              "instance_proxy": true,
+              "collision_enabled": {
+                "present": true,
+                "authored": false,
+                "value": true,
+                "time_samples": 0
+              },
+              "world_transform_gf_row_vector": [
+                [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  2.0,
+                  0.21490000188350677,
+                  0.8772899769246578,
+                  1.0
+                ]
+              ],
+              "contact_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "rest_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "approximation": {
+                "present": true,
+                "authored": true,
+                "value": "convexHull",
+                "time_samples": 0
+              },
+              "cooked_geometry_verified": false,
+              "radius": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "height": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "axis": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "size": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "extent": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "xformOp:scale": {
+                "present": true,
+                "authored": true,
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "time_samples": 0
+              }
+            }
+          ],
+          "cylinder_T_mesh_metadata": [
+            [
+              0.0007961938642395694,
+              0.0,
+              -0.999999683037615,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.9999996830376151,
+              0.0,
+              0.0007961938642395694,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_ids_or_cooked_vertices_bound": false
+        },
+        {
+          "joint_path": "/World/envs/env_0/Robot/joints/left_wrist_roll_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/left_wrist_pitch_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/left_wrist_roll_link"
+          ],
+          "collision_enabled": {
+            "present": true,
+            "authored": false,
+            "value": false,
+            "time_samples": 0
+          },
+          "metadata_only": true,
+          "actual_filter_cause_proven": false,
+          "phase": "post_physics_init.json",
+          "colliders": [
+            {
+              "path": "/World/envs/env_0/Robot/left_wrist_pitch_link/collisions/official_left_wrist_pitch_link_2/cylinder",
+              "type": "Cylinder",
+              "rigid_body_path": "/World/envs/env_0/Robot/left_wrist_pitch_link",
+              "instance_proxy": true,
+              "collision_enabled": {
+                "present": true,
+                "authored": false,
+                "value": true,
+                "time_samples": 0
+              },
+              "world_transform_gf_row_vector": [
+                [
+                  0.0007961938642395694,
+                  0.0,
+                  -0.999999683037615,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.999999683037615,
+                  0.0,
+                  0.0007961938642395694,
+                  0.0
+                ],
+                [
+                  2.0,
+                  0.21490000188350677,
+                  0.8772899769246578,
+                  1.0
+                ]
+              ],
+              "contact_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "rest_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "approximation": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "cooked_geometry_verified": false,
+              "radius": {
+                "present": true,
+                "authored": true,
+                "value": 0.028999999165534973,
+                "time_samples": 0
+              },
+              "height": {
+                "present": true,
+                "authored": true,
+                "value": 0.05999999865889549,
+                "time_samples": 0
+              },
+              "axis": {
+                "present": true,
+                "authored": true,
+                "value": "Z",
+                "time_samples": 0
+              },
+              "size": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "extent": {
+                "present": true,
+                "authored": true,
+                "value": [
+                  [
+                    -0.028999999165534973,
+                    -0.028999999165534973,
+                    -0.029999999329447746
+                  ],
+                  [
+                    0.028999999165534973,
+                    0.028999999165534973,
+                    0.029999999329447746
+                  ]
+                ],
+                "time_samples": 0
+              },
+              "xformOp:scale": {
+                "present": false,
+                "authored": false,
+                "value": null
+              }
+            },
+            {
+              "path": "/World/envs/env_0/Robot/left_wrist_roll_link/collisions/official_left_wrist_roll_link_1/node_STL_BINARY_",
+              "type": "Xform",
+              "rigid_body_path": "/World/envs/env_0/Robot/left_wrist_roll_link",
+              "instance_proxy": true,
+              "collision_enabled": {
+                "present": true,
+                "authored": false,
+                "value": true,
+                "time_samples": 0
+              },
+              "world_transform_gf_row_vector": [
+                [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  2.0,
+                  0.21490000188350677,
+                  0.8772899769246578,
+                  1.0
+                ]
+              ],
+              "contact_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "rest_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "approximation": {
+                "present": true,
+                "authored": true,
+                "value": "convexHull",
+                "time_samples": 0
+              },
+              "cooked_geometry_verified": false,
+              "radius": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "height": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "axis": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "size": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "extent": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "xformOp:scale": {
+                "present": true,
+                "authored": true,
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "time_samples": 0
+              }
+            }
+          ],
+          "cylinder_T_mesh_metadata": [
+            [
+              0.0007961938642395694,
+              0.0,
+              -0.999999683037615,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.9999996830376151,
+              0.0,
+              0.0007961938642395694,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_ids_or_cooked_vertices_bound": false
+        }
+      ],
+      "historical_measured_body_pair_channels": {
+        "articulated_left": {
+          "force_min": 0.0,
+          "force_max": 0.0,
+          "positive_force_steps": 0,
+          "minimum_contact_points": 0,
+          "maximum_contact_points": 0,
+          "positive_count_steps": 0
+        },
+        "detached_left": {
+          "force_min": 0.05422785505652428,
+          "force_max": 0.0573057159781456,
+          "positive_force_steps": 8,
+          "minimum_contact_points": 3,
+          "maximum_contact_points": 3,
+          "positive_count_steps": 8
+        }
+      },
+      "historical_gpu_task": "TASK_20261118_138",
+      "measured_shape_pair_cause_proven": false,
+      "actual_runtime_pair_enabled": "UNRESOLVED; USD intent disabled; historical articulated body-pair contact absent",
+      "nominal_penetration_depth_raw": null,
+      "physx_signed_separation_or_penetration_depth": null,
+      "depth_status": "NOT_MEASURED; neither contact force, count, nor interior slack is penetration depth",
+      "classification": "METADATA_DISABLED_AND_CONTEXT_DIFFERENCE_OBSERVED; three-way causal classification still unresolved",
+      "effective_pair_policy": "UNCHANGED_NO_EXCLUSIONS"
+    },
+    {
+      "first": "right_wrist_pitch_link#1",
+      "second": "right_wrist_roll_link#0",
+      "joint": "right_wrist_roll_joint",
+      "collision": [
+        {
+          "name": "official_right_wrist_pitch_link_2",
+          "type": "cylinder",
+          "attributes": {
+            "radius": "0.029",
+            "length": "0.06"
+          },
+          "link_T_geometry": [
+            [
+              0.0007963267107333194,
+              0.0,
+              0.9999996829318347,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              -0.9999996829318347,
+              0.0,
+              0.0007963267107333194,
+              -0.065
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "name": "official_right_wrist_roll_link_1",
+          "type": "mesh",
+          "attributes": {
+            "filename": "../meshes/HU_D04_01/right_wrist_roll_link.STL",
+            "scale": "1 1 1"
+          },
+          "link_T_geometry": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "mesh_repository_path": "flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/meshes/HU_D04_01/right_wrist_roll_link.STL",
+          "mesh_sha256": "e4804755e9991f05ad5389340e1e83ee1ef687a403896c21c0f785c28ff871fc"
+        }
+      ],
+      "visuals": {
+        "right_wrist_pitch_link": [
+          {
+            "type": "mesh",
+            "attributes": {
+              "filename": "../meshes/HU_D04_01/right_wrist_pitch_link.STL"
+            },
+            "link_T_geometry": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "mesh_repository_path": "flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/meshes/HU_D04_01/right_wrist_pitch_link.STL",
+            "mesh_sha256": "3c87d40c9f28e287328333b3342ea6292bbd20447b149a1986393789bd7e8b92"
+          }
+        ],
+        "right_wrist_roll_link": [
+          {
+            "type": "mesh",
+            "attributes": {
+              "filename": "../meshes/HU_D04_01/right_wrist_roll_link.STL"
+            },
+            "link_T_geometry": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "mesh_repository_path": "flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/meshes/HU_D04_01/right_wrist_roll_link.STL",
+            "mesh_sha256": "e4804755e9991f05ad5389340e1e83ee1ef687a403896c21c0f785c28ff871fc"
+          }
+        ]
+      },
+      "parent_T_child_at_zero": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.065
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "joint_axis_child": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "relative_transform_function": "parent_T_child(q) = parent_T_child_at_zero @ homogeneous(Rx(q), 0); NOT a fixed full transform",
+      "candidate_joint_angle_range_rad": [
+        -1.2691352546215058,
+        -0.3922553116083145
+      ],
+      "analytic_common_point_child": [
+        0.00029346872051323313,
+        0.0,
+        0.0
+      ],
+      "independently_recomputed_interior_margins_raw": {
+        "cylinder_radial": 0.028999766303019082,
+        "cylinder_cap": 0.029706531372536354,
+        "hull_halfspace": 0.028706531279486767
+      },
+      "all_angle_nominal_intersection": true,
+      "interior_margins_are_not_penetration_depth": true,
+      "runtime_observations": [
+        {
+          "joint_path": "/World/envs/env_0/Robot/joints/right_wrist_roll_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_wrist_pitch_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_wrist_roll_link"
+          ],
+          "collision_enabled": {
+            "present": true,
+            "authored": false,
+            "value": false,
+            "time_samples": 0
+          },
+          "metadata_only": true,
+          "actual_filter_cause_proven": false,
+          "phase": "post_import.json",
+          "colliders": [
+            {
+              "path": "/World/envs/env_0/Robot/right_wrist_pitch_link/collisions/official_right_wrist_pitch_link_2/cylinder",
+              "type": "Cylinder",
+              "rigid_body_path": "/World/envs/env_0/Robot/right_wrist_pitch_link",
+              "instance_proxy": true,
+              "collision_enabled": {
+                "present": true,
+                "authored": false,
+                "value": true,
+                "time_samples": 0
+              },
+              "world_transform_gf_row_vector": [
+                [
+                  0.0007961938642395694,
+                  0.0,
+                  -0.999999683037615,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.999999683037615,
+                  0.0,
+                  0.0007961938642395694,
+                  0.0
+                ],
+                [
+                  0.0,
+                  -0.21490000188350677,
+                  0.8772899769246578,
+                  1.0
+                ]
+              ],
+              "contact_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "rest_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "approximation": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "cooked_geometry_verified": false,
+              "radius": {
+                "present": true,
+                "authored": true,
+                "value": 0.028999999165534973,
+                "time_samples": 0
+              },
+              "height": {
+                "present": true,
+                "authored": true,
+                "value": 0.05999999865889549,
+                "time_samples": 0
+              },
+              "axis": {
+                "present": true,
+                "authored": true,
+                "value": "Z",
+                "time_samples": 0
+              },
+              "size": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "extent": {
+                "present": true,
+                "authored": true,
+                "value": [
+                  [
+                    -0.028999999165534973,
+                    -0.028999999165534973,
+                    -0.029999999329447746
+                  ],
+                  [
+                    0.028999999165534973,
+                    0.028999999165534973,
+                    0.029999999329447746
+                  ]
+                ],
+                "time_samples": 0
+              },
+              "xformOp:scale": {
+                "present": false,
+                "authored": false,
+                "value": null
+              }
+            },
+            {
+              "path": "/World/envs/env_0/Robot/right_wrist_roll_link/collisions/official_right_wrist_roll_link_1/node_STL_BINARY_",
+              "type": "Xform",
+              "rigid_body_path": "/World/envs/env_0/Robot/right_wrist_roll_link",
+              "instance_proxy": true,
+              "collision_enabled": {
+                "present": true,
+                "authored": false,
+                "value": true,
+                "time_samples": 0
+              },
+              "world_transform_gf_row_vector": [
+                [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  -0.21490000188350677,
+                  0.8772899769246578,
+                  1.0
+                ]
+              ],
+              "contact_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "rest_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "approximation": {
+                "present": true,
+                "authored": true,
+                "value": "convexHull",
+                "time_samples": 0
+              },
+              "cooked_geometry_verified": false,
+              "radius": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "height": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "axis": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "size": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "extent": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "xformOp:scale": {
+                "present": true,
+                "authored": true,
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "time_samples": 0
+              }
+            }
+          ],
+          "cylinder_T_mesh_metadata": [
+            [
+              0.0007961938642395694,
+              0.0,
+              -0.999999683037615,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.9999996830376151,
+              0.0,
+              0.0007961938642395694,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_ids_or_cooked_vertices_bound": false
+        },
+        {
+          "joint_path": "/World/envs/env_0/Robot/joints/right_wrist_roll_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_wrist_pitch_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_wrist_roll_link"
+          ],
+          "collision_enabled": {
+            "present": true,
+            "authored": false,
+            "value": false,
+            "time_samples": 0
+          },
+          "metadata_only": true,
+          "actual_filter_cause_proven": false,
+          "phase": "post_clone.json",
+          "colliders": [
+            {
+              "path": "/World/envs/env_0/Robot/right_wrist_pitch_link/collisions/official_right_wrist_pitch_link_2/cylinder",
+              "type": "Cylinder",
+              "rigid_body_path": "/World/envs/env_0/Robot/right_wrist_pitch_link",
+              "instance_proxy": true,
+              "collision_enabled": {
+                "present": true,
+                "authored": false,
+                "value": true,
+                "time_samples": 0
+              },
+              "world_transform_gf_row_vector": [
+                [
+                  0.0007961938642395694,
+                  0.0,
+                  -0.999999683037615,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.999999683037615,
+                  0.0,
+                  0.0007961938642395694,
+                  0.0
+                ],
+                [
+                  2.0,
+                  -0.21490000188350677,
+                  0.8772899769246578,
+                  1.0
+                ]
+              ],
+              "contact_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "rest_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "approximation": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "cooked_geometry_verified": false,
+              "radius": {
+                "present": true,
+                "authored": true,
+                "value": 0.028999999165534973,
+                "time_samples": 0
+              },
+              "height": {
+                "present": true,
+                "authored": true,
+                "value": 0.05999999865889549,
+                "time_samples": 0
+              },
+              "axis": {
+                "present": true,
+                "authored": true,
+                "value": "Z",
+                "time_samples": 0
+              },
+              "size": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "extent": {
+                "present": true,
+                "authored": true,
+                "value": [
+                  [
+                    -0.028999999165534973,
+                    -0.028999999165534973,
+                    -0.029999999329447746
+                  ],
+                  [
+                    0.028999999165534973,
+                    0.028999999165534973,
+                    0.029999999329447746
+                  ]
+                ],
+                "time_samples": 0
+              },
+              "xformOp:scale": {
+                "present": false,
+                "authored": false,
+                "value": null
+              }
+            },
+            {
+              "path": "/World/envs/env_0/Robot/right_wrist_roll_link/collisions/official_right_wrist_roll_link_1/node_STL_BINARY_",
+              "type": "Xform",
+              "rigid_body_path": "/World/envs/env_0/Robot/right_wrist_roll_link",
+              "instance_proxy": true,
+              "collision_enabled": {
+                "present": true,
+                "authored": false,
+                "value": true,
+                "time_samples": 0
+              },
+              "world_transform_gf_row_vector": [
+                [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  2.0,
+                  -0.21490000188350677,
+                  0.8772899769246578,
+                  1.0
+                ]
+              ],
+              "contact_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "rest_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "approximation": {
+                "present": true,
+                "authored": true,
+                "value": "convexHull",
+                "time_samples": 0
+              },
+              "cooked_geometry_verified": false,
+              "radius": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "height": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "axis": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "size": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "extent": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "xformOp:scale": {
+                "present": true,
+                "authored": true,
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "time_samples": 0
+              }
+            }
+          ],
+          "cylinder_T_mesh_metadata": [
+            [
+              0.0007961938642395694,
+              0.0,
+              -0.999999683037615,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.9999996830376151,
+              0.0,
+              0.0007961938642395694,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_ids_or_cooked_vertices_bound": false
+        },
+        {
+          "joint_path": "/World/envs/env_0/Robot/joints/right_wrist_roll_joint",
+          "body0": [
+            "/World/envs/env_0/Robot/right_wrist_pitch_link"
+          ],
+          "body1": [
+            "/World/envs/env_0/Robot/right_wrist_roll_link"
+          ],
+          "collision_enabled": {
+            "present": true,
+            "authored": false,
+            "value": false,
+            "time_samples": 0
+          },
+          "metadata_only": true,
+          "actual_filter_cause_proven": false,
+          "phase": "post_physics_init.json",
+          "colliders": [
+            {
+              "path": "/World/envs/env_0/Robot/right_wrist_pitch_link/collisions/official_right_wrist_pitch_link_2/cylinder",
+              "type": "Cylinder",
+              "rigid_body_path": "/World/envs/env_0/Robot/right_wrist_pitch_link",
+              "instance_proxy": true,
+              "collision_enabled": {
+                "present": true,
+                "authored": false,
+                "value": true,
+                "time_samples": 0
+              },
+              "world_transform_gf_row_vector": [
+                [
+                  0.0007961938642395694,
+                  0.0,
+                  -0.999999683037615,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.999999683037615,
+                  0.0,
+                  0.0007961938642395694,
+                  0.0
+                ],
+                [
+                  2.0,
+                  -0.21490000188350677,
+                  0.8772899769246578,
+                  1.0
+                ]
+              ],
+              "contact_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "rest_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "approximation": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "cooked_geometry_verified": false,
+              "radius": {
+                "present": true,
+                "authored": true,
+                "value": 0.028999999165534973,
+                "time_samples": 0
+              },
+              "height": {
+                "present": true,
+                "authored": true,
+                "value": 0.05999999865889549,
+                "time_samples": 0
+              },
+              "axis": {
+                "present": true,
+                "authored": true,
+                "value": "Z",
+                "time_samples": 0
+              },
+              "size": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "extent": {
+                "present": true,
+                "authored": true,
+                "value": [
+                  [
+                    -0.028999999165534973,
+                    -0.028999999165534973,
+                    -0.029999999329447746
+                  ],
+                  [
+                    0.028999999165534973,
+                    0.028999999165534973,
+                    0.029999999329447746
+                  ]
+                ],
+                "time_samples": 0
+              },
+              "xformOp:scale": {
+                "present": false,
+                "authored": false,
+                "value": null
+              }
+            },
+            {
+              "path": "/World/envs/env_0/Robot/right_wrist_roll_link/collisions/official_right_wrist_roll_link_1/node_STL_BINARY_",
+              "type": "Xform",
+              "rigid_body_path": "/World/envs/env_0/Robot/right_wrist_roll_link",
+              "instance_proxy": true,
+              "collision_enabled": {
+                "present": true,
+                "authored": false,
+                "value": true,
+                "time_samples": 0
+              },
+              "world_transform_gf_row_vector": [
+                [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  2.0,
+                  -0.21490000188350677,
+                  0.8772899769246578,
+                  1.0
+                ]
+              ],
+              "contact_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "rest_offset": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "approximation": {
+                "present": true,
+                "authored": true,
+                "value": "convexHull",
+                "time_samples": 0
+              },
+              "cooked_geometry_verified": false,
+              "radius": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "height": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "axis": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "size": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "extent": {
+                "present": false,
+                "authored": false,
+                "value": null
+              },
+              "xformOp:scale": {
+                "present": true,
+                "authored": true,
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "time_samples": 0
+              }
+            }
+          ],
+          "cylinder_T_mesh_metadata": [
+            [
+              0.0007961938642395694,
+              0.0,
+              -0.999999683037615,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.9999996830376151,
+              0.0,
+              0.0007961938642395694,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_ids_or_cooked_vertices_bound": false
+        }
+      ],
+      "historical_measured_body_pair_channels": {
+        "articulated_right": {
+          "force_min": 0.0,
+          "force_max": 0.0,
+          "positive_force_steps": 0,
+          "minimum_contact_points": 0,
+          "maximum_contact_points": 0,
+          "positive_count_steps": 0
+        },
+        "detached_right": {
+          "force_min": 0.06981199234724045,
+          "force_max": 0.06999599188566208,
+          "positive_force_steps": 8,
+          "minimum_contact_points": 3,
+          "maximum_contact_points": 3,
+          "positive_count_steps": 8
+        }
+      },
+      "historical_gpu_task": "TASK_20261118_138",
+      "measured_shape_pair_cause_proven": false,
+      "actual_runtime_pair_enabled": "UNRESOLVED; USD intent disabled; historical articulated body-pair contact absent",
+      "nominal_penetration_depth_raw": null,
+      "physx_signed_separation_or_penetration_depth": null,
+      "depth_status": "NOT_MEASURED; neither contact force, count, nor interior slack is penetration depth",
+      "classification": "METADATA_DISABLED_AND_CONTEXT_DIFFERENCE_OBSERVED; three-way causal classification still unresolved",
+      "effective_pair_policy": "UNCHANGED_NO_EXCLUSIONS"
+    }
+  ],
+  "frozen_candidate_sha256": "2b4070e32e3a5f120caea7942b42e91a6f31bbca9e0b6d7e8e135b50803ad2f4",
+  "prior_task366_failed_exit_minus11_retained": true,
+  "task138_cooked_equivalence_and_filter_causality_unresolved": true,
+  "input_files_sha256": {
+    "flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/urdf/HU_D04_01_fixed_head_body_collision.urdf": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+    "integrations/instinctlab_hud04/experimental/pair_feasibility_obstruction_20261118/INVARIANT_WRIST_OBSTRUCTION.json": "21806d623de424d88c3a21f90082c2467ea9d92b3cd26cb53692ae23b49e7efa",
+    "integrations/instinctlab_hud04/experimental/pair_feasibility_obstruction_20261118/BOUND_PAIR_POLICY_EVIDENCE.json": "bafc7870e6e659d40a3b1e60d56fa5626ceb49e5e02c1043ab69f6db65a054fb",
+    "integrations/instinctlab_hud04/experimental/import_observation_20261117/recovered_failure_evidence_20261117/post_import.json": "41c5826335c5ff3ec0decb382bac0de399d97cf96a90dad570ff1547a2f96082",
+    "integrations/instinctlab_hud04/experimental/import_observation_20261117/recovered_failure_evidence_20261117/post_clone.json": "12c7e7f9e91d367abba3d8fc78b15266029d8e6555f52cfd2a445848a303289a",
+    "integrations/instinctlab_hud04/experimental/import_observation_20261117/recovered_failure_evidence_20261117/post_physics_init.json": "b6c078d5c04cb348b371d3cb3150b96cfb301478b31bc41746b982b363c7732b",
+    "integrations/instinctlab_hud04/experimental/physx_detached_wrist_v2_20261118/measured_task138/INDEPENDENT_MEASURED_REVIEW.json": "3ede56d7aeed457a6fc7007e04fe0c56d97dc25185bb78e8b05c434bf8fb8b19",
+    "integrations/instinctlab_hud04/experimental/physx_detached_wrist_v2_20261118/measured_task138/contact_report.json": "8ea43578e2f16930efb7115d66059b61095d4ae302c948feece369dc136e0cea",
+    "integrations/instinctlab_hud04/experimental/physx_detached_wrist_v2_20261118/measured_task138/supervisor_result.json": "495258a0611b05beb803484b9fa06dc6e3fdf90d29d5d8fc4596be547fce9b63",
+    "integrations/instinctlab_hud04/experimental/material_trajectory_v1/TRIAL_MATERIAL_003_FULL_SEQUENCE/INDEPENDENT_VERIFICATION.json": "f47e329d3de7113b1103262ccc8b922bdfecc8c507a7194f754144693b65f83a",
+    "integrations/instinctlab_hud04/experimental/material_trajectory_v1/TRIAL_MATERIAL_003_FULL_SEQUENCE/FULL997_ENGINEERING_CANDIDATE_UNACCEPTED.npz": "2b4070e32e3a5f120caea7942b42e91a6f31bbca9e0b6d7e8e135b50803ad2f4",
+    "integrations/instinctlab_hud04/experimental/material_trajectory_v1/TRIAL_MATERIAL_003_FULL_SEQUENCE/STEP1_READER_LAYOUT_UNACCEPTED.npz": "851f88daf394fe38144b40379219aba61375e8ccbab05b6309f4df3f4764a32e",
+    "integrations/instinctlab_hud04/experimental/material_trajectory_v1/TRIAL_MATERIAL_003_FULL_SEQUENCE/RESULT.json": "d6923575d16def65e2380299aaebdfbafed1788e6c6e6b5109509682fcbecc73",
+    "integrations/instinctlab_hud04/experimental/material_trajectory_v1/TRIAL_MATERIAL_003_FULL_SEQUENCE/INTENT.json": "8cc1fad38300db44b0056b824c62b50c7de377962a0ca7736186dbe136097b4d",
+    "flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/urdf/../meshes/HU_D04_01/left_wrist_roll_link.STL": "5aa0af4ccdaf46d498267b0fae247b8d547d8d72dd8db4f7691fe42b567eb5d6",
+    "flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/urdf/../meshes/HU_D04_01/right_wrist_roll_link.STL": "e4804755e9991f05ad5389340e1e83ee1ef687a403896c21c0f785c28ff871fc",
+    "flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/meshes/HU_D04_01/left_wrist_pitch_link.STL": "76b99c5f53059abb1d07b77e3e076f200bfc1f91f1cf54f9258bb63785d74c7c",
+    "flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/meshes/HU_D04_01/left_wrist_roll_link.STL": "5aa0af4ccdaf46d498267b0fae247b8d547d8d72dd8db4f7691fe42b567eb5d6",
+    "flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/meshes/HU_D04_01/right_wrist_pitch_link.STL": "3c87d40c9f28e287328333b3342ea6292bbd20447b149a1986393789bd7e8b92",
+    "flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/meshes/HU_D04_01/right_wrist_roll_link.STL": "e4804755e9991f05ad5389340e1e83ee1ef687a403896c21c0f785c28ff871fc"
+  },
+  "source_motion_modified": false,
+  "automatic_pair_exclusions": 0,
+  "optimizer_calls": 0,
+  "gpu_submissions": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false,
+  "training_ready": false
+}
