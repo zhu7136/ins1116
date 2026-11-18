@@ -1,0 +1,1018 @@
+{
+  "schema": "hud04.engineering_reference.v1",
+  "status": "engineering_definitions_and_PROPOSED_supports_NOT_accepted_reference",
+  "authorization": {
+    "time_utc": "2026-11-18T03:15:07Z",
+    "decision": "允许工程重建（推荐）；保留原始动作规格、模型限值和严格物理验收，不把估计当原始标注",
+    "scope": "New engineering definitions allowed, NOT physical acceptance or pair exemptions"
+  },
+  "source_provenance_recovered": false,
+  "input_sha256": {
+    "/workspace/InstinctLab/source/instinctlab/instinctlab/assets/resources/unitree_g1/urdf/g1_29dof_torsobase_popsicle.urdf": "5e99d930af64f3f0bfd34235239e288cc380ba62c8b01fcfcf8cc9f0996e7fa4",
+    "/workspace/ins1116-gate-review-20261118/flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/urdf/HU_D04_01_fixed_head_body_collision.urdf": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+    "/workspace/hud04-original-drive-20261118/kneelClimbStep1-x-0.1-ziwen-retargeted.npz": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+    "/workspace/hud04-original-drive-20261118/50cmboxes_19_36_49.stl": "3aee33efea6793974d901dd0f7e46859e2d12d2dfd79f38f12c777686566c2de"
+  },
+  "code_sha256": {
+    "integrations/instinctlab_hud04/experimental/engineering_reference_v1/reconstruction.py": "632ad56094b4c1310082fec0135a58c252400a68d69890ea0bc59616c8becb5e",
+    "integrations/instinctlab_hud04/experimental/direction_solve_20261118/anatomical_directions.py": "23660e03d2fbe7b1e0e334c47b506e9c07e4c8931430bd6f6c3afc762159587d",
+    "integrations/instinctlab_hud04/experimental/nonlinear_guard_20261118/box_triangle_guard.py": "f69a24efb4ccf34e82c53d9c45fb71b1dca6555aba97663bca920d38b6d0a797",
+    "integrations/instinctlab_hud04/kinematic_diagnostics.py": "943b63605c4e837451a47eee87fa754ac04d72afcef02fe8904c77252b438696",
+    "integrations/instinctlab_hud04/terrain_surface_geometry.py": "a00dd17e8e3a4cf1534397d46a28fc48e5e4422384dc1de1964b0ca9a6bd0ea4"
+  },
+  "retained": {
+    "frames": 997,
+    "framerate_hz": 90,
+    "body_actions": 29,
+    "head_policy_dof": 0,
+    "head_fixed_at_model_zero": true,
+    "original_joint_velocity_effort_limits": true,
+    "original_geometry_unchanged": true
+  },
+  "scene": {
+    "role": "NEW engineering world definition; NOT recovered export calibration",
+    "units": "metres by explicit new engineering convention",
+    "source_root_link": "torso_link",
+    "source_quaternion_order": "wxyz",
+    "world_up": "+Z",
+    "source_to_engineering_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "terrain_to_engineering_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "crop_xy_m": [
+      9.0,
+      12.0
+    ],
+    "crop_caps_added": false,
+    "terrain_triangles": 8068,
+    "runtime_import_or_scene_equivalence_verified": false,
+    "source_units_original_export_verified": false,
+    "source_consumer_common_terrain_motion_shift_cancels": true
+  },
+  "materials": [
+    {
+      "label": "left_sole",
+      "source_link": "left_ankle_roll_link",
+      "target_link": "left_ankle_roll_link",
+      "source_T_link_material": [
+        [
+          1.0,
+          0.0,
+          1.0167239606370284e-17,
+          -0.0539999999993726
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0167239606370284e-17,
+          0.0,
+          -1.0,
+          -0.03500034160807462
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_T_link_material": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.018
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          -0.0635
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_definition": "unchanged nominal box bottom-face centre",
+      "source_definition": "fixed engineering support point on consumer capsule; matched ZERO-anatomical normal and tangent",
+      "source_collision_index": 3,
+      "source_membership_residual_m": 3.469446951953614e-18,
+      "target_membership_residual_m": 0.0,
+      "source_truth": false
+    },
+    {
+      "label": "left_palm",
+      "source_link": "left_wrist_yaw_link",
+      "target_link": "left_wrist_roll_link",
+      "source_T_link_material": [
+        [
+          0.987092738467192,
+          -5.987883590650479e-05,
+          -0.16014968648069405,
+          0.04199251567613395
+        ],
+        [
+          -0.160094487339972,
+          0.02588682446043082,
+          -0.9867621939670705,
+          -0.04933810969835353
+        ],
+        [
+          0.004204852992810055,
+          0.9996648782136341,
+          0.025543110175329186,
+          0.001277063678638874
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_T_link_material": [
+        [
+          0.9870622768342268,
+          0.0,
+          -0.16033733704546835,
+          -0.007628204300999641
+        ],
+        [
+          -0.16028385354519092,
+          0.02582684499518722,
+          -0.9867330238571619,
+          -0.03541235874096552
+        ],
+        [
+          0.0041410075508144005,
+          0.9996664314047934,
+          0.025492704424394157,
+          -0.12693219996678332
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_definition": "engineered hand contact frame on unchanged nominal convex-hull face, not anatomical palm calibration",
+      "source_definition": "fixed engineering support point on consumer capsule; matched ZERO-anatomical normal and tangent",
+      "source_collision_index": 0,
+      "source_membership_residual_m": 6.938893903907228e-18,
+      "target_membership_residual_m": 0.0,
+      "source_truth": false,
+      "mesh_sha256": "5aa0af4ccdaf46d498267b0fae247b8d547d8d72dd8db4f7691fe42b567eb5d6",
+      "selected_face_area_m2": 0.007191652227579471,
+      "selection": "largest coplanar nominal convex-hull face; lexicographic plane breaks ties",
+      "is_measured_anatomical_palm": false,
+      "physx_cooked_face_verified": false
+    },
+    {
+      "label": "left_knee",
+      "source_link": "left_knee_link",
+      "target_link": "left_knee_link",
+      "source_T_link_material": [
+        [
+          0.0,
+          1.0167239606370284e-17,
+          1.0,
+          0.07
+        ],
+        [
+          1.0,
+          -0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -1.0167239606370284e-17,
+          -0.1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_T_link_material": [
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.06397667833055594
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.06069941686107638
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_definition": "forward +X point of proximal unchanged knee cap sphere",
+      "source_definition": "fixed engineering support point on consumer capsule; matched ZERO-anatomical normal and tangent",
+      "source_collision_index": 0,
+      "source_membership_residual_m": 0.0,
+      "target_membership_residual_m": 0.0,
+      "source_truth": false,
+      "target_collision_index": 2
+    },
+    {
+      "label": "right_sole",
+      "source_link": "right_ankle_roll_link",
+      "target_link": "right_ankle_roll_link",
+      "source_T_link_material": [
+        [
+          1.0,
+          0.0,
+          1.0167239606370284e-17,
+          -0.0539999999993726
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0167239606370284e-17,
+          0.0,
+          -1.0,
+          -0.03500034160807462
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_T_link_material": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.018
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          -0.0635
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_definition": "unchanged nominal box bottom-face centre",
+      "source_definition": "fixed engineering support point on consumer capsule; matched ZERO-anatomical normal and tangent",
+      "source_collision_index": 3,
+      "source_membership_residual_m": 3.469446951953614e-18,
+      "target_membership_residual_m": 0.0,
+      "source_truth": false
+    },
+    {
+      "label": "right_palm",
+      "source_link": "right_wrist_yaw_link",
+      "target_link": "right_wrist_roll_link",
+      "source_T_link_material": [
+        [
+          0.9870723391757301,
+          6.033943528652337e-05,
+          -0.16027536801799916,
+          0.041986231599268696
+        ],
+        [
+          0.1602094438301363,
+          0.028309705010817775,
+          0.9866769961389791,
+          0.04933384980694896
+        ],
+        [
+          0.0045968839218470435,
+          -0.999599198159619,
+          0.027934059799034506,
+          0.00139661115982414
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_T_link_material": [
+        [
+          0.9870418770554777,
+          0.0,
+          -0.1604628709041412,
+          -0.007553282504280408
+        ],
+        [
+          0.1603988296507207,
+          0.028249729526484312,
+          0.9866479454336079,
+          0.03539248928427696
+        ],
+        [
+          0.0045330327020851584,
+          -0.9996008967491379,
+          0.02788366605813063,
+          -0.1256137959038218
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_definition": "engineered hand contact frame on unchanged nominal convex-hull face, not anatomical palm calibration",
+      "source_definition": "fixed engineering support point on consumer capsule; matched ZERO-anatomical normal and tangent",
+      "source_collision_index": 0,
+      "source_membership_residual_m": 0.0,
+      "target_membership_residual_m": 6.938893903907228e-18,
+      "source_truth": false,
+      "mesh_sha256": "e4804755e9991f05ad5389340e1e83ee1ef687a403896c21c0f785c28ff871fc",
+      "selected_face_area_m2": 0.007050537134812106,
+      "selection": "largest coplanar nominal convex-hull face; lexicographic plane breaks ties",
+      "is_measured_anatomical_palm": false,
+      "physx_cooked_face_verified": false
+    },
+    {
+      "label": "right_knee",
+      "source_link": "right_knee_link",
+      "target_link": "right_knee_link",
+      "source_T_link_material": [
+        [
+          0.0,
+          1.0167239606370284e-17,
+          1.0,
+          0.07
+        ],
+        [
+          1.0,
+          -0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -1.0167239606370284e-17,
+          -0.1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_T_link_material": [
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.06397667833055594
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.06069941686107638
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "target_definition": "forward +X point of proximal unchanged knee cap sphere",
+      "source_definition": "fixed engineering support point on consumer capsule; matched ZERO-anatomical normal and tangent",
+      "source_collision_index": 0,
+      "source_membership_residual_m": 0.0,
+      "target_membership_residual_m": 0.0,
+      "source_truth": false,
+      "target_collision_index": 2
+    }
+  ],
+  "support_proposal_rules": {
+    "max_surface_distance_m": 0.035,
+    "max_material_speed_m_s": 0.25,
+    "max_normal_error_deg": 45.0,
+    "min_consecutive_frames": 4,
+    "max_window_point_spread_m": 0.06,
+    "min_upward_surface_normal_z": 0.7071067811865476,
+    "max_tied_normal_disagreement_deg": 1.0,
+    "nearest_distance_tie_tolerance_m": 1e-09
+  },
+  "supports": {
+    "left_sole": {
+      "proposed_windows": [
+        {
+          "first": 0,
+          "last": 53,
+          "target_world_anchor_m": [
+            0.007600760476735284,
+            0.02848645724850002,
+            0.0007000012035551792
+          ],
+          "cropped_triangle_id": 5114,
+          "max_point_spread_m": 0.0028968335839724816,
+          "max_source_distance_m": 0.008271048081160333,
+          "max_source_speed_m_s": 0.1451910960074941,
+          "raw_stl_triangle_id": 5117
+        },
+        {
+          "first": 126,
+          "last": 169,
+          "target_world_anchor_m": [
+            0.006820773352172742,
+            -0.5480009695373712,
+            0.0006996265803548354
+          ],
+          "cropped_triangle_id": 3352,
+          "max_point_spread_m": 0.016401877584395107,
+          "max_source_distance_m": 0.011260101819683718,
+          "max_source_speed_m_s": 0.24889245643008626,
+          "raw_stl_triangle_id": 3355
+        },
+        {
+          "first": 356,
+          "last": 405,
+          "target_world_anchor_m": [
+            0.21227983118461702,
+            -1.3037456869884865,
+            0.503270878913433
+          ],
+          "cropped_triangle_id": 2059,
+          "max_point_spread_m": 0.013437198261769763,
+          "max_source_distance_m": 0.03448863806756469,
+          "max_source_speed_m_s": 0.24752438581802014,
+          "raw_stl_triangle_id": 2062
+        },
+        {
+          "first": 409,
+          "last": 413,
+          "target_world_anchor_m": [
+            0.2126274733182738,
+            -1.299269879510594,
+            0.5032775380910138
+          ],
+          "cropped_triangle_id": 2059,
+          "max_point_spread_m": 0.000785320059157148,
+          "max_source_distance_m": 0.03460704443262468,
+          "max_source_speed_m_s": 0.1830368866103706,
+          "raw_stl_triangle_id": 2062
+        },
+        {
+          "first": 474,
+          "last": 480,
+          "target_world_anchor_m": [
+            0.1962158773679998,
+            -1.3212410950184752,
+            0.503322043136566
+          ],
+          "cropped_triangle_id": 2059,
+          "max_point_spread_m": 0.0005387279139562293,
+          "max_source_distance_m": 0.032853457936527546,
+          "max_source_speed_m_s": 0.04975295014662675,
+          "raw_stl_triangle_id": 2062
+        },
+        {
+          "first": 810,
+          "last": 820,
+          "target_world_anchor_m": [
+            0.1868156569102026,
+            -2.4961766051284493,
+            0.0006998908520819865
+          ],
+          "cropped_triangle_id": 5990,
+          "max_point_spread_m": 0.000748129331375425,
+          "max_source_distance_m": 0.02838611301908882,
+          "max_source_speed_m_s": 0.07380481235924094,
+          "raw_stl_triangle_id": 5994
+        },
+        {
+          "first": 823,
+          "last": 996,
+          "target_world_anchor_m": [
+            0.17942473092808475,
+            -2.494921619820043,
+            0.0006998909068693486
+          ],
+          "cropped_triangle_id": 5990,
+          "max_point_spread_m": 0.0026204938373947514,
+          "max_source_distance_m": 0.029649125792979004,
+          "max_source_speed_m_s": 0.11783384710802643,
+          "raw_stl_triangle_id": 5994
+        }
+      ],
+      "rejected_windows": [],
+      "geometric_eligible_frames": 349,
+      "ambiguous_nearest_surface_normals_frames": 10,
+      "median_distance_m": 0.04359148970894499,
+      "min_distance_m": 2.7930516043536067e-05,
+      "max_distance_m": 0.4582366548199684,
+      "median_speed_m_s": 0.2587778913379921,
+      "observed_contact": false,
+      "validated_support": false
+    },
+    "left_palm": {
+      "proposed_windows": [],
+      "rejected_windows": [],
+      "geometric_eligible_frames": 0,
+      "ambiguous_nearest_surface_normals_frames": 199,
+      "median_distance_m": 0.6738965632804342,
+      "min_distance_m": 0.050521485455106374,
+      "max_distance_m": 1.0788582379760954,
+      "median_speed_m_s": 0.448074582139957,
+      "observed_contact": false,
+      "validated_support": false
+    },
+    "left_knee": {
+      "proposed_windows": [
+        {
+          "first": 643,
+          "last": 646,
+          "target_world_anchor_m": [
+            0.2499439549802683,
+            -2.2985394878911514,
+            0.0006998994897689007
+          ],
+          "cropped_triangle_id": 5990,
+          "max_point_spread_m": 0.0031652169148111676,
+          "max_source_distance_m": 0.004093946585834785,
+          "max_source_speed_m_s": 0.21613038959148803,
+          "raw_stl_triangle_id": 5994
+        },
+        {
+          "first": 656,
+          "last": 661,
+          "target_world_anchor_m": [
+            0.2594829998077411,
+            -2.318026779924318,
+            0.0006998986382055006
+          ],
+          "cropped_triangle_id": 5990,
+          "max_point_spread_m": 0.0021995629056835563,
+          "max_source_distance_m": 0.005166091945026457,
+          "max_source_speed_m_s": 0.1846639540107357,
+          "raw_stl_triangle_id": 5994
+        },
+        {
+          "first": 675,
+          "last": 716,
+          "target_world_anchor_m": [
+            0.2079824794654954,
+            -2.3102198388320065,
+            0.0006998989789799509
+          ],
+          "cropped_triangle_id": 5990,
+          "max_point_spread_m": 0.007763621643178046,
+          "max_source_distance_m": 0.023368663815465616,
+          "max_source_speed_m_s": 0.24632270753231253,
+          "raw_stl_triangle_id": 5994
+        }
+      ],
+      "rejected_windows": [],
+      "geometric_eligible_frames": 52,
+      "ambiguous_nearest_surface_normals_frames": 56,
+      "median_distance_m": 0.2599320387428803,
+      "min_distance_m": 0.00024360657871011547,
+      "max_distance_m": 0.5731563067554692,
+      "median_speed_m_s": 0.3281140718989202,
+      "observed_contact": false,
+      "validated_support": false
+    },
+    "right_sole": {
+      "proposed_windows": [
+        {
+          "first": 0,
+          "last": 89,
+          "target_world_anchor_m": [
+            -0.20357789964829978,
+            0.020955564375445417,
+            0.000700000889151244
+          ],
+          "cropped_triangle_id": 5119,
+          "max_point_spread_m": 0.0034234404200923323,
+          "max_source_distance_m": 0.00630012784386174,
+          "max_source_speed_m_s": 0.11998393942197681,
+          "raw_stl_triangle_id": 5122
+        },
+        {
+          "first": 94,
+          "last": 115,
+          "target_world_anchor_m": [
+            -0.20162404943691575,
+            0.027800313070436525,
+            0.0007000011865312093
+          ],
+          "cropped_triangle_id": 5119,
+          "max_point_spread_m": 0.002095038576506628,
+          "max_source_distance_m": 0.01937795644144336,
+          "max_source_speed_m_s": 0.21127446543943784,
+          "raw_stl_triangle_id": 5122
+        },
+        {
+          "first": 497,
+          "last": 532,
+          "target_world_anchor_m": [
+            -0.041241929963059934,
+            -1.4382491668410637,
+            0.5036943123314374
+          ],
+          "cropped_triangle_id": 2104,
+          "max_point_spread_m": 0.004496053719318223,
+          "max_source_distance_m": 0.03472698346113034,
+          "max_source_speed_m_s": 0.16088915527927064,
+          "raw_stl_triangle_id": 2107
+        },
+        {
+          "first": 546,
+          "last": 555,
+          "target_world_anchor_m": [
+            -0.03651596995860069,
+            -1.4307994338610541,
+            0.5036934829279927
+          ],
+          "cropped_triangle_id": 2104,
+          "max_point_spread_m": 0.0007294123206221146,
+          "max_source_distance_m": 0.0343865854319058,
+          "max_source_speed_m_s": 0.12267139915834974,
+          "raw_stl_triangle_id": 2107
+        },
+        {
+          "first": 705,
+          "last": 725,
+          "target_world_anchor_m": [
+            0.034417743075152635,
+            -2.4726904476128606,
+            0.0006998918772772034
+          ],
+          "cropped_triangle_id": 5990,
+          "max_point_spread_m": 0.0014739879775484879,
+          "max_source_distance_m": 0.0348474981512909,
+          "max_source_speed_m_s": 0.16462071795362287,
+          "raw_stl_triangle_id": 5994
+        },
+        {
+          "first": 741,
+          "last": 756,
+          "target_world_anchor_m": [
+            0.039727432119449464,
+            -2.476918094508451,
+            0.0006998916925613913
+          ],
+          "cropped_triangle_id": 5990,
+          "max_point_spread_m": 0.005401906075053423,
+          "max_source_distance_m": 0.03489102228285586,
+          "max_source_speed_m_s": 0.14270301669552501,
+          "raw_stl_triangle_id": 5994
+        },
+        {
+          "first": 759,
+          "last": 996,
+          "target_world_anchor_m": [
+            0.04675187479427008,
+            -2.478214030309811,
+            0.0006998916359815185
+          ],
+          "cropped_triangle_id": 5990,
+          "max_point_spread_m": 0.007864644944439314,
+          "max_source_distance_m": 0.028607107793554885,
+          "max_source_speed_m_s": 0.24624842359699373,
+          "raw_stl_triangle_id": 5994
+        }
+      ],
+      "rejected_windows": [],
+      "geometric_eligible_frames": 433,
+      "ambiguous_nearest_surface_normals_frames": 29,
+      "median_distance_m": 0.03754754548864121,
+      "min_distance_m": 4.97925372464441e-05,
+      "max_distance_m": 0.46409282873551116,
+      "median_speed_m_s": 0.10719096188416488,
+      "observed_contact": false,
+      "validated_support": false
+    },
+    "right_palm": {
+      "proposed_windows": [
+        {
+          "first": 266,
+          "last": 272,
+          "target_world_anchor_m": [
+            -0.30510799141133776,
+            -1.431208094627535,
+            0.5034604308254667
+          ],
+          "cropped_triangle_id": 2109,
+          "max_point_spread_m": 0.006724445229778375,
+          "max_source_distance_m": 0.003644815616486973,
+          "max_source_speed_m_s": 0.24629937016714187,
+          "raw_stl_triangle_id": 2112
+        },
+        {
+          "first": 275,
+          "last": 279,
+          "target_world_anchor_m": [
+            -0.30596461910501044,
+            -1.4353205242499771,
+            0.5034426595427396
+          ],
+          "cropped_triangle_id": 2109,
+          "max_point_spread_m": 0.003941041982806238,
+          "max_source_distance_m": 0.0023173313735482233,
+          "max_source_speed_m_s": 0.19155810206523508,
+          "raw_stl_triangle_id": 2112
+        },
+        {
+          "first": 282,
+          "last": 301,
+          "target_world_anchor_m": [
+            -0.2904873496464119,
+            -1.4459277246439026,
+            0.5034388050204157
+          ],
+          "cropped_triangle_id": 2109,
+          "max_point_spread_m": 0.011053557789796782,
+          "max_source_distance_m": 0.02938147791512324,
+          "max_source_speed_m_s": 0.2196958744476429,
+          "raw_stl_triangle_id": 2112
+        }
+      ],
+      "rejected_windows": [],
+      "geometric_eligible_frames": 33,
+      "ambiguous_nearest_surface_normals_frames": 33,
+      "median_distance_m": 0.6719891751358795,
+      "min_distance_m": 8.293395559583166e-06,
+      "max_distance_m": 0.8500204331968766,
+      "median_speed_m_s": 0.46954164987731284,
+      "observed_contact": false,
+      "validated_support": false
+    },
+    "right_knee": {
+      "proposed_windows": [
+        {
+          "first": 264,
+          "last": 270,
+          "target_world_anchor_m": [
+            -0.1273024799974235,
+            -1.069359125257788,
+            0.4897854476691625
+          ],
+          "cropped_triangle_id": 5375,
+          "max_point_spread_m": 0.004731013897089167,
+          "max_source_distance_m": 0.031714622617426136,
+          "max_source_speed_m_s": 0.24298421308322035,
+          "raw_stl_triangle_id": 5379
+        },
+        {
+          "first": 289,
+          "last": 316,
+          "target_world_anchor_m": [
+            -0.11093195121123436,
+            -1.0690496366700533,
+            0.490084201019167
+          ],
+          "cropped_triangle_id": 5375,
+          "max_point_spread_m": 0.0033111290847710846,
+          "max_source_distance_m": 0.022192137374883052,
+          "max_source_speed_m_s": 0.15528569397409395,
+          "raw_stl_triangle_id": 5379
+        },
+        {
+          "first": 319,
+          "last": 341,
+          "target_world_anchor_m": [
+            -0.10006133998794216,
+            -1.0695698360512425,
+            0.49073344702697475
+          ],
+          "cropped_triangle_id": 5375,
+          "max_point_spread_m": 0.004816683315070191,
+          "max_source_distance_m": 0.03483525013980574,
+          "max_source_speed_m_s": 0.24887596732971037,
+          "raw_stl_triangle_id": 5379
+        },
+        {
+          "first": 389,
+          "last": 398,
+          "target_world_anchor_m": [
+            -0.1202335489057241,
+            -1.107979318980902,
+            0.5036372473179466
+          ],
+          "cropped_triangle_id": 2095,
+          "max_point_spread_m": 0.003450303555252157,
+          "max_source_distance_m": 0.03489911292648539,
+          "max_source_speed_m_s": 0.21605688829438882,
+          "raw_stl_triangle_id": 2098
+        }
+      ],
+      "rejected_windows": [],
+      "geometric_eligible_frames": 68,
+      "ambiguous_nearest_surface_normals_frames": 28,
+      "median_distance_m": 0.25331591242768103,
+      "min_distance_m": 0.00189728736561545,
+      "max_distance_m": 0.6422398419988857,
+      "median_speed_m_s": 0.14247052930381607,
+      "observed_contact": false,
+      "validated_support": false
+    }
+  },
+  "support_plan_is_observed_contact": false,
+  "support_plan_dynamics_verified": false,
+  "no_proposed_support_does_not_imply_flight": true,
+  "unassigned_intervals": [
+    [
+      90,
+      93
+    ],
+    [
+      116,
+      125
+    ],
+    [
+      170,
+      263
+    ],
+    [
+      273,
+      274
+    ],
+    [
+      280,
+      281
+    ],
+    [
+      317,
+      318
+    ],
+    [
+      342,
+      355
+    ],
+    [
+      406,
+      408
+    ],
+    [
+      414,
+      473
+    ],
+    [
+      481,
+      496
+    ],
+    [
+      533,
+      545
+    ],
+    [
+      556,
+      642
+    ],
+    [
+      647,
+      655
+    ],
+    [
+      662,
+      674
+    ],
+    [
+      726,
+      740
+    ],
+    [
+      757,
+      758
+    ]
+  ],
+  "frames_with_no_proposed_support": 346,
+  "frames_with_multiple_proposed_supports": 279,
+  "collision_policy": {
+    "automatic_pair_exclusions": [],
+    "collision_exemptions_authorized": [],
+    "wrist_nominal_all_angle_overlap_requires_runtime_cooking_and_pair_policy_evidence": true,
+    "original_geometry_edited": false,
+    "geometry_proximity_does_not_establish_contact": true,
+    "all43_shapes_and8068_finite_triangles_still_required": true,
+    "nominal_invariant_overlap_is_not_a_clearance_or_impossible_robot_motion_claim": true
+  },
+  "acceptance": {
+    "accepted_reference": false,
+    "training_ready": false,
+    "ppo_updates": 0,
+    "required": [
+      "35D root+body constrained trajectory solve",
+      "finite-material target anchoring and no-slip feasibility",
+      "all original position/velocity/effort limits",
+      "native997 continuity and between-frame collision",
+      "explicit runtime collision pair and cooked geometry evidence",
+      "full-body terrain and self-collision validation without automatic exclusions",
+      "997-frame replay, contact forces, friction, torque and floating-base dynamics",
+      "independent verifier against pinned inputs and recorded plan"
+    ]
+  },
+  "counters": {
+    "gpu_submissions": 0,
+    "ppo_updates": 0,
+    "motion_optimizer_calls": 0,
+    "new_motion_files": 0
+  }
+}

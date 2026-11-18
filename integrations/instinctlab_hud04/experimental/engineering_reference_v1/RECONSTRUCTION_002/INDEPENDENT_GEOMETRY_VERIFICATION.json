@@ -1,0 +1,20 @@
+{
+  "stage": "independent_reconstruction_GEOMETRY_only_not_physics",
+  "passed": true,
+  "materials": 6,
+  "proposed_windows": 24,
+  "unassigned_frames": 346,
+  "max_material_membership_residual_m": 6.938893903907228e-18,
+  "max_source_world_transform_component_difference": 1.3322676295501878e-15,
+  "max_finite_triangle_anchor_residual_m": 5.551115123125783e-17,
+  "independent_FK_reader": "RobotTree, not generator DirectionModel",
+  "all5982_material_frame_surface_queries_recomputed": true,
+  "equivalent_nearest_face_id_ties": 3,
+  "verifier_sha256": "1c5c40d0b154d475e86a575704c501e2207f8fae6ab3da344b401f3f63082293",
+  "accepted_reference": false,
+  "training_ready": false,
+  "dynamics_verified": false,
+  "cooked_geometry_verified": false,
+  "gpu_submissions": 0,
+  "ppo_updates": 0
+}
