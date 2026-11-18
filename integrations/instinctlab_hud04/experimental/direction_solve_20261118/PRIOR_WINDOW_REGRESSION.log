@@ -1,0 +1,36 @@
+test_bad_bindings_rejected (test_motion_archive.ArchiveTests.test_bad_bindings_rejected) ... ok
+test_conflicting_metadata_rejected (test_motion_archive.ArchiveTests.test_conflicting_metadata_rejected) ... ok
+test_corrupt_existing_blob_rejected (test_motion_archive.ArchiveTests.test_corrupt_existing_blob_rejected) ... ok
+test_reject_fake_accepted_role (test_motion_archive.ArchiveTests.test_reject_fake_accepted_role) ... ok
+test_roundtrip (test_motion_archive.ArchiveTests.test_roundtrip) ... ok
+test_same_content_idempotent (test_motion_archive.ArchiveTests.test_same_content_idempotent) ... ok
+test_symlink_backup_rejected (test_motion_archive.ArchiveTests.test_symlink_backup_rejected) ... ok
+test_two_versions_do_not_overwrite (test_motion_archive.ArchiveTests.test_two_versions_do_not_overwrite) ... ok
+test_all_sources_and_patched_runner_compile (test_window_problem.WindowTests.test_all_sources_and_patched_runner_compile) ... ok
+test_bad_target_shapes_rejected (test_window_problem.WindowTests.test_bad_target_shapes_rejected) ... ok
+test_bounded_window_size (test_window_problem.WindowTests.test_bounded_window_size) ... ok
+test_conservative_summary (test_window_problem.WindowTests.test_conservative_summary) ... ok
+test_direction_jacobian_finite_difference (test_window_problem.WindowTests.test_direction_jacobian_finite_difference) ... ok
+test_direction_rejects_degenerate_or_nonunit (test_window_problem.WindowTests.test_direction_rejects_degenerate_or_nonunit) ... ok
+test_direction_translation_and_scale_invariance (test_window_problem.WindowTests.test_direction_translation_and_scale_invariance) ... ok
+test_explicit_targets_actual_residual (test_window_problem.WindowTests.test_explicit_targets_actual_residual) ... ok
+test_invalid_frames (test_window_problem.WindowTests.test_invalid_frames) ... ok
+test_invalid_trust_region (test_window_problem.WindowTests.test_invalid_trust_region) ... ok
+test_jacobian_all_columns_finite_difference (test_window_problem.WindowTests.test_jacobian_all_columns_finite_difference) ... ok
+test_joint_rows_match_direct_model_residual (test_window_problem.WindowTests.test_joint_rows_match_direct_model_residual) ... ok
+test_named_order_reversal (test_window_problem.WindowTests.test_named_order_reversal) ... ok
+test_no_cross_gap_velocity_rows (test_window_problem.WindowTests.test_no_cross_gap_velocity_rows) ... ok
+test_no_input_mutation (test_window_problem.WindowTests.test_no_input_mutation) ... ok
+test_no_resampling_fps (test_window_problem.WindowTests.test_no_resampling_fps) ... ok
+test_no_silent_targets (test_window_problem.WindowTests.test_no_silent_targets) ... ok
+test_reflection_root_rejected (test_window_problem.WindowTests.test_reflection_root_rejected) ... ok
+test_reject_missing_duplicate_head_names (test_window_problem.WindowTests.test_reject_missing_duplicate_head_names) ... ok
+test_root_columns_do_not_enter_hard_joint_limits (test_window_problem.WindowTests.test_root_columns_do_not_enter_hard_joint_limits) ... ok
+test_root_rotation_about_root (test_window_problem.WindowTests.test_root_rotation_about_root) ... ok
+test_seed_remains_joint_feasible (test_window_problem.WindowTests.test_seed_remains_joint_feasible) ... ok
+test_shapes_and_no_head (test_window_problem.WindowTests.test_shapes_and_no_head) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.283s
+
+OK

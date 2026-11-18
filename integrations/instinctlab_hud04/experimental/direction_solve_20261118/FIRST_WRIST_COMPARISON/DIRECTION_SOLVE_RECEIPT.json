@@ -1,0 +1,13 @@
+{
+  "run_id": "vwa62e0x",
+  "logging_mode": "offline_pending_sync",
+  "server_readback_verified": false,
+  "offline_directory": "/workspace/hud04-direction-solve-20261118/FIRST_WRIST_COMPARISON/wandb/offline-run-20261118_001610-vwa62e0x",
+  "status": "completed",
+  "completed_windows": 3,
+  "actual_lp_calls": 36,
+  "gpu_submissions": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false,
+  "training_ready": false
+}

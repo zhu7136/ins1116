@@ -1,0 +1,965 @@
+{
+  "schema_version": 1,
+  "stage": "bounded_cpu_diagnostic_supervision",
+  "status": "completed",
+  "budget": {
+    "window_seconds": 90,
+    "total_seconds": 180,
+    "iterations": 12,
+    "numeric_threads": 2,
+    "max_windows": 3
+  },
+  "windows": [
+    {
+      "index": 0,
+      "wall_seconds": 1.3189349880000236,
+      "child_reaped": true,
+      "status": "completed",
+      "iterations": 12,
+      "diagnostic": {
+        "stage": "root_local_direction_joint_diagnostic_NOT_full_reference",
+        "first": 0,
+        "last": 30,
+        "frames": 31,
+        "fps": 90,
+        "objective": "sum L1 unit-direction chordal residual + .001 total joint departure",
+        "initial": {
+          "mean_degrees": 22.797312239749928,
+          "p95_degrees": 77.33231938305866,
+          "max_degrees": 81.25692534662011,
+          "sum_l1_chordal": 146.11110944979666,
+          "per_direction_mean_degrees": [
+            5.5890410809812625,
+            2.8833488484229797,
+            3.6400593097635716,
+            76.75790942527462,
+            5.883788531756263,
+            2.6035897517992876,
+            7.6758400006570575,
+            77.34492096934439
+          ]
+        },
+        "final": {
+          "mean_degrees": 3.1578581325119965,
+          "p95_degrees": 16.57904593172302,
+          "max_degrees": 47.87492265549975,
+          "sum_l1_chordal": 16.28626686125147,
+          "per_direction_mean_degrees": [
+            2.105229249312217,
+            1.1817417514762564e-13,
+            2.8391492184053386,
+            6.275851679889705,
+            5.841521082482922,
+            0.00024696160977767776,
+            3.214802121488921,
+            4.986064746906974
+          ]
+        },
+        "termination": "outer_budget_reached",
+        "history": [
+          {
+            "iteration": 0,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 146.11110944979666,
+            "objective_after": 113.97440098497786,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 1,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 113.97440098497786,
+            "objective_after": 93.27702605314033,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 2,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 93.27702605314033,
+            "objective_after": 74.68349260583844,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 3,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 74.68349260583844,
+            "objective_after": 61.87965132189149,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 4,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 61.87965132189149,
+            "objective_after": 50.0614754198073,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 5,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 50.0614754198073,
+            "objective_after": 40.03017454901728,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 6,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 40.03017454901728,
+            "objective_after": 32.142534114895554,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 7,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 32.142534114895554,
+            "objective_after": 26.93638705733721,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 8,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 26.93638705733721,
+            "objective_after": 25.219009435754288,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 9,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 25.219009435754288,
+            "objective_after": 22.92942247750632,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 10,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 22.92942247750632,
+            "objective_after": 19.63246886260332,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 11,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 19.63246886260332,
+            "objective_after": 16.514490371898045,
+            "max_accepted_joint_step": 0.15000000000000002
+          }
+        ],
+        "solver_calls": 12,
+        "nonlinear_evaluations": 25,
+        "elapsed_seconds": 0.5499822969999286,
+        "joint_trust_radius_rad": 0.15,
+        "full_sequence_position_max_violation_rad": 0.0,
+        "full_sequence_velocity_max_violation_rad_s": 3.552713678800501e-14,
+        "outside_window_neighbours_fixed": true,
+        "cross_gap_velocity_edges": 0,
+        "posthoc_joint_clipping": false,
+        "full_retarget_solver_calls": 0,
+        "world_root_optimized": false,
+        "root_quaternions_read": false,
+        "world_units_inferred": false,
+        "terrain_constraints_implemented": false,
+        "self_collision_constraints_implemented": false,
+        "support_labels_generated": false,
+        "partial_joint_direction_fit_generated": true,
+        "candidate_motion_generated": false,
+        "accepted_reference": false,
+        "training_ready": false,
+        "source_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+        "seed_sha256": "48f8d43e058420e5ff89861d2336ead3317dc18223c36a7305503f3df54a66eb",
+        "source_task_model_sha256": "5e99d930af64f3f0bfd34235239e288cc380ba62c8b01fcfcf8cc9f0996e7fa4",
+        "target_model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+        "artifact": "DIRECTION_WINDOW_0_30.npz",
+        "artifact_sha256": "b4e357fb87b060d428b9ad1aebf1d29b9efaf4a330129f48991782853c42c1d1",
+        "archive": {
+          "schema_version": 1,
+          "sha256": "b4e357fb87b060d428b9ad1aebf1d29b9efaf4a330129f48991782853c42c1d1",
+          "bytes": 7042,
+          "role": "diagnostic_not_motion",
+          "source_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+          "model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+          "accepted_reference": false,
+          "training_ready": false,
+          "backup_scope": "local_same_sandbox_NOT_independent_offsite",
+          "backup_path": "/workspace/hud04-backups/sha256/b4e357fb87b060d428b9ad1aebf1d29b9efaf4a330129f48991782853c42c1d1.npz",
+          "manifest_path": "/workspace/hud04-backups/sha256/b4e357fb87b060d428b9ad1aebf1d29b9efaf4a330129f48991782853c42c1d1.json",
+          "readback_verified": true
+        },
+        "source_data_modified": false,
+        "source_assets_modified": false,
+        "direction_names": [
+          "left_thigh",
+          "left_shin",
+          "left_upper_arm",
+          "left_forearm",
+          "right_thigh",
+          "right_shin",
+          "right_upper_arm",
+          "right_forearm"
+        ],
+        "source_pairs": [
+          [
+            "left_thigh",
+            "left_hip_pitch_link",
+            "left_knee_link"
+          ],
+          [
+            "left_shin",
+            "left_knee_link",
+            "left_ankle_pitch_link"
+          ],
+          [
+            "left_upper_arm",
+            "left_shoulder_pitch_link",
+            "left_elbow_link"
+          ],
+          [
+            "left_forearm",
+            "left_elbow_link",
+            "left_wrist_roll_link"
+          ],
+          [
+            "right_thigh",
+            "right_hip_pitch_link",
+            "right_knee_link"
+          ],
+          [
+            "right_shin",
+            "right_knee_link",
+            "right_ankle_pitch_link"
+          ],
+          [
+            "right_upper_arm",
+            "right_shoulder_pitch_link",
+            "right_elbow_link"
+          ],
+          [
+            "right_forearm",
+            "right_elbow_link",
+            "right_wrist_roll_link"
+          ]
+        ],
+        "target_pairs": [
+          [
+            "left_thigh",
+            "left_hip_pitch_link",
+            "left_knee_link"
+          ],
+          [
+            "left_shin",
+            "left_knee_link",
+            "left_ankle_pitch_link"
+          ],
+          [
+            "left_upper_arm",
+            "left_shoulder_pitch_link",
+            "left_elbow_link"
+          ],
+          [
+            "left_forearm",
+            "left_elbow_link",
+            "left_wrist_yaw_link"
+          ],
+          [
+            "right_thigh",
+            "right_hip_pitch_link",
+            "right_knee_link"
+          ],
+          [
+            "right_shin",
+            "right_knee_link",
+            "right_ankle_pitch_link"
+          ],
+          [
+            "right_upper_arm",
+            "right_shoulder_pitch_link",
+            "right_elbow_link"
+          ],
+          [
+            "right_forearm",
+            "right_elbow_link",
+            "right_wrist_yaw_link"
+          ]
+        ],
+        "correspondence_status": "explicit diagnostic joint-pivot mapping NOT reviewed palm/sole/material contacts",
+        "anatomical_basis_assumption": "URDF pelvis/base anatomical axes correspond; no NPZ export/world calibration claim",
+        "wrist_endpoint": "first_wrist_pivot",
+        "code_sha256": {
+          "anatomical_directions.py": "23660e03d2fbe7b1e0e334c47b506e9c07e4c8931430bd6f6c3afc762159587d",
+          "direction_solver.py": "ac15a16b988774445c6ddc372d6c46e7c9df0fe45a5f236663d281291891a270",
+          "run_direction_diagnostic.py": "af801b8eb085d980553b4dd1263c3199e1c79624c17320cf2ed1a505b1840403"
+        }
+      },
+      "supported_numeric_pools": [
+        {
+          "api": "openblas",
+          "threads": 2
+        },
+        {
+          "api": "openblas",
+          "threads": 2
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "wall_seconds": 1.3086990969999306,
+      "child_reaped": true,
+      "status": "completed",
+      "iterations": 12,
+      "diagnostic": {
+        "stage": "root_local_direction_joint_diagnostic_NOT_full_reference",
+        "first": 480,
+        "last": 510,
+        "frames": 31,
+        "fps": 90,
+        "objective": "sum L1 unit-direction chordal residual + .001 total joint departure",
+        "initial": {
+          "mean_degrees": 22.25755884521559,
+          "p95_degrees": 62.36689469860472,
+          "max_degrees": 64.66206977225337,
+          "sum_l1_chordal": 135.4075701016878,
+          "per_direction_mean_degrees": [
+            5.261674536104858,
+            3.4418218134835503,
+            19.493845304502436,
+            62.13626719243467,
+            7.851091332495342,
+            1.5550391314042333,
+            20.48267360413138,
+            57.838057847168244
+          ]
+        },
+        "final": {
+          "mean_degrees": 4.810677690753243,
+          "p95_degrees": 21.108332919931968,
+          "max_degrees": 45.319561822418855,
+          "sum_l1_chordal": 23.49695505059703,
+          "per_direction_mean_degrees": [
+            4.025633853933266,
+            1.5701613978193826e-13,
+            5.233010773617016,
+            8.27294169609858,
+            7.925539032803041,
+            4.285853096886316e-14,
+            8.111291725156624,
+            4.917004444417221
+          ]
+        },
+        "termination": "outer_budget_reached",
+        "history": [
+          {
+            "iteration": 0,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 135.4075701016878,
+            "objective_after": 100.4665087194606,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 1,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 100.4665087194606,
+            "objective_after": 81.82869562859449,
+            "max_accepted_joint_step": 0.15000000000000002
+          },
+          {
+            "iteration": 2,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 81.82869562859449,
+            "objective_after": 69.64068505488716,
+            "max_accepted_joint_step": 0.15000000000000002
+          },
+          {
+            "iteration": 3,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 69.64068505488716,
+            "objective_after": 57.92989377151744,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 4,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 57.92989377151744,
+            "objective_after": 49.3792512541311,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 5,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 49.3792512541311,
+            "objective_after": 42.94548419523596,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 6,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 42.94548419523596,
+            "objective_after": 39.76523475656243,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 7,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 39.76523475656243,
+            "objective_after": 36.867886657992216,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 8,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 36.867886657992216,
+            "objective_after": 33.54368017572832,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 9,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 33.54368017572832,
+            "objective_after": 28.360624942656965,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 10,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 28.360624942656965,
+            "objective_after": 25.117353397456196,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 11,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 25.117353397456196,
+            "objective_after": 23.69995904068271,
+            "max_accepted_joint_step": 0.15000000000000002
+          }
+        ],
+        "solver_calls": 12,
+        "nonlinear_evaluations": 25,
+        "elapsed_seconds": 0.5766929919999484,
+        "joint_trust_radius_rad": 0.15,
+        "full_sequence_position_max_violation_rad": 0.0,
+        "full_sequence_velocity_max_violation_rad_s": 8.881784197001252e-15,
+        "outside_window_neighbours_fixed": true,
+        "cross_gap_velocity_edges": 0,
+        "posthoc_joint_clipping": false,
+        "full_retarget_solver_calls": 0,
+        "world_root_optimized": false,
+        "root_quaternions_read": false,
+        "world_units_inferred": false,
+        "terrain_constraints_implemented": false,
+        "self_collision_constraints_implemented": false,
+        "support_labels_generated": false,
+        "partial_joint_direction_fit_generated": true,
+        "candidate_motion_generated": false,
+        "accepted_reference": false,
+        "training_ready": false,
+        "source_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+        "seed_sha256": "48f8d43e058420e5ff89861d2336ead3317dc18223c36a7305503f3df54a66eb",
+        "source_task_model_sha256": "5e99d930af64f3f0bfd34235239e288cc380ba62c8b01fcfcf8cc9f0996e7fa4",
+        "target_model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+        "artifact": "DIRECTION_WINDOW_480_510.npz",
+        "artifact_sha256": "9408bcf27704db2c39b6e0c7622181e6b5628939cc2c2dd247874bf0ea092221",
+        "archive": {
+          "schema_version": 1,
+          "sha256": "9408bcf27704db2c39b6e0c7622181e6b5628939cc2c2dd247874bf0ea092221",
+          "bytes": 7071,
+          "role": "diagnostic_not_motion",
+          "source_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+          "model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+          "accepted_reference": false,
+          "training_ready": false,
+          "backup_scope": "local_same_sandbox_NOT_independent_offsite",
+          "backup_path": "/workspace/hud04-backups/sha256/9408bcf27704db2c39b6e0c7622181e6b5628939cc2c2dd247874bf0ea092221.npz",
+          "manifest_path": "/workspace/hud04-backups/sha256/9408bcf27704db2c39b6e0c7622181e6b5628939cc2c2dd247874bf0ea092221.json",
+          "readback_verified": true
+        },
+        "source_data_modified": false,
+        "source_assets_modified": false,
+        "direction_names": [
+          "left_thigh",
+          "left_shin",
+          "left_upper_arm",
+          "left_forearm",
+          "right_thigh",
+          "right_shin",
+          "right_upper_arm",
+          "right_forearm"
+        ],
+        "source_pairs": [
+          [
+            "left_thigh",
+            "left_hip_pitch_link",
+            "left_knee_link"
+          ],
+          [
+            "left_shin",
+            "left_knee_link",
+            "left_ankle_pitch_link"
+          ],
+          [
+            "left_upper_arm",
+            "left_shoulder_pitch_link",
+            "left_elbow_link"
+          ],
+          [
+            "left_forearm",
+            "left_elbow_link",
+            "left_wrist_roll_link"
+          ],
+          [
+            "right_thigh",
+            "right_hip_pitch_link",
+            "right_knee_link"
+          ],
+          [
+            "right_shin",
+            "right_knee_link",
+            "right_ankle_pitch_link"
+          ],
+          [
+            "right_upper_arm",
+            "right_shoulder_pitch_link",
+            "right_elbow_link"
+          ],
+          [
+            "right_forearm",
+            "right_elbow_link",
+            "right_wrist_roll_link"
+          ]
+        ],
+        "target_pairs": [
+          [
+            "left_thigh",
+            "left_hip_pitch_link",
+            "left_knee_link"
+          ],
+          [
+            "left_shin",
+            "left_knee_link",
+            "left_ankle_pitch_link"
+          ],
+          [
+            "left_upper_arm",
+            "left_shoulder_pitch_link",
+            "left_elbow_link"
+          ],
+          [
+            "left_forearm",
+            "left_elbow_link",
+            "left_wrist_yaw_link"
+          ],
+          [
+            "right_thigh",
+            "right_hip_pitch_link",
+            "right_knee_link"
+          ],
+          [
+            "right_shin",
+            "right_knee_link",
+            "right_ankle_pitch_link"
+          ],
+          [
+            "right_upper_arm",
+            "right_shoulder_pitch_link",
+            "right_elbow_link"
+          ],
+          [
+            "right_forearm",
+            "right_elbow_link",
+            "right_wrist_yaw_link"
+          ]
+        ],
+        "correspondence_status": "explicit diagnostic joint-pivot mapping NOT reviewed palm/sole/material contacts",
+        "anatomical_basis_assumption": "URDF pelvis/base anatomical axes correspond; no NPZ export/world calibration claim",
+        "wrist_endpoint": "first_wrist_pivot",
+        "code_sha256": {
+          "anatomical_directions.py": "23660e03d2fbe7b1e0e334c47b506e9c07e4c8931430bd6f6c3afc762159587d",
+          "direction_solver.py": "ac15a16b988774445c6ddc372d6c46e7c9df0fe45a5f236663d281291891a270",
+          "run_direction_diagnostic.py": "af801b8eb085d980553b4dd1263c3199e1c79624c17320cf2ed1a505b1840403"
+        }
+      },
+      "supported_numeric_pools": [
+        {
+          "api": "openblas",
+          "threads": 2
+        },
+        {
+          "api": "openblas",
+          "threads": 2
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "wall_seconds": 1.258817858000043,
+      "child_reaped": true,
+      "status": "completed",
+      "iterations": 12,
+      "diagnostic": {
+        "stage": "root_local_direction_joint_diagnostic_NOT_full_reference",
+        "first": 966,
+        "last": 996,
+        "frames": 31,
+        "fps": 90,
+        "objective": "sum L1 unit-direction chordal residual + .001 total joint departure",
+        "initial": {
+          "mean_degrees": 22.942158113412994,
+          "p95_degrees": 75.72835696712492,
+          "max_degrees": 75.9927995126911,
+          "sum_l1_chordal": 149.06109652485932,
+          "per_direction_mean_degrees": [
+            1.0847112416134783,
+            6.245051152411284,
+            13.861068816307359,
+            67.60295688662406,
+            7.709755349635146,
+            1.692818829212917,
+            9.64374740194455,
+            75.6971552295552
+          ]
+        },
+        "final": {
+          "mean_degrees": 2.933441835845453,
+          "p95_degrees": 14.53494483578186,
+          "max_degrees": 38.73803358798753,
+          "sum_l1_chordal": 14.654091165926427,
+          "per_direction_mean_degrees": [
+            3.8436532244429924,
+            0.07589301045723115,
+            4.8661468740208935,
+            2.6123422553811637,
+            5.8453035750072635,
+            2.5220665042412386e-13,
+            2.3962281510527195,
+            3.827967596401109
+          ]
+        },
+        "termination": "outer_budget_reached",
+        "history": [
+          {
+            "iteration": 0,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 149.06109652485932,
+            "objective_after": 111.38128609438168,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 1,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 111.38128609438168,
+            "objective_after": 90.96517528597013,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 2,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 90.96517528597013,
+            "objective_after": 75.12318180141762,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 3,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 75.12318180141762,
+            "objective_after": 60.40479478025823,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 4,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 60.40479478025823,
+            "objective_after": 49.646173489608465,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 5,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 49.646173489608465,
+            "objective_after": 39.62728866636437,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 6,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 39.62728866636437,
+            "objective_after": 32.298123948844086,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 7,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 32.298123948844086,
+            "objective_after": 29.19875577675627,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 8,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 29.19875577675627,
+            "objective_after": 26.077327813201595,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 9,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 26.077327813201595,
+            "objective_after": 19.273734909120712,
+            "max_accepted_joint_step": 0.15
+          },
+          {
+            "iteration": 10,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 19.273734909120712,
+            "objective_after": 15.494323321048112,
+            "max_accepted_joint_step": 0.15000000000000005
+          },
+          {
+            "iteration": 11,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 15.494323321048112,
+            "objective_after": 14.876388791121673,
+            "max_accepted_joint_step": 0.15000000000000002
+          }
+        ],
+        "solver_calls": 12,
+        "nonlinear_evaluations": 25,
+        "elapsed_seconds": 0.5316488959999788,
+        "joint_trust_radius_rad": 0.15,
+        "full_sequence_position_max_violation_rad": 0.0,
+        "full_sequence_velocity_max_violation_rad_s": 3.552713678800501e-15,
+        "outside_window_neighbours_fixed": true,
+        "cross_gap_velocity_edges": 0,
+        "posthoc_joint_clipping": false,
+        "full_retarget_solver_calls": 0,
+        "world_root_optimized": false,
+        "root_quaternions_read": false,
+        "world_units_inferred": false,
+        "terrain_constraints_implemented": false,
+        "self_collision_constraints_implemented": false,
+        "support_labels_generated": false,
+        "partial_joint_direction_fit_generated": true,
+        "candidate_motion_generated": false,
+        "accepted_reference": false,
+        "training_ready": false,
+        "source_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+        "seed_sha256": "48f8d43e058420e5ff89861d2336ead3317dc18223c36a7305503f3df54a66eb",
+        "source_task_model_sha256": "5e99d930af64f3f0bfd34235239e288cc380ba62c8b01fcfcf8cc9f0996e7fa4",
+        "target_model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+        "artifact": "DIRECTION_WINDOW_966_996.npz",
+        "artifact_sha256": "03d1db0a0716b51f20d5a9186383ee40e067497a0fe958ccc032e9c2fa2399b5",
+        "archive": {
+          "schema_version": 1,
+          "sha256": "03d1db0a0716b51f20d5a9186383ee40e067497a0fe958ccc032e9c2fa2399b5",
+          "bytes": 6719,
+          "role": "diagnostic_not_motion",
+          "source_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+          "model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+          "accepted_reference": false,
+          "training_ready": false,
+          "backup_scope": "local_same_sandbox_NOT_independent_offsite",
+          "backup_path": "/workspace/hud04-backups/sha256/03d1db0a0716b51f20d5a9186383ee40e067497a0fe958ccc032e9c2fa2399b5.npz",
+          "manifest_path": "/workspace/hud04-backups/sha256/03d1db0a0716b51f20d5a9186383ee40e067497a0fe958ccc032e9c2fa2399b5.json",
+          "readback_verified": true
+        },
+        "source_data_modified": false,
+        "source_assets_modified": false,
+        "direction_names": [
+          "left_thigh",
+          "left_shin",
+          "left_upper_arm",
+          "left_forearm",
+          "right_thigh",
+          "right_shin",
+          "right_upper_arm",
+          "right_forearm"
+        ],
+        "source_pairs": [
+          [
+            "left_thigh",
+            "left_hip_pitch_link",
+            "left_knee_link"
+          ],
+          [
+            "left_shin",
+            "left_knee_link",
+            "left_ankle_pitch_link"
+          ],
+          [
+            "left_upper_arm",
+            "left_shoulder_pitch_link",
+            "left_elbow_link"
+          ],
+          [
+            "left_forearm",
+            "left_elbow_link",
+            "left_wrist_roll_link"
+          ],
+          [
+            "right_thigh",
+            "right_hip_pitch_link",
+            "right_knee_link"
+          ],
+          [
+            "right_shin",
+            "right_knee_link",
+            "right_ankle_pitch_link"
+          ],
+          [
+            "right_upper_arm",
+            "right_shoulder_pitch_link",
+            "right_elbow_link"
+          ],
+          [
+            "right_forearm",
+            "right_elbow_link",
+            "right_wrist_roll_link"
+          ]
+        ],
+        "target_pairs": [
+          [
+            "left_thigh",
+            "left_hip_pitch_link",
+            "left_knee_link"
+          ],
+          [
+            "left_shin",
+            "left_knee_link",
+            "left_ankle_pitch_link"
+          ],
+          [
+            "left_upper_arm",
+            "left_shoulder_pitch_link",
+            "left_elbow_link"
+          ],
+          [
+            "left_forearm",
+            "left_elbow_link",
+            "left_wrist_yaw_link"
+          ],
+          [
+            "right_thigh",
+            "right_hip_pitch_link",
+            "right_knee_link"
+          ],
+          [
+            "right_shin",
+            "right_knee_link",
+            "right_ankle_pitch_link"
+          ],
+          [
+            "right_upper_arm",
+            "right_shoulder_pitch_link",
+            "right_elbow_link"
+          ],
+          [
+            "right_forearm",
+            "right_elbow_link",
+            "right_wrist_yaw_link"
+          ]
+        ],
+        "correspondence_status": "explicit diagnostic joint-pivot mapping NOT reviewed palm/sole/material contacts",
+        "anatomical_basis_assumption": "URDF pelvis/base anatomical axes correspond; no NPZ export/world calibration claim",
+        "wrist_endpoint": "first_wrist_pivot",
+        "code_sha256": {
+          "anatomical_directions.py": "23660e03d2fbe7b1e0e334c47b506e9c07e4c8931430bd6f6c3afc762159587d",
+          "direction_solver.py": "ac15a16b988774445c6ddc372d6c46e7c9df0fe45a5f236663d281291891a270",
+          "run_direction_diagnostic.py": "af801b8eb085d980553b4dd1263c3199e1c79624c17320cf2ed1a505b1840403"
+        }
+      },
+      "supported_numeric_pools": [
+        {
+          "api": "openblas",
+          "threads": 2
+        },
+        {
+          "api": "openblas",
+          "threads": 2
+        }
+      ]
+    }
+  ],
+  "wall_seconds": 3.8866209230000095,
+  "retries": 0,
+  "hard_parent_deadline": true,
+  "cleanup_grace_seconds_max": 0.7,
+  "iteration_limit_scope": "trusted_workers_calling_gate_each_iteration_only",
+  "thread_limit_scope": "supported_BLAS_OpenMP_pools_not_all_OS_threads_or_CPU_cores",
+  "gpu_submissions": 0,
+  "solver_calls": 36,
+  "candidate_motion_generated": false,
+  "accepted_reference": false,
+  "training_ready": false,
+  "partial_joint_direction_fit_generated": true,
+  "full_retarget_solver_calls": 0,
+  "logging_mode": "offline_pending_sync",
+  "wandb_access_result": "write_invalid_audience_despite_successful_project_read"
+}

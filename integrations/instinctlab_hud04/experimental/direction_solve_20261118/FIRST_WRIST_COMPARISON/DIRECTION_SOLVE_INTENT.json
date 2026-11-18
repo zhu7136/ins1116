@@ -1,0 +1,14 @@
+{
+  "utc": "2026-11-18T00:16:10.959669+00:00",
+  "run_id": "vwa62e0x",
+  "wandb_online": false,
+  "wandb_access": "write_invalid_audience_despite_successful_project_read",
+  "cpu_only": true,
+  "gpu_submissions": 0,
+  "mode": "pelvis-local-direction-joints-only diagnostic; NO world motion",
+  "max_windows": 3,
+  "max_frames": 93,
+  "accepted_reference": false,
+  "wrist_endpoint": "first_wrist_pivot",
+  "joint_trust_radius_rad": 0.15
+}

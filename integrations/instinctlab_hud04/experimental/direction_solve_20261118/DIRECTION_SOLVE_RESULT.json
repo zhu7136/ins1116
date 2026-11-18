@@ -1,0 +1,944 @@
+{
+  "schema_version": 1,
+  "stage": "bounded_cpu_diagnostic_supervision",
+  "status": "completed",
+  "budget": {
+    "window_seconds": 90,
+    "total_seconds": 180,
+    "iterations": 12,
+    "numeric_threads": 2,
+    "max_windows": 3
+  },
+  "windows": [
+    {
+      "index": 0,
+      "wall_seconds": 1.6826927259999138,
+      "child_reaped": true,
+      "status": "completed",
+      "iterations": 12,
+      "diagnostic": {
+        "stage": "root_local_direction_joint_diagnostic_NOT_full_reference",
+        "first": 0,
+        "last": 30,
+        "frames": 31,
+        "fps": 90,
+        "objective": "sum L1 unit-direction chordal residual + .001 total joint departure",
+        "initial": {
+          "mean_degrees": 23.462246841385166,
+          "p95_degrees": 80.07550816108282,
+          "max_degrees": 83.90877078270199,
+          "sum_l1_chordal": 149.83237057425478,
+          "per_direction_mean_degrees": [
+            5.5890410809812625,
+            2.8833488484229797,
+            3.6400593097635716,
+            79.30676786334831,
+            5.883788531756263,
+            2.6035897517992876,
+            7.6758400006570575,
+            80.11553934435253
+          ]
+        },
+        "final": {
+          "mean_degrees": 15.325531877102257,
+          "p95_degrees": 32.28532593761897,
+          "max_degrees": 45.8163564203726,
+          "sum_l1_chordal": 78.6846474211812,
+          "per_direction_mean_degrees": [
+            5.763938553363581,
+            0.004131633538736611,
+            22.621998820558005,
+            31.503037499839674,
+            7.478102756592375,
+            0.00035091424910987213,
+            23.269782700723802,
+            31.962912137952777
+          ]
+        },
+        "termination": "outer_budget_reached",
+        "history": [
+          {
+            "iteration": 0,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 149.83237057425478,
+            "objective_after": 137.82946565682127,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 1,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 137.82946565682127,
+            "objective_after": 131.7843256194555,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 2,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 131.7843256194555,
+            "objective_after": 125.84733625491526,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 3,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 125.84733625491526,
+            "objective_after": 119.87758149220481,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 4,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 119.87758149220481,
+            "objective_after": 113.99522769254939,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 5,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 113.99522769254939,
+            "objective_after": 108.23124898754232,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 6,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 108.23124898754232,
+            "objective_after": 102.61855235004722,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 7,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 102.61855235004722,
+            "objective_after": 97.20820612496513,
+            "max_accepted_joint_step": 0.030000000000000027
+          },
+          {
+            "iteration": 8,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 97.20820612496513,
+            "objective_after": 92.17360562779058,
+            "max_accepted_joint_step": 0.030000000000000027
+          },
+          {
+            "iteration": 9,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 92.17360562779058,
+            "objective_after": 87.5407018999615,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 10,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 87.5407018999615,
+            "objective_after": 83.1404697216184,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 11,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 83.1404697216184,
+            "objective_after": 78.8230259635801,
+            "max_accepted_joint_step": 0.03
+          }
+        ],
+        "solver_calls": 12,
+        "nonlinear_evaluations": 25,
+        "elapsed_seconds": 0.3910187889999861,
+        "full_sequence_position_max_violation_rad": 0.0,
+        "full_sequence_velocity_max_violation_rad_s": 3.552713678800501e-15,
+        "outside_window_neighbours_fixed": true,
+        "cross_gap_velocity_edges": 0,
+        "posthoc_joint_clipping": false,
+        "full_retarget_solver_calls": 0,
+        "world_root_optimized": false,
+        "root_quaternions_read": false,
+        "world_units_inferred": false,
+        "terrain_constraints_implemented": false,
+        "self_collision_constraints_implemented": false,
+        "support_labels_generated": false,
+        "partial_joint_direction_fit_generated": true,
+        "candidate_motion_generated": false,
+        "accepted_reference": false,
+        "training_ready": false,
+        "source_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+        "seed_sha256": "48f8d43e058420e5ff89861d2336ead3317dc18223c36a7305503f3df54a66eb",
+        "source_task_model_sha256": "5e99d930af64f3f0bfd34235239e288cc380ba62c8b01fcfcf8cc9f0996e7fa4",
+        "target_model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+        "artifact": "DIRECTION_WINDOW_0_30.npz",
+        "artifact_sha256": "265919c3f9e646c3f2357b175ca6cddc1c817519cfde1261f603dc35548a7e72",
+        "archive": {
+          "schema_version": 1,
+          "sha256": "265919c3f9e646c3f2357b175ca6cddc1c817519cfde1261f603dc35548a7e72",
+          "bytes": 6628,
+          "role": "diagnostic_not_motion",
+          "source_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+          "model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+          "accepted_reference": false,
+          "training_ready": false,
+          "backup_scope": "local_same_sandbox_NOT_independent_offsite",
+          "backup_path": "/workspace/hud04-backups/sha256/265919c3f9e646c3f2357b175ca6cddc1c817519cfde1261f603dc35548a7e72.npz",
+          "manifest_path": "/workspace/hud04-backups/sha256/265919c3f9e646c3f2357b175ca6cddc1c817519cfde1261f603dc35548a7e72.json",
+          "readback_verified": true
+        },
+        "source_data_modified": false,
+        "source_assets_modified": false,
+        "direction_names": [
+          "left_thigh",
+          "left_shin",
+          "left_upper_arm",
+          "left_forearm",
+          "right_thigh",
+          "right_shin",
+          "right_upper_arm",
+          "right_forearm"
+        ],
+        "source_pairs": [
+          [
+            "left_thigh",
+            "left_hip_pitch_link",
+            "left_knee_link"
+          ],
+          [
+            "left_shin",
+            "left_knee_link",
+            "left_ankle_pitch_link"
+          ],
+          [
+            "left_upper_arm",
+            "left_shoulder_pitch_link",
+            "left_elbow_link"
+          ],
+          [
+            "left_forearm",
+            "left_elbow_link",
+            "left_wrist_yaw_link"
+          ],
+          [
+            "right_thigh",
+            "right_hip_pitch_link",
+            "right_knee_link"
+          ],
+          [
+            "right_shin",
+            "right_knee_link",
+            "right_ankle_pitch_link"
+          ],
+          [
+            "right_upper_arm",
+            "right_shoulder_pitch_link",
+            "right_elbow_link"
+          ],
+          [
+            "right_forearm",
+            "right_elbow_link",
+            "right_wrist_yaw_link"
+          ]
+        ],
+        "target_pairs": [
+          [
+            "left_thigh",
+            "left_hip_pitch_link",
+            "left_knee_link"
+          ],
+          [
+            "left_shin",
+            "left_knee_link",
+            "left_ankle_pitch_link"
+          ],
+          [
+            "left_upper_arm",
+            "left_shoulder_pitch_link",
+            "left_elbow_link"
+          ],
+          [
+            "left_forearm",
+            "left_elbow_link",
+            "left_wrist_roll_link"
+          ],
+          [
+            "right_thigh",
+            "right_hip_pitch_link",
+            "right_knee_link"
+          ],
+          [
+            "right_shin",
+            "right_knee_link",
+            "right_ankle_pitch_link"
+          ],
+          [
+            "right_upper_arm",
+            "right_shoulder_pitch_link",
+            "right_elbow_link"
+          ],
+          [
+            "right_forearm",
+            "right_elbow_link",
+            "right_wrist_roll_link"
+          ]
+        ],
+        "correspondence_status": "explicit diagnostic joint-pivot mapping NOT reviewed palm/sole/material contacts",
+        "anatomical_basis_assumption": "URDF pelvis/base anatomical axes correspond; no NPZ export/world calibration claim"
+      },
+      "supported_numeric_pools": [
+        {
+          "api": "openblas",
+          "threads": 2
+        },
+        {
+          "api": "openblas",
+          "threads": 2
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "wall_seconds": 1.6266552790000333,
+      "child_reaped": true,
+      "status": "completed",
+      "iterations": 12,
+      "diagnostic": {
+        "stage": "root_local_direction_joint_diagnostic_NOT_full_reference",
+        "first": 480,
+        "last": 510,
+        "frames": 31,
+        "fps": 90,
+        "objective": "sum L1 unit-direction chordal residual + .001 total joint departure",
+        "initial": {
+          "mean_degrees": 22.915399324227177,
+          "p95_degrees": 64.89267636923677,
+          "max_degrees": 67.18528462618183,
+          "sum_l1_chordal": 138.69439122752743,
+          "per_direction_mean_degrees": [
+            5.261674536104858,
+            3.4418218134835503,
+            19.493845304502436,
+            64.66354064543766,
+            7.851091332495342,
+            1.5550391314042333,
+            20.48267360413138,
+            60.57350822625795
+          ]
+        },
+        "final": {
+          "mean_degrees": 14.737595039007696,
+          "p95_degrees": 32.800264361843126,
+          "max_degrees": 37.42880118586885,
+          "sum_l1_chordal": 71.68054615395673,
+          "per_direction_mean_degrees": [
+            5.72809720371775,
+            0.0036013342457956307,
+            22.890023661793485,
+            30.140659295606586,
+            7.964294149892927,
+            0.0006308035909585124,
+            28.5853063478312,
+            22.588147515382865
+          ]
+        },
+        "termination": "outer_budget_reached",
+        "history": [
+          {
+            "iteration": 0,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 138.69439122752743,
+            "objective_after": 125.87887231857059,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 1,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 125.87887231857059,
+            "objective_after": 117.22347005759286,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 2,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 117.22347005759286,
+            "objective_after": 110.94254155198568,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 3,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 110.94254155198568,
+            "objective_after": 105.18957458847362,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 4,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 105.18957458847362,
+            "objective_after": 99.87475383997047,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 5,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 99.87475383997047,
+            "objective_after": 95.07164016976469,
+            "max_accepted_joint_step": 0.030000000000000027
+          },
+          {
+            "iteration": 6,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 95.07164016976469,
+            "objective_after": 90.52469164085178,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 7,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 90.52469164085178,
+            "objective_after": 86.39455119838169,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 8,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 86.39455119838169,
+            "objective_after": 82.57331066812233,
+            "max_accepted_joint_step": 0.030000000000000027
+          },
+          {
+            "iteration": 9,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 82.57331066812233,
+            "objective_after": 78.87612512499955,
+            "max_accepted_joint_step": 0.030000000000000027
+          },
+          {
+            "iteration": 10,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 78.87612512499955,
+            "objective_after": 75.29203109868968,
+            "max_accepted_joint_step": 0.030000000000000526
+          },
+          {
+            "iteration": 11,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 75.29203109868968,
+            "objective_after": 71.7973081874959,
+            "max_accepted_joint_step": 0.030000000000000027
+          }
+        ],
+        "solver_calls": 12,
+        "nonlinear_evaluations": 25,
+        "elapsed_seconds": 0.4090420789999598,
+        "full_sequence_position_max_violation_rad": 0.0,
+        "full_sequence_velocity_max_violation_rad_s": 3.552713678800501e-15,
+        "outside_window_neighbours_fixed": true,
+        "cross_gap_velocity_edges": 0,
+        "posthoc_joint_clipping": false,
+        "full_retarget_solver_calls": 0,
+        "world_root_optimized": false,
+        "root_quaternions_read": false,
+        "world_units_inferred": false,
+        "terrain_constraints_implemented": false,
+        "self_collision_constraints_implemented": false,
+        "support_labels_generated": false,
+        "partial_joint_direction_fit_generated": true,
+        "candidate_motion_generated": false,
+        "accepted_reference": false,
+        "training_ready": false,
+        "source_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+        "seed_sha256": "48f8d43e058420e5ff89861d2336ead3317dc18223c36a7305503f3df54a66eb",
+        "source_task_model_sha256": "5e99d930af64f3f0bfd34235239e288cc380ba62c8b01fcfcf8cc9f0996e7fa4",
+        "target_model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+        "artifact": "DIRECTION_WINDOW_480_510.npz",
+        "artifact_sha256": "3169c8d23552755709a719ea7cee741e54f46b5a5a6bba7224584db30a675193",
+        "archive": {
+          "schema_version": 1,
+          "sha256": "3169c8d23552755709a719ea7cee741e54f46b5a5a6bba7224584db30a675193",
+          "bytes": 7018,
+          "role": "diagnostic_not_motion",
+          "source_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+          "model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+          "accepted_reference": false,
+          "training_ready": false,
+          "backup_scope": "local_same_sandbox_NOT_independent_offsite",
+          "backup_path": "/workspace/hud04-backups/sha256/3169c8d23552755709a719ea7cee741e54f46b5a5a6bba7224584db30a675193.npz",
+          "manifest_path": "/workspace/hud04-backups/sha256/3169c8d23552755709a719ea7cee741e54f46b5a5a6bba7224584db30a675193.json",
+          "readback_verified": true
+        },
+        "source_data_modified": false,
+        "source_assets_modified": false,
+        "direction_names": [
+          "left_thigh",
+          "left_shin",
+          "left_upper_arm",
+          "left_forearm",
+          "right_thigh",
+          "right_shin",
+          "right_upper_arm",
+          "right_forearm"
+        ],
+        "source_pairs": [
+          [
+            "left_thigh",
+            "left_hip_pitch_link",
+            "left_knee_link"
+          ],
+          [
+            "left_shin",
+            "left_knee_link",
+            "left_ankle_pitch_link"
+          ],
+          [
+            "left_upper_arm",
+            "left_shoulder_pitch_link",
+            "left_elbow_link"
+          ],
+          [
+            "left_forearm",
+            "left_elbow_link",
+            "left_wrist_yaw_link"
+          ],
+          [
+            "right_thigh",
+            "right_hip_pitch_link",
+            "right_knee_link"
+          ],
+          [
+            "right_shin",
+            "right_knee_link",
+            "right_ankle_pitch_link"
+          ],
+          [
+            "right_upper_arm",
+            "right_shoulder_pitch_link",
+            "right_elbow_link"
+          ],
+          [
+            "right_forearm",
+            "right_elbow_link",
+            "right_wrist_yaw_link"
+          ]
+        ],
+        "target_pairs": [
+          [
+            "left_thigh",
+            "left_hip_pitch_link",
+            "left_knee_link"
+          ],
+          [
+            "left_shin",
+            "left_knee_link",
+            "left_ankle_pitch_link"
+          ],
+          [
+            "left_upper_arm",
+            "left_shoulder_pitch_link",
+            "left_elbow_link"
+          ],
+          [
+            "left_forearm",
+            "left_elbow_link",
+            "left_wrist_roll_link"
+          ],
+          [
+            "right_thigh",
+            "right_hip_pitch_link",
+            "right_knee_link"
+          ],
+          [
+            "right_shin",
+            "right_knee_link",
+            "right_ankle_pitch_link"
+          ],
+          [
+            "right_upper_arm",
+            "right_shoulder_pitch_link",
+            "right_elbow_link"
+          ],
+          [
+            "right_forearm",
+            "right_elbow_link",
+            "right_wrist_roll_link"
+          ]
+        ],
+        "correspondence_status": "explicit diagnostic joint-pivot mapping NOT reviewed palm/sole/material contacts",
+        "anatomical_basis_assumption": "URDF pelvis/base anatomical axes correspond; no NPZ export/world calibration claim"
+      },
+      "supported_numeric_pools": [
+        {
+          "api": "openblas",
+          "threads": 2
+        },
+        {
+          "api": "openblas",
+          "threads": 2
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "wall_seconds": 1.616190391000032,
+      "child_reaped": true,
+      "status": "completed",
+      "iterations": 12,
+      "diagnostic": {
+        "stage": "root_local_direction_joint_diagnostic_NOT_full_reference",
+        "first": 966,
+        "last": 996,
+        "frames": 31,
+        "fps": 90,
+        "objective": "sum L1 unit-direction chordal residual + .001 total joint departure",
+        "initial": {
+          "mean_degrees": 23.65113817967007,
+          "p95_degrees": 78.65907288009423,
+          "max_degrees": 78.96648015018793,
+          "sum_l1_chordal": 152.8321644631501,
+          "per_direction_mean_degrees": [
+            1.0847112416134783,
+            6.245051152411284,
+            13.861068816307359,
+            70.40134549002005,
+            7.709755349635146,
+            1.692818829212917,
+            9.64374740194455,
+            78.57060715621579
+          ]
+        },
+        "final": {
+          "mean_degrees": 15.185760624701711,
+          "p95_degrees": 35.95579804647937,
+          "max_degrees": 38.6032248979005,
+          "sum_l1_chordal": 78.20595817239655,
+          "per_direction_mean_degrees": [
+            4.760090566221183,
+            0.07571032502348425,
+            35.86921504316345,
+            22.85662018090283,
+            7.444999943093196,
+            0.0016004799535456577,
+            20.56613832210252,
+            29.91171013715347
+          ]
+        },
+        "termination": "outer_budget_reached",
+        "history": [
+          {
+            "iteration": 0,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 152.8321644631501,
+            "objective_after": 140.6972631246219,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 1,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 140.6972631246219,
+            "objective_after": 131.121907386204,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 2,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 131.121907386204,
+            "objective_after": 124.76866641776833,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 3,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 124.76866641776833,
+            "objective_after": 118.87330535956983,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 4,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 118.87330535956983,
+            "objective_after": 112.98314329372221,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 5,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 112.98314329372221,
+            "objective_after": 107.29265418124201,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 6,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 107.29265418124201,
+            "objective_after": 101.79961962611794,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 7,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 101.79961962611794,
+            "objective_after": 96.36884755487947,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 8,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 96.36884755487947,
+            "objective_after": 91.14861613268423,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 9,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 91.14861613268423,
+            "objective_after": 86.72337257304082,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 10,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 86.72337257304082,
+            "objective_after": 82.51403353586223,
+            "max_accepted_joint_step": 0.03
+          },
+          {
+            "iteration": 11,
+            "lp_status": 0,
+            "accepted": true,
+            "alpha": 1.0,
+            "objective_before": 82.51403353586223,
+            "objective_after": 78.33782990382247,
+            "max_accepted_joint_step": 0.03
+          }
+        ],
+        "solver_calls": 12,
+        "nonlinear_evaluations": 25,
+        "elapsed_seconds": 0.39479185599998345,
+        "full_sequence_position_max_violation_rad": 0.0,
+        "full_sequence_velocity_max_violation_rad_s": 3.552713678800501e-15,
+        "outside_window_neighbours_fixed": true,
+        "cross_gap_velocity_edges": 0,
+        "posthoc_joint_clipping": false,
+        "full_retarget_solver_calls": 0,
+        "world_root_optimized": false,
+        "root_quaternions_read": false,
+        "world_units_inferred": false,
+        "terrain_constraints_implemented": false,
+        "self_collision_constraints_implemented": false,
+        "support_labels_generated": false,
+        "partial_joint_direction_fit_generated": true,
+        "candidate_motion_generated": false,
+        "accepted_reference": false,
+        "training_ready": false,
+        "source_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+        "seed_sha256": "48f8d43e058420e5ff89861d2336ead3317dc18223c36a7305503f3df54a66eb",
+        "source_task_model_sha256": "5e99d930af64f3f0bfd34235239e288cc380ba62c8b01fcfcf8cc9f0996e7fa4",
+        "target_model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+        "artifact": "DIRECTION_WINDOW_966_996.npz",
+        "artifact_sha256": "9a0640624abdf2b4b95f5152af6cf9886c6f9a58e36f5e997f617444affba7f1",
+        "archive": {
+          "schema_version": 1,
+          "sha256": "9a0640624abdf2b4b95f5152af6cf9886c6f9a58e36f5e997f617444affba7f1",
+          "bytes": 6322,
+          "role": "diagnostic_not_motion",
+          "source_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+          "model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+          "accepted_reference": false,
+          "training_ready": false,
+          "backup_scope": "local_same_sandbox_NOT_independent_offsite",
+          "backup_path": "/workspace/hud04-backups/sha256/9a0640624abdf2b4b95f5152af6cf9886c6f9a58e36f5e997f617444affba7f1.npz",
+          "manifest_path": "/workspace/hud04-backups/sha256/9a0640624abdf2b4b95f5152af6cf9886c6f9a58e36f5e997f617444affba7f1.json",
+          "readback_verified": true
+        },
+        "source_data_modified": false,
+        "source_assets_modified": false,
+        "direction_names": [
+          "left_thigh",
+          "left_shin",
+          "left_upper_arm",
+          "left_forearm",
+          "right_thigh",
+          "right_shin",
+          "right_upper_arm",
+          "right_forearm"
+        ],
+        "source_pairs": [
+          [
+            "left_thigh",
+            "left_hip_pitch_link",
+            "left_knee_link"
+          ],
+          [
+            "left_shin",
+            "left_knee_link",
+            "left_ankle_pitch_link"
+          ],
+          [
+            "left_upper_arm",
+            "left_shoulder_pitch_link",
+            "left_elbow_link"
+          ],
+          [
+            "left_forearm",
+            "left_elbow_link",
+            "left_wrist_yaw_link"
+          ],
+          [
+            "right_thigh",
+            "right_hip_pitch_link",
+            "right_knee_link"
+          ],
+          [
+            "right_shin",
+            "right_knee_link",
+            "right_ankle_pitch_link"
+          ],
+          [
+            "right_upper_arm",
+            "right_shoulder_pitch_link",
+            "right_elbow_link"
+          ],
+          [
+            "right_forearm",
+            "right_elbow_link",
+            "right_wrist_yaw_link"
+          ]
+        ],
+        "target_pairs": [
+          [
+            "left_thigh",
+            "left_hip_pitch_link",
+            "left_knee_link"
+          ],
+          [
+            "left_shin",
+            "left_knee_link",
+            "left_ankle_pitch_link"
+          ],
+          [
+            "left_upper_arm",
+            "left_shoulder_pitch_link",
+            "left_elbow_link"
+          ],
+          [
+            "left_forearm",
+            "left_elbow_link",
+            "left_wrist_roll_link"
+          ],
+          [
+            "right_thigh",
+            "right_hip_pitch_link",
+            "right_knee_link"
+          ],
+          [
+            "right_shin",
+            "right_knee_link",
+            "right_ankle_pitch_link"
+          ],
+          [
+            "right_upper_arm",
+            "right_shoulder_pitch_link",
+            "right_elbow_link"
+          ],
+          [
+            "right_forearm",
+            "right_elbow_link",
+            "right_wrist_roll_link"
+          ]
+        ],
+        "correspondence_status": "explicit diagnostic joint-pivot mapping NOT reviewed palm/sole/material contacts",
+        "anatomical_basis_assumption": "URDF pelvis/base anatomical axes correspond; no NPZ export/world calibration claim"
+      },
+      "supported_numeric_pools": [
+        {
+          "api": "openblas",
+          "threads": 2
+        },
+        {
+          "api": "openblas",
+          "threads": 2
+        }
+      ]
+    }
+  ],
+  "wall_seconds": 4.925707815999999,
+  "retries": 0,
+  "hard_parent_deadline": true,
+  "cleanup_grace_seconds_max": 0.7,
+  "iteration_limit_scope": "trusted_workers_calling_gate_each_iteration_only",
+  "thread_limit_scope": "supported_BLAS_OpenMP_pools_not_all_OS_threads_or_CPU_cores",
+  "gpu_submissions": 0,
+  "solver_calls": 36,
+  "candidate_motion_generated": false,
+  "accepted_reference": false,
+  "training_ready": false,
+  "partial_joint_direction_fit_generated": true,
+  "full_retarget_solver_calls": 0,
+  "logging_mode": "offline_pending_sync",
+  "wandb_access_result": "write_invalid_audience_despite_successful_project_read"
+}

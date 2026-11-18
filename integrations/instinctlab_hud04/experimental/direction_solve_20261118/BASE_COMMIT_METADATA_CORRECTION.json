@@ -1,0 +1,11 @@
+{
+  "field": "base_commit in the two offline W&B configs",
+  "recorded_incorrect_value": "87646a750abed29fdbf65335e993166507317e96",
+  "correct_prepublication_base": "87646a7dab6b831e60e1218ee23da94d02e9e731",
+  "reason": "Manual metadata transcription error; seven-character prefix was correct but the remaining characters were not.",
+  "input_and_model_sha256_unchanged": true,
+  "first_wrist_code_sha256_binding_unchanged": true,
+  "saved_output_bytes_unchanged": true,
+  "offline_records_not_rewritten": true,
+  "do_not_resolve_incorrect_sha_as_git_object": true
+}

@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/workspace/hud04-direction-solve-20261118/run_direction_diagnostic.py", line 103, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/workspace/hud04-direction-solve-20261118/run_direction_diagnostic.py", line 70, in main
+    run=wandb.init(entity=ENTITY,project=PROJECT,name='hud04-step1-pelvis-direction-window-diagnostic-NOT-reference',job_type='root-local-direction-diagnostic',
+        mode='online' if online else 'offline',dir=str(ROOT),settings=wandb.Settings(init_timeout=20),
+        config={'_wb_agent':provenance,'base_commit':'87646a750abed29fdbf65335e993166507317e96','cpu_only':True,'windows':[[0,30],[480,510],[966,996]],
+                'max_outer_iterations_per_window':12,'lp_time_limit_seconds':2,'fps':90,'accepted_reference':False,'training_ready':False})
+  File "/usr/local/lib/python3.13/site-packages/wandb/sdk/wandb_init.py", line 1556, in init
+    telemetry_recorder.reraise(e)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/local/lib/python3.13/site-packages/wandb/analytics/opentelemetry/opentelemetry_proxy.py", line 419, in reraise
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/wandb/sdk/wandb_init.py", line 1540, in init
+    run = wi.init(run_settings, run_config, run_printer)
+  File "/usr/local/lib/python3.13/site-packages/wandb/sdk/wandb_init.py", line 970, in init
+    raise error
+wandb.errors.errors.CommError: invalid audience for request

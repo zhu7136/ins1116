@@ -1,0 +1,29 @@
+test_all_29_jacobian_columns (test_direction_solver.DirectionTests.test_all_29_jacobian_columns) ... ok
+test_bad_names (test_direction_solver.DirectionTests.test_bad_names) ... ok
+test_bad_or_missing_targets (test_direction_solver.DirectionTests.test_bad_or_missing_targets) ... ok
+test_common_world_transform_cancels (test_direction_solver.DirectionTests.test_common_world_transform_cancels) ... ok
+test_direction_statistics (test_direction_solver.DirectionTests.test_direction_statistics) ... ok
+test_endpoint_declaration_and_validation (test_direction_solver.DirectionTests.test_endpoint_declaration_and_validation) ... ok
+test_finite_iteration_budget (test_direction_solver.DirectionTests.test_finite_iteration_budget) ... ok
+test_first_wrist_not_rotated_by_any_wrist_dof (test_direction_solver.DirectionTests.test_first_wrist_not_rotated_by_any_wrist_dof) ... ok
+test_first_wrist_target_jacobian (test_direction_solver.DirectionTests.test_first_wrist_target_jacobian) ... ok
+test_global_endpoints (test_direction_solver.DirectionTests.test_global_endpoints) ... ok
+test_hard_rows_match_whole_sequence (test_direction_solver.DirectionTests.test_hard_rows_match_whole_sequence) ... ok
+test_head_excluded (test_direction_solver.DirectionTests.test_head_excluded) ... ok
+test_named_reordering (test_direction_solver.DirectionTests.test_named_reordering) ... ok
+test_no_source_jacobian_claim (test_direction_solver.DirectionTests.test_no_source_jacobian_claim) ... ok
+test_nonfinite_and_bad_shapes (test_direction_solver.DirectionTests.test_nonfinite_and_bad_shapes) ... ok
+test_one_lp_synthetic_feasible_fit (test_direction_solver.DirectionTests.test_one_lp_synthetic_feasible_fit) ... ok
+test_source_against_prior_independent_fk (test_direction_solver.DirectionTests.test_source_against_prior_independent_fk) ... ok
+test_source_waist_does_not_rotate_pelvis_local_legs (test_direction_solver.DirectionTests.test_source_waist_does_not_rotate_pelvis_local_legs) ... ok
+test_target_against_prior_independent_fk (test_direction_solver.DirectionTests.test_target_against_prior_independent_fk) ... ok
+test_trust_radius_guard (test_direction_solver.DirectionTests.test_trust_radius_guard) ... ok
+test_uniform_model_scale_invariance (test_direction_solver.DirectionTests.test_uniform_model_scale_invariance) ... ok
+test_unit_shapes (test_direction_solver.DirectionTests.test_unit_shapes) ... ok
+test_window_validation (test_direction_solver.DirectionTests.test_window_validation) ... ok
+test_wrong_hash_or_role (test_direction_solver.DirectionTests.test_wrong_hash_or_role) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.164s
+
+OK

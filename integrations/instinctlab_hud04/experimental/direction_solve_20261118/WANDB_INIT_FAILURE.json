@@ -1,0 +1,12 @@
+{
+  "target": "zhul136-university-of-science-and-technology-of-china/ins1116",
+  "read_access": "project_read_succeeded",
+  "write_access": "invalid_audience",
+  "operation": "wandb.init online diagnostic record",
+  "evidence": "DIRECTION_EXECUTION.log",
+  "solver_started": false,
+  "intent_file_created": false,
+  "gpu_submissions": 0,
+  "online_run_creation_verified": false,
+  "next_record_mode": "offline_pending_sync_no_online_retry"
+}

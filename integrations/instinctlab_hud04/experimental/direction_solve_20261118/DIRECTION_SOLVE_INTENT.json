@@ -1,0 +1,12 @@
+{
+  "utc": "2026-11-18T00:14:12.050141+00:00",
+  "run_id": "v2fkpx78",
+  "wandb_online": false,
+  "wandb_access": "write_invalid_audience_despite_successful_project_read",
+  "cpu_only": true,
+  "gpu_submissions": 0,
+  "mode": "pelvis-local-direction-joints-only diagnostic; NO world motion",
+  "max_windows": 3,
+  "max_frames": 93,
+  "accepted_reference": false
+}

@@ -1,0 +1,13 @@
+{
+  "run_id": "v2fkpx78",
+  "logging_mode": "offline_pending_sync",
+  "server_readback_verified": false,
+  "offline_directory": "/workspace/hud04-direction-solve-20261118/wandb/offline-run-20261118_001411-v2fkpx78",
+  "status": "completed",
+  "completed_windows": 3,
+  "actual_lp_calls": 36,
+  "gpu_submissions": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false,
+  "training_ready": false
+}

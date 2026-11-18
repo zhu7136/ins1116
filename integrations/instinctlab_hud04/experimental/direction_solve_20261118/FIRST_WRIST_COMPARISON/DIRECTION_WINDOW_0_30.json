@@ -1,0 +1,295 @@
+{
+  "stage": "root_local_direction_joint_diagnostic_NOT_full_reference",
+  "first": 0,
+  "last": 30,
+  "frames": 31,
+  "fps": 90,
+  "objective": "sum L1 unit-direction chordal residual + .001 total joint departure",
+  "initial": {
+    "mean_degrees": 22.797312239749928,
+    "p95_degrees": 77.33231938305866,
+    "max_degrees": 81.25692534662011,
+    "sum_l1_chordal": 146.11110944979666,
+    "per_direction_mean_degrees": [
+      5.5890410809812625,
+      2.8833488484229797,
+      3.6400593097635716,
+      76.75790942527462,
+      5.883788531756263,
+      2.6035897517992876,
+      7.6758400006570575,
+      77.34492096934439
+    ]
+  },
+  "final": {
+    "mean_degrees": 3.1578581325119965,
+    "p95_degrees": 16.57904593172302,
+    "max_degrees": 47.87492265549975,
+    "sum_l1_chordal": 16.28626686125147,
+    "per_direction_mean_degrees": [
+      2.105229249312217,
+      1.1817417514762564e-13,
+      2.8391492184053386,
+      6.275851679889705,
+      5.841521082482922,
+      0.00024696160977767776,
+      3.214802121488921,
+      4.986064746906974
+    ]
+  },
+  "termination": "outer_budget_reached",
+  "history": [
+    {
+      "iteration": 0,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 146.11110944979666,
+      "objective_after": 113.97440098497786,
+      "max_accepted_joint_step": 0.15
+    },
+    {
+      "iteration": 1,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 113.97440098497786,
+      "objective_after": 93.27702605314033,
+      "max_accepted_joint_step": 0.15
+    },
+    {
+      "iteration": 2,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 93.27702605314033,
+      "objective_after": 74.68349260583844,
+      "max_accepted_joint_step": 0.15
+    },
+    {
+      "iteration": 3,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 74.68349260583844,
+      "objective_after": 61.87965132189149,
+      "max_accepted_joint_step": 0.15
+    },
+    {
+      "iteration": 4,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 61.87965132189149,
+      "objective_after": 50.0614754198073,
+      "max_accepted_joint_step": 0.15
+    },
+    {
+      "iteration": 5,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 50.0614754198073,
+      "objective_after": 40.03017454901728,
+      "max_accepted_joint_step": 0.15
+    },
+    {
+      "iteration": 6,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 40.03017454901728,
+      "objective_after": 32.142534114895554,
+      "max_accepted_joint_step": 0.15
+    },
+    {
+      "iteration": 7,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 32.142534114895554,
+      "objective_after": 26.93638705733721,
+      "max_accepted_joint_step": 0.15
+    },
+    {
+      "iteration": 8,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 26.93638705733721,
+      "objective_after": 25.219009435754288,
+      "max_accepted_joint_step": 0.15
+    },
+    {
+      "iteration": 9,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 25.219009435754288,
+      "objective_after": 22.92942247750632,
+      "max_accepted_joint_step": 0.15
+    },
+    {
+      "iteration": 10,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 22.92942247750632,
+      "objective_after": 19.63246886260332,
+      "max_accepted_joint_step": 0.15
+    },
+    {
+      "iteration": 11,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 19.63246886260332,
+      "objective_after": 16.514490371898045,
+      "max_accepted_joint_step": 0.15000000000000002
+    }
+  ],
+  "solver_calls": 12,
+  "nonlinear_evaluations": 25,
+  "elapsed_seconds": 0.5499822969999286,
+  "joint_trust_radius_rad": 0.15,
+  "full_sequence_position_max_violation_rad": 0.0,
+  "full_sequence_velocity_max_violation_rad_s": 3.552713678800501e-14,
+  "outside_window_neighbours_fixed": true,
+  "cross_gap_velocity_edges": 0,
+  "posthoc_joint_clipping": false,
+  "full_retarget_solver_calls": 0,
+  "world_root_optimized": false,
+  "root_quaternions_read": false,
+  "world_units_inferred": false,
+  "terrain_constraints_implemented": false,
+  "self_collision_constraints_implemented": false,
+  "support_labels_generated": false,
+  "partial_joint_direction_fit_generated": true,
+  "candidate_motion_generated": false,
+  "accepted_reference": false,
+  "training_ready": false,
+  "source_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+  "seed_sha256": "48f8d43e058420e5ff89861d2336ead3317dc18223c36a7305503f3df54a66eb",
+  "source_task_model_sha256": "5e99d930af64f3f0bfd34235239e288cc380ba62c8b01fcfcf8cc9f0996e7fa4",
+  "target_model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+  "artifact": "DIRECTION_WINDOW_0_30.npz",
+  "artifact_sha256": "b4e357fb87b060d428b9ad1aebf1d29b9efaf4a330129f48991782853c42c1d1",
+  "archive": {
+    "schema_version": 1,
+    "sha256": "b4e357fb87b060d428b9ad1aebf1d29b9efaf4a330129f48991782853c42c1d1",
+    "bytes": 7042,
+    "role": "diagnostic_not_motion",
+    "source_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+    "model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+    "accepted_reference": false,
+    "training_ready": false,
+    "backup_scope": "local_same_sandbox_NOT_independent_offsite",
+    "backup_path": "/workspace/hud04-backups/sha256/b4e357fb87b060d428b9ad1aebf1d29b9efaf4a330129f48991782853c42c1d1.npz",
+    "manifest_path": "/workspace/hud04-backups/sha256/b4e357fb87b060d428b9ad1aebf1d29b9efaf4a330129f48991782853c42c1d1.json",
+    "readback_verified": true
+  },
+  "source_data_modified": false,
+  "source_assets_modified": false,
+  "direction_names": [
+    "left_thigh",
+    "left_shin",
+    "left_upper_arm",
+    "left_forearm",
+    "right_thigh",
+    "right_shin",
+    "right_upper_arm",
+    "right_forearm"
+  ],
+  "source_pairs": [
+    [
+      "left_thigh",
+      "left_hip_pitch_link",
+      "left_knee_link"
+    ],
+    [
+      "left_shin",
+      "left_knee_link",
+      "left_ankle_pitch_link"
+    ],
+    [
+      "left_upper_arm",
+      "left_shoulder_pitch_link",
+      "left_elbow_link"
+    ],
+    [
+      "left_forearm",
+      "left_elbow_link",
+      "left_wrist_roll_link"
+    ],
+    [
+      "right_thigh",
+      "right_hip_pitch_link",
+      "right_knee_link"
+    ],
+    [
+      "right_shin",
+      "right_knee_link",
+      "right_ankle_pitch_link"
+    ],
+    [
+      "right_upper_arm",
+      "right_shoulder_pitch_link",
+      "right_elbow_link"
+    ],
+    [
+      "right_forearm",
+      "right_elbow_link",
+      "right_wrist_roll_link"
+    ]
+  ],
+  "target_pairs": [
+    [
+      "left_thigh",
+      "left_hip_pitch_link",
+      "left_knee_link"
+    ],
+    [
+      "left_shin",
+      "left_knee_link",
+      "left_ankle_pitch_link"
+    ],
+    [
+      "left_upper_arm",
+      "left_shoulder_pitch_link",
+      "left_elbow_link"
+    ],
+    [
+      "left_forearm",
+      "left_elbow_link",
+      "left_wrist_yaw_link"
+    ],
+    [
+      "right_thigh",
+      "right_hip_pitch_link",
+      "right_knee_link"
+    ],
+    [
+      "right_shin",
+      "right_knee_link",
+      "right_ankle_pitch_link"
+    ],
+    [
+      "right_upper_arm",
+      "right_shoulder_pitch_link",
+      "right_elbow_link"
+    ],
+    [
+      "right_forearm",
+      "right_elbow_link",
+      "right_wrist_yaw_link"
+    ]
+  ],
+  "correspondence_status": "explicit diagnostic joint-pivot mapping NOT reviewed palm/sole/material contacts",
+  "anatomical_basis_assumption": "URDF pelvis/base anatomical axes correspond; no NPZ export/world calibration claim",
+  "wrist_endpoint": "first_wrist_pivot",
+  "code_sha256": {
+    "anatomical_directions.py": "23660e03d2fbe7b1e0e334c47b506e9c07e4c8931430bd6f6c3afc762159587d",
+    "direction_solver.py": "ac15a16b988774445c6ddc372d6c46e7c9df0fe45a5f236663d281291891a270",
+    "run_direction_diagnostic.py": "af801b8eb085d980553b4dd1263c3199e1c79624c17320cf2ed1a505b1840403"
+  }
+}

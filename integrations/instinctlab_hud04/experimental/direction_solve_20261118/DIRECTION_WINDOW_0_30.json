@@ -1,0 +1,288 @@
+{
+  "stage": "root_local_direction_joint_diagnostic_NOT_full_reference",
+  "first": 0,
+  "last": 30,
+  "frames": 31,
+  "fps": 90,
+  "objective": "sum L1 unit-direction chordal residual + .001 total joint departure",
+  "initial": {
+    "mean_degrees": 23.462246841385166,
+    "p95_degrees": 80.07550816108282,
+    "max_degrees": 83.90877078270199,
+    "sum_l1_chordal": 149.83237057425478,
+    "per_direction_mean_degrees": [
+      5.5890410809812625,
+      2.8833488484229797,
+      3.6400593097635716,
+      79.30676786334831,
+      5.883788531756263,
+      2.6035897517992876,
+      7.6758400006570575,
+      80.11553934435253
+    ]
+  },
+  "final": {
+    "mean_degrees": 15.325531877102257,
+    "p95_degrees": 32.28532593761897,
+    "max_degrees": 45.8163564203726,
+    "sum_l1_chordal": 78.6846474211812,
+    "per_direction_mean_degrees": [
+      5.763938553363581,
+      0.004131633538736611,
+      22.621998820558005,
+      31.503037499839674,
+      7.478102756592375,
+      0.00035091424910987213,
+      23.269782700723802,
+      31.962912137952777
+    ]
+  },
+  "termination": "outer_budget_reached",
+  "history": [
+    {
+      "iteration": 0,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 149.83237057425478,
+      "objective_after": 137.82946565682127,
+      "max_accepted_joint_step": 0.03
+    },
+    {
+      "iteration": 1,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 137.82946565682127,
+      "objective_after": 131.7843256194555,
+      "max_accepted_joint_step": 0.03
+    },
+    {
+      "iteration": 2,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 131.7843256194555,
+      "objective_after": 125.84733625491526,
+      "max_accepted_joint_step": 0.03
+    },
+    {
+      "iteration": 3,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 125.84733625491526,
+      "objective_after": 119.87758149220481,
+      "max_accepted_joint_step": 0.03
+    },
+    {
+      "iteration": 4,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 119.87758149220481,
+      "objective_after": 113.99522769254939,
+      "max_accepted_joint_step": 0.03
+    },
+    {
+      "iteration": 5,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 113.99522769254939,
+      "objective_after": 108.23124898754232,
+      "max_accepted_joint_step": 0.03
+    },
+    {
+      "iteration": 6,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 108.23124898754232,
+      "objective_after": 102.61855235004722,
+      "max_accepted_joint_step": 0.03
+    },
+    {
+      "iteration": 7,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 102.61855235004722,
+      "objective_after": 97.20820612496513,
+      "max_accepted_joint_step": 0.030000000000000027
+    },
+    {
+      "iteration": 8,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 97.20820612496513,
+      "objective_after": 92.17360562779058,
+      "max_accepted_joint_step": 0.030000000000000027
+    },
+    {
+      "iteration": 9,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 92.17360562779058,
+      "objective_after": 87.5407018999615,
+      "max_accepted_joint_step": 0.03
+    },
+    {
+      "iteration": 10,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 87.5407018999615,
+      "objective_after": 83.1404697216184,
+      "max_accepted_joint_step": 0.03
+    },
+    {
+      "iteration": 11,
+      "lp_status": 0,
+      "accepted": true,
+      "alpha": 1.0,
+      "objective_before": 83.1404697216184,
+      "objective_after": 78.8230259635801,
+      "max_accepted_joint_step": 0.03
+    }
+  ],
+  "solver_calls": 12,
+  "nonlinear_evaluations": 25,
+  "elapsed_seconds": 0.3910187889999861,
+  "full_sequence_position_max_violation_rad": 0.0,
+  "full_sequence_velocity_max_violation_rad_s": 3.552713678800501e-15,
+  "outside_window_neighbours_fixed": true,
+  "cross_gap_velocity_edges": 0,
+  "posthoc_joint_clipping": false,
+  "full_retarget_solver_calls": 0,
+  "world_root_optimized": false,
+  "root_quaternions_read": false,
+  "world_units_inferred": false,
+  "terrain_constraints_implemented": false,
+  "self_collision_constraints_implemented": false,
+  "support_labels_generated": false,
+  "partial_joint_direction_fit_generated": true,
+  "candidate_motion_generated": false,
+  "accepted_reference": false,
+  "training_ready": false,
+  "source_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+  "seed_sha256": "48f8d43e058420e5ff89861d2336ead3317dc18223c36a7305503f3df54a66eb",
+  "source_task_model_sha256": "5e99d930af64f3f0bfd34235239e288cc380ba62c8b01fcfcf8cc9f0996e7fa4",
+  "target_model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+  "artifact": "DIRECTION_WINDOW_0_30.npz",
+  "artifact_sha256": "265919c3f9e646c3f2357b175ca6cddc1c817519cfde1261f603dc35548a7e72",
+  "archive": {
+    "schema_version": 1,
+    "sha256": "265919c3f9e646c3f2357b175ca6cddc1c817519cfde1261f603dc35548a7e72",
+    "bytes": 6628,
+    "role": "diagnostic_not_motion",
+    "source_sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+    "model_sha256": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+    "accepted_reference": false,
+    "training_ready": false,
+    "backup_scope": "local_same_sandbox_NOT_independent_offsite",
+    "backup_path": "/workspace/hud04-backups/sha256/265919c3f9e646c3f2357b175ca6cddc1c817519cfde1261f603dc35548a7e72.npz",
+    "manifest_path": "/workspace/hud04-backups/sha256/265919c3f9e646c3f2357b175ca6cddc1c817519cfde1261f603dc35548a7e72.json",
+    "readback_verified": true
+  },
+  "source_data_modified": false,
+  "source_assets_modified": false,
+  "direction_names": [
+    "left_thigh",
+    "left_shin",
+    "left_upper_arm",
+    "left_forearm",
+    "right_thigh",
+    "right_shin",
+    "right_upper_arm",
+    "right_forearm"
+  ],
+  "source_pairs": [
+    [
+      "left_thigh",
+      "left_hip_pitch_link",
+      "left_knee_link"
+    ],
+    [
+      "left_shin",
+      "left_knee_link",
+      "left_ankle_pitch_link"
+    ],
+    [
+      "left_upper_arm",
+      "left_shoulder_pitch_link",
+      "left_elbow_link"
+    ],
+    [
+      "left_forearm",
+      "left_elbow_link",
+      "left_wrist_yaw_link"
+    ],
+    [
+      "right_thigh",
+      "right_hip_pitch_link",
+      "right_knee_link"
+    ],
+    [
+      "right_shin",
+      "right_knee_link",
+      "right_ankle_pitch_link"
+    ],
+    [
+      "right_upper_arm",
+      "right_shoulder_pitch_link",
+      "right_elbow_link"
+    ],
+    [
+      "right_forearm",
+      "right_elbow_link",
+      "right_wrist_yaw_link"
+    ]
+  ],
+  "target_pairs": [
+    [
+      "left_thigh",
+      "left_hip_pitch_link",
+      "left_knee_link"
+    ],
+    [
+      "left_shin",
+      "left_knee_link",
+      "left_ankle_pitch_link"
+    ],
+    [
+      "left_upper_arm",
+      "left_shoulder_pitch_link",
+      "left_elbow_link"
+    ],
+    [
+      "left_forearm",
+      "left_elbow_link",
+      "left_wrist_roll_link"
+    ],
+    [
+      "right_thigh",
+      "right_hip_pitch_link",
+      "right_knee_link"
+    ],
+    [
+      "right_shin",
+      "right_knee_link",
+      "right_ankle_pitch_link"
+    ],
+    [
+      "right_upper_arm",
+      "right_shoulder_pitch_link",
+      "right_elbow_link"
+    ],
+    [
+      "right_forearm",
+      "right_elbow_link",
+      "right_wrist_roll_link"
+    ]
+  ],
+  "correspondence_status": "explicit diagnostic joint-pivot mapping NOT reviewed palm/sole/material contacts",
+  "anatomical_basis_assumption": "URDF pelvis/base anatomical axes correspond; no NPZ export/world calibration claim"
+}
