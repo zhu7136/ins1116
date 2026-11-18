@@ -1,0 +1,18 @@
+test_acceptance_cleanup_forgery_rejected (test_contact_contract.ContactContractTests.test_acceptance_cleanup_forgery_rejected) ... ok
+test_all_zero_not_filter_proof (test_contact_contract.ContactContractTests.test_all_zero_not_filter_proof) ... ok
+test_enabled_wrist_required_independently (test_contact_contract.ContactContractTests.test_enabled_wrist_required_independently) ... ok
+test_exact_report_validates (test_contact_contract.ContactContractTests.test_exact_report_validates) ... ok
+test_explicit_false_contact_rejects_filter_claim (test_contact_contract.ContactContractTests.test_explicit_false_contact_rejects_filter_claim) ... ok
+test_identity_and_computed_verdict_rejected (test_contact_contract.ContactContractTests.test_identity_and_computed_verdict_rejected) ... ok
+test_missing_extra_and_short_channels_rejected (test_contact_contract.ContactContractTests.test_missing_extra_and_short_channels_rejected) ... ok
+test_nonfinite_negative_boolean_rejected (test_contact_contract.ContactContractTests.test_nonfinite_negative_boolean_rejected) ... ok
+test_original_contact_rejects_filter_claim (test_contact_contract.ContactContractTests.test_original_contact_rejects_filter_claim) ... ok
+test_path_binding_not_suffix_based (test_contact_contract.ContactContractTests.test_path_binding_not_suffix_based) ... ok
+test_policy_before_original_immutable (test_contact_contract.ContactContractTests.test_policy_before_original_immutable) ... ok
+test_positive_classification_never_full_pair_or_reference_acceptance (test_contact_contract.ContactContractTests.test_positive_classification_never_full_pair_or_reference_acceptance) ... ok
+test_positive_controls_required (test_contact_contract.ContactContractTests.test_positive_controls_required) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.002s
+
+OK

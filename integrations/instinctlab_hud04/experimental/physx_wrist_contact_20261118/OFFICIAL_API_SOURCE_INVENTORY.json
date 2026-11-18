@@ -1,0 +1,23 @@
+{
+  "contact_sensor.py": {
+    "repo": "isaac-sim/IsaacLab",
+    "ref": "v2.3.2",
+    "path": "source/isaaclab/isaaclab/sensors/contact_sensor/contact_sensor.py",
+    "git_blob": "2a85a2661f6acdfd96ba18745a688f714b8c6752",
+    "sha256": "5bf3b77d2159850526e3833bf50253dbce06cb78b850eae13fb4088dc233760d"
+  },
+  "app_launcher.py": {
+    "repo": "isaac-sim/IsaacLab",
+    "ref": "v2.3.2",
+    "path": "source/isaaclab/isaaclab/app/app_launcher.py",
+    "git_blob": "e986d4b664a008dfead172953fd6d82fcd9ac095",
+    "sha256": "7ab2c742cfa64e2c4e2ea4601d9441e5e8c9bb8f556a121b0d10c337f9b6093e"
+  },
+  "simulation_context.py": {
+    "repo": "isaac-sim/IsaacLab",
+    "ref": "v2.3.2",
+    "path": "source/isaaclab/isaaclab/sim/simulation_context.py",
+    "git_blob": "d022c2d32a75a5db123d316da761aa954218a50f",
+    "sha256": "d95f2eaa138b4fff845ac72439caa2eca5deab4f0d5609e06f163d20eef4df93"
+  }
+}
