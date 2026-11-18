@@ -2,6 +2,8 @@
 import copy, math, unittest
 from contact_probe import evaluate,ROLES,SIDES,STEPS
 from launch_once import validate_report
+from instrumentation_v2 import validate_instrumentation
+from test_instrumentation_v2 import fixture
 
 class ContactContractTests(unittest.TestCase):
     def series(self):
@@ -17,10 +19,12 @@ class ContactContractTests(unittest.TestCase):
                 b.append(dict(role=r,side=s,joint=root+'/joints/'+s+'_wrist_roll_joint',body0=[root+'/'+s+'_wrist_pitch_link'],body1=[root+'/'+s+'_wrist_roll_link'],
                     before=dict(value=False,authored=False),observed_value=r=='explicit_true',observed_authored=r!='original_fallback'))
         samples=self.series()
+        instrument,_=fixture(samples)
+        review=validate_instrumentation(instrument,samples)
         return dict(stage='hud04_controlled_wrist_contact_observation',source_commit='a'*40,probe_sha256='b'*64,
             accepted_reference=False,training_ready=False,full_task_tested=False,graceful_full_cleanup_proven=False,
             body_dof=29,head_action_dof=0,explicit_physics_steps=STEPS,num_envs=3,exact_joint_body_bindings=b,
-            measured_force_norms=samples,verdict=evaluate(samples))
+            measured_force_norms=samples,verdict=evaluate(samples,review),instrumentation=instrument,instrumentation_review=review)
     def test_positive_controls_required(self):
         s=self.series();s['box_positive_control']=[0.]*STEPS
         self.assertFalse(any(evaluate(s)['controlled_wrist_body_pair_filter_supported'].values()))

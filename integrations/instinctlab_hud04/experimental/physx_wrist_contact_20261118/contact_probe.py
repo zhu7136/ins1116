@@ -14,7 +14,7 @@ def write_new(p,d):
     with p.open('x') as f:json.dump(d,f,indent=2,allow_nan=False)
 def emit(phase,**kw):print(json.dumps(dict(stage='hud04_wrist_contact_phase',phase=phase,**kw)),flush=True)
 
-def evaluate(samples):
+def evaluate(samples,instrumentation_review=None):
     """Strict measured evidence, not nominal-shape or all-articulation acceptance."""
     import math
     expected={'box_positive_control'}|{role+'_'+side for role in ROLES for side in SIDES}
@@ -23,6 +23,7 @@ def evaluate(samples):
         if len(values)!=STEPS or any(isinstance(x,bool) or not isinstance(x,(int,float)) or not math.isfinite(x) or x<0 for x in values):raise ValueError('Invalid measured force series')
     peaks={k:max(v) for k,v in samples.items()}
     positive=peaks['box_positive_control']>1e-6
+    if instrumentation_review is not None:positive=positive and instrumentation_review.get('positive_control_valid') is True
     verdict={side:(positive and peaks['explicit_true_'+side]>1e-6 and peaks['original_fallback_'+side]<=1e-9 and peaks['explicit_false_'+side]<=1e-9) for side in SIDES}
     return dict(peak_force_norm_native=peaks,independent_box_contact_positive=positive,
         controlled_wrist_body_pair_filter_supported=verdict,
@@ -56,13 +57,18 @@ def main(args):
     sim=None
     try:
         import inspect
+        import carb
         import torch
         import isaaclab.sim as sim_utils
+        from isaaclab.sensors import ContactSensor,ContactSensorCfg
+        from measured_task131.contact_processing_guard import enable_contact_processing
+        from instrumentation_v2 import validate_instrumentation
         from isaaclab.scene import InteractiveScene,InteractiveSceneCfg
         from isaaclab.utils import configclass
         from isaacsim.core.simulation_manager import SimulationManager
         from pxr import Usd,UsdPhysics,PhysxSchema
         sim=sim_utils.SimulationContext(sim_utils.SimulationCfg(dt=DT,device='cuda:0'))
+        contact_processing=enable_contact_processing(carb.settings.get_settings())
         cfg=runpy.run_path(str(asset/'asset_config.py'))['HUD04_CFG'].replace(prim_path='{ENV_REGEX_NS}/Robot')
         # All three copies use identical no-gravity conditions. This is a
         # repeated-state collision diagnostic, NOT a standing/motion trial.
@@ -92,6 +98,11 @@ def main(args):
             mass_props=sim_utils.MassPropertiesCfg(mass=1.),collision_props=sim_utils.CollisionPropertiesCfg(),activate_contact_sensors=True)
         boxcfg.func('/World/contact_box_A',boxcfg,translation=(25.,0.,1.))
         boxcfg.func('/World/contact_box_B',boxcfg,translation=(25.08,0.,1.))
+        for path in ('/World/contact_box_A','/World/contact_box_B'):
+            PhysxSchema.PhysxContactReportAPI.Apply(stage.GetPrimAtPath(path)).CreateThresholdAttr().Set(0.)
+        box_sensor=ContactSensor(ContactSensorCfg(prim_path='/World/contact_box_A',
+            filter_prim_paths_expr=['/World/contact_box_B'],update_period=0.,history_length=0,
+            track_pose=True,track_contact_points=True,max_contact_data_count_per_prim=256,debug_vis=False))
         emit('before_physics_reset')
         sim.reset();scene.reset()
         robot=scene['robot'];names=list(robot.joint_names)
@@ -107,6 +118,11 @@ def main(args):
         control=view.create_rigid_contact_view('/World/contact_box_A',filter_patterns=['/World/contact_box_B'],max_contact_data_count=256)
         if control.filter_count!=1:raise ValueError('Box control unresolved')
         channels['box_positive_control']=control
+        box_views={s:view.create_rigid_body_view('/World/contact_box_'+s) for s in ('A','B')}
+        if any(v.count!=1 for v in box_views.values()):raise ValueError('Box state view not singleton')
+        settings_after_reset=carb.settings.get_settings().get_as_bool('/physics/disableContactProcessing')
+        if settings_after_reset is not False:raise ValueError('Contact processing disabled after reset')
+        box_trace=[];contact_counts={k:[] for k in channels};sensor_vectors=[]
         samples={k:[] for k in channels}
         root=robot.data.default_root_state.clone();root[:,:3]+=scene.env_origins
         q=robot.data.default_joint_pos.clone();qd=torch.zeros_like(q)
@@ -117,12 +133,40 @@ def main(args):
             robot.write_root_state_to_sim(root)
             robot.write_joint_state_to_sim(q,qd)
             robot.set_joint_position_target(q)
+            # Native tensor transforms are xyzw, unlike the articulation's wxyz.
+            # Recreate measurable overlap and approaching velocity every step;
+            # never rely on the pre-reset spawn overlap remaining unresolved.
+            box_before={}
+            for s,x,vx in (('A',25.,.1),('B',25.08,-.1)):
+                rv=box_views[s];indices=torch.tensor([0],device=sim.device,dtype=torch.int32)
+                pose=torch.tensor([[x,0.,1.,0.,0.,0.,1.]],device=sim.device,dtype=torch.float32)
+                velocity=torch.tensor([[vx,0.,0.,0.,0.,0.]],device=sim.device,dtype=torch.float32)
+                rv.set_transforms(pose,indices=indices);rv.set_velocities(velocity,indices=indices)
+                box_before[s]={'pose_xyzw':rv.get_transforms().clone().cpu().tolist()[0],
+                    'velocity':rv.get_velocities().clone().cpu().tolist()[0]}
             scene.write_data_to_sim();sim.step(render=False);scene.update(DT)
+            box_sensor.update(DT,force_recompute=True)
+            sensor_matrix=box_sensor.data.force_matrix_w
+            if tuple(sensor_matrix.shape)!=(1,1,1,3):raise ValueError('Official box sensor layout mismatch')
+            sensor_vectors.append(sensor_matrix[0,0,0].clone().cpu().tolist())
             for name,cv in channels.items():
                 matrix=cv.get_contact_force_matrix(dt=DT)
                 if tuple(matrix.shape)!=(1,1,3):raise ValueError('Unexpected exact body-pair matrix shape '+str(tuple(matrix.shape)))
                 samples[name].append(float(torch.linalg.vector_norm(matrix).item()))
-        verdict=evaluate(samples)
+                data=cv.get_contact_data(dt=DT)
+                if len(data)!=6 or tuple(data[4].shape)!=(1,1):raise ValueError('Detailed contact count layout mismatch')
+                contact_counts[name].append(int(data[4][0,0].item()))
+            box_trace.append({'step':i,'before':box_before,
+                'after':{s:{'pose_xyzw':rv.get_transforms().clone().cpu().tolist()[0],
+                    'velocity':rv.get_velocities().clone().cpu().tolist()[0]} for s,rv in box_views.items()},
+                'native_force_vector':control.get_contact_force_matrix(dt=DT)[0,0].clone().cpu().tolist()})
+        instrumentation={'revision':2,'contact_processing':contact_processing,
+            'disable_contact_processing_after_reset':settings_after_reset,
+            'box_size':[.1,.1,.1],'box_state_trace':box_trace,'native_contact_counts':contact_counts,
+            'official_sensor_force_vectors':sensor_vectors,'contact_capacity_per_channel':256,
+            'box_threshold_zero_requested':True}
+        instrumentation_review=validate_instrumentation(instrumentation,samples)
+        verdict=evaluate(samples,instrumentation_review)
         report=dict(stage='hud04_controlled_wrist_contact_observation',source_commit=args.expected_commit,
             model_sha256=digest(model),asset_config_sha256=digest(asset/'asset_config.py'),
             probe_sha256=digest(Path(__file__)),python_version=sys.version.split()[0],usd_version=list(Usd.GetVersion()),
@@ -130,6 +174,7 @@ def main(args):
             exact_joint_body_bindings=bindings,roles=list(ROLES),num_envs=3,body_dof=29,head_action_dof=0,
             dt=DT,explicit_physics_steps=STEPS,gravity_disabled_in_isolated_copies=True,repeated_state_diagnostic_not_trajectory=True,
             self_collision_requested=True,replicate_physics=False,measured_force_norms=samples,verdict=verdict,
+            instrumentation=instrumentation,instrumentation_review=instrumentation_review,
             full_task_tested=False,terrain_tested=False,fast_shutdown_requested=True,
             graceful_full_cleanup_proven=False,accepted_reference=False,training_ready=False)
         if digest(model)!=MODEL_SHA or digest(asset/'asset_config.py')!=ASSET_SHA:raise ValueError('Original asset changed')

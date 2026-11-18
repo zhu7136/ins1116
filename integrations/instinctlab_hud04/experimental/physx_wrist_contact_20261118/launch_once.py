@@ -2,6 +2,7 @@
 import argparse, hashlib, json, os, re, selectors, signal, subprocess, sys, time
 from pathlib import Path
 from contact_probe import evaluate,verify
+from instrumentation_v2 import validate_instrumentation
 
 LIMIT=240
 MAX_LOG=8*1024*1024
@@ -12,7 +13,9 @@ def validate_report(d,commit,probe_sha):
     if d.get('stage')!='hud04_controlled_wrist_contact_observation' or d.get('source_commit')!=commit or d.get('probe_sha256')!=probe_sha:raise ValueError('Report identity mismatch')
     if d.get('accepted_reference') is not False or d.get('training_ready') is not False or d.get('full_task_tested') is not False or d.get('graceful_full_cleanup_proven') is not False:raise ValueError('No acceptance or graceful full cleanup claim permitted')
     if d.get('body_dof')!=29 or d.get('head_action_dof')!=0 or d.get('explicit_physics_steps')!=8 or d.get('num_envs')!=3:raise ValueError('Diagnostic scope mismatch')
-    if d.get('verdict')!=evaluate(d.get('measured_force_norms',{})):raise ValueError('Measured verdict mismatch')
+    review=validate_instrumentation(d.get('instrumentation',{}),d.get('measured_force_norms',{}))
+    if d.get('instrumentation_review')!=review:raise ValueError('Measured instrumentation mismatch')
+    if d.get('verdict')!=evaluate(d.get('measured_force_norms',{}),review):raise ValueError('Measured verdict mismatch')
     bindings=d.get('exact_joint_body_bindings',[])
     roles=('original_fallback','explicit_true','explicit_false')
     expected={(r,s) for r in roles for s in ('left','right')}
@@ -23,7 +26,7 @@ def validate_report(d,commit,probe_sha):
         if b['before']!={'value':False,'authored':False} or b['observed_value'] is not (b['role']=='explicit_true') or b['observed_authored'] is not (b['role']!='original_fallback'):raise ValueError('Policy treatment mismatch')
     return True
 def sanitize(text):
-    for k in ('github1117','flux1117','WANDB_API_KEY','OPENAI_API_KEY','FLUX_API_KEY'):
+    for k in ('ins1116','flux_key1103','github1117','flux1117','WANDB_API_KEY','OPENAI_API_KEY','FLUX_API_KEY'):
         v=os.environ.get(k)
         if v:text=text.replace(v,'[REDACTED]')
     text=re.sub(r'https?://\S+','[URL omitted]',text)
@@ -62,7 +65,7 @@ def main(args):
     repo=Path(__file__).resolve().parents[4];verify(repo,args.expected_commit)
     out=repo/('hud04_controlled_pair_'+args.expected_commit[:12]);out.mkdir(exist_ok=False)
     env=os.environ.copy()
-    for k in ('github1117','flux1117','WANDB_API_KEY','OPENAI_API_KEY','FLUX_API_KEY'):env.pop(k,None)
+    for k in ('ins1116','flux_key1103','github1117','flux1117','WANDB_API_KEY','OPENAI_API_KEY','FLUX_API_KEY'):env.pop(k,None)
     for k in ('OMP_NUM_THREADS','MKL_NUM_THREADS','OPENBLAS_NUM_THREADS','PXR_WORK_THREAD_LIMIT'):env[k]='2'
     env['TMPDIR']=str(out)
     if __import__('importlib.util',fromlist=['find_spec']).find_spec('isaaclab') is not None:launcher=Path(sys.executable)
