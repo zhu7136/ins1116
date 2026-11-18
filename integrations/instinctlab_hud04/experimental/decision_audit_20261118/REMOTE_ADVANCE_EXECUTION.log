@@ -1,0 +1,41 @@
+{
+  "base": "805e620d195bbdd6794009ba368f73890c8af927",
+  "observed_head": "4d1a4be8a392bd12759407208b21744395d5a3d1",
+  "status": "ahead",
+  "ahead_by": 1,
+  "behind_by": 0,
+  "total_commits": 1,
+  "commits": [
+    {
+      "sha": "4d1a4be8a392bd12759407208b21744395d5a3d1",
+      "message": "Add read-only HUD04 live interface assertions and 33 CPU tests; no GPU or training"
+    }
+  ],
+  "files": [
+    {
+      "path": "integrations/instinctlab_hud04/README_zh.md",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 0
+    },
+    {
+      "path": "integrations/instinctlab_hud04/RUNTIME_INTERFACE_GATE_REVIEW_zh.md",
+      "status": "added",
+      "additions": 83,
+      "deletions": 0
+    },
+    {
+      "path": "integrations/instinctlab_hud04/runtime_gate.py",
+      "status": "added",
+      "additions": 167,
+      "deletions": 0
+    },
+    {
+      "path": "integrations/instinctlab_hud04/test_runtime_gate.py",
+      "status": "added",
+      "additions": 205,
+      "deletions": 0
+    }
+  ],
+  "mutation_attempted": false
+}

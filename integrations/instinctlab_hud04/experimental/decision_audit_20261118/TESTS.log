@@ -1,0 +1,11 @@
+test_both_native_neighbours (test_audit.AuditTests.test_both_native_neighbours) ... ok
+test_endpoint_has_one_neighbour (test_audit.AuditTests.test_endpoint_has_one_neighbour) ... ok
+test_infeasible_baseline_rejected (test_audit.AuditTests.test_infeasible_baseline_rejected) ... ok
+test_inputs_unchanged (test_audit.AuditTests.test_inputs_unchanged) ... ok
+test_no_clipping_for_angles (test_audit.AuditTests.test_no_clipping_for_angles) ... ok
+test_position_limit_not_relaxed (test_audit.AuditTests.test_position_limit_not_relaxed) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.035s
+
+OK

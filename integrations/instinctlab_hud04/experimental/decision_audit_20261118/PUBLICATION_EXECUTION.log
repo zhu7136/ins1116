@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/publish_hud04_decision_audit_20261118_once.py", line 72, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/workspace/publish_hud04_decision_audit_20261118_once.py", line 28, in main
+    if head!=BASE:raise ValueError('Remote advanced: stop without mutation; '+head)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Remote advanced: stop without mutation; 4d1a4be8a392bd12759407208b21744395d5a3d1

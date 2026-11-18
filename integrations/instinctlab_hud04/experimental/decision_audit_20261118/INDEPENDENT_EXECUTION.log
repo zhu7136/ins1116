@@ -1,0 +1,20 @@
+{
+  "stage": "independent_read_only_audit_verification",
+  "method": "legacy RobotTree, separately explicit pivots, direct native position/neighbour speed checks",
+  "source_direction_max_disagreement": 7.216449660063518e-16,
+  "zero_sensitivity_checks": 30,
+  "max_independent_zero_direction_change": 0.0,
+  "worst_frame": 257,
+  "joint": "right_elbow_joint",
+  "step_rad": -0.01,
+  "right_forearm_before": 87.82595723914383,
+  "right_forearm_after": 87.25320998980492,
+  "same_objective_decrease": 0.0027126807574209266,
+  "native_position_and_neighbour_speed_pass": true,
+  "audit_sha256": "e64003b824e2eb86b2fc2074e47918b3c6f5fefd0d301b2518423e1ac0c8eb03",
+  "artifact_sha256": "2aa620d3086ed5f1c260c210e38fcb3d3a94cbaea549911844b8e4c31127ddc0",
+  "solver_calls": 0,
+  "new_trajectory_generated": false,
+  "accepted_reference": false,
+  "training_ready": false
+}
