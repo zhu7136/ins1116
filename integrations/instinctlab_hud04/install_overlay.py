@@ -1,14 +1,19 @@
-"""Add HUD04 files to a pinned InstinctLab checkout. Plan-only unless --apply.
+"""Install HUD04 overlay AND mandatory train.py startup gate. Plan-only unless --apply.
 
-Never clone, install dependencies, overwrite source files, or launch a simulator.
+Never clone, install dependencies, or launch a simulator. With --apply, the sole
+source replacement is exact audited train.py -> reviewed mandatory gate patch.
 """
 import argparse
 import hashlib
+import importlib.util
 import json
 from pathlib import Path
 import subprocess
 
 ROOT = Path(__file__).resolve().parent
+_spec = importlib.util.spec_from_file_location("_hud04_startup_patch", ROOT / "startup_patch.py")
+STARTUP = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(STARTUP)
 PIN = "de6b92f01eb155d51f30e8ed1ea7aecd2eb1f057"
 AUDITED = {
     "tasks/shadowing/perceptive/perceptive_env_cfg.py": "ca9beeca2e9d59d1fbb588e35d2452261b171bdf9ebf85ba8efd786aa8e81504",
@@ -61,6 +66,8 @@ def main():
     parser.add_argument("--apply", action="store_true")
     args = parser.parse_args()
     files = plan(args.upstream)
+    # Validate ALL destinations, identities and patch anchors before the first write.
+    changes = STARTUP.plan(args.upstream, files)
     if args.apply:
         for source, target, exists in files:
             if not exists:
@@ -69,9 +76,17 @@ def main():
                     stream.write(source.read_bytes())
             if target.read_bytes() != source.read_bytes():
                 raise RuntimeError("Installation readback mismatch")
+        STARTUP.apply(changes)
+        # Independent complete readback, including already-present identical files.
+        if not all(identical for _, _, identical in STARTUP.plan(args.upstream, files)):
+            raise RuntimeError("Gate install not idempotently verified")
     print(json.dumps(dict(mode="installed_and_verified" if args.apply else "plan_only",
         upstream_commit=PIN, additive_files=[str(t.relative_to(Path(args.upstream).expanduser().resolve())) for _, t, _ in files],
-        gpu_started=False, training_updates=0, source_overwrites=0), indent=2))
+        startup_gate_files=[str(t.relative_to(Path(args.upstream).expanduser().resolve())) for t, _, _ in changes],
+        startup_gate_default_on=True, startup_mode_default="check-only",
+        gpu_started=False, training_updates=0,
+        source_overwrites=sum(not identical and t.name == "train.py" for t, _, identical in changes)
+            if args.apply else 0), indent=2))
 
 
 if __name__ == "__main__":

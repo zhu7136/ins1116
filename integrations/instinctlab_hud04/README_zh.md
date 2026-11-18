@@ -3,7 +3,34 @@
 这不是再跑一次独立资产探针。这里将已验证的 HUD04 资产接到原 InstinctLab
 的感知运动跟踪环境，新增 HUD04 Plane / PLAY 配置，**不修改 G1**。
 
-## 最新补充：只读运行时接口门禁，不是训练启动器
+## 最新补充（2026-11-18）：已接入正式 train.py 的默认开启启动门禁
+
+`install_overlay.py` 现在默认安装完整启动门禁，不再只是提供独立 hook：
+
+- `train.py` 在导入 Isaac/AppLauncher **之前**进行 CPU 输入/安装身份/选定源码预检；
+  baseline 资产配置此时只核对哈希，**不执行其 Isaac 导入**。
+- 正常构造 HUD04 完整任务、wrapper 并取得真实 reset 观测后，必须通过
+  `runtime_gate.check_live_environment()`，随后再做 runner 权限检查；两处均在
+  `OnPolicyRunner` 构造、checkpoint 加载和 `learn()` 前，异常不得降为 warning。
+- 默认 `HUD04_STARTUP_MODE=check-only`：通过检查也只退出，不构造 runner。
+  未来显式 `train` 模式仍不得跳过参考验收、地形/支撑、模型、源码和运行时接口门禁；
+  本次未启用此模式，也不代表已获准训练或物理就绪。
+- 初版支持精确的 HUD04 Plane/Terrain 非 Play 任务名及 2 个环境；拒绝重复任务、
+  参数缩写、Hydra 覆盖、分布式、视频/debug 和不支持的 HUD04 任务。
+
+安装仍须显式 `--apply`；与旧版**只新增文件**不同，它会将唯一经过完整 SHA256
+匹配的上游 `scripts/instinct_rl/train.py` 替换为审核补丁，其他上游源码不改。
+已有不同 helper/receipt、部分补丁或改动过的入口均拒绝覆盖；相同安装可重复执行。
+
+本轮定向 **132 项 CPU 测试通过**；完整目录发现 257 项，250 项通过、7 项因缺少
+`trimesh` 报错，不能称全回归通过。已验证真实固定上游干净检出的安装、回读、
+重复安装，以及正式入口在本 CPU 环境缺少 IsaacLab 时于 AppLauncher 前非零拒绝。
+**未完成真实 GPU 完整任务 reset/门禁成功路径，也未生成获验收参考动作。**
+GPU 提交、求解器调用、PPO 更新均为零；`training_ready=false`。
+详细行为、可复现命令和验证边界见 [正式启动门禁复核](STARTUP_GATE_REVIEW_zh.md)。
+并行的 `70393c67` 决策审计提交已保留；方向拟合诊断不构成参考动作验收。
+
+## 历史阶段：独立只读运行时接口门禁（下述“未接入”已由上节更新）
 
 在远端 `f4e25561` 基础上新增 `runtime_gate.py` 和 33 项 CPU 拒绝/提取测试，
 供未来完整任务诊断在正常 reset 后显式调用。核对已加载的九个选定源码文件、

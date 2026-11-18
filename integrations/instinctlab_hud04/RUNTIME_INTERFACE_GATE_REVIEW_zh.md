@@ -1,5 +1,10 @@
 # HUD04 真实环境接口门禁：CPU 实现与边界
 
+> 后续更新（2026-11-18）：本文保留独立 hook 阶段的历史事实。
+> `install_overlay.py` 现已默认将本 hook 接到正式 `train.py`，见
+> [STARTUP_GATE_REVIEW_zh.md](STARTUP_GATE_REVIEW_zh.md)。文中“尚未接入”不再是
+> 最新源码状态，但真实 GPU 完整任务成功路径、参考动作验收和物理就绪仍未完成。
+
 ## 恢复基线
 
 本轮开始时本地旧工作树停在 `8b421f55`，但只读检查发现远端已到

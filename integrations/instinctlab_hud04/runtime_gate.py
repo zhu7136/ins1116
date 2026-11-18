@@ -124,8 +124,8 @@ def check_live_environment(env, wrapper, observations, names, control_values):
     """Assertion hook for an EXISTING normally loaded/reset HUD04 environment.
 
     Does not bypass reference acceptance, construct a wrapper/runner or launch
-    anything. Not automatically installed into upstream train.py. The caller
-    must fail the diagnostic if this raises, rather than converting to warning.
+    anything. install_overlay.py now connects this hook through startup_gate.py
+    to audited train.py. Other callers must also propagate exceptions as failures.
     observations is the flattened group dict already emitted by wrapper.reset().
     """
     receipt = selected_source_receipt()
