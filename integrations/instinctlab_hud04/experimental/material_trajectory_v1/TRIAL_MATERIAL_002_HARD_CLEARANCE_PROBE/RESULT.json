@@ -1,0 +1,190 @@
+{
+  "accepted_reference": false,
+  "training_ready": false,
+  "gpu_submissions": 0,
+  "ppo_updates": 0,
+  "contact_or_flight_inferred": false,
+  "unassigned_support_frames": 346,
+  "motion_exported": false,
+  "frames_tested": 15,
+  "full_997_frame_solve": false,
+  "hard_clearance_is_not_physical_acceptance": true,
+  "backtracking": [
+    {
+      "alpha": 1.0,
+      "old_merit": 17056.155239101867,
+      "new_merit": 16338.715058163983,
+      "merit_improved": true,
+      "endpoint_guard": {
+        "passed": false,
+        "lost_certified_separation_pairs": 13,
+        "newly_strict_pairs": 10,
+        "rejected_examples": [
+          [
+            "self",
+            1,
+            3,
+            33
+          ],
+          [
+            "self",
+            1,
+            3,
+            34
+          ],
+          [
+            "terrain",
+            1,
+            16,
+            5116
+          ],
+          [
+            "terrain",
+            3,
+            16,
+            5116
+          ],
+          [
+            "terrain",
+            4,
+            16,
+            5116
+          ],
+          [
+            "terrain",
+            5,
+            16,
+            5116
+          ],
+          [
+            "terrain",
+            8,
+            15,
+            5116
+          ],
+          [
+            "terrain",
+            8,
+            16,
+            5116
+          ],
+          [
+            "terrain",
+            10,
+            15,
+            5116
+          ],
+          [
+            "terrain",
+            10,
+            16,
+            5116
+          ]
+        ],
+        "previous_strict_pairs": 117,
+        "new_strict_pairs": 82,
+        "previous_unresolved_pairs": 13,
+        "new_unresolved_pairs": 3,
+        "old_intersections_not_accepted": true,
+        "penetration_depth_comparison": false,
+        "swept_or_dynamics_checked": false,
+        "accepted_reference": false
+      },
+      "engineering_step_accepted": false
+    },
+    {
+      "alpha": 0.25,
+      "old_merit": 17056.155239101867,
+      "new_merit": 16774.32136498872,
+      "merit_improved": true,
+      "endpoint_guard": {
+        "passed": false,
+        "lost_certified_separation_pairs": 5,
+        "newly_strict_pairs": 0,
+        "rejected_examples": [
+          [
+            "self",
+            0,
+            3,
+            33
+          ],
+          [
+            "self",
+            0,
+            3,
+            34
+          ],
+          [
+            "self",
+            4,
+            3,
+            33
+          ],
+          [
+            "self",
+            4,
+            3,
+            34
+          ],
+          [
+            "self",
+            6,
+            3,
+            33
+          ]
+        ],
+        "previous_strict_pairs": 117,
+        "new_strict_pairs": 90,
+        "previous_unresolved_pairs": 13,
+        "new_unresolved_pairs": 10,
+        "old_intersections_not_accepted": true,
+        "penetration_depth_comparison": false,
+        "swept_or_dynamics_checked": false,
+        "accepted_reference": false
+      },
+      "engineering_step_accepted": false
+    },
+    {
+      "alpha": 0.0625,
+      "old_merit": 17056.155239101867,
+      "new_merit": 16900.919945380705,
+      "merit_improved": true,
+      "endpoint_guard": {
+        "passed": true,
+        "lost_certified_separation_pairs": 0,
+        "newly_strict_pairs": 0,
+        "rejected_examples": [],
+        "previous_strict_pairs": 117,
+        "new_strict_pairs": 99,
+        "previous_unresolved_pairs": 13,
+        "new_unresolved_pairs": 8,
+        "old_intersections_not_accepted": true,
+        "penetration_depth_comparison": false,
+        "swept_or_dynamics_checked": false,
+        "accepted_reference": false
+      },
+      "engineering_step_accepted": true
+    }
+  ],
+  "lp_calls": 1,
+  "lp_status": 0,
+  "lp_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "nearby_hard_rows": 1782,
+  "material_rows": 540,
+  "geometry_penalty_rows": 131,
+  "initial_geometry_projection_counts": {
+    "frames": 15,
+    "shapes": 43,
+    "shape_pairs": 903,
+    "terrain_pairs_broadphase": 842,
+    "self_pairs_broadphase": 800,
+    "negative_terrain_projection_pairs": 90,
+    "negative_self_projection_pairs": 297,
+    "negative_self_same_link_pairs": 257,
+    "all_adjacency_pairs_retained": true
+  },
+  "accepted_updates": 1,
+  "wall_s": 8.765110843000002,
+  "seed_sha256": "d5cdb5382b5eb910b3273adab662de286e0452376ee9d134124d4ceddd2f30cf",
+  "original_geometry_unchanged": true
+}

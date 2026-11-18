@@ -1,0 +1,49 @@
+{
+  "endpoint_check_recomputed": {
+    "passed": true,
+    "lost_certified_separation_pairs": 0,
+    "newly_strict_pairs": 0,
+    "rejected_examples": [],
+    "previous_strict_pairs": 117,
+    "new_strict_pairs": 99,
+    "previous_unresolved_pairs": 13,
+    "new_unresolved_pairs": 8,
+    "old_intersections_not_accepted": true,
+    "penetration_depth_comparison": false,
+    "swept_or_dynamics_checked": false,
+    "accepted_reference": false
+  },
+  "objective_recomputed": {
+    "before": 17056.155239101867,
+    "after": 16900.919945380705,
+    "relative_decrease_percent": 0.9101423594297446
+  },
+  "original_joint_limits_and_neighbour_velocities": {
+    "position_violation_rad": 5.551115123125783e-17,
+    "velocity_violation_rad_s": 4.263256414560601e-14
+  },
+  "material_position_mean_before_m": 0.11904735956030152,
+  "material_position_mean_after_m": 0.11847099962999728,
+  "root_and_body_are_joint_variables": true,
+  "partial_window_exported": true,
+  "full_motion_exported": false,
+  "full_997_frame_solve": false,
+  "accepted_reference": false,
+  "training_ready": false,
+  "strict_pairs_still_present": 99,
+  "unresolved_pairs_still_present": 8,
+  "physical_effort_verified": false,
+  "swept_motion_verified": false,
+  "input_sha256": {
+    "RESULT.json": "6d6229148c3f1ee1af2a5f883b8631610062710a0df22270cda65da9a76b4c63",
+    "WINDOW0_14_UNACCEPTED.npz": "44590c5971dc1a4a0e6cd44ffb354001b18b055846c0a24e6301214625419ad0"
+  },
+  "software_source_sha256": {
+    "clearance_rows.py": "5b78fdfd83d3880f7532f1f460fb66aa7742fe3c2294ee8726722674f5abf971",
+    "material_problem.py": "1c834b5ea627b96ad49872443620f231c6779fb2807e4854775e02c4a7df6c0c",
+    "probe_hard_clearance_once.py": "80c8edf9563528f3851bbdd7c3060f795657cdd1686c488d5e1f55a0969e5400",
+    "solve_material_once.py": "2db74bf3d8eed567a772165e3ddf8c31ea5453dd898946214161aee497e1a519",
+    "test_material_problem.py": "9969b76e35ad7bfc509497d35a0e677c6c23dd8246fb90dda6338140edb8589f",
+    "verify_partial_window.py": "f5d8cbd662850fb70852bd09d3f8fd05388a12cd770992f3269d2c76f1e307a4"
+  }
+}

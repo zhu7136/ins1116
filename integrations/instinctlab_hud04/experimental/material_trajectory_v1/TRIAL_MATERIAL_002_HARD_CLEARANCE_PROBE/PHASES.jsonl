@@ -1,0 +1,6 @@
+{"phase": "hard_rows_built", "wall_s": 3.013137258000029}
+{"phase": "one_LP_complete", "wall_s": 4.029050560000087}
+{"phase": "initial_independent_geometry_complete", "wall_s": 4.805482123000047}
+{"phase": "candidate_endpoint_check_complete", "wall_s": 6.015530264000063}
+{"phase": "candidate_endpoint_check_complete", "wall_s": 7.3537861160000375}
+{"phase": "candidate_endpoint_check_complete", "wall_s": 8.76114700000005}

@@ -1,0 +1,10 @@
+{
+  "child_exit": -15,
+  "child_reaped": true,
+  "timed_out": true,
+  "wall_s": 190.068105226,
+  "result_exists": false,
+  "gpu_submissions": 0,
+  "ppo_updates": 0,
+  "accepted_reference": false
+}

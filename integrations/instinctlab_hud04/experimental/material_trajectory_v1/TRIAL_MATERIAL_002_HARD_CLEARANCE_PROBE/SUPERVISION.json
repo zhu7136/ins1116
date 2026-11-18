@@ -1,0 +1,8 @@
+{
+  "child_exit": 0,
+  "child_reaped": true,
+  "timed_out": false,
+  "result_exists": true,
+  "gpu_submissions": 0,
+  "ppo_updates": 0
+}

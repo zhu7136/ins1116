@@ -1,0 +1,10 @@
+{
+  "material_software_tests": {"command": "python -m unittest test_material_problem -v", "tests": 12, "passed": true},
+  "unchanged_endpoint_guard_regression": {"command": "python -m unittest test_wholebody_step_guard -v", "tests": 20, "passed": true},
+  "independent_15_frame_recomputation": "TRIAL_MATERIAL_002_HARD_CLEARANCE_PROBE/INDEPENDENT_RECOMPUTATION.json",
+  "no_claim_of_full_runtime_test": true,
+  "accepted_reference": false,
+  "training_ready": false,
+  "gpu_submissions": 0,
+  "ppo_updates": 0
+}
