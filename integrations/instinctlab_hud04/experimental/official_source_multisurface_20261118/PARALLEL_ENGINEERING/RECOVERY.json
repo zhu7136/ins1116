@@ -1,0 +1,50 @@
+{
+  "base": "079425dba70333867d6ec339a4a1750294cd6bd8",
+  "head": "2c7f6a3d3f31a24b993bd7d1a47078c01c9a4cb7",
+  "recovered": [
+    {
+      "path": "integrations/instinctlab_hud04/experimental/engineering_reference_v1/README_zh.md",
+      "git_sha1": "882d0bd1cb8f83ba223da536b6944dfaf5d0a7fb",
+      "sha256": "dbf7c2cdebbd8bb9ef2a96a06e2744bac318e7af1cc403ee8b586dd550c87407",
+      "bytes": 5956
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/engineering_reference_v1/RECONSTRUCTION_002/CONTRACT.json",
+      "git_sha1": "cbf07f620a67eb038bd8a6917c0f015221218609",
+      "sha256": "cff9dc2191a8f581b7a8337970927b625621f89f0a2a82812404f1bb0e2ce8d3",
+      "bytes": 28715
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/engineering_reference_v1/RECONSTRUCTION_002/INDEPENDENT_GEOMETRY_VERIFICATION.json",
+      "git_sha1": "75ee01b7b71ae6180842017597c67d1987b90554",
+      "sha256": "c123de9caa81fb4356031063a9f16fd9f9b3166df90b9e4d432ae627b8be5d5c",
+      "bytes": 794
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/engineering_reference_v1/RECONSTRUCTION_002/SOURCE_MATERIAL_DIAGNOSTICS.npz",
+      "git_sha1": "93762d532e8222bc45d146397cb3bcc25141ad71",
+      "sha256": "9d495fe443f682b42fbc2510b7e675b0c3180ebc134dac3836919dd101a37870",
+      "bytes": 799309
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/engineering_reference_v1/reconstruction.py",
+      "git_sha1": "fd43cf9fc6dc9a088aa0309672682678a5f84875",
+      "sha256": "632ad56094b4c1310082fec0135a58c252400a68d69890ea0bc59616c8becb5e",
+      "bytes": 19831
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/engineering_reference_v1/test_reconstruction.py",
+      "git_sha1": "47bf1e2a3803247bb6998bff33e7d71d91e51570",
+      "sha256": "f03320a01d1afae6c6ae6ba9eb930281341656e11ddad58e656d38a9241287ea",
+      "bytes": 10446
+    },
+    {
+      "path": "integrations/instinctlab_hud04/experimental/engineering_reference_v1/verify_reconstruction.py",
+      "git_sha1": "30b76e82e208c676e01bc2b304da6a6456938df1",
+      "sha256": "1c5c40d0b154d475e86a575704c501e2207f8fae6ab3da344b401f3f63082293",
+      "bytes": 13884
+    }
+  ],
+  "new_gpu_tasks": 0,
+  "remote_modified": false
+}

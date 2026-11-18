@@ -1,0 +1,42 @@
+test_axis_coincidence_undefined (test_all_surface_candidates.TestAllCandidates.test_axis_coincidence_undefined) ... ok
+test_complete_broadphase_against_exhaustive (test_all_surface_candidates.TestAllCandidates.test_complete_broadphase_against_exhaustive) ... ok
+test_corner_simultaneous_faces (test_all_surface_candidates.TestAllCandidates.test_corner_simultaneous_faces) ... ok
+test_empty (test_all_surface_candidates.TestAllCandidates.test_empty) ... ok
+test_endpoint_one_sided (test_all_surface_candidates.TestAllCandidates.test_endpoint_one_sided) ... ok
+test_far_triangle_not_selected (test_all_surface_candidates.TestAllCandidates.test_far_triangle_not_selected) ... ok
+test_fixed_material_rotation (test_all_surface_candidates.TestAllCandidates.test_fixed_material_rotation) ... FAIL
+test_invalid_rejected (test_all_surface_candidates.TestAllCandidates.test_invalid_rejected) ... ok
+test_material_reversal_not_cancelled (test_all_surface_candidates.TestAllCandidates.test_material_reversal_not_cancelled) ... ok
+test_second_surface_survives_deeper_nearest (test_all_surface_candidates.TestAllCandidates.test_second_surface_survives_deeper_nearest) ... ok
+
+======================================================================
+FAIL: test_fixed_material_rotation (test_all_surface_candidates.TestAllCandidates.test_fixed_material_rotation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/hud04-acceptance-continue-20261118/test_all_surface_candidates.py", line 37, in test_fixed_material_rotation
+    self.assertAlmostEqual(vt[0],180*np.sin(.05));np.testing.assert_allclose(local,[[1,0,0]])
+                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/numpy/testing/_private/utils.py", line 1768, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         verbose=verbose, header=header, equal_nan=equal_nan,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         strict=strict)
+                         ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/numpy/testing/_private/utils.py", line 983, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=1e-07, atol=0
+
+Mismatched elements: 1 / 3 (33.3%)
+Mismatch at index:
+ [0, 2]: -1.3877787807814457e-17 (ACTUAL), 0 (DESIRED)
+Max absolute difference among violations: 1.38777878e-17
+Max relative difference among violations: inf
+ ACTUAL: array([[ 1.000000e+00,  0.000000e+00, -1.387779e-17]])
+ DESIRED: array([[1, 0, 0]])
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.039s
+
+FAILED (failures=1)

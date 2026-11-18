@@ -1,0 +1,45 @@
+{
+  "saved_rows_checked": 2166,
+  "independent_triangle_minimizations": 28,
+  "max_independent_distance_error": 1.1343356809412342e-14,
+  "all_shape_frames_material_speed_checks": 5982,
+  "max_speed_error": 8.881784197001252e-16,
+  "full_8068_surface_checks": 54,
+  "witnesses": [
+    {
+      "material": "right_knee",
+      "frame": 271,
+      "raw_face": 2099,
+      "reported_distance_m": 0.032350864439650046,
+      "independent_distance_m": 0.03235086443965004,
+      "error_m": 6.938893903907228e-18
+    },
+    {
+      "material": "right_knee",
+      "frame": 273,
+      "raw_face": 2091,
+      "reported_distance_m": 0.034756506901856804,
+      "independent_distance_m": 0.03475650690185682,
+      "error_m": 1.3877787807814457e-17
+    },
+    {
+      "material": "right_knee",
+      "frame": 280,
+      "raw_face": 2091,
+      "reported_distance_m": 0.03147498185030901,
+      "independent_distance_m": 0.031474981850308996,
+      "error_m": 1.3877787807814457e-17
+    },
+    {
+      "material": "right_knee",
+      "frame": 288,
+      "raw_face": 2091,
+      "reported_distance_m": 0.03065099255413177,
+      "independent_distance_m": 0.030650992554131794,
+      "error_m": 2.42861286636753e-17
+    }
+  ],
+  "new_support_plan_generated": false,
+  "accepted_reference": false,
+  "training_ready": false
+}

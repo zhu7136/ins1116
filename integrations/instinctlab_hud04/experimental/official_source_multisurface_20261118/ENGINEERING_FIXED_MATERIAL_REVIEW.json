@@ -1,0 +1,125 @@
+{
+  "stage": "parallel_engineering_FIXED_material_ALL_neighbour_geometry_NOT_revised_support_plan",
+  "parent_engineering_commit": "2c7f6a3d3f31a24b993bd7d1a47078c01c9a4cb7",
+  "contract_sha256": "cff9dc2191a8f581b7a8337970927b625621f89f0a2a82812404f1bb0e2ce8d3",
+  "rows": 2166,
+  "queries": 5982,
+  "frames": 997,
+  "material_count": 6,
+  "thresholds": {
+    "max_surface_distance_m": 0.035,
+    "max_material_speed_m_s": 0.25,
+    "max_normal_error_deg": 45.0,
+    "min_consecutive_frames": 4,
+    "max_window_point_spread_m": 0.06,
+    "min_upward_surface_normal_z": 0.7071067811865476,
+    "max_tied_normal_disagreement_deg": 1.0,
+    "nearest_distance_tie_tolerance_m": 1e-09
+  },
+  "summaries": [
+    {
+      "material": "left_sole",
+      "all_surface_near_frames": 439,
+      "all_lateral_near_frames": 0,
+      "old_nearest_pre_run_geometric_candidates": 349,
+      "all_surface_pre_run_geometric_candidates": 349,
+      "new_frame_candidates": [],
+      "candidate_frames_within_original_346_unassigned": [
+        174,
+        175,
+        179,
+        180
+      ],
+      "historical_nearest_upward_distance_checks": 439
+    },
+    {
+      "material": "left_palm",
+      "all_surface_near_frames": 0,
+      "all_lateral_near_frames": 0,
+      "old_nearest_pre_run_geometric_candidates": 0,
+      "all_surface_pre_run_geometric_candidates": 0,
+      "new_frame_candidates": [],
+      "candidate_frames_within_original_346_unassigned": [],
+      "historical_nearest_upward_distance_checks": 0
+    },
+    {
+      "material": "left_knee",
+      "all_surface_near_frames": 89,
+      "all_lateral_near_frames": 0,
+      "old_nearest_pre_run_geometric_candidates": 52,
+      "all_surface_pre_run_geometric_candidates": 52,
+      "new_frame_candidates": [],
+      "candidate_frames_within_original_346_unassigned": [],
+      "historical_nearest_upward_distance_checks": 89
+    },
+    {
+      "material": "right_sole",
+      "all_surface_near_frames": 471,
+      "all_lateral_near_frames": 0,
+      "old_nearest_pre_run_geometric_candidates": 433,
+      "all_surface_pre_run_geometric_candidates": 433,
+      "new_frame_candidates": [],
+      "candidate_frames_within_original_346_unassigned": [],
+      "historical_nearest_upward_distance_checks": 471
+    },
+    {
+      "material": "right_palm",
+      "all_surface_near_frames": 52,
+      "all_lateral_near_frames": 0,
+      "old_nearest_pre_run_geometric_candidates": 33,
+      "all_surface_pre_run_geometric_candidates": 33,
+      "new_frame_candidates": [],
+      "candidate_frames_within_original_346_unassigned": [],
+      "historical_nearest_upward_distance_checks": 52
+    },
+    {
+      "material": "right_knee",
+      "all_surface_near_frames": 149,
+      "all_lateral_near_frames": 118,
+      "old_nearest_pre_run_geometric_candidates": 68,
+      "all_surface_pre_run_geometric_candidates": 86,
+      "new_frame_candidates": [
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288
+      ],
+      "candidate_frames_within_original_346_unassigned": [
+        273,
+        274,
+        280,
+        281
+      ],
+      "historical_nearest_upward_distance_checks": 111
+    }
+  ],
+  "original_unassigned_frames": 346,
+  "original_unassigned_with_at_least_one_pre_run_candidate": 8,
+  "original_unassigned_without_any_pre_run_candidate": 338,
+  "cpu_seconds": 2.2043445310000607,
+  "npz_sha256": "013e0f5b575b5b11eb5ee66a94a5d8bca6ed6c5f79a222bde7faec25d340d0ee",
+  "new_support_plan_generated": false,
+  "tie_normal_or_anchor_selected": false,
+  "minimum_run_and_anchor_spread_applied": false,
+  "observed_source_units_recovered": false,
+  "units": "new engineering convention only, as versioned parallel contract",
+  "solver_calls": 0,
+  "gpu_submissions": 0,
+  "accepted_support_intervals": null,
+  "accepted_reference": false,
+  "training_ready": false
+}

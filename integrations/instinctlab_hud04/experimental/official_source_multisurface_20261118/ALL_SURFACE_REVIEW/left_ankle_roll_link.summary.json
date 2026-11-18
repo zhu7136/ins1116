@@ -1,0 +1,23 @@
+{
+  "link": "left_ankle_roll_link",
+  "primitives": 7,
+  "near_triangle_rows": 3113,
+  "deeper_triangle_rows": 0,
+  "all_candidate_rows": 3113,
+  "undefined_material_rows": 164,
+  "old_nearest_only_near_frames": 512,
+  "all_triangle_near_frames": 512,
+  "new_near_frames": [],
+  "old_lateral_nearest_near_frames": 0,
+  "all_triangle_lateral_near_frames": 0,
+  "new_lateral_frames": [],
+  "old_nearest_slow_horizontal_frames": 264,
+  "all_triangle_slow_horizontal_frames": 268,
+  "new_slow_horizontal_frames": [
+    51,
+    52,
+    172,
+    173
+  ],
+  "npz_sha256": "4fa3c01491d8a426520e218faef909c8039dc8b5ad16e11a4d5c51083d60e534"
+}

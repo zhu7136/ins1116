@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/hud04-acceptance-continue-20261118/verify_engineering_neighbours.py", line 47, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/workspace/hud04-acceptance-continue-20261118/verify_engineering_neighbours.py", line 23, in main
+    assert max(speed_errors)<1e-10
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

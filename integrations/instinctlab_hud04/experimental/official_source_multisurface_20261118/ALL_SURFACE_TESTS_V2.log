@@ -1,0 +1,15 @@
+test_axis_coincidence_undefined (test_all_surface_candidates.TestAllCandidates.test_axis_coincidence_undefined) ... ok
+test_complete_broadphase_against_exhaustive (test_all_surface_candidates.TestAllCandidates.test_complete_broadphase_against_exhaustive) ... ok
+test_corner_simultaneous_faces (test_all_surface_candidates.TestAllCandidates.test_corner_simultaneous_faces) ... ok
+test_empty (test_all_surface_candidates.TestAllCandidates.test_empty) ... ok
+test_endpoint_one_sided (test_all_surface_candidates.TestAllCandidates.test_endpoint_one_sided) ... ok
+test_far_triangle_not_selected (test_all_surface_candidates.TestAllCandidates.test_far_triangle_not_selected) ... ok
+test_fixed_material_rotation (test_all_surface_candidates.TestAllCandidates.test_fixed_material_rotation) ... ok
+test_invalid_rejected (test_all_surface_candidates.TestAllCandidates.test_invalid_rejected) ... ok
+test_material_reversal_not_cancelled (test_all_surface_candidates.TestAllCandidates.test_material_reversal_not_cancelled) ... ok
+test_second_surface_survives_deeper_nearest (test_all_surface_candidates.TestAllCandidates.test_second_surface_survives_deeper_nearest) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.036s
+
+OK
