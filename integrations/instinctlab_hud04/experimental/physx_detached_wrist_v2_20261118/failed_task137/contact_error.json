@@ -1,0 +1,10 @@
+{
+  "error_type": "TypeError",
+  "message": "create_rigid_contact_view(): incompatible function arguments. The following argument types are supported:\n    1. (self: omni.physics.tensors.bindings._physicsTensors.SimulationView, patterns: str, filter_patterns: List[str] = [], max_contact_data_count: int = 0) -> omni.physics.tensors.bindings._physicsTensors.RigidContactView\n    2. (self: omni.physics.tensors.bindings._physicsTensors.SimulationView, pattern: List[str], filter_patterns: List[List[str]] = [], max_contact_data_count: int = 0) -> omni.physics.tensors.bindings._physicsTensors.RigidContactView\n\nInvoked with: <omni.physics.tensors.bindings._physicsTensors.SimulationView object at 0x7f3b24063af0>, '/World/Detached_left/Parent', [['/World/Detached_left/Child']], 256",
+  "frames": [
+    "  File \"/workspace/isaaclab/ins1116/integrations/instinctlab_hud04/experimental/physx_detached_wrist_20261118/detached_probe.py\", line 81, in main\n    channels['detached_'+side]=view.create_rigid_contact_view(roles['Parent']['target'],filter_patterns=[[roles['Child']['target']]],max_contact_data_count=256)\n                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+    "  File \"/isaac-sim/extscache/omni.physics.tensors-107.3.26+107.3.3.lx64.r.cp311.u353/omni/physics/tensors/impl/api.py\", line 421, in create_rigid_contact_view\n    return RigidContactView(self._backend.create_rigid_contact_view(pattern, filter_patterns, max_contact_data_count), self._frontend)\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"
+  ],
+  "accepted_reference": false,
+  "training_ready": false
+}

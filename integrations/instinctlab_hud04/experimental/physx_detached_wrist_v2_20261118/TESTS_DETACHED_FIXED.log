@@ -1,0 +1,20 @@
+test_articulated_positive (test_detached_contract.Contract.test_articulated_positive) ... ok
+test_box_separated (test_detached_contract.Contract.test_box_separated) ... ok
+test_box_zero (test_detached_contract.Contract.test_box_zero) ... ok
+test_capacity (test_detached_contract.Contract.test_capacity) ... ok
+test_detached_zero (test_detached_contract.Contract.test_detached_zero) ... ok
+test_missing_channel (test_detached_contract.Contract.test_missing_channel) ... ok
+test_native_pair_overload_types (test_detached_contract.Contract.test_native_pair_overload_types) ... ok
+test_nonfinite (test_detached_contract.Contract.test_nonfinite) ... ok
+test_pair_rejects_regex_container (test_detached_contract.Contract.test_pair_rejects_regex_container) ... ok
+test_pair_rejects_same_body (test_detached_contract.Contract.test_pair_rejects_same_body) ... ok
+test_selected_shape_changed (test_detached_contract.Contract.test_selected_shape_changed) ... ok
+test_short_trace (test_detached_contract.Contract.test_short_trace) ... ok
+test_synthetic_positive_no_waiver (test_detached_contract.Contract.test_synthetic_positive_no_waiver) ... ok
+test_transform_changed (test_detached_contract.Contract.test_transform_changed) ... ok
+test_wrong_binding (test_detached_contract.Contract.test_wrong_binding) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.003s
+
+OK
