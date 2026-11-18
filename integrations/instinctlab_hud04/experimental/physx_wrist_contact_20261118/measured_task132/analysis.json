@@ -1,0 +1,40 @@
+{
+  "task_id": "TASK_20261118_132",
+  "source_commit": "9b8271b907803e67db461bff8d6307b8431a5713",
+  "report_checksums": {
+    "contact_report.json": "29edbb1949b3d19fa50c941960479d7beb53295184e427bf1091599cd0261a42",
+    "supervisor_result.json": "5b8d4bdc5976c650d3dc2e7723c57b9d9230b35a29741b9253e587c633959cca"
+  },
+  "independent_recomputation_matches": true,
+  "positive_control_valid": true,
+  "box_peak_native_force": 19.987958908081055,
+  "box_contact_count_per_step": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "official_and_native_agree": true,
+  "wrist_status": "INCONCLUSIVE_all_six_channels_zero_even_explicit_true",
+  "no_zero_reading_used_as_collision_exemption": true,
+  "actual_pair_filters_verified": false,
+  "cooked_geometry_verified": false,
+  "setting_change_causal_effect_established": false,
+  "reference_accepted": false,
+  "training_ready": false,
+  "normal_native_exit": true,
+  "fast_shutdown_not_graceful_full_cleanup": true,
+  "child_wall_seconds": 15.630459818989038,
+  "gpu_tasks_created_this_controller": 1,
+  "automatic_retries": 0,
+  "motion_solver_calls": 0,
+  "ppo_updates": 0,
+  "independently_seen_other_task": "TASK_20261118_133",
+  "other_task_not_owned_or_mutated": true,
+  "online_wandb_verified": false,
+  "offline_wandb_run_id": "26atarqn"
+}

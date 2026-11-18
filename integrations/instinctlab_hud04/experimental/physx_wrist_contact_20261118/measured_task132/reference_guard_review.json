@@ -1,0 +1,175 @@
+{
+  "stage": "new_endpoint_guard_real997_classification_parity_and_historical_step_rejection",
+  "endpoint_guard_binding": "d89055d8750930ef0e2fa91541c79f0db758a629bb35852293ccc4dd90be2f97",
+  "all997_all43_all903_parity": true,
+  "current_strict_self": 2081,
+  "current_strict_terrain": 2702,
+  "current_unresolved_self": 55,
+  "current_unresolved_terrain": 240,
+  "historical005_to008_would_be_allowed": false,
+  "comparison": {
+    "passed": false,
+    "lost_certified_separation_pairs": 460,
+    "newly_strict_pairs": 348,
+    "rejected_examples": [
+      [
+        "self",
+        6,
+        3,
+        34
+      ],
+      [
+        "self",
+        7,
+        3,
+        34
+      ],
+      [
+        "self",
+        8,
+        3,
+        34
+      ],
+      [
+        "self",
+        9,
+        3,
+        34
+      ],
+      [
+        "self",
+        11,
+        3,
+        33
+      ],
+      [
+        "self",
+        11,
+        3,
+        34
+      ],
+      [
+        "self",
+        12,
+        3,
+        33
+      ],
+      [
+        "self",
+        12,
+        3,
+        34
+      ],
+      [
+        "self",
+        13,
+        3,
+        34
+      ],
+      [
+        "self",
+        14,
+        3,
+        34
+      ]
+    ],
+    "previous_strict_pairs": 5472,
+    "new_strict_pairs": 4783,
+    "previous_unresolved_pairs": 296,
+    "new_unresolved_pairs": 295,
+    "old_intersections_not_accepted": true,
+    "penetration_depth_comparison": false,
+    "swept_or_dynamics_checked": false,
+    "accepted_reference": false
+  },
+  "shape_examples": [
+    {
+      "kind": "self",
+      "frame": 6,
+      "first": "left_hip_pitch_link#0",
+      "second": "left_wrist_roll_link#0",
+      "current_class": "unresolved"
+    },
+    {
+      "kind": "self",
+      "frame": 7,
+      "first": "left_hip_pitch_link#0",
+      "second": "left_wrist_roll_link#0",
+      "current_class": "unresolved"
+    },
+    {
+      "kind": "self",
+      "frame": 8,
+      "first": "left_hip_pitch_link#0",
+      "second": "left_wrist_roll_link#0",
+      "current_class": "unresolved"
+    },
+    {
+      "kind": "self",
+      "frame": 9,
+      "first": "left_hip_pitch_link#0",
+      "second": "left_wrist_roll_link#0",
+      "current_class": "unresolved"
+    },
+    {
+      "kind": "self",
+      "frame": 11,
+      "first": "left_hip_pitch_link#0",
+      "second": "left_wrist_pitch_link#1",
+      "current_class": "unresolved"
+    },
+    {
+      "kind": "self",
+      "frame": 11,
+      "first": "left_hip_pitch_link#0",
+      "second": "left_wrist_roll_link#0",
+      "current_class": "unresolved"
+    },
+    {
+      "kind": "self",
+      "frame": 12,
+      "first": "left_hip_pitch_link#0",
+      "second": "left_wrist_pitch_link#1",
+      "current_class": "unresolved"
+    },
+    {
+      "kind": "self",
+      "frame": 12,
+      "first": "left_hip_pitch_link#0",
+      "second": "left_wrist_roll_link#0",
+      "current_class": "unresolved"
+    },
+    {
+      "kind": "self",
+      "frame": 13,
+      "first": "left_hip_pitch_link#0",
+      "second": "left_wrist_roll_link#0",
+      "current_class": "unresolved"
+    },
+    {
+      "kind": "self",
+      "frame": 14,
+      "first": "left_hip_pitch_link#0",
+      "second": "left_wrist_roll_link#0",
+      "current_class": "unresolved"
+    }
+  ],
+  "inputs_sha256": {
+    "integrations/instinctlab_hud04/experimental/wholebody_guarded_candidates_20261118/WHOLEBODY_TRIAL_008/STEP1_WORLD_CANDIDATE_UNACCEPTED.npz": "d5cdb5382b5eb910b3273adab662de286e0452376ee9d134124d4ceddd2f30cf",
+    "integrations/instinctlab_hud04/experimental/world_candidate_20261118/WORLD_TRIAL_005_FOOT_PRIORITY/STEP1_WORLD_CANDIDATE_UNACCEPTED.npz": "9353b185d92c21ceeb56a289b926f89d3dc72c5343745fc14e26889bc6d728d4"
+  },
+  "code_sha256": {
+    "wholebody_step_guard.py": "f96a355ade86b9a88885755921dc01c959ceec8677711396037e9eef4eb4315a",
+    "nominal_certificates.py": "f275568a80879e52f2306d25dd968f461be5712cc76b27cd566d4df381a2ed94",
+    "review_wholebody_step_guard.py": "5c350dd932692935cbcfa8a2d5daa367ed6fdbb1a1d08ac930a3cf8eb8e36cab"
+  },
+  "motion_optimizer_calls": 0,
+  "new_motion_files": 0,
+  "gpu_submissions": 0,
+  "ppo_updates": 0,
+  "runtime_pair_filters_verified": false,
+  "material_support_calibrated": false,
+  "accepted_reference": false,
+  "training_ready": false,
+  "elapsed_seconds": 23.589995535999947
+}
