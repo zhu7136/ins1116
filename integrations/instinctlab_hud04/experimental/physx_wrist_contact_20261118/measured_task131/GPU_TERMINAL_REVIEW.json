@@ -1,0 +1,79 @@
+{
+  "stage": "controlled_wrist_task_terminal_readback",
+  "task_id": "TASK_20261118_131",
+  "status": "5",
+  "actual_commit": "5ec4d476986b2629c2df18cd6fe5d316c3edf022",
+  "task": {
+    "projectId": "PRO_20261116_016",
+    "taskId": "TASK_20261118_131",
+    "taskName": "hud04-wrist-contact-abc-5ec4d476",
+    "taskStatus": "5",
+    "imageId": "BJX00000178",
+    "imageVersion": "V000446",
+    "goodsId": "ESKU000001",
+    "goodsBackId": "SKUSL000002",
+    "goodsName": "1*4090D*24G",
+    "hashrateResourceId": "SL00000009",
+    "createTime": "2026-11-18 10:20:28",
+    "updateTime": "2026-11-18 10:22:42",
+    "startTime": "2026-11-18 10:20:37",
+    "endTime": "2026-11-18 10:22:42",
+    "goodsPrice": 5.76,
+    "gpuNum": 1
+  },
+  "controlled_probe_completed": true,
+  "artifact_names": [
+    "contact_report.json",
+    "supervisor_result.json"
+  ],
+  "full_log_bytes": 156987,
+  "full_log_sha256": "3915dd8638c4bd56348e383ab9f68f4100450dce01a9757aa5dcfcf590a15839",
+  "signed_url_persisted": false,
+  "raw_log_persisted": false,
+  "phases": [],
+  "safe_tail": "[SDK][INFO] 2026-11-18 10:22:30 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/isaaclab/logs/isaaclab_2026-11-18_10-22-30.log\n[SDK][INFO] 2026-11-18 10:22:30 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/isaaclab/logs/isaaclab_2026-11-18_10-22-30.log\n[SDK][INFO] 2026-11-18 10:22:35 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/tmpzot679n8/index.zip\n[SDK][INFO] 2026-11-18 10:22:35 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/tmpzot679n8/index.json\n[SDK][INFO] 2026-11-18 10:22:38 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/.asset_hash\n[SDK][INFO] 2026-11-18 10:22:38 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/HU_D04_01_fixed_head_body_collision.EZlhEf\n[SDK][INFO] 2026-11-18 10:22:38 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/HU_D04_01_fixed_head_body_collision.OBGg6N\n[SDK][INFO] 2026-11-18 10:22:38 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/HU_D04_01_fixed_head_body_collision_sensor.usd\n[SDK][INFO] 2026-11-18 10:22:38 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/HU_D04_01_fixed_head_body_collision_physics.ryKauH\n[SDK][INFO] 2026-11-18 10:22:38 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/HU_D04_01_fixed_head_body_collision_base.dmwKTJ\n[SDK][INFO] 2026-11-18 10:22:38 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/HU_D04_01_fixed_head_body_collision_robot.ojzB1t\n[SDK][INFO] 2026-11-18 10:22:38 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/base_link.tmp.Wltqcf\n[SDK][INFO] 2026-11-18 10:22:38 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/left_hip_pitch_link.tmp.AzgQSI\n[SDK][INFO] 2026-11-18 10:22:38 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/left_hip_roll_link.tmp.KtSSYS\n[SDK][INFO] 2026-11-18 10:22:38 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/left_hip_yaw_link.tmp.yeiKju\n[SDK][INFO] 2026-11-18 10:22:38 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/left_knee_link.tmp.eNJnRj\n[SDK][INFO] 2026-11-18 10:22:38 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/left_ankle_pitch_link.tmp.gsS2Vb\n[SDK][INFO] 2026-11-18 10:22:38 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/left_ankle_roll_link.tmp.1CE3in\n[SDK][INFO] 2026-11-18 10:22:38 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/right_hip_pitch_link.tmp.Geen0s\n[SDK][INFO] 2026-11-18 10:22:38 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/right_hip_roll_link.tmp.8Vo4vs\n[SDK][INFO] 2026-11-18 10:22:38 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/right_hip_yaw_link.tmp.TO1y75\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/right_knee_link.tmp.BfFJQQ\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/right_ankle_pitch_link.tmp.tJbXqQ\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/right_ankle_roll_link.tmp.z8gs9i\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/waist_yaw_link.tmp.BYRIWd\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/waist_roll_link.tmp.wHcANO\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/waist_pitch_link.tmp.BjSZV4\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/neck_yaw_link.tmp.f5Eol4\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/neck_pitch_link.tmp.UULRxE\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/left_shoulder_pitch_link.tmp.mJvsUr\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/left_shoulder_roll_link.tmp.40wjDe\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/left_shoulder_yaw_link.tmp.eP2Y5c\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/left_elbow_link.tmp.8xQd22\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/left_wrist_yaw_link.tmp.9a8xGF\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/left_wrist_pitch_link.tmp.6rjFqF\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/left_wrist_roll_link.tmp.qXGIdl\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/right_shoulder_pitch_link.tmp.9jRDKc\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/right_shoulder_roll_link.tmp.9amcjM\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/right_shoulder_yaw_link.tmp.4XPZYP\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/right_elbow_link.tmp.r691PH\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/right_wrist_yaw_link.tmp.jJDBVL\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/right_wrist_pitch_link.tmp.2RykyN\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/configuration/right_wrist_roll_link.tmp.TYB0vf\n[SDK][INFO] 2026-11-18 10:22:39 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/conversion_cache/config.yaml\n[SDK][INFO] 2026-11-18 10:22:40 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/contact_report.json\n[SDK][INFO] 2026-11-18 10:22:41 New file detected globally: /workspace/isaaclab/ins1116/hud04_controlled_pair_5ec4d476986b/supervisor_result.json\nINFO:coldplay.get_rabbitmq:Successfully sent message to queue 'gm_task_update_status_queue' (attempt 1)\n\n\n\u3010SDK\u3011\u8bad\u7ec3\u8fdb\u7a0b\u72b6\u6001\u7801\uff1a0\n[SDK][INFO] 2026-11-18 10:22:42 Model recovery scan completed\n[SDK][INFO] 2026-11-18 10:22:42 File upload service stopped\n[SDK][INFO] 2026-11-18 10:22:42 Task(TASK_20261118_131) status updated to: Completed , ret:True\n\u3010SDK\u3011\u4e3b\u8fdb\u7a0b\u5df2\u9000\u51fa\n[SDK] run_upload_file finished.\n[SDK] collect_log finished.\n[SDK][INFO] 2026-11-18 10:22:42 File scanning finished\n[SDK] start_watchdog finished.\n[SDK] run_upload_data finished.\nEnd to run RL: Wed Nov 18 10:22:45 CST 2026, train_exit_code=0\nTime taken: 2 minutes\nStart to backup logs.\ncp: missing destination file operand after '/mnt/rl_tfevents_logs'\nTry 'cp --help' for more information.\nEnd to backup logs.",
+  "supervisor": {
+    "return_code": 0,
+    "stop_reason": null,
+    "direct_child_reaped": true,
+    "child_wall_seconds": 17.416424851864576,
+    "child_seconds_max": 240,
+    "child_log_sha256": "f51b5a7a07def3648d01a09ed1348bf7b69d767db04188535c8c8d556174d8e2",
+    "platform_hard_deadline_verified": false,
+    "stage": "hud04_pair_supervisor_result",
+    "source_commit": "5ec4d476986b2629c2df18cd6fe5d316c3edf022",
+    "controlled_probe_completed": true,
+    "normal_native_exit_observed": true,
+    "fast_shutdown_not_graceful_full_cleanup": true,
+    "report_validation_error": null,
+    "accepted_reference": false,
+    "training_ready": false,
+    "motion_solver_calls": 0,
+    "ppo_updates": 0
+  },
+  "verdict": {
+    "peak_force_norm_native": {
+      "original_fallback_left": 0.0,
+      "original_fallback_right": 0.0,
+      "explicit_true_left": 0.0,
+      "explicit_true_right": 0.0,
+      "explicit_false_left": 0.0,
+      "explicit_false_right": 0.0,
+      "box_positive_control": 0.0
+    },
+    "independent_box_contact_positive": false,
+    "controlled_wrist_body_pair_filter_supported": {
+      "left": false,
+      "right": false
+    },
+    "all_joint_pair_filters_verified": false,
+    "cooked_geometry_verified": false,
+    "force_norm_not_penetration_depth": true,
+    "source_motion_alignment_verified": false,
+    "reference_acceptance": false,
+    "accepted_reference": false,
+    "training_ready": false
+  },
+  "accepted_reference": false,
+  "training_ready": false
+}

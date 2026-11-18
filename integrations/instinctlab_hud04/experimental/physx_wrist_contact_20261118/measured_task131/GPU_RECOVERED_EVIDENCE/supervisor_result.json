@@ -1,0 +1,19 @@
+{
+  "return_code": 0,
+  "stop_reason": null,
+  "direct_child_reaped": true,
+  "child_wall_seconds": 17.416424851864576,
+  "child_seconds_max": 240,
+  "child_log_sha256": "f51b5a7a07def3648d01a09ed1348bf7b69d767db04188535c8c8d556174d8e2",
+  "platform_hard_deadline_verified": false,
+  "stage": "hud04_pair_supervisor_result",
+  "source_commit": "5ec4d476986b2629c2df18cd6fe5d316c3edf022",
+  "controlled_probe_completed": true,
+  "normal_native_exit_observed": true,
+  "fast_shutdown_not_graceful_full_cleanup": true,
+  "report_validation_error": null,
+  "accepted_reference": false,
+  "training_ready": false,
+  "motion_solver_calls": 0,
+  "ppo_updates": 0
+}
