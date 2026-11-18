@@ -12,6 +12,7 @@ from itertools import islice
 from pathlib import Path
 from audit import HERE,REPO,read,digest
 from native_contact_observer import exact_path,registry_from_audit
+from contact_material_links_1073 import material_prim_path as metadata_prim_path
 
 BASELINE='f9924ea919eeeabeb8ddca4e51d8463d0f2fb18c'
 
@@ -37,7 +38,7 @@ def preparation():
         gpu_tasks_submitted=0,physics_steps_executed=0,ppo_updates=0,
         accepted_reference=False,training_ready=False)
 
-def scalar_or_small_array(value,limit=64,_depth=0,_budget=None):
+def scalar_or_small_array(value,limit=64,_depth=0,_budget=None,*,quaternion_types=()):
     if _budget is None:_budget=[256]
     _budget[0]-=1
     if _budget[0]<0 or _depth>4:raise ValueError('Metadata nesting/node budget exceeded')
@@ -46,15 +47,24 @@ def scalar_or_small_array(value,limit=64,_depth=0,_budget=None):
     if isinstance(value,numbers.Real):
         if not math.isfinite(value):raise ValueError('Nonfinite metadata')
         return float(value)
+    # Target host supplies explicit Gf.Quatd/Quatf/Quath types. No generic
+    # GetReal duck typing, simulator import, normalization or state inference.
+    if quaternion_types and isinstance(value,quaternion_types):
+        imaginary=list(islice(iter(value.GetImaginary()),4))
+        if len(imaginary)!=3:raise ValueError('Quaternion imaginary component count')
+        components=scalar_or_small_array([value.GetReal(),*imaginary],limit,_depth+1,_budget,
+                                        quaternion_types=quaternion_types)
+        return dict(kind='USD_QUATERNION',order='wxyz',components=components,
+                    normalized_by_collector=False)
     items=list(islice(iter(value),limit+1))
     if len(items)>limit:raise ValueError('Metadata array exceeds bound')
-    return [scalar_or_small_array(v,limit,_depth+1,_budget) for v in items]
+    return [scalar_or_small_array(v,limit,_depth+1,_budget,quaternion_types=quaternion_types) for v in items]
 
 def attempt(fn):
     try:return dict(status='OBSERVED',value=fn())
     except Exception as exc:return dict(status='UNKNOWN_OR_ERROR',value=None,error=type(exc).__name__+': '+str(exc)[:300])
 
-def prim_metadata(prim):
+def prim_metadata(prim,*,quaternion_types=()):
     if not prim or not prim.IsValid():raise ValueError('Exact prim unavailable')
     attrs=list(islice(iter(prim.GetAttributes()),129))
     rels=list(islice(iter(prim.GetRelationships()),65))
@@ -66,7 +76,7 @@ def prim_metadata(prim):
         if name in ('points','faceVertexCounts','faceVertexIndices','normals','velocities') or name.startswith('primvars:'):
             out[name]=dict(status='NOT_READ_LARGE_OR_NONCOOKED_ARRAY',value=None);continue
         def record(a=a):
-            return dict(value=scalar_or_small_array(a.Get()),authored=bool(a.HasAuthoredValueOpinion()),
+            return dict(value=scalar_or_small_array(a.Get(),quaternion_types=quaternion_types),authored=bool(a.HasAuthoredValueOpinion()),
                 time_samples=int(a.GetNumTimeSamples()),time_code='USD_DEFAULT_NOT_CURRENT_PHYSICS_STATE')
         out[name]=attempt(record)
     relationships={}
@@ -80,7 +90,14 @@ def prim_metadata(prim):
         attributes=out,relationships=relationships,composed_USD_metadata_only=True,
         final_solver_filter_verified=False,cooked_geometry_verified=False)
 
-def existing_stage_snapshot(stage,settings,bindings,*,paths):
+def configured_scene_path(simulation_cfg):
+    """Read explicit host configuration, not a guessed /World/physicsScene.
+
+    A valid string does NOT establish an existing Scene prim or solver owner.
+    """
+    return metadata_prim_path(simulation_cfg.physics_prim_path)
+
+def existing_stage_snapshot(stage,settings,bindings,*,paths,quaternion_types=()):
     """Read caller's exact existing stage; no discovery, Apply/Set/Load or export.
 
     Settings are read through constants supplied by target native bindings. An
@@ -89,7 +106,9 @@ def existing_stage_snapshot(stage,settings,bindings,*,paths):
     """
     if not isinstance(paths,(list,tuple)) or not 1<=len(paths)<=32 or len(set(paths))!=len(paths):
         raise ValueError('One to32 unique exact paths required')
-    for path in paths:exact_path(path)
+    # Metadata-only lookup permits root-level /physicsScene and /Looks paths.
+    # Actor/collider registry exact_path restrictions remain unchanged.
+    for path in paths:metadata_prim_path(path)
     observed_settings={}
     for name in ('SETTING_COLLISION_APPROXIMATE_CYLINDERS','SETTING_COLLISION_APPROXIMATE_CONES'):
         def setting(name=name):
@@ -99,7 +118,7 @@ def existing_stage_snapshot(stage,settings,bindings,*,paths):
             return dict(key=key,value=value)
         observed_settings[name]=attempt(setting)
     return dict(schema='hud04.existing_stage_metadata.v1',
-        settings=observed_settings,prims={p:attempt(lambda p=p:prim_metadata(stage.GetPrimAtPath(p))) for p in paths},
+        settings=observed_settings,prims={p:attempt(lambda p=p:prim_metadata(stage.GetPrimAtPath(p),quaternion_types=quaternion_types)) for p in paths},
         snapshot_source='CALLER_EXISTING_STAGE; no runtime created by collector',
         stage_id_independently_verified=False,cpu_gpu_pipeline_independently_verified=False,
         raw_usd_file_hash=None,live_cooked_shape_handle=None,

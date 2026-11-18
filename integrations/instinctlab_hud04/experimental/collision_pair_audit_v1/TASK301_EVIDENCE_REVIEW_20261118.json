@@ -1,0 +1,84 @@
+{
+  "task_id": "TASK_20261118_301",
+  "source_commit": "1f112e121e28018b63ad3a5146e36be4ed9145be",
+  "wandb_run": "zhul136-university-of-science-and-technology-of-china/ins1116/ys4k6zk2",
+  "existing_artifact": "zhul136-university-of-science-and-technology-of-china/ins1116/hud04-runtime-observation-results:v0",
+  "recovered_zip_sha256": "8093d6fa40628ab37fe155b02829cc92e9b253d634a68de22cd1083e561dd3be",
+  "all_source_checksums_verified": true,
+  "persisted_files": {
+    "runtime_report.json": {
+      "source_sha256": "e2ce8f597e5b420cd0e55e525a22319a04493e091a8973a0d1f196e341f3b090",
+      "persisted_sha256": "e2ce8f597e5b420cd0e55e525a22319a04493e091a8973a0d1f196e341f3b090",
+      "redacted": false
+    },
+    "metadata.json": {
+      "source_sha256": "770907555a18ef6323d8609ffc21629137273422124e3f5eeb5bcb82b332c8ce",
+      "persisted_sha256": "770907555a18ef6323d8609ffc21629137273422124e3f5eeb5bcb82b332c8ce",
+      "redacted": false
+    },
+    "contacts.sanitized.json": {
+      "source_sha256": "1acaba671d6d92d052b30dfaa77c60b3018e87c85f991d3bd8ea3314d215c9aa",
+      "persisted_sha256": "34605ff08666b39c7e81130de426cc1ec1c813d19847701747e8f13c6f57a8d4",
+      "redacted": true
+    },
+    "worker_result.json": {
+      "source_sha256": "ddc2dbd07d79f355ae4c52ede3e72fd4e21f399e3cc288cbb68ed4cb9d0589c4",
+      "persisted_sha256": "ddc2dbd07d79f355ae4c52ede3e72fd4e21f399e3cc288cbb68ed4cb9d0589c4",
+      "redacted": false
+    }
+  },
+  "worker": {
+    "return_code": 0,
+    "child_wall_s": 17.456292748451233,
+    "child_reaped": true,
+    "platform_hard_cap_verified": false
+  },
+  "observed": {
+    "body_dof": 29,
+    "head_policy_dof": 0,
+    "explicit_physics_steps": 8,
+    "physics_dt_s": 0.005,
+    "initialization_may_step_physics": true,
+    "ground_or_terrain_added": false,
+    "callback_invocations": 0,
+    "contact_points": 0,
+    "reference_motion_used": false,
+    "cooked_geometry_verified": false,
+    "full_task_tested": false,
+    "solver_calls": 0,
+    "ppo_updates": 0
+  },
+  "scene_hardcoded_path_status": "UNKNOWN_OR_ERROR",
+  "patch_cpu_regressions": [
+    {
+      "component": "collision_pair_audit_v1",
+      "return_code": 0,
+      "wall_s": 1.354926875999979,
+      "tail": [
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 113 tests in 0.240s",
+        "",
+        "OK"
+      ],
+      "execution": "sandbox CPU; fake SDK objects and plan-only runtime script test"
+    },
+    {
+      "component": "global_transcription_components_v1",
+      "return_code": 0,
+      "wall_s": 1.0580390270000066,
+      "tail": [
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 50 tests in 0.140s",
+        "",
+        "OK"
+      ],
+      "execution": "sandbox CPU; fake SDK objects and plan-only runtime script test"
+    }
+  ],
+  "patch_gpu_verified": false,
+  "new_gpu_tasks": 0,
+  "accepted_reference": false,
+  "training_ready": false
+}

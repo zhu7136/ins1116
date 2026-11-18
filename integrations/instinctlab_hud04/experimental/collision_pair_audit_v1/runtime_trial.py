@@ -66,8 +66,8 @@ def child(out, commit):
         import isaaclab.sim as sim_utils
         from isaaclab.scene import InteractiveScene, InteractiveSceneCfg
         from isaaclab.utils import configclass
-        from pxr import PhysicsSchemaTools, UsdUtils, Usd
-        from prepare_runtime_observation import preparation, existing_stage_snapshot
+        from pxr import PhysicsSchemaTools, UsdUtils, Usd, Gf
+        from prepare_runtime_observation import preparation, existing_stage_snapshot, configured_scene_path, attempt
         from observe_existing_runtime import ExistingRuntimeObservation
 
         prepared = preparation()
@@ -90,12 +90,18 @@ def child(out, commit):
         stage = scene.stage
         stage_id = int(UsdUtils.StageCache.Get().GetId(stage).ToLongInt())
         registry = prepared['exact_expected_pairs']
-        paths = ['/World/physicsScene', '/World/envs/env_0/Robot']
+        scene_selection = attempt(lambda: configured_scene_path(sim.cfg))
+        paths = ['/World/envs/env_0/Robot']
+        if scene_selection['status'] == 'OBSERVED':
+            paths.insert(0, scene_selection['value'])
         for pair in registry:
             paths.extend(pair[k] for k in ('actor0', 'actor1', 'collider0', 'collider1'))
             paths.append('/World/envs/env_0/Robot/joints/' + pair['key'])
         paths = list(dict.fromkeys(paths))
-        snapshot = existing_stage_snapshot(stage, carb.settings.get_settings(), _physx, paths=paths)
+        snapshot = existing_stage_snapshot(stage, carb.settings.get_settings(), _physx, paths=paths,
+            quaternion_types=(Gf.Quatd, Gf.Quatf, Gf.Quath))
+        snapshot['physics_scene_selection'] = dict(source='HOST_sim.cfg.physics_prim_path',
+            read=scene_selection,hardcoded_fallback_used=False,solver_scene_ownership_verified=False)
         write(out / 'metadata.json', snapshot)
         # Hash the NEW generated layers, never call these historical USD bytes.
         generated = []
