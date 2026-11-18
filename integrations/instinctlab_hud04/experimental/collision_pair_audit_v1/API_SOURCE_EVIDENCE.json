@@ -1,0 +1,66 @@
+{
+  "schema": "hud04.pinned_contact_api_source_evidence.v1",
+  "source": {
+    "repo": "isaac-sim/IsaacSim",
+    "tag": "v5.1.0",
+    "path": "source/extensions/isaacsim.core.api/python/impl/sensors/rigid_contact_view.py",
+    "git_blob": "e8d9b2f8a0a1aed3db14fa65d79db1f153598a1f",
+    "git_blob_bytes_independently_verified": true,
+    "tag_path_blob_verified": true,
+    "sha256": "6b48c4c48633a742b794b391275bc8a2274004a1177c882c2b1d057a76004b1b",
+    "source_bytes": 26261,
+    "excerpts": [
+      {
+        "first_line": 350,
+        "last_line": 376,
+        "text": "        \"\"\"Get more detailed contact information between the prims in the view and the filter prims.\n\n        Specifically, this method provides individual contact normals, contact points, contact separations as well as\n        contact forces for each pair (the sum of which equals the forces that the ``get_contact_force_matrix``\n        method provides as the force aggregate of a pair)\n\n        Given to the dynamic nature of collision between bodies, this method will provide buffers of contact data which\n        are arranged sequentially for each pair. The starting index and the number of contact data points for each pair\n        in this stream can be realized from pair_contacts_start_indices, and pair_contacts_count tensors.\n        They both have a dimension of ``(num_shapes, num_filters)`` where ``num_filters`` is determined\n        according to the ``filter_paths_expr`` parameter\n\n        Args:\n            indices (Optional[Union[np.ndarray, list, torch.Tensor, wp.array]], optional): indices to specify which prims\n                                                                                 to query. Shape (M,).\n                                                                                 Where M <= size of the encapsulated prims in the view.\n                                                                                 Defaults to None (i.e: all prims in the view).\n            clone (bool, optional): True to return a clone of the internal buffer. Otherwise False. Defaults to True.\n            dt (float): time step multiplier to convert the underlying impulses to forces. If the default value is used then the forces are in fact contact impulses\n\n        Returns:\n            Tuple[Union[np.ndarray, torch.Tensor, wp.indexedarray], Union[np.ndarray, torch.Tensor, wp.indexedarray],\n            Union[np.ndarray, torch.Tensor, wp.indexedarray], Union[np.ndarray, torch.Tensor, wp.indexedarray],\n            Union[np.ndarray, torch.Tensor, wp.indexedarray], Union[np.ndarray, torch.Tensor, wp.indexedarray]]:\n            A set of buffers for normal forces with shape (max_contact_count, 1), points with shape (max_contact_count, 3), normals with shape (max_contact_count, 3),\n            and distances with shape (max_contact_count, 1), as well as two tensors with shape (M, self.num_filters)\n            to indicate the starting index and the number of contact data points per pair in the aforementioned buffers."
+      },
+      {
+        "first_line": 441,
+        "last_line": 466,
+        "text": "        if not omni.timeline.get_timeline_interface().is_stopped() and self._physics_view is not None:\n            indices = self._backend_utils.resolve_indices(indices, self._num_shapes, self._device)\n            (\n                forces,\n                points,\n                normals,\n                distances,\n                pair_contacts_count,\n                pair_contacts_start_indices,\n            ) = self._physics_view.get_contact_data(dt)\n            if clone:\n                forces = self._backend_utils.clone_tensor(forces, device=self._device)\n                points = self._backend_utils.clone_tensor(points, device=self._device)\n                normals = self._backend_utils.clone_tensor(normals, device=self._device)\n                distances = self._backend_utils.clone_tensor(distances, device=self._device)\n                pair_contacts_count = self._backend_utils.clone_tensor(pair_contacts_count, device=self._device)\n                pair_contacts_start_indices = self._backend_utils.clone_tensor(\n                    pair_contacts_start_indices, device=self._device\n                )\n            return (\n                forces,\n                points,\n                normals,\n                distances,\n                pair_contacts_count[indices, :],\n                pair_contacts_start_indices[indices, :],"
+      }
+    ],
+    "url": "https://github.com/isaac-sim/IsaacSim/blob/v5.1.0/source/extensions/isaacsim.core.api/python/impl/sensors/rigid_contact_view.py"
+  },
+  "observed_historical_runtime": {
+    "evidence": "integrations/instinctlab_hud04/experimental/physx_detached_wrist_v2_20261118/failed_task137/contact_error.json",
+    "sha256": "be2f66aaa55e4df57ed9d4ca4d8b9e1310007653951eac591684d4e33aba87ad",
+    "historical_directory_label": "failed_task137",
+    "package_identifiers": [
+      "107.3.26+107.3.3.lx64.r.cp311.u353"
+    ],
+    "historical_task_failed": true,
+    "full_target_mirror_image_or_build_verified": false
+  },
+  "source_supported_contract": {
+    "method": "RigidContactView.get_contact_force_data -> _physics_view.get_contact_data(dt)",
+    "tuple_order": [
+      "normal_forces",
+      "points",
+      "normals",
+      "contact_separations",
+      "pair_contacts_count",
+      "pair_contacts_start_indices"
+    ],
+    "source_only_not_runtime_compatibility": true,
+    "units_sign_offsets_not_certified_by_this_report": true
+  },
+  "unavailable_evidence": [
+    "target-build native event subscription/decoder API",
+    "cooked vertices bound to live shape IDs",
+    "native contact separation units/sign/offset behavior",
+    "same-original-articulation causal experiment"
+  ],
+  "native_documentation_access": {
+    "domain": "docs.omniverse.nvidia.com",
+    "status": "network permission required; connection reset on attempted read",
+    "url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/extensions/runtime/source/omni.physics.tensors/docs/api/python.html"
+  },
+  "gpu_tasks_submitted": 0,
+  "simulation_steps": 0,
+  "motion_optimizer_calls": 0,
+  "automatic_pair_exclusions": 0,
+  "accepted_reference": false,
+  "training_ready": false
+}
