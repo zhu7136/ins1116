@@ -4,6 +4,10 @@ from types import SimpleNamespace
 import numpy as np
 from scipy import sparse
 import wholebody_solver as S
+class SyntheticCertificateGuard:
+    """TEST STUB: isolate older merit/LP tests; never a runtime certificate."""
+    def scan(self,*args):return None
+    def compare(self,*args):return True,{'TEST_STUB':True}
 class SolverTests(unittest.TestCase):
     def test_plan_native_full997(self):
         visits=np.zeros(997,int)
@@ -35,10 +39,10 @@ class SolverTests(unittest.TestCase):
              patch.object(S,'temporal_system',return_value=(np.zeros(1),sparse.csr_matrix((1,385)))),\
              patch.object(S,'temporal_values',return_value=np.zeros(1)),patch.object(S,'linprog',return_value=lp):
             if not success:
-                with self.assertRaisesRegex(RuntimeError,'NO motion export'):S.solve(Model(),q,roots,np.zeros((997,90)),rows.append)
+                with self.assertRaisesRegex(RuntimeError,'NO motion export'):S.solve(Model(),q,roots,np.zeros((997,90)),rows.append,certificate_guard=SyntheticCertificateGuard())
                 self.assertEqual(len(rows),1);self.assertEqual(body.fresh,0)
             else:
-                oq,oroot,report=S.solve(Model(),q,roots,np.zeros((997,90)),rows.append)
+                oq,oroot,report=S.solve(Model(),q,roots,np.zeros((997,90)),rows.append,certificate_guard=SyntheticCertificateGuard())
                 self.assertEqual(body.fresh,5);self.assertEqual(report['accepted_updates'],0)
                 self.assertEqual(len(rows[0]['backtracking']),5)
                 self.assertTrue(all(r['all43_and903_rechecked'] for r in rows[0]['backtracking']))

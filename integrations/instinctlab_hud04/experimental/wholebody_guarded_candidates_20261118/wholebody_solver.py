@@ -17,7 +17,9 @@ def plan():
 
 def geometry_cost(body,gaps):return float(np.maximum(body.margin-gaps,0).sum())
 
-def solve(model,q,roots,desired,progress,*,enforce_foot_guard=False,enforce_per_pose_guard=False,algorithm_wall_seconds=140):
+def solve(model,q,roots,desired,progress,*,enforce_foot_guard=False,enforce_per_pose_guard=False,algorithm_wall_seconds=140,certificate_guard=None):
+    if certificate_guard is None:
+        raise ValueError('Explicit pinned all43/all903 endpoint certificate guard required; legacy launchers may NOT silently rerun')
     if algorithm_wall_seconds not in [140,160]:raise ValueError('Only reviewed140/160second finite budgets')
     q=q.copy();roots=check_roots(roots,len(q)).copy();seed=q.copy()
     if q.shape!=(997,29) or desired.shape!=(997,90) or max(joint_feasibility(model,q).values())>1e-6:raise ValueError('Native feasible997 only')
@@ -34,6 +36,7 @@ def solve(model,q,roots,desired,progress,*,enforce_foot_guard=False,enforce_per_
         select=sparse.coo_matrix((np.ones(nq),(np.arange(nq),[i*35+6+k for i in range(n) for k in range(29)])),shape=(nq,nv)).tocsr()
         dep=(piece-seed[frames]).reshape(-1);temp,tj=temporal_system(q,roots,first,last)
         gaps,gj,records,counts=body.evaluate(model,piece,root,True)
+        old_certificates=certificate_guard.scan(model,piece,root,np.arange(first,last+1))
         if enforce_per_pose_guard:old_per_pose=per_pose.scan(model,piece,root,np.arange(first,last+1))
         if enforce_foot_guard:
             from foot_guard import foot_state,guard
@@ -81,6 +84,12 @@ def solve(model,q,roots,desired,progress,*,enforce_foot_guard=False,enforce_per_
                     row['backtracking'][-1].update(foot_guard_passed=passed,foot_guard_detail=detail)
                     if not passed:continue
                 if merit<old-1e-9:
+                    # Refresh original-solid strict/separated/unresolved classes
+                    # BEFORE assignment. Merit decrease is not collision safety.
+                    new_certificates=certificate_guard.scan(model,tq,tr,np.arange(first,last+1))
+                    passed,detail=certificate_guard.compare(old_certificates,new_certificates)
+                    row['backtracking'][-1].update(endpoint_certificate_guard_passed=passed,endpoint_certificate_guard_detail=detail)
+                    if not passed:continue
                     q[frames]=tq;roots[frames]=tr
                     row.update(accepted=True,alpha=alpha,merit_before=old,merit_after=merit,new_geometry_score_raw=geometry_cost(body,newgap),
                         new_counts=newcounts,max_joint_step_rad=float(abs(alpha*d[:,6:]).max()))
@@ -97,4 +106,7 @@ def solve(model,q,roots,desired,progress,*,enforce_foot_guard=False,enforce_per_
         nonlinear_all43_newcontact_refresh=True,sampled_separation_axes_are_not_penetration_depth=True,
         no_new_foot_frame_and_no_foot_overlap_score_increase_guard=enforce_foot_guard,
         pinned86f05_no_per_pose_max_sat_increase_guard=enforce_per_pose_guard,
-        same_link_adaptive_scores_constant_not_geometry_exemptions=True,accepted_reference=False,training_ready=False,**feasible)
+        same_link_adaptive_scores_constant_not_geometry_exemptions=True,
+        all43_all903_endpoint_certificate_guard_required=True,
+        endpoint_guard_is_not_swept_or_dynamics_acceptance=True,
+        accepted_reference=False,training_ready=False,**feasible)

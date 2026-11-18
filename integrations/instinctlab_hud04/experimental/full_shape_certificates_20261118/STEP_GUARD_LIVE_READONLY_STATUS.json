@@ -1,0 +1,23 @@
+{
+  "queried_at_utc": "2026-11-18T02:16:54.029892+00:00",
+  "gpu_mutations": 0,
+  "automatic_retries": 0,
+  "account_pending_running_paused": {
+    "success": true,
+    "total": 0,
+    "hasNext": false,
+    "pageNum": 1,
+    "pageSize": 50,
+    "returned_rows": 0,
+    "rows": []
+  },
+  "project_all_nonterminal": {
+    "success": true,
+    "total": 0,
+    "hasNext": false,
+    "pageNum": 1,
+    "pageSize": 50,
+    "returned_rows": 0,
+    "rows": []
+  }
+}

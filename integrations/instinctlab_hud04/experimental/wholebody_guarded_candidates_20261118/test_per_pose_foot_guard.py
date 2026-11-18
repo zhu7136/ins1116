@@ -5,6 +5,7 @@ import numpy as np
 from scipy import sparse
 from per_pose_foot_guard import PerPoseGuard
 import wholebody_solver as S
+from test_wholebody_solver import SyntheticCertificateGuard
 class GuardAdapterTests(unittest.TestCase):
     def setUp(self):
         shapes=[SimpleNamespace(kind='box',link=s+'_ankle_roll_link',parameters={'size':[.08,.08,.08]},local=np.eye(4)) for s in ['left','right']]
@@ -45,7 +46,7 @@ class GuardAdapterTests(unittest.TestCase):
              patch.object(S,'temporal_system',return_value=(np.zeros(1),sparse.csr_matrix((1,385)))),\
              patch.object(S,'temporal_values',return_value=np.zeros(1)),patch.object(S,'linprog',return_value=lp),\
              patch('per_pose_foot_guard.PerPoseGuard',FakePerPose):
-            oq,oroot,report=S.solve(Model(),q,roots,np.zeros((997,90)),rows.append,enforce_per_pose_guard=True)
+            oq,oroot,report=S.solve(Model(),q,roots,np.zeros((997,90)),rows.append,enforce_per_pose_guard=True,certificate_guard=SyntheticCertificateGuard())
         self.assertTrue(rows[0]['accepted']);self.assertEqual(rows[0]['alpha'],.0625)
         self.assertEqual(len(rows[0]['backtracking']),5)
         self.assertTrue(all(not r['per_pose_guard_passed'] for r in rows[0]['backtracking'][:-1]))
