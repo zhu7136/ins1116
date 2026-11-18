@@ -98,8 +98,12 @@ class WindowTests(unittest.TestCase):
     def test_all_sources_and_patched_runner_compile(self):
         import ast
         root=Path(__file__).parent
-        for path in [*root.glob('*.py'),root/'patches/run_joint_fit.py']:compile(path.read_text(),str(path),'exec')
-        tree=ast.parse((root/'patches/run_joint_fit.py').read_text())
+        # The reviewed patch was published in the actual implementation folder,
+        # not the old sandbox-only patches/ staging directory. Compile/inspect
+        # the real delivered runner; never execute its solver entrypoint.
+        runner=root.parent/'implementation_20261117/run_joint_fit.py'
+        for path in [*root.glob('*.py'),runner]:compile(path.read_text(),str(path),'exec')
+        tree=ast.parse(runner.read_text())
         worker=next(n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name=='worker')
         archive_call=next(n for n in ast.walk(worker) if isinstance(n,ast.Call) and isinstance(n.func,ast.Name) and n.func.id=='freeze_file')
         sends=[n for n in ast.walk(worker) if isinstance(n,ast.Call) and isinstance(n.func,ast.Attribute) and n.func.attr=='send']

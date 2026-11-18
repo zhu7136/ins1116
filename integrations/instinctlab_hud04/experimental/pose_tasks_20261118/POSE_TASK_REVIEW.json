@@ -1,0 +1,413 @@
+{
+  "schema_version": 1,
+  "stage": "bounded_cpu_diagnostic_supervision",
+  "status": "completed",
+  "budget": {
+    "window_seconds": 30,
+    "total_seconds": 40,
+    "iterations": 8,
+    "numeric_threads": 2,
+    "max_windows": 1
+  },
+  "windows": [
+    {
+      "index": 0,
+      "wall_seconds": 1.5658323129999872,
+      "child_reaped": true,
+      "status": "completed",
+      "iterations": 5,
+      "diagnostic": {
+        "stage": "explicit_35d_pose_channels_and_conditional_neutral_mapping_NOT_reference",
+        "base_commit": "ee8416303d1dd471b05cc6ae6702e5f52008d554",
+        "raw_recovery": {
+          "files": [
+            {
+              "name": "jumpsit2-ziwen-retargeted.npz",
+              "sha256": "064e7d9e890d99ae94902a116b7ac26c09900386e0d9e42ca62f300c2559c5cb",
+              "bytes": 143554,
+              "matches_existing_archive": true
+            },
+            {
+              "name": "kneelClimbStep1-x-0.1-ziwen-retargeted.npz",
+              "sha256": "56158e8679580910ccff375963d025b138636acfe70f5b1f88381837209b2056",
+              "bytes": 147874,
+              "matches_existing_archive": true
+            },
+            {
+              "name": "rollVault11-ziwen-retargeted.npz",
+              "sha256": "78fcbae898a0944d2028810edd73b604f26058351d45675e89d132367dc83f6a",
+              "bytes": 139954,
+              "matches_existing_archive": true
+            },
+            {
+              "name": "superheroLanding-retargeted.npz",
+              "sha256": "49d85e012920b3cb03d08e1fb2d3fd039162b293e76a301193940d8321cb5834",
+              "bytes": 154642,
+              "matches_existing_archive": true
+            },
+            {
+              "name": "metadata.yaml",
+              "sha256": "5ea48d393d9f14829380897407f1354235a6faa029810368b45f74f47e3e3e15",
+              "bytes": 153,
+              "matches_existing_archive": true
+            },
+            {
+              "name": "metadata_kneelClimbStep1.yaml",
+              "sha256": "cbd3010b21111f8fc69a354c37befaf72bd33508a93763edc024b3a29f887ea1",
+              "bytes": 153,
+              "matches_existing_archive": true
+            },
+            {
+              "name": "50cmboxes_19_36_49.stl",
+              "sha256": "3aee33efea6793974d901dd0f7e46859e2d12d2dfd79f38f12c777686566c2de",
+              "bytes": 404434,
+              "matches_existing_archive": true
+            }
+          ],
+          "all_seven_verified": true,
+          "existing_archive_already_had_raw_inputs": true,
+          "archive_entries_checked": 21,
+          "download_was_recovery_not_new_research": true
+        },
+        "official_consumer": {
+          "root": "torso_link",
+          "quaternion_order": "wxyz",
+          "source_checks": [
+            {
+              "path": "source/instinctlab/instinctlab/tasks/shadowing/perceptive/config/g1/perceptive_shadowing_cfg.py",
+              "sha256": "e719dc690275f4916d0a5b6c5b68921077181432eebf0ec00358ff67e7f0899e",
+              "verified_this_run": true
+            },
+            {
+              "path": "source/instinctlab/instinctlab/motion_reference/motion_files/amass_motion.py",
+              "sha256": "aa233bc12102403fa4f9ea90dcc0d7b2b1ecdf670b5c7c4bcc4f2ff068ed6909",
+              "verified_this_run": true
+            },
+            {
+              "path": "source/instinctlab/instinctlab/assets/unitree_g1.py",
+              "sha256": "2f8be645c654804f2301c5cfd62b1c0cfaf5d596af71a6c39e578166666d116f",
+              "verified_this_run": true
+            }
+          ],
+          "scope": "intended release interface, not original exporter proof or source/STL physical units",
+          "source_root_evaluation_only": true,
+          "target_root_copied": false,
+          "source_all_links_independent_fk_error": 1.1102230246251565e-15,
+          "source_world_pelvis_independent_error": 5.551115123125783e-16
+        },
+        "neutral_orientation_proposal": {
+          "formula": "R_des=R_source_pelvis_local(q) @ R_source_pelvis_local(0).T @ R_target_base_local(0)",
+          "shared_anatomical_anchor_basis_is_explicit_unverified_assumption": true,
+          "neutral_pose_is_not_standing_or_joint_feasibility_evidence": true,
+          "full997_baseline_comparison_only": true,
+          "task_calibration_accepted": false,
+          "features": [
+            {
+              "feature": "torso_URDF_frame",
+              "source_link": "torso_link",
+              "target_link": "waist_pitch_link",
+              "neutral_source_to_target_right_rotation": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "role": "URDF_link_diagnostic",
+              "mean_deg": 39.17948203202662,
+              "p95_deg": 66.3805254818354,
+              "max_deg": 75.61130623488074,
+              "frame_of_max": 200,
+              "risk244_345": {
+                "mean_deg": 35.52474755797396,
+                "p95_deg": 49.81203122790245,
+                "max_deg": 53.20067198508841
+              }
+            },
+            {
+              "feature": "left_distal_wrist_URDF_frame",
+              "source_link": "left_wrist_yaw_link",
+              "target_link": "left_wrist_roll_link",
+              "neutral_source_to_target_right_rotation": [
+                [
+                  0.9999999801369396,
+                  -0.00019158999853865027,
+                  -5.49489999723479e-05
+                ],
+                [
+                  0.0001915932954229668,
+                  0.9999999798460042,
+                  5.999999987338353e-05
+                ],
+                [
+                  5.4937503465017926e-05,
+                  -6.001052654159311e-05,
+                  0.9999999966903035
+                ]
+              ],
+              "role": "URDF_link_diagnostic",
+              "mean_deg": 94.59043998466953,
+              "p95_deg": 145.78843788222514,
+              "max_deg": 167.79764836200886,
+              "frame_of_max": 401,
+              "risk244_345": {
+                "mean_deg": 85.02315694643832,
+                "p95_deg": 105.76882206030011,
+                "max_deg": 109.99391414096031
+              }
+            },
+            {
+              "feature": "right_distal_wrist_URDF_frame",
+              "source_link": "right_wrist_yaw_link",
+              "target_link": "right_wrist_roll_link",
+              "neutral_source_to_target_right_rotation": [
+                [
+                  0.9999999801369396,
+                  0.00019158999853865027,
+                  -5.49489999723479e-05
+                ],
+                [
+                  -0.0001915932954229668,
+                  0.9999999798460042,
+                  -5.999999987338353e-05
+                ],
+                [
+                  5.4937503465017926e-05,
+                  6.001052654159311e-05,
+                  0.9999999966903035
+                ]
+              ],
+              "role": "URDF_link_diagnostic",
+              "mean_deg": 98.62918681717785,
+              "p95_deg": 135.39821414342657,
+              "max_deg": 157.61637286698786,
+              "frame_of_max": 73,
+              "risk244_345": {
+                "mean_deg": 69.24644172727305,
+                "p95_deg": 84.60875954521872,
+                "max_deg": 86.63086572412887
+              }
+            },
+            {
+              "feature": "left_nominal_box_bottom_frame",
+              "source_link": "left_ankle_roll_link",
+              "target_link": "left_ankle_roll_link",
+              "neutral_source_to_target_right_rotation": [
+                [
+                  0.9999999999999999,
+                  0.0,
+                  -1.0167239606370283e-17
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  -1.0167239606370283e-17,
+                  0.0,
+                  0.9999999999999998
+                ]
+              ],
+              "role": "nominal_box_bottom_NOT_accepted_support",
+              "mean_deg": 30.20708120962832,
+              "p95_deg": 110.91076105004844,
+              "max_deg": 121.05302024247923,
+              "frame_of_max": 931,
+              "risk244_345": {
+                "mean_deg": 15.936092490582928,
+                "p95_deg": 58.96911030066713,
+                "max_deg": 63.60741968436566
+              }
+            },
+            {
+              "feature": "right_nominal_box_bottom_frame",
+              "source_link": "right_ankle_roll_link",
+              "target_link": "right_ankle_roll_link",
+              "neutral_source_to_target_right_rotation": [
+                [
+                  0.9999999999999999,
+                  0.0,
+                  -1.0167239606370283e-17
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  -1.0167239606370283e-17,
+                  0.0,
+                  0.9999999999999998
+                ]
+              ],
+              "role": "nominal_box_bottom_NOT_accepted_support",
+              "mean_deg": 27.014470312936,
+              "p95_deg": 63.65429396479753,
+              "max_deg": 77.01086983572507,
+              "frame_of_max": 815,
+              "risk244_345": {
+                "mean_deg": 11.49106371960663,
+                "p95_deg": 16.49555144025733,
+                "max_deg": 17.622724382223062
+              }
+            }
+          ]
+        },
+        "hand_symmetry_evidence": [
+          {
+            "side": "left",
+            "source_kind": "capsule",
+            "radius": 0.05,
+            "length": 0.05,
+            "source_collision_local_axis": [
+              -0.9999999999932537,
+              0.0,
+              -3.673205103416066e-06
+            ],
+            "axial_rotation_symmetry": true,
+            "unique_palm_normal_inferable_from_collision_proxy": false,
+            "target_hand_frame_used": "distal_wrist_URDF_frame_NOT_palm"
+          },
+          {
+            "side": "right",
+            "source_kind": "capsule",
+            "radius": 0.05,
+            "length": 0.05,
+            "source_collision_local_axis": [
+              -0.9999999999932537,
+              0.0,
+              -3.673205103416066e-06
+            ],
+            "axial_rotation_symmetry": true,
+            "unique_palm_normal_inferable_from_collision_proxy": false,
+            "target_hand_frame_used": "distal_wrist_URDF_frame_NOT_palm"
+          }
+        ],
+        "derivative_verification": {
+          "frames": [
+            0,
+            257,
+            495,
+            996
+          ],
+          "root_fixture": "fixed_algebraic_SE3_NOT_source_or_candidate_root",
+          "independent_all_feature_fk_max_error": 6.661338147750939e-16,
+          "point_all35_finite_difference_error": 2.2060480005248184e-10,
+          "rotation_all35_finite_difference_error": 2.4200541570706946e-10,
+          "epsilon": 1e-06,
+          "combined_point_rotation_local_rank": [
+            30,
+            30,
+            30,
+            30
+          ],
+          "rank_tolerance": 1e-08,
+          "minimum_singular_value": 1.6248731139130687e-16,
+          "global_feasibility_or_identifiability_proven": false
+        },
+        "window": {
+          "native_frame_ranges": [
+            [
+              244,
+              274
+            ],
+            [
+              480,
+              510
+            ],
+            [
+              966,
+              996
+            ]
+          ],
+          "native_fps": 90,
+          "frames": 93,
+          "variables": 3255,
+          "point_jacobian_shape": [
+            1395,
+            3255
+          ],
+          "rotation_jacobian_shape": [
+            4185,
+            3255
+          ],
+          "hard_joint_shape": [
+            5307,
+            3255
+          ],
+          "real_adjacent_edges": 90,
+          "cross_gap_edges": 0,
+          "original_hard_rows_unchanged": true,
+          "zero_increment_max_joint_violation": 1.3877787807814457e-16,
+          "point_targets_and_residuals": null,
+          "orientation_targets": "conditional_neutral_proposal_only_NOT_material_calibration",
+          "units": "point_coordinate_units_vs_dimensionless_rotation_basis_kept_in_separate_unweighted_channels",
+          "no_new_limits_weights_or_contact_thresholds_selected": true
+        },
+        "preserved_input_sha256": {
+          "integrations/instinctlab_hud04/experimental/full_direction_20261118/OVERLAP_V4/STEP1_FULL_LENGTH_JOINT_DIAGNOSTIC.npz": "2aa620d3086ed5f1c260c210e38fcb3d3a94cbaea549911844b8e4c31127ddc0",
+          "flux/hud04_asset_camera_probe/humanoid-description/HU_D04_description/urdf/HU_D04_01_fixed_head_body_collision.urdf": "865a4344e2f838d939c2549ec0d9e771dc6c2eb745670d96bba78e162d2880d7",
+          "integrations/instinctlab_hud04/MOTION_REVIEW_20261117.json": "c395e665a1d8c8e24314d72ced838ccacb11ea4b65df1860711fbf03db366698",
+          "datasets/hud04/source-only-20261117/hud04-source-only-20261117.zip": "c38418c6ba949ed41fdafa67330a0487f1d6cea2bf15d71378c4402079149152",
+          "/workspace/ins1116-gate-review-20261118/integrations/instinctlab_hud04/experimental/direction_solve_20261118/anatomical_directions.py": "23660e03d2fbe7b1e0e334c47b506e9c07e4c8931430bd6f6c3afc762159587d",
+          "/workspace/ins1116-gate-review-20261118/integrations/instinctlab_hud04/experimental/window_system_20261117/named_target.py": "ce946040de2a74dd4a72744a1153d78098d9b247e91bc3c8fdee1300e071a464",
+          "/workspace/ins1116-gate-review-20261118/integrations/instinctlab_hud04/experimental/window_system_20261117/window_problem.py": "2c5911dd8c5b80a3ebb285834b376dcb9c4eae81a119399bd7ef11ad16cc999d",
+          "/workspace/ins1116-gate-review-20261118/integrations/instinctlab_hud04/experimental/window_system_20261117/bounded_runtime.py": "01974a3ec53c7d287d85d09d48c71756e70d2f7024666c603b8f5442c5ea3c35",
+          "/workspace/ins1116-gate-review-20261118/integrations/instinctlab_hud04/kinematic_diagnostics.py": "943b63605c4e837451a47eee87fa754ac04d72afcef02fe8904c77252b438696"
+        },
+        "new_code_sha256": {
+          "pose_tasks.py": "01adbeb181db114ef0dedbc6d5a829a40e3f5739e3f0e91e943f577e15549e7b",
+          "context.py": "ee139cd3ee44a86e1b3ec5323b36efb1753191b29d5222c7737794bcfea1fa39",
+          "test_pose_tasks.py": "bad20d8fe9c142262f9987ee0dc5fb74a0369d6bd5e72d70a57b01af01ad62ef",
+          "review_pose_tasks.py": "2db2d9fb404faac0d5322872b6c9c675f33a2c5ed0d93a0325ffc72b596eca66"
+        },
+        "still_missing": [
+          "reviewed palm/foot/knee material-frame correspondence and support intervals",
+          "source-world and actual with-wall Terrain physical-unit/alignment acceptance",
+          "actual Terrain/self-collision constraint assembly and independent full motion checks",
+          "fresh explicitly bounded optimizer authorization; old QP budget stays zero",
+          "actual full-task reset, tracking, depth and lifecycle GPU acceptance"
+        ],
+        "solver_import_setup_solve": 0,
+        "gpu_submissions": 0,
+        "ppo_updates": 0,
+        "new_motion_generated": false,
+        "source_data_modified": false,
+        "accepted_reference": false,
+        "training_ready": false
+      },
+      "supported_numeric_pools": [
+        {
+          "api": "openblas",
+          "threads": 2
+        },
+        {
+          "api": "openblas",
+          "threads": 2
+        }
+      ]
+    }
+  ],
+  "wall_seconds": 1.5659000230000402,
+  "retries": 0,
+  "hard_parent_deadline": true,
+  "cleanup_grace_seconds_max": 0.7,
+  "iteration_limit_scope": "trusted_workers_calling_gate_each_iteration_only",
+  "thread_limit_scope": "supported_BLAS_OpenMP_pools_not_all_OS_threads_or_CPU_cores",
+  "gpu_submissions": 0,
+  "solver_calls": 0,
+  "candidate_motion_generated": false,
+  "accepted_reference": false,
+  "training_ready": false
+}

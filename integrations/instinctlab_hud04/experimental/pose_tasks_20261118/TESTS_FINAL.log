@@ -1,0 +1,36 @@
+test_35_columns_no_head (test_pose_tasks.PoseTasksTests.test_35_columns_no_head) ... ok
+test_all35_derivative_columns (test_pose_tasks.PoseTasksTests.test_all35_derivative_columns) ... ok
+test_bad_last_row_rejected (test_pose_tasks.PoseTasksTests.test_bad_last_row_rejected) ... ok
+test_bad_neutral_shape_rejected (test_pose_tasks.PoseTasksTests.test_bad_neutral_shape_rejected) ... ok
+test_bone_direction_explicit_residual (test_pose_tasks.PoseTasksTests.test_bone_direction_explicit_residual) ... ok
+test_bone_direction_nonunit_rejected (test_pose_tasks.PoseTasksTests.test_bone_direction_nonunit_rejected) ... ok
+test_bone_direction_root_columns_are_zero (test_pose_tasks.PoseTasksTests.test_bone_direction_root_columns_are_zero) ... ok
+test_bone_direction_unknown_is_null (test_pose_tasks.PoseTasksTests.test_bone_direction_unknown_is_null) ... ok
+test_duplicate_feature_rejected (test_pose_tasks.PoseTasksTests.test_duplicate_feature_rejected) ... ok
+test_existing_hard_rows_unchanged (test_pose_tasks.PoseTasksTests.test_existing_hard_rows_unchanged) ... ok
+test_explicit_targets_actual_residual (test_pose_tasks.PoseTasksTests.test_explicit_targets_actual_residual) ... ok
+test_fake_material_role_rejected (test_pose_tasks.PoseTasksTests.test_fake_material_role_rejected) ... ok
+test_feature_transform_frozen (test_pose_tasks.PoseTasksTests.test_feature_transform_frozen) ... ok
+test_foot_frame_is_exact_box_bottom (test_pose_tasks.PoseTasksTests.test_foot_frame_is_exact_box_bottom) ... ok
+test_invalid_target_rotation_rejected (test_pose_tasks.PoseTasksTests.test_invalid_target_rotation_rejected) ... ok
+test_missing_link_rejected (test_pose_tasks.PoseTasksTests.test_missing_link_rejected) ... ok
+test_missing_root_rejected (test_pose_tasks.PoseTasksTests.test_missing_root_rejected) ... ok
+test_named_reversal_same_pose_channels (test_pose_tasks.PoseTasksTests.test_named_reversal_same_pose_channels) ... ok
+test_neutral_proposal_maps_neutral_exactly (test_pose_tasks.PoseTasksTests.test_neutral_proposal_maps_neutral_exactly) ... ok
+test_neutral_proposal_world_rotation_equivariance (test_pose_tasks.PoseTasksTests.test_neutral_proposal_world_rotation_equivariance) ... ok
+test_no_fake_palm (test_pose_tasks.PoseTasksTests.test_no_fake_palm) ... ok
+test_no_gap_velocity_edges_or_false_training (test_pose_tasks.PoseTasksTests.test_no_gap_velocity_edges_or_false_training) ... ok
+test_no_inputs_changed (test_pose_tasks.PoseTasksTests.test_no_inputs_changed) ... ok
+test_nonfinite_rejected (test_pose_tasks.PoseTasksTests.test_nonfinite_rejected) ... ok
+test_pose_only_rank_not_35_but_combined_local_rank35 (test_pose_tasks.PoseTasksTests.test_pose_only_rank_not_35_but_combined_local_rank35) ... ok
+test_reflection_rejected (test_pose_tasks.PoseTasksTests.test_reflection_rejected) ... ok
+test_root_translation_has_no_rotation_derivative (test_pose_tasks.PoseTasksTests.test_root_translation_has_no_rotation_derivative) ... ok
+test_shapes (test_pose_tasks.PoseTasksTests.test_shapes) ... ok
+test_target_shape_rejected (test_pose_tasks.PoseTasksTests.test_target_shape_rejected) ... ok
+test_unknown_target_is_null (test_pose_tasks.PoseTasksTests.test_unknown_target_is_null) ... ok
+test_world_rigid_equivariance (test_pose_tasks.PoseTasksTests.test_world_rigid_equivariance) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.313s
+
+OK
