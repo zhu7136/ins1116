@@ -1,0 +1,101 @@
+{
+  "schema": "hud04.nvidia_1073_documentation_evidence.v1",
+  "collected_at_utc": "2026-11-18T07:04:47.980054+00:00",
+  "snapshot_hash_not_immutable_upstream_revision": true,
+  "pages": [
+    {
+      "url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/extensions/runtime/source/omni.physx/docs/api/python.html",
+      "status": 200,
+      "sha256": "e01be9c06d57a00649d5e79178d8cad6ddb427fce52497d9a3720fee465ce9a9",
+      "bytes": 849667,
+      "excerpts": [
+        {
+          "anchor": "omni.physx.bindings._physx.ContactEventHeader",
+          "url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/extensions/runtime/source/omni.physx/docs/api/python.html#omni.physx.bindings._physx.ContactEventHeader",
+          "text": "class\nomni.physx.bindings._physx.\nContactEventHeader\n#\nContact event header.\nproperty\nactor0\n#\nActor0 - uint64 use PhysicsSchemaTools::intToSdfPath to convert to SdfPath.\nproperty\nactor1\n#\nActor1 - uint64 use PhysicsSchemaTools::intToSdfPath to convert to SdfPath.\nproperty\ncollider0\n#\nCollider0 - uint64 use PhysicsSchemaTools::intToSdfPath to convert to SdfPath.\nproperty\ncollider1\n#\nCollider1 - uint64 use PhysicsSchemaTools::intToSdfPath to convert to SdfPath.\nproperty\ncontact_data_offset\n#\nContact data offset.\nproperty\nfriction_anchors_offset\n#\nFriction anchors data offset.\nproperty\nnum_contact_data\n#\nNumber of contact data.\nproperty\nnum_friction_anchors_data\n#\nNumber of contact data.\nproperty\nproto_index0\n#\nProtoindex0 from a point instancer (0xFFFFFFFF means collider is not part of an instancer).\nproperty\nproto_index1\n#\nProtoindex1 from a point instancer (0xFFFFFFFF means collider is not part of an instancer).\nproperty\nstage_id\n#\nStage id.\nproperty\ntype\n#\nContact event type.",
+          "excerpt_truncated": false
+        },
+        {
+          "anchor": "omni.physx.bindings._physx.ContactData.separation",
+          "url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/extensions/runtime/source/omni.physx/docs/api/python.html#omni.physx.bindings._physx.ContactData.separation",
+          "text": "property\nseparation\n#\nContact separation value.",
+          "excerpt_truncated": false
+        },
+        {
+          "anchor": "omni.physx.bindings._physx.IPhysxSimulation.subscribe_contact_report_events",
+          "url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/extensions/runtime/source/omni.physx/docs/api/python.html#omni.physx.bindings._physx.IPhysxSimulation.subscribe_contact_report_events",
+          "text": "subscribe_contact_report_events\n(\nself\n:\nomni.physx.bindings._physx.IPhysxSimulation\n,\nfn\n:\nCallable\n[\n[\nomni.physx.bindings._physx.ContactEventHeaderVector\n,\nomni.physx.bindings._physx.ContactDataVector\n]\n,\nNone\n]\n,\n)\n→\ncarb._carb.Subscription\n#\nSubscribes to contact report callback function.\nThe contact buffer data are available for one simulation step\nParameters\n:\nfn\n– The callback to be called after simulation step to receive contact reports.\nReturns\n:\nThe subscription holder.",
+          "excerpt_truncated": false
+        },
+        {
+          "anchor": "omni.physx.bindings._physx.IPhysxSimulation.subscribe_full_contact_report_events",
+          "url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/extensions/runtime/source/omni.physx/docs/api/python.html#omni.physx.bindings._physx.IPhysxSimulation.subscribe_full_contact_report_events",
+          "text": "subscribe_full_contact_report_events\n(\nself\n:\nomni.physx.bindings._physx.IPhysxSimulation\n,\nfn\n:\nCallable\n[\n[\nomni.physx.bindings._physx.ContactEventHeaderVector\n,\nomni.physx.bindings._physx.ContactDataVector\n,\nomni.physx.bindings._physx.FrictionAnchorsDataVector\n]\n,\nNone\n]\n,\n)\n→\ncarb._carb.Subscription\n#\nSubscribes to contact report callback function including friction anchors.\nThe contact buffer data are available for one simulation step\nParameters\n:\nfn\n– The callback to be called after simulation step to receive contact reports.\nReturns\n:\nThe subscription holder.",
+          "excerpt_truncated": false
+        },
+        {
+          "anchor": "omni.physx.bindings._physx.PhysXCooking.request_convex_collision_representation",
+          "url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/extensions/runtime/source/omni.physx/docs/api/python.html#omni.physx.bindings._physx.PhysXCooking.request_convex_collision_representation",
+          "text": "request_convex_collision_representation\n(\nself:\nomni.physx.bindings._physx.PhysXCooking,\nstage_id:\nint,\ncollision_prim_id:\nint,\nrun_asynchronously:\nbool\n=\nTrue,\non_result:\nCallable[[omni.physx.bindings._physx.PhysxCollisionRepresentationResult,\nList[omni.physx.bindings._physx.PhysxConvexMeshData]],\nNone]\n)\n→\nomni.physx.bindings._physx.PhysxCollisionRepresentationTask\n#\nRequest physics collision representation of an USD mesh\nParameters\n:\nstage_id\n– uint64_t    Stage where prim exists\ncollision_prim_id\n– uint64_t    Prim Id of the prim with CollisionAPI\nrun_asynchronously\n– bool        If the request should be run asynchronously\non_result\n– Callable[PhysxCollisionRepresentationResult, list[PhysxConvexMeshData])\nThe callback with the wanted collision representation.\nresult: Value of type PhysxCollisionRepresentationResult\nconvexes: list of PhysxConvexMeshData\nReturns: A PhysxCollisionRepresentationTask that can be cancelled with cancel_collision_representation_task\n(if async request has been made)",
+          "excerpt_truncated": false
+        },
+        {
+          "anchor": "omni.physx.bindings._physx.PhysxConvexMeshData",
+          "url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/extensions/runtime/source/omni.physx/docs/api/python.html#omni.physx.bindings._physx.PhysxConvexMeshData",
+          "text": "class\nomni.physx.bindings._physx.\nPhysxConvexMeshData\n#\nA convex mesh made of vertices, indices and polygons\nproperty\nindices\n#\nproperty\npolygons\n#\nproperty\nvertices\n#",
+          "excerpt_truncated": false
+        },
+        {
+          "anchor": "omni.physx.bindings._physx.PhysxConvexMeshPolygon",
+          "url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/extensions/runtime/source/omni.physx/docs/api/python.html#omni.physx.bindings._physx.PhysxConvexMeshPolygon",
+          "text": "class\nomni.physx.bindings._physx.\nPhysxConvexMeshPolygon\n#\nA polygon of a convex mesh\nproperty\nindex_base\n#\nproperty\nnum_vertices\n#\nproperty\nplane\n#",
+          "excerpt_truncated": false
+        }
+      ]
+    },
+    {
+      "url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/extensions/runtime/source/omni.physics.tensors/docs/api/python.html",
+      "status": 200,
+      "sha256": "7b122d2b65603f46c7329ea824133dfe943e5e4812a7504fdfdaf251869c5382",
+      "bytes": 944663,
+      "excerpts": [
+        {
+          "anchor": "omni.physics.tensors.impl.api.RigidContactView.get_contact_data",
+          "url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/extensions/runtime/source/omni.physics.tensors/docs/api/python.html#omni.physics.tensors.impl.api.RigidContactView.get_contact_data",
+          "text": "get_contact_data\n(\ndt\n)\n#\nGets the detailed contact data between sensors and filter prims per patch.\nThis includes the contact forces, contact points, contact normals, and separation distances.\nNote that there could be more than one contact point between a sensor prim and a filter prim. This function however, does not report the aggregated values for a pair of sensor/filter prims. This is an important distinction from the\nRigidContactView.get_contact_force_matrix()\nfunction.\nThis is needed because some of the variables reported by this function (such as contact normals, points, and separation) are defined only for contact points and cannot be aggregated accross the shape without further information about the geometry of the contact.\nNote also that the structure of the data returned by this function is different from the\nRigidContactView.get_contact_force_matrix()\nfunction. This function returns contacts data in buffers that need to be further processed.\nSpecifically, the last two tensors returned by this function (i.e. contact_count_buffer, and start_indices_buffer) are used to locate the set of contact data for each sensor-filter pair in the first three tensors (i.e. force_buffer, point_buffer, normal_buffer, separation_buffer).\nFor each sensor-filter pair, contact data (force_buffer, point_buffer, normal_buffer, separation_buffer) for all the contact points between sensor-filter prims are within the range of start_indices_buffer[sensor, filter] to start_indices_buffer[sensor, filter] + contact_count_buffer[sensor, filter].\nNote\nThe function raises an exception if the contact data cannot be obtained from the backend.\nThis function can only be used if the view is initialized with a valid filter prims.\nThe function raises an exception if the view is initialized with max_contact_data_count = 0.\nParameters\n:\ndt\n(\nfloat\n) – The time step of the simulation to use to convert impulses to forces.\nReturns\n:\nA tuple of five arrays of contact data:\nThe first array is the contact forces with shape (max_contact_data_count, 1) where max_contact_data_count is the maximum number of contact data that can be stored in the view.\nThe second array is the contact points with shape (max_contact_data_count, 3) where the 3 elements of the last dimension are the x, y, z components of the contact points.\nThe third array is the contact normals with shape (max_contact_data_count, 3) where the 3 elements of the last dimension are the x, y, z components of the contact normals vector.\nThe fourth array is the separation distances with shape (max_contact_data_count, 1).\nThe fifth array is the contact count buffer with shape (sensor_count, filter_count) where sensor_count is the number of sensors in the view and filter_count is the number of filter prims in the view.\nThe sixth array is the start indices buffer with shape (sensor_count, filter_count).\nReturn type\n:\nTuple[Union[np.ndarray, torch.Tensor, wp.array], Union[np.ndarray, torch.Tensor, wp.array], Union[np.ndarray, torch.Tensor, wp.array], Union[np.ndarray, torch.Tensor, wp.array], Union[np.ndarray, torch.Tensor, wp.array]]\nExample\n>>>\nimport\nomni.physics.tensors\nas\ntensors\n>>>\nsim_view\n=\ntensors\n.\ncreate_simulation_view\n(\n\"warp\"\n)\n>>>\nrigid_contact_view\n=\nsim_view\n.\ncreate_rigid_contact_view\n(\n\"/World/Cube_*\"\n)\n# This assumes that the prims referenced by \"/World/Cube_*\" were already created in the stage\n>>>\nforces\n,\npoints\n,\nnormals\n,\ndistances\n,\ncounts\n,\nstart_indices\n=\nrigid_contact_view\n.\nget_contact_data\n(\ndt\n)\n# Get the detailed contact data between sensors and filter prims per patch\n>>>\nforces_np\n=\nforces\n.\nnumpy\n()\n.\nreshape\n(\nrigid_contact_view\n.\nmax_contact_data_count\n)\n# Reshape the obtained array in a 1D numpy array on the host\n>>>\npoints_np\n=\npoints\n.\nnumpy\n()\n.\nreshape\n(\nrigid_contact_view\n.\nmax_contact_data_count\n*\n3\n)\n# Reshape the obtained array in a 1D numpy array on the host\n>>>\nnormals_np\n=\nnormals\n.\nnumpy\n()\n.\nreshape\n(\nrigid_contact_view\n.\nmax_contact_data_count\n*\n3\n)\n# Reshape the obtained array in a 1D numpy array on the host\n>>>\ndistances_np\n=\ndistances\n.\nnumpy\n()\n.\nreshape\n(\nrigid_contact_view\n.\nmax_contact_data_count\n)\n# Reshape the obtained array in a 1D numpy array on the",
+          "excerpt_truncated": true
+        }
+      ]
+    }
+  ],
+  "confirmed_source_contracts": [
+    "IPhysxSimulation.subscribe_contact_report_events: two buffers; returns subscription holder; buffers live one simulation step",
+    "subscribe_full_contact_report_events: distinct three-buffer API including friction anchors",
+    "Header actor/collider IDs uint64; documented decoder PhysicsSchemaTools::intToSdfPath",
+    "Header stage_id and proto_index0/1 exist; 0xFFFFFFFF means not instanced",
+    "ContactData.separation is a contact separation value; sign convention/units/offset adjustment not certified by this entry",
+    "Tensor get_contact_data(dt) documents six arrays; dt converts impulses to forces",
+    "PhysXCooking.request_convex_collision_representation(stage_id,collision_prim_id,run_asynchronously,on_result) exists; returns task and convex mesh data"
+  ],
+  "documentation_caveats": [
+    "Tensor returns summary says five but enumerates six, corroborated by previously pinned IsaacSim source; do not accept five buffers",
+    "Header decoder notation is C++ style; Python attribute intToSdfPath must be checked on supplied schema tools, not assumed runtime verified",
+    "Cooking request is not a guaranteed passive read of already-live solver shape: cache/task behavior, transforms/scale, units and subshape mapping require runtime evidence",
+    "No report threshold or ContactReportAPI enablement was changed or independently read back",
+    "107.3 family docs do not independently prove package107.3.26 target image support"
+  ],
+  "runtime_evidence_still_required": [
+    "target-build native capabilities, stage identity, actual subscription and holder lifetime",
+    "existing contact-report enablement/threshold/buffer capacity and bounded time coverage",
+    "same original articulation exact collider pairs and final filtering state",
+    "live cooked geometry coordinate/scale/subshape equivalence and signed separation semantics",
+    "authorized causal experiment without changing unrelated physics context"
+  ],
+  "gpu_tasks_submitted": 0,
+  "simulation_steps": 0,
+  "ppo_updates": 0,
+  "motion_optimizer_calls": 0,
+  "automatic_pair_exclusions": 0,
+  "accepted_reference": false,
+  "training_ready": false
+}
